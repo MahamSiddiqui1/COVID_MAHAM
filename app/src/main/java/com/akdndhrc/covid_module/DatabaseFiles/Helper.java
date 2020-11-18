@@ -20,8 +20,8 @@ import io.requery.android.database.sqlite.SQLiteOpenHelper;
 
 public class Helper extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 5;
-    public static final String DATABASE_NAME = "HayatPKDB";
+    public static final int DATABASE_VERSION = 6;
+    public static final String DATABASE_NAME = "COVID_APP";
     private static final String DATABASE_NAMEFORDATA = ".HayatPKDB";
 
     Context context;
@@ -230,7 +230,7 @@ public class Helper extends SQLiteOpenHelper {
             ")";
 
 
-    public static String CREATE_TABLE_MOTHER_BEMARI = "CREATE TABLE MBEMARI( " +
+    public static String CREATE_TABLE_CO_MORBIDITY = "CREATE TABLE MBEMARI( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "member_uid varchar(128) NOT NULL," +
             "record_data varchar(128) NOT NULL," +
@@ -240,7 +240,7 @@ public class Helper extends SQLiteOpenHelper {
             "added_on varchar(30) NOT NULL" +
             ")";
 
-    public static String CREATE_TABLE_MOTHER_FAMILYPLANNING = "CREATE TABLE MFPLAN( " +
+    public static String CREATE_TABLE_SIDE_EFFECTS = "CREATE TABLE MFPLAN( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "member_uid varchar(128) NOT NULL," +
             "record_data varchar(128) NOT NULL," +
@@ -678,8 +678,8 @@ public class Helper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_CHILD_BEMARI);
         db.execSQL(CREATE_TABLE_CHILD_VACINATION);
         db.execSQL(CREATE_TABLE_CHILD_MAMLOOM);
-        db.execSQL(CREATE_TABLE_MOTHER_BEMARI);
-        db.execSQL(CREATE_TABLE_MOTHER_FAMILYPLANNING);
+        db.execSQL(CREATE_TABLE_CO_MORBIDITY);
+        db.execSQL(CREATE_TABLE_SIDE_EFFECTS);
         db.execSQL(CREATE_TABLE_MOTHER_PREGNANCY);
         db.execSQL(CREATE_TABLE_MOTHER_MAMLOOM);
         db.execSQL(CREATE_TABLE_MOTHER_ANC);
