@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:text="شناختی کارڈ نمبر درج کریں"
+                    android:text="Enter ID card number"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_14sdp" />
 
@@ -65,22 +65,22 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:theme="@style/StyleTextInputLayout"
                         android:id="@+id/et_idcard_number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:background="@null"
-                        android:gravity="right"
+                        android:gravity="left"
                         android:inputType="number"
                         android:lines="1"
-                        android:maxLines="1"
                         android:maxLength="15"
+                        android:maxLines="1"
                         android:padding="@dimen/_5sdp"
                         android:textColorHint="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_14sdp"
+                        android:theme="@style/StyleTextInputLayout" />
 
                 </LinearLayout>
 
@@ -100,10 +100,10 @@
                 android:id="@+id/btn_jaari_rhy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="جاری رہے"
+                android:text="@string/cont"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_14sdp" />
 

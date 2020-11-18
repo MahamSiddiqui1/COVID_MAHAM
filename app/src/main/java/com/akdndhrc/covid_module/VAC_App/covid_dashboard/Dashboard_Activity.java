@@ -26,6 +26,7 @@ import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActi
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActivities.Search_MemberAndKhandanList_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_profile.profile_activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_side_effects.side_effects_List_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_List_Activity;
 
@@ -165,7 +166,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
 
             case R.id.rl_profile:
                 // startActivity(new Intent(ctx, Child_Profile_Activity.class));
-                Intent intent4 = new Intent(ctx, Child_Profile_Activity.class);
+                Intent intent4 = new Intent(ctx, profile_activity.class);
                 intent4.putExtra("u_id", child_uid);
                 intent4.putExtra("child_name", child_name);
                 intent4.putExtra("child_age", child_age);
@@ -246,7 +247,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
             Log.d("000999", "Maah: " + String.valueOf(dob_months));
             Log.d("000999", "Maah_chart: " + String.valueOf(dob_months));
 
-            child_age = String.valueOf(dob_years) + " سال " + String.valueOf(dob_months) + " مہ ";
+            child_age = String.valueOf(dob_years) + " Years " + String.valueOf(dob_months) + "Months ";
             txt_age.setText(child_age);
             if (dob_years > 0) {
                 days_chart = dob_years * 12;

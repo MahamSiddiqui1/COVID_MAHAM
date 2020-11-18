@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mzkmb_zichgi_ki_mansoobahbandi_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -163,7 +163,7 @@
                                     android:fontFamily="@font/droid_naskh_regular"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -215,7 +215,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mzkmb_zichgi_ki_jaga_kai_lye_mashwarah_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -258,7 +258,7 @@
                                         android:layout_toLeftOf="@id/checkbox_ghar"
                                         android:text="@string/mzkmb_ghar_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -300,7 +300,7 @@
                                         android:layout_toLeftOf="@id/checkbox_markaz_sehat"
                                         android:text="@string/mzkmb_markaz_sehat_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -342,7 +342,7 @@
                                         android:layout_toLeftOf="@id/checkbox_hospital"
                                         android:text="@string/mzkmb_hospital_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -363,7 +363,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mzkmb_emergency_ki_halat_mai_gari_ka_intezam__text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -406,7 +406,7 @@
                                         android:layout_toLeftOf="@id/checkbox_haan"
                                         android:text="@string/mzkmb_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -448,7 +448,7 @@
                                         android:layout_toLeftOf="@id/checkbox_nahi"
                                         android:text="@string/mzkmb_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -468,7 +468,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/mzkmb_jamaa_kre_button_text"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>

@@ -52,7 +52,7 @@ String temp ="0";
         iv_smartphone = findViewById(R.id.iv_smartphone);
         iv_khandannumber = findViewById(R.id.iv_khandannumber);
         tv_kahndan_number_search = findViewById(R.id.tv_kahndan_number_search);
-        tv_kahndan_number_search.setText("ویکسینیشن کارڈ کے ذریعے تلاش");
+        tv_kahndan_number_search.setText("Search by Vaccination Card");
         // iv_khandannumber.setBackgroundResource(R.drawable.injection);
         iv_khandannumber.setImageDrawable(ContextCompat.getDrawable(VAC_Search_Activity.this, R.drawable.icons8_syringe_96));
 
@@ -113,7 +113,7 @@ String temp ="0";
         iv_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newIntent = new Intent(ctx, HomePage_Activity.class);
+                Intent newIntent = new Intent(ctx, HomePageVacinator_Activity.class);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(newIntent);
@@ -176,7 +176,7 @@ String temp ="0";
             public void onClick(View v) {
 
                 if (et_idcard_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, "Please enter an ID card number", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -228,13 +228,13 @@ String temp ="0";
                             } else {
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, "Please enter the correct ID card number", Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, "Please enter the correct ID card number", Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -303,7 +303,7 @@ String temp ="0";
             public void onClick(View v) {
 
                 if (et_phone_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, "Please enter a mobile number", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -355,14 +355,14 @@ String temp ="0";
                             } else {
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "برائے مہربانی صحیح موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, "Please enter the correct mobile number", Toast.LENGTH_SHORT).show();
 
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, "Please enter the correct mobile number", Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -403,7 +403,7 @@ String temp ="0";
             @Override
             public void onClick(View v) {
                 if (et_vaccine_card_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  ویکسینیشن کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, "Please enter the vaccination card number", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -492,13 +492,13 @@ String temp ="0";
                                     alertDialog.dismiss();
                                 }
                                 else{
-                                    Toast.makeText(ctx, "برائے مہربانی صحیح ویکسینیشن کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
                                     alertDialog.dismiss();
                                     alertD.show();
                                 }
 
                             } else {
-                                Toast.makeText(ctx, "برائے مہربانی صحیح ویکسینیشن کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
                                 alertDialog.dismiss();
                                 alertD.show();
 
@@ -508,7 +508,7 @@ String temp ="0";
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح ویکسینیشن کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
                             Log.d("000888", "Search Vac Err: " + e.getMessage());
 
                         }

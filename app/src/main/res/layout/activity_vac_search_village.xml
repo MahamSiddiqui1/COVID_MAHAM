@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
-                android:text="تلاش"
+                android:text="Search"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:searchBackgroundColor="@color/color_white"
-                app:searchHint="تلاش, نام/فون نمبر یا گاؤں کا نام لکھیں"
+                app:searchHint="Enter search, name / phone number, or village name"
                 app:titleTextColor="@color/color_white" />
 
         </RelativeLayout>
@@ -78,8 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="@dimen/_8sdp"
-                            android:text="ویکسین کا نام منتخب کریں"
-                            android:textColor="@color/dark_blue_color"
+                            android:text="Choose a vaccine name"
                             android:textSize="@dimen/_12sdp" />
 
                         <RelativeLayout

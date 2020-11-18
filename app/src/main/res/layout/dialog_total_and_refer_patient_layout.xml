@@ -48,7 +48,7 @@
                     android:layout_weight="1"
                     android:text="@string/cbf_tareekh_indraj_text"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </TableRow>
 
@@ -102,7 +102,7 @@
                     android:layout_weight="1"
                     android:text="@string/total_number_of_patients_text"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </TableRow>
 
@@ -155,7 +155,7 @@
                     android:layout_weight="1"
                     android:text="@string/refer_number_of_patients_text"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </TableRow>
 

@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/cnn_nashonuma_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -161,7 +161,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cnnf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -226,7 +226,7 @@
 
                                             android:text="@string/cnnf_wazan_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -243,7 +243,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/cnnf_qad_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -377,7 +377,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cnnf_ghiza_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -420,7 +420,7 @@
                                         android:layout_toLeftOf="@id/checkbox_6maah_tk_sirf_maa_ka_doodh"
                                         android:text="@string/cnnf_6maah_tk_maa_ka_doodh_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -462,7 +462,7 @@
                                         android:layout_toLeftOf="@id/checkbox_bottle_ka_doodh"
                                         android:text="@string/cnnf_bottle_ka_doodh_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -505,7 +505,7 @@
                                         android:layout_toLeftOf="@id/checkbox_izafi_khoraak_thoos_ghiza"
                                         android:text="@string/cnnf_izafi_khoraak_thoos_ghiza_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -526,7 +526,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/chpslhvf_tabsrah_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 

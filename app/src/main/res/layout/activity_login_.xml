@@ -28,7 +28,6 @@
 
         </RelativeLayout>
 
-
         <LinearLayout
             android:id="@+id/ll_naam_password"
             android:layout_width="match_parent"
@@ -62,7 +61,7 @@
                     android:maxLines="1"
                     android:textColor="@color/color_white"
                     android:textColorHint="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -90,7 +89,7 @@
                     android:maxLines="1"
                     android:textColor="@color/color_white"
                     android:textColorHint="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -103,7 +102,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/login_forgot_password_text"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_12sdp" />
 
         </LinearLayout>
 

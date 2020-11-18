@@ -48,7 +48,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:text="صحت کمیٹی"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <TextView
                     android:id="@+id/tv2"
@@ -79,7 +79,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:text="خواتین کی حمایت گروپ"
                     android:textColor="@color/pink_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <TextView
                     android:id="@+id/tv4"
@@ -109,7 +109,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:text="اسکول میں صحت کی تعلیم"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <TextView
                     android:id="@+id/tv6"
@@ -131,7 +131,7 @@
             <!--                android:background="@drawable/login_button_shape_layout"-->
             <!--                android:text="صحت کمیٹی"-->
             <!--                android:textColor="@color/color_white"-->
-            <!--                android:textSize="@dimen/_16sdp" />-->
+            <!--                android:textSize="@dimen/_12sdp" />-->
 
             <!--            <Button-->
             <!--                android:id="@+id/btn_phle_sy_li_hoe_vaccine"-->
@@ -142,7 +142,7 @@
             <!--                android:background="@drawable/round_button_shape_layout"-->
             <!--                android:text="خواتین کی حمایت گروپ"-->
             <!--                android:textColor="@color/pink_color"-->
-            <!--                android:textSize="@dimen/_16sdp" />-->
+            <!--                android:textSize="@dimen/_12sdp" />-->
 
             <!--            <Button-->
             <!--                android:id="@+id/btn_phle_sy_li_hoe_vaccine_uc"-->
@@ -153,7 +153,7 @@
             <!--                android:background="@drawable/login_button_shape_layout"-->
             <!--                android:text="اسکول میں صحت کی تعلیم"-->
             <!--                android:textColor="@color/color_white"-->
-            <!--                android:textSize="@dimen/_16sdp"-->
+            <!--                android:textSize="@dimen/_12sdp"-->
             <!--                />-->
 
 

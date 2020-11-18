@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/cbr_bachey_ki_bemaari_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -140,7 +140,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/cd_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -215,7 +215,7 @@
                     android:text="@string/cbr_ka_recird_dkha_rha_ha_text"
                     android:textColor="@color/lv_grey_color"
                     android:visibility="gone"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
                 <RelativeLayout
@@ -256,7 +256,7 @@
                                         android:layout_marginRight="@dimen/_20sdp"
                                         android:text="@string/cbr_is_tareekh_tk_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -273,7 +273,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/cbr_is_tareekh_say_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -399,7 +399,7 @@
                     android:text="اس تاریخ کا کوئی ریکارڈ نہیں"
                     android:visibility="gone"
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_14sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
                 <ProgressBar

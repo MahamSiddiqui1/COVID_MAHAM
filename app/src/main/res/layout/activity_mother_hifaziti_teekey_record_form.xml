@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mhtrf_hifaziti_teekey_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -157,7 +157,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -215,7 +215,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="TT"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp"
+                                        android:textSize="@dimen/_12sdp"
                                         android:textStyle="bold" />
 
                                     <TextView
@@ -225,7 +225,7 @@
                                         android:layout_toLeftOf="@+id/txt_TT"
                                         android:text="@string/mhtrf_tt_kay_teekey_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp"
+                                        android:textSize="@dimen/_12sdp"
                                         android:textStyle="bold" />
 
 
@@ -261,7 +261,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/mhtrf_dusra_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -278,7 +278,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mhtrf_phela_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -378,7 +378,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mhtrf_zichgi_ki_mutawaqqa_tareekh_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -410,7 +410,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/mhtrf_saal_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -427,7 +427,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mhtrf_mahina_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -525,7 +525,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mhtrf_hunarmand_fard_say_muaina_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -558,7 +558,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/mhtrf_dusra_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -575,7 +575,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mhtrf_phela_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -687,7 +687,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/mhtrf_fourth_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -704,7 +704,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mhtrf_teesra_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -802,7 +802,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mhtrf_zichgi_kis_ny_ki_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -851,7 +851,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mhtrf_haaml_ka_natija_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -900,7 +900,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mhtrf_tabsrah_khaas_ikdaam_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 

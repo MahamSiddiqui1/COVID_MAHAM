@@ -52,7 +52,7 @@
                         android:gravity="right"
                         android:text="Name"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_11sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <TextView
                         android:id="@+id/tvcount"
@@ -86,7 +86,7 @@
                         android:layout_centerHorizontal="true"
                         android:text="Med Name"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_11sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                     <LinearLayout

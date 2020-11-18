@@ -93,6 +93,13 @@
             android:windowSoftInputMode="stateHidden" />
 
         <activity
+            android:name="com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_profile.profile_activity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
             android:name="com.akdndhrc.covid_module.VAC_App.covid_register_activity.Register_House_covid"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"

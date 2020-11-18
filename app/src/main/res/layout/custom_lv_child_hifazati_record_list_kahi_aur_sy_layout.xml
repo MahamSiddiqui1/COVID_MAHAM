@@ -22,7 +22,7 @@
             android:layout_marginRight="@dimen/_10sdp"
             android:text="@string/chtr_tareekh_adaegi_text"
             android:textColor="@color/chtr_dpt_green_txt_color"
-            android:textSize="@dimen/_14sdp" />
+            android:textSize="@dimen/_12sdp" />
 
         <TextView
             android:id="@+id/chtr_lv_tvDate"

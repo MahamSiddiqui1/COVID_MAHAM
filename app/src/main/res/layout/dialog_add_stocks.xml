@@ -52,7 +52,7 @@
                         android:drawableTint="@color/dark_blue_color"
                         android:text="Balance"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                     <TextView
@@ -94,7 +94,7 @@
                         android:drawableTint="@color/dark_blue_color"
                         android:text="Received"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
 
@@ -160,7 +160,7 @@
 <!--                                android:gravity="center_vertical"-->
 <!--                                android:text="0"-->
 <!--                                android:textColor="@color/dark_blue_color"-->
-<!--                                android:textSize="@dimen/_16sdp" />-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
 
 <!--                        </RelativeLayout>-->
 
@@ -205,7 +205,7 @@
                         android:drawableTint="@color/dark_blue_color"
                         android:text="Wastage"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <EditText
                         android:id="@+id/etWastage"
@@ -266,7 +266,7 @@
 <!--                                android:gravity="center_vertical"-->
 <!--                                android:text="0"-->
 <!--                                android:textColor="@color/dark_blue_color"-->
-<!--                                android:textSize="@dimen/_16sdp" />-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
 
 <!--                        </RelativeLayout>-->
 
@@ -310,7 +310,7 @@
                         android:drawableTint="@color/dark_blue_color"
                         android:text="Return"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
                     <EditText
                         android:id="@+id/etReturn"
                         android:layout_width="0dp"
@@ -372,7 +372,7 @@
 <!--                                android:gravity="center_vertical"-->
 <!--                                android:text="0"-->
 <!--                                android:textColor="@color/dark_blue_color"-->
-<!--                                android:textSize="@dimen/_16sdp" />-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
 
 <!--                        </RelativeLayout>-->
 
@@ -409,7 +409,7 @@
                     android:text="@string/camf_jamaa_kre_button_text"
                     android:textAllCaps="false"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </LinearLayout>
 

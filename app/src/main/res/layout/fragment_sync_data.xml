@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="سینک"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -131,7 +131,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="خاندان رجسٹریشن کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -141,7 +141,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     />
 
@@ -168,7 +168,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="رجسٹریشن کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -178,7 +178,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -221,7 +221,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="بچے کی نشو و نما کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -231,7 +231,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -268,7 +268,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="بچے کی بیماری کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -278,7 +278,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -315,7 +315,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="بچے کے حفاظتی ٹیکے کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -325,7 +325,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -361,7 +361,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="بچے کی عام معلومات کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -371,7 +371,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -414,7 +414,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ماں کے حمل کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -424,7 +424,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -461,7 +461,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="قبل از زچگی حمل کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -471,7 +471,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -507,7 +507,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="زچگی حمل کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -517,7 +517,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -553,7 +553,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="بعد از زچگی حمل کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -563,7 +563,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -599,7 +599,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ماں کے حفاظتی ٹیکے کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -609,7 +609,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -644,7 +644,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ماں کی بیماری کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -654,7 +654,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -691,7 +691,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ماں کی عام معلومات کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -701,7 +701,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -738,7 +738,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="خاندانی منصوبہ بندی کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -748,7 +748,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -792,7 +792,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ریفرل کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -802,7 +802,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -838,7 +838,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ویڈیوز کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -848,7 +848,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -885,7 +885,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="فیڈ بیک کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -895,7 +895,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -938,7 +938,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سماجی رابطہ کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -948,7 +948,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -985,7 +985,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="اسٹاک کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -995,7 +995,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -1032,7 +1032,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="ڈیلیٹ ممبر کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -1042,7 +1042,7 @@
                                     android:layout_alignParentStart="true"
                                     android:text="0"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 

@@ -46,7 +46,7 @@
                     android:layout_toLeftOf="@+id/iv_gender_icon"
                     android:text="Muhamad Aresh khan "
                     android:textColor="@color/hp_listview_textview_redcolor"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <ImageView
                     android:id="@+id/iv_gender_icon"
@@ -98,7 +98,7 @@
                     android:layout_marginLeft="@dimen/_15sdp"
                     android:text="@string/hp_listview_gaon_text"
                     android:textColor="@color/hp_listview_textview_greycolor"
-                    android:textSize="@dimen/_14sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:visibility="gone" />
 
             </RelativeLayout>

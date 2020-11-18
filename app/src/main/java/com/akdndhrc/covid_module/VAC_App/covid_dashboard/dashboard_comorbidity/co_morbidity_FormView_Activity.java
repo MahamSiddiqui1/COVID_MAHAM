@@ -152,10 +152,6 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         //Prgress Bar
         pbProgress = findViewById(R.id.pbProgress);
 
-
-
-
-
         //EDitTExt
         et_tareekh_visit = findViewById(R.id.et_tareekh_visit);
 
@@ -930,7 +926,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
                         final Snackbar snackbar = Snackbar.make(v, "The data has been updated.", Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
-                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                         TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.WHITE);

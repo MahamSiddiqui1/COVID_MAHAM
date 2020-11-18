@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="رجسٹر اسکول"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -136,7 +136,7 @@
                                     android:layout_weight="1"
                                     android:text="اسکول کا نام"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -188,7 +188,7 @@
                                     android:layout_weight="1"
                                     android:text="اسکول کے سربراہ کا نام"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -234,7 +234,7 @@
                                     android:layout_weight="1"
                                     android:text="موبائل نمبر"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -286,7 +286,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>

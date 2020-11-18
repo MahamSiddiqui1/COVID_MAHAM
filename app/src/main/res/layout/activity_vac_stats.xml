@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/nav_adaad_O_shumaar_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -121,7 +121,7 @@
                             android:layout_weight="1"
                             android:text="@string/mbr_is_tareekh_tk_text"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                         <TextView
@@ -131,7 +131,7 @@
                             android:layout_weight="1"
                             android:text="@string/mbr_is_tareekh_say_text"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </LinearLayout>
 

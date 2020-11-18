@@ -107,7 +107,7 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                 try {
 
                     //txt_name.setText("دو سال سے کم عمر کے بچوں کی لسٹ");
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText("List of people");
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where nicnumber LIKE '%" + cnic_number + "%'");
                     Log.d("000888", "LEN: " + String.valueOf(mData.length));
@@ -167,7 +167,7 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
 
                 try {
                     // txt_name.setText("دو سال سے کم عمر کے بچوں کی لسٹ");
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText("List of people");
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where phone_number LIKE '%" + phone_number + "%'");
                     Log.d("000888", "LEN: " + String.valueOf(mData.length));
@@ -224,7 +224,7 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
 
                 try {
                     //txt_name.setText("دو سال سے کم عمر کے بچوں کی لسٹ");
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText("List of people");
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on,data from MEMBER where data LIKE '%" + vaccination_card_no + "%'");
                     Log.d("000888", "VAC DATA LEN: " + String.valueOf(mData.length));
@@ -297,7 +297,7 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                 try {
                     // txt_name.setText("دو سال سے کم عمر کے بچوں کی لسٹ");
                     //txt_name.setText("بچوں کی لسٹ");
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText("List of people");
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where  qr_code = '" + qrcode_value + "'");
                     Log.d("000888", "LEN: " + String.valueOf(mData.length));

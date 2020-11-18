@@ -62,7 +62,7 @@
                     android:layout_toLeftOf="@id/checkbox_15to19_age"
                     android:text="15-19 عمر کے"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>
@@ -89,7 +89,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="مرد"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_male_15to19_age"
@@ -126,7 +126,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -163,7 +163,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="عورت"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_female_15to19_age"
@@ -201,7 +201,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -256,7 +256,7 @@
                     android:layout_toLeftOf="@id/checkbox_20to49_age"
                     android:text="20-49 عمر کے"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>
@@ -283,7 +283,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="مرد"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_male_20to49_age"
@@ -319,7 +319,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -355,7 +355,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="عورت"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_female_20to49_age"
@@ -392,7 +392,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -447,7 +447,7 @@
                     android:layout_toLeftOf="@id/checkbox_49plus"
                     android:text="49 عمر سے زیادہ"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>
@@ -474,7 +474,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="مرد"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_male_49plus_age"
@@ -511,7 +511,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -547,7 +547,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="عورت"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                     <RelativeLayout
@@ -585,7 +585,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -639,7 +639,7 @@
                     android:layout_toLeftOf="@id/checkbox_community_leaders"
                     android:text="کمیونٹی رہنماؤں"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>
@@ -666,7 +666,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="مرد"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_male_communityleaders"
@@ -703,7 +703,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
@@ -739,7 +739,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="عورت"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_female_communityleaders"
@@ -776,7 +776,7 @@
                             android:gravity="center_vertical"
 
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 

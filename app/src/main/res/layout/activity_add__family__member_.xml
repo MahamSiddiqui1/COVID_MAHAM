@@ -33,7 +33,7 @@
                     android:text="FAMILY"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_18sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -165,7 +165,7 @@
                             android:gravity="right"
                             android:text="Family ID :"
                             android:textColor="@color/register_khandan_text_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                         <TextView
                             android:id="@+id/txt_khandan_number"
@@ -176,7 +176,7 @@
                             android:gravity="left"
                             android:text="12345"
                             android:textColor="@color/register_khandan_text_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </LinearLayout>
@@ -206,7 +206,7 @@
                         android:background="@drawable/login_button_shape_layout"
                         android:text="ADD FAMILY MEMBER"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 

@@ -48,7 +48,7 @@
                         android:layout_marginRight="@dimen/_15sdp"
                         android:text="@string/sknl_khandan_number_text"
                         android:textColor="@color/hp_listview_textview_bluecolor"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                     <TextView
@@ -60,7 +60,7 @@
                         android:text="231-741"
                         android:layout_marginRight="@dimen/_3sdp"
                         android:textColor="@color/hp_listview_textview_bluecolor"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -88,7 +88,7 @@
                         android:layout_marginRight="@dimen/_15sdp"
                         android:text="@string/hp_listview_gaon_text"
                         android:textColor="@color/hp_listview_textview_greycolor"
-                        android:textSize="@dimen/_15sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -107,7 +107,7 @@
                         android:layout_marginRight="@dimen/_15sdp"
                         android:text="@string/hp_listview_gaon_text"
                         android:textColor="@color/hp_listview_textview_greycolor"
-                        android:textSize="@dimen/_15sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 

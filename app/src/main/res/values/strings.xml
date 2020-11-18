@@ -105,6 +105,7 @@
     <string name="search">Search</string>
     <string name="addNew">Add New</string>
 
+
     <!--Login Screen-->
 
     <string name="login_username_text">صارف کا نام</string>
@@ -158,8 +159,9 @@
     <string name="hp_listview_gaon_text">گاؤں 123</string>
 
     <!--Add Family Member Activity-->
-    <string name="afm_khandan_text">خاندان</string>
-    <string name="afm_khandan_number_text">خاندان نمبر:</string>
+    <string name="afm_khandan_text">Family</string>
+    <string name="cont">Continue</string>
+    <string name="afm_khandan_number_text">Family Number:</string>
     <string name="afm_name_text">سلمان اقبال</string>
     <string name="afm_khandan_kay_rukan_shamil_kre_button_text">خاندان کے رکن شامل کریں</string>
     <string name="age">عمر</string>
@@ -407,14 +409,14 @@
 
 
     <!--Search Activity-->
-    <string name="search_talash_text">تلاش</string>
-    <string name="search_tariqa_talash_muntakhib_kre_text">طریقۂ تلاش منتخب کریں</string>
-    <string name="search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text">براہ کرم دوبارہ تلاش کرنے کے لئے ذیل میں سے ایک سے منتخب کریں</string>
-    <string name="search_shanakhti_card_kay_zarye_talash_kre_text">شناختی کارڈ کے ذریعہ تلاش کریں</string>
-    <string name="search_phone_number_kai_zarye_talash_kre_text">فون نمبر کے ذریعہ تلاش کریں</string>
-    <string name="search_khandannumber_kai_zarye_talash_kre_text">خاندان نمبر کے ذریعہ تلاش کریں</string>
+    <string name="search_talash_text">Search</string>
+    <string name="search_tariqa_talash_muntakhib_kre_text">Select search mode</string>
+    <string name="search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text">Please select one of the following to search again</string>
+    <string name="search_shanakhti_card_kay_zarye_talash_kre_text">Search by ID card</string>
+    <string name="search_phone_number_kai_zarye_talash_kre_text">Search by phone number</string>
+    <string name="search_khandannumber_kai_zarye_talash_kre_text">Search by family number</string>
 
-    <string name="dialog_talash_kre_text">تلاش کریں</string>
+    <string name="dialog_talash_kre_text">find</string>
 
 
 
@@ -691,7 +693,7 @@
     <string name="vul_jins_text">جنس</string>
     <string name="vul_walid_ka_naam_text">والد کا نام </string>
     <string name="vul_walid_ka_shanakti_card_number_text">والد کا شناختی کارڈ نمبر</string>
-    <string name="vul_vacination_card_number_text">ویکسینیشن کارڈ کا نمبر</string>
+    <string name="vul_vacination_card_number_text">Vaccination card number</string>
 
     <string name="vul_walid_ya_kisi_ghar_kay_faard_ka_fingerprint_text">والد یا کسی گھر کے فرد کا فنگر پرنٹ </string>
     <string name="vul_biometriC_ko_faAl_kre_text">بایو میٹرک کو فعال کریں</string>
@@ -708,7 +710,7 @@
     <string name="swfpaqr_aapni_talash_kai_sath_jari_rakhny_kai_lye_zail_mai_sy_ek_tariqo_sy_muntakhib_kre_text">اپنی تلاش کے ساتھ جاری رکھنے کیلئے ذیل میں سے ایک طریقوں سے منتخب کریں</string>
     <string name="swfpaqr_fingerprint_kai_zarye_talash_kre_text">فنگر پرنٹ کے ذریعہ تلاش کریں</string>
     <string name="swfpaqr_qr_code_kai_zarye_talash_kre_text">کیو آر کوڈ کے ذریعہ تلاش کریں</string>
-    <string name="swfpaqr_qrcode_kai_zarye_talash_kre_text">کوڈ کے ذریعہ تلاش کریں</string>
+    <string name="swfpaqr_qrcode_kai_zarye_talash_kre_text">Search by code</string>
 
 
     <!--Searcg QR Code Activity-->

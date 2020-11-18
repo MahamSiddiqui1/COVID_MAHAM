@@ -33,7 +33,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/swfpaqr_talash_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -96,7 +96,7 @@
                 android:padding="@dimen/_20sdp"
                 android:text="@string/sqr_apny_card_ko_camera_kai_samny_rkhe_text"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_12sdp" />
 
         </RelativeLayout>
 

@@ -19,7 +19,7 @@
             android:gravity="right"
             android:text="@string/cr_spinner_ek_muntakhib_kre_text"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_13sdp" />
+            android:textSize="@dimen/_12sdp" />
 
         <ImageView
             android:id="@+id/ivCustomerImage"

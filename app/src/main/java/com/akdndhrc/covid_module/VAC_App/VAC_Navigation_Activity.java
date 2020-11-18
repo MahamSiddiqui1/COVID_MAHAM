@@ -709,7 +709,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(act, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(act, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, "Data not synced", Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -883,7 +883,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 phonenumber = true;
 
 
-                btn_jaari_rhy.setText("نمبر اپڈیٹ کریں");
+                btn_jaari_rhy.setText("Update number");
 
                 try {
                     int mPos = 0;
@@ -909,7 +909,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
             } else {
                 phonenumber = false;
                 Log.d("000369", "NO PHONE NUMBER");
-                btn_jaari_rhy.setText("جمع کریں");
+                btn_jaari_rhy.setText("Submit");
             }
 
         } catch (Exception e) {
@@ -932,7 +932,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
 
                 if (spPhoneNumber.getSelectedItemPosition() == 0) {
-                    Toast.makeText(act, "برائے مہربانی  فون نمبر منتخب کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, "Please select a phone number.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -956,7 +956,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                         if (res.toString().equalsIgnoreCase("true")) {
 
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number has been updated.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -978,7 +978,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                             },2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number not updated.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -1008,7 +1008,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number has been collected.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -1030,7 +1030,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                             },2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number not collected.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));

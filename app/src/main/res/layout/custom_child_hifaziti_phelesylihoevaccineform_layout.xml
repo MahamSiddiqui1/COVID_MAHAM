@@ -53,7 +53,7 @@
                         android:text="sss"
                         android:visibility="invisible"
                         android:textColor="@color/green_color"
-                        android:textSize="@dimen/_15sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <TextView
                         android:id="@+id/txt_polio_eng"
@@ -64,7 +64,7 @@
                         android:text="(Polio)"
                         android:layout_alignParentRight="true"
                         android:textColor="@color/green_color"
-                        android:textSize="@dimen/_15sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 

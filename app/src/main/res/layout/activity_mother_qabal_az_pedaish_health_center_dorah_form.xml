@@ -33,7 +33,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mqapf_qabalAzpedaish_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -164,7 +164,7 @@
                                     android:fontFamily="@font/droid_naskh_regular"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -216,7 +216,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_wazan_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -267,7 +267,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_khoon_ka_dabaoo_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -310,7 +310,7 @@
                                         android:layout_toLeftOf="@id/checkbox_140_90_sy_kum"
                                         android:text="@string/mqaphcd_140_90_sy_kum_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -351,7 +351,7 @@
                                         android:layout_toLeftOf="@id/checkbox_140_90_sy_zyada"
                                         android:text="@string/mqaphcd_140_90_sy_zyada_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -372,7 +372,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_bachey_kay_dil_ki_dharkan_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -415,7 +415,7 @@
                                         android:layout_toLeftOf="@id/checkbox_mojood_hai_2"
                                         android:text="@string/mqaphcd_mojood_hai_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_nahi_hai_2"
@@ -440,7 +440,7 @@
                                         android:layout_toLeftOf="@+id/checkbox_nahi_hai_2"
                                         android:text="@string/mqaphcd_nahi_hai_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -462,7 +462,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_raham_ki_oonchai_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -494,7 +494,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/mqaphcd_centimeter_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -511,7 +511,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mqaphcd_haftay_hai_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -610,7 +610,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_bachay_ka_rukh_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -652,7 +652,7 @@
                                         android:layout_toLeftOf="@id/checkbox_sir_kay_baal_seedha"
                                         android:text="@string/mqaphcd_sir_kay_baal_seedha_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_aara"
@@ -677,7 +677,7 @@
                                         android:layout_toLeftOf="@+id/checkbox_aara"
                                         android:text="@string/mqaphcd_aara_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -721,7 +721,7 @@
                                         android:layout_toLeftOf="@id/checkbox_thercha"
                                         android:text="@string/mqaphcd_thercha_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_ulta"
@@ -746,7 +746,7 @@
                                         android:layout_toLeftOf="@+id/checkbox_ulta"
                                         android:text="@string/mqaphcd_ulta_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -768,7 +768,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_peeshab_ka_muaina_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -811,7 +811,7 @@
                                         android:layout_toLeftOf="@id/checkbox_normal"
                                         android:text="@string/mqaphcd_normal_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -853,7 +853,7 @@
                                     android:layout_toLeftOf="@id/checkbox_sugar_ki_mojoodgi"
                                     android:text="@string/mqaphcd_sugar_ki_mojoodgi_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 
@@ -895,7 +895,7 @@
                                         android:layout_toLeftOf="@id/checkbox_protein_ki_mojoodgi"
                                         android:text="@string/mqaphcd_protein_ki_mojoodgi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -916,7 +916,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_haemoglobin_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -959,7 +959,7 @@
                                         android:layout_toLeftOf="@id/checkbox_100gm_dl_sy_kum"
                                         android:text="@string/mqaphcd_100gm_dl_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <TextView
                                         android:id="@+id/txt_say_kum"
@@ -970,7 +970,7 @@
                                         android:layout_marginRight="@dimen/_1sdp"
                                         android:text="@string/mqaphcd_say_kum_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -1011,7 +1011,7 @@
                                         android:layout_toLeftOf="@id/checkbox_100gm_dl_sy_zyada"
                                         android:text="@string/mqaphcd_100gm_dl_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <TextView
                                         android:id="@+id/txt_say_zyada"
@@ -1022,7 +1022,7 @@
                                         android:layout_marginRight="@dimen/_1sdp"
                                         android:text="@string/mqaphcd_say_zyada_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 

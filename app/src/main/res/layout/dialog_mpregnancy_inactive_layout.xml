@@ -37,7 +37,7 @@
             android:paddingRight="@dimen/_10sdp"
             android:text="حمل غیر فعال کرنے کی وجہ منتخب کریں."
             android:textColor="@color/pink_color"
-            android:textSize="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
             android:visibility="gone" />
 
         <LinearLayout

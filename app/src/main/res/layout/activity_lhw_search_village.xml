@@ -27,7 +27,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="تلاش"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
             <com.oshi.libsearchtoolbar.SearchAnimationToolbar
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:text=" کا کوئی ریکارڈ نہیں"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -155,7 +155,7 @@
                         android:maxLines="1"
                         android:text="Parsan"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -191,7 +191,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:text="لوڈنگ ڈیٹا..."
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_14sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -203,7 +203,7 @@
                     android:layout_gravity="center"
                     android:text="کوئی ریکارڈ نہیں "
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_14sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold"
                     android:visibility="gone" />
 

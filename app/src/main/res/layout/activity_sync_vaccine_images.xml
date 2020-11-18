@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="سینک تصاویر"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>

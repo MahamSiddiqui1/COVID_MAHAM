@@ -205,7 +205,7 @@ public class Login_Activity extends Activity {
             pinfo = getPackageManager().getPackageInfo(getPackageName(), 0);
             versionNumber = pinfo.versionCode;
             versionName = pinfo.versionName;
-            txt_app_version_name.setText(" ورژن : " + versionName);
+            txt_app_version_name.setText( " Version: "+ versionName);
             Log.d("000258" ," ورژن : "+versionName);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

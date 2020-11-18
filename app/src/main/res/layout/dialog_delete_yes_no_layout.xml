@@ -24,7 +24,7 @@
             android:gravity="center"
             android:text="کیا آپ اس حمل کو ڈیلیٹ کرنا چاہتے ہے؟"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_13sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="normal" />
 
         <View
@@ -46,7 +46,7 @@
             android:paddingBottom="@dimen/_15sdp"
             android:text="ہاں "
             android:textColor="@color/green_color"
-            android:textSize="@dimen/_13sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
         <View
@@ -68,7 +68,7 @@
             android:paddingBottom="@dimen/_15sdp"
             android:text="نہیں"
             android:textColor="@color/graph_red_color"
-            android:textSize="@dimen/_13sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
     </LinearLayout>

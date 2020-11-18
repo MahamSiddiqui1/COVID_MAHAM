@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="Antenatal Form"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_18sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -515,7 +515,7 @@
                         android:background="@drawable/login_button_shape_layout"
                         android:text="@string/camf_jamaa_kre_button_text"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </LinearLayout>

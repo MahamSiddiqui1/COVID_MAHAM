@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mbap_badAzpedaish_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -138,7 +138,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/md_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"

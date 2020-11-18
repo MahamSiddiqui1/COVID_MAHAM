@@ -33,7 +33,7 @@
                     android:text="@string/registerInd"
                     android:textAlignment="center"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_18sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -128,12 +128,12 @@
                                 <TextView
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="Full Name"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -191,7 +191,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/gender"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -210,7 +210,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/dob"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -277,7 +277,6 @@
                                             android:background="@null"
                                             android:cursorVisible="false"
                                             android:drawableLeft="@drawable/ic_calender"
-                                            android:drawableRight="@drawable/ic_calender"
                                             android:drawablePadding="@dimen/_10sdp"
                                             android:focusableInTouchMode="false"
                                             android:gravity="left"
@@ -325,7 +324,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/father"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -386,7 +385,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cnic"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -453,7 +452,7 @@
                                             android:layout_alignParentRight="false"
                                             android:text="@string/Marital"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -470,7 +469,7 @@
                                             android:layout_alignParentRight="true"
                                             android:text="Phone Number"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -577,7 +576,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="Age"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -640,7 +639,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/address"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -698,7 +697,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/famID"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -716,7 +715,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/indID"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -815,7 +814,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/tehsil"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -833,7 +832,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/district"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -878,8 +877,8 @@
                                             android:id="@+id/sp_tahseel"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginEnd="@dimen/_1sdp"
                                             android:layout_toRightOf="@+id/image_drop1"
                                             android:background="@null"
                                             android:popupElevation="0dp"
@@ -953,7 +952,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/village"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -971,7 +970,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/union"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -1112,7 +1111,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/Toilet"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -1129,7 +1128,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/drinkingWater"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -1234,7 +1233,7 @@
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                                 <EditText
                                     android:id="@+id/et_peenay_kai_paani_ka_zarya"
@@ -1264,7 +1263,7 @@
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:text="@string/reg_latrine_system_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                                 <EditText
                                     android:id="@+id/et_latrine_system"
@@ -1294,7 +1293,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/submit"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>

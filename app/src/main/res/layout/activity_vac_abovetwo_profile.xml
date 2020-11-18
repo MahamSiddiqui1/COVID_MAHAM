@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/cp_profile_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -160,7 +160,7 @@
                                     android:layout_weight="1"
                                     android:text="نام"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -228,7 +228,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/vul_jins_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -246,7 +246,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/vul_tareekh_pedaish_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -358,7 +358,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/mr_walida_ka_naam_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -375,7 +375,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_walid_ka_naame_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -447,7 +447,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/vul_walid_ka_shanakti_card_number_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -515,7 +515,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/cr_azdawaji_hasiyat_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -532,7 +532,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="والد کا موبائل نمبر"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -630,7 +630,7 @@
                                         android:layout_weight="1"
                                         android:text="شوہر کا نام"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 
@@ -680,7 +680,7 @@
                                         android:layout_weight="1"
                                         android:text="شوہر کا شناختی کارڈ نمبر"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 
@@ -729,7 +729,7 @@
                                         android:layout_weight="1"
                                         android:text="شوہر کا موبائل نمبر"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 
@@ -780,7 +780,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -836,7 +836,7 @@
                                         android:layout_weight="1"
                                         android:text="@string/vul_vacination_card_number_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </TableRow>
@@ -1100,7 +1100,7 @@
                                                 android:layout_marginRight="@dimen/_15sdp"
                                                 android:text="@string/cr_tabsarah_wajah_wafaat_text"
                                                 android:textColor="@color/text_color"
-                                                android:textSize="@dimen/_14sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -1117,7 +1117,7 @@
                                                 android:layout_marginRight="@dimen/_5sdp"
                                                 android:text="@string/cr_tareekh_wafat_text"
                                                 android:textColor="@color/text_color"
-                                                android:textSize="@dimen/_14sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -1217,7 +1217,7 @@
                                         android:layout_weight="1"
                                         android:text="وجہ وفات لکھے"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 

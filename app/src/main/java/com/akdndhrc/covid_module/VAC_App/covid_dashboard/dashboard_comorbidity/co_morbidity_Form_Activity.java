@@ -339,7 +339,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                 if (et_tareekh_visit.getText().toString().length() < 1) {
                     final Snackbar snackbar = Snackbar.make(v, "Please select a visit date.", Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
-                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                     TextView textView = (TextView) mySbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);
@@ -447,7 +447,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                         final Snackbar snackbar = Snackbar.make(v, "Data has been collected.", Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
-                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                         TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.WHITE);
@@ -476,7 +476,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     } else {
                         final Snackbar snackbar = Snackbar.make(v, "Data not collected.", Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
-                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                        mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                         TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.WHITE);

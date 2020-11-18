@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/mbf_maa_ki_bemaari_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -160,7 +160,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -219,7 +219,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/cbf_ishaal_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_ishaal"
@@ -382,7 +382,7 @@
                                             android:layout_centerVertical="true"
                                             android:text="گولی کی مقدار"
                                             android:textColor="@color/pink_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                         <RelativeLayout
                                             android:id="@+id/rl_add"
@@ -418,7 +418,7 @@
                                                 android:layout_gravity="center_vertical"
                                                 android:gravity="center_vertical"
                                                 android:textColor="@color/dark_blue_color"
-                                                android:textSize="@dimen/_14sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -476,7 +476,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_khansi_aur_saans_ki_bemaari_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_khansi_aur_saans"
@@ -682,7 +682,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_bukhar_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_bukhar"
@@ -886,7 +886,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_khoon_ki_kami_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_khoon_ki_kami"
@@ -1090,7 +1090,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_ankhon_ki_bemaari_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_ankhon_ki_bemaari"
@@ -1295,7 +1295,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_jins_zanana_amraaz_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_jins_zanana_amraaz"
@@ -1495,7 +1495,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_mumkina_malaria_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_mumkina_malaria"
@@ -1698,7 +1698,7 @@
                                         android:text="@string/mbf_mumkina_tea_be_ki_tashkhees_kai_lye_reffer_text"
                                         android:textColor="@color/text_color"
 
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_mumkina_tea_be"
@@ -1902,7 +1902,7 @@
                                         android:text="@string/mbf_tashkhees_shuda_amraaz_tea_be_text"
                                         android:textColor="@color/text_color"
 
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_tashkhees_shuda_amraaz_tea_be"
@@ -2105,7 +2105,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_muawnat_doraan_elaaj_tea_be_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_muawnat_doraan_elaaj_tea_be"
@@ -2306,7 +2306,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_elaaj_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_elaaj"
@@ -2499,7 +2499,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mbf_refferal_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -2516,7 +2516,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mbf_refferal_ki_waja_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -2569,7 +2569,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mbf_refferal_hospital_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 

@@ -44,7 +44,7 @@
                     android:layout_marginRight="@dimen/_5sdp"
                     android:text="CAA Model School"
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_13sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -68,7 +68,7 @@
                     android:text="Head Name: "
                     android:textStyle="bold"
                     android:textColor="@color/light_grey_color"
-                    android:textSize="@dimen/_11sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <TextView
                     android:id="@+id/tvSchoolHeadName"
@@ -80,7 +80,7 @@
                     android:layout_toRightOf="@+id/tvHeadName"
                     android:text="Noman"
                     android:textColor="@color/light_grey_color"
-                    android:textSize="@dimen/_11sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
 
             </RelativeLayout>

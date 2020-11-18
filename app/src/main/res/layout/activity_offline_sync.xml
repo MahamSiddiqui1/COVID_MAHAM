@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="آف لائن سینک"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -138,7 +138,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک ملک"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -147,7 +147,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </RelativeLayout>
@@ -177,7 +177,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک صوبہ"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -186,7 +186,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -226,7 +226,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک ضلع"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -235,7 +235,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -275,7 +275,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک تحصیل"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -285,7 +285,7 @@
                                     android:layout_alignParentStart="true"
 
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -326,7 +326,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک یونین کونسل"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -336,7 +336,7 @@
                                     android:layout_alignParentStart="true"
 
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -377,7 +377,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک مرکز صحت"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -387,7 +387,7 @@
                                     android:layout_alignParentStart="true"
 
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -428,7 +428,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک گاؤں"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -438,7 +438,7 @@
                                     android:layout_alignParentStart="true"
 
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -479,7 +479,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک صارفین"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -488,7 +488,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -527,7 +527,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک دوائیں"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -536,7 +536,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -575,7 +575,7 @@
                                     android:layout_alignParentEnd="true"
                                     android:text="سینک ویکسین"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                                 <TextView
@@ -584,7 +584,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_14sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 

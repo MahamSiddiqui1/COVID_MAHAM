@@ -65,7 +65,7 @@
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:text="@string/mbr_is_tareekh_tk_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 
@@ -82,7 +82,7 @@
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:text="@string/mbr_is_tareekh_say_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 

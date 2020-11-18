@@ -33,7 +33,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/cp_profile_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -165,7 +165,7 @@
                                     android:gravity="center_horizontal"
                                     android:text="@string/cr_dou_saal_sy_kum_umer"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 
@@ -224,7 +224,7 @@
                                     android:layout_weight="1"
                                     android:text="نام"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -275,7 +275,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/mr_walida_ka_naam_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -292,7 +292,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_walid_ka_naame_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -382,7 +382,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/cr_tareekh_pedaish_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -399,7 +399,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_sarbarah_kay_sath_rishta_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -486,7 +486,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/age"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -503,7 +503,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_shanakhti_card_number_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_13sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -593,7 +593,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_jins_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -611,7 +611,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mr_azdawaji_hasiyat_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -731,7 +731,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/cr_tareekh_nakal_makani_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -748,7 +748,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="والد کا موبائل نمبر"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -820,7 +820,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cr_tabsarah_wajah_nakal_makani_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -874,7 +874,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/cr_khandan_number_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -891,7 +891,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/cr_infradi_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -1104,7 +1104,7 @@
                                                 android:layout_marginRight="@dimen/_15sdp"
                                                 android:text="@string/cr_tabsarah_wajah_wafaat_text"
                                                 android:textColor="@color/text_color"
-                                                android:textSize="@dimen/_14sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -1121,7 +1121,7 @@
                                                 android:layout_marginRight="@dimen/_5sdp"
                                                 android:text="@string/cr_tareekh_wafat_text"
                                                 android:textColor="@color/text_color"
-                                                android:textSize="@dimen/_14sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -1221,7 +1221,7 @@
                                         android:layout_weight="1"
                                         android:text="وجہ وفات لکھے"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 
@@ -1336,7 +1336,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/cr_jaama_kre_text"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>

@@ -437,7 +437,7 @@
                         android:layout_marginRight="@dimen/_80sdp"
                         android:text="@string/tehsil"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -454,7 +454,7 @@
                         android:layout_marginRight="@dimen/_65sdp"
                         android:text="@string/district"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </RelativeLayout>
@@ -577,7 +577,7 @@
                         android:layout_marginRight="100dp"
                         android:text="@string/village"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -594,7 +594,7 @@
                         android:layout_marginRight="35dp"
                         android:text="@string/union"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </RelativeLayout>
@@ -709,7 +709,7 @@
                         android:layout_marginRight="0dp"
                         android:text="@string/Toilet"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -726,7 +726,7 @@
                         android:layout_marginRight="0dp"
                         android:text="@string/drinkingWater"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </RelativeLayout>
@@ -831,7 +831,7 @@
                 android:layout_marginRight="@dimen/_5sdp"
                 android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <EditText
                 android:id="@+id/et_peenay_kai_paani_ka_zarya"
@@ -861,7 +861,7 @@
                 android:layout_marginRight="@dimen/_5sdp"
                 android:text="@string/reg_latrine_system_text"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <EditText
                 android:id="@+id/et_latrine_system"

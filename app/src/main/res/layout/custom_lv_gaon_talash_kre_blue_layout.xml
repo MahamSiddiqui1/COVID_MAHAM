@@ -45,7 +45,7 @@
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:text="شہلہ علی"
                         android:textColor="@color/hp_listview_textview_redcolor"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                     <TextView
@@ -58,7 +58,7 @@
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:text="@string/hp_listview_tareekh_text"
                         android:textColor="@color/hp_listview_textview_bluecolor"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -88,7 +88,7 @@
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:text="@string/hp_listview_gaon_text"
                         android:textColor="@color/hp_listview_textview_greycolor"
-                        android:textSize="@dimen/_15sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 

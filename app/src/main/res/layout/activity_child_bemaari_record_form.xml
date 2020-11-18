@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/cbr_bachey_ki_bemaari_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -160,7 +160,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -220,7 +220,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/cbf_ishaal_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_ishaal"
@@ -396,7 +396,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_khansi_aur_saans_ki_bemaari_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_khansi_aur_saans"
@@ -521,7 +521,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_bukhar_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_bukhar"
@@ -646,7 +646,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_khoon_ki_kami_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_khoon_ki_kami"
@@ -771,7 +771,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_ankhon_ki_bemaari_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_ankhon_ki_bemaari"
@@ -895,7 +895,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/cbf_pait_kai_keeray_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_pait_kai_keeray"
@@ -1022,7 +1022,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_mumkina_malaria_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_mumkina_malaria"
@@ -1146,7 +1146,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbf_elaaj_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_elaaj"
@@ -1263,7 +1263,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_refferal_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
                             </TableRow>
@@ -1281,7 +1281,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_refferal_ki_waja_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -1336,7 +1336,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_refferal_hospital_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 

@@ -147,7 +147,7 @@ public class side_effects_List_Activity extends AppCompatActivity {
 
                             final Snackbar snackbar = Snackbar.make(v, "There is a record of today's date. Please wait for tomorrow's date.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
-                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                             TextView textView = (TextView) mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);

@@ -69,7 +69,7 @@
             android:gravity="center"
             android:text="Do you want to log out of the application?"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="normal" />
 
         <View
@@ -90,7 +90,7 @@
             android:paddingTop="@dimen/_15sdp"
             android:paddingBottom="@dimen/_15sdp"
             android:text="Log out"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
         <View
@@ -112,7 +112,7 @@
             android:paddingBottom="@dimen/_15sdp"
             android:text="Cancel"
             android:textColor="@color/graph_red_color"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
     </LinearLayout>

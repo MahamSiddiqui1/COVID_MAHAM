@@ -33,7 +33,7 @@
 
                     android:text="@string/nav_adaad_O_shumaar_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -142,7 +142,7 @@
                                         android:layout_marginRight="@dimen/_20sdp"
                                         android:text="@string/mbr_is_tareekh_tk_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -159,7 +159,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/mbr_is_tareekh_say_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_14sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 

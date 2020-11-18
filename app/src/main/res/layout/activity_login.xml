@@ -73,7 +73,7 @@
                     android:paddingBottom="@dimen/_2sdp"
                     android:text="Offline Sync"
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_11sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold"
                     android:visibility="visible" />
 
@@ -126,7 +126,7 @@
                         android:maxLines="1"
                         android:textColor="@color/color_white"
                         android:textColorHint="@color/color_white"
-                        android:textSize="@dimen/_20sdp">
+                        android:textSize="@dimen/_18sdp">
 
                     </EditText>
 
@@ -157,7 +157,7 @@
                         android:maxLines="1"
                         android:textColor="@color/color_white"
                         android:textColorHint="@color/color_white"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/_18sdp" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -170,7 +170,7 @@
                     android:layout_marginRight="20dp"
                     android:text="@string/login_forgot_password_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_20sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -197,7 +197,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:text="@string/Login"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_22sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <LinearLayout
                 android:id="@+id/rl_sync"

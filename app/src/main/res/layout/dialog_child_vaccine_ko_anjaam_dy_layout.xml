@@ -51,7 +51,7 @@
                 android:background="@drawable/login_button_shape_layout"
                 android:text="@string/dialog_vaccine_ko_anjaam_dy_button_text"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/btn_phle_sy_li_hoe_vaccine"
@@ -62,7 +62,7 @@
                 android:background="@drawable/round_button_shape_layout"
                 android:text="@string/dialog_phle_sy_li_hoe_vaccine_button_text"
                 android:textColor="@color/pink_color"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_12sdp" />
 
         </LinearLayout>
 

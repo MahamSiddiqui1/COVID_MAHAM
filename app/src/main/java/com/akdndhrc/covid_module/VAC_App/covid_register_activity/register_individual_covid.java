@@ -71,7 +71,7 @@ public class register_individual_covid extends AppCompatActivity {
     Button btn_jamaa_kre, btn_jari_rhy;
     Spinner sp_gaon, sp_zila, sp_union_council, sp_tahseel, sp_jins,sp_azdawaji_hasiyat,sp_peenay_kai_paani_ka_zarya, sp_latrine_system;
     Switch sw_biometric_faal_kre, sw_qrcode_faal_kre;
-    EditText et_bachey_ka_naam, et_tareekh_pedaish, et_walid_ka_naam, et_walida_ka_naam,et_walid_ka_shanakti_card_number, et_walid_ka_mobile_number, et_vacination_card_number, et_address,et_shohar_ka_naam,
+    EditText et_famid,et_bachey_ka_naam, et_tareekh_pedaish, et_walid_ka_naam, et_walida_ka_naam,et_walid_ka_shanakti_card_number, et_walid_ka_mobile_number, et_vacination_card_number, et_address,et_shohar_ka_naam,
             et_shohar_ka_cnic_number,et_shohar_ka_mobile_number,et_peenay_kai_paani_ka_zarya, et_latrine_system;
     double latitude;
     double longitude;
@@ -141,6 +141,7 @@ public class register_individual_covid extends AppCompatActivity {
         et_walid_ka_mobile_number = findViewById(R.id.et_mobile_number);
         et_vacination_card_number = findViewById(R.id.et_vacination_card_number);
         et_address = findViewById(R.id.et_address);
+        et_famid=findViewById(R.id.et_fam_vac_id);
      //   et_shohar_ka_naam = findViewById(R.id.et_shohar_ka_naam);
       //  et_shohar_ka_cnic_number = findViewById(R.id.et_shohar_ka_cnic_number);
        // et_shohar_ka_mobile_number = findViewById(R.id.et_shohar_ka_mobile_number);
@@ -856,17 +857,24 @@ public class register_individual_covid extends AppCompatActivity {
             jobj.put("khandan_number_manual", "" + "0");
            // jobj.put("age", "" + age);
             jobj.put("manual_id", "" + "0");
+            jobj.put("mobile", "" + et_walid_ka_mobile_number.getText().toString());
+            jobj.put("fam_id", "" + et_famid.getText().toString());
             jobj.put("union_council", "" + union_council);
             jobj.put("vaccination_card_number", et_vacination_card_number.getText().toString());
             jobj.put("record_date", "" + TodayDate);
+
             jobj.put("sp_zila", "" + String.valueOf(sp_zila.getSelectedItem()));
             jobj.put("sp_zila_pos", "" + String.valueOf(sp_zila.getSelectedItemPosition() - 1));
-            jobj.put("sp_tahseel", "" + String.valueOf(sp_tahseel.getSelectedItem()));
+            jobj.put("gender", "" + String.valueOf(sp_jins.getSelectedItemPosition() - 1));
+            jobj.put("tahseel", "" + String.valueOf(sp_tahseel.getSelectedItemPosition() - 1));
             jobj.put("sp_tahseel_pos", "" + String.valueOf(sp_tahseel.getSelectedItemPosition() - 1));
             jobj.put("sp_unioncouncil", "" + String.valueOf(sp_union_council.getSelectedItem()));
             jobj.put("sp_unioncouncil_pos", "" + String.valueOf(sp_union_council.getSelectedItemPosition() - 1));
             jobj.put("sp_village", "" + String.valueOf(sp_gaon.getSelectedItem()));
             jobj.put("sp_village_pos", "" + String.valueOf(sp_gaon.getSelectedItemPosition() - 1));
+            jobj.put("sp_laterine", "" + String.valueOf(sp_latrine_system.getSelectedItemPosition() - 1));//spinner
+            jobj.put("sp_water", "" + String.valueOf(sp_peenay_kai_paani_ka_zarya.getSelectedItemPosition() - 1));//spinner
+
 
             // jobjMain.put("data", jobj);
             uuid = UUID.randomUUID().toString().replace("-", "");

@@ -30,7 +30,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/title_dashboard"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_18sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -139,7 +139,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/cd_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -237,13 +237,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentRight="false"
                             android:layout_centerInParent="true"
-                            android:layout_centerVertical="true"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:text="@string/covid"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_14sdp"
                             android:textStyle="bold" />
 
 
@@ -285,11 +284,10 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="false"
                             android:layout_centerInParent="true"
-                            android:layout_centerVertical="true"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:text="@string/sideEffects"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_14sdp"
                             android:textStyle="bold" />
 
 
@@ -376,11 +374,10 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="false"
                             android:layout_centerInParent="true"
-                            android:layout_centerHorizontal="true"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:text="@string/comorbidity"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_14sdp"
                             android:textStyle="bold" />
 
 
@@ -459,7 +456,7 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:text="STATUS"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_18sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -488,7 +485,7 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:text="@string/profile"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_18sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>

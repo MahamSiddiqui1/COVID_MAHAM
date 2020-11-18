@@ -47,7 +47,7 @@
                     android:layout_weight="1"
                     android:text="@string/nav_talash_text"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </TableRow>
 

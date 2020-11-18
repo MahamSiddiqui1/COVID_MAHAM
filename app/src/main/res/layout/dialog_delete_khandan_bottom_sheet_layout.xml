@@ -170,7 +170,7 @@
                 android:gravity="right"
                 android:text="گاؤں کا نام:"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_11sdp" />
+                android:textSize="@dimen/_12sdp" />
 
         </RelativeLayout>
 
@@ -197,7 +197,7 @@
         android:layout_marginLeft="@dimen/_5sdp"
         android:text="کیا آپ اس  خاندان کو ڈیلیٹ کرنا چاہتے ہیں؟"
         android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_13sdp"
+        android:textSize="@dimen/_12sdp"
         android:textStyle="bold" />
 
 

@@ -98,7 +98,7 @@
                 android:gravity="center"
                 android:text="@string/inside_unioncouncil_vac"
                 android:textColor="#fff"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                 android:gravity="center"
                 android:text="@string/nav_talash_text"
                 android:textColor="#fff"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <TextView
                 android:layout_width="@dimen/_90sdp"
@@ -121,7 +121,7 @@
                 android:gravity="center"
                 android:text="@string/outside_unioncouncil_vac"
                 android:textColor="#fff"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_12sdp" />
 
 
         </RelativeLayout>
@@ -169,7 +169,7 @@
                         android:gravity="center"
                         android:text="@string/nav_sync_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -189,7 +189,7 @@
                         android:gravity="center"
                         android:text="@string/nav_sync_images_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -208,7 +208,7 @@
                         android:gravity="center"
                         android:text="@string/nav_adaad_O_shumaar_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </RelativeLayout>
@@ -229,7 +229,7 @@
                         android:gravity="center"
                         android:text="ویڈیوز"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                     <!--android:text="@string/nav_sync_text"-->
                 </RelativeLayout>
@@ -250,7 +250,7 @@
                         android:gravity="center"
                         android:text="بلوٹوتھ فائل"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
                 </RelativeLayout>
@@ -272,7 +272,7 @@
                         android:gravity="center"
                         android:text="@string/nav_aamdani_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -292,7 +292,7 @@
                         android:gravity="center"
                         android:text="@string/nav_refferal_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -312,7 +312,7 @@
                         android:gravity="center"
                         android:text="@string/nav_taleeem_O_wasaeel_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -332,7 +332,7 @@
                         android:gravity="center"
                         android:text="@string/nav_application_settings_text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 
@@ -358,7 +358,7 @@
                 android:gravity="center"
                 android:text="@string/nav_logout_text"
                 android:textColor="#fff"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_12sdp" />
 
 
             <RelativeLayout

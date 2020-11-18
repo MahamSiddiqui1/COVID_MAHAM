@@ -24,7 +24,7 @@
                 android:gravity="center"
                 android:text="Group Name"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

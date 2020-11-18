@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/co_morbidity"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -175,7 +175,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/dateLabel"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -265,7 +265,7 @@
                                             android:layout_alignParentRight="false"
                                             android:text="@string/diabetes"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -283,7 +283,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reading"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -393,7 +393,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/bloodPressure"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -411,7 +411,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reading"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -529,7 +529,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/cholestrol"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -547,7 +547,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reading"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -686,7 +686,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/heartDisease"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -704,7 +704,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -818,7 +818,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/cancer"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -836,7 +836,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>

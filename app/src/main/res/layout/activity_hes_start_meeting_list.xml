@@ -31,7 +31,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="اسکول  میٹنگ"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -125,7 +125,7 @@
                             android:gravity="right"
                             android:text="موضوع"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                         <Spinner
                             android:id="@+id/sp_topic"
@@ -147,7 +147,7 @@
                             android:gravity="right"
                             android:text="اسکول کا انتخاب"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                         <Spinner
                             android:id="@+id/sp_school_list"
@@ -175,7 +175,7 @@
                                 android:layout_marginRight="@dimen/_35sdp"
                                 android:text="مرد"
                                 android:textColor="@color/dark_blue_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                             <RelativeLayout
                                 android:id="@+id/rl_add_male"
@@ -211,7 +211,7 @@
                                     android:layout_gravity="center_vertical"
                                     android:gravity="center_vertical"
                                     android:textColor="@color/light_grey_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 
@@ -249,7 +249,7 @@ android:layout_centerInParent="true"
                                 android:layout_marginRight="@dimen/_35sdp"
                                 android:text="عورت"
                                 android:textColor="@color/dark_blue_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                             <RelativeLayout
                                 android:id="@+id/rl_add_female"
@@ -288,7 +288,7 @@ android:layout_centerInParent="true"
                                     android:layout_gravity="center_vertical"
                                     android:gravity="center_vertical"
                                     android:textColor="@color/light_grey_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </RelativeLayout>
 

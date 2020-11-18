@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/chpslhvf_bachey_kai_hifaziti_teekey_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>

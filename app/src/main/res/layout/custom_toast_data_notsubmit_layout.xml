@@ -32,7 +32,7 @@
             android:text=" ڈیٹا جامع نہیں ہوا"
             android:textColor="@color/dark_blue_color"
             android:textStyle="bold"
-            android:textSize="@dimen/_13sdp" />
+            android:textSize="@dimen/_12sdp" />
 
 
     </LinearLayout>

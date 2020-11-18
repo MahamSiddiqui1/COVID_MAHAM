@@ -187,7 +187,7 @@
                 android:gravity="right"
                 android:text="Age"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_11sdp" />
+                android:textSize="@dimen/_12sdp" />
 
 
             <TextView
@@ -238,7 +238,7 @@
         android:layout_marginLeft="@dimen/_5sdp"
         android:text="کیا آپ اس ممبر کو اس خاندان سے ڈیلیٹ کرنا چاہتے ہیں؟"
         android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_13sdp"
+        android:textSize="@dimen/_12sdp"
         android:textStyle="bold" />
 
 

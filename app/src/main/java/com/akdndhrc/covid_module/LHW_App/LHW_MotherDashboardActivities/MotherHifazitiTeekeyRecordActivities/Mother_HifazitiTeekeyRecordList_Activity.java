@@ -198,7 +198,7 @@ public class Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActivity 
 //                            Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
                             final Snackbar snackbar = Snackbar.make(view, "Vaccination was refused.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
-                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
@@ -214,7 +214,7 @@ public class Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActivity 
                             Log.d("000555", "Not Ref");
                             final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
-                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                            mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
@@ -511,7 +511,7 @@ public class Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActivity 
 
                     final Snackbar snackbar = Snackbar.make(v, "Vaccine data has been collected.", Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
-                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                     TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);
@@ -660,7 +660,7 @@ public class Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActivity 
 
                     final Snackbar snackbar = Snackbar.make(v, "Vaccine data has been collected.", Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
-                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+                    mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                     TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);

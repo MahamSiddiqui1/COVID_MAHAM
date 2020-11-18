@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="رجسٹر مریض"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -157,7 +157,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -209,7 +209,7 @@
                                     android:layout_weight="1"
                                     android:text="مریض کا نام"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -274,7 +274,7 @@
                                             android:layout_marginRight="@dimen/_15sdp"
                                             android:text="@string/cr_jins_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -291,7 +291,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/age"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -383,7 +383,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_runny_nose_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -436,7 +436,7 @@
                                         android:layout_toLeftOf="@id/cb_runynose_haan"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_runynose_nahi"
@@ -472,7 +472,7 @@
                                         android:layout_toLeftOf="@+id/cb_runynose_nahi"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -494,7 +494,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_sore_throat_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -537,7 +537,7 @@
                                         android:layout_toLeftOf="@id/cb_throat_yes"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_throat_nahi"
@@ -562,7 +562,7 @@
                                         android:layout_toLeftOf="@+id/cb_throat_nahi"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -584,7 +584,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_cough_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -627,7 +627,7 @@
                                         android:layout_toLeftOf="@id/cb_cough_yes"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_cough_nahi"
@@ -652,7 +652,7 @@
                                         android:layout_toLeftOf="@+id/cb_cough_nahi"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -674,7 +674,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_fever_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -717,7 +717,7 @@
                                         android:layout_toLeftOf="@id/cb_fever_yes"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_fever_nahi"
@@ -742,7 +742,7 @@
                                         android:layout_toLeftOf="@+id/cb_fever_nahi"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -764,7 +764,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_breathing_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -801,7 +801,7 @@
                                     android:layout_toLeftOf="@id/cb_braething_yes"
                                     android:text="@string/camf_haan_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_braething_nahi"
@@ -826,7 +826,7 @@
                                     android:layout_toLeftOf="@+id/cb_braething_nahi"
                                     android:text="@string/camf_nahi_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </RelativeLayout>
@@ -846,7 +846,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_ksi_dusre_mulk_sy_aae_ho_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -883,7 +883,7 @@
                                     android:layout_toLeftOf="@id/cb_another_country_haan"
                                     android:text="@string/camf_haan_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_another_country_nahi"
@@ -908,7 +908,7 @@
                                     android:layout_toLeftOf="@+id/cb_another_country_nahi"
                                     android:text="@string/camf_nahi_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </RelativeLayout>
@@ -928,7 +928,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/cvf_ksi_dusre_mulk_sy_aae_hoe_person_sy_hth_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
 
 
@@ -965,7 +965,7 @@
                                     android:layout_toLeftOf="@id/cb_handshake_haan"
                                     android:text="@string/camf_haan_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_handshake_nahi"
@@ -990,7 +990,7 @@
                                     android:layout_toLeftOf="@+id/cb_handshake_nahi"
                                     android:text="@string/camf_nahi_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </RelativeLayout>
@@ -1015,7 +1015,7 @@
                                         android:layout_weight="1"
                                         android:text="@string/cbf_refferal_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp"
+                                        android:textSize="@dimen/_12sdp"
                                         android:textStyle="bold" />
 
                                 </TableRow>
@@ -1033,7 +1033,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text=" ریفرل صحت مرکز"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </TableRow>
 

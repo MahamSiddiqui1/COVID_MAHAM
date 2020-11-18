@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_BelowTwoProfileWithKhandan_Activity">
+    >
 
 
     <RelativeLayout
@@ -15,7 +15,7 @@
         <RelativeLayout
             android:id="@+id/rl_home_top"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignParentTop="true">
 
             <RelativeLayout
@@ -28,37 +28,33 @@
                     android:id="@+id/tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="@string/cp_profile_text"
+                    android:text="@string/register"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/rl_navigation_drawer"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:clickable="true"
-                android:visibility="gone">
+                android:layout_centerVertical="true">
 
                 <ImageView
-                    android:id="@+id/iv_navigation_drawer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:id="@+id/iv_editprofile"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
                     android:clickable="true"
-                    android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_editprofile_icon"
+                    android:tint="@color/color_white" />
 
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
@@ -80,29 +76,6 @@
 
 
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_editform"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:layout_toLeftOf="@+id/rl_home">
-
-                <ImageView
-                    android:id="@+id/iv_editprofile"
-                    android:layout_width="@dimen/_45sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_centerInParent="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_6sdp"
-                    android:src="@drawable/ic_editprofile_icon"
-                    android:tint="@color/color_white" />
-
-            </RelativeLayout>
-
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -158,7 +131,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="@string/vul_bachey_ka_naam_text"
+                                    android:text="Full Name"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -182,10 +155,10 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:background="@null"
-                                        android:gravity="right"
+                                        android:gravity="left"
                                         android:inputType="textCapWords"
                                         android:lines="1"
                                         android:maxLines="1"
@@ -224,9 +197,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_15sdp"
-                                            android:text="@string/vul_jins_text"
+                                            android:text="@string/gender"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -242,9 +216,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/vul_tareekh_pedaish_text"
+                                            android:text="@string/dob"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -275,13 +250,12 @@
                                         android:orientation="horizontal">
 
                                         <ImageView
-                                            android:id="@+id/image_arrow_drop_jins"
+                                            android:id="@+id/image_drop"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
                                             android:layout_marginStart="@dimen/_2sdp"
-                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
-                                            android:tint="@color/dark_blue_color" />
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
 
                                         <Spinner
                                             android:id="@+id/sp_jins"
@@ -289,7 +263,7 @@
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_toRightOf="@+id/image_arrow_drop_jins"
+                                            android:layout_toRightOf="@+id/image_drop"
                                             android:background="@null"
                                             android:popupElevation="0dp"
                                             android:spinnerMode="dropdown" />
@@ -313,11 +287,10 @@
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:background="@null"
                                             android:cursorVisible="false"
+                                            android:drawableLeft="@drawable/ic_calender"
                                             android:drawablePadding="@dimen/_10sdp"
-                                            android:drawableRight="@drawable/ic_calender"
-                                            android:drawableTint="@color/pink_color"
                                             android:focusableInTouchMode="false"
-                                            android:gravity="right"
+                                            android:gravity="left"
                                             android:lines="1"
                                             android:maxLines="1"
                                             android:padding="@dimen/_5sdp"
@@ -329,7 +302,6 @@
 
 
                             </TableRow>
-
 
                             <TableRow
                                 android:layout_width="wrap_content"
@@ -345,22 +317,6 @@
                                     android:orientation="horizontal"
                                     android:weightSum="2">
 
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
-                                            android:text="@string/mr_walida_ka_naam_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
-                                    </RelativeLayout>
 
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
@@ -371,9 +327,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/mr_walid_ka_naame_text"
+                                            android:text="@string/father"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -399,22 +356,6 @@
 
 
                                     <EditText
-                                        android:id="@+id/et_walida_ka_naam"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:gravity="right|center_vertical"
-                                        android:inputType="textCapWords"
-                                        android:lines="1"
-                                        android:maxLines="1"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
-
-                                    <EditText
                                         android:id="@+id/et_walid_ka_naam"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -422,7 +363,7 @@
                                         android:layout_marginStart="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
-                                        android:gravity="right|center_vertical"
+                                        android:gravity="left|center_vertical"
                                         android:inputType="textCapWords"
                                         android:lines="1"
                                         android:maxLines="1"
@@ -448,7 +389,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="@string/vul_walid_ka_shanakti_card_number_text"
+                                    android:text="@string/cnic"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -462,7 +403,6 @@
 
 
                                 <LinearLayout
-
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -474,10 +414,10 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:background="@null"
-                                        android:gravity="right"
+                                        android:gravity="left"
                                         android:inputType="number"
                                         android:lines="1"
                                         android:maxLength="15"
@@ -491,19 +431,58 @@
 
                             </TableRow>
 
+
                             <TableRow
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp">
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="@string/mr_mobile_number_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="false"
+                                            android:text="@string/Marital"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="Phone Number"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
 
                             </TableRow>
 
@@ -513,22 +492,54 @@
                                 android:layout_marginTop="@dimen/_3sdp">
 
                                 <LinearLayout
-                                    android:id="@+id/ll_mobile_number"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_azdawaji_hasiyat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/image_drops"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_2sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                        <Spinner
+                                            android:id="@+id/sp_azdawaji_hasiyat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:layout_toRightOf="@+id/image_drops"
+                                            android:background="@null"
+                                            android:popupElevation="0dp"
+                                            android:spinnerMode="dropdown" />
+
+
+                                    </RelativeLayout>
 
                                     <EditText
                                         android:id="@+id/et_mobile_number"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:gravity="right"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:gravity="left|center_vertical"
                                         android:inputType="phone"
                                         android:lines="1"
                                         android:maxLength="12"
@@ -536,10 +547,11 @@
                                         android:padding="@dimen/_5sdp"
                                         android:textSize="@dimen/_12sdp" />
 
+
                                 </LinearLayout>
 
-                            </TableRow>
 
+                            </TableRow>
 
                             <TableRow
                                 android:layout_width="wrap_content"
@@ -551,7 +563,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="@string/reg_mukamal_pata_text"
+                                    android:text="@string/address"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -574,10 +586,10 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:background="@null"
-                                        android:gravity="right"
+                                        android:gravity="left"
                                         android:inputType="textCapWords"
                                         android:lines="1"
                                         android:maxLines="1"
@@ -587,209 +599,6 @@
                                 </LinearLayout>
 
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/txt_5"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/vul_vacination_card_number_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
-
-
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_3sdp">
-
-
-                                <LinearLayout
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-
-                                    android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:id="@+id/et_vacination_card_number"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:gravity="right"
-                                        android:inputType="number"
-                                        android:lines="1"
-                                        android:maxLength="15"
-                                        android:maxLines="1"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-
-                            <LinearLayout
-                                android:id="@+id/rl_11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:gravity="right"
-                                android:orientation="horizontal"
-                                android:visibility="gone">
-
-
-                                <ImageView
-                                    android:id="@+id/image_bio"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:src="@drawable/ic_fingerprint_icon" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:background="@drawable/edittext_background_layout"
-                                android:visibility="gone">
-
-                                <RelativeLayout
-                                    android:id="@+id/rl_switch"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginStart="@dimen/_5sdp"
-                                    android:padding="@dimen/_5sdp">
-
-                                    <Switch
-                                        android:id="@+id/sw_biometric_faal_kre"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:checked="false"
-                                        android:paddingEnd="@dimen/_5sdp"
-                                        android:paddingStart="@dimen/_5sdp"
-                                        android:thumbTint="#E9A7DE" />
-
-                                </RelativeLayout>
-
-                                <RelativeLayout
-                                    android:id="@+id/rl_biometric"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical">
-
-                                    <TextView
-                                        android:id="@+id/tv_biometric_faal_kre"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
-                                        android:text="@string/vul_biometriC_ko_faAl_kre_text"
-                                        android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
-
-                                </RelativeLayout>
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/ll_qrcode"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="15dp"
-                                android:gravity="right"
-                                android:orientation="horizontal">
-
-
-                                <ImageView
-                                    android:id="@+id/image_qrcode"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:src="@drawable/ic_qrcode_icon" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:background="@drawable/edittext_background_layout">
-
-                                <RelativeLayout
-                                    android:id="@+id/rl_switch_qrcode"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginStart="@dimen/_5sdp"
-                                    android:padding="@dimen/_5sdp">
-
-                                    <Switch
-                                        android:id="@+id/sw_qrcode_faal_kre"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:checked="false"
-                                        android:paddingEnd="@dimen/_5sdp"
-                                        android:paddingStart="@dimen/_5sdp"
-                                        android:thumbTint="#E9A7DE" />
-
-                                </RelativeLayout>
-
-                                <RelativeLayout
-                                    android:id="@+id/rl_qrcode"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical">
-
-                                    <TextView
-                                        android:id="@+id/tv_qrcode"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
-                                        android:text=" QR"
-                                        android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
-
-                                    <TextView
-                                        android:id="@+id/tv_qrcode_faal_kre"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_toLeftOf="@id/tv_qrcode"
-                                        android:text="@string/cr_qr_code_ko_faal_kre_text"
-                                        android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
-
-                                </RelativeLayout>
-
-
-                            </LinearLayout>
 
 
                             <TableRow
@@ -815,9 +624,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
-                                            android:text="@string/reg_tehseel_text"
+                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:text="@string/indID"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -832,9 +642,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/reg_zila_text"
+                                            android:text="@string/famID"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -848,9 +659,114 @@
 
                             <TableRow
                                 android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/_3sdp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
 
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <EditText
+                                        android:id="@+id/et_vacination_card_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:gravity="left|center_vertical"
+                                        android:inputType="number"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textSize="@dimen/_12sdp" />
+
+
+                                    <EditText
+                                        android:id="@+id/et_fam_vac_id"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:gravity="left|center_vertical"
+                                        android:inputType="number"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textSize="@dimen/_12sdp" />
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:text="@string/tehsil"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_14sdp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/district"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_14sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
 
 
                                 <LinearLayout
@@ -873,8 +789,8 @@
                                             android:id="@+id/image_drop1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginStart="@dimen/_1sdp"
                                             android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_1sdp"
                                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
 
                                         <Spinner
@@ -882,8 +798,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
-                                            android:layout_marginEnd="@dimen/_8sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_1sdp"
                                             android:layout_toRightOf="@+id/image_drop1"
                                             android:background="@null"
                                             android:popupElevation="0dp"
@@ -952,11 +867,12 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_20sdp"
-                                            android:text="@string/reg_gaon_text"
+                                            android:text="@string/village"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
                                     </RelativeLayout>
 
@@ -969,11 +885,12 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/reg_union_council_text"
+                                            android:text="@string/union"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
 
                                     </RelativeLayout>
@@ -984,8 +901,8 @@
 
                             <TableRow
                                 android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/_3sdp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -1007,8 +924,8 @@
                                             android:id="@+id/image_drop2"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginStart="@dimen/_1sdp"
                                             android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_1sdp"
                                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
 
                                         <Spinner
@@ -1016,8 +933,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
-                                            android:layout_marginEnd="@dimen/_8sdp"
                                             android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
                                             android:layout_toRightOf="@+id/image_drop2"
                                             android:background="@null"
                                             android:popupElevation="0dp"
@@ -1086,9 +1003,205 @@
                                 </LinearLayout>
                             </TableRow>
 
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:text="@string/Toilet"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_14sdp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/drinkingWater"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_14sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/image_drop3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_1sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                        <Spinner
+                                            android:id="@+id/sp_latrine_system"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:layout_toRightOf="@+id/image_drop3"
+                                            android:background="@null"
+                                            android:popupElevation="0dp"
+                                            android:spinnerMode="dropdown" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_5sdp"
+
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <ImageView
+                                            android:id="@+id/image3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                        <Spinner
+                                            android:id="@+id/sp_peenay_kai_paani_ka_zarya"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginEnd="@dimen/_1sdp"
+                                            android:layout_toRightOf="@+id/image3"
+                                            android:background="@null"
+                                            android:popupElevation="0dp"
+                                            android:spinnerMode="dropdown" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </TableRow>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_peenay_kai_paani"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <EditText
+                                    android:id="@+id/et_peenay_kai_paani_ka_zarya"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:inputType="textCapWords"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_latrine_system"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:text="@string/reg_latrine_system_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <EditText
+                                    android:id="@+id/et_latrine_system"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:inputType="textCapWords"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
                         </TableLayout>
 
                         <Button
+
                             android:id="@+id/submit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1096,25 +1209,14 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="@dimen/_20sdp"
                             android:background="@drawable/login_button_shape_layout"
-                            android:text="@string/reg_jaama_kre_button_text"
+                            android:text="@string/submit"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp"
-                            android:visibility="gone" />
+                            android:textSize="@dimen/_18sdp" />
 
                     </RelativeLayout>
 
 
                 </ScrollView>
-
-                <ProgressBar
-                    android:id="@+id/pbProgress"
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_cardview"
-                    android:indeterminateDrawable="@drawable/rotate_animation"
-                    android:padding="@dimen/_10sdp"
-                    android:visibility="gone" />
 
 
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
@@ -1123,5 +1225,6 @@
         </RelativeLayout>
 
     </RelativeLayout>
+
 
 </android.support.constraint.ConstraintLayout>

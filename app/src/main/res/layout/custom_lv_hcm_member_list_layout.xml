@@ -54,7 +54,7 @@
                     android:layout_toRightOf="@+id/iv_icon"
                     android:text="Ali"
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_13sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -67,7 +67,7 @@
                     android:layout_marginRight="@dimen/_5sdp"
                     android:text="0 سال"
                     android:textColor="@color/light_grey_color"
-                    android:textSize="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="normal" />
 
 

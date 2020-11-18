@@ -30,7 +30,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/sideEffects"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -137,7 +137,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/md_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -157,6 +157,16 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:weightSum="2">
 
+                    <TextView
+                        android:id="@+id/txt_umer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Age:"
+                        android:textColor="@color/light_grey_color"
+                        android:textSize="@dimen/_12sdp" />
+
 
                     <TextView
                         android:id="@+id/txt_mother_age"
@@ -169,15 +179,7 @@
                         android:textSize="@dimen/_12sdp" />
 
 
-                    <TextView
-                        android:id="@+id/txt_umer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left"
-                        android:text="@string/md_maa_umer_text"
-                        android:textColor="@color/light_grey_color"
-                        android:textSize="@dimen/_12sdp" />
+
 
 
                 </LinearLayout>
@@ -235,7 +237,7 @@
                         android:background="@drawable/login_button_shape_layout"
                         android:text="ADD NEW FORM"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
                 </RelativeLayout>
 

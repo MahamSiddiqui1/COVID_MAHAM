@@ -33,7 +33,7 @@
                     android:text="@string/md_profile_text"
                     android:textAlignment="center"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -138,7 +138,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/md_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -235,7 +235,7 @@
                             android:layout_marginRight="@dimen/_20sdp"
                             android:text="@string/md_haamla_ka_record_text"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>
@@ -276,7 +276,7 @@
                             android:layout_marginRight="@dimen/_20sdp"
                             android:text="@string/md_khandani_mansobabandi_text"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>
@@ -317,7 +317,7 @@
                             android:layout_marginRight="@dimen/_20sdp"
                             android:text="@string/md_beemari_ka_record_text"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>
@@ -358,7 +358,7 @@
                             android:layout_marginRight="@dimen/_20sdp"
                             android:text="@string/md_hifazati_teekey_ka_record_text"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>
@@ -399,7 +399,7 @@
                             android:layout_marginRight="@dimen/_20sdp"
                             android:text="@string/md_mawaad"
                             android:textColor="@color/pink_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>
@@ -433,7 +433,7 @@
                     android:gravity="center"
                     android:text="@string/md_refferal_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -459,7 +459,7 @@
                     android:gravity="center"
                     android:text="@string/md_profile_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -484,7 +484,7 @@
                     android:gravity="center"
                     android:text="@string/md_aam_malomaat_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </RelativeLayout>
 

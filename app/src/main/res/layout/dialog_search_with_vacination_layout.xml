@@ -99,10 +99,10 @@
                 android:id="@+id/btn_jaari_rhy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="جاری رہے"
+                android:text="@string/cont"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_18sdp" />
 

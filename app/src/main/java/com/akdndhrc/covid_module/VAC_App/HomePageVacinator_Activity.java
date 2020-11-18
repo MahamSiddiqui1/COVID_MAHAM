@@ -416,7 +416,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_mother = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("people registered" + "@" + mData_count_mother[0][0]);
+            listDataHeader.add("Vaccine A" + "@" + mData_count_mother[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_mother[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");
@@ -495,6 +495,264 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
                 }
 
             }
+
+
+            //Women age from Fourteen to 48
+            String[][] mData_count_child = ls.executeReader("Select count(*) from MEMBER");
+            listDataHeader.add("Vaccine B" + "@" + mData_count_child[0][0]);
+            Log.d("000654", "MotherCount: " + mData_count_child[0][0]);
+            mDatafemale = ls.executeReader("Select *from MEMBER");
+            mDatachild = ls.executeReader("Select *from MEMBER");
+
+
+
+            if (mDatafemale != null) {
+                for (int i = 0; i < mDatafemale.length; i++) {
+                    Log.d("000654", "ID:: " + mDatafemale[i][0]);
+                    Log.d("000654", "Manual_ID: " + mDatafemale[i][1]);
+                    Log.d("000654", "uid: " + mDatafemale[i][2]);
+                    Log.d("000654", "khandan_id: " + mDatafemale[i][3]);
+                   /* Log.d("000654", "FullName: " + mDatafemale[i][4]);
+                    Log.d("000654", "NicNumber: " + mDatafemale[i][5]);
+                    Log.d("000654", "PhoneNumber: " + mDatafemale[i][6]);
+                    Log.d("000654", "JSON Data: " + mDatafemale[i][7]);
+                    /*Log.d("000654", "Gender: " + mDatafemale[i][8]);
+                    Log.d("000654", "Age: " + mDatafemale[i][9]);
+                    Log.d("000654", "DOB: " + mDatafemale[i][10]);
+                    Log.d("000654", "BioCode: " + mDatafemale[i][11]);
+                    Log.d("000654", "QRCode: " + mDatafemale[i][12]);
+                    Log.d("000654", "AddedBy: " + mDatafemale[i][13]);
+                    Log.d("000654", "isSynced: " + mDatafemale[i][14]);
+                    Log.d("000654", "AddedOn: " + mDatafemale[i][15]);*/
+
+                    // Log.d("000654", "lat: " + jsonObject.getString("father_name"));
+                    // mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4]+ "@" + mDatafemale[i][8]+ "@" + mDatafemale[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                    mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4] + "@" + mDatafemale[i][8] + "@" + mDatafemale[i][9]);
+
+                    // list.add(map);
+                }
+
+
+            }
+
+
+            if (mDatachild != null) {
+
+                for (int i = 0; i < mDatachild.length; i++) {
+                    Log.d("000999", "ID:: " + mDatachild[i][0]);
+                    Log.d("000999", "Manual_ID: " + mDatachild[i][1]);
+                    Log.d("000999", "uid: " + mDatachild[i][2]);
+                    Log.d("000999", "khandan_id: " + mDatachild[i][3]);
+                    Log.d("000999", "JSON Data: " + mDatachild[i][7]);
+                 /*  Log.d("000999", "FullName: " + mDatachild[i][4]);
+                    Log.d("000999", "NicNumber: " + mDatachild[i][5]);
+                    Log.d("000999", "PhoneNumber: " + mDatachild[i][6]);
+                    Log.d("000999", "Gender: " + mDatachild[i][8]);
+                    Log.d("000999", "Age: " + mDatachild[i][9]);
+                    Log.d("000999", "DOB: " + mDatachild[i][10]);
+                    Log.d("000999", "BioCode: " + mDatachild[i][11]);
+                    Log.d("000999", "QRCode: " + mDatachild[i][12]);
+                    Log.d("000999", "AddedBy: " + mDatachild[i][13]);
+                    Log.d("000999", "isSynced: " + mDatachild[i][14]);
+                    Log.d("000999", "AddedOn: " + mDatachild[i][15]);*/
+
+                    // Log.d("000999", "lat: " + jsonObject.getString("father_name"));
+
+
+                    final String mData_Khandan[][] = ls.executeReader("SELECT t1.full_name,t2.province_id,t2.district_id,t2.subdistrict_id,t2.uc_id,t2.village_id from MEMBER t1" +
+                            " LEFT JOIN KHANDAN t2 On t1.khandan_id=t2.uid" +
+                            " where t1.uid='" + mDatachild[i][2] + "'");
+
+                    if (mData_Khandan[0][1] != null && mData_Khandan[0][2] != null && mData_Khandan[0][3] != null && mData_Khandan[0][4] != null && mData_Khandan[0][4] != null) {
+                        Log.d("000123", "KHANDAN Already Register:");
+
+                        temp_khandan_value = "0";
+
+                    } else {
+                        Log.d("000123", "KHANDAN Not Register:");
+                        temp_khandan_value = "1";
+                    }
+                    child.add(mDatachild[i][2] + "@" + mDatachild[i][4] + "@" + mDatachild[i][8] + "@" + mDatachild[i][9] + "@" + temp_khandan_value);
+
+                    // child.add(mDatachild[i][2] + "@" + mDatachild[i][4]+ "@" + mDatachild[i][8]+ "@" + mDatachild[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                }
+
+            }
+
+
+
+            //Women age from Fourteen to 48
+            String[][] mData_count_child_without_qrcode = ls.executeReader("Select count(*) from MEMBER");
+            listDataHeader.add("Vaccine C" + "@" + mData_count_child_without_qrcode[0][0]);
+            Log.d("000654", "MotherCount: " + mData_count_child_without_qrcode[0][0]);
+            mDatafemale = ls.executeReader("Select *from MEMBER");
+            mDatachild = ls.executeReader("Select *from MEMBER");
+
+
+
+            if (mDatafemale != null) {
+                for (int i = 0; i < mDatafemale.length; i++) {
+                    Log.d("000654", "ID:: " + mDatafemale[i][0]);
+                    Log.d("000654", "Manual_ID: " + mDatafemale[i][1]);
+                    Log.d("000654", "uid: " + mDatafemale[i][2]);
+                    Log.d("000654", "khandan_id: " + mDatafemale[i][3]);
+                   /* Log.d("000654", "FullName: " + mDatafemale[i][4]);
+                    Log.d("000654", "NicNumber: " + mDatafemale[i][5]);
+                    Log.d("000654", "PhoneNumber: " + mDatafemale[i][6]);
+                    Log.d("000654", "JSON Data: " + mDatafemale[i][7]);
+                    /*Log.d("000654", "Gender: " + mDatafemale[i][8]);
+                    Log.d("000654", "Age: " + mDatafemale[i][9]);
+                    Log.d("000654", "DOB: " + mDatafemale[i][10]);
+                    Log.d("000654", "BioCode: " + mDatafemale[i][11]);
+                    Log.d("000654", "QRCode: " + mDatafemale[i][12]);
+                    Log.d("000654", "AddedBy: " + mDatafemale[i][13]);
+                    Log.d("000654", "isSynced: " + mDatafemale[i][14]);
+                    Log.d("000654", "AddedOn: " + mDatafemale[i][15]);*/
+
+                    // Log.d("000654", "lat: " + jsonObject.getString("father_name"));
+                    // mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4]+ "@" + mDatafemale[i][8]+ "@" + mDatafemale[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                    mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4] + "@" + mDatafemale[i][8] + "@" + mDatafemale[i][9]);
+
+                    // list.add(map);
+                }
+
+
+            }
+
+
+            if (mDatachild != null) {
+
+                for (int i = 0; i < mDatachild.length; i++) {
+                    Log.d("000999", "ID:: " + mDatachild[i][0]);
+                    Log.d("000999", "Manual_ID: " + mDatachild[i][1]);
+                    Log.d("000999", "uid: " + mDatachild[i][2]);
+                    Log.d("000999", "khandan_id: " + mDatachild[i][3]);
+                    Log.d("000999", "JSON Data: " + mDatachild[i][7]);
+                 /*  Log.d("000999", "FullName: " + mDatachild[i][4]);
+                    Log.d("000999", "NicNumber: " + mDatachild[i][5]);
+                    Log.d("000999", "PhoneNumber: " + mDatachild[i][6]);
+                    Log.d("000999", "Gender: " + mDatachild[i][8]);
+                    Log.d("000999", "Age: " + mDatachild[i][9]);
+                    Log.d("000999", "DOB: " + mDatachild[i][10]);
+                    Log.d("000999", "BioCode: " + mDatachild[i][11]);
+                    Log.d("000999", "QRCode: " + mDatachild[i][12]);
+                    Log.d("000999", "AddedBy: " + mDatachild[i][13]);
+                    Log.d("000999", "isSynced: " + mDatachild[i][14]);
+                    Log.d("000999", "AddedOn: " + mDatachild[i][15]);*/
+
+                    // Log.d("000999", "lat: " + jsonObject.getString("father_name"));
+
+
+                    final String mData_Khandan[][] = ls.executeReader("SELECT t1.full_name,t2.province_id,t2.district_id,t2.subdistrict_id,t2.uc_id,t2.village_id from MEMBER t1" +
+                            " LEFT JOIN KHANDAN t2 On t1.khandan_id=t2.uid" +
+                            " where t1.uid='" + mDatachild[i][2] + "'");
+
+                    if (mData_Khandan[0][1] != null && mData_Khandan[0][2] != null && mData_Khandan[0][3] != null && mData_Khandan[0][4] != null && mData_Khandan[0][4] != null) {
+                        Log.d("000123", "KHANDAN Already Register:");
+
+                        temp_khandan_value = "0";
+
+                    } else {
+                        Log.d("000123", "KHANDAN Not Register:");
+                        temp_khandan_value = "1";
+                    }
+                    child.add(mDatachild[i][2] + "@" + mDatachild[i][4] + "@" + mDatachild[i][8] + "@" + mDatachild[i][9] + "@" + temp_khandan_value);
+
+                    // child.add(mDatachild[i][2] + "@" + mDatachild[i][4]+ "@" + mDatachild[i][8]+ "@" + mDatachild[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                }
+
+            }
+
+
+
+
+            //Women age from Fourteen to 48
+            String[][] mData_count_unvaccinated = ls.executeReader("Select count(*) from MEMBER");
+            listDataHeader.add("Vaccine D" + "@" + mData_count_unvaccinated[0][0]);
+            Log.d("000654", "MotherCount: " + mData_count_unvaccinated[0][0]);
+            mDatafemale = ls.executeReader("Select *from MEMBER");
+            mDatachild = ls.executeReader("Select *from MEMBER");
+
+
+
+            if (mDatafemale != null) {
+                for (int i = 0; i < mDatafemale.length; i++) {
+                    Log.d("000654", "ID:: " + mDatafemale[i][0]);
+                    Log.d("000654", "Manual_ID: " + mDatafemale[i][1]);
+                    Log.d("000654", "uid: " + mDatafemale[i][2]);
+                    Log.d("000654", "khandan_id: " + mDatafemale[i][3]);
+                   /* Log.d("000654", "FullName: " + mDatafemale[i][4]);
+                    Log.d("000654", "NicNumber: " + mDatafemale[i][5]);
+                    Log.d("000654", "PhoneNumber: " + mDatafemale[i][6]);
+                    Log.d("000654", "JSON Data: " + mDatafemale[i][7]);
+                    /*Log.d("000654", "Gender: " + mDatafemale[i][8]);
+                    Log.d("000654", "Age: " + mDatafemale[i][9]);
+                    Log.d("000654", "DOB: " + mDatafemale[i][10]);
+                    Log.d("000654", "BioCode: " + mDatafemale[i][11]);
+                    Log.d("000654", "QRCode: " + mDatafemale[i][12]);
+                    Log.d("000654", "AddedBy: " + mDatafemale[i][13]);
+                    Log.d("000654", "isSynced: " + mDatafemale[i][14]);
+                    Log.d("000654", "AddedOn: " + mDatafemale[i][15]);*/
+
+                    // Log.d("000654", "lat: " + jsonObject.getString("father_name"));
+                    // mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4]+ "@" + mDatafemale[i][8]+ "@" + mDatafemale[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                    mother.add(mDatafemale[i][2] + "@" + mDatafemale[i][4] + "@" + mDatafemale[i][8] + "@" + mDatafemale[i][9]);
+
+                    // list.add(map);
+                }
+
+
+            }
+
+
+            if (mDatachild != null) {
+
+                for (int i = 0; i < mDatachild.length; i++) {
+                    Log.d("000999", "ID:: " + mDatachild[i][0]);
+                    Log.d("000999", "Manual_ID: " + mDatachild[i][1]);
+                    Log.d("000999", "uid: " + mDatachild[i][2]);
+                    Log.d("000999", "khandan_id: " + mDatachild[i][3]);
+                    Log.d("000999", "JSON Data: " + mDatachild[i][7]);
+                 /*  Log.d("000999", "FullName: " + mDatachild[i][4]);
+                    Log.d("000999", "NicNumber: " + mDatachild[i][5]);
+                    Log.d("000999", "PhoneNumber: " + mDatachild[i][6]);
+                    Log.d("000999", "Gender: " + mDatachild[i][8]);
+                    Log.d("000999", "Age: " + mDatachild[i][9]);
+                    Log.d("000999", "DOB: " + mDatachild[i][10]);
+                    Log.d("000999", "BioCode: " + mDatachild[i][11]);
+                    Log.d("000999", "QRCode: " + mDatachild[i][12]);
+                    Log.d("000999", "AddedBy: " + mDatachild[i][13]);
+                    Log.d("000999", "isSynced: " + mDatachild[i][14]);
+                    Log.d("000999", "AddedOn: " + mDatachild[i][15]);*/
+
+                    // Log.d("000999", "lat: " + jsonObject.getString("father_name"));
+
+
+                    final String mData_Khandan[][] = ls.executeReader("SELECT t1.full_name,t2.province_id,t2.district_id,t2.subdistrict_id,t2.uc_id,t2.village_id from MEMBER t1" +
+                            " LEFT JOIN KHANDAN t2 On t1.khandan_id=t2.uid" +
+                            " where t1.uid='" + mDatachild[i][2] + "'");
+
+                    if (mData_Khandan[0][1] != null && mData_Khandan[0][2] != null && mData_Khandan[0][3] != null && mData_Khandan[0][4] != null && mData_Khandan[0][4] != null) {
+                        Log.d("000123", "KHANDAN Already Register:");
+
+                        temp_khandan_value = "0";
+
+                    } else {
+                        Log.d("000123", "KHANDAN Not Register:");
+                        temp_khandan_value = "1";
+                    }
+                    child.add(mDatachild[i][2] + "@" + mDatachild[i][4] + "@" + mDatachild[i][8] + "@" + mDatachild[i][9] + "@" + temp_khandan_value);
+
+                    // child.add(mDatachild[i][2] + "@" + mDatachild[i][4]+ "@" + mDatachild[i][8]+ "@" + mDatachild[i][9] + "@" +String.valueOf(jsonObject.getString("father_name")));
+                }
+
+            }
+
+
+
+
+
+
 
 
          /*   //Children under age two
@@ -587,8 +845,8 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 */
             listDataChild.put(listDataHeader.get(0), mother); // Header, Child data
             listDataChild.put(listDataHeader.get(1), child); // Header, Child dataa
-           // listDataChild.put(listDataHeader.get(2), child_without_qrcode); // Header, Child dataa
-            //listDataChild.put(listDataHeader.get(3), child_without_vacinated); // Header, Child dataa
+            listDataChild.put(listDataHeader.get(2), child_without_qrcode); // Header, Child dataa
+            listDataChild.put(listDataHeader.get(3), child_without_vacinated); // Header, Child dataa
             expListView.setClickable(true);
 
         } catch (Exception e) {

@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mqapf_qabalAzpedaish_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -159,7 +159,7 @@
                                     android:fontFamily="@font/droid_naskh_regular"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -212,7 +212,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqapf_kul_zichgiyou_ki_tadaad_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -257,7 +257,7 @@
                                         android:gravity="center_vertical"
                                         android:text="0"
                                         android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </RelativeLayout>
 
@@ -309,7 +309,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/mqapf_kul_zindha_bachy_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -326,7 +326,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mqapf_kul_haaml_ki_tadaad_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -390,7 +390,7 @@
                                                 android:gravity="center_vertical"
                                                 android:text="0"
                                                 android:textColor="@color/dark_blue_color"
-                                                android:textSize="@dimen/_16sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -454,7 +454,7 @@
                                                 android:gravity="center_vertical"
                                                 android:text="0"
                                                 android:textColor="@color/dark_blue_color"
-                                                android:textSize="@dimen/_16sdp" />
+                                                android:textSize="@dimen/_12sdp" />
 
                                         </RelativeLayout>
 
@@ -498,7 +498,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqapf_sub_say_choty_bachy_ki_umer_dou_saal_sy_kum_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                     />
 
 
@@ -540,7 +540,7 @@
                                         android:layout_toLeftOf="@id/checkbox_haan_1"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_nahi_1"
@@ -565,7 +565,7 @@
                                         android:layout_toLeftOf="@+id/checkbox_nahi_1"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>
@@ -587,7 +587,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/mqapf_umer_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp"
+                                    android:textSize="@dimen/_12sdp"
                                      />
 
 
@@ -653,7 +653,7 @@
                                             android:layout_marginRight="@dimen/_25sdp"
                                             android:text="@string/mqapf_qad_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -670,7 +670,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mqapf_haamla_ki_umer_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -814,7 +814,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/mqapf_khoon_ka_group_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
                                     </RelativeLayout>
 
@@ -831,7 +831,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/mqapf_wazan_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_12sdp" />
 
 
                                     </RelativeLayout>
@@ -946,7 +946,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="TT"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                     <TextView
                                         android:textStyle="bold"
@@ -956,7 +956,7 @@
                                         android:layout_marginRight="@dimen/_2sdp"
                                         android:text="@string/mqapf_injection_tareekh_text"
                                         android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_16sdp" />
+                                        android:textSize="@dimen/_12sdp" />
 
 
                                 </RelativeLayout>

@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/crf_refferal_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -161,7 +161,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_tareekh_indraj_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -212,7 +212,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/mrf_refferal_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp"
+                                android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
 
                         </TableRow>
@@ -229,7 +229,7 @@
                                 android:layout_weight="1"
                                 android:text=" ریفرل صحت مرکز"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -303,7 +303,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_ki_waja_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -386,7 +386,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_hospital_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 

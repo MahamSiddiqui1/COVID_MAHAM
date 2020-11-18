@@ -47,7 +47,7 @@
                     android:layout_weight="1"
                     android:text="خاندان نمبر درج کریں"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </TableRow>
 

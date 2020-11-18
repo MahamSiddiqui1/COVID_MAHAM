@@ -35,7 +35,7 @@
             android:background="@color/color_white"
             android:text="Please wait"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_12sdp" />
 
         <ProgressBar
             android:id="@+id/pbProgress"

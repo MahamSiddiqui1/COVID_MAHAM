@@ -27,7 +27,7 @@
         android:layout_gravity="center_vertical"
         android:text="Please wait"
         android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_16sdp" />
+        android:textSize="@dimen/_12sdp" />
 
 </LinearLayout>
 

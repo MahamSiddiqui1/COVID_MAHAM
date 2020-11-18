@@ -54,7 +54,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text="60%"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/_25sdp"
+                android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="اپنی انگلی سینسر پر رکھیں"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_12sdp" />
 
 
             <Button
@@ -76,7 +76,7 @@
                 android:background="@drawable/round_grey_button_shape_layout"
                 android:text="جاری رہے"
                 android:textColor="@color/cp_round_shape_button_grey_text_color"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_12sdp" />
 
 
         </LinearLayout>

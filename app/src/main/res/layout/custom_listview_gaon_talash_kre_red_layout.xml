@@ -47,7 +47,7 @@
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:text="شہلہ علی"
                         android:textColor="@color/hp_listview_textview_redcolor"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
 
 
@@ -61,7 +61,7 @@
                         android:visibility="gone"
                         android:text="@string/hp_listview_tareekh_text"
                         android:textColor="@color/hp_listview_textview_redcolor"
-                        android:textSize="@dimen/_16sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
                 </RelativeLayout>
 

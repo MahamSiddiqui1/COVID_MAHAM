@@ -23,7 +23,7 @@
             android:gravity="right"
             android:text="ڈاؤن لوڈ ڈیٹا .."
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
 
@@ -95,7 +95,7 @@
             android:gravity="right"
             android:text="ڈیٹا ڈاؤن لوڈ ہو گیا ہے .."
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
     </LinearLayout>

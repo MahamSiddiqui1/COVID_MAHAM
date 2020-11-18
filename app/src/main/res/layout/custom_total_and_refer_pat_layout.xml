@@ -111,7 +111,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:text="201-06-15"
             android:textColor="@color/light_grey_color"
-            android:textSize="@dimen/_11sdp" />
+            android:textSize="@dimen/_12sdp" />
 
         <TextView
             android:id="@+id/tvTime"
@@ -124,7 +124,7 @@
             android:layout_marginEnd="@dimen/_8sdp"
             android:text="01:10"
             android:textColor="@color/light_grey_color"
-            android:textSize="@dimen/_11sdp" />
+            android:textSize="@dimen/_12sdp" />
 
 
     </RelativeLayout>

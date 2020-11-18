@@ -25,7 +25,7 @@
         android:padding="@dimen/_14sdp"
         android:text="کیا آپ ڈیٹا کو ملانا چاہتے ہیں؟"
         android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
         android:visibility="gone"
         android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_gravity="center_horizontal"
         android:text="اس QR کوڈ کا کوئی نتائج نہیں"
         android:textColor="@color/graph_red_color"
-        android:textSize="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
         android:visibility="gone" />
 

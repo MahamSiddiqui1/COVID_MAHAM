@@ -31,7 +31,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/cnn_nashonuma_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -164,7 +164,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/cd_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_12sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -261,7 +261,7 @@
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                         <TextView
                             android:visibility="gone"
@@ -271,7 +271,7 @@
                             android:layout_centerHorizontal="true"
                             android:text="بی ام آئی:"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
 
                     </RelativeLayout>

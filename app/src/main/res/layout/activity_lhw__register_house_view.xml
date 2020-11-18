@@ -33,7 +33,7 @@
                     android:text="@string/reg_khandan_register_text"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -187,7 +187,7 @@
                                 android:gravity="center_horizontal"
                                 android:text="@string/reg_khandan_text"
                                 android:textColor="@color/register_khandan_text_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
                         </LinearLayout>
 
 
@@ -211,7 +211,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_ka_number_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </TableRow>
 
@@ -254,7 +254,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_kai_sarbarah_ka_naam_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -298,7 +298,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_kai_sarbarah_ka_shanakti_card_numbr_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -342,7 +342,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_kai_sarbarah_ka_mobile_numbr_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
@@ -389,7 +389,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
 
                             </TableRow>
