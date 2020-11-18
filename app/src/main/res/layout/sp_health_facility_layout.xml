@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/_8sdp"
-    android:textSize="@dimen/_12sdp"
+    android:textSize="@dimen/_14sdp"
     android:textAlignment="gravity"
     android:gravity="right|center_vertical"
     android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"

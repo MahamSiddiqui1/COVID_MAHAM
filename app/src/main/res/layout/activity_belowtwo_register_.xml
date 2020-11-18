@@ -34,7 +34,7 @@
                     android:text="@string/mr_khandan_register_kre_text"
                     android:textAlignment="center"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -139,7 +139,7 @@
                                     android:gravity="center_horizontal"
                                     android:text="@string/cr_dou_saal_sy_kum_umer"
                                     android:textColor="@color/dark_blue_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </RelativeLayout>
 
@@ -219,7 +219,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp">
+                                    android:textSize="@dimen/_14sdp">
 
                                     <requestFocus />
                                 </EditText>
@@ -308,7 +308,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText
@@ -325,7 +325,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -416,7 +416,7 @@
                                         android:drawableRight="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText
@@ -433,7 +433,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -523,7 +523,7 @@
                                         android:drawableRight="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText
@@ -541,7 +541,7 @@
                                         android:maxLength="15"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -729,7 +729,7 @@
                                         android:maxLength="12"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                 </LinearLayout>
 
@@ -816,7 +816,7 @@
                                         android:drawableRight="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText

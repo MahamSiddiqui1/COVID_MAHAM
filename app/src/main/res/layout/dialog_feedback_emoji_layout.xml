@@ -45,7 +45,7 @@
             android:gravity="center_horizontal"
             android:text="@string/feedback_text"
             android:textColor="@color/pink_color"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_14sdp" />
 
         <LinearLayout
 
@@ -135,7 +135,7 @@
                 android:background="@drawable/login_button_shape_layout"
                 android:text="@string/cnnf_jaama_kre_button"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
 
             <TextView
@@ -147,7 +147,7 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:text="ابھی نہیں"
                 android:textColor="@color/grey_color"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
         </LinearLayout>

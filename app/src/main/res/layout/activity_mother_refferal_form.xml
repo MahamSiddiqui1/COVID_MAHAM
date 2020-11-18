@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/mref_refferal_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -160,7 +160,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_tareekh_indraj_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
 
                         </TableRow>
 
@@ -192,7 +192,7 @@
                                     android:focusableInTouchMode="false"
                                     android:gravity="right"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -211,7 +211,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/mrf_refferal_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp"
+                                android:textSize="@dimen/_14sdp"
                                 android:textStyle="bold" />
 
                         </TableRow>
@@ -228,7 +228,7 @@
                                 android:layout_weight="1"
                                 android:text="ریفرل صحت مرکز"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
 
                         </TableRow>
 
@@ -283,7 +283,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -302,7 +302,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_ki_waja_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
 
                         </TableRow>
 
@@ -363,7 +363,7 @@
                                     android:scrollbarThumbVertical="@color/light_pink_color"
                                     android:scrollbars="vertical"
                                     android:singleLine="false"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -385,7 +385,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_hospital_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
 
                         </TableRow>
 
@@ -406,7 +406,7 @@
                         android:background="@drawable/login_button_shape_layout"
                         android:text="@string/mrf_jamaa_kre_text"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_18sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
 
                 </RelativeLayout>

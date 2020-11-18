@@ -143,7 +143,7 @@
                 android:gravity="center"
                 android:text="خاندان کے سربراہ کا نام:"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
 
 
@@ -159,7 +159,7 @@
                 android:gravity="center_vertical"
                 android:text="Khashif ali khan "
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
             <TextView
@@ -174,7 +174,7 @@
                 android:gravity="right"
                 android:text="گاؤں کا نام:"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
 
             <TextView
@@ -188,7 +188,7 @@
                 android:gravity="right"
                 android:text="Age"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_11sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
             <TextView
@@ -200,7 +200,7 @@
                 android:layout_toRightOf="@+id/tv_MemberKhandan"
                 android:text="خاندان نمبر:"
                 android:textColor="@color/light_grey_color"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <TextView
                 android:id="@+id/tv_MemberKhandan"
@@ -211,7 +211,7 @@
                 android:text="00"
                 android:textStyle="bold"
                 android:textColor="@color/light_grey_color"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
         </RelativeLayout>
@@ -294,7 +294,7 @@
                 android:gravity="center"
                 android:text="خاندان کے سربراہ کا نام:"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
 
 
@@ -310,7 +310,7 @@
                 android:gravity="center_vertical"
                 android:text="Khashif ali khan "
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
             <TextView
@@ -325,7 +325,7 @@
                 android:gravity="right"
                 android:text="گاؤں کا نام:"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
 
             <TextView
@@ -339,7 +339,7 @@
                 android:gravity="right"
                 android:text="@string/hp_listview_gaon_text"
                 android:textColor="@color/dark_blue_color"
-                android:textSize="@dimen/_11sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
             <TextView
@@ -351,7 +351,7 @@
                 android:layout_toRightOf="@+id/tv_KhandanNumber"
                 android:text="خاندان نمبر:"
                 android:textColor="@color/light_grey_color"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <TextView
                 android:id="@+id/tv_KhandanNumber"
@@ -362,7 +362,7 @@
                 android:text="00"
                 android:textStyle="bold"
                 android:textColor="@color/light_grey_color"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
         </RelativeLayout>
@@ -388,7 +388,7 @@
         android:layout_marginLeft="@dimen/_5sdp"
         android:text="کیا آپ اس ممبر کو اس خاندان میں منتقل کرنا چاہتے ہیں؟"
         android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_13sdp"
+        android:textSize="@dimen/_14sdp"
         android:textStyle="bold" />
 
 
@@ -412,7 +412,7 @@
             android:backgroundTint="@color/graph_red_color"
             android:text="جی نہیں"
             android:textColor="@color/color_white"
-            android:textSize="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
             android:textStyle="bold" />
 
 
@@ -433,7 +433,7 @@
             android:backgroundTint="@color/green_color"
             android:text="جی ہاں"
             android:textColor="@color/color_white"
-            android:textSize="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
             android:textStyle="bold" />
 
 

@@ -37,7 +37,7 @@
                     android:layout_marginRight="@dimen/_10sdp"
                     android:text="Ali"
                     android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_13sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
 
@@ -65,7 +65,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="مرد"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_male"
@@ -103,7 +103,7 @@
                             android:layout_gravity="center_vertical"
                             android:gravity="center_vertical"
                             android:textColor="@color/light_grey_color"
-                            android:textSize="@dimen/_12sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                     </RelativeLayout>
 
@@ -142,7 +142,7 @@
                         android:layout_marginRight="@dimen/_35sdp"
                         android:text="عورت"
                         android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
                     <RelativeLayout
                         android:id="@+id/rl_add_female"
@@ -181,7 +181,7 @@
                             android:layout_gravity="center_vertical"
                             android:gravity="center_vertical"
                             android:textColor="@color/light_grey_color"
-                            android:textSize="@dimen/_12sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                     </RelativeLayout>
 

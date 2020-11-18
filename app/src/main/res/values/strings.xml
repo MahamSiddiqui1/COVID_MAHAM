@@ -123,15 +123,15 @@
     <string name="nav_talash_text">تلاش</string>
     <string name="nav_stock_text">اسٹاک</string>
     <string name="nav_vaccinate_inlisted_text">ویکسینیٹ انلسٹڈ</string>
-    <string name="nav_sync_text">سینک ڈیٹا</string>
-    <string name="nav_sync_images_text">سینک تصاویر</string>
-    <string name="nav_refferal_text">ریفرل</string>
-    <string name="nav_taleeem_O_wasaeel_text">تعلیمی وسائل</string>
-    <string name="nav_adaad_O_shumaar_text">اعداد و شمار</string>
-    <string name="nav_aamdani_text">آمدنی</string>
-    <string name="nav_application_settings_text">ایپلیکیشن سیٹنگز</string>
-    <string name="nav_logout_text">لاگ آوٹ</string>
-    <string name="nav_COVID_text">کوویڈ-١٩</string>
+    <string name="nav_sync_text">Sync data</string>
+    <string name="nav_sync_images_text">Sync images</string>
+    <string name="nav_refferal_text">Referral</string>
+    <string name="nav_taleeem_O_wasaeel_text">Educational Resources</string>
+    <string name="nav_adaad_O_shumaar_text">statistics</string>
+    <string name="nav_aamdani_text">Income</string>
+    <string name="nav_application_settings_text">Application settings</string>
+    <string name="nav_logout_text">Log out</string>
+    <string name="nav_COVID_text">Covid-19</string>
 
 
     <!--//Register Screen Activity-->

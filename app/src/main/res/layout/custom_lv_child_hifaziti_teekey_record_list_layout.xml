@@ -9,7 +9,7 @@
         android:id="@+id/tvHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
         android:padding="@dimen/_5sdp"
         android:textStyle="bold"
         android:gravity="center"
@@ -47,7 +47,7 @@
             android:layout_marginRight="@dimen/_15sdp"
             android:layout_toLeftOf="@+id/chtr_lv_tvTareekh"
             android:textColor="@color/chtr_dpt_green_txt_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_14sdp" />
 
         <TextView
             android:id="@+id/chtr_lv_tvVaccineName"
@@ -58,7 +58,7 @@
             android:layout_toRightOf="@+id/chtr_lv_iv_vaccineIcon"
             android:text="@string/chtr_BCG_text"
             android:textColor="@color/chtr_dpt_green_txt_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_14sdp" />
 
         <ImageView
             android:id="@+id/chtr_lv_iv_vaccineIcon"

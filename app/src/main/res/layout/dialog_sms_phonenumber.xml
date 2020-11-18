@@ -95,7 +95,7 @@
                 android:background="@drawable/login_button_shape_layout"
                 android:text="جاری رہے"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_14sdp" />
 
 
         </RelativeLayout>

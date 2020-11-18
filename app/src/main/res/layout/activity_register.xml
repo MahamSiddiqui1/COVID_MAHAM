@@ -33,7 +33,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/reg_khandan_register_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -167,7 +167,7 @@
                                 android:gravity="center_horizontal"
                                 android:text="@string/reg_khandan_text"
                                 android:textColor="@color/register_khandan_text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
                         </LinearLayout>
 
 
@@ -191,7 +191,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_ka_number_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </TableRow>
 
@@ -221,7 +221,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -242,7 +242,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_kai_sarbarah_ka_naam_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -274,7 +274,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </LinearLayout>
@@ -297,7 +297,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_16sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -329,7 +329,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </LinearLayout>
@@ -364,7 +364,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/reg_union_council_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
                                     </RelativeLayout>
 
@@ -381,7 +381,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reg_tehseel_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
 
                                     </RelativeLayout>
@@ -524,7 +524,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/reg_zila_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
                                     </RelativeLayout>
 
@@ -541,7 +541,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reg_gaon_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
 
                                     </RelativeLayout>
@@ -679,7 +679,7 @@
                                             android:layout_marginRight="@dimen/_20sdp"
                                             android:text="@string/reg_latrine_system_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
                                     </RelativeLayout>
 
@@ -696,7 +696,7 @@
                                             android:layout_marginRight="@dimen/_5sdp"
                                             android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_16sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
 
                                     </RelativeLayout>
@@ -743,7 +743,7 @@
                                             android:lines="1"
                                             android:maxLines="1"
                                             android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
+                                            android:textSize="@dimen/_14sdp" />
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -769,7 +769,7 @@
                                             android:lines="1"
                                             android:maxLines="1"
                                             android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
+                                            android:textSize="@dimen/_14sdp" />
 
 
                                     </LinearLayout>
@@ -792,7 +792,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/reg_jaama_kre_button_text"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                     </RelativeLayout>
 

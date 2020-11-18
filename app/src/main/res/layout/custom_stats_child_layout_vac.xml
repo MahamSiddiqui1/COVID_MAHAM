@@ -59,7 +59,7 @@
                         android:text="Name"
                         android:layout_marginRight="@dimen/_10sdp"
                         android:textColor="@color/light_blue_color"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_14sdp" />
                 </RelativeLayout>
 
 

@@ -32,7 +32,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="رجسٹر ممبر"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -166,7 +166,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp">
+                                        android:textSize="@dimen/_14sdp">
 
                                         <requestFocus />
                                     </EditText>
@@ -288,7 +288,7 @@
                                         android:maxLength="2"
                                         android:gravity="right|center_vertical"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -339,7 +339,7 @@
                                         android:maxLength="12"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                 </LinearLayout>
 

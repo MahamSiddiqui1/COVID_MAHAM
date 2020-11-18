@@ -32,7 +32,7 @@
                     android:text="@string/registerFam"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -209,7 +209,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp">
+                                    android:textSize="@dimen/_14sdp">
 
                                     <requestFocus />
                                 </EditText>
@@ -251,7 +251,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -293,7 +293,7 @@
                                     android:maxLength="15"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -334,7 +334,7 @@
                                     android:maxLength="12"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -377,7 +377,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
 
                             </TableRow>
@@ -841,7 +841,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -871,7 +871,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_12sdp" />
+                                    android:textSize="@dimen/_14sdp" />
 
                             </LinearLayout>
 
@@ -888,7 +888,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/submit"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                     </RelativeLayout>
 

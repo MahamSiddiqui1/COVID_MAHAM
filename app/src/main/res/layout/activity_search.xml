@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/search_talash_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -123,7 +123,7 @@
                             android:layout_gravity="center_horizontal"
                             android:text="@string/search_tariqa_talash_muntakhib_kre_text"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_14sdp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -136,7 +136,7 @@
                             android:maxEms="11"
                             android:text="@string/search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text"
                             android:textColor="@color/text_color"
-                            android:textSize="@dimen/_18sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
                             android:id="@+id/iv_idcard"
@@ -154,7 +154,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/search_shanakhti_card_kay_zarye_talash_kre_text"
                             android:textColor="@color/search_blue_text_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
                             android:id="@+id/iv_smartphone"
@@ -172,7 +172,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/search_phone_number_kai_zarye_talash_kre_text"
                             android:textColor="@color/search_blue_text_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
 
                         <ImageView
@@ -192,7 +192,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/search_khandannumber_kai_zarye_talash_kre_text"
                             android:textColor="@color/search_blue_text_color"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
 
                         <ImageView
@@ -215,7 +215,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/swfpaqr_qrcode_kai_zarye_talash_kre_text"
                                 android:textColor="@color/search_blue_text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -223,7 +223,7 @@
                                 android:layout_toRightOf="@+id/txt_qrcode_kai_zarye_talash_kre"
                                 android:text=" QR"
                                 android:textColor="@color/search_blue_text_color"
-                                android:textSize="@dimen/_16sdp" />
+                                android:textSize="@dimen/_14sdp" />
                         </RelativeLayout>
 
                         <Button
@@ -238,7 +238,7 @@
                             android:background="@drawable/login_button_shape_layout"
                             android:text="@string/swfpaqr_qr_code_kai_zarye_talash_kre_text"
                             android:textColor="@color/color_white"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_14sdp" />
                     </LinearLayout>
 
 

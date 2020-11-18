@@ -257,7 +257,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="اسٹاک"
+                        android:text="Stocks"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 
@@ -277,7 +277,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="بلوٹوتھ فائل"
+                        android:text="Bluetooth Files"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 

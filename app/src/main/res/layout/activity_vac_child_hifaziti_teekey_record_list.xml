@@ -31,7 +31,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/chtr_bachey_kai_hifaziti_teekey_ka_record_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -149,7 +149,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/cd_naam_text"
                     android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <View
                     android:layout_width="@dimen/_100sdp"
@@ -178,7 +178,7 @@
                         android:gravity="right"
                         android:text="2 سال 06 مہ"
                         android:textColor="@color/register_khandan_text_color"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
 
                     <TextView
@@ -189,7 +189,7 @@
                         android:gravity="left"
                         android:text="@string/cd_maa_umer_text"
                         android:textColor="@color/light_grey_color"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_14sdp" />
 
 
                 </LinearLayout>
@@ -274,7 +274,7 @@
                         android:background="@drawable/login_button_shape_layout"
                         android:text="کہی اور سے کرائی ہو"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_18sdp"
+                        android:textSize="@dimen/_14sdp"
                         android:visibility="gone" />
 
 

@@ -36,7 +36,7 @@
             android:gravity="center_horizontal"
             android:text="@string/dialog_ek_ko_muntakhib_kre_text"
             android:textColor="@color/pink_color"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_14sdp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:background="@drawable/login_button_shape_layout"
                 android:text="@string/dialog_dou_saal_sy_kum_umer_text"
                 android:textColor="@color/color_white"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <Button
                 android:id="@+id/btn_dou_saal_sy_zayed_umer"
@@ -64,7 +64,7 @@
                 android:background="@drawable/round_button_shape_layout"
                 android:text="@string/dialog_dou_saal_sy_zayed_umer_text"
                 android:textColor="@color/pink_color"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_14sdp" />
 
         </LinearLayout>
 

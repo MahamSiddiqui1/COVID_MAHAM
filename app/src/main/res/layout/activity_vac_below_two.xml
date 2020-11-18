@@ -32,7 +32,7 @@
                     android:layout_centerInParent="true"
                     android:text="رجسٹریشن"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -166,7 +166,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp">
+                                        android:textSize="@dimen/_14sdp">
 
                                         <requestFocus/>
 
@@ -295,7 +295,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                     </RelativeLayout>
 
@@ -384,7 +384,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText
@@ -400,7 +400,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -455,7 +455,7 @@
                                         android:maxLength="15"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -576,7 +576,7 @@
                                         android:maxLines="1"
                                         android:maxLength="12"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -625,7 +625,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                 </LinearLayout>
 
@@ -711,7 +711,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                     <EditText
@@ -727,7 +727,7 @@
                                         android:lines="1"
                                         android:maxLines="1"
                                         android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
 
                                 </LinearLayout>
@@ -803,7 +803,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text="@string/vul_biometriC_ko_faAl_kre_text"
                                         android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                 </RelativeLayout>
 
@@ -871,7 +871,7 @@
                                         android:layout_marginRight="@dimen/_5sdp"
                                         android:text=" QR"
                                         android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                     <TextView
                                         android:id="@+id/tv_qrcode_faal_kre"
@@ -880,7 +880,7 @@
                                         android:layout_toLeftOf="@id/tv_qrcode"
                                         android:text="@string/cr_qr_code_ko_faal_kre_text"
                                         android:textColor="@color/dark_blue_color"
-                                        android:textSize="@dimen/_12sdp" />
+                                        android:textSize="@dimen/_14sdp" />
 
                                 </RelativeLayout>
 

@@ -9,6 +9,6 @@
     android:text="select one"
     android:textColor="@color/dark_blue_color"
     android:textDirection="anyRtl"
-    android:textSize="@dimen/_12sdp" />
+    android:textSize="@dimen/_14sdp" />
 
 

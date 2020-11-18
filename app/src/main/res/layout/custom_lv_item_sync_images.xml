@@ -31,7 +31,7 @@
             android:padding="5dp"
             android:text="ویکسین کا نام:"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_14sdp" />
 
         <TextView
             android:id="@+id/txt_vacine_name"
@@ -41,7 +41,7 @@
             android:padding="5dp"
             android:text="BCG"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_14sdp" />
 
 
     </RelativeLayout>
