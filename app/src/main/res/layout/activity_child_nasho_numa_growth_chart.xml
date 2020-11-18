@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildNashoNumaActivities.Child_NashoNumaGrowthChart_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cnn_nashonuma_ka_record_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_menu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/color_white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/rl_home"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_editform"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+
+                    android:visibility="gone"
+                    android:padding="@dimen/_6sdp"
+                    android:tint="@color/color_white"
+                    android:src="@drawable/ic_editprofile_icon" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_naam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_home_top"
+            android:background="@color/light_color_white">
+
+            <RelativeLayout
+                android:id="@+id/rl_circle_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_circle_view"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="@color/color_white"
+                    app:cardCornerRadius="35dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/men_icon"
+                        android:tint="#2E86AB" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_circle_home"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_naam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cd_naam_text"
+                    android:textColor="@color/register_khandan_text_color"
+                    android:textSize="@dimen/_16sdp" />
+
+                <View
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/pink_color" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/txt_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="2 سال 06 مہ"
+                        android:textColor="@color/register_khandan_text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_umer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/cd_maa_umer_text"
+                        android:textColor="@color/light_grey_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_naam">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/bmi_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:optRoundCardBackgroundColor="@color/color_white"
+                app:optRoundCardCornerRadius="@dimen/_20sdp"
+                app:optRoundCardUseCompatPadding="true"
+                app:optRoundContentPaddingTop="@dimen/_10sdp"
+                app:optRoundContentPaddingBottom="@dimen/_10sdp"
+                app:optRoundContentPaddingLeft="@dimen/_15sdp"
+                app:optRoundContentPaddingRight="@dimen/_15sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_15sdp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bmi"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/lightpink_rectangle_shape_layout">
+
+                        <TextView
+                            android:id="@+id/txt_bmi_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_bmi_value"
+                            android:layout_centerHorizontal="true"
+                            android:text="بی ام آئی:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_bmi"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+
+                        <ImageView
+                            android:id="@+id/iv_bmi_graph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_bmi_graph" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_wapis_jae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/round_button_shape_white_border_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/cgc_wapis_jae_button"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_18sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

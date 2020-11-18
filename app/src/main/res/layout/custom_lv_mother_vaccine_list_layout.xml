@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/mref_lv_rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/afm_rl_background_color"
+        android:padding="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/lv_iv_vaccineIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_bcg_icon" />
+
+        <TextView
+            android:id="@+id/lv_vaccine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/lv_iv_vaccineIcon"
+            android:text="@string/mref_refferal_text"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/lv_tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="123"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_immunization_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

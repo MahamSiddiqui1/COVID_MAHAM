@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.Login_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/login_background_image"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/rl_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/login_oval_background">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_hayat_logo_new" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="date"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_SyncOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/iu"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/circle_shape_green"
+                    android:backgroundTint="@color/dark_blue_color"
+                    android:src="@drawable/ic_sync_black_24dp"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvOfflineSync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iu"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="Offline Sync"
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_feilds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_background"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:id="@+id/ll_naam_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5sdp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:theme="@style/StyleTextLoginInputLayout">
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:gravity="left"
+                        android:hint="@string/PromptUsername"
+                        android:inputType="text|textVisiblePassword"
+                        android:maxLines="1"
+                        android:textColor="@color/color_white"
+                        android:textColorHint="@color/color_white"
+                        android:textSize="@dimen/_20sdp">
+
+                    </EditText>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:theme="@style/StyleTextLoginInputLayout">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lock_icon"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:gravity="left"
+                        android:hint="@string/PromptPassword"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/color_white"
+                        android:textColorHint="@color/color_white"
+                        android:textSize="@dimen/_20sdp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/login_forgot_password_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_20sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <Button
+
+                android:id="@+id/btn_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/login_button_shape_layout"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/Login"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_22sdp" />
+
+            <LinearLayout
+                android:id="@+id/rl_sync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Login"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Sync :"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/txt_last_sync_datettime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_app_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_sync"
+                android:layout_centerHorizontal="true"
+                android:text="1.0.39"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_SyncOfflines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/circle_shape_green"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_sync_black_24dp"
+                android:tint="@color/dark_blue_color" />
+
+
+        </RelativeLayout>
+        <!--<TextView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/_10sdp"-->
+        <!--android:text="Last Sync: "-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/_16sdp" />-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_Login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rl_feilds"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/_20sdp"-->
+        <!--android:background="@drawable/login_button_shape_layout"-->
+        <!--android:text="@string/login_button_text"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/_22sdp" />-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:paddingBottom="@dimen/_15sdp">-->
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/rl_sync"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_last_sync_datettime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/_10sdp"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_sync"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="آخری ہم آہنگی :"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_app_version_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rl_sync"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="@dimen/_10sdp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Last Sync: "&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/color_white"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/_16sdp" />&ndash;&gt;-->
+
+
+        <!--</RelativeLayout>-->
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

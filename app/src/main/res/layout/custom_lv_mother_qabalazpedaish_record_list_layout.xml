@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/mqapf_lv_rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/afm_rl_background_color">
+
+
+        <TextView
+            android:id="@+id/mqapf_lv_tvNaam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mqapf_qabalAzpedaish_form_text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/mqapf_lv_tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mqapf_lv_tvNaam"
+            android:text="14256"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_leftarrow_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".CovidDashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <ImageButton
+            android:id="@+id/unionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/union" />
+
+        <TextView
+            android:id="@+id/activityTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/sideEffects"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_home_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/famNumLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="@string/dateLabel"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/famNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_10_gray"
+                android:ems="10"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:hint="Date"
+                android:textSize="16sp"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/feverLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/fever"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/feverValueLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:text="@string/feverValue"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fever"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_10_purple"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:text="@string/no"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/feverValue"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_10_purple"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/coughLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/cough"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shortnessBreathLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:text="@string/shortnessBreath"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cough"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_10_purple"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:text="@string/no"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/shortnessBreath"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_10_purple"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rashLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/rash"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lossTasteLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:text="@string/lossTaste"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/rash"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_10_purple"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:text="@string/yes"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/lossTaste"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_10_purple"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lossSmellLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/lossSmell"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/diarrheaLabel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:text="@string/diarrhea"
+                android:textColor="@color/purpleLabel"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lossSmell"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_10_purple"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:text="@string/no"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/diarrhea"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_10_purple"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/rectangle_purple"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

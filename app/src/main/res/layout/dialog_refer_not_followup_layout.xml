@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_backgroud">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbarSize="0dp"
+        android:scrollbarThumbVertical="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="@color/pink_color" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Date"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_record_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/edittext_background_color"
+            android:drawableLeft="@drawable/ic_calender"
+            android:drawablePadding="@dimen/_10sdp"
+            android:focusableInTouchMode="false"
+            android:gravity="left"
+            android:hint="تاریخ اندراج"
+            android:padding="@dimen/_9sdp"
+            android:textColorHint="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_service_avail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Service Availed"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            app:cbd_boxSize="@dimen/_25sdp"
+            app:cbd_cornerRadius="0dp"
+            app:cbd_height="@dimen/_40sdp"
+            app:cbd_strokeColor="@color/pink_color"
+            app:cbd_strokeSize="1dp"
+            app:cbd_tickColor="#FFFFFF"
+            app:cbd_width="@dimen/_40sdp" />
+
+        <LinearLayout
+            android:id="@+id/ll_service_avail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/sp_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/edittext_background_color"
+                android:popupElevation="0dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/et_Others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/edittext_background_color"
+                android:gravity="left"
+                android:hint="Others Text"
+                android:visibility="gone"
+                android:padding="@dimen/_9sdp"
+                android:textColorHint="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_service_not_avail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Service Not Availed"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            app:cbd_boxSize="@dimen/_25sdp"
+            app:cbd_cornerRadius="0dp"
+            app:cbd_height="@dimen/_40sdp"
+            app:cbd_strokeColor="@color/pink_color"
+            app:cbd_strokeSize="1dp"
+            app:cbd_tickColor="#FFFFFF"
+            app:cbd_width="@dimen/_40sdp" />
+
+        <LinearLayout
+            android:id="@+id/ll_service_not_avail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox_not_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="Not Available"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp"
+                app:cbd_boxSize="@dimen/_25sdp"
+                app:cbd_cornerRadius="0dp"
+                app:cbd_height="@dimen/_40sdp"
+                app:cbd_strokeColor="@color/pink_color"
+                app:cbd_strokeSize="1dp"
+                app:cbd_tickColor="#FFFFFF"
+                app:cbd_width="@dimen/_40sdp" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox_refusal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                  android:gravity="center"
+                android:text="Refusal"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp"
+                app:cbd_boxSize="@dimen/_25sdp"
+                app:cbd_cornerRadius="0dp"
+                app:cbd_height="@dimen/_40sdp"
+                app:cbd_strokeColor="@color/pink_color"
+                app:cbd_strokeSize="1dp"
+                app:cbd_tickColor="#FFFFFF"
+                app:cbd_width="@dimen/_40sdp" />
+
+            <EditText
+                android:id="@+id/et_refusal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/edittext_background_color"
+                android:gravity="right"
+                android:hint="انکار کی وجہ"
+                android:padding="@dimen/_9sdp"
+                android:textColorHint="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/login_button_shape_layout"
+            android:text="@string/cnnf_jaama_kre_button"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_16sdp" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

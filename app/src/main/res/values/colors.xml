@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_200">#63A3C0</color>
+    <color name="teal_700">#00796B</color>
+    <color name="purpleLabel">#B5229D</color>
+    <color name="colorPrimary">#63A3C0</color>
+    <color name="colorPrimaryDark">#63A3C0</color>
+    <color name="colorAccent">#C969B9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightPurple">#F3DEEF</color>
+    <color name="black">#000000</color>
+    <color name="mustard">#E3B23C</color>
+    <color name="gray">#E1E1E1</color>
+    <color name="grayDark">#707070</color>
+    <color name="navy">#3B3561</color>
+    <color name="blueLight">#DCE9EF</color>
+    <color name="greenLight">#DFEBD8</color>
+    <color name="cream">#F7F0DE</color>
+    <color name="green">#469519</color>
+
+
+    <!--common color used in overall application-->
+    <color name="text_color">#C969B9</color>
+    <color name="pink_color">#C969B9</color>
+    <color name="light_grey_color">#585858</color>
+    <color name="light_pink_color">#FBF1F1</color>
+    <color name="dark_blue_color">#3B3561</color>
+    <color name="light_blue_color">#2E86AB</color>
+    <color name="edit_text_color">#3B3561</color>
+    <color name="purple_color">#73129c</color>
+
+
+    <color name="login_button_color">#C969B9</color>
+    <color name="color_white">#ffffff</color>
+    <color name="light_color_white">#FAFAFA</color>
+
+
+    <!--//login_background_rectangle -->
+    <color name="rectangle_start_color">#C969B9</color>
+    <color name="rectangle_end_color">#3585AC</color>
+
+    <!--edit text field background color-->
+    <color name="edittext_background_color">#F3DEEF</color>
+    <color name="register_khandan_text_color">#3B3561</color>
+
+
+    <!--Homepage Gaon Talash Listview TextView Color-->
+    <color name="hp_listview_textview_redcolor">#CC4747</color>
+    <color name="hp_listview_textview_greycolor">#757575</color>
+    <color name="hp_listview_textview_bluecolor">#2E86AB</color>
+
+
+    <!--Add Family Member Activity-->
+    <color name="afm_rl_background_color">#FCF6FB</color>
+
+
+    <!--Child Register Activity-->
+    <color name="cr_rectangle_color">#F3DEEF</color>
+    <color name="cr_rectangle_border_color">#C969B9</color>
+
+
+    <!--Child Growth Chart Activity-->
+    <color name="cgc_rectangle_shape_color">#F8EEF6</color>
+
+    <!--Child Bemaari Record Activity-->
+    <color name="lv_grey_color">#919191</color>
+
+
+    <!--Child Hifaziti Teekey Record Activity-->
+    <color name="chtr_bcg_txt_color">#469419</color>
+    <color name="chtr_poliyou_red_txt_color">#CC4747</color>
+    <color name="chtr_dpt_green_txt_color">#459518</color>
+    <color name="chtr_dpt_pink_txt_color">#C969B9</color>
+    <color name="chtr_dpt_grey_txt_color">#929292</color>
+
+
+    <!--Child Profile Activity-->
+    <color name="cp_round_shape_button_grey_color">#ECECEC</color>
+    <color name="cp_round_shape_button_grey_text_color">#A0A0A0</color>
+
+
+    <!--Search Activity-->
+    <color name="search_blue_text_color">#2E86AB</color>
+
+    <!--Mother Haamla Record Lv Text Color-->
+    <color name="mhr_green_text_color">#469519</color>
+    <color name="mhr_line_color">#929292</color>
+
+    <!--LMP Dialog-->
+    <color name="dialog_zichgi_ki_tareek_text_color">#9e9e9e</color>
+    <color name="dialog_zichgi_calender_color">#a9a9a9</color>
+    <color name="dialog_zichgi_background_color">#ececec</color>
+
+
+    <!--Right_TopBottomCorner_Green_Color Backgroung-->
+    <color name="right_topbottomcorner_green_color">#469519</color>
+
+    <color name="green_color">#469519</color>
+    <color name="grey_color">#929292</color>
+    <color name="divider_dashboard">#FFD2E7F0</color>
+
+
+    <color name="graph_green_color">#469519</color>
+    <color name="graph_red_color">#e03030</color>
+    <color name="graph_orange_color">#FFC107</color>
+    <color name="switch_green_color">#FF6DC73A</color>
+
+    <color name="blue_text_color">#73B0CC</color>
+
+</resources>
+
+

@@ -1,0 +1,41 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/customToastImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="@color/graph_red_color" />
+
+        <TextView
+            android:id="@+id/customToastText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text=" ڈیٹا جامع نہیں ہوا"
+            android:textColor="@color/dark_blue_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

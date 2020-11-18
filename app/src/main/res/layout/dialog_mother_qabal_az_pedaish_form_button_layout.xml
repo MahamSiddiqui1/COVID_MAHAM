@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/ic_close_black_24dp"-->
+        <!--android:tint="@color/pink_color" />-->
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="@color/pink_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:id="@+id/rl_qabalAzpedaish_doorah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_button_shape_layout">
+
+                <TextView
+                    android:id="@+id/txt_qabalAzpedaish_doorah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/dialog_mqapf_qabalAzpedaish_doorah_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_qabalAzpedaish_health_centre_ka_doorah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_button_shape_layout">
+
+                <TextView
+                    android:id="@+id/txt_qabalAzpedaish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="قبل از پیدائش"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/txt_healthcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_qabalAzpedaish"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="ہیلتھ سینٹر کا دورہ"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_qabalAzpedaish_doorah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_button_shape_layout"
+                android:gravity="center"
+                android:text="@string/dialog_mqapf_qabalAzpedaish_doorah_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_qabalAzpedaish_health_centre_ka_doorah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_button_shape_layout"
+                android:text="@string/dialog_mqapf_qabalAzpedaish_health_centre_ka_doorah_text"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

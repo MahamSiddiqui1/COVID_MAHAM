@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="false"
+            android:background="@color/color_white"
+            android:text="Processing"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_20sdp" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMainTitle"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_white"
+            android:text="Please wait"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_16sdp" />
+
+        <ProgressBar
+            android:id="@+id/pbProgress"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/rotate_animation"
+            android:indeterminateTintMode="src_atop" />
+        <!--            android:indeterminateDrawable="@drawable/circular_progressbar_layout"-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

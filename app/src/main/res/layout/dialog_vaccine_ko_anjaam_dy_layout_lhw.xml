@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:tint="@color/pink_color" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_close"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/ic_close_black_24dp"-->
+        <!--android:tint="@color/pink_color" />-->
+
+
+        <TextView
+            android:id="@+id/txt_refuse_vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="Reason for refusing vaccine"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+
+            android:id="@+id/ll_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+
+            <Button
+                android:id="@+id/btn_InFacility"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink_color"
+                android:gravity="center"
+                android:text="In Facility"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_10sdp" />
+
+            <Button
+                android:id="@+id/btn_Outreach"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounder_corner_light"
+                android:gravity="center"
+                android:text="Outreach"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_10sdp" />
+
+            <Button
+                android:id="@+id/btn_MobileVaccine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounder_corner_light"
+                android:gravity="center"
+                android:text="Mobile\nVaccine"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_10sdp" />
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />-->
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sp_inside_outside_council"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/edittext_background_color"
+            android:padding="@dimen/_8sdp"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <Button
+                android:id="@+id/btn_vaccine_ko_anjaam_dy"
+                android:layout_width="wrap_content"
+
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_button_shape_layout"
+                android:text="vaccinate now"
+
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/btn_phle_sy_li_hoe_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_button_shape_layout"
+                android:text="FROM ELSEWERE"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_15sdp"
+
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_phle_sy_li_hoe_vaccine_uc"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_button_shape_layout"
+                android:text="TAKEN  AT UC"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/btn_refuse_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_button_shape_layout"
+                android:text="REFUSED VACCINE"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_button_shape_layout"
+                android:text="@string/submit"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance:"
+                    android:textColor="@color/blue_text_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="0 vial / 0 doses"
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_utilized"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Utilized: "
+                    android:textColor="@color/pink_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/tvUtilized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="0 doses"
+                    android:layout_weight="1"
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

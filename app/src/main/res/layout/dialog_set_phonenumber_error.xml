@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+
+
+    <ImageView
+        android:id="@+id/iv_close_dilaog"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:tint="@color/light_grey_color" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/pbProgress"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:tint="@color/blue_text_color"
+            android:src="@drawable/ic_perm_phone_msg_black_24dp" />
+
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbProgress"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ems="15"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="برائے مہربانی پہلے  پچھلی اسکرین سے فون نمبر منتخب کریں"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

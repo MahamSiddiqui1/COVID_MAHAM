@@ -1,0 +1,755 @@
+<resources>
+
+    <string name="database_password">g3p2bzQm-J2pG6NR</string>
+    <string name="vaccine_provided">Where was the vaccine provided?</string>
+    <string name="details">Details</string>
+
+    <string name="received">received</string>
+    <string name="app_name">COVID APP</string>
+    <string name="PromptUsername">Username</string>
+    <string name="PromptPassword">Password</string>
+    <string name="Login">Login</string>
+    <string name="Sync">Last Sync Date: Date Time</string>
+    <string name="version">Version 1.0</string>
+    <string name="recevied">Received</string>
+    <string name="comorbidity">CO-MORBIDITY</string>
+    <string name="dateLabel">Date</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="reading">Reading</string>
+    <string name="bloodPressure">Blood Pressure</string>
+    <string name="cholestrol">LDL Cholestrol</string>
+    <string name="heartDisease">Heart Disease</string>
+    <string name="mgldl">mgl/dL</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="addNewRecord">Add New Record</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="feverValue">Value of Fever</string>
+    <string name="shortnessBreath">Shortness of Breath</string>
+    <string name="rash">Rash</string>
+    <string name="lossTaste">Loss of Taste</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="searchVillage">Search Village</string>
+    <string name="dueVacA">Due for Vaccine A</string>
+    <string name="dueVacB">Due for Vaccine B</string>
+    <string name="dueVacC">Due for Vaccine C</string>
+    <string name="notVacc">Individuals Not Yet Vaccinated</string>
+    <string name="vaccA">Vaccine A</string>
+    <string name="vaccB">Vaccine B</string>
+    <string name="vaccC">Vaccine C</string>
+    <string name="shot1">Shot 01</string>
+    <string name="shot2">Shot 02</string>
+    <string name="tBadmin">To Be Administered</string>
+    <string name="selectHealth">Select Health Facility</string>
+    <string name="receivedOn">Received on</string>
+    <string name="lossSmell">Loss of Smell</string>
+    <string name="dateRecevied">Date Received</string>
+    <string name="comments">Comments</string>
+    <string name="name1">Kiran Iqbal</string>
+    <string name="name2">Salman Iqbal</string>
+    <string name="immunizationProvided">Immunization Provided At</string>
+    <string name="immunizationhead">Immunization Record</string>
+
+    <string name="cancer">Cancer</string>
+    <string name="notes">Notes</string>
+    <string name="sideHistory">Side Effects History</string>
+    <string name="co_history">Co-Morbidity History</string>
+    <string name="date">Wednesday, Nov 4, 2019</string>
+    <string name="taskList">TASKS LIST</string>
+    <string name="newFamily">New Family</string>
+    <string name="addFamily">Add Family Member</string>
+    <string name="newIndividual">New Individual</string>
+    <string name="famNum">Family Number</string>
+    <string name="famHead">Name of Family Head</string>
+    <string name="famHeadCnic">Family Head CNIC</string>
+    <string name="famHeadMobile">Family Head Mobile Number</string>
+    <string name="address">Complete Address</string>
+    <string name="district">District</string>
+    <string name="tehsil">Tehsil</string>
+    <string name="union">Union Council</string>
+    <string name="village">Village</string>
+    <string name="Toilet">Toilet System</string>
+    <string name="drinkingWater">Drinking Water Availability</string>
+    <string name="submit">Submit</string>
+    <string name="registerInd">REGISTER FAMILY MEMBER</string>
+    <string name="registerFam">REGISTER FAMILY</string>
+    <string name="gender">Gender</string>
+    <string name="Marital">Marital Status</string>
+    <string name="dob">Date of Birth</string>
+    <string name="agee">Age</string>
+    <string name="cnic">CNIC</string>
+    <string name="status">Status</string>
+    <string name="indID">Individual ID</string>
+    <string name="famID">Family ID</string>
+    <string name="province">Province</string>
+    <string name="division">Division</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="father">Fathers Name</string>
+    <string name="profile">PROFILE</string>
+    <string name="fullName">Full Name</string>
+    <string name="ageInYears">Years Old</string>
+    <string name="covid">COVID IMMUNIZATION</string>
+    <string name="sideEffects">SIDE EFFECTS</string>
+    <string name="co_morbidity">C0-MORBIDITY</string>
+    <string name="HomeButton">Home Button</string>
+    <string name="UnionButton">Union Button</string>
+    <string name="title_activity_profile">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="search">Search</string>
+    <string name="addNew">Add New</string>
+
+    <!--Login Screen-->
+
+    <string name="login_username_text">صارف کا نام</string>
+    <string name="login_password_text">پاسورڈ</string>
+    <string name="login_forgot_password_text">پاسورڈ بھول گئے؟</string>
+    <string name="login_button_text">داخلہ</string>
+    <string name="login_lastsync_text">آخری ہم آہنگی</string>
+
+
+    <!--HomePage Screen Activity-->
+    <string name="hp_kamo_ki_fehrist_text">کاموں کی فہرست</string>
+    <string name="hp_talash_gaon_text">تلاش نام اور گاؤں</string>
+
+    <!--Navigation Screen Activity + ClassListener-->
+    <string name="nav_register_text">رجسٹر</string>
+    <string name="nav_talash_text">تلاش</string>
+    <string name="nav_stock_text">اسٹاک</string>
+    <string name="nav_vaccinate_inlisted_text">ویکسینیٹ انلسٹڈ</string>
+    <string name="nav_sync_text">سینک ڈیٹا</string>
+    <string name="nav_sync_images_text">سینک تصاویر</string>
+    <string name="nav_refferal_text">ریفرل</string>
+    <string name="nav_taleeem_O_wasaeel_text">تعلیمی وسائل</string>
+    <string name="nav_adaad_O_shumaar_text">اعداد و شمار</string>
+    <string name="nav_aamdani_text">آمدنی</string>
+    <string name="nav_application_settings_text">ایپلیکیشن سیٹنگز</string>
+    <string name="nav_logout_text">لاگ آوٹ</string>
+    <string name="nav_COVID_text">کوویڈ-١٩</string>
+
+
+    <!--//Register Screen Activity-->
+    <string name="reg_khandan_register_text">خاندان رجسٹر کریں</string>
+    <string name="reg_khandan_text">رجسٹرخاندان</string>
+    <string name="reg_khandan_ka_number_text">خاندان کا نمبر</string>
+    <string name="reg_khandan_kai_sarbarah_ka_naam_text">خاندان کے سربراہ کا نام بمعہ ولدیت</string>
+    <string name="reg_khandan_kai_sarbarah_ka_shanakti_card_numbr_text">خاندان کے سربراہ کا شناختی کارڈ نمبر</string>
+    <string name="reg_khandan_kai_sarbarah_ka_mobile_numbr_text">خاندان کے سربراہ کا موبائل نمبر</string>
+    <string name="reg_mukamal_pata_text">مکمل پتہ</string>
+    <string name="reg_tehseel_text">تحصیل</string>
+    <string name="reg_union_council_text">یونین کونسل</string>
+    <string name="reg_gaon_text">گاؤں</string>
+    <string name="reg_zila_text">ضلع</string>
+    <string name="reg_peenay_kai_paani_ka_zarya_text">پینے کے پانی کا ذریہ</string>
+    <string name="reg_latrine_system_text">لیٹرین سسٹم</string>
+    <string name="reg_jaama_kre_button_text">جمع کریں</string>
+
+
+    <!--Custom Gaon Talash kre ListView TextView Name-->
+    <string name="hp_listview_name_text">سلمان اقبال</string>
+    <string name="hp_listview_tareekh_text">نومبر 02</string>
+    <string name="hp_listview_tareekh_adaegi_text">تاریخ ادائیگی</string>
+    <string name="hp_listview_gaon_text">گاؤں 123</string>
+
+    <!--Add Family Member Activity-->
+    <string name="afm_khandan_text">خاندان</string>
+    <string name="afm_khandan_number_text">خاندان نمبر:</string>
+    <string name="afm_name_text">سلمان اقبال</string>
+    <string name="afm_khandan_kay_rukan_shamil_kre_button_text">خاندان کے رکن شامل کریں</string>
+    <string name="age">عمر</string>
+
+    <!--Dialog MandarjaZail mai sy kisi ek ko muntakhib kre-->
+    <string name="dialog_ek_ko_muntakhib_kre_text">مندرجہ ذیل میں سے ایک کو منتخب کریں</string>
+    <string name="dialog_dou_saal_sy_kum_umer_text">2 سال سے کم عمر</string>
+    <string name="dialog_dou_saal_sy_zayed_umer_text">2 سال سے زائد عمر</string>
+
+
+    <!--Child Register Activity +  Dou saal sy kum umer-->
+    <string name="cr_khandan_register_kre_text">خاندان رجسٹر کریں</string>
+    <string name="cr_dou_saal_sy_kum_umer">2 سال سے کم عمر</string>
+    <string name="cr_naam_bimaah_waldiyat_text">نام (بمعہ ولدیت / زوجیت)</string>
+    <string name="cr_walid_ka_naame_text">والد کا نام</string>
+    <string name="cr_walida_ka_naam_text">والدہ  کا نام</string>
+    <string name="cr_sarbarah_kay_sath_rishta_text">سربراہ کے ساتھ رشتہ</string>
+    <string name="cr_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="cr_shanakhti_card_number_text">شناختی کارڈ نمبر</string>
+    <string name="cr_tareekh_pedaish_text">تاریخ پیدائش</string>
+    <string name="cr_azdawaji_hasiyat_text">ازدواجی حیثیت</string>
+    <string name="cr_jins_text">جنس</string>
+    <string name="cr_mobile_number_text">موبائل نمبر</string>
+    <string name="cr_tareekh_wafat_text">تاریخ وفات</string>
+    <string name="cr_tareekh_nakal_makani_text">تاریخ نقل مکانی</string>
+    <string name="cr_tabsarah_wajah_wafaat_text">وجہ وفات</string>
+    <string name="cr_tabsarah_wajah_nakal_makani_text">وجہ نقل مکانی </string>
+    <string name="cr_infradi_text">انفرادی نمبر</string>
+    <string name="cr_khandan_number_text">خاندان نمبر</string>
+    <string name="cr_biometric_ko_faal_kre_text">بایو میٹرک کو فعال کریں</string>
+    <string name="cr_qr_code_ko_faal_kre_text"> کوڈ کو فعال کریں </string>
+    <string name="cr_jaama_kre_text">جمع کریں</string>
+
+
+    <string name="cr_spinner_ek_muntakhib_kre_text">ایک منتخب کریں</string>
+    <string name="cr_spinner_maard_text">مرد</string>
+    <string name="cr_spinner_aurat_text">عورت</string>
+    <string name="cr_spinner_shadi_shudha_text">شادی شدہ</string>
+    <string name="cr_spinner_ghair_shadi_shudha_text">غیر شادی شدہ</string>
+    <string name="cr_spinner_talaaq_yafta_text">طلاق یافتہ</string>
+    <string name="cr_spinner_beewah_text">بیوہ</string>
+
+
+    <!--Mother Register Activity + Dou saal sy zaid umer-->
+    <string name="mr_khandan_register_kre_text">خاندان رجسٹر کریں</string>
+    <string name="mr_dou_saal_sy_zaid_umer">2 سال سے زائد عمر</string>
+    <string name="mr_naam_bimaah_waldiyat_text">نام (بمعہ ولدیت / زوجیت)</string>
+    <string name="mr_walid_ka_naame_text">والد کا نام</string>
+    <string name="mr_walida_ka_naam_text">والدہ  کا نام</string>
+    <string name="mr_sarbarah_kay_sath_rishta_text">سربراہ کے ساتھ رشتہ</string>
+    <string name="mr_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="mr_shanakhti_card_number_text">والد کا شناختی کارڈ نمبر</string>
+    <string name="mr_tareekh_pedaish_text">تاریخ پیدائش</string>
+    <string name="mr_azdawaji_hasiyat_text">ازدواجی حیثیت</string>
+    <string name="mr_jins_text">جنس</string>
+    <string name="mr_mobile_number_text">والد کا موبائل نمبر</string>
+    <string name="mr_tareekh_wafat_text">تاریخ وفات</string>
+    <string name="mr_tareekh_nakal_makani_text">تاریخ نقل مکانی</string>
+    <string name="mr_tabsarah_wajah_wafaat_text">تبصرہ-وجہ وفات / وجہ نقل مکانی وغیرہ</string>
+    <string name="mr_lady_health_worker_ka_naam_text">لیڈی ہیلتھ ورکر کا نام</string>
+    <string name="mr_lady_health_worker_ka_code_text">لیڈی ہیلتھ ورکر کا کورڈ</string>
+    <string name="mr_infradi_number_serial_nassab_text">انفرادی نمبر</string>
+    <string name="mr_delivery_month_text">زچگی کا متوقع مہینہ</string>
+    <string name="mr_delivery_year_text">زچگی کا متوقع سال</string>
+    <string name="mr_infradi_text">انفرادی نمبر</string>
+    <string name="mr_khandan_number_text">خاندان نمبر</string>
+    <string name="mr_biometric_ko_faal_kre_text">بایو میٹرک کو فعال کریں</string>
+    <string name="mr_qr_code_ko_faal_kre_text"> کوڈ کو فعال کریں </string>
+    <string name="mr_jaama_kre_text">جمع کریں</string>
+
+    <string name="mr_spinner_ek_muntakhib_kre_text">ایک منتخب کریں</string>
+    <string name="mr_spinner_maard_text">مرد</string>
+    <string name="mr_spinner_aurat_text">عورت</string>
+    <string name="mr_spinner_shadi_shudha_text">شادی شدہ</string>
+    <string name="mr_spinner_ghair_shadi_shudha_text">غیر شادی شدہ</string>
+    <string name="mr_spinner_talaaq_yafta_text">طلاق یافتہ</string>
+    <string name="mr_spinner_beewah_text">بیوہ</string>
+
+
+    <!--Mother Dashboard Activity-->
+    <string name="md_profile_text">پروفائل</string>
+    <string name="md_naam_text">کرن اقبال</string>
+    <string name="md_maa_umer_text">عمر: </string>
+    <string name="md_haamla_ka_record_text">حمل کا ریکارڈ</string>
+    <string name="md_khandani_mansobabandi_text">خاندانی منصوبہ بندی</string>
+    <string name="md_beemari_ka_record_text">بیماری کا ریکارڈ</string>
+    <string name="md_hifazati_teekey_ka_record_text">حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="md_mawaad">مواد</string>
+    <string name="md_refferal_text">ریفرل</string>
+    <string name="md_aam_malomaat_text">عام معلومات</string>
+
+
+    <!--Child Dashboard Activity-->
+    <string name="cd_profile_text">پروفائل</string>
+    <string name="cd_naam_text">سلمان اقبال</string>
+    <string name="cd_maa_umer_text">عمر:</string>
+    <string name="cd_naasho_numa_ka_record_text">نشو و نما کا ریکارڈ</string>
+    <string name="cd_beemari_ka_record_text">بیماری کا ریکارڈ</string>
+    <string name="cd_hifazati_teekey_ka_record_text">حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="cd_mawaad">مواد</string>
+    <string name="cd_virus">وائرس اسکریننگ</string>
+    <string name="cd_virus_ka_record_text">وائرس اسکریننگ کا ریکارڈ</string>
+    <string name="cd_refferal_text">ریفرل</string>
+    <string name="cd_aam_malomaat_text">عام معلومات</string>
+
+
+    <!--Child Dashboard Activties-->
+
+    <!--Child NashoNumaaa Record Activity-->
+    <string name="cnn_nashonuma_ka_record_text">نشو و نما کا ریکارڈ</string>
+    <string name="cnn_naya_form_shamil_kre_button">نیا فارم شامل کریں</string>
+    <string name="cnn_growth_chart_button">گروتھ چارٹ</string>
+    <string name="cnn_nashonuma_ka_record_1_text">نشو نما کا ریکارڈ  : </string>
+
+
+    <!--Child Nasho Numa Form Activity-->
+    <string name="cnnf_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="cnnf_qad_text">مواک</string>
+    <string name="cnnf_wazan_text">وزن</string>
+    <string name="cnnf_ghiza_text">غذا</string>
+    <string name="cnnf_feet_text">فٹ</string>
+    <string name="cnnf_centimeter_text">سینٹی میٹر</string>
+    <string name="cnnf_inch_text">انچ</string>
+    <string name="cnnf_kilo_text">کلو</string>
+    <string name="cnnf_6maah_tk_maa_ka_doodh_text">6 ماہ تک صرف ماں کا دودھ</string>
+    <!--<string name="cnnf_bottle_ka_doodh_text">بوتل کا دود</string>-->
+    <string name="cnnf_bottle_ka_doodh_text">بوتل کا دودھ</string>
+    <string name="cnnf_izafi_khoraak_thoos_ghiza_text">اضافی خوراک ٹھوس غذا</string>
+    <string name="cnnf_tafseel_text">تبصرہ</string>
+    <string name="cnnf_jaama_kre_button">جمع کریں</string>
+
+
+    <!--Child Growth Activity-->
+    <string name="cgc_wapis_jae_button">واپس جائیں</string>
+
+    <!--Child Bemaari Record Activity-->
+    <string name="cbr_bachey_ki_bemaari_ka_record_text">بچے کی بیماری کا ریکارڈ</string>
+    <string name="cbr_ka_recird_dkha_rha_ha_text">کا ریکارڈ دکھا رہا ہے</string>
+    <string name="cbr_is_tareekh_say_text">اس تاریخ سے</string>
+    <string name="cbr_is_tareekh_tk_text">اس تاریخ تک</string>
+    <string name="cbr_bemaari_ka_record_text">بیماری کا ریکارڈ </string>
+    <string name="cbr_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+    <!--Child Bemaari Form Activity-->
+    <string name="cbf_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="cbf_jins_text">جنس</string>
+    <string name="cbf_ishaal_text">اسہال</string>
+    <string name="cbf_khansi_aur_saans_ki_bemaari_text">کھانسی اور سانس کی بیماریاں</string>
+    <string name="cbf_bukhar_text">بخار</string>
+    <string name="cbf_chout_zakham_jalna_text">چوٹ/زخم/جلنا</string>
+    <string name="cbf_khoon_ki_kami_text">خون کی کمی</string>
+    <string name="cbf_kharish_text">خارش</string>
+    <string name="cbf_ankhon_ki_bemaari_text">آنکھوں کی بیماری</string>
+    <string name="cbf_jins_zanana_amraaz_text">جنس/ زنانہ امراض</string>
+    <string name="cbf_pait_kai_keeray_text">پیٹ  کے کیڑے</string>
+    <string name="cbf_mumkina_malaria_text">ممکنہ ملیریا</string>
+    <string name="cbf_mumkina_tea_be_ki_tashkhees_kai_lye_reffer_text">ممکنہ ٹی بی کی تشخیص کے لئے ریفر</string>
+    <string name="cbf_tashkhees_shuda_amraaz_tea_be_text">تشخیص شدہ مریض ٹی بی</string>
+    <string name="cbf_muawnat_doraan_elaaj_tea_be_text">معاونت دوران علاج ٹی بی</string>
+    <string name="cbf_elaaj_text">علاج</string>
+    <string name="cbf_refferal_text">ریفرل</string>
+    <string name="cbf_refferal_ki_waja_text">ریفرل کی وجہ</string>
+    <string name="cbf_refferal_hospital_text">ریفرل ہسپتال</string>
+    <string name="cbf_jama_kre_text">جمع کریں</string>
+
+
+    <!--Child Hifaziti Teekey Record List-->
+    <string name="chtr_bachey_kai_hifaziti_teekey_ka_record_text">بچے کے حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="chtr_tareekh_adaegi_text">تاریخ ادائیگی</string>
+    <string name="chtr_vaccine_ki_adaegi_text">ویکسین کی تاریخ</string>
+    <string name="chtr_abhi_tk_lago_nahi_text">ابھی تک لاگو نہیں</string>
+    <string name="chtr_BCG_text">BCG</string>
+    <string name="chtr_poliyou_text">! Oپولیو</string>
+    <string name="chtr_DPT1_text">DPT 1</string>
+    <string name="chtr_DPT2_text">DPT 2</string>
+    <string name="chtr_DPT3_text">DPT 3</string>
+    <string name="chtr_khasra_text">خسرہ</string>
+
+
+    <!--Child Hifaziti Teekey Add Vaccine Dialog-->
+    <string name="dialog_vaccine_ko_anjaam_dy_button_text">اب ویکسین کو انجام دیں</string>
+    <string name="dialog_phle_sy_li_hoe_vaccine_button_text">پہلے سے لی ہوئی ویکسین</string>
+    <string name="dialog_phle_sy_li_hoe_vaccine_uc_button_text">(UC) پہلے سے لی ہوئی ویکسین</string>
+
+    <!--Child Refferal List Activity-->
+    <string name="crl_refferal_text">ریفرل</string>
+    <string name="crl_refferal_number_text">ریفرل :</string>
+    <string name="crl_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+    <!--Child Refferal Form Activity-->
+    <string name="crf_refferal_text">ریفرل</string>
+    <string name="crf_refferal_ki_waja_text">ریفرل کی وجہ</string>
+    <string name="crf_refferal_hospital">ریفرل ہسپتال</string>
+    <string name="crf_jama_kre_text">جمع کریں</string>
+
+
+    <!--Child Profile Activity-->
+    <string name="cp_profile_text">پروفائل</string>
+    <string name="cp_jama_kre_button_text">جمع کریں</string>
+
+    <!--Child AamMalomat Record List Activity-->
+    <string name="camr_aam_malomat_text">عام معلومات</string>
+    <string name="camr_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+
+    <!--Child Aam Malomat Form Activity-->
+    <string name="camf_haan_text">ہاں</string>
+    <string name="camf_nahi_text">نہیں</string>
+    <string name="camf_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="camf_chotay_bhan_bhai_ki_umer_dou_saal_sy_kum_text">چھوٹے بہن بھائی کی عمر 2سال سے کم</string>
+    <string name="camf_pichlle_paanch_saal_kai_doraan_kisi_bhanbhai_ki_mout_text">پچھلے پانچ سال کے دوران کسی بہن/بھائی کی موت</string>
+    <string name="camf_maa_ka_inteqal_hochuka_hai_text">ماں کا انتقا ل ہو چکا ہے </string>
+    <string name="camf_walid_bemaar_bairoozgar_nashay_ka_aadi_ya_foot_hochuky_hai_text">والد بیمار/بے روزگار/نشے کا عادی یا فوت ہوچکے ہیں</string>
+    <string name="camf_pedaishi_wazan_text">پیدائشی وزن</string>
+    <string name="camf_25kilo_say_kum_text">2.5 کلو گرام سے کم</string>
+    <string name="camf_25kilo_say_zayada_text">2.5 کلو گرام سے زیادہ</string>
+    <string name="camf_paidaish_kai_waqt_bachay_ki_halat_text">پیدائش کے وقت بچے کی عمومی حالت</string>
+    <string name="camf_achi_text">اچھی</string>
+    <string name="camf_kharab_text">خراب</string>
+    <string name="camf_darja_hararat_text">درجہ حرارت (ڈگری فارن ہائیٹ)</string>
+    <string name="camf_100_sy_kum_text">100 سے کم</string>
+    <string name="camf_100_say_zayada_text">100 سے زیادہ</string>
+    <string name="camf_saans_ki_raftar_text">سانس کی رفتار (فی منٹ)</string>
+    <string name="camf_60_say_kum_text">60 سے کم</string>
+    <string name="camf_60_say_zayada_text">60 سے زیادہ</string>
+    <string name="camf_naroo_ka_muaina_normal_text">ناڑو کا معائنہ نارمل</string>
+    <string name="camf_naroo_par_chlorhexidine_lagaya_text">ناڑو پر کلو رہیکساڈین لگایا</string>
+    <string name="camf_jild_ka_raang_normal_text">جلد کا رنگ  نارمل</string>
+    <string name="camf_peshab_pakhana_ka_akhraj_text">پیشاب /پاخانے کا اخراج ہوا</string>
+    <string name="camf_pedaishi_naqais_ki_mojodgi_text">پیدائشی نقائص کی موجودگی</string>
+    <string name="camf_jamaa_kre_button_text">جمع کریں</string>
+
+
+<!--    Child Virus Screening Activity-->
+    <string name="cvf_runny_nose_text">نزلے کا بہنا</string>
+    <string name="cvf_sore_throat_text">گلے میں خارش</string>
+    <string name="cvf_cough_text">کھانسی</string>
+    <string name="cvf_fever_text">بخار</string>
+    <string name="cvf_breathing_text">سانس لینے میں دشواری</string>
+    <string name="cvf_virus_text">وائرس</string>
+    <string name="cvf_ksi_dusre_mulk_sy_aae_ho_text">کسی دوسرے ملک سے آئے ہو</string>
+    <string name="cvf_ksi_dusre_mulk_sy_aae_hoe_person_sy_hth_text">کسی دوسرے ملک سے آئے ہوئے شخص سے ہاتھ ملایا ہو</string>
+
+
+
+
+    <!--Search Activity-->
+    <string name="search_talash_text">تلاش</string>
+    <string name="search_tariqa_talash_muntakhib_kre_text">طریقۂ تلاش منتخب کریں</string>
+    <string name="search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text">براہ کرم دوبارہ تلاش کرنے کے لئے ذیل میں سے ایک سے منتخب کریں</string>
+    <string name="search_shanakhti_card_kay_zarye_talash_kre_text">شناختی کارڈ کے ذریعہ تلاش کریں</string>
+    <string name="search_phone_number_kai_zarye_talash_kre_text">فون نمبر کے ذریعہ تلاش کریں</string>
+    <string name="search_khandannumber_kai_zarye_talash_kre_text">خاندان نمبر کے ذریعہ تلاش کریں</string>
+
+    <string name="dialog_talash_kre_text">تلاش کریں</string>
+
+
+
+
+
+    <!--Mother Dashboard Activties-->
+
+    <!--Mother Haamla Record List Activity-->
+    <string name="mhr_haamla_ka_record_text">حمل کا ریکارڈ</string>
+    <string name="mhr_haaml_text">حمل </string>
+    <string name="mhr_FaAal_text">فعال</string>
+    <string name="mhr_naye_haaml_ka_form_shamil_kre_button_text">نئے حمل کا فارم شامل کریں</string>
+
+    <string name="dialog_mhr_akhiri_haiz_ki_tareekh_text">(LMP) آخری ماہواری کی تاریخ</string>
+    <string name="dialog_mhr_mutawaqqa_zichgi_ki_tareekh_text">متوقع زچگی کی تاریخ</string>
+    <string name="dialog_mhr_jari_rhy_button_text">جاری رہے</string>
+
+    <!--Mother Haamla Dashoard Activity-->
+    <string name="mhd_qabalAzpedaish_text">قبل از زچگی</string>
+    <string name="mhd_zichgi_text">زچگی</string>
+    <string name="mhd_badAzpedaish_text">بعد از زچگی</string>
+
+    <!--Mother BadAzPedaish Activity-->
+    <string name="mbap_badAzpedaish_text">بعد از زچگی</string>
+    <string name="mbap_zichgi_ki_mansobabandi_text">زچگی کی منصوبہ بندی :</string>
+    <string name="mbap_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+
+    <!--Mother BadAzPedaish Form Activity-->
+    <string name="mbapf_haan_text">ہاں</string>
+    <string name="mbapf_nahi_text">نہیں</string>
+    <string name="mbapf_maa_zinda_ha_text">ماں زندہ ہے</string>
+    <string name="mbapf_bachey_ki_pedaish_text">بچے کی پیدائش</string>
+    <string name="mbapf_aanwal_ka_andar_rh_jana_text">آنول (Placenta)کا اندر رہ جانا</string>
+    <string name="mbapf_nabz_text">نبض (فی منٹ)</string>
+    <string name="mbapf_100_sy_kum_text">100 سے کم</string>
+    <string name="mbapf_100_say_zayada_text">100 سے زیادہ</string>
+    <!--<string name="mbapf_sharamgha_sy_khoon_ka_zyada_ikhraj_text">شرم گاہ سے خون کا زیادہ اخراج</string>-->
+    <string name="mbapf_sharamgha_sy_khoon_ka_zyada_ikhraj_text">شرم گاہ سے خون کا زیادہ اخراج</string>
+    <string name="mbapf_darjae_hararat_text">درجہ حرارت (ڈگری فارن ہائیٹ)</string>
+    <!--<string name="mbapf_sharamgha_sy_badboodaar_mawaad_ka_ikhraj_text">شرم گاہ سے بدبو دار مواد کا اخراج</string>-->
+    <string name="mbapf_sharamgha_sy_badboodaar_mawaad_ka_ikhraj_text">شرم گاہ سے بدبودار مواد کا اخراج</string>
+    <string name="mbapf_chatiyon_ki_koi_takleef_text">چھاتیوں کی کوئی تکلیف</string>
+    <string name="mbapf_anemia_text">انیمیا (خون کی کمی)</string>
+    <string name="mbapf_maa_ka_doodh_foran_shuru_kya_text">ماں کا دودھ فوراَ شروع کیا</string>
+    <string name="mbapf_maa_ko_khoraak_kai_mutaliq_mashwara_dya_text">ماں کو خوراک کے متعلق مشورہ دیا</string>
+    <string name="mbapf_khandani_mansobabandi_kai_mutaliq_mashwarah_dya_text">خاندانی منصوبہ بندی کے متعلق مشورہ دیا</string>
+    <string name="mbapf_jaama_kre_text">جمع کریں</string>
+
+
+    <!--Mother QabalAzPedaish Form Activity-->
+    <string name="mqapf_qabalAzpedaish_text">قبل از زچگی</string>
+    <string name="mqapf_kul_zichgiyou_ki_tadaad_text">کل زچگیوں کی تعداد</string>
+    <string name="mqapf_kul_haaml_ki_tadaad_text">کل حمل کی تعداد</string>
+    <string name="mqapf_feet_text">فٹ</string>
+    <string name="mqapf_inch_text">انچ</string>
+    <string name="mqapf_kul_zindha_bachy_text">کل زندہ بچے</string>
+    <string name="mqapf_sub_say_choty_bachy_ki_umer_dou_saal_sy_kum_text">سب سے چھوٹے بچے کی عمر دو سال سے کم</string>
+    <string name="mqapf_haan_text">ہاں</string>
+    <string name="mqapf_nahi_text">نہیں</string>
+    <string name="mqapf_umer_text">عمر</string>
+    <string name="mqapf_haamla_ki_umer_text">حاملہ کی عمر</string>
+    <string name="mqapf_qad_text">قد</string>
+    <string name="mqapf_wazan_text">وزن</string>
+    <string name="mqapf_khoon_ka_group_text">خون کا گروپ</string>
+    <string name="mqapf_injection_tareekh_text"> انجکشن تاریخ</string>
+    <string name="mqapf_jamaa_kre_button_text">جمع کریں</string>
+
+    <string name="mqapf_qabalAzpedaish_form_text"> قبل از پیدائش فارم  :</string>
+    <string name="mqapf_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+    <string name="dialog_mqapf_qabalAzpedaish_doorah_text">قبل از پیدائش دورہ</string>
+    <string name="dialog_mqapf_qabalAzpedaish_health_centre_ka_doorah_text">قبل از پیدائش ہیلتھ سینٹر کا دورہ</string>
+
+
+    <!--Mother Qabal Az Pedaish Doorah Form Activity-->
+    <string name="mqapdf_haaml_ka_dorania_text">حمل کا دورانیہ</string>
+    <string name="mqapdf_tareekh_muaina_text">تاریخ معائنہ</string>
+    <string name="mqapdf_takleef_shikayat_text">تکالیف / شکایت</string>
+    <string name="mqapdf_anemia_text">انیمیا (خون کی کمی)</string>
+    <string name="mqapdf_mojood_hai_text">موجود ہے</string>
+    <string name="mqapdf_nahi_hai_text">نہیں ہے</string>
+    <string name="mqapdf_soojan_text">سوجن</string>
+    <string name="mqapdf_bachey_ki_harkat_text">بچے کی حرکت</string>
+    <string name="mqapdf_mehsoos_hoti_hai_text">محسوس ہوتی ہے</string>
+    <string name="mqapdf_nahi_mehsoos_hoti_text">نہیں محسوس ہوتی</string>
+    <string name="mqapdf_sharamgha_sy_khoon_ana_text">شرم گاہ سے خون آنا</string>
+    <string name="mqapdf_sharamgha_sy_badboo_daar_maya_ka_ikhraaj_text">شرم گاہ سے بدبو دار مائع کا اخراج</string>
+    <string name="mqapdf_chatiyon_ki_koi_takleef_text">چھاتیوں کی کوئی تکالیف ("تکالیف" مین تفصیل لکھیں)</string>
+    <string name="mqapdf_folaad_ki_gooliyou_kai_mutaliq_hidayat_text">فولاد کی گولیوں کے متعلق ہدایات</string>
+    <string name="mqapdf_jamaa_kre_button_text">جمع کریں </string>
+
+    <!--Mother Qabal Az Pedaish Health Center Doorah Form Activity-->
+    <string name="mqaphcd_wazan_text">وزن</string>
+    <string name="mqaphcd_khoon_ka_dabaoo_text">خون کا دباؤ (بلڈ پریشر)</string>
+    <string name="mqaphcd_140_90_sy_kum_text">140/90 سے کم</string>
+    <string name="mqaphcd_140_90_sy_zyada_text">140/90 سے زیادہ</string>
+    <string name="mqaphcd_bachey_kay_dil_ki_dharkan_text">بچے کے دل کی دھڑکن</string>
+    <string name="mqaphcd_mojood_hai_text">موجود ہے</string>
+    <string name="mqaphcd_nahi_hai_text">نہیں ہے</string>
+    <string name="mqaphcd_raham_ki_oonchai_text">رحم کی اونچائی (ہفتے یا سنٹی میٹر میں لکھیں )</string>
+    <string name="mqaphcd_haftay_hai_text">ہفتے</string>
+    <string name="mqaphcd_centimeter_text">سنٹی میٹر</string>
+    <string name="mqaphcd_bachay_ka_rukh_text">بچے کا رخ</string>
+    <string name="mqaphcd_sir_kay_baal_seedha_text">(سر کے بل ) سیدھا</string>
+    <string name="mqaphcd_aara_text">آڑا</string>
+    <string name="mqaphcd_thercha_text">ترچھا</string>
+    <string name="mqaphcd_ulta_text">الٹا</string>
+    <string name="mqaphcd_peeshab_ka_muaina_text">پیشاب کا معائنہ</string>
+    <string name="mqaphcd_normal_text">نارمل</string>
+    <string name="mqaphcd_tool_text">اوزار کی مدد سے</string>
+    <string name="mqaphcd_operation_text">آپریشن سے</string>
+    <string name="mqaphcd_sugar_ki_mojoodgi_text">شوگر کی موجودگی</string>
+    <string name="mqaphcd_protein_ki_mojoodgi_text"> پروٹین کی موجودگی</string>
+    <string name="mqaphcd_haemoglobin_text">ہیموگلوبن</string>
+    <string name="mqaphcd_say_kum_text"> سے کم</string>
+    <string name="mqaphcd_100gm_dl_text">10gm/dl</string>
+    <string name="mqaphcd_say_zyada_text">سے زیادہ</string>
+    <string name="mqaphcd_jamaa_kre_button_text">جمع کریں</string>
+
+
+    <!--Mother Zichgi Dialog Activity-->
+    <string name="dialog_mz_zichgi_ki_mansoobahbandi_text">زچگی کی منصوبہ بندی</string>
+    <string name="dialog_mz_bachey_ki_zichgi_text">بچے کی زچگی</string>
+
+    <!--Mother Zichgi ki Mansobabandi Activity-->
+    <string name="mzkmb_zichgi_ki_mansoobahbandi_text">زچگی کی منصوبہ بندی</string>
+    <string name="mzkmb_zichgi_ki_jaga_kai_lye_mashwarah_text">زچگی کی جگہ کیلئے مشورہ</string>
+    <string name="mzkmb_ghar_text">گھر</string>
+    <string name="mzkmb_markaz_sehat_text">مرکز صحت</string>
+    <string name="mzkmb_hospital_text">ہسپتال</string>
+    <string name="mzkmb_emergency_ki_halat_mai_gari_ka_intezam__text">ایمر جنسی کی حالت میں گاڑی کا انتظام</string>
+    <string name="mzkmb_haan_text">ہاں</string>
+    <string name="mzkmb_nahi_text">نہیں</string>
+    <string name="mzkmb_jamaa_kre_button_text">جمع کریں</string>
+
+
+    <!--Mother Zichgi Record List Activity-->
+    <string name="mzl_zichgi_text">زچگی</string>
+    <string name="mzl_zichgi_ki_mansoobahbandi_text">زچگی کی منصوبہ بندی :</string>
+    <string name="mzl_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+
+    <!--Mother Bachey ki Zichgi Form Activity-->
+    <string name="mbkz_dard_ka_dorania_text">درد کا دورانیہ</string>
+    <string name="mbkz_12_ghanty_sy_kum_text">12 گھنٹے سے کم</string>
+    <string name="mbkz_12_ghanty_sy_zyada_text">12 گھنٹے سے زیادہ</string>
+    <string name="mbkz_tareekh_pedaish_text">تاریخ  پیدائش</string>
+    <string name="mbkz_saal_text">سال</string>
+    <string name="mbkz_maah_text">ماہ</string>
+    <string name="mbkz_din_text">دن</string>
+    <string name="mbkz_pedaish_ki_jagha_text">پیدائش کی جگہ</string>
+    <string name="mbkz_ghar_text">گھر</string>
+    <string name="mbkz_markaz_sehat_text">مرکز صحت</string>
+    <string name="mbkz_hospital_text">ہسپتال</string>
+    <string name="mbkz_pedaishg_kis_ny_karwae_text">پیدائش کس نے کروائی</string>
+    <string name="mbkz_hunarmand_farad_ny_text">ہنر مند فرد نے</string>
+    <string name="mbkz_tarbiyat_yafta_farad_ny_text">تربیت یافتہ فرد نے</string>
+    <string name="mbkz_ghair_tarbiyat_yafta_fard_ny_text">غیر تربیت یافتہ فرد نے</string>
+    <string name="mbkz_pedaish_kai_wqt_bachey_ki_position_text">پیدائش کے وقت بچے کی پوزیشن</string>
+    <string name="mbkz_normal_thi_text">نارمل تھی</string>
+    <string name="mbkz_normal_nahi_thi_text">نارمل نہیں تھی</string>
+    <string name="mbkz_pedaish_ka_tariqa_text">پیدائش کا طریقہ</string>
+    <string name="mbkz_jamaa_kre_button_text">جمع کریں</string>
+
+
+    <!--Mother Khandani Mansobahbandi Form Activity-->
+    <string name="mkmbf_khandani_mansobahbandi_text">خاندانی منصوبہ بندی</string>
+    <string name="mkmbf_naya_sabiqa_text">نیا/ سابقہ</string>
+    <string name="mkmbf_tareekh_visit_text">تاریخ وزٹ</string>
+    <string name="mkmbf_tariqa_text">طریقہ</string>
+    <string name="mkmbf_khud_muhayya_kiya_text">خود مہیا کیا</string>
+    <string name="mkmbf_haan_text">ہاں</string>
+    <string name="mkmbf_nahi_text">نہیں</string>
+    <string name="mkmbf_reffer_kiya_text">ریفر کیا</string>
+    <string name="mkmbf_refferal_text">ریفرل</string>
+    <string name="mkmbf_refferal_ki_waja_text">ریفرل کی وجہ</string>
+    <string name="mkmbf_refferal_hospital_text">ریفرل ہسپتال</string>
+    <string name="mkmbf_jamaa_kre_button_text">جمع کریں</string>
+
+
+    <!--Mother Bemaari Record Activity-->
+    <string name="mbr_bachey_ki_bemaari_ka_record_text">ماں کی بیماری کا ریکارڈ</string>
+    <string name="mbr_ka_record_dkha_rha_ha_text">کا ریکارڈ دکھا رہا ہے</string>
+    <string name="mbr_is_tareekh_say_text">اس تاریخ سے</string>
+    <string name="mbr_is_tareekh_tk_text">اس تاریخ تک</string>
+    <string name="mbr_bemaari_ka_record_text">بیماری کا ریکارڈ 01</string>
+    <string name="mbr_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+
+    <!--Mother Bemaari Ka Recod Activity-->
+    <string name="mbf_maa_ki_bemaari_ka_record_text">ماں کی بیماری کا ریکارڈ</string>
+    <string name="mbf_tareekh_indraj_text">تاریخ اندراج</string>
+    <string name="mbf_jins_text">جنس</string>
+    <string name="mbf_ishaal_text">اسہال</string>
+    <string name="mbf_khansi_aur_saans_ki_bemaari_text">کھانسی اور سانس کی بیماریاں</string>
+    <string name="mbf_bukhar_text">بخار</string>
+    <string name="mbf_chout_zakham_jalna_text">چوٹ/زخم/جلنا</string>
+    <string name="mbf_khoon_ki_kami_text">خون کی کمی</string>
+    <string name="mbf_kharish_text">خارش</string>
+    <string name="mbf_ankhon_ki_bemaari_text">آنکھوں کی بیماری</string>
+    <string name="mbf_jins_zanana_amraaz_text">جنس/ زنانہ امراض</string>
+    <string name="mbf_pait_kai_keeray_text">پیٹ  کے کیڑے</string>
+    <string name="mbf_mumkina_malaria_text">ممکنہ ملیریا</string>
+    <string name="mbf_mumkina_tea_be_ki_tashkhees_kai_lye_reffer_text">ممکنہ ٹی بی کی تشخیص کے لئے ریفر</string>
+    <string name="mbf_tashkhees_shuda_amraaz_tea_be_text">تشخیص شدہ مریض ٹی بی</string>
+    <string name="mbf_muawnat_doraan_elaaj_tea_be_text">معاونت دوران علاج ٹی بی</string>
+    <string name="mbf_elaaj_text">علاج</string>
+    <string name="mbf_refferal_text">ریفرل</string>
+    <string name="mbf_refferal_ki_waja_text">ریفرل کی وجہ</string>
+    <string name="mbf_refferal_hospital_text">ریفرل ہسپتال</string>
+    <string name="mbf_jama_kre_text">جمع کریں</string>
+
+
+    <!--Mother Hifaziti Teekey ka Record List Activity-->
+    <string name="mhtrl_hifaziti_teekey_ka_record_text">ماں کے حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="mhtrl_hifaziti_record_text">حفاظتی ریکارڈ :</string>
+    <string name="mhtrl_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+    <!--Mother Hifaziti Teekey ka Record Form Activity-->
+    <string name="mhtrf_hifaziti_teekey_ka_record_text2">ماں کے حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="mhtrf_hifaziti_teekey_ka_record_text"> حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="mhtrf_tt_kay_teekey_text"> کے ٹیکے</string>
+    <string name="mhtrf_phela_text">پہلا</string>
+    <string name="mhtrf_dusra_text">دوسرا</string>
+    <string name="mhtrf_zichgi_ki_mutawaqqa_tareekh_text">زچگی کی متوقع تاریخ (مہینہ۔ سال)</string>
+    <string name="mhtrf_mahina_text">مہینہ</string>
+    <string name="mhtrf_saal_text">سال</string>
+    <string name="mhtrf_hunarmand_fard_say_muaina_text">ہنر مند فرد سے معائنہ</string>
+    <string name="mhtrf_teesra_text">تیسرا</string>
+    <string name="mhtrf_fourth_text">چوتھا</string>
+    <string name="mhtrf_zichgi_kis_ny_ki_text">زچگی کس نے کی</string>
+    <string name="mhtrf_haaml_ka_natija_text">حمل کا نتیجہ</string>
+    <string name="mhtrf_tabsrah_khaas_ikdaam_text">تبصرہ ۔خاص اقدام</string>
+    <string name="mhtrf_jamaa_kre_button_text">جمع کریں </string>
+
+
+    <!--Mother Refferal Record List Activity-->
+    <string name="mref_refferal_text">ریفرل</string>
+    <string name="mref_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
+
+    <!--Mother Refferal Form Activity-->
+    <string name="mrf_refferal_text">ریفرل</string>
+    <string name="mrf_refferal_ki_waja_text">ریفرل کی وجہ</string>
+    <string name="mrf_refferal_hospital_text">ریفرل ہسپتال</string>
+    <string name="mrf_jamaa_kre_text">جمع کریں</string>
+
+
+    <!--Mother Aam Malomat List Activity-->
+    <string name="maml_aam_malomat_text">عام معلومات</string>
+    <string name="maml_naya_form_shamil_kre_text">نیا فارم شامل کریں</string>
+
+    <!--Mother Aam Malomat Form Activity-->
+    <string name="mamf_aam_malomat_text">عام معلومات</string>
+    <string name="mamf_koi_daami_text">کوئی دائمی بیماری</string>
+    <string name="mamf_haan_text">ہاں</string>
+    <string name="mamf_nahi_text">نہیں </string>
+    <string name="mamf_tafseel_text">تفصیل</string>
+    <string name="mamf_kia_maa_koi_dawaiya_istamaal_kr_rhi_hai_text">کیا ماں کوئی دوائیاں استعمال کر رہی ہے</string>
+    <string name="mamf_phele_koi_haaml_zaya_hwa_text">پہلے کوئی حمل ضائع ہوا</string>
+    <string name="mamf_phele_kisi_murdha_bachey_ki_pedaish_text">پہلے کسی مردہ بچے کی پیدائش</string>
+    <string name="mamf_phele_koi_lambay_doraniye_ki_zichgi_text">پہلے کوئی لمبے دورانیے کی زچگی</string>
+    <string name="mamf_haaml_kai_dooran_bloodpressure_ki_bemaari_text">حمل کے دوران بلڈ پریشر کی بیماری یا جھٹکے</string>
+    <string name="mamf_phele_kisi_bachey_ki_pedaish_kailye_operation_text">پہلے کسی بچے کی پیدائش کیلئے آپریشن</string>
+    <string name="mamf_phele_kisi_zichgi_kai_foranbad_zyada_khoon_ka_ikhraaj_text">پہلے کسی زچگی کے فوراََ بعد زیادہ خون کا اخراج</string>
+    <string name="mamf_jamaa_kre_button_text">جمع کریں </string>
+
+
+    <!--Vaccinated UnListed Activity-->
+    <string name="vul_vaccinate_unlisted_text">ویکسینیٹ انلسٹڈ</string>
+    <string name="vul_bachey_ka_naam_text">بچے کا نام</string>
+    <string name="vul_bachey_ka_naam_text2">بچے کا نام</string>
+    <string name="vul_tareekh_pedaish_text">تاریخ پیدائش</string>
+    <string name="vul_jins_text">جنس</string>
+    <string name="vul_walid_ka_naam_text">والد کا نام </string>
+    <string name="vul_walid_ka_shanakti_card_number_text">والد کا شناختی کارڈ نمبر</string>
+    <string name="vul_vacination_card_number_text">ویکسینیشن کارڈ کا نمبر</string>
+
+    <string name="vul_walid_ya_kisi_ghar_kay_faard_ka_fingerprint_text">والد یا کسی گھر کے فرد کا فنگر پرنٹ </string>
+    <string name="vul_biometriC_ko_faAl_kre_text">بایو میٹرک کو فعال کریں</string>
+    <string name="vul_tahseel_text">تحصیل </string>
+    <string name="vul_union_council_text">یونین کونسل</string>
+    <string name="vul_zila_text">ضلع</string>
+    <string name="vul_gaon_text">گاؤں</string>
+    <string name="vul_jamaa_kre_button_text">جمع کریں </string>
+
+
+    <!--Search With FingerPrint And QR Code Activity-->
+    <string name="swfpaqr_talash_text">تلاش</string>
+    <string name="swfpaqr_tariqa_muntakhib_kre_text">طریقہ منتخب کریں</string>
+    <string name="swfpaqr_aapni_talash_kai_sath_jari_rakhny_kai_lye_zail_mai_sy_ek_tariqo_sy_muntakhib_kre_text">اپنی تلاش کے ساتھ جاری رکھنے کیلئے ذیل میں سے ایک طریقوں سے منتخب کریں</string>
+    <string name="swfpaqr_fingerprint_kai_zarye_talash_kre_text">فنگر پرنٹ کے ذریعہ تلاش کریں</string>
+    <string name="swfpaqr_qr_code_kai_zarye_talash_kre_text">کیو آر کوڈ کے ذریعہ تلاش کریں</string>
+    <string name="swfpaqr_qrcode_kai_zarye_talash_kre_text">کوڈ کے ذریعہ تلاش کریں</string>
+
+
+    <!--Searcg QR Code Activity-->
+    <string name="sqr_apny_card_ko_camera_kai_samny_rkhe_text">اپنے کارڈ کو کیمرے کے سامنے رکھیں اور مندرجہ ذیل خاکے کے اندر کارڈ کو سکین کریں</string>
+
+    <!--Search List Khandan Activity-->
+    <string name="sknl_talash_kai_nataaij_text">تلاش کے نتائج</string>
+    <string name="sknl_khandan_number_text">خاندان نمبر:</string>
+    <string name="sknl_faAl_text">فعال</string>
+    <string name="sknl_gaon_text">گاؤں ABC</string>
+
+
+    <!--Child Hifaziti PheleSyLiHoeVaccine Form Activity-->
+    <string name="chpslhvf_bachey_kai_hifaziti_teekey_ka_record_text">بچے کے حفاظتی ٹیکے کا ریکارڈ</string>
+    <string name="chpslhvf_polio_text">پولیو</string>
+    <string name="chpslhvf_poliomyelitis_text">Poliomyelitis</string>
+    <string name="chpslhvf_date_text">اکتوبر 29, 2016</string>
+    <string name="chpslhvf_mosool_hoe_text">موصول ہوئی</string>
+    <string name="chpslhvf_tareekh_mosool_hoe_text">تاریخ موصول ہوئی</string>
+    <string name="chpslhvf_vaccine_kaha_farham_ki_gae_text">ویکسین کہاں فراہم کی گئی </string>
+    <string name="chpslhvf_tabsrah_text">تفصیل</string>
+    <string name="chpslhvf_vaccine_card_ki_tasveer_ly_text">ویکسینشن کارڈ کی تصویر لیں</string>
+    <string name="chpslhvf_jamaa_kre_button_text">جمع کریں</string>
+
+
+    <string name="inside_unioncouncil_vac">یونین کونسل کے اندر</string>
+    <string name="outside_unioncouncil_vac">یونین کونسل کے باہر</string>
+
+    <string name="jild_neela_rung">نیلا</string>
+    <string name="jild_peela_rung">پیلا</string>
+    <string name="jild_normal_rung">عام</string>
+
+
+    <!--Feedback Dialog-->
+    <string name="feedback_text">برائے مہربانی حیات ایپلیکیشن کے استعمال سے متعلق اپنی رائے منتخب کیجیے</string>
+    <string name="feedback_response_text">آپ کی رائے کا شکریہ</string>
+
+<!--    Dialog Total And Refer Patients in COVID-->
+    <string name="total_number_of_patients_text">کل مریضوں کی تعداد</string>
+    <string name="refer_number_of_patients_text">کل ریفر مریضوں کی تعداد</string>
+
+</resources>
+
+

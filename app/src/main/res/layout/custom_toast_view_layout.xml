@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@color/uvv_black"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/customToastImage"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_check_black_24dp"
+        android:tint="@color/green_color" />
+
+    <TextView
+        android:id="@+id/customToastText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:text="صارف لاگ ان"
+        android:textStyle="bold"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

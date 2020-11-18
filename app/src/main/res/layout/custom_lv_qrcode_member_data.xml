@@ -1,0 +1,164 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sync"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/card_backgroud"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvMemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="VideoName"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMemberName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="Father Name:"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvFatherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMemberName"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/tv1"
+            android:ellipsize="end"
+            android:text="Father"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFatherName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="DOB:"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFatherName"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/tv2"
+            android:ellipsize="end"
+            android:text="2019-12-12"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFatherName"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:text="06"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFatherName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/tvAge"
+            android:text="Age:"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDOB"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ellipsize="end"
+
+            android:text="06"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDOB"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/tvGender"
+            android:text="Gender:"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDOB"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="Village Name:"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvVillageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDOB"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/tv5"
+            android:ellipsize="end"
+            android:text="orgah"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    <!--</RelativeLayout>-->

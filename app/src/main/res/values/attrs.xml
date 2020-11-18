@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+
+    <attr name="slideMenuStyle" format="reference" />
+
+    <declare-styleable name="SlideMenu_Layout">
+        <attr name="layout_role" format="enum">
+            <enum name="content" value="0" />
+            <enum name="primaryMenu" value="1" />
+            <enum name="secondaryMenu" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SlideMenu">
+        <attr name="primaryShadowWidth" format="dimension" />
+        <attr name="secondaryShadowWidth" format="dimension" />
+        <attr name="primaryShadowDrawable" format="reference" />
+        <attr name="secondaryShadowDrawable" format="reference" />
+        <attr name="edgeSlide" format="boolean" />
+        <attr name="edgeSlideWidth" format="dimension" />
+        <attr name="slideDirection" format="flags">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="interpolator" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MaskedEditText">
+        <attr name="mask" format="string" />
+        <attr name="placeholder" format="string" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

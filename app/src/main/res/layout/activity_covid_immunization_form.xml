@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".CovidImmunization">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <ImageButton
+            android:id="@+id/unionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/union" />
+
+        <TextView
+            android:id="@+id/activityTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/co_morbidity"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_home_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="40dp"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/fullName"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"/>
+        <View
+            android:layout_width="300px"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="@color/purple_200"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/ageInYears"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cornerRadius="40dp"
+        android:background="@drawable/shape_10"
+        android:padding="20dp"
+        android:layout_margin="20dp">
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/receivedLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_10_purple"
+            android:paddingVertical="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/recevied"
+                android:textColor="@color/navy"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/receivedSwitch"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="110dp"
+                android:checked="true"
+                android:foregroundGravity="right"
+                android:gravity="right"
+                android:textOff="Received"
+                android:textOn="Not Received"
+
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/dateRecevied"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:textColor="@color/navy"
+            android:background="@drawable/shape_10_purple"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/immunizationProvided"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:textColor="@color/navy"
+            android:background="@drawable/shape_10_purple"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/immunizationProvided"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="16dp"
+            android:textColor="@color/navy"
+            android:background="@drawable/shape_10_purple"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="textMultiLine" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/shape_purple_accent"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="add" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

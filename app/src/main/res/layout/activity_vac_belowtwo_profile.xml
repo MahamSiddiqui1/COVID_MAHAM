@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_BelowTwoProfile_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cp_profile_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_menu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/color_white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/rl_home">
+
+                <ImageView
+                    android:id="@+id/iv_editprofile"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_editprofile_icon"
+                    android:tint="@color/color_white" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_home_top">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/register_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:optRoundCardBackgroundColor="@color/color_white"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="20dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:scrollbarSize="0dp"
+                android:scrollbarThumbVertical="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="@dimen/_30sdp">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_register_name"
+                    android:padding="@dimen/_10sdp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:text="@string/vul_bachey_ka_naam_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_bachey_ka_naam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp">
+
+                                <requestFocus />
+
+                            </EditText>
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:text="@string/vul_jins_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:text="@string/vul_tareekh_pedaish_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_jins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_background_layout"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/image_arrow_drop_jins"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_2sdp"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                    android:tint="@color/dark_blue_color" />
+
+                                <Spinner
+                                    android:id="@+id/sp_jins"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_toRightOf="@+id/image_arrow_drop_jins"
+                                    android:background="@null"
+                                    android:popupElevation="0dp"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_background_layout"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/et_tareekh_pedaish"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:background="@null"
+                                    android:cursorVisible="false"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableRight="@drawable/ic_calender"
+                                    android:drawableTint="@color/pink_color"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="right"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:text="@string/mr_walida_ka_naam_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:text="@string/mr_walid_ka_naame_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/et_walida_ka_naam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_5sdp"
+
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_background_layout"
+                                android:gravity="right|center_vertical"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <EditText
+                                android:id="@+id/et_walid_ka_naam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_background_layout"
+                                android:gravity="right|center_vertical"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:text="@string/vul_walid_ka_shanakti_card_number_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_walid_ka_shanakti_card_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:text="@string/mr_mobile_number_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_mobile_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_mobile_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:text="@string/reg_mukamal_pata_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:text="@string/vul_vacination_card_number_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp">
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_vacination_card_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/rl_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:id="@+id/image_bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_fingerprint_icon" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edittext_background_layout"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp">
+
+                            <Switch
+                                android:id="@+id/sw_biometric_faal_kre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:checked="false"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:thumbTint="#E9A7DE" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_biometric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_biometric_faal_kre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:text="@string/vul_biometriC_ko_faAl_kre_text"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_qrcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/image_qrcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_qrcode_icon" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edittext_background_layout">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_switch_qrcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp">
+
+                            <Switch
+                                android:id="@+id/sw_qrcode_faal_kre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:checked="false"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:thumbTint="#E9A7DE" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_qrcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_qrcode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:text=" QR"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_qrcode_faal_kre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/tv_qrcode"
+                                android:text="@string/cr_qr_code_ko_faal_kre_text"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_background_layout">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_switch_childstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp">
+
+                            <Switch
+                                android:id="@+id/sw_child_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:showText="true"
+                                android:textOff="مردہ"
+                                android:textOn="زندہ"
+                                android:thumbTint="#E9A7DE"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="بچے کی موجودہ حالت"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wafat"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:text="@string/cr_tabsarah_wajah_wafaat_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_14sdp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:text="@string/cr_tareekh_wafat_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_14sdp" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/image_arrow_down_wafat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="@dimen/_2sdp"
+                                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                        android:tint="@color/dark_blue_color" />
+
+                                    <Spinner
+                                        android:descendantFocusability="afterDescendants"
+                                        android:id="@+id/sp_wajah_wafat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_toRightOf="@+id/image_arrow_down_wafat"
+                                        android:background="@null"
+                                        android:popupElevation="0dp"
+                                        android:spinnerMode="dropdown" />
+
+
+                                </RelativeLayout>
+
+
+                                <EditText
+                                    android:id="@+id/et_tareekh_wafaat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:cursorVisible="false"
+                                    android:drawablePadding="@dimen/_10sdp"
+
+                                    android:drawableRight="@drawable/ic_calender"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wajah_wafat_likhey"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:id="@+id/tr_wajah_wafat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:text="وجہ وفات لکھے"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp">
+
+
+                            <EditText
+
+                                android:id="@+id/et_tabsarah_wajah_wafaat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_background_layout"
+                                android:inputType="text|textMultiLine"
+                                android:isScrollContainer="true"
+                                android:padding="@dimen/_5sdp"
+                                android:scrollIndicators="left"
+                                android:scrollbarSize="@dimen/_1sdp"
+                                android:scrollbarThumbVertical="@color/light_pink_color"
+                                android:scrollbars="vertical"
+                                android:singleLine="false"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/login_button_shape_layout"
+                android:text="@string/reg_jaama_kre_button_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+                <ProgressBar
+                    android:id="@+id/pbProgress"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_cardview"
+                    android:indeterminateDrawable="@drawable/rotate_animation"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+
+</com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,98 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sync"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Member Name"
+            android:layout_toLeftOf="@+id/btnFollowUp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/btnFollowUp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_alignParentRight="true"
+            android:text="Follow up"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/card_backgroud"
+            android:backgroundTint="@color/light_blue_color"
+            android:textColor="@color/color_white"
+            android:layout_height="@dimen/_30sdp"/>
+
+        <TextView
+
+            android:id="@+id/tvRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="Reason:"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_below="@+id/tvName"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/btnFollowUp"
+            android:layout_toRightOf="@+id/tvRef"
+            android:id="@+id/tvReferalReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="Member Name"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_below="@+id/tvName"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvReferalReason"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="201-06-15"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tvTime"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvReferalReason"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="01:10"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
