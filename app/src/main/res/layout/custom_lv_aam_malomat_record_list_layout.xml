@@ -18,10 +18,10 @@
             android:id="@+id/cam_lv_tvNaam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:textColor="@color/text_color"
-            android:text="1223"
+            android:text="@string/num1223"
             android:textSize="@dimen/_14sdp" />
 
         <TextView
@@ -29,10 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:layout_toLeftOf="@+id/cam_lv_tvNaam"
             android:textColor="@color/text_color"
-            android:text="7485"
+            android:text="@string/num7485"
             android:textSize="@dimen/_14sdp" />
 
         <ImageView

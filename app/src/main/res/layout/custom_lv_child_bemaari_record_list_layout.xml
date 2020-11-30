@@ -18,10 +18,10 @@
             android:id="@+id/mkmbl_lv_tvNaam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:textColor="@color/text_color"
-            android:text="1"
+            android:text="@string/num1"
             android:textSize="@dimen/_12sdp" />
 
         <TextView
@@ -29,10 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/mkmbl_lv_tvNaam"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/mkmbl_lv_tvNaam"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:textColor="@color/text_color"
-            android:text="124 "
+            android:text="@string/num124"
             android:textSize="@dimen/_12sdp" />
 
         <ImageView

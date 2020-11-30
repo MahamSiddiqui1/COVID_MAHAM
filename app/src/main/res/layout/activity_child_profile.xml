@@ -42,7 +42,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true"
                 android:visibility="gone">
@@ -51,9 +51,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -64,14 +64,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -86,7 +86,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -114,9 +114,9 @@
                 android:id="@+id/mother_register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="15dp"
                 app:optRoundCardLeftBottomCorner="false"
@@ -134,27 +134,27 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:paddingBottom="@dimen/_40sdp">
 
                         <RelativeLayout
                             android:id="@id/rl_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_5sdp">
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp">
 
 
                             <RelativeLayout
                                 android:id="@+id/rl_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
                                 android:background="@drawable/cr_rectangle_layout">
 
                                 <TextView
@@ -174,7 +174,7 @@
                                 android:id="@+id/rl_circle_add"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginStart="@dimen/_15sdp"
                                 android:layout_marginTop="5dp"
                                 android:layout_toRightOf="@+id/rl_2">
 
@@ -184,7 +184,7 @@
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_centerInParent="true"
-                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"
                                     android:layout_marginBottom="10dp"
                                     app:cardBackgroundColor="@color/color_white"
                                     app:cardCornerRadius="35dp"
@@ -220,7 +220,7 @@
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="نام"
                                     android:textColor="@color/text_color"
@@ -271,8 +271,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/mr_walida_ka_naam_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -288,8 +288,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_walid_ka_naame_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -378,8 +378,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/cr_tareekh_pedaish_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -395,8 +395,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_sarbarah_kay_sath_rishta_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -482,8 +482,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/age"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -499,8 +499,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_shanakhti_card_number_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -589,8 +589,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_jins_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -607,8 +607,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_azdawaji_hasiyat_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -727,8 +727,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_tareekh_nakal_makani_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -744,8 +744,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="والد کا موبائل نمبر"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -816,7 +816,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cr_tabsarah_wajah_nakal_makani_text"
                                     android:textColor="@color/text_color"
@@ -870,8 +870,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_khandan_number_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -887,8 +887,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_infradi_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1010,8 +1010,8 @@
                                         android:id="@+id/tv_qrcode"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:text=" QR"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -1060,7 +1060,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         android:text="بچے کی موجودہ حالت"
                                         android:textColor="@color/dark_blue_color"
@@ -1100,8 +1100,8 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentRight="true"
-                                                android:layout_marginRight="@dimen/_15sdp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginEnd="@dimen/_15sdp"
                                                 android:text="@string/cr_tabsarah_wajah_wafaat_text"
                                                 android:textColor="@color/text_color"
                                                 android:textSize="@dimen/_12sdp" />
@@ -1117,8 +1117,8 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentRight="true"
-                                                android:layout_marginRight="@dimen/_5sdp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginEnd="@dimen/_5sdp"
                                                 android:text="@string/cr_tareekh_wafat_text"
                                                 android:textColor="@color/text_color"
                                                 android:textSize="@dimen/_12sdp" />
@@ -1217,7 +1217,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="وجہ وفات لکھے"
                                         android:textColor="@color/text_color"
@@ -1313,8 +1313,8 @@
                                         android:id="@+id/tv_biometric_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="@string/cr_biometric_ko_faal_kre_text"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />

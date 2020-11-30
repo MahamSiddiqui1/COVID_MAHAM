@@ -41,7 +41,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -49,9 +49,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -62,7 +62,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -85,7 +85,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -115,8 +115,8 @@
                 android:id="@+id/childregister_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
@@ -136,8 +136,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginTop="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
@@ -170,9 +170,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/dateLabel"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -203,7 +203,7 @@
 
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -273,11 +273,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_cancer"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -285,12 +285,12 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cancer"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -326,9 +326,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -410,11 +410,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_chronic_kidney_disease"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -422,12 +422,12 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_chronic_kidney_disease"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -464,9 +464,9 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:text="@string/notes"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
@@ -552,11 +552,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_copd"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -564,12 +564,12 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_copd"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -604,9 +604,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -691,13 +691,13 @@
 
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
                                               android:layout_marginTop="@dimen/_5sdp"
                                               android:layout_marginBottom="@dimen/_5sdp"
-                                            android:layout_marginRight="@dimen/_25sdp"
+                                            android:layout_marginEnd="@dimen/_25sdp"
                                             android:text="@string/cm_heart_condition"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -705,12 +705,12 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_heart_condition"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -748,9 +748,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -840,14 +840,14 @@
                                               android:paddingRight="@dimen/_50sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                              android:layout_marginRight="@dimen/_25sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                              android:layout_marginEnd="@dimen/_25sdp"
                                               android:layout_marginTop="@dimen/_5sdp"
                                               android:layout_marginBottom="@dimen/_5sdp"
 
                                             android:text="@string/cm_immune_compromised_organ"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp"
 
@@ -861,12 +861,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_immune_compromised_organ"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -901,9 +901,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -987,11 +987,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_obesity"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1000,12 +1000,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_obesity"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1040,9 +1040,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1125,11 +1125,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_sickle_cell_disease"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1138,12 +1138,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_sickle_cell_disease"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1178,9 +1178,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1263,11 +1263,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_pregnancy"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1276,12 +1276,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_pregnancy"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1316,9 +1316,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1401,11 +1401,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_asthma"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1414,12 +1414,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_asthma"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1454,9 +1454,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1539,11 +1539,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_cerebrovascular_disease"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1552,12 +1552,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cerebrovascular_disease"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1592,9 +1592,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1677,11 +1677,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_cystic_fibrosis"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1690,12 +1690,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cystic_fibrosis"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1730,9 +1730,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1815,11 +1815,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_hypertension"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1828,12 +1828,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_hypertension"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -1868,9 +1868,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1958,13 +1958,13 @@
                                               android:paddingRight="@dimen/_40sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
                                               android:layout_marginTop="@dimen/_5sdp"
                                               android:layout_marginBottom="@dimen/_5sdp"
-                                              android:layout_marginRight="@dimen/_25sdp"
+                                              android:layout_marginEnd="@dimen/_25sdp"
                                             android:text="@string/cm_immune_compromised_other"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
 
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1974,12 +1974,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_immune_compromised_other"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2014,9 +2014,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2101,10 +2101,10 @@
                                             android:paddingRight="@dimen/_50sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginLeft="@dimen/_5sdp"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_neurologic"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2114,9 +2114,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginLeft="@dimen/_5sdp"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/no"
                                             android:textColor="@color/grayDark"
                                             android:textOff="@string/no"
@@ -2152,9 +2152,9 @@
                                             android:paddingRight="@dimen/_40sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2237,11 +2237,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_liver_disease"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2250,12 +2250,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_liver_disease"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2290,9 +2290,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2377,11 +2377,11 @@
                                               android:paddingRight="@dimen/_25sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_25sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_25sdp"
                                             android:text="@string/cm_overweight"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2390,12 +2390,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_overweight"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2430,9 +2430,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2515,11 +2515,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_pulmonary_fibrosis"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2528,12 +2528,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_pulmonary_fibrosis"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2568,9 +2568,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2653,11 +2653,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_thalassemia"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2666,12 +2666,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_thalassemia"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2706,9 +2706,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2788,11 +2788,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_type1_diabetes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2801,12 +2801,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_type1_diabetes"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2841,9 +2841,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -2923,11 +2923,11 @@
                                           <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cm_ldl_cholestrol"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -2936,12 +2936,12 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_ldl_cholestrol"
 
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:text="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp"
                                             />
@@ -2976,9 +2976,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/notes"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />

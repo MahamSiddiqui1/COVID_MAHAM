@@ -20,14 +20,14 @@
             android:padding="15dp">
 
             <TextView
-                android:layout_toLeftOf="@+id/tvCount"
+                android:layout_toStartOf="@+id/tvCount"
                 android:layout_centerInParent="true"
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="text"
+                android:text="@string/text"
                 android:gravity="center_horizontal"
-                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
@@ -37,8 +37,8 @@
                 android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
-                android:layout_alignParentRight="true"
+                android:text="@string/_10"
+                android:layout_alignParentEnd="true"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_10sdp"
                 />

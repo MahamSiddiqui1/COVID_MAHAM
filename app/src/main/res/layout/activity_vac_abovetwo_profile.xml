@@ -41,7 +41,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true"
                 android:visibility="gone">
@@ -50,9 +50,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -63,7 +63,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_toLeftOf="@+id/rl_home">
 
                 <ImageView
@@ -114,8 +114,8 @@
                 android:id="@+id/register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
@@ -135,8 +135,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginTop="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
@@ -156,7 +156,7 @@
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="نام"
                                     android:textColor="@color/text_color"
@@ -224,8 +224,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/vul_jins_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -242,8 +242,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/vul_tareekh_pedaish_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -354,8 +354,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="match_parent"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mr_walida_ka_naam_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -371,8 +371,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mr_walid_ka_naame_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -443,7 +443,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/vul_walid_ka_shanakti_card_number_text"
                                     android:textColor="@color/text_color"
@@ -511,8 +511,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_azdawaji_hasiyat_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -528,8 +528,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="والد کا موبائل نمبر"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -626,7 +626,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="شوہر کا نام"
                                         android:textColor="@color/text_color"
@@ -676,7 +676,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="شوہر کا شناختی کارڈ نمبر"
                                         android:textColor="@color/text_color"
@@ -725,7 +725,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="شوہر کا موبائل نمبر"
                                         android:textColor="@color/text_color"
@@ -776,7 +776,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
@@ -832,7 +832,7 @@
                                         android:id="@+id/txt_vaccine_card_ka_number"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="@string/vul_vacination_card_number_text"
                                         android:textColor="@color/text_color"
@@ -937,8 +937,8 @@
                                         android:id="@+id/tv_biometric_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="@string/vul_biometriC_ko_faAl_kre_text"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -1005,8 +1005,8 @@
                                         android:id="@+id/tv_qrcode"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:text=" QR"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -1056,7 +1056,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         android:text="موجودہ حالت"
                                         android:textColor="@color/dark_blue_color"
@@ -1096,8 +1096,8 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentRight="true"
-                                                android:layout_marginRight="@dimen/_15sdp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginEnd="@dimen/_15sdp"
                                                 android:text="@string/cr_tabsarah_wajah_wafaat_text"
                                                 android:textColor="@color/text_color"
                                                 android:textSize="@dimen/_12sdp" />
@@ -1113,8 +1113,8 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentRight="true"
-                                                android:layout_marginRight="@dimen/_5sdp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginEnd="@dimen/_5sdp"
                                                 android:text="@string/cr_tareekh_wafat_text"
                                                 android:textColor="@color/text_color"
                                                 android:textSize="@dimen/_12sdp" />
@@ -1213,7 +1213,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="وجہ وفات لکھے"
                                         android:textColor="@color/text_color"

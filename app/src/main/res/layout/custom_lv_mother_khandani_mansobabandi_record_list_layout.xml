@@ -18,10 +18,9 @@
             android:id="@+id/mkmbl_lv_tvDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/mkmbl_lv_tvNaam"
+            android:layout_toEndOf="@+id/mkmbl_lv_tvNaam"
             android:textColor="@color/text_color"
-            android:text="Date to see :"
+            android:text="@string/date_to_see"
             android:textSize="@dimen/_12sdp" />
 
         <TextView
@@ -30,9 +29,9 @@
             android:layout_height="wrap_content"
 
 
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:textColor="@color/text_color"
-            android:text="count"
+            android:text="@string/count"
             android:textSize="@dimen/_12sdp" />
 
         <ImageView
@@ -40,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:rotation="180"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:src="@drawable/ic_leftarrow_icon" />
 
     </RelativeLayout>

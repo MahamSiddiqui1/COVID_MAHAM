@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10sp"
+            android:layout_marginEnd="10sp"
             android:background="@color/colorPrimary"
             app:srcCompat="@drawable/union" />
 
@@ -107,7 +107,7 @@
                         android:id="@+id/firsname"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -115,7 +115,7 @@
                         android:id="@+id/lastname"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
                 </TableRow>
@@ -187,7 +187,7 @@
                         android:id="@+id/gender"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -218,7 +218,7 @@
                         android:id="@+id/ageLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_weight="0.99"
                         android:ems="10"
                         android:text="@string/age"
@@ -243,7 +243,7 @@
                         android:id="@+id/age"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_weight="1"
                         android:background="@color/lightPurple" />
                 </TableRow>
@@ -285,7 +285,7 @@
                         android:id="@+id/cnic"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -334,7 +334,7 @@
                         android:id="@+id/indID"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -413,7 +413,7 @@
                         android:id="@+id/province"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -462,7 +462,7 @@
                         android:id="@+id/district"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -511,7 +511,7 @@
                         android:id="@+id/UC"
                         android:layout_width="match_parent"
                         android:layout_height="20sp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="0.5"
                         android:background="@color/lightPurple" />
 
@@ -545,8 +545,8 @@
                             <TextView
                                 android:layout_width="94dp"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/_30sdp"
                                 android:text="@string/tehsil"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -562,8 +562,8 @@
                             <TextView
                                 android:layout_width="96dp"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/_30sdp"
                                 android:text="@string/district"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -682,9 +682,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="38dp"
                                 android:layout_alignParentStart="false"
-                                android:layout_alignParentLeft="false"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="80dp"
+                                android:layout_alignParentStart="false"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="80dp"
                                 android:text="@string/village"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -700,8 +700,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="35dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="35dp"
                                 android:text="@string/union"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -832,8 +832,8 @@
                             android:id="@+id/tv_qrcode"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="@dimen/_5sdp"
                             android:text=" QR"
                             android:visibility="gone"
                             android:textColor="@color/dark_blue_color"
@@ -893,8 +893,8 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="0dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="0dp"
                                 android:text="@string/Toilet"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -910,8 +910,8 @@
                             <TextView
                                 android:layout_width="144dp"
                                 android:layout_height="match_parent"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="0dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="0dp"
                                 android:text="@string/drinkingWater"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -1017,7 +1017,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
@@ -1047,7 +1047,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="@string/reg_latrine_system_text"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />

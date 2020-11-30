@@ -13,7 +13,7 @@
         android:padding="@dimen/_5sdp"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="With-in 24 Hours"
+        android:text="@string/within24"
         android:background="@color/light_blue_color"
         android:layout_centerHorizontal="true"
         android:textColor="@color/color_white"
@@ -32,9 +32,9 @@
             android:id="@+id/chtr_lv_tvTareekh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:text="@string/chtr_tareekh_adaegi_text"
             android:textColor="@color/chtr_dpt_green_txt_color"
             android:textSize="@dimen/_14sdp" />
@@ -44,8 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_toLeftOf="@+id/chtr_lv_tvTareekh"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_toStartOf="@+id/chtr_lv_tvTareekh"
             android:textColor="@color/chtr_dpt_green_txt_color"
             android:textSize="@dimen/_14sdp" />
 
@@ -54,8 +54,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_toRightOf="@+id/chtr_lv_iv_vaccineIcon"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/chtr_lv_iv_vaccineIcon"
             android:text="@string/chtr_BCG_text"
             android:textColor="@color/chtr_dpt_green_txt_color"
             android:textSize="@dimen/_14sdp" />
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:src="@drawable/ic_bcg_icon" />
 
 

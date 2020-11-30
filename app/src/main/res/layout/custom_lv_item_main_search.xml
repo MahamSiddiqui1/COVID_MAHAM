@@ -25,7 +25,7 @@
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UnKnown"
+            android:text="@string/unknown"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tvName"
             android:layout_marginTop="5dp"
-            android:text="ID:1298100"
+            android:text="@string/id_1298100"
             android:textColor="@color/light_blue_color"
             android:textSize="@dimen/_10sdp" />
 
@@ -47,8 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tvName"
             android:layout_marginTop="5dp"
-            android:layout_toLeftOf="@+id/gender_icon"
-            android:text="26-10-2019 02:05:10"
+            android:layout_toStartOf="@+id/gender_icon"
+            android:text="@string/_26_10_2019_02_05_10"
             android:textColor="@color/light_grey_color"
             android:textSize="@dimen/_10sdp" />
 
@@ -59,7 +59,7 @@
             android:layout_centerVertical="true"
             android:layout_below="@id/tvName"
             android:src="@drawable/baby_boy_icon"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"/>
 
     </RelativeLayout>

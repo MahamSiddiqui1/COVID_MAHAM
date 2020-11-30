@@ -18,9 +18,9 @@
             android:id="@+id/mzl_lv_tvNaam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:text=":1"
+            android:text="@string/colon1"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_12sdp" />
 
@@ -29,9 +29,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_toLeftOf="@+id/mzl_lv_tvNaam"
-            android:text="123"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/mzl_lv_tvNaam"
+            android:text="@string/num123"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_12sdp" />
 

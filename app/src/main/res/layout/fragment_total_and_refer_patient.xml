@@ -15,9 +15,9 @@
             android:id="@+id/childregister_card_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
             app:optRoundCardBottomEdges="false"
             app:optRoundCardCornerRadius="20dp"
             app:optRoundCardLeftBottomCorner="false"
@@ -28,9 +28,9 @@
                 android:id="@+id/rl_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:paddingBottom="10dp">
 
 
@@ -38,8 +38,8 @@
                     android:id="@+id/table_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp">
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
                             android:layout_weight="1"
 
                             android:text="@string/cbf_tareekh_indraj_text"
@@ -115,7 +115,7 @@
                     android:id="@+id/btn_FabAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:src="@drawable/ic_add_black_24dp"
                     android:tint="@color/color_white"

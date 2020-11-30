@@ -25,7 +25,7 @@
             <!--                android:id="@+id/sync_msg"-->
             <!--                android:layout_width="wrap_content"-->
             <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_alignParentEnd="true"-->
             <!--                android:layout_centerHorizontal="true"-->
             <!--                android:layout_marginTop="@dimen/_10sdp"-->
             <!--                android:text="سینکنگ ڈیٹا"-->

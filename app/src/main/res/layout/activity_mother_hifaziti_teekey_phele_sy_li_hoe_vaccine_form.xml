@@ -40,7 +40,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -48,9 +48,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -61,7 +61,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -69,7 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -102,7 +102,7 @@
                     android:layout_height="70dp"
                     android:layout_centerInParent="true"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="35dp"
                     app:cardElevation="10dp">
@@ -125,8 +125,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_circle_home"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_10sdp">
@@ -154,8 +154,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:weightSum="2">
 
@@ -198,16 +198,16 @@
                 layout="@layout/custom_child_hifaziti_phelesylihoevaccineform_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp" />
 
             <com.github.captain_miao.optroundcardview.OptRoundCardView
                 android:id="@+id/card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/include_layout"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
@@ -227,8 +227,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
 
@@ -274,9 +274,9 @@
                                         android:id="@+id/tv_mosool_hoe"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_alignParentRight="false"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentEnd="false"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:text="@string/received"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -295,7 +295,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/dateRecevied"
                                     android:textColor="@color/text_color"
@@ -344,7 +344,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/vaccine_provided_where"
                                     android:textColor="@color/text_color"
@@ -397,7 +397,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/details"
                                     android:textColor="@color/text_color"

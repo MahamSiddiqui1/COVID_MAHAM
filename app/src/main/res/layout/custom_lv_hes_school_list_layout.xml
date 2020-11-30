@@ -20,7 +20,7 @@
 
         <RelativeLayout
             android:id="@+id/rl_background"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="@dimen/_10sdp"
@@ -32,17 +32,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="false"
-                android:layout_toLeftOf="@+id/iv_icon"
-                android:layout_marginRight="@dimen/_10sdp">
+                android:layout_toStartOf="@+id/iv_icon"
+                android:layout_marginEnd="@dimen/_10sdp">
 
                 <TextView
                     android:id="@+id/tvSchoolName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_8sdp"
-                    android:layout_marginRight="@dimen/_5sdp"
-                    android:text="CAA Model School"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/caa_model_school"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -52,20 +52,20 @@
             <RelativeLayout
                 android:layout_marginTop="@dimen/_2sdp"
                 android:id="@+id/rl_2"
-                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_1"
-                android:layout_toLeftOf="@+id/iv_icon">
+                android:layout_toStartOf="@+id/iv_icon">
 
                 <TextView
                     android:id="@+id/tvHeadName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_8sdp"
-                    android:text="Head Name: "
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/head_name"
                     android:textStyle="bold"
                     android:textColor="@color/light_grey_color"
                     android:textSize="@dimen/_12sdp" />
@@ -76,9 +76,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="0dp"
-                    android:layout_marginRight="@dimen/_5sdp"
-                    android:layout_toRightOf="@+id/tvHeadName"
-                    android:text="Noman"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/tvHeadName"
+                    android:text="@string/noman"
                     android:textColor="@color/light_grey_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -91,9 +91,9 @@
                 android:src="@drawable/ic_school_black_24dp"
                 android:tint="@color/blue_text_color"
                 android:layout_height="35dp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_10sdp" />
+                android:layout_marginEnd="@dimen/_10sdp" />
 
         </RelativeLayout>
 

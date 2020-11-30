@@ -41,7 +41,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true"
                 android:visibility="gone">
@@ -50,9 +50,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -64,14 +64,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -85,7 +85,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -113,9 +113,9 @@
                 android:id="@+id/childregister_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="20dp"
@@ -134,9 +134,9 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
 
@@ -157,7 +157,7 @@
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cnnf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
@@ -222,7 +222,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentEnd="true"
 
                                             android:text="@string/cnnf_wazan_text"
                                             android:textColor="@color/text_color"
@@ -239,8 +239,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cnnf_qad_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -270,7 +270,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
                                         android:orientation="horizontal">
@@ -300,7 +300,7 @@
                                         android:id="@+id/ll_inch"
                                         android:layout_width="70dp"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/edittext_background_layout"
                                         android:orientation="horizontal">
@@ -328,7 +328,7 @@
                                         android:id="@+id/ll_qad"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginStart="4dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="2"
                                         android:background="@drawable/edittext_background_layout"
@@ -372,8 +372,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cnnf_ghiza_text"
                                     android:textColor="@color/text_color"
@@ -401,7 +401,7 @@
                                         android:id="@+id/checkbox_6maah_tk_sirf_maa_ka_doodh"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -443,7 +443,7 @@
                                         android:id="@+id/checkbox_bottle_ka_doodh"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -486,7 +486,7 @@
                                         android:id="@+id/checkbox_izafi_khoraak_thoos_ghiza"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -521,8 +521,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/chpslhvf_tabsrah_text"
                                     android:textColor="@color/text_color"
@@ -624,8 +624,8 @@
     <!--android:id="@+id/txt_ghiza"-->
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentRight="true"-->
-    <!--android:layout_marginRight="@dimen/_15sdp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginEnd="@dimen/_15sdp"-->
     <!--android:text="@string/cnnf_ghiza_text"-->
     <!--android:textColor="@color/text_color"-->
     <!--android:textSize="@dimen/_16sdp" />-->
@@ -634,7 +634,7 @@
     <!--android:id="@+id/checkbox_1"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
     <!--android:layout_below="@+id/txt_ghiza"-->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
@@ -663,7 +663,7 @@
     <!--android:id="@+id/checkbox_2"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
     <!--android:button="@null"-->
@@ -690,7 +690,7 @@
     <!--android:id="@+id/checkbox_3"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
     <!--android:button="@null"-->
@@ -723,7 +723,7 @@
     <!--<TextView-->
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
-    <!--android:layout_marginRight="@dimen/_5sdp"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp"-->
     <!--android:layout_weight="1"-->
     <!--android:text="@string/cnnf_tafseel_text"-->
     <!--android:textColor="@color/text_color"-->

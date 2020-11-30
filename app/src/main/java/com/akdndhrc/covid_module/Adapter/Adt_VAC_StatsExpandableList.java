@@ -20,10 +20,10 @@ import java.util.List;
 
 public class Adt_VAC_StatsExpandableList extends BaseExpandableListAdapter {
 
-    private Context _context;
-    private List<String> _listDataHeader; // header titles
+    private final Context _context;
+    private final List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
-    private HashMap<String, ArrayList<String>> _listDataChild;
+    private final HashMap<String, ArrayList<String>> _listDataChild;
 
     public Adt_VAC_StatsExpandableList(Context context, List<String> listDataHeader,
                                        HashMap<String, ArrayList<String>> listChildData) {
@@ -78,14 +78,14 @@ public class Adt_VAC_StatsExpandableList extends BaseExpandableListAdapter {
 
             if (childPosition % 2 == 0) {
                 if (childText.split("@")[0].equalsIgnoreCase("1")) {
-                    holder.hp_lv_tv_inside_outside.setText("یونین کونسل کے اندر");
+                    holder.hp_lv_tv_inside_outside.setText(R.string.unionCouncilKander);
                     holder.rl_background.setBackgroundColor(_context.getResources().getColor(R.color.color_white));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         holder.rl_left_topbottomcorner.setBackgroundTintList(_context.getResources().getColorStateList(R.color.light_blue_color));
                     }
 
                 } else {
-                    holder.hp_lv_tv_inside_outside.setText("یونین کونسل کے باہر");
+                    holder.hp_lv_tv_inside_outside.setText(R.string.unionCouncilKbahar);
                     holder.hp_lv_tv_inside_outside.setTextColor(_context.getResources().getColor(R.color.pink_color));
                     holder.rl_background.setBackgroundColor(_context.getResources().getColor(R.color.light_pink_color));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -96,13 +96,13 @@ public class Adt_VAC_StatsExpandableList extends BaseExpandableListAdapter {
             }
             else{
                 if (childText.split("@")[0].equalsIgnoreCase("1")) {
-                    holder.hp_lv_tv_inside_outside.setText("یونین کونسل کے اندر");
+                    holder.hp_lv_tv_inside_outside.setText(R.string.unionCouncilKander);
                     holder.rl_background.setBackgroundColor(_context.getResources().getColor(R.color.color_white));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         holder.rl_left_topbottomcorner.setBackgroundTintList(_context.getResources().getColorStateList(R.color.light_blue_color));
                     }
                 } else {
-                    holder.hp_lv_tv_inside_outside.setText("یونین کونسل کے باہر");
+                    holder.hp_lv_tv_inside_outside.setText(R.string.unionCouncilKbahar);
                     holder.hp_lv_tv_inside_outside.setTextColor(_context.getResources().getColor(R.color.pink_color));
                     holder.rl_background.setBackgroundColor(_context.getResources().getColor(R.color.light_pink_color));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

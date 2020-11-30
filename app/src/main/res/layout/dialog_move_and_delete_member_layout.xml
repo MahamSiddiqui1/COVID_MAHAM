@@ -88,7 +88,7 @@
                         android:id="@+id/txt_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:text="خاندان نمبر درج کریں"
                         android:textColor="@color/text_color"

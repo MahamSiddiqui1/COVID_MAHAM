@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -10,14 +11,15 @@
     android:paddingBottom="@dimen/_20sdp"
     android:paddingLeft="@dimen/_10sdp"
     android:paddingRight="@dimen/_10sdp"
-    android:paddingTop="@dimen/_20sdp">
+    android:paddingTop="@dimen/_20sdp"
+    tools:targetApi="lollipop">
 
     <ProgressBar
         android:id="@+id/pbProgress"
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_45sdp"
         android:layout_gravity="start"
-        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:indeterminateDrawable="@drawable/circular_progressbar_layout" />
 
     <TextView
@@ -25,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:text="Please wait"
+        android:text="@string/please_wait"
         android:textColor="@color/dark_blue_color"
         android:textSize="@dimen/_12sdp" />
 

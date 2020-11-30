@@ -72,33 +72,33 @@ public class Adt_ChildHifazitiTeekeyRecordList2 extends BaseAdapter {
 
         if (pos == 0)
         {
-            holder.tvHeading.setText("With-in 24 Hours");
+            holder.tvHeading.setText(R.string.within24);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
         else  if (pos == 3)
         {
-            holder.tvHeading.setText("In 6 Weeks");
+            holder.tvHeading.setText(R.string.In6Weeks);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
         else  if (pos == 7)
         {
-            holder.tvHeading.setText("In 10 Weeks");
+            holder.tvHeading.setText(R.string.In10Weeks);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
         else  if (pos == 11)
         {
-            holder.tvHeading.setText("In 14 Weeks");
+            holder.tvHeading.setText(R.string.In14Weeks);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
 
         else  if (pos == 16)
         {
-            holder.tvHeading.setText("In 9 Months");
+            holder.tvHeading.setText(R.string.In9Months);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
        else  if (pos == 17)
         {
-            holder.tvHeading.setText("In 15 Months");
+            holder.tvHeading.setText(R.string.In15Months);
             holder.tvHeading.setVisibility(View.VISIBLE);
         }
        else

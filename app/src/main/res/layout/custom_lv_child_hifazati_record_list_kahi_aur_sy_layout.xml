@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp">
@@ -11,15 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/afm_rl_background_color"
-        android:padding="@dimen/_10sdp">
+        android:padding="@dimen/_10sdp"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/chtr_lv_tvTareekh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:text="@string/chtr_tareekh_adaegi_text"
             android:textColor="@color/chtr_dpt_green_txt_color"
             android:textSize="@dimen/_12sdp" />
@@ -29,10 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_toLeftOf="@+id/chtr_lv_tvTareekh"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_toStartOf="@+id/chtr_lv_tvTareekh"
             android:textColor="@color/chtr_dpt_green_txt_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
 
         <TextView
             android:id="@+id/chtr_lv_tvVaccineName"
@@ -40,10 +43,10 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="@string/chtr_BCG_text"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:textColor="@color/chtr_dpt_green_txt_color"
             android:textSize="@dimen/_12sdp"
-            android:layout_toRightOf="@+id/checkbox"
+            android:layout_toEndOf="@+id/checkbox"
             />
 
         <CheckBox
@@ -52,7 +55,8 @@
             android:focusable="false"
             android:clickable="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
 
 <!--        <com.rey.material.widget.CheckBox-->
 <!--            android:id="@+id/checkbox"-->

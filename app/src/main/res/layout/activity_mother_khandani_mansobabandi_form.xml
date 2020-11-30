@@ -42,7 +42,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -50,9 +50,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -63,7 +63,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -86,7 +86,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -116,8 +116,8 @@
                 android:id="@+id/childregister_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
@@ -137,8 +137,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginTop="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
@@ -171,8 +171,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/mkmbf_tareekh_visit_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -188,8 +188,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mkmbf_naya_sabiqa_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -217,7 +217,7 @@
 
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -249,7 +249,7 @@
 
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -293,8 +293,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_tariqa_text"
                                     android:textColor="@color/text_color"
@@ -349,8 +349,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_khud_muhayya_kiya_text"
                                     android:textColor="@color/text_color"
@@ -369,14 +369,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="0dp">
+                                    android:layout_marginEnd="0dp">
 
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_haan_1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -402,7 +402,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_1"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -437,8 +437,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_reffer_kiya_text"
                                     android:textColor="@color/text_color"
@@ -457,14 +457,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="0dp">
+                                    android:layout_marginEnd="0dp">
 
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_haan_2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -490,7 +490,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_2"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -523,7 +523,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="فراہم سروس / آگاہی"
                                     android:textColor="@color/text_color"
@@ -544,13 +544,13 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="0dp">
+                                    android:layout_marginEnd="0dp">
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/checkbox_service_provided"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -576,7 +576,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_3"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -615,7 +615,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="right"
                                     android:gravity="right"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:text="مواد"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
@@ -641,9 +641,9 @@
                                         android:id="@+id/tv_male"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:text="تعداد"
                                         android:textColor="@color/pink_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -652,7 +652,7 @@
                                         android:id="@+id/rl_add"
                                         android:layout_width="@dimen/_30sdp"
                                         android:layout_height="@dimen/_30sdp"
-                                        android:layout_marginRight="@dimen/_31sdp"
+                                        android:layout_marginEnd="@dimen/_31sdp"
                                         android:layout_toLeftOf="@+id/tv_male"
                                         android:background="@drawable/edittext_background_layout">
 
@@ -670,8 +670,8 @@
                                         android:layout_width="@dimen/_50sdp"
                                         android:layout_height="wrap_content"
                                         android:layout_centerInParent="true"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_toLeftOf="@+id/rl_add">
 
                                         <TextView
@@ -715,7 +715,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_refferal_text"
                                     android:textColor="@color/text_color"
@@ -732,7 +732,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_refferal_ki_waja_text"
                                     android:textColor="@color/text_color"
@@ -786,7 +786,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mkmbf_refferal_hospital_text"
                                     android:textColor="@color/text_color"

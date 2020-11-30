@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
         android:text="اسکین کے نتائج"
         android:textColor="@color/dark_blue_color"
         android:textSize="@dimen/_14sdp"

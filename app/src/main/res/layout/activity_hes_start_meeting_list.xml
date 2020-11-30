@@ -40,7 +40,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true"
                 android:visibility="gone">
@@ -49,9 +49,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -62,7 +62,7 @@
                 android:id="@+id/rl_meeting"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:visibility="gone">
 
@@ -70,7 +70,7 @@
                     android:id="@+id/iv_startMeeting"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -91,9 +91,9 @@
                 android:id="@+id/register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="20dp"
@@ -104,9 +104,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
                     android:paddingBottom="10dp">
 
 
@@ -121,7 +121,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
-                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
                             android:gravity="right"
                             android:text="موضوع"
                             android:textColor="@color/text_color"
@@ -143,7 +143,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
-                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
                             android:gravity="right"
                             android:text="اسکول کا انتخاب"
                             android:textColor="@color/text_color"
@@ -170,9 +170,9 @@
                                 android:id="@+id/tv_male"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:layout_marginRight="@dimen/_35sdp"
+                                android:layout_marginEnd="@dimen/_35sdp"
                                 android:text="مرد"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -181,7 +181,7 @@
                                 android:id="@+id/rl_add_male"
                                 android:layout_width="@dimen/_30sdp"
                                 android:layout_height="@dimen/_30sdp"
-                                android:layout_marginRight="@dimen/_31sdp"
+                                android:layout_marginEnd="@dimen/_31sdp"
                                 android:layout_toLeftOf="@+id/tv_male"
                                 android:background="@drawable/edittext_background_layout">
 
@@ -199,8 +199,8 @@
                                 android:layout_width="@dimen/_50sdp"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
                                 android:layout_toLeftOf="@+id/rl_add_male">
 
                                 <TextView
@@ -244,9 +244,9 @@ android:layout_centerInParent="true"
                                 android:id="@+id/tv_female"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:layout_marginRight="@dimen/_35sdp"
+                                android:layout_marginEnd="@dimen/_35sdp"
                                 android:text="عورت"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp" />
@@ -256,7 +256,7 @@ android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_30sdp"
                                 android:layout_height="@dimen/_30sdp"
                                 android:layout_centerInParent="true"
-                                android:layout_marginRight="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_20sdp"
                                 android:layout_toLeftOf="@+id/tv_female"
                                 android:tint="@color/color_white"
                                 android:background="@drawable/edittext_background_layout">
@@ -276,8 +276,8 @@ android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_50sdp"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
                                 android:layout_toLeftOf="@+id/rl_add_female">
 
                                 <TextView

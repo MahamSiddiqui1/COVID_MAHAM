@@ -42,7 +42,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -50,9 +50,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -63,14 +63,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -91,9 +91,9 @@
                 android:id="@+id/register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="20dp"
@@ -112,9 +112,9 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
                         <RelativeLayout
@@ -131,7 +131,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:layout_centerInParent="true"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginEnd="10dp"
                                 android:layout_marginBottom="10dp"
                                 app:cardBackgroundColor="@color/color_white"
                                 app:cardCornerRadius="35dp"
@@ -154,9 +154,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/rl_circle_home"
-                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:weightSum="1">
 
                             <TextView
@@ -187,7 +187,7 @@
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_ka_number_text"
                                     android:textColor="@color/text_color"
@@ -238,7 +238,7 @@
                                     android:id="@+id/txt_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/reg_khandan_kai_sarbarah_ka_naam_text"
                                     android:textColor="@color/text_color"
@@ -293,7 +293,7 @@
                                     android:id="@+id/txt_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/reg_mukamal_pata_text"
                                     android:textColor="@color/text_color"
@@ -360,8 +360,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/reg_union_council_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -377,8 +377,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/reg_tehseel_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -408,7 +408,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
                                         android:gravity="center"
@@ -419,7 +419,7 @@
                                         android:id="@+id/sp_tahseel"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -433,7 +433,7 @@
                                         android:id="@+id/ll_union_council"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -464,7 +464,7 @@
                                         android:id="@+id/ll_tehseel"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -520,8 +520,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/reg_zila_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -537,8 +537,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/reg_gaon_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -567,7 +567,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
                                         android:gravity="center"
@@ -578,7 +578,7 @@
                                         android:id="@+id/sp_gaon"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -592,7 +592,7 @@
 <!--                                        android:layout_width="wrap_content"-->
 <!--                                        android:layout_height="wrap_content"-->
 <!--                                        android:layout_marginTop="5dp"-->
-<!--                                        android:layout_marginRight="5dp"-->
+<!--                                        android:layout_marginEnd="5dp"-->
 <!--                                        android:layout_weight="1"-->
 <!--                                        android:background="@drawable/edittext_background_layout"-->
 <!--                                        android:orientation="horizontal"-->
@@ -621,7 +621,7 @@
 <!--                                        android:id="@+id/ll_gaon"-->
 <!--                                        android:layout_width="wrap_content"-->
 <!--                                        android:layout_height="wrap_content"-->
-<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:layout_marginStart="5dp"-->
 <!--                                        android:layout_marginTop="5dp"-->
 <!--                                        android:layout_weight="1"-->
 <!--                                        android:background="@drawable/edittext_background_layout"-->
@@ -675,8 +675,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/reg_latrine_system_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -692,8 +692,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -725,7 +725,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
                                         android:orientation="horizontal">
@@ -750,7 +750,7 @@
                                         android:id="@+id/ll_peenay_kai_paani_ka_zarya"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"

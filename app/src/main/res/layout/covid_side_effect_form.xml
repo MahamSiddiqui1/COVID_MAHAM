@@ -41,7 +41,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -49,9 +49,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -62,7 +62,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -85,7 +85,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -115,8 +115,8 @@
                 android:id="@+id/childregister_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
@@ -136,8 +136,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginTop="5dp"
                         android:paddingBottom="@dimen/_30sdp">
 
@@ -170,9 +170,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/dateLabel"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_16sdp" />
@@ -203,7 +203,7 @@
 
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="5dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
@@ -262,7 +262,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -278,8 +278,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -387,9 +387,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp"
@@ -409,9 +409,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -532,9 +532,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -550,9 +550,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_lossTaste"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -691,9 +691,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -709,9 +709,9 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_diarrhea"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
@@ -816,7 +816,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:text="@string/reg_peenay_kai_paani_ka_zarya_text"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
@@ -846,7 +846,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:text="@string/reg_latrine_system_text"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />

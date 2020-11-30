@@ -18,7 +18,7 @@
             android:id="@+id/cnn_lv_tvNaam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:text="@string/cnn_nashonuma_ka_record_1_text"
             android:textColor="@color/text_color"
@@ -29,9 +29,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_toLeftOf="@+id/cnn_lv_tvNaam"
-            android:text="2019-28-25"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/cnn_lv_tvNaam"
+            android:text="@string/date20192825"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_12sdp" />
 

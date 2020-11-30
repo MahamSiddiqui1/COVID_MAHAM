@@ -20,10 +20,10 @@ import java.util.List;
 
 public class Adt_LHW_StatsExpandableList extends BaseExpandableListAdapter {
 
-    private Context _context;
-    private List<String> _listDataHeader; // header titles
+    private final Context _context;
+    private final List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
-    private HashMap<String, ArrayList<String>> _listDataChild;
+    private final HashMap<String, ArrayList<String>> _listDataChild;
 
     public Adt_LHW_StatsExpandableList(Context context, List<String> listDataHeader,
                                        HashMap<String, ArrayList<String>> listChildData) {

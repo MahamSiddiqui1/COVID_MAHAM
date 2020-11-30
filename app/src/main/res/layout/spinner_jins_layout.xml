@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
@@ -13,21 +14,22 @@
             android:id="@+id/tvCustomer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:gravity="right"
             android:text="@string/cr_spinner_ek_muntakhib_kre_text"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RtlHardcoded" />
 
         <ImageView
             android:id="@+id/ivCustomerImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/tvCustomer"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_toStartOf="@+id/tvCustomer"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:src="@drawable/ic_maleblue_icon" />
 
     </RelativeLayout>
@@ -37,8 +39,8 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:background="@color/light_pink_color" />
 
 </LinearLayout>

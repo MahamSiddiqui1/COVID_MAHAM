@@ -172,7 +172,7 @@ public class Child_AamMalomatRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
 
-            Toast tt  =Toast.makeText(ctx, "عام علومات کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT);
+            Toast tt  =Toast.makeText(ctx, R.string.aamMaloomatKaKoiRecordNahi, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

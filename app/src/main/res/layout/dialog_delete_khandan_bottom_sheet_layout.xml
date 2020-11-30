@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:text="Edit" />
     </LinearLayout>
 
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:text="Delete" />
     </LinearLayout>
 
@@ -101,10 +101,10 @@
                 android:id="@+id/rl_circle_men1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="@dimen/_5sdp">
+                android:layout_marginEnd="@dimen/_5sdp">
 
 
                 <android.support.v7.widget.CardView
@@ -112,7 +112,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_centerInParent="true"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:elevation="0dp"
                     app:cardCornerRadius="30dp"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/rl_circle_men1"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_toLeftOf="@+id/rl_circle_men1"
                 android:gravity="center_vertical"
                 android:text="خاندان نمبر:"
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/rl_circle_men1"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_toLeftOf="@+id/tvKhandan"
@@ -165,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvKhandan"
                 android:layout_marginTop="@dimen/_3sdp"
-                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toLeftOf="@+id/rl_circle_men1"
                 android:gravity="right"
                 android:text="گاؤں کا نام:"
@@ -193,8 +193,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_20sdp"
         android:gravity="center"
-        android:layout_marginRight="@dimen/_5sdp"
-        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         android:text="کیا آپ اس  خاندان کو ڈیلیٹ کرنا چاہتے ہیں؟"
         android:textColor="@color/dark_blue_color"
         android:textSize="@dimen/_12sdp"

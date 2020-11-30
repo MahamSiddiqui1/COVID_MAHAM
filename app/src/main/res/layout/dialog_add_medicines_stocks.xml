@@ -26,9 +26,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_20sdp">
 
@@ -43,10 +43,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp"
                         android:drawableLeft="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableTint="@color/dark_blue_color"
@@ -59,7 +59,7 @@
                         android:id="@+id/tvTotalBalance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
 
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:background="@drawable/button_with_border_only"
@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp"
                         android:layout_weight="1"
                         android:drawableLeft="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
@@ -146,8 +146,8 @@
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp">
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp">
 
                             <TextView
                                 android:id="@+id/tv_count_received"
@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp"
                         android:layout_weight="1"
                         android:drawableLeft="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
@@ -251,8 +251,8 @@
                                                 android:layout_width="@dimen/_50sdp"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="center_vertical"
-                                                android:layout_marginLeft="5dp"
-                                                android:layout_marginRight="5dp">
+                                                android:layout_marginStart="5dp"
+                                                android:layout_marginEnd="5dp">
 
                                                 <TextView
                                                     android:id="@+id/tv_count_wastage"
@@ -311,9 +311,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_40sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@drawable/login_button_shape_layout"
 
                     android:text="@string/camf_jamaa_kre_button_text"

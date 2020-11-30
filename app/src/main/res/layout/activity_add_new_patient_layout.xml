@@ -41,7 +41,7 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true"
                 android:visibility="gone">
@@ -50,9 +50,9 @@
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
                     android:src="@drawable/ic_menu" />
@@ -63,7 +63,7 @@
                 android:id="@+id/rl_meeting"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -84,7 +84,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -113,9 +113,9 @@
                 android:id="@+id/register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 app:optRoundCardBackgroundColor="@color/color_white"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="20dp"
@@ -133,8 +133,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:paddingBottom="@dimen/_15sdp">
 
 
@@ -153,7 +153,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cbf_tareekh_indraj_text"
                                     android:textColor="@color/text_color"
@@ -205,7 +205,7 @@
                                     android:id="@+id/txt_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="مریض کا نام"
                                     android:textColor="@color/text_color"
@@ -270,8 +270,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_15sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_jins_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -287,8 +287,8 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="true"
-                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/age"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -378,8 +378,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_runny_nose_text"
                                     android:textColor="@color/text_color"
@@ -400,12 +400,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="5dp">
+                                    android:layout_marginEnd="5dp">
 
                                     <CheckBox
                                         android:layout_width="@dimen/_40sdp"
                                         android:layout_height="@dimen/_40sdp"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         android:background="?android:attr/listChoiceIndicatorMultiple"
                                         android:backgroundTint="@color/pink_color"
@@ -417,7 +417,7 @@
                                         android:id="@+id/cb_runynose_haan"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -443,7 +443,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_1"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -457,7 +457,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_1"
                                         android:background="@drawable/custom_checkbox_layout"
                                         android:button="@null"
@@ -489,8 +489,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_sore_throat_text"
                                     android:textColor="@color/text_color"
@@ -511,14 +511,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="5dp">
+                                    android:layout_marginEnd="5dp">
 
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_throat_yes"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -544,7 +544,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_2"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -579,8 +579,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_cough_text"
                                     android:textColor="@color/text_color"
@@ -601,14 +601,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="5dp">
+                                    android:layout_marginEnd="5dp">
 
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_cough_yes"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -634,7 +634,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_3"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -669,8 +669,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_fever_text"
                                     android:textColor="@color/text_color"
@@ -691,14 +691,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:layout_marginRight="5dp">
+                                    android:layout_marginEnd="5dp">
 
 
                                     <com.rey.material.widget.CheckBox
                                         android:id="@+id/cb_fever_yes"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -724,7 +724,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_marginEnd="@dimen/_15sdp"
                                         android:layout_toLeftOf="@+id/txt_haan_4"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -759,8 +759,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_breathing_text"
                                     android:textColor="@color/text_color"
@@ -775,14 +775,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:layout_marginRight="5dp">
+                                android:layout_marginEnd="5dp">
 
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_braething_yes"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
                                     android:layout_centerVertical="true"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -808,7 +808,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
-                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
                                     android:layout_toLeftOf="@+id/txt_haan_5"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -841,8 +841,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_ksi_dusre_mulk_sy_aae_ho_text"
                                     android:textColor="@color/text_color"
@@ -857,14 +857,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:layout_marginRight="5dp">
+                                android:layout_marginEnd="5dp">
 
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_another_country_haan"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
                                     android:layout_centerVertical="true"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -890,7 +890,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
-                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
                                     android:layout_toLeftOf="@+id/txt_haan_6"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -923,8 +923,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cvf_ksi_dusre_mulk_sy_aae_hoe_person_sy_hth_text"
                                     android:textColor="@color/text_color"
@@ -939,14 +939,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:layout_marginRight="5dp">
+                                android:layout_marginEnd="5dp">
 
 
                                 <com.rey.material.widget.CheckBox
                                     android:id="@+id/cb_handshake_haan"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
                                     android:layout_centerVertical="true"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -972,7 +972,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
-                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
                                     android:layout_toLeftOf="@+id/txt_haan_7"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -1011,7 +1011,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
                                         android:text="@string/cbf_refferal_text"
                                         android:textColor="@color/text_color"
@@ -1030,7 +1030,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="right"
-                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_marginEnd="@dimen/_5sdp"
                                         android:text=" ریفرل صحت مرکز"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />

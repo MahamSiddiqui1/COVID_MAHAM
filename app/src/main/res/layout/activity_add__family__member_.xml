@@ -29,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
                     android:text="FAMILY"
                     android:textAlignment="center"
                     android:textColor="#fff"
@@ -42,16 +42,16 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:clickable="true"
                     android:src="@drawable/ic_menu" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:clickable="true">
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:clickable="true"
                     android:src="@drawable/ic_home_black_24dp" />
 
@@ -87,8 +87,8 @@
                 android:id="@+id/register_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 app:optRoundCardBottomEdges="false"
                 app:optRoundCardCornerRadius="15dp"
@@ -99,8 +99,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_marginTop="5dp"
                     android:paddingBottom="@dimen/_15sdp">
 
@@ -119,7 +119,7 @@
                             android:layout_height="70dp"
                             android:layout_centerInParent="true"
                             android:layout_marginBottom="10dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             app:cardBackgroundColor="@color/color_white"
                             app:cardCornerRadius="35dp"
                             app:cardElevation="10dp">
@@ -135,7 +135,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end|center_vertical"
-                                android:layout_marginRight="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
                                 android:layout_marginTop="@dimen/_10sdp"
                                 android:src="@drawable/ic_edit_black_24dp" />
 
@@ -150,9 +150,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rl_khandan_edit"
-                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:weightSum="2">
 
                         <TextView
@@ -160,7 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:gravity="right"
                             android:text="Family ID :"
@@ -171,7 +171,7 @@
                             android:id="@+id/txt_khandan_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="12345"

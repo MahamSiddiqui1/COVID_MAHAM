@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@null"
@@ -17,9 +18,9 @@
             android:id="@+id/rl_circle_men"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:layout_marginTop="5dp">
 
 
@@ -29,10 +30,11 @@
                 android:layout_height="60dp"
                 android:layout_centerInParent="true"
                 android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="32dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
 
                 <ImageView
                     android:id="@+id/sfml_lv_iv_gender_icon"
@@ -49,25 +51,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/rl_circle_men"
-            android:layout_marginLeft="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:layout_toRightOf="@+id/rl_circle_men"
-
+            android:layout_toEndOf="@+id/rl_circle_men"
             android:gravity="right"
-            android:text="Khashif ali khan"
+            android:text="@string/khashif_ali_khan"
             android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RtlHardcoded" />
 
         <View
             android:id="@+id/line"
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_below="@+id/sfml_lv_tvNaam"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toRightOf="@+id/rl_circle_men"
+            android:layout_toEndOf="@+id/rl_circle_men"
 
             android:background="@color/pink_color" />
 
@@ -76,10 +78,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toRightOf="@+id/rl_circle_men"
-            android:text="Age:"
+            android:layout_toEndOf="@+id/rl_circle_men"
+            android:text="@string/age"
             android:textColor="@color/hp_listview_textview_greycolor"
             android:textSize="@dimen/_10sdp" />
 
@@ -88,11 +90,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toRightOf="@+id/sfml_lv_tvUmer"
-            android:text="02 سال 06 مہ"
+            android:layout_toEndOf="@+id/sfml_lv_tvUmer"
+            android:text="@string/_02_06"
             android:textColor="@color/hp_listview_textview_greycolor"
             android:textSize="@dimen/_10sdp" />
 
@@ -104,7 +106,7 @@
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_5sdp" />
+            android:layout_marginStart="@dimen/_5sdp" />
 
     </RelativeLayout>
 

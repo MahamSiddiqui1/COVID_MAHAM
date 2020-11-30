@@ -18,14 +18,14 @@
             android:id="@+id/rl_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp">
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
 
             <TextView
                 android:id="@+id/mhr_lv_tvHaaml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:text="@string/mhr_haaml_text"
                 android:textColor="@color/text_color"
@@ -35,7 +35,7 @@
                 android:id="@+id/mhr_lv_tvFaAl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:text="@string/mhr_FaAal_text"
                 android:visibility="gone"
@@ -46,7 +46,7 @@
                 android:id="@+id/mhr_lv_imageFaAl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_pink_ellipse_icon"
                 android:tint="@color/mhr_green_text_color"
@@ -57,16 +57,16 @@
             android:id="@+id/rl_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp">
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
 
             <TextView
                 android:id="@+id/mhr_lv_tvDateTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="2020-05-15"
+                android:text="@string/_2020_05_15"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -77,16 +77,16 @@
             android:id="@+id/rl_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp">
 
             <View
                 android:id="@+id/line"
                 android:layout_width="match_parent"
                 android:layout_height="1.5dp"
-                android:layout_marginLeft="@dimen/_3sdp"
-                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
                 android:background="@color/mhr_line_color"/>
 
         </RelativeLayout>
@@ -96,16 +96,16 @@
             android:id="@+id/rl_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp">
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
 
             <TextView
                 android:id="@+id/mhr_lv_tvLMP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="LMP"
+                android:text="@string/lmp"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -113,10 +113,10 @@
                 android:id="@+id/mhr_lv_tvLMPDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/mhr_lv_tvLMP"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/mhr_lv_tvLMP"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_centerVertical="true"
-                android:text="October 26, 2018"
+                android:text="@string/october_26_2018"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -127,16 +127,16 @@
             android:id="@+id/rl_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp">
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
 
             <TextView
                 android:id="@+id/mhr_lv_tvEDD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="EDD"
+                android:text="@string/edd"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -144,10 +144,10 @@
                 android:id="@+id/mhr_lv_tvEDDDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/mhr_lv_tvEDD"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/mhr_lv_tvEDD"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_centerVertical="true"
-                android:text="August 02, 2019"
+                android:text="@string/august_02_2019"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -155,9 +155,9 @@
                 android:id="@+id/mhr_lv_tvTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_centerVertical="true"
-                android:text="11:05"
+                android:text="@string/_11_05"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_10sdp" />
 

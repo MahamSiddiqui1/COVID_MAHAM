@@ -23,7 +23,7 @@
             <RelativeLayout
                 android:id="@+id/rl_background"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="@dimen/_2sdp"
                 android:layout_weight="1">
 
@@ -33,9 +33,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_8sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:text="Ali"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/ali"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
@@ -60,10 +60,10 @@
                         android:id="@+id/tv_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/_35sdp"
-                        android:text="مرد"
+                        android:layout_marginEnd="@dimen/_35sdp"
+                        android:text="@string/murd"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_14sdp" />
 
@@ -71,8 +71,8 @@
                         android:id="@+id/rl_add_male"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_marginRight="@dimen/_30sdp"
-                        android:layout_toLeftOf="@+id/tv_male"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_toStartOf="@+id/tv_male"
 
                         android:background="@drawable/edittext_background_layout">
 
@@ -91,9 +91,9 @@
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_toLeftOf="@+id/rl_add_male">
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/rl_add_male">
 
                         <TextView
                             android:id="@+id/tv_count_male"
@@ -111,7 +111,7 @@
                         android:id="@+id/rl_sub_male"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_toLeftOf="@+id/rl_count_male_15to19_age"
+                        android:layout_toStartOf="@+id/rl_count_male_15to19_age"
 
                         android:background="@drawable/edittext_background_layout">
 
@@ -137,10 +137,10 @@
                         android:id="@+id/tv_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/_35sdp"
-                        android:text="عورت"
+                        android:layout_marginEnd="@dimen/_35sdp"
+                        android:text="@string/aurat"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_14sdp" />
 
@@ -149,8 +149,8 @@
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
                         android:layout_centerInParent="true"
-                        android:layout_marginRight="@dimen/_20sdp"
-                        android:layout_toLeftOf="@+id/tv_female"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_toStartOf="@+id/tv_female"
                        android:tint="@color/color_white"
                         android:background="@drawable/edittext_background_layout">
 
@@ -169,9 +169,9 @@
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_toLeftOf="@+id/rl_add_female">
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/rl_add_female">
 
                         <TextView
                             android:id="@+id/tv_count_female"
@@ -190,7 +190,7 @@
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
 
-                        android:layout_toLeftOf="@+id/rl_count_female_15to19_age"
+                        android:layout_toStartOf="@+id/rl_count_female_15to19_age"
                         android:background="@drawable/edittext_background_layout">
 
                         <ImageView

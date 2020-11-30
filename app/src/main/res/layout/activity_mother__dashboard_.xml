@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
                     android:text="@string/md_profile_text"
                     android:textAlignment="center"
                     android:textColor="@color/color_white"
@@ -42,16 +42,16 @@
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:clickable="true"
                     android:src="@drawable/ic_menu" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/rl_options"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:clickable="true"
                     android:src="@drawable/ic_home_black_24dp" />
 
@@ -102,7 +102,7 @@
                     android:layout_height="70dp"
                     android:layout_centerInParent="true"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="35dp"
                     app:cardElevation="10dp">
@@ -124,8 +124,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_circle_home"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_10sdp">
@@ -153,8 +153,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:weightSum="2">
 
@@ -208,8 +208,8 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="@dimen/_10sdp">
@@ -223,16 +223,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
                             android:src="@drawable/ic_pregnancy_icon" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_haamla_ka_record_text"
                             android:textColor="@color/pink_color"
                             android:textSize="@dimen/_12sdp" />
@@ -249,8 +249,8 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="@dimen/_10sdp">
@@ -264,16 +264,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
                             android:src="@drawable/ic_family_icon" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_khandani_mansobabandi_text"
                             android:textColor="@color/pink_color"
                             android:textSize="@dimen/_12sdp" />
@@ -290,8 +290,8 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="@dimen/_10sdp">
@@ -305,16 +305,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
                             android:src="@drawable/ic_thermometer_icon" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_beemari_ka_record_text"
                             android:textColor="@color/pink_color"
                             android:textSize="@dimen/_12sdp" />
@@ -331,8 +331,8 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="@dimen/_10sdp">
@@ -346,16 +346,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
                             android:src="@drawable/ic_immunization_icon" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_hifazati_teekey_ka_record_text"
                             android:textColor="@color/pink_color"
                             android:textSize="@dimen/_12sdp" />
@@ -372,8 +372,8 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="@color/color_white"
                     app:cardCornerRadius="@dimen/_10sdp">
@@ -387,16 +387,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
                             android:src="@drawable/ic_editmaterial_icon" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_mawaad"
                             android:textColor="@color/pink_color"
                             android:textSize="@dimen/_12sdp" />
@@ -439,7 +439,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:src="@drawable/view_line" />
@@ -465,7 +465,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:src="@drawable/view_line" />
