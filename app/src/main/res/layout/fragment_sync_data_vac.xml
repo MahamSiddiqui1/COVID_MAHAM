@@ -129,8 +129,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="بچے کے خاندان رجسٹریشن کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Family Registration"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -139,7 +139,7 @@
                                     android:id="@+id/txt_khandan_reg"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -148,12 +148,16 @@
                             </RelativeLayout>
 
                         </android.support.v7.widget.CardView>
-
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/dark_blue_color" />
 
                         <android.support.v7.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
                             app:cardCornerRadius="@dimen/_5sdp">
 
                             <RelativeLayout
@@ -165,8 +169,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="بچے کے رجسٹریشن کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Member Registration"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -175,7 +179,7 @@
                                     android:id="@+id/txt_reg"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -197,14 +201,14 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
                             android:background="@color/dark_blue_color" />
 
 
                         <android.support.v7.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
                             app:cardCornerRadius="@dimen/_5sdp">
 
                             <RelativeLayout
@@ -217,8 +221,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="بچے کے حفاظتی ٹیکے کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Vaccination A Record"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -227,7 +231,7 @@
                                     android:id="@+id/txt_child_hifaziti_teekey_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -249,7 +253,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
                             android:background="@color/dark_blue_color" />
 
                         <android.support.v7.widget.CardView
@@ -267,8 +271,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="ماں کے حفاظتی ٹیکے کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Vaccination B Record"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -277,7 +281,7 @@
                                     android:id="@+id/txt_mother_hifaziti_teekey_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -288,7 +292,7 @@
                                     android:id="@+id/pb_11"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -319,8 +323,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="ویڈیوز کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Video Record"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -329,7 +333,7 @@
                                     android:id="@+id/txt_video_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -340,7 +344,7 @@
                                     android:id="@+id/pb_4"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -353,7 +357,7 @@
                         <android.support.v7.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="10dp" android:visibility="gone"
                             app:cardCornerRadius="@dimen/_5sdp">
 
                             <RelativeLayout
@@ -418,8 +422,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text=" ڈپلیکیٹ ممبر کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Duplicate Members Record"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -428,7 +432,7 @@
                                     android:id="@+id/txt_merged_member"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -438,7 +442,7 @@
                                     android:id="@+id/pb_6"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -446,9 +450,14 @@
                             </RelativeLayout>
 
                         </android.support.v7.widget.CardView>
-
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/dark_blue_color" />
                         <android.support.v7.widget.CardView
                             android:layout_width="wrap_content"
+                            android:visibility="gone"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             app:cardCornerRadius="@dimen/_5sdp">
@@ -463,8 +472,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text=" ویکسین اسٹاک کا ریکارڈ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Vaccine Stock Record"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -473,7 +482,7 @@
                                     android:id="@+id/txt_vaccine_stock"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -483,7 +492,7 @@
                                     android:id="@+id/pb_7"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 

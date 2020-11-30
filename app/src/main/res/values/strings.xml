@@ -1,7 +1,8 @@
 <resources>
 
     <string name="database_password">g3p2bzQm-J2pG6NR</string>
-    <string name="vaccine_provided">Where was the vaccine provided?</string>
+    <string name="vaccine_provided_when">When was the vaccine provided?</string>
+    <string name="vaccine_provided_where">Where was the vaccine provided?</string>
     <string name="details">Details</string>
 
     <string name="received">received</string>
@@ -12,24 +13,18 @@
     <string name="Sync">Last Sync Date: Date Time</string>
     <string name="version">Version 1.0</string>
     <string name="recevied">Received</string>
-    <string name="comorbidity">CO-MORBIDITY</string>
+    <string name="comorbidity">COMORBIDITY</string>
     <string name="dateLabel">Date</string>
     <string name="diabetes">Diabetes</string>
     <string name="reading">Reading</string>
     <string name="bloodPressure">Blood Pressure</string>
     <string name="cholestrol">LDL Cholestrol</string>
-    <string name="heartDisease">Heart Disease</string>
+
     <string name="mgldl">mgl/dL</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="addNewRecord">Add New Record</string>
-    <string name="fever">Fever</string>
-    <string name="cough">Cough</string>
-    <string name="feverValue">Value of Fever</string>
-    <string name="shortnessBreath">Shortness of Breath</string>
-    <string name="rash">Rash</string>
-    <string name="lossTaste">Loss of Taste</string>
-    <string name="diarrhea">Diarrhea</string>
+
     <string name="searchVillage">Search Village</string>
     <string name="dueVacA">Due for Vaccine A</string>
     <string name="dueVacB">Due for Vaccine B</string>
@@ -43,7 +38,7 @@
     <string name="tBadmin">To Be Administered</string>
     <string name="selectHealth">Select Health Facility</string>
     <string name="receivedOn">Received on</string>
-    <string name="lossSmell">Loss of Smell</string>
+
     <string name="dateRecevied">Date Received</string>
     <string name="comments">Comments</string>
     <string name="name1">Kiran Iqbal</string>
@@ -51,10 +46,10 @@
     <string name="immunizationProvided">Immunization Provided At</string>
     <string name="immunizationhead">Immunization Record</string>
 
-    <string name="cancer">Cancer</string>
+
     <string name="notes">Notes</string>
     <string name="sideHistory">Side Effects History</string>
-    <string name="co_history">Co-Morbidity History</string>
+    <string name="co_history">Comorbidity History</string>
     <string name="date">Wednesday, Nov 4, 2019</string>
     <string name="taskList">TASKS LIST</string>
     <string name="newFamily">New Family</string>
@@ -86,18 +81,19 @@
     <string name="division">Division</string>
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
-    <string name="father">Fathers Name</string>
+    <string name="father">Father\'s Name</string>
     <string name="profile">PROFILE</string>
     <string name="fullName">Full Name</string>
-    <string name="ageInYears">Years Old</string>
+    <string name="ageInYears">years Old</string>
     <string name="covid">COVID IMMUNIZATION</string>
     <string name="sideEffects">SIDE EFFECTS</string>
-    <string name="co_morbidity">C0-MORBIDITY</string>
+    <string name="co_morbidity">C0MORBIDITY</string>
     <string name="HomeButton">Home Button</string>
     <string name="UnionButton">Union Button</string>
     <string name="title_activity_profile">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -105,15 +101,72 @@
     <string name="search">Search</string>
     <string name="addNew">Add New</string>
 
+<!--Side Effects -->
+    <string name="se_hyptension">Hypotension</string>
+    <string name="se_syncope_near_syncope">Syncope/near syncope</string>
+    <string name="se_anaphylaxis">Anaphylaxis</string>
+    <string name="se_local_redness_pain">Local redness/pain</string>
+    <string name="se_fatigue">Fatigue</string>
+    <string name="se_headache">Headache</string>
+    <string name="se_myalgias">Myalgias</string>
+    <string name="se_diarrhea">Diarrhea</string>
+    <string name="se_chills">Chills</string>
+    <string name="se_nausea">Nausea</string>
+    <string name="se_urticaria">Urticaria</string>
+    <string name="se_joint_pain">Joint pain</string>
+    <string name="se_fever">Fever</string>
+    <string name="se_feverValue">Reading</string>
+    <string name="se_shortnessBreath">Shortness of Breath</string>
+    <string name="se_lossTaste">Loss of Taste</string>
+    <string name="se_lossSmell">Loss of Smell</string>
+
+
+
+
+
+    <!--co-morbilities-->
+    <string name="cm_cancer">Cancer</string>
+    <string name="cm_chronic_kidney_disease">Chronic kidney disease</string>
+    <string name="cm_copd">COPD</string>
+    <string name="cm_heart_condition">Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies</string>
+    <string name="cm_immune_compromised_organ">Immunocompromised state from solid organ transplant</string>
+    <string name="cm_obesity">Obesity – BMI ≥30</string>
+    <string name="cm_sickle_cell_disease">Sickle cell disease</string>
+    <string name="cm_pregnancy">Pregnancy</string>
+    <string name="cm_asthma">Asthma (moderate-to-severe)</string>
+    <string name="cm_cerebrovascular_disease">Cerebrovascular disease</string>
+    <string name="cm_cystic_fibrosis">Cystic fibrosis</string>
+    <string name="cm_hypertension">Hypertension</string>
+    <string name="cm_immune_compromised_other">Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines</string>
+    <string name="cm_neurologic">Neurologic conditions, such as dementia</string>
+    <string name="cm_liver_disease">Liver disease</string>
+    <string name="cm_overweight">Overweight, BMI 25-30 (Indicator : Ht and wt)</string>
+    <string name="cm_pulmonary_fibrosis">Pulmonary fibrosis</string>
+    <string name="cm_thalassemia">Thalassemia</string>
+    <string name="cm_type1_diabetes">Type 1 diabetes mellitus</string>
+    <string name="cm_ldl_cholestrol">LDL cholesterol</string>
+
 
     <!--Login Screen-->
+    <string name="offline_sync">Offline Sync</string>
+    <string name="last_sync">Last Sync :</string>
+    <string name="login_username_text">Username</string>
+    <string name="login_password_text">Password</string>
+    <string name="login_forgot_password_text">Forgot Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_lastsync_text">Last Sync: </string>-->
 
-    <string name="login_username_text">صارف کا نام</string>
-    <string name="login_password_text">پاسورڈ</string>
-    <string name="login_forgot_password_text">پاسورڈ بھول گئے؟</string>
-    <string name="login_button_text">داخلہ</string>
-    <string name="login_lastsync_text">آخری ہم آہنگی</string>
-
+    <!-- Offline Sync -->
+    <string name="sync_country">Sync Countries</string>
+    <string name="sync_province">Sync Province</string>
+    <string name="sync_district">Sync District</string>
+    <string name="sync_tehsil">Sync Tehsil</string>
+    <string name="sync_uc">Sync Union Council</string>
+    <string name="sync_village">Sync Village</string>
+    <string name="sync_health_facility">Sync Health Facility</string>
+    <string name="sync_users">Sync Users</string>
+    <string name="sync_medicines">Sync Medicines</string>
+    <string name="sync_vaccine">Sync Vaccines</string>
 
     <!--HomePage Screen Activity-->
     <string name="hp_kamo_ki_fehrist_text">کاموں کی فہرست</string>
@@ -124,15 +177,7 @@
     <string name="nav_talash_text">تلاش</string>
     <string name="nav_stock_text">اسٹاک</string>
     <string name="nav_vaccinate_inlisted_text">ویکسینیٹ انلسٹڈ</string>
-    <string name="nav_sync_text">Sync data</string>
-    <string name="nav_sync_images_text">Sync images</string>
-    <string name="nav_refferal_text">Referral</string>
-    <string name="nav_taleeem_O_wasaeel_text">Educational Resources</string>
-    <string name="nav_adaad_O_shumaar_text">statistics</string>
-    <string name="nav_aamdani_text">Income</string>
-    <string name="nav_application_settings_text">Application settings</string>
-    <string name="nav_logout_text">Log out</string>
-    <string name="nav_COVID_text">Covid-19</string>
+
 
 
     <!--//Register Screen Activity-->
@@ -192,7 +237,7 @@
     <string name="cr_infradi_text">انفرادی نمبر</string>
     <string name="cr_khandan_number_text">خاندان نمبر</string>
     <string name="cr_biometric_ko_faal_kre_text">بایو میٹرک کو فعال کریں</string>
-    <string name="cr_qr_code_ko_faal_kre_text"> کوڈ کو فعال کریں </string>
+    <string name="cr_qr_code_ko_faal_kre_text"> Enter QR code </string>
     <string name="cr_jaama_kre_text">جمع کریں</string>
 
 
@@ -325,7 +370,7 @@
     <string name="cbf_refferal_text">ریفرل</string>
     <string name="cbf_refferal_ki_waja_text">ریفرل کی وجہ</string>
     <string name="cbf_refferal_hospital_text">ریفرل ہسپتال</string>
-    <string name="cbf_jama_kre_text">جمع کریں</string>
+    <string name="cbf_jama_kre_text">Submit</string>
 
 
     <!--Child Hifaziti Teekey Record List-->
@@ -405,18 +450,6 @@
     <string name="cvf_ksi_dusre_mulk_sy_aae_ho_text">کسی دوسرے ملک سے آئے ہو</string>
     <string name="cvf_ksi_dusre_mulk_sy_aae_hoe_person_sy_hth_text">کسی دوسرے ملک سے آئے ہوئے شخص سے ہاتھ ملایا ہو</string>
 
-
-
-
-    <!--Search Activity-->
-    <string name="search_talash_text">Search</string>
-    <string name="search_tariqa_talash_muntakhib_kre_text">Select search mode</string>
-    <string name="search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text">Please select one of the following to search again</string>
-    <string name="search_shanakhti_card_kay_zarye_talash_kre_text">Search by ID card</string>
-    <string name="search_phone_number_kai_zarye_talash_kre_text">Search by phone number</string>
-    <string name="search_khandannumber_kai_zarye_talash_kre_text">Search by family number</string>
-
-    <string name="dialog_talash_kre_text">find</string>
 
 
 
@@ -601,8 +634,8 @@
     <!--Mother Bemaari Record Activity-->
     <string name="mbr_bachey_ki_bemaari_ka_record_text">ماں کی بیماری کا ریکارڈ</string>
     <string name="mbr_ka_record_dkha_rha_ha_text">کا ریکارڈ دکھا رہا ہے</string>
-    <string name="mbr_is_tareekh_say_text">اس تاریخ سے</string>
-    <string name="mbr_is_tareekh_tk_text">اس تاریخ تک</string>
+    <string name="mbr_is_tareekh_say_text">to Date</string>
+    <string name="mbr_is_tareekh_tk_text">from Date</string>
     <string name="mbr_bemaari_ka_record_text">بیماری کا ریکارڈ 01</string>
     <string name="mbr_naya_form_shamil_kre_button_text">نیا فارم شامل کریں</string>
 
@@ -693,7 +726,6 @@
     <string name="vul_jins_text">جنس</string>
     <string name="vul_walid_ka_naam_text">والد کا نام </string>
     <string name="vul_walid_ka_shanakti_card_number_text">والد کا شناختی کارڈ نمبر</string>
-    <string name="vul_vacination_card_number_text">Vaccination card number</string>
 
     <string name="vul_walid_ya_kisi_ghar_kay_faard_ka_fingerprint_text">والد یا کسی گھر کے فرد کا فنگر پرنٹ </string>
     <string name="vul_biometriC_ko_faAl_kre_text">بایو میٹرک کو فعال کریں</string>
@@ -710,7 +742,7 @@
     <string name="swfpaqr_aapni_talash_kai_sath_jari_rakhny_kai_lye_zail_mai_sy_ek_tariqo_sy_muntakhib_kre_text">اپنی تلاش کے ساتھ جاری رکھنے کیلئے ذیل میں سے ایک طریقوں سے منتخب کریں</string>
     <string name="swfpaqr_fingerprint_kai_zarye_talash_kre_text">فنگر پرنٹ کے ذریعہ تلاش کریں</string>
     <string name="swfpaqr_qr_code_kai_zarye_talash_kre_text">کیو آر کوڈ کے ذریعہ تلاش کریں</string>
-    <string name="swfpaqr_qrcode_kai_zarye_talash_kre_text">Search by code</string>
+
 
 
     <!--Searcg QR Code Activity-->
@@ -745,12 +777,91 @@
 
 
     <!--Feedback Dialog-->
-    <string name="feedback_text">برائے مہربانی حیات ایپلیکیشن کے استعمال سے متعلق اپنی رائے منتخب کیجیے</string>
-    <string name="feedback_response_text">آپ کی رائے کا شکریہ</string>
+    <string name="feedback_text">Please give feedback on your experience of this Application.</string>
+    <string name="feedback_response_text">Thank you for your feedback.</string>
 
 <!--    Dialog Total And Refer Patients in COVID-->
     <string name="total_number_of_patients_text">کل مریضوں کی تعداد</string>
     <string name="refer_number_of_patients_text">کل ریفر مریضوں کی تعداد</string>
+
+
+////////////////////////////////////
+
+
+    <!--VAC_SyncAndDownloadData_TabActivity-->
+    <string name="sync_data">Sync Data</string>
+    <string name="download_data">Download Data</string>
+
+    <!--fragment_sync_Data_vac-->
+    <string name="child_family_registeration">Child\'s family registration record</string>
+    <string name="child_registeration">Child registration record</string>
+    <string name="child_immunization">Child immunization record</string>
+    <string name="mother__immunization">Maternal immunization record</string>
+    <string name="video_record">Record videos</string>
+    <string name="feedback_record">Feedback record</string>
+    <string name="vaccine_record">Vaccine stock record</string>
+    <string name="duplicate_member_record">Duplicate member record</string>
+
+    <!--dialog_set_phonenumber_Error-->
+    <string name="phonennumber_Error">Please select the phone number from the previous screen first</string>
+
+    <!--fragment_download_Data-->
+    <string name="download_family_registeration">Download family registration records</string>
+    <string name="download_registeration">Download registration record</string>
+    <string name="download_child_immunization">Download Child Immunization Record</string>
+    <string name="download_mother_immunization">Download Maternal Immunization Record</string>
+
+    <!--lay_dialog_loading6-->
+    <string name="download_data_dialog">Download data ..</string>
+
+    <!--Sync Image-->
+    <string name="sync_image">Sync images</string>
+
+
+
+    <string name="nav_sync_text">Sync Data</string>
+    <string name="nav_sync_images_text">Sync Images</string>
+    <string name="nav_refferal_text">Referral</string>
+    <string name="nav_taleeem_O_wasaeel_text">Educational Resources</string>
+    <string name="nav_adaad_O_shumaar_text">Statistics</string>
+    <string name="nav_aamdani_text">Income</string>
+    <string name="nav_application_settings_text">Application settings</string>
+    <string name="nav_logout_text">Log out</string>
+    <string name="nav_COVID_text">Covid-19</string>
+
+
+
+    <!--Search Activity-->
+    <string name="search_talash_text">Search</string>
+    <string name="search_tariqa_talash_muntakhib_kre_text">Select search mode</string>
+    <string name="search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text">Please select one of the following to search again</string>
+    <string name="search_shanakhti_card_kay_zarye_talash_kre_text">Search by ID card</string>
+    <string name="search_phone_number_kai_zarye_talash_kre_text">Search by phone number</string>
+    <string name="search_khandannumber_kai_zarye_talash_kre_text">Search by family number</string>
+
+    <string name="dialog_talash_kre_text">find</string>
+
+
+
+
+    <string name="vul_vacination_card_number_text">Vaccination card number</string>
+
+    <string name="swfpaqr_qrcode_kai_zarye_talash_kre_text">Search by code</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </resources>
 

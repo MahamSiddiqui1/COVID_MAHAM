@@ -6,7 +6,7 @@
     android:layout_gravity="fill"
     android:ellipsize="middle"
     android:gravity="left"
-    android:text="select one"
+    android:text="Select one"
     android:textColor="@color/dark_blue_color"
     android:textDirection="anyRtl"
     android:textSize="@dimen/_12sdp" />

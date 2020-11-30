@@ -89,7 +89,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_weight="1"
-            android:text="@string/vaccine_provided"
+            android:text="@string/vaccine_provided_when"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_14sdp" />
 
@@ -118,7 +118,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_weight="1"
-            android:text="@string/vaccine_provided"
+            android:text="@string/vaccine_provided_where"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_14sdp" />
 

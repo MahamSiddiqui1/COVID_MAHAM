@@ -19,12 +19,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,14 +58,10 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
     Context ctx = co_morbidity_Form_Activity.this;
 
-    //  TextView txt_mother_age, txt_mother_name;
-    EditText et_notes_diabetes,et_notes_blood,et_notes_cholestrol,et_notes_cancer,et_notes_heart;
-    Spinner sp_diabetes,sp_blood_pressure,sp_cancer,sp_cholestrol,sp_heart;
-    EditText et_tareekh_visit, et_refferal_ki_waja, et_refferal_hospital,et_value;
-    CheckBox checkbox_haan_1, checkbox_nahi_1, checkbox_haan_2, checkbox_nahi_2, checkbox_awareness, checkbox_service_provided;
+
+    EditText et_tareekh_visit;
     Button btn_jamaa_kre;
     ImageView iv_navigation_drawer, iv_home;
-    Spinner sp_naya_sabiqa, sp_planning_type;
     double latitude;
     double longitude;
     // GPSTracker class
@@ -81,11 +79,24 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
     ServiceLocation serviceLocation;
     String login_useruid, services_and_awareness = "-1";
     LinearLayout ll_services_provided;
-    Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
+    //Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
     RelativeLayout rl_quantity, rl_add, rl_sub;
     TextView tv_count;
     int counter = 0;
     long mLastClickTime = 0;
+
+    Switch cm_cancer,cm_chronic_kidney_disease,cm_copd,cm_heart_condition,cm_immune_compromised_organ,cm_obesity,cm_sickle_cell_disease,cm_pregnancy
+            ,cm_asthma,cm_cerebrovascular_disease,cm_cystic_fibrosis,cm_hypertension,cm_immune_compromised_other,cm_neurologic
+            ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol;
+
+    EditText et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
+            ,et_cm_asthma,et_cm_cerebrovascular_disease,et_cm_cystic_fibrosis,et_cm_hypertension,et_cm_immune_compromised_other,et_cm_neurologic
+            ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol;
+
+    RelativeLayout rl_cm_cancer,rl_cm_chronic_kidney_disease,rl_cm_copd,rl_cm_heart_condition,rl_cm_immune_compromised_organ,rl_cm_obesity,rl_cm_sickle_cell_disease,rl_cm_pregnancy
+            ,rl_cm_asthma,rl_cm_cerebrovascular_disease,rl_cm_cystic_fibrosis,rl_cm_hypertension,rl_cm_immune_compromised_other,rl_cm_neurologic
+            ,rl_cm_liver_disease,rl_cm_overweight,rl_cm_pulmonary_fibrosis,rl_cm_thalassemia,rl_cm_type1_diabetes,rl_cm_ldl_cholestrol;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,20 +148,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         et_tareekh_visit.setText(TodayDate);
 
 
-        et_notes_diabetes = findViewById(R.id.et_dia);
-        et_notes_blood = findViewById(R.id.et_blood_pressure_notes);
-        et_notes_cholestrol = findViewById(R.id.et_cholestrol);
-        et_notes_cancer = findViewById(R.id.et_cancer);
-        et_notes_heart = findViewById(R.id.et_heart_disease_notes);
-
-
-        //Spinner
-      //  sp_naya_sabiqa = findViewById(R.id.sp_naya_sabiqa);
-        sp_diabetes = findViewById(R.id.sp_dia);
-        sp_blood_pressure = findViewById(R.id.sp_blood);
-        sp_cholestrol=findViewById(R.id.sp_cholestrol);
-        sp_cancer=findViewById(R.id.sp_cancer);
-        sp_heart=findViewById(R.id.sp_heart);
 
 
 
@@ -169,136 +166,617 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         //tv_count.setText("" + counter);
 
 
-        spinner_data();
+       //Switch
+        cm_cancer= findViewById(R.id.cm_cancer);
+        cm_chronic_kidney_disease= findViewById(R.id.cm_chronic_kidney_disease);
+        cm_copd= findViewById(R.id.cm_copd);
+        cm_heart_condition= findViewById(R.id.cm_heart_condition);
+        cm_immune_compromised_organ= findViewById(R.id.cm_immune_compromised_organ);
+        cm_obesity= findViewById(R.id.cm_obesity);
+        cm_sickle_cell_disease= findViewById(R.id.cm_sickle_cell_disease);
+        cm_pregnancy = findViewById(R.id.cm_pregnancy);
+        cm_asthma= findViewById(R.id.cm_asthma);
+        cm_cerebrovascular_disease= findViewById(R.id.cm_cerebrovascular_disease);
+        cm_cystic_fibrosis= findViewById(R.id.cm_cystic_fibrosis);
+        cm_hypertension= findViewById(R.id.cm_hypertension);
+        cm_immune_compromised_other= findViewById(R.id.cm_immune_compromised_other);
+        cm_neurologic = findViewById(R.id.cm_neurologic);
+        cm_liver_disease= findViewById(R.id.cm_liver_disease);
+        cm_overweight= findViewById(R.id.cm_overweight);
+        cm_pulmonary_fibrosis= findViewById(R.id.cm_pulmonary_fibrosis);
+        cm_thalassemia= findViewById(R.id.cm_thalassemia);
+        cm_type1_diabetes= findViewById(R.id.cm_type1_diabetes);
+        cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);;
 
-        //CheckBox
-       /* checkbox_haan_1 = findViewById(R.id.checkbox_haan_1);
-        checkbox_nahi_1 = findViewById(R.id.checkbox_nahi_1);
-        checkbox_haan_2 = findViewById(R.id.checkbox_haan_2);
-        checkbox_nahi_2 = findViewById(R.id.checkbox_nahi_2);
+        //EditText
+        //Switch
+        et_cm_cancer= findViewById(R.id.et_cm_cancer);
+        et_cm_chronic_kidney_disease= findViewById(R.id.et_cm_chronic_kidney_disease);
+        et_cm_copd= findViewById(R.id.et_cm_copd);
+        et_cm_heart_condition= findViewById(R.id.et_cm_heart_condition);
+        et_cm_immune_compromised_organ= findViewById(R.id.et_cm_immune_compromised_organ);
+        et_cm_obesity= findViewById(R.id.et_cm_obesity);
+        et_cm_sickle_cell_disease= findViewById(R.id.et_cm_sickle_cell_disease);
+        et_cm_pregnancy = findViewById(R.id.et_cm_pregnancy);
+        et_cm_asthma= findViewById(R.id.et_cm_asthma);
+        et_cm_cerebrovascular_disease= findViewById(R.id.et_cm_cerebrovascular_disease);
+        et_cm_cystic_fibrosis= findViewById(R.id.et_cm_cystic_fibrosis);
+        et_cm_hypertension= findViewById(R.id.et_cm_hypertension);
+        et_cm_immune_compromised_other= findViewById(R.id.et_cm_immune_compromised_other);
+        et_cm_neurologic = findViewById(R.id.et_cm_neurologic);
+        et_cm_liver_disease= findViewById(R.id.et_cm_liver_disease);
+        et_cm_overweight= findViewById(R.id.et_cm_overweight);
+        et_cm_pulmonary_fibrosis= findViewById(R.id.et_cm_pulmonary_fibrosis);
+        et_cm_thalassemia= findViewById(R.id.et_cm_thalassemia);
+        et_cm_type1_diabetes= findViewById(R.id.et_cm_type1_diabetes);
+        et_cm_ldl_cholestrol= findViewById(R.id.et_cm_ldl_cholestrol);
 
-        checkbox_service_provided = findViewById(R.id.checkbox_service_provided);
-        checkbox_awareness = findViewById(R.id.checkbox_awareness);
-*/
-        /*checkbox_service_provided.setOnClickListener(new View.OnClickListener() {
+        //RelativeLayout
+        //Switch
+        rl_cm_cancer= findViewById(R.id.rl_cm_cancer);
+        rl_cm_chronic_kidney_disease= findViewById(R.id.rl_cm_chronic_kidney_disease);
+        rl_cm_copd= findViewById(R.id.rl_cm_copd);
+        rl_cm_heart_condition= findViewById(R.id.rl_cm_heart_condition);
+        rl_cm_immune_compromised_organ= findViewById(R.id.rl_cm_immune_compromised_organ);
+        rl_cm_obesity= findViewById(R.id.rl_cm_obesity);
+        rl_cm_sickle_cell_disease= findViewById(R.id.rl_cm_sickle_cell_disease);
+        rl_cm_pregnancy = findViewById(R.id.rl_cm_pregnancy);
+        rl_cm_asthma= findViewById(R.id.rl_cm_asthma);
+        rl_cm_cerebrovascular_disease= findViewById(R.id.rl_cm_cerebrovascular_disease);
+        rl_cm_cystic_fibrosis= findViewById(R.id.rl_cm_cystic_fibrosis);
+        rl_cm_hypertension= findViewById(R.id.rl_cm_hypertension);
+        rl_cm_immune_compromised_other= findViewById(R.id.rl_cm_immune_compromised_other);
+        rl_cm_neurologic = findViewById(R.id.rl_cm_neurologic);
+        rl_cm_liver_disease= findViewById(R.id.rl_cm_liver_disease);
+        rl_cm_overweight= findViewById(R.id.rl_cm_overweight);
+        rl_cm_pulmonary_fibrosis= findViewById(R.id.rl_cm_pulmonary_fibrosis);
+        rl_cm_thalassemia= findViewById(R.id.rl_cm_thalassemia);
+        rl_cm_type1_diabetes= findViewById(R.id.rl_cm_type1_diabetes);
+        rl_cm_ldl_cholestrol= findViewById(R.id.rl_cm_ldl_cholestrol);;
 
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_service_provided.isChecked()) {
-                    services_and_awareness = "1";
+        cm_cancer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_cancer.setText("Yes");
+                    et_cm_cancer.setFocusable(true);
+                    et_cm_cancer.setCursorVisible(true);
+                    et_cm_cancer.setFocusableInTouchMode(true);
+                    et_cm_cancer.setClickable(true);
 
-                    ll_services_provided.setVisibility(View.VISIBLE);
-                    Log.d("00147", "IF");
-                    checkbox_awareness.setChecked(false);
+                    et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
                 } else {
-                    Log.d("00147", "ELSE");
-                    checkbox_awareness.setChecked(false);
-                    ll_services_provided.setVisibility(View.GONE);
+                    // The toggle is disabled
+                    cm_cancer.setText("No");
+
+                    et_cm_cancer.setFocusable(false);
+                    et_cm_cancer.setCursorVisible(false);
+                    et_cm_cancer.setFocusableInTouchMode(false);
+                    et_cm_cancer.setClickable(false);
+                    et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
-
-            }
-        });*/
-        /*checkbox_awareness.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_awareness.isChecked()) {
-                    services_and_awareness = "0";
-                    ll_services_provided.setVisibility(View.GONE);
-                    rl_quantity.setVisibility(View.GONE);
-                    sp_material.setSelection(0);
-                    counter = 0;
-                   // tv_count.setText("0");
-                }
-
-                checkbox_service_provided.setChecked(false);
-
             }
         });
 
+        cm_chronic_kidney_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_chronic_kidney_disease.setText("Yes");
+                    et_cm_chronic_kidney_disease.setFocusable(true);
+                    et_cm_chronic_kidney_disease.setCursorVisible(true);
+                    et_cm_chronic_kidney_disease.setFocusableInTouchMode(true);
+                    et_cm_chronic_kidney_disease.setClickable(true);
 
-        checkbox_haan_1.setOnClickListener(new View.OnClickListener() {
+                    et_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
 
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_haan_1.isChecked()) {
-                    khud_muhaiya = "1";
-                }
 
-                checkbox_nahi_1.setChecked(false);
-            }
-        });
-        checkbox_nahi_1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_nahi_1.isChecked()) {
-                    khud_muhaiya = "0";
-                }
-                checkbox_haan_1.setChecked(false);
-            }
-        });
-
-        checkbox_haan_2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_haan_2.isChecked()) {
-                    refer = "1";
-                }
-                checkbox_nahi_2.setChecked(false);
-            }
-        });
-
-        checkbox_nahi_2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //is chkIos checked?
-                if (checkbox_nahi_2.isChecked()) {
-                    refer = "0";
-                }
-                checkbox_haan_2.setChecked(false);
-            }
-        });
-*/
-
-      /*  rl_add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (counter < 100) {
-                    counter += 1;
-                  //  tv_count.setText("" + counter);
-
-                    Log.d("000362", ": " + counter);
                 } else {
-                  //  tv_count.setText("" + counter);
-                    Log.d("000362", ":: " + counter);
+                    // The toggle is disabled
+                    cm_chronic_kidney_disease.setText("No");
+                    et_cm_chronic_kidney_disease.setFocusable(false);
+                    et_cm_chronic_kidney_disease.setCursorVisible(false);
+                    et_cm_chronic_kidney_disease.setFocusableInTouchMode(false);
+                    et_cm_chronic_kidney_disease.setClickable(false);
+                    et_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
             }
         });
-        rl_sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (counter > 0) {
-                    counter -= 1;
-                   // tv_count.setText("" + counter);
-                    Log.d("000362", ": " + counter);
+
+        cm_copd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_copd.setText("Yes");
+                    et_cm_copd.setFocusable(true);
+                    et_cm_copd.setCursorVisible(true);
+                    et_cm_copd.setFocusableInTouchMode(true);
+                    et_cm_copd.setClickable(true);
+
+                    et_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+
                 } else {
-                  //  tv_count.setText("" + counter);
-                    Log.d("000362", ": " + counter);
+                    // The toggle is disabled
+                    cm_copd.setText("No");
+                    et_cm_copd.setFocusable(false);
+                    et_cm_copd.setCursorVisible(false);
+                    et_cm_copd.setFocusableInTouchMode(false);
+                    et_cm_copd.setClickable(false);
+                    et_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
             }
-
-
         });
-*/
+
+        cm_heart_condition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_heart_condition.setText("Yes");
+                    et_cm_heart_condition.setFocusable(true);
+                    et_cm_heart_condition.setCursorVisible(true);
+                    et_cm_heart_condition.setFocusableInTouchMode(true);
+                    et_cm_heart_condition.setClickable(true);
+
+                    et_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_heart_condition.setText("No");
+                    et_cm_heart_condition.setFocusable(false);
+                    et_cm_heart_condition.setCursorVisible(false);
+                    et_cm_heart_condition.setFocusableInTouchMode(false);
+                    et_cm_heart_condition.setClickable(false);
+                    et_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_immune_compromised_organ.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_immune_compromised_organ.setText("Yes");
+                    et_cm_immune_compromised_organ.setFocusable(true);
+                    et_cm_immune_compromised_organ.setCursorVisible(true);
+                    et_cm_immune_compromised_organ.setFocusableInTouchMode(true);
+                    et_cm_immune_compromised_organ.setClickable(true);
+
+                    et_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_immune_compromised_organ.setText("No");
+                    et_cm_immune_compromised_organ.setFocusable(false);
+                    et_cm_immune_compromised_organ.setCursorVisible(false);
+                    et_cm_immune_compromised_organ.setFocusableInTouchMode(false);
+                    et_cm_immune_compromised_organ.setClickable(false);
+                    et_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_obesity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_obesity.setText("Yes");
+                    et_cm_obesity.setFocusable(true);
+                    et_cm_obesity.setCursorVisible(true);
+                    et_cm_obesity.setFocusableInTouchMode(true);
+                    et_cm_obesity.setClickable(true);
+
+                    et_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_obesity.setText("No");
+                    et_cm_obesity.setFocusable(false);
+                    et_cm_obesity.setCursorVisible(false);
+                    et_cm_obesity.setFocusableInTouchMode(false);
+                    et_cm_obesity.setClickable(false);
+                    et_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_sickle_cell_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_sickle_cell_disease.setText("Yes");
+                    et_cm_sickle_cell_disease.setFocusable(true);
+                    et_cm_sickle_cell_disease.setCursorVisible(true);
+                    et_cm_sickle_cell_disease.setFocusableInTouchMode(true);
+                    et_cm_sickle_cell_disease.setClickable(true);
+
+                    et_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_sickle_cell_disease.setText("No");
+                    et_cm_sickle_cell_disease.setFocusable(false);
+                    et_cm_sickle_cell_disease.setCursorVisible(false);
+                    et_cm_sickle_cell_disease.setFocusableInTouchMode(false);
+                    et_cm_sickle_cell_disease.setClickable(false);
+                    et_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_pregnancy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_pregnancy.setText("Yes");
+                    et_cm_pregnancy.setFocusable(true);
+                    et_cm_pregnancy.setCursorVisible(true);
+                    et_cm_pregnancy.setFocusableInTouchMode(true);
+                    et_cm_pregnancy.setClickable(true);
+
+                    et_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_pregnancy.setText("No");
+                    et_cm_pregnancy.setFocusable(false);
+                    et_cm_pregnancy.setCursorVisible(false);
+                    et_cm_pregnancy.setFocusableInTouchMode(false);
+                    et_cm_pregnancy.setClickable(false);
+                    et_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_asthma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_asthma.setText("Yes");
+                    et_cm_asthma.setFocusable(true);
+                    et_cm_asthma.setCursorVisible(true);
+                    et_cm_asthma.setFocusableInTouchMode(true);
+                    et_cm_asthma.setClickable(true);
+
+                    et_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_asthma.setText("No");
+                    et_cm_asthma.setFocusable(false);
+                    et_cm_asthma.setCursorVisible(false);
+                    et_cm_asthma.setFocusableInTouchMode(false);
+                    et_cm_asthma.setClickable(false);
+                    et_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_cerebrovascular_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_cerebrovascular_disease.setText("Yes");
+                    et_cm_cerebrovascular_disease.setFocusable(true);
+                    et_cm_cerebrovascular_disease.setCursorVisible(true);
+                    et_cm_cerebrovascular_disease.setFocusableInTouchMode(true);
+                    et_cm_cerebrovascular_disease.setClickable(true);
+
+                    et_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_cerebrovascular_disease.setText("No");
+                    et_cm_cerebrovascular_disease.setFocusable(false);
+                    et_cm_cerebrovascular_disease.setCursorVisible(false);
+                    et_cm_cerebrovascular_disease.setFocusableInTouchMode(false);
+                    et_cm_cerebrovascular_disease.setClickable(false);
+                    et_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_cystic_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_cystic_fibrosis.setText("Yes");
+                    et_cm_cystic_fibrosis.setFocusable(true);
+                    et_cm_cystic_fibrosis.setCursorVisible(true);
+                    et_cm_cystic_fibrosis.setFocusableInTouchMode(true);
+                    et_cm_cystic_fibrosis.setClickable(true);
+
+                    et_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_cystic_fibrosis.setText("No");
+                    et_cm_cystic_fibrosis.setFocusable(false);
+                    et_cm_cystic_fibrosis.setCursorVisible(false);
+                    et_cm_cystic_fibrosis.setFocusableInTouchMode(false);
+                    et_cm_cystic_fibrosis.setClickable(false);
+                    et_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_hypertension.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_hypertension.setText("Yes");
+                    et_cm_hypertension.setFocusable(true);
+                    et_cm_hypertension.setCursorVisible(true);
+                    et_cm_hypertension.setFocusableInTouchMode(true);
+                    et_cm_hypertension.setClickable(true);
+
+                    et_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_hypertension.setText("No");
+                    et_cm_hypertension.setFocusable(false);
+                    et_cm_hypertension.setCursorVisible(false);
+                    et_cm_hypertension.setFocusableInTouchMode(false);
+                    et_cm_hypertension.setClickable(false);
+                    et_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_immune_compromised_other.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_immune_compromised_other.setText("Yes");
+                    et_cm_immune_compromised_other.setFocusable(true);
+                    et_cm_immune_compromised_other.setCursorVisible(true);
+                    et_cm_immune_compromised_other.setFocusableInTouchMode(true);
+                    et_cm_immune_compromised_other.setClickable(true);
+
+                    et_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_immune_compromised_other.setText("No");
+                    et_cm_immune_compromised_other.setFocusable(false);
+                    et_cm_immune_compromised_other.setCursorVisible(false);
+                    et_cm_immune_compromised_other.setFocusableInTouchMode(false);
+                    et_cm_immune_compromised_other.setClickable(false);
+                    et_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_neurologic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_neurologic.setText("Yes");
+                    et_cm_neurologic.setFocusable(true);
+                    et_cm_neurologic.setCursorVisible(true);
+                    et_cm_neurologic.setFocusableInTouchMode(true);
+                    et_cm_neurologic.setClickable(true);
+
+                    et_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_neurologic.setText("No");
+                    et_cm_neurologic.setFocusable(false);
+                    et_cm_neurologic.setCursorVisible(false);
+                    et_cm_neurologic.setFocusableInTouchMode(false);
+                    et_cm_neurologic.setClickable(false);
+                    et_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_liver_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_liver_disease.setText("Yes");
+                    et_cm_liver_disease.setFocusable(true);
+                    et_cm_liver_disease.setCursorVisible(true);
+                    et_cm_liver_disease.setFocusableInTouchMode(true);
+                    et_cm_liver_disease.setClickable(true);
+
+                    et_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_liver_disease.setText("No");
+                    et_cm_liver_disease.setFocusable(false);
+                    et_cm_liver_disease.setCursorVisible(false);
+                    et_cm_liver_disease.setFocusableInTouchMode(false);
+                    et_cm_liver_disease.setClickable(false);
+                    et_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_overweight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_overweight.setText("Yes");
+                    et_cm_overweight.setFocusable(true);
+                    et_cm_overweight.setCursorVisible(true);
+                    et_cm_overweight.setFocusableInTouchMode(true);
+                    et_cm_overweight.setClickable(true);
+
+                    et_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_overweight.setText("No");
+                    et_cm_overweight.setFocusable(false);
+                    et_cm_overweight.setCursorVisible(false);
+                    et_cm_overweight.setFocusableInTouchMode(false);
+                    et_cm_overweight.setClickable(false);
+                    et_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_pulmonary_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_pulmonary_fibrosis.setText("Yes");
+                    et_cm_pulmonary_fibrosis.setFocusable(true);
+                    et_cm_pulmonary_fibrosis.setCursorVisible(true);
+                    et_cm_pulmonary_fibrosis.setFocusableInTouchMode(true);
+                    et_cm_pulmonary_fibrosis.setClickable(true);
+
+                    et_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_pulmonary_fibrosis.setText("No");
+                    et_cm_pulmonary_fibrosis.setFocusable(false);
+                    et_cm_pulmonary_fibrosis.setCursorVisible(false);
+                    et_cm_pulmonary_fibrosis.setFocusableInTouchMode(false);
+                    et_cm_pulmonary_fibrosis.setClickable(false);
+                    et_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_thalassemia.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_thalassemia.setText("Yes");
+                    et_cm_thalassemia.setFocusable(true);
+                    et_cm_thalassemia.setCursorVisible(true);
+                    et_cm_thalassemia.setFocusableInTouchMode(true);
+                    et_cm_thalassemia.setClickable(true);
+
+                    et_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_thalassemia.setText("No");
+                    et_cm_thalassemia.setFocusable(false);
+                    et_cm_thalassemia.setCursorVisible(false);
+                    et_cm_thalassemia.setFocusableInTouchMode(false);
+                    et_cm_thalassemia.setClickable(false);
+
+                    et_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_type1_diabetes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_type1_diabetes.setText("Yes");
+                    et_cm_type1_diabetes.setFocusable(true);
+                    et_cm_type1_diabetes.setCursorVisible(true);
+                    et_cm_type1_diabetes.setFocusableInTouchMode(true);
+                    et_cm_type1_diabetes.setClickable(true);
+
+                    et_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_type1_diabetes.setText("No");
+                    et_cm_type1_diabetes.setFocusable(false);
+                    et_cm_type1_diabetes.setCursorVisible(false);
+                    et_cm_type1_diabetes.setFocusableInTouchMode(false);
+                    et_cm_type1_diabetes.setClickable(false);
+                    et_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
+        cm_ldl_cholestrol.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_ldl_cholestrol.setText("Yes");
+                    et_cm_ldl_cholestrol.setFocusable(true);
+                    et_cm_ldl_cholestrol.setCursorVisible(true);
+                    et_cm_ldl_cholestrol.setFocusableInTouchMode(true);
+                    et_cm_ldl_cholestrol.setClickable(true);
+
+                    et_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                    rl_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
+
+                } else {
+                    // The toggle is disabled
+                    cm_ldl_cholestrol.setText("No");
+                    et_cm_ldl_cholestrol.setFocusable(false);
+                    et_cm_ldl_cholestrol.setCursorVisible(false);
+                    et_cm_ldl_cholestrol.setFocusableInTouchMode(false);
+                    et_cm_ldl_cholestrol.setClickable(false);
+                    et_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                    rl_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
+                }
+            }
+        });
+
 
         //Button
         btn_jamaa_kre = findViewById(R.id.submit);
@@ -366,7 +844,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                         Lister ls = new Lister(ctx);
                         ls.createAndOpenDB();
 
-                        String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from MBEMARI");
+                        String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from COVID_CO_MORBIDITY");
 
                         if (Integer.parseInt(mData[0][2]) > 0) {
                             JSONObject jsonObject = new JSONObject(mData[0][1]);
@@ -409,7 +887,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     jobj.put("lat", "" + String.valueOf(latitude));
                     jobj.put("lng", "" + String.valueOf(longitude));
                     jobj.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
-                    jobj.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
+           /*         jobj.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                     jobj.put("notes_cancer", "" + et_notes_cancer.getText().toString());
                     jobj.put("notes_heart", "" + et_notes_heart.getText().toString());
                     jobj.put("notes_blood", "" + et_notes_blood.getText().toString());
@@ -419,7 +897,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     jobj.put("blood_pressure", "" + String.valueOf(sp_blood_pressure.getSelectedItemPosition() - 1));
                     jobj.put("cholestrol", "" + String.valueOf(sp_cholestrol.getSelectedItemPosition() - 1));
                     jobj.put("heart", "" + String.valueOf(sp_heart.getSelectedItemPosition() - 1));
-                    jobj.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));
+                    jobj.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));*/
 
                     jobj.put("added_on", "null");
 
@@ -427,7 +905,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     String cur_added_on = String.valueOf(System.currentTimeMillis());
 
                     // jobjMain.put("data", jobj);
-                    String ans1 = "insert into MBEMARI (member_uid, record_data, data,added_by, is_synced,added_on)" +
+                    String ans1 = "insert into COVID_CO_MORBIDITY (member_uid, record_data, data,added_by, is_synced,added_on)" +
                             "values" +
                             "(" +
                             "'" + mother_uid + "'," +
@@ -470,7 +948,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
 
                         if (services_and_awareness.equalsIgnoreCase("1")) {
-                            insert_into_medicineLog(cur_added_on);
+                          //  insert_into_medicineLog(cur_added_on);
                         } else {
                         }
                     } else {
@@ -510,295 +988,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         });
     }
 
-    private void insert_into_medicineLog(String cur_added_on) {
-
-        try {
-            Lister ls = new Lister(ctx);
-            ls.createAndOpenDB();
-
-
-            String med_uid = "";
-            JSONObject jobj_medicine_stock = new JSONObject();
-            jobj_medicine_stock.put("medicine_quantity", "" + counter);
-            jobj_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
-            jobj_medicine_stock.put("material_pos", "" +String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
-
-            if (sp_material.getSelectedItemPosition() == 1) {
-                jobj_medicine_stock.put("medicine_type", "1");
-                med_uid = "fafacbfe1f639599c407c19373438280";
-
-            }
-           else if (sp_material.getSelectedItemPosition() == 2) {
-                jobj_medicine_stock.put("medicine_type", "0");
-                med_uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-            }
-            else {
-                jobj_medicine_stock.put("medicine_type", "0");
-                med_uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-            }
-
-
-            String ans1 = "insert into MEDICINE_LOG (member_uid, medicine_id, record_data,type,disease,metadata,added_by,added_on)" +
-                    "values" +
-                    "(" +
-                    "'" + mother_uid + "'," +
-                    "'" +med_uid+ "'," +
-                    "'" + TodayDate + "'," +
-                    "'MBEMARI'," +
-                    "'none'," +
-                    "'" + jobj_medicine_stock + "'," +
-                    "'" + login_useruid + "'," +
-                    "'" + cur_added_on + "'" +
-                    ")";
-
-            Boolean res = ls.executeNonQuery(ans1);
-            Log.d("000362", "Medicine Data: " + ans1);
-            Log.d("000362", "Query: " + res.toString());
-
-            //    Toast.makeText(ctx, "Addedd", Toast.LENGTH_SHORT).show();
-
-        } catch (Exception e) {
-            Log.d("000362", "Err: " + e.getMessage());
-          //  Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void spinner_data() {
-
-        try {
-          /*  // Select sp_azdawaji_hasiyat
-            final ArrayAdapter<CharSequence> adptr_naya_sabiqa = ArrayAdapter.createFromResource(this, R.array.array_naya_sabiqa, android.R.layout.simple_spinner_item);
-            adptr_naya_sabiqa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_naya_sabiqa.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_naya_sabiqa,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_naya_sabiqa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-
-*/
-
-
-            final ArrayAdapter<CharSequence> adptr_diabetes= ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_diabetes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_diabetes.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_diabetes,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_diabetes.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cancer = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_cancer.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cancer.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cancer,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cancer.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_heart = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_heart.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_heart.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_heart,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_heart.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-            final ArrayAdapter<CharSequence> adptr_blood = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_blood.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_blood_pressure.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_blood,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_blood_pressure.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cholestrol = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_cholestrol.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cholestrol.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cholestrol,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cholestrol.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-
-            ///////////sp_planning_type//////////
-
-            final ArrayAdapter<CharSequence> adptr_planning = ArrayAdapter.createFromResource(this, R.array.array_sp_planning_type, android.R.layout.simple_spinner_item);
-            adptr_planning.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-            
-            sp_planning_type.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_planning,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_planning_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            ////////////////////////// Sp_Month ////////////////////////////////////////
-            final ArrayAdapter<CharSequence> adptr_material = ArrayAdapter.createFromResource(this, R.array.array_sp_service_provided, R.layout.sp_title_topic_layout);
-            adptr_material.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_material.setAdapter(
-                    new com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter(
-                            adptr_material,
-                            R.layout.sp_title_topic_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-            sp_material.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                    if (sp_material.getSelectedItemPosition() > 0) {
-                        rl_quantity.setVisibility(View.VISIBLE);
-                    } else {
-                        rl_quantity.setVisibility(View.GONE);
-                    }
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-        } catch (Exception e) {
-
-        }
-    }
 
 
     private void sendPostRequest(final String member_uid, final String record_data,
@@ -825,7 +1014,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                         Lister ls = new Lister(co_morbidity_Form_Activity.this);
                         ls.createAndOpenDB();
 
-                        String update_record = "UPDATE MBEMARI SET " +
+                        String update_record = "UPDATE COVID_CO_MORBIDITY SET " +
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND record_data= '" + et_tareekh_visit.getText().toString() + "'AND added_on= '" + added_on + "'";
                         ls.executeNonQuery(update_record);

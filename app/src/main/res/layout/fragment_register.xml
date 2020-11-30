@@ -18,14 +18,14 @@
             android:id="@+id/newFam"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_50sdp"
             android:layout_alignParentTop="true"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:background="@drawable/shape_purple_accent"
             android:gravity="center"
             android:text="@string/newFamily"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:backgroundTint="@android:color/transparent"
             app:backgroundTintMode="add" />
 
@@ -33,14 +33,14 @@
         <Button
             android:id="@+id/newInd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/newFam"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:background="@drawable/shape_white_purple"
             android:gravity="center"
             android:text="@string/newIndividual"
             android:textColor="@color/colorAccent"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:backgroundTint="@android:color/transparent"
             app:backgroundTintMode="add" />
 

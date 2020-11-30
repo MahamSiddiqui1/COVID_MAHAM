@@ -1066,14 +1066,14 @@ public class Login_Activity extends Activity {
                     Log.d("000258", "USER-privilege:" + mData[0][3]);
                     user_previlage = mData[0][3];
                     if (vartodis.trim().equalsIgnoreCase(password.trim())) {
-                        if (mData[0][3].equalsIgnoreCase("1")) {
+                        if (mData[0][3].equalsIgnoreCase("null")) {
                             login_useruid = mData[0][2];
                             login_username = userName;
                             Log.d("000258", "LOGIN-USER-NAME:" + login_username);
                             Log.d("000258", "LOGIN-USER-UID:" + login_useruid);
 //                            insert_logins_db();
 
-                            check_login_user_LHW();
+                          //  check_login_user_LHW();
 
                         } else {
                             login_useruid = mData[0][2];

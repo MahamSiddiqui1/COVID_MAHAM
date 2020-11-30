@@ -19,9 +19,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:gravity="right"
-            android:text="ڈاؤن لوڈ ڈیٹا .."
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="Download data"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
@@ -39,8 +39,8 @@
             android:id="@+id/tvCountData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:gravity="left"
+            android:layout_gravity="right"
+            android:gravity="right"
             android:text="0/0"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_10sdp"

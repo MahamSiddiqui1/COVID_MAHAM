@@ -32,6 +32,7 @@
             android:id="@+id/image_phonenumber"
             android:layout_width="@dimen/_55sdp"
             android:layout_height="50dp"
+            android:visibility="gone"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:clickable="true"
@@ -246,6 +247,7 @@
 
                 <RelativeLayout
                     android:id="@+id/rl_stock"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/rl_adaad_O_shumaar"
@@ -267,6 +269,7 @@
                 <RelativeLayout
                     android:id="@+id/rl_bluetooth_share"
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/rl_stock"
                     android:layout_centerHorizontal="true"

@@ -28,7 +28,7 @@ import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_RegisterAc
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_RegisterActivities.BelowTwo_Register_Activity;
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_RegisterActivities.LHW_RegisterHouseView_Activity;
 import com.akdndhrc.covid_module.R;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.Dashboard_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.CovidModule_Dashboard_Activity;
 import com.akdndhrc.covid_module.slider.BaseSlideMenuActivity;
 
 import org.json.JSONObject;
@@ -126,10 +126,10 @@ public class Add_Family_Member_covid extends BaseSlideMenuActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(ctx, Dashboard_Activity.class);
-                startActivity(intent);
+                Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
+
                 intent.putExtra("u_id", mData[position][0]);
-                intent.putExtra("child_gender", mData[position][2]);
+                intent.putExtra("gender", mData[position][2]); startActivity(intent);
 
 
             }

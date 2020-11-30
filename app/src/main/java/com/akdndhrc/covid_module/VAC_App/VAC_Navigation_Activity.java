@@ -39,6 +39,7 @@ import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_BelowTwoRegiste
 import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SearchActivities.VAC_Search_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_StockActivity;
 import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncAndDownloadData_TabActivity;
+import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncImages_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncVaccineImages_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_VideoActivities.VAC_VideoList_Activity;
 import com.akdndhrc.covid_module.R;
@@ -264,8 +265,9 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
             case R.id.rl_sync_images:
                 Log.d("000555", "NAAAAA: ");
-             //   act.startActivity(new Intent(act, VAC_SyncImages_Activity.class));
+                //act.startActivity(new Intent(act, VAC_SyncImages_Activity.class));
                 act.startActivity(new Intent(act, VAC_SyncVaccineImages_Activity.class));
+
                 break;
 
             case R.id.rl_adaad_O_shumaar:
@@ -273,12 +275,21 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 break;
 
             case R.id.rl_stock:
-                act.startActivity(new Intent(act, VAC_StockActivity.class));
+                //act.startActivity(new Intent(act, VAC_StockActivity.class));
+                final Snackbar snackbar = Snackbar.make(v, "No view available.", Snackbar.LENGTH_SHORT);
+                View mySbView = snackbar.getView();
+                mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+                mySbView.setBackgroundColor(getApplicationContext().getResources().getColor(android.R.color.black));
+                TextView textView = (TextView) mySbView.findViewById(android.support.design.R.id.snackbar_text);
+                textView.setTextColor(Color.WHITE);
+                textView.setTextSize(15);
+                snackbar.setDuration(3000);
+                snackbar.show();
                 break;
 
             case R.id.rl_bluetooth_share:
 
-                try {
+                /*try {
                     if (Build.VERSION.SDK_INT >= 24) {
                         try {
                             Method m = StrictMode.class.getMethod("disableDeathOnFileUriExposure");
@@ -324,8 +335,16 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                 {
                     Log.d("000222", " ERRR:  " + e.getMessage());
-                }
-
+                }*/
+                final Snackbar snackbarb = Snackbar.make(v, "This features is not yet available.", Snackbar.LENGTH_SHORT);
+                View mySbViewb = snackbarb.getView();
+                mySbViewb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+                mySbViewb.setBackgroundColor(getApplicationContext().getResources().getColor(android.R.color.black));
+                TextView textViewb = (TextView) mySbViewb.findViewById(android.support.design.R.id.snackbar_text);
+                textViewb.setTextColor(Color.WHITE);
+                textViewb.setTextSize(15);
+                snackbarb.setDuration(3000);
+                snackbarb.show();
                 break;
 
             case R.id.rl_logout:
@@ -460,7 +479,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText("Thank you for sharing your feedback.");
                 ratingBar.setRating(5);
                 temp_var = "5";
                 temp_name = "Very Satisfied";
@@ -476,7 +495,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText("Thank you for sharing your feedback.");
                 ratingBar.setRating(4);
                 temp_var = "4";
                 temp_name = "Satisfied";
@@ -492,7 +511,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.neutral));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText("Thank you for sharing your feedback.");
                 ratingBar.setRating(3);
                 temp_var = "3";
                 temp_name = "Neutral";
@@ -508,7 +527,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText("Thank you for sharing your feedback.");
                 ratingBar.setRating(2);
                 temp_var = "2";
                 temp_name = "UnSatisfied";
@@ -524,7 +543,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText("Thank you for sharing your feedback.");
                 ratingBar.setRating(1);
                 temp_var = "1";
                 temp_name = "Very UnSatisfied";

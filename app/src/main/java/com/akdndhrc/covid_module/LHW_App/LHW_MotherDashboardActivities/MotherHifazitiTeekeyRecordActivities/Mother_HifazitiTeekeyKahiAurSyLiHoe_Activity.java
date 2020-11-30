@@ -750,7 +750,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             Log.d("000266", "Saal: " + String.valueOf(dob_years));
             Log.d("000266", "Maah: " + String.valueOf(dob_months));
 
-            mother_age = String.valueOf(dob_years) + " سال " + String.valueOf(dob_months) + " مہ ";
+            mother_age = String.valueOf(dob_years) + " years " + String.valueOf(dob_months) + " months ";
             txt_age.setText(mother_age);
 //            Toast.makeText(getApplicationContext(), txt, Toast.LENGTH_LONG).show();
         } catch (ParseException e) {
@@ -771,11 +771,10 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             Lister ls = new Lister(ctx);
             ls.createAndOpenDB();
 
-            arrayList_vaccine_name.add("TT Injection 1");
-            arrayList_vaccine_name.add("TT Injection 2");
-            arrayList_vaccine_name.add("TT Injection 3");
-            arrayList_vaccine_name.add("TT Injection 4");
-            arrayList_vaccine_name.add("TT Injection 5");
+            arrayList_vaccine_name.add("Vaccine A - Shot 1");
+            arrayList_vaccine_name.add("Vaccine A - Shot 2");
+            arrayList_vaccine_name.add("Vaccine B - Shot 1");
+            arrayList_vaccine_name.add("Vaccine B - Shot 2");
 
             for (int i = 0; i < arrayList_vaccine_name.size(); i++) {
                 index_val = i;

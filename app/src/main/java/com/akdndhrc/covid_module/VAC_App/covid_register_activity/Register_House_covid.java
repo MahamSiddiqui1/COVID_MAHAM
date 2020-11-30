@@ -32,6 +32,7 @@ import com.akdndhrc.covid_module.AppController;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.GPSTracker;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
+import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Register_QRCode_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_register_activity.Add_Family_Member_covid;
 import com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter;
 import com.akdndhrc.covid_module.R;
@@ -905,7 +906,7 @@ public class Register_House_covid extends AppCompatActivity {
             String toencode_sms = getBase64String(String.valueOf(jobj));
 
             String uuid = UUID.randomUUID().toString().replace("-","");
-            String sms_data =   "HAYATPK" +"|"+uuid + "|" + "KHANDAN_TABLE" + "|" + toencode_sms;
+            String sms_data =   "HayatPK" +"|"+uuid + "|" + "KHANDAN_TABLE" + "|" + toencode_sms;
             Log.d("000951", "SMS DATA:  " + sms_data);
 
 
@@ -1045,10 +1046,21 @@ public class Register_House_covid extends AppCompatActivity {
     public void onBackPressed() {
         //  super.onBackPressed();
 
-        Log.d("00077", "ONBAck: ");
+       /* Log.d("00077", "ONBAck: ");
         Intent newIntent = new Intent(ctx, HomePageVacinator_Activity.class);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(newIntent);
+*/
+        Intent intent = new Intent(ctx, HomePageVacinator_Activity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+//        VAC_ClassListener.mSlideMenu.close(false);
+        VAC_Register_QRCode_Activity.switch_qr_code_values_vac = "0";
+        //var_regtemp_abovetwo = "0";
+
+
+
     }
 }

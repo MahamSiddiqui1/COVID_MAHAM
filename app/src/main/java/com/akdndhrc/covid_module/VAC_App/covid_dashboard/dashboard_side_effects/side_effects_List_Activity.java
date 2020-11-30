@@ -78,11 +78,21 @@ public class side_effects_List_Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent newIntent = new Intent(ctx, side_effects_FormView_Activity.class);
+                /*Intent newIntent = new Intent(ctx, side_effects_FormView_Activity.class);
                 newIntent.putExtra("u_id", mother_uid);
                 newIntent.putExtra("record_date", mData[position][0]);
                 newIntent.putExtra("added_on", mData[position][1]);
-                startActivity(newIntent);
+                startActivity(newIntent);*/
+
+                final Snackbar snackbar = Snackbar.make(view, "No view available.", Snackbar.LENGTH_SHORT);
+                View mySbView = snackbar.getView();
+                mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+                mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
+                TextView textView = (TextView) mySbView.findViewById(android.support.design.R.id.snackbar_text);
+                textView.setTextColor(Color.WHITE);
+                textView.setTextSize(15);
+                snackbar.setDuration(3000);
+                snackbar.show();
             }
         });
 
@@ -90,7 +100,7 @@ public class side_effects_List_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -111,11 +121,11 @@ public class side_effects_List_Activity extends AppCompatActivity {
 
                 try {
 
-                    Lister ls = new Lister(side_effects_List_Activity.this);
+                  /*  Lister ls = new Lister(side_effects_List_Activity.this);
                     ls.createAndOpenDB();
 
 
-                    String[][] mData = ls.executeReader("Select record_data,count(*), max(added_on) from MFPLAN where member_uid = '" + mother_uid + "'");
+                    String[][] mData = ls.executeReader("Select record_data,count(*), max(added_on) from COVID_SIDE_EFFECTS where member_uid = '" + mother_uid + "'");
 
                     if (Integer.parseInt(mData[0][1]) > 0) {
                         Log.d("000985", "Record Date: " + mData[0][0]);
@@ -156,11 +166,11 @@ public class side_effects_List_Activity extends AppCompatActivity {
                             snackbar.show();
                                     
                         }
-                    } else {
+                    }*/ //else {
                         Intent intent3 = new Intent(ctx, side_effects_Form_Activity.class);
                         intent3.putExtra("u_id", mother_uid);
                         startActivity(intent3);
-                    }
+                    //}
 
 
                 } catch (Exception e) {
@@ -194,18 +204,19 @@ public class side_effects_List_Activity extends AppCompatActivity {
 
             try {
                 //String[][] data = ls.executeReader("Select* from KHANDAN ");
-                mData = ls.executeReader("Select record_data,added_on from MFPLAN where member_uid = '" + mother_uid + "' ORDER BY added_on DESC");
+                mData = ls.executeReader("Select record_data,added_on from COVID_SIDE_EFFECTS where member_uid = '" + mother_uid + "' ORDER BY added_on DESC");
 
                 Log.d("mother_data", String.valueOf(mData.length));
+                Log.d("mother_data", String.valueOf(mData[0][0]));
             } catch (Exception e) {
-                Log.d("mother_data", String.valueOf(e.getMessage()));
+                Log.d("mother_data_e", String.valueOf(e.getMessage()));
             }
 
             HashMap<String, String> map;
             for (int i = 0; i < mData.length; i++) {
 
                 map = new HashMap<>();
-                map.put("i", "" + ":" + String.valueOf(i + 1));
+                map.put("i", String.valueOf(i + 1) + ": " );
                 map.put("khandani_mansobabandi_txt", "" + mData[i][0]);
                 //  map.put("bemaari_record_date", "" +mData[i][1]);
                 //  map.put("mother_name", "" +"کرن اقبال");

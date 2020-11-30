@@ -107,7 +107,7 @@
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/fever"
+                android:text="@string/se_fever"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:ems="10"
-                android:text="@string/feverValue"
+                android:text="@string/se_feverValue"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -164,7 +164,7 @@
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/cough"
+                android:text="@string/se_fever"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:ems="10"
-                android:text="@string/shortnessBreath"
+                android:text="@string/se_shortnessBreath"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -221,7 +221,7 @@
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/rash"
+                android:text="@string/se_feverValue"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -231,7 +231,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:ems="10"
-                android:text="@string/lossTaste"
+                android:text="@string/se_lossTaste"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -280,7 +280,7 @@
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/lossSmell"
+                android:text="@string/se_lossSmell"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 
@@ -290,7 +290,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:ems="10"
-                android:text="@string/diarrhea"
+                android:text="@string/se_diarrhea"
                 android:textColor="@color/purpleLabel"
                 android:textSize="12sp" />
 

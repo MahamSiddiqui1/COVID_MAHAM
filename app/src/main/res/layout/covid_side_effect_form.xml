@@ -262,8 +262,8 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentRight="false"
-                                            android:text="@string/fever"
+                                            android:layout_alignParentLeft="true"
+                                            android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -280,7 +280,7 @@
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/feverValue"
+                                            android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -390,9 +390,13 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_20sdp"
-                                            android:text="@string/cough"
+                                            android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_14sdp" />
+                                            android:textSize="@dimen/_14sdp"
+
+
+
+                                            />
 
                                     </RelativeLayout>
 
@@ -408,7 +412,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/shortnessBreath"
+                                            android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -460,7 +464,10 @@
                                             android:layout_toRightOf="@+id/image_drop1"
                                             android:background="@null"
                                             android:popupElevation="0dp"
-                                            android:spinnerMode="dropdown" />
+                                            android:spinnerMode="dropdown"
+                                            android:layout_centerVertical="true"
+
+                                            />
 
 
                                     </RelativeLayout>
@@ -528,7 +535,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_20sdp"
-                                            android:text="@string/rash"
+                                            android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -546,7 +553,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/lossTaste"
+                                            android:text="@string/se_lossTaste"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -687,7 +694,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_20sdp"
-                                            android:text="@string/lossSmell"
+                                            android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 
@@ -705,7 +712,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/diarrhea"
+                                            android:text="@string/se_diarrhea"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 

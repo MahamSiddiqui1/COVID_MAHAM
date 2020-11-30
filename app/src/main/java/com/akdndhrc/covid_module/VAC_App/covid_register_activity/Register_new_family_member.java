@@ -39,6 +39,7 @@ import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_RegisterAc
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_RegisterActivities.Register_QRCode_Activity;
 import com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
+import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Register_QRCode_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_register_activity.Add_Family_Member_covid;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.ServiceLocation;
@@ -1007,7 +1008,7 @@ public class Register_new_family_member extends AppCompatActivity {
                         age = today.get(Calendar.YEAR) - year;
 
 
-                        if (age >= 3 && age <= 14) {
+                      /*  if (age >= 3 && age <= 14) {
 
                             Log.d("000321", "IFF : " );
 // Sp gender
@@ -1054,7 +1055,7 @@ public class Register_new_family_member extends AppCompatActivity {
 
                                 }
                             });
-                        }
+                        }*/
 
                         Integer ageInt = new Integer(age);
                         String ageS = ageInt.toString();
@@ -1292,8 +1293,15 @@ public class Register_new_family_member extends AppCompatActivity {
 //        Intent intent = new Intent(ctx, HomePage_Activity.class);
 //        startActivity(intent);
         finish();
-        Register_QRCode_Activity.switch_qr_code_values = "0";
+        //Register_QRCode_Activity.switch_qr_code_values = "0";
         var_reg_above="0";
+
+        Intent intent = new Intent(ctx, HomePageVacinator_Activity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+//        VAC_ClassListener.mSlideMenu.close(false);
+        VAC_Register_QRCode_Activity.switch_qr_code_values_vac = "0";
     }
 }
 

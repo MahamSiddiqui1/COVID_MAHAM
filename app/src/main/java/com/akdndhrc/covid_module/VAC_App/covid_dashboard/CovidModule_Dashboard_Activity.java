@@ -2,8 +2,10 @@ package com.akdndhrc.covid_module.VAC_App.covid_dashboard;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +28,7 @@ import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActi
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActivities.Search_MemberAndKhandanList_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
+import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Register_QRCode_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_profile.profile_activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_side_effects.side_effects_List_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_List_Activity;
@@ -33,11 +36,11 @@ import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.c
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Dashboard_Activity extends AppCompatActivity implements View.OnClickListener {
+public class CovidModule_Dashboard_Activity extends AppCompatActivity implements View.OnClickListener {
 
-    Context ctx = Dashboard_Activity.this;
+    Context ctx = CovidModule_Dashboard_Activity.this;
     TextView txt_naam, txt_age;
-    RelativeLayout rl_nashonuma_ka_record, rl_beemari_ka_record, rl_hifazati_teekey_ka_record, rl_mawaad, rl_refferal, rl_profile, rl_aam_malomaat, rl_navigation_drawer, rl_home,rl_virus_screeing;
+    RelativeLayout rl_covid_comorbilities, rl_covid_sideeffects, rl_covid_immunization, rl_profile,rl_refferal;
     ImageView iv_navigation_drawer, iv_home, image_gender;
     String child_uid, child_name, child_age, child_gender;
     String child_age_months;
@@ -45,10 +48,14 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_child_dashboard);
+        setContentView(R.layout.activity_covid__dashboard_);
+        try {
+            child_uid = getIntent().getExtras().getString("u_id");
+            child_gender = getIntent().getExtras().getString("gender");
+            Log.d("child_gender",child_gender);
+        }catch (Exception e)
+        {Log.d("child_gender",e.getMessage());}
 
-        child_uid = getIntent().getExtras().getString("u_id");
-        child_gender = getIntent().getExtras().getString("gender");
 
         //TextView
         txt_naam = findViewById(R.id.txt_naam);
@@ -63,7 +70,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
        // iv_home.setVisibility(View.GONE);
         image_gender = findViewById(R.id.image_gender);
 
-       /* if (child_gender.equalsIgnoreCase("0")) {
+        if (child_gender.equalsIgnoreCase("0")) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 image_gender.setImageDrawable(ctx.getResources().getDrawable(R.drawable.ic_adult_female_50dp));
                 image_gender.setImageTintList(ctx.getResources().getColorStateList(R.color.pink_color));
@@ -73,28 +80,28 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
                     image_gender.setImageTintList(ctx.getResources().getColorStateList(R.color.light_blue_color));
                 }
             }
-        }*/
+        }
 
-        rl_nashonuma_ka_record = findViewById(R.id.rl_nashonuma_ka_record);
-        rl_beemari_ka_record = findViewById(R.id.rl_beemari_ka_record);
-        rl_hifazati_teekey_ka_record = findViewById(R.id.rl_hifazati_teekey_ka_record);
-        rl_mawaad = findViewById(R.id.rl_mawaad);
-        rl_refferal = findViewById(R.id.rl_refferal);
+        rl_covid_comorbilities = findViewById(R.id.rl_covid_comorbilities);
+        rl_covid_sideeffects = findViewById(R.id.rl_covid_sideeffects);
+        rl_covid_immunization = findViewById(R.id.rl_covid_immunization);
+
         rl_profile = findViewById(R.id.rl_profile);
+        rl_refferal = findViewById(R.id.rl_refferal);
        // rl_aam_malomaat = findViewById(R.id.rl_aam_malomaat);
-        rl_virus_screeing = findViewById(R.id.rl_virus_screeing);
+       //rl_virus_screeing = findViewById(R.id.rl_virus_screeing);
 
 
         iv_navigation_drawer.setOnClickListener(this);
         iv_home.setOnClickListener(this);
-        rl_nashonuma_ka_record.setOnClickListener(this);
-        rl_beemari_ka_record.setOnClickListener(this);
-        rl_hifazati_teekey_ka_record.setOnClickListener(this);
-        rl_mawaad.setOnClickListener(this);
-        rl_refferal.setOnClickListener(this);
+        rl_covid_comorbilities.setOnClickListener(this);
+        rl_covid_sideeffects.setOnClickListener(this);
+        rl_covid_immunization.setOnClickListener(this);
+
         rl_profile.setOnClickListener(this);
+        rl_refferal.setOnClickListener(this);
     //    rl_aam_malomaat.setOnClickListener(this);
-        rl_virus_screeing.setOnClickListener(this);
+
 
     }
 
@@ -108,14 +115,21 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
                 break;
 
             case R.id.iv_home:
-                Intent newIntent = new Intent(ctx, HomePageVacinator_Activity.class);
+                /*Intent newIntent = new Intent(ctx, HomePageVacinator_Activity.class);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(newIntent);
+                startActivity(newIntent);*/
+
+                Intent intenthome = new Intent(ctx, HomePageVacinator_Activity.class);
+                intenthome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intenthome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intenthome);
+//        VAC_ClassListener.mSlideMenu.close(false);
+                VAC_Register_QRCode_Activity.switch_qr_code_values_vac = "0";
                 break;
 
 
-            case R.id.rl_nashonuma_ka_record:
+            case R.id.rl_covid_immunization:
                 Intent intent = new Intent(ctx, Mother_HifazitiTeekeyRecordList_Activity.class);
                 intent.putExtra("u_id", child_uid);
                 intent.putExtra("child_name", child_name);
@@ -128,7 +142,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
 
                 break;
 
-            case R.id.rl_beemari_ka_record:
+            case R.id.rl_covid_sideeffects:
                 // startActivity(new Intent(ctx, Child_BemaariRecordList_Activity.class));
 
                 Intent intent1 = new Intent(ctx, side_effects_List_Activity.class);
@@ -139,7 +153,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
                 startActivity(intent1);
                 break;
 
-            case R.id.rl_hifazati_teekey_ka_record:
+            case R.id.rl_covid_comorbilities:
                 // startActivity(new Intent(ctx, Child_HifazitiTeekeyRecordListVac_Activity.class));
                Intent intent2 = new Intent(ctx, co_morbidity_List_Activity.class);
                // Intent intent2 = new Intent(ctx, Child_HifazitiTeekeyGroupList_Activity.class);
@@ -150,19 +164,21 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
                 startActivity(intent2);
                 break;
 
-            case R.id.rl_mawaad:
+         /*   case R.id.rl_mawaad:
                 Toast.makeText(ctx, R.string.cd_mawaad, Toast.LENGTH_SHORT).show();
                 break;
-
-            /*case R.id.rl_refferal:
-                // startActivity(new Intent(ctx, Child_RefferalRecordList_Activity.class));
-                Intent intent3 = new Intent(ctx, Child_RefferalRecordList_Activity.class);
-                intent3.putExtra("u_id", child_uid);
-                intent3.putExtra("child_age", child_age);
-                intent3.putExtra("child_name", child_name);
-                intent3.putExtra("child_gender", child_gender);
-                startActivity(intent3);
-                break;*/
+*/
+            case R.id.rl_refferal:
+                final Snackbar snackbarb = Snackbar.make(v, "This features is not yet available.", Snackbar.LENGTH_SHORT);
+                View mySbViewb = snackbarb.getView();
+                mySbViewb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+                mySbViewb.setBackgroundColor(getApplicationContext().getResources().getColor(android.R.color.black));
+                TextView textViewb = (TextView) mySbViewb.findViewById(android.support.design.R.id.snackbar_text);
+                textViewb.setTextColor(Color.WHITE);
+                textViewb.setTextSize(15);
+                snackbarb.setDuration(3000);
+                snackbarb.show();
+                break;
 
             case R.id.rl_profile:
                 // startActivity(new Intent(ctx, Child_Profile_Activity.class));
@@ -185,14 +201,14 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
                 break;
 */
 
-                case R.id.rl_virus_screeing:
+               /* case R.id.rl_virus_screeing:
                 Intent intent6 = new Intent(ctx, Child_CVirusRecordList_Activity.class);
                     intent6.putExtra("u_id", child_uid);
                     intent6.putExtra("child_name", child_name);
                     intent6.putExtra("child_age", child_age);
                     intent6.putExtra("child_gender", child_gender);
                     startActivity(intent6);
-                break;
+                break;*/
         }
     }
 
@@ -247,7 +263,7 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
             Log.d("000999", "Maah: " + String.valueOf(dob_months));
             Log.d("000999", "Maah_chart: " + String.valueOf(dob_months));
 
-            child_age = String.valueOf(dob_years) + " Years " + String.valueOf(dob_months) + "Months ";
+            child_age = String.valueOf(dob_years) + " years " + String.valueOf(dob_months) + " months ";
             txt_age.setText(child_age);
             if (dob_years > 0) {
                 days_chart = dob_years * 12;
@@ -341,8 +357,8 @@ public class Dashboard_Activity extends AppCompatActivity implements View.OnClic
             Search_FamilyMembersList.temp_var = "0";
         } else {
             finish();
-          /*  Intent intent = new Intent(ctx, HomePage_Activity.class);
-            startActivity(intent);*/
+            Intent intent = new Intent(ctx, HomePageVacinator_Activity.class);
+            startActivity(intent);
         }
 
     }

@@ -42,8 +42,8 @@ import com.akdndhrc.covid_module.ServiceLocation;
 import com.akdndhrc.covid_module.Utils;
 import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Mother_HifazitiTeekeyRecordList_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Register_QRCode_Activity;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.Dashboard_Activity;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.Dashboard_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.CovidModule_Dashboard_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.CovidModule_Dashboard_Activity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
@@ -938,8 +938,9 @@ public class register_individual_covid extends AppCompatActivity {
                     @Override
                     public void run() {
                         alertDialog.dismiss();
-                        Intent intent = new Intent(ctx, Dashboard_Activity.class);
+                        Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
                         intent.putExtra("u_id", uuid);
+                        intent.putExtra("gender",String.valueOf(sp_jins.getSelectedItemPosition() - 1));
                         startActivity(intent);
                         VAC_Register_QRCode_Activity.switch_qr_code_values_vac = "0";
                         var_regtemp_abovetwo = "1";

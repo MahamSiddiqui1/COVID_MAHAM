@@ -71,7 +71,7 @@
                     android:paddingTop="@dimen/_2sdp"
                     android:paddingRight="@dimen/_10sdp"
                     android:paddingBottom="@dimen/_2sdp"
-                    android:text="Offline Sync"
+                    android:text="@string/offline_sync"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold"
@@ -213,7 +213,7 @@
                     android:id="@+id/txt_sync"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Last Sync :"
+                    android:text="@string/last_sync"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp" />
 

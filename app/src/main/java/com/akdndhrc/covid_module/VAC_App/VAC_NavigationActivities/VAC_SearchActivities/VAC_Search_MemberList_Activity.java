@@ -17,6 +17,7 @@ import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Child_HifazitiTeekeyRecordList2_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.CovidModule_Dashboard_Activity;
 
 
 import org.json.JSONObject;
@@ -142,14 +143,23 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
+                            Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
+                            intent.putExtra("u_id", mData[position][0]);
+                            intent.putExtra("child_name", mData[position][1]);
+                            intent.putExtra("gender", mData[position][2]);
+                            startActivity(intent);
+
+                            Log.d("000888", "u_id : " + mData[position][0]);
+                            Log.d("000888", "child_name : " + mData[position][1]);
+
+                         /*   Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
                             intent.putExtra("u_id", mData[position][0]);
                             intent.putExtra("child_name", mData[position][1]);
                             intent.putExtra("child_gender", mData[position][2]);
                             startActivity(intent);
 
                             Log.d("000888", "u_id : " + mData[position][0]);
-                            Log.d("000888", "child_name : " + mData[position][1]);
+                            Log.d("000888", "child_name : " + mData[position][1]);*/
 
 
                             temp_var = "child_record_list";
@@ -201,15 +211,22 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
+                     /*       Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
                             intent.putExtra("u_id", mData[position][0]);
                             intent.putExtra("child_name", mData[position][1]);
                             intent.putExtra("child_gender", mData[position][2]);
                             startActivity(intent);
 
                             Log.d("000888", "u_id : " + mData[position][0]);
-                            Log.d("000888", "child_name : " + mData[position][1]);
+                            Log.d("000888", "child_name : " + mData[position][1]);*/
+                            Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
+                            intent.putExtra("u_id", mData[position][0]);
+                            intent.putExtra("child_name", mData[position][1]);
+                            intent.putExtra("gender", mData[position][2]);
+                            startActivity(intent);
 
+                            Log.d("000888", "u_id : " + mData[position][0]);
+                            Log.d("000888", "child_name : " + mData[position][1]);
 
                             temp_var = "child_record_list";
                         }
@@ -276,10 +293,19 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
+                      /*      Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
                             intent.putExtra("u_id", hashMapArrayList.get(position).get("u_id"));
                             intent.putExtra("child_name", hashMapArrayList.get(position).get("full_name"));
                             intent.putExtra("child_gender", hashMapArrayList.get(position).get("gender"));
+                            startActivity(intent);
+                            Log.d("000888", "u_id : " + hashMapArrayList.get(position).get("u_id"));
+                            Log.d("000888", "child_name : " + hashMapArrayList.get(position).get("full_name"));
+                            temp_var = "child_record_list";*/
+
+                            Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
+                            intent.putExtra("u_id", hashMapArrayList.get(position).get("u_id"));
+                            intent.putExtra("child_name", hashMapArrayList.get(position).get("full_name"));
+                            intent.putExtra("gender", hashMapArrayList.get(position).get("gender"));
                             startActivity(intent);
                             Log.d("000888", "u_id : " + hashMapArrayList.get(position).get("u_id"));
                             Log.d("000888", "child_name : " + hashMapArrayList.get(position).get("full_name"));
@@ -332,10 +358,10 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
                     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            Intent intent = new Intent(ctx, VAC_Child_HifazitiTeekeyRecordList2_Activity.class);
+                            Intent intent = new Intent(ctx, CovidModule_Dashboard_Activity.class);
                             intent.putExtra("u_id", hashMapArrayList.get(position).get("u_id"));
                             intent.putExtra("child_name", hashMapArrayList.get(position).get("full_name"));
-                            intent.putExtra("child_gender", hashMapArrayList.get(position).get("gender"));
+                            intent.putExtra("gender", hashMapArrayList.get(position).get("gender"));
                             startActivity(intent);
                             Log.d("000888", "u_id : " + hashMapArrayList.get(position).get("u_id"));
                             Log.d("000888", "child_name : " + hashMapArrayList.get(position).get("full_name"));

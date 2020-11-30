@@ -588,7 +588,7 @@ public class VAC_SyncVideo_Activity extends AppCompatActivity {
             String toencode_sms = getBase64String(String.valueOf(jobj));
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "VAC_VIDEOS" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "VAC_VIDEOS" + "|" + toencode_sms;
             Log.d("000951", "SMS DATA:  " + sms_data);
 
 
@@ -781,7 +781,7 @@ public class VAC_SyncVideo_Activity extends AppCompatActivity {
             String toencode_sms = getBase64String(String.valueOf(jobj));
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "VAC_VIDEOS" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "VAC_VIDEOS" + "|" + toencode_sms;
             Log.d("000951", "SMS DATA:  " + sms_data);
 
 

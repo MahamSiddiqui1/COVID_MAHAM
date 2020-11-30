@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="آف لائن سینک"
+                    android:text="@string/offline_sync"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -135,8 +135,9 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک ملک"
+
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_country"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -145,7 +146,7 @@
                                     android:id="@+id/txt_sync_country"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -156,7 +157,7 @@
 
 
                         <android.support.v7.widget.CardView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_15sdp"
                             app:cardElevation="5dp"
@@ -174,8 +175,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک صوبہ"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_province"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -184,9 +185,10 @@
                                     android:id="@+id/txt_sync_province"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
+                                    android:layout_alignParentEnd="true"
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -194,7 +196,7 @@
                                     android:id="@+id/pb_2"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -204,7 +206,7 @@
 
 
                         <android.support.v7.widget.CardView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_15sdp"
                             app:cardElevation="5dp"
@@ -223,8 +225,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک ضلع"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_district"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -233,7 +235,7 @@
                                     android:id="@+id/txt_sync_district"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                  android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -243,7 +245,7 @@
                                     android:id="@+id/pb_3"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                     android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -254,7 +256,7 @@
 
 
                         <android.support.v7.widget.CardView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             app:cardElevation="5dp"
@@ -272,8 +274,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک تحصیل"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_tehsil"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -282,7 +284,7 @@
                                     android:id="@+id/txt_sync_tehsil"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -293,7 +295,7 @@
                                     android:id="@+id/pb_4"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                     android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -304,7 +306,7 @@
 
 
                         <android.support.v7.widget.CardView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             app:cardElevation="5dp"
@@ -323,8 +325,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک یونین کونسل"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_uc"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -333,7 +335,7 @@
                                     android:id="@+id/txt_sync_unioncounil"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -344,7 +346,7 @@
                                     android:id="@+id/pb_5"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                     android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -374,8 +376,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک مرکز صحت"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_health_facility"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -384,7 +386,7 @@
                                     android:id="@+id/txt_sync_facility"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -395,7 +397,7 @@
                                     android:id="@+id/pb_6"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                     android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -425,8 +427,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک گاؤں"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_village"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -435,7 +437,7 @@
                                     android:id="@+id/txt_sync_villages"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -446,7 +448,7 @@
                                     android:id="@+id/pb_7"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -476,8 +478,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک صارفین"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_users"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -486,7 +488,7 @@
                                     android:id="@+id/txt_sync_users"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -496,7 +498,7 @@
                                     android:id="@+id/pb_8"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -524,8 +526,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک دوائیں"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_medicines"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -534,7 +536,7 @@
                                     android:id="@+id/txt_sync_medicines"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -544,7 +546,7 @@
                                     android:id="@+id/pb_9"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -572,8 +574,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:text="سینک ویکسین"
+                                    android:layout_alignParentStart="true"
+                                    android:text="@string/sync_vaccine"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -582,7 +584,7 @@
                                     android:id="@+id/txt_sync_vaccines"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -592,7 +594,7 @@
                                     android:id="@+id/pb_10"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 

@@ -46,7 +46,7 @@ import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.ServiceLocation;
 import com.akdndhrc.covid_module.Utils;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.Dashboard_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.CovidModule_Dashboard_Activity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -681,7 +681,7 @@ public class profile_activity extends AppCompatActivity {
                 alertDialog.dismiss();
                 //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
                 Log.d("000987", " Error" + e.getMessage());
-                Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -857,7 +857,7 @@ public class profile_activity extends AppCompatActivity {
             e.printStackTrace();
 
             Log.d("000555", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
         }
 
     }

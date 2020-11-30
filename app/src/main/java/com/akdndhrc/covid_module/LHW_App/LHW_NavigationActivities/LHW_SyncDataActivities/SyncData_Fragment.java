@@ -590,7 +590,7 @@ public class SyncData_Fragment extends Fragment {
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();*/
 
-                final Dialog phonenumber_dialog = new Dialog(getContext());
+              /*  final Dialog phonenumber_dialog = new Dialog(getContext());
                 LayoutInflater layout = LayoutInflater.from(getContext());
                 final View dialogView = layout.inflate(R.layout.dialog_set_phonenumber_error, null);
 
@@ -610,7 +610,7 @@ public class SyncData_Fragment extends Fragment {
                         phonenumber_dialog.dismiss();
                     }
                 });
-
+*/
             }
 
         } catch (Exception e) {

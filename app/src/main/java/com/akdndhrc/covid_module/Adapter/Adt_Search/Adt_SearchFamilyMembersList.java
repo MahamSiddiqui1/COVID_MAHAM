@@ -74,7 +74,7 @@ public class Adt_SearchFamilyMembersList extends BaseAdapter {
         }
 
         holder.sfml_lv_tvNaam.setText(Html.fromHtml("" + mArrayList.get(pos).get("full_name")));
-        holder.sfml_lv_tvBirthDate.setText(Html.fromHtml(""+ mArrayList.get(pos).get("age")) +" سال ");
+        holder.sfml_lv_tvBirthDate.setText(Html.fromHtml(""+ mArrayList.get(pos).get("age")) +" years");
 
 
 

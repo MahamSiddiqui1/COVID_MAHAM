@@ -117,7 +117,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
                     ls.createAndOpenDB();
 
 
-                    String[][] mData = ls.executeReader("Select record_data,count(*), max(added_on) from MBEMARI where member_uid = '" + mother_uid + "'");
+                    String[][] mData = ls.executeReader("Select record_data,count(*), max(added_on) from COVID_CO_MORBIDITY where member_uid = '" + mother_uid + "'");
 
                     if (Integer.parseInt(mData[0][1]) > 0) {
                         Log.d("000985", "Record Date: " + mData[0][0]);
@@ -196,7 +196,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
 
             try {
                 //String[][] data = ls.executeReader("Select* from KHANDAN ");
-                mData = ls.executeReader("Select record_data,added_on from MBEMARI where member_uid = '" + mother_uid + "' ORDER BY added_on DESC");
+                mData = ls.executeReader("Select record_data,added_on,id from COVID_CO_MORBIDITY where member_uid = '" + mother_uid + "' ORDER BY added_on DESC");
 
                 Log.d("mother_data", String.valueOf(mData.length));
             } catch (Exception e) {
@@ -207,7 +207,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
             for (int i = 0; i < mData.length; i++) {
 
                 map = new HashMap<>();
-                map.put("i", "" + ":" + String.valueOf(i + 1));
+                map.put("i", String.valueOf(i + 1)+ ": " );
                 map.put("bemaari_record_date", "" + mData[i][0]);
                 //  map.put("bemaari_record_date", "" +mData[i][1]);
                 //  map.put("mother_name", "" +"کرن اقبال");
@@ -222,7 +222,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
            // Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-            Toast tt = Toast.makeText(ctx, "Add record for co-morbidity", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, "Add record for comorbidity", Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

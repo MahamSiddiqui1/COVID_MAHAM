@@ -73,6 +73,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
+                    android:visibility="gone"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:padding="@dimen/_10sdp"

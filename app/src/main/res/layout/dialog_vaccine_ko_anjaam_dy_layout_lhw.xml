@@ -163,7 +163,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="TAKEN  AT UC"
+                android:text="TAKEN AT UC"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -174,7 +174,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="REFUSED VACCINE"
+                android:text="REFUSED VACCINATION"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp" />
 

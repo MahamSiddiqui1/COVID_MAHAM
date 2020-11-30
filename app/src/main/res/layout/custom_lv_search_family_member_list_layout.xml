@@ -17,7 +17,7 @@
             android:id="@+id/rl_circle_men"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/_5sdp"
             android:layout_marginTop="5dp">
@@ -52,8 +52,8 @@
             android:layout_marginLeft="@dimen/_8sdp"
             android:layout_marginRight="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:layout_toLeftOf="@+id/rl_circle_men"
-            android:layout_toRightOf="@+id/sfml_lv_male_female_icon"
+            android:layout_toRightOf="@+id/rl_circle_men"
+
             android:gravity="right"
             android:text="Khashif ali khan"
             android:textColor="@color/dark_blue_color"
@@ -64,11 +64,11 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_below="@+id/sfml_lv_tvNaam"
-            android:layout_marginLeft="@dimen/_15sdp"
-            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toLeftOf="@+id/rl_circle_men"
-            android:layout_toRightOf="@id/sfml_lv_male_female_icon"
+            android:layout_toRightOf="@+id/rl_circle_men"
+
             android:background="@color/pink_color" />
 
         <TextView
@@ -76,10 +76,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toLeftOf="@+id/rl_circle_men"
-            android:text="عمر:"
+            android:layout_toRightOf="@+id/rl_circle_men"
+            android:text="Age:"
             android:textColor="@color/hp_listview_textview_greycolor"
             android:textSize="@dimen/_10sdp" />
 
@@ -91,7 +91,7 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:layout_toLeftOf="@+id/sfml_lv_tvUmer"
+            android:layout_toRightOf="@+id/sfml_lv_tvUmer"
             android:text="02 سال 06 مہ"
             android:textColor="@color/hp_listview_textview_greycolor"
             android:textSize="@dimen/_10sdp" />

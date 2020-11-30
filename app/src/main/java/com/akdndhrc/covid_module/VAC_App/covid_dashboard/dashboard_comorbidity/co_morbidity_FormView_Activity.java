@@ -59,9 +59,10 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
     Context ctx = co_morbidity_FormView_Activity.this;
 
     //  TextView txt_mother_age, txt_mother_name;
-    EditText et_notes_diabetes,et_notes_blood,et_notes_cholestrol,et_notes_cancer,et_notes_heart;
-    Spinner sp_diabetes,sp_blood_pressure,sp_cancer,sp_cholestrol,sp_heart;
-    EditText et_tareekh_visit, et_refferal_ki_waja, et_refferal_hospital,et_value;
+  //  EditText et_notes_diabetes,et_notes_blood,et_notes_cholestrol,et_notes_cancer,et_notes_heart;
+  //  Spinner sp_diabetes,sp_blood_pressure,sp_cancer,sp_cholestrol,sp_heart;
+    EditText et_tareekh_visit;
+    //, et_refferal_ki_waja, et_refferal_hospital,et_value;
     CheckBox checkbox_haan_1, checkbox_nahi_1, checkbox_haan_2, checkbox_nahi_2, checkbox_awareness, checkbox_service_provided;
     Button btn_jamaa_kre;
     ImageView iv_navigation_drawer, iv_home;
@@ -71,7 +72,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
     // GPSTracker class
     GPSTracker gps;
     String mother_uid, TodayDate, added_on;
-    Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
+   // Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
 
 
     private int mYear, mMonth, mDay;
@@ -156,20 +157,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         et_tareekh_visit = findViewById(R.id.et_tareekh_visit);
 
 
-        et_notes_diabetes = findViewById(R.id.et_dia);
-        et_notes_blood = findViewById(R.id.et_blood_pressure_notes);
-        et_notes_cholestrol = findViewById(R.id.et_cholestrol);
-        et_notes_cancer = findViewById(R.id.et_cancer);
-        et_notes_heart = findViewById(R.id.et_heart_disease_notes);
 
-
-        //Spinner
-        //  sp_naya_sabiqa = findViewById(R.id.sp_naya_sabiqa);
-        sp_diabetes = findViewById(R.id.sp_dia);
-        sp_blood_pressure = findViewById(R.id.sp_blood);
-        sp_cholestrol=findViewById(R.id.sp_cholestrol);
-        sp_cancer=findViewById(R.id.sp_cancer);
-        sp_heart=findViewById(R.id.sp_heart);
         //Linear Layout
         ll_services_provided = findViewById(R.id.ll_services_provided);
 
@@ -270,7 +258,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             }
         });*/
 
-        spinner_data();
+        //spinner_data();
 
 
        /* rl_add.setOnClickListener(new View.OnClickListener() {
@@ -338,7 +326,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        et_notes_blood.setEnabled(true);
+                       /* et_notes_blood.setEnabled(true);
                         et_notes_cancer.setEnabled(true);
                         et_notes_heart.setEnabled(true);
                         et_notes_cholestrol.setEnabled(true);
@@ -348,7 +336,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         sp_heart.setEnabled(true);
                         sp_blood_pressure.setEnabled(true);
                         sp_diabetes.setEnabled(true);
-                        sp_cholestrol.setEnabled(true);
+                        sp_cholestrol.setEnabled(true);*/
                         btn_jamaa_kre.setVisibility(View.VISIBLE);
                         pbProgress.setVisibility(View.GONE);
                         iv_editform.setVisibility(View.GONE);
@@ -373,457 +361,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
     }
 
-    private void spinner_data() {
 
-        try {
-            // Select sp_azdawaji_hasiyat
-           /* final ArrayAdapter<CharSequence> adptr_naya_sabiqa = ArrayAdapter.createFromResource(this, R.array.array_naya_sabiqa, android.R.layout.simple_spinner_item);
-            adptr_naya_sabiqa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_naya_sabiqa.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_naya_sabiqa,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_naya_sabiqa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-*/
-
-
-
-            final ArrayAdapter<CharSequence> adptr_diabetes= ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_diabetes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_diabetes.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_diabetes,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_diabetes.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cancer = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_cancer.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cancer.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cancer,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cancer.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_heart = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_heart.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_heart.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_heart,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_heart.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-            final ArrayAdapter<CharSequence> adptr_blood = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_blood.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_blood_pressure.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_blood,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_blood_pressure.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cholestrol = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_cholestrol.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cholestrol.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cholestrol,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cholestrol.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-
-
-
-            final ArrayAdapter<CharSequence> adptr_fever = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_fever.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_fever.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_fever,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_fever.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cough = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_fever.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cough.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cough,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cough.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_breath = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_breath.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_breath.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_breath,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_breath.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-            final ArrayAdapter<CharSequence> adptr_rash = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_rash.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_rash.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_rash,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_rash.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_taste = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_taste.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_taste.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_taste,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_taste.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_smell = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_smell.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_smell.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_smell,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_smell.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_dia = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_dia.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_dia.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_dia,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_dia.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            ///////////sp_planning_type
-
-            final ArrayAdapter<CharSequence> adptr_planning = ArrayAdapter.createFromResource(this, R.array.array_sp_planning_type, android.R.layout.simple_spinner_item);
-            adptr_planning.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_planning_type.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_planning,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_planning_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            ////////////////////////// Sp_Month ////////////////////////////////////////
-            final ArrayAdapter<CharSequence> adptr_material = ArrayAdapter.createFromResource(this, R.array.array_sp_service_provided, R.layout.sp_title_topic_layout);
-            adptr_material.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-            sp_material.setAdapter(
-                    new com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter(
-                            adptr_material,
-                            R.layout.sp_title_topic_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-            sp_material.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                    if (sp_material.getSelectedItemPosition() > 0) {
-                        rl_quantity.setVisibility(View.VISIBLE);
-                    } else {
-                        rl_quantity.setVisibility(View.GONE);
-                    }
-
-                    try {
-                        if (sp_material.getSelectedItem().toString().equalsIgnoreCase(jsonObject.getString("material")))
-                        {
-                            tv_count.setText(jsonObject.getString("material_quantity"));
-                            counter = Integer.parseInt(jsonObject.getString("material_quantity"));
-                        }
-                        else {
-                            tv_count.setText("0");
-                            counter = 0;
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                   /* if (sp_material.getSelectedItemPosition() == 1) {
-                        med_uid = "fafacbfe1f639599c407c19373438280";
-
-                    } else if (sp_material.getSelectedItemPosition() == 2) {
-                        med_uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-                    } else {
-                        med_uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-                    }*/
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-        } catch (Exception e) {
-            Log.d("000987", " Spinner Err: " + e.getMessage());
-        }
-
-    }
 
     private void update_data(final View v) {
 
@@ -893,7 +431,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 jsonObject.put("facility_refer", "" + et_refferal_hospital.getText().toString());
                */ jsonObject.put("added_on", "" + cur_added_on);
                 jsonObject.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
-                jsonObject.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
+              /*  jsonObject.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                 jsonObject.put("notes_cancer", "" + et_notes_cancer.getText().toString());
                 jsonObject.put("notes_heart", "" + et_notes_heart.getText().toString());
                 jsonObject.put("notes_blood", "" + et_notes_blood.getText().toString());
@@ -903,7 +441,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 jsonObject.put("blood_pressure", "" + String.valueOf(sp_blood_pressure.getSelectedItemPosition() - 1));
                 jsonObject.put("cholestrol", "" + String.valueOf(sp_cholestrol.getSelectedItemPosition() - 1));
                 jsonObject.put("heart", "" + String.valueOf(sp_heart.getSelectedItemPosition() - 1));
-                jsonObject.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));
+                jsonObject.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));*/
 
 
 
@@ -947,7 +485,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         }
 
                         if (services_and_awareness.equalsIgnoreCase("1")) {
-                            update_medicineLog();
+                            //update_medicineLog();
                         } else {
                         }
 
@@ -1077,102 +615,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
     }
 
 
-    private void update_medicineLog() {
 
-        try {
-
-
-            JSONObject json_medicine_stock = new JSONObject(mData_medicineLog[0][1]);
-            String uid;
-            json_medicine_stock.put("medicine_quantity", "" + counter);
-            json_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
-            json_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
-
-            if (sp_material.getSelectedItemPosition() == 1) {
-                json_medicine_stock.put("medicine_type", "1");
-                uid = "fafacbfe1f639599c407c19373438280";
-
-            }
-            else if (sp_material.getSelectedItemPosition() == 2) {
-                json_medicine_stock.put("medicine_type", "0");
-                uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-            }
-            else {
-                json_medicine_stock.put("medicine_type", "0");
-                uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-            }
-
-            Lister ls = new Lister(ctx);
-            ls.createAndOpenDB();
-            String update_record = "UPDATE MEDICINE_LOG SET " +
-                    "medicine_id='" + uid + "'," +
-                    "metadata='" + json_medicine_stock + "'" +
-                    "WHERE member_uid = '" + mother_uid + "'  AND medicine_id = '" + med_uid + "' AND type ='MFPLAN' AND added_on= '"+added_on+"'";
-
-            ls.executeNonQuery(update_record);
-
-            Boolean res = ls.executeNonQuery(update_record);
-            Log.d("000987", "Updated Data: " + update_record);
-            Log.d("000987", "Query: " + res.toString());
-
-
-        } catch (Exception e) {
-            Log.d("000987", " Error: " + e.getMessage());
-
-            Lister ls = new Lister(ctx);
-            ls.createAndOpenDB();
-
-            try {
-
-                String cur_added_on = String.valueOf(System.currentTimeMillis());
-                String uid;
-                JSONObject jobj_medicine_stock = new JSONObject();
-                jobj_medicine_stock.put("medicine_quantity", "" + counter);
-                jobj_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
-                jobj_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
-
-                if (sp_material.getSelectedItemPosition() == 1) {
-                    jobj_medicine_stock.put("medicine_type", "1");
-                    uid = "fafacbfe1f639599c407c19373438280";
-
-                } else if (sp_material.getSelectedItemPosition() == 2) {
-                    jobj_medicine_stock.put("medicine_type", "0");
-                    uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-                } else {
-                    jobj_medicine_stock.put("medicine_type", "0");
-                    uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-                }
-
-
-                String ans1 = "insert or ignore into MEDICINE_LOG (member_uid, medicine_id, record_data,type,disease,metadata,added_by,added_on)" +
-                        "values" +
-                        "(" +
-                        "'" + mother_uid + "'," +
-                        "'" + uid + "'," +
-                        "'" + TodayDate + "'," +
-                        "'MFPLAN'," +
-                        "'none'," +
-                        "'" + jobj_medicine_stock + "'," +
-                        "'" + login_useruid + "'," +
-                        "'" + cur_added_on + "'" +
-                        ")";
-
-
-                Boolean res = ls.executeNonQuery(ans1);
-                Log.d("000987", "Insert Data Medicine: " + ans1);
-                Log.d("000987", "Query Medicine: " + res.toString());
-
-                //    Toast.makeText(ctx, "Addedd", Toast.LENGTH_SHORT).show();
-
-            } catch (Exception e1) {
-                Log.d("000987", "Err: " + e1.getMessage());
-            }
-
-
-        }
-    }
 
     private void check_gps() {
 
@@ -1284,7 +727,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             tv_count.setEnabled(false);
 */
 
-            sp_diabetes.setEnabled(false);
+          /*  sp_diabetes.setEnabled(false);
             sp_blood_pressure.setEnabled(false);
             sp_cancer.setEnabled(false);
             sp_cholestrol.setEnabled(false);
@@ -1294,11 +737,11 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             et_notes_blood.setEnabled(false);
             et_notes_cholestrol.setEnabled(false);
             et_notes_cancer.setEnabled(false);
-
+*/
 
             Log.d("000987","1");
             et_tareekh_visit.setText((jsonObject.getString("tareekh_visit")));
-            sp_diabetes.setSelection(Integer.parseInt(jsonObject.getString("diabetes")) + 1);
+           /* sp_diabetes.setSelection(Integer.parseInt(jsonObject.getString("diabetes")) + 1);
             sp_blood_pressure.setSelection(Integer.parseInt(jsonObject.getString("blood_pressure")) + 1);
             sp_cancer.setSelection(Integer.parseInt(jsonObject.getString("cancer")) + 1);
             sp_heart.setSelection(Integer.parseInt(jsonObject.getString("heart")) + 1);
@@ -1307,7 +750,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             et_notes_blood.setText(jsonObject.getString("notes_blood"));
             et_notes_cancer.setText(jsonObject.getString("notes_cancer"));
             et_notes_heart.setText(jsonObject.getString("notes_heart"));
-            et_notes_cholestrol.setText(jsonObject.getString("notes_cholestrol"));
+            et_notes_cholestrol.setText(jsonObject.getString("notes_cholestrol"));*/
 
 
 
@@ -1354,7 +797,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
                         checkbox_service_provided.setChecked(true);
                         ll_services_provided.setVisibility(View.VISIBLE);
-                        sp_material.setSelection(Integer.parseInt(jsonObject.getString("material_pos")) + 1);
+                       // sp_material.setSelection(Integer.parseInt(jsonObject.getString("material_pos")) + 1);
                         tv_count.setText(jsonObject.getString("material_quantity"));
                         counter = Integer.parseInt(jsonObject.getString("material_quantity"));
                         services_and_awareness = jsonObject.getString("services_and_awareness");

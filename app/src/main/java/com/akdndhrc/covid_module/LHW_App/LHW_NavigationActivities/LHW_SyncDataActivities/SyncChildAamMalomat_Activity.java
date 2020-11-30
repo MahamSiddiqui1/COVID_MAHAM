@@ -587,7 +587,7 @@ public class SyncChildAamMalomat_Activity extends AppCompatActivity {
             Log.d("000951", "JSON DATA:  " + jobj.toString());
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "CMALOOM" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "CMALOOM" + "|" + toencode_sms;
             Log.d("000951", "SMS DATA:  " + sms_data);
 
 
@@ -780,7 +780,7 @@ public class SyncChildAamMalomat_Activity extends AppCompatActivity {
             Log.d("000951", "JSON DATA:  " + jobj.toString());
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "CMALOOM" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "CMALOOM" + "|" + toencode_sms;
             Log.d("000951", "SMS DATA:  " + sms_data);
 
 

@@ -594,7 +594,7 @@ public class SyncChildBemari_Activity extends AppCompatActivity {
 
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "CBEMARI" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "CBEMARI" + "|" + toencode_sms;
             Log.d("000104", "SMS DATA:  " + sms_data);
 
 
@@ -789,7 +789,7 @@ public class SyncChildBemari_Activity extends AppCompatActivity {
 
 
             String uuid = UUID.randomUUID().toString().replace("-", "");
-            final String sms_data = "HAYATPK" + "|" + uuid + "|" + "CBEMARI" + "|" + toencode_sms;
+            final String sms_data = "HayatPK" + "|" + uuid + "|" + "CBEMARI" + "|" + toencode_sms;
             Log.d("000104", "SMS DATA:  " + sms_data);
 
 

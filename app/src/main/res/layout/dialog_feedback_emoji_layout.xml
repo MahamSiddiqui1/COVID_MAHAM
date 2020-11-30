@@ -133,7 +133,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="@string/cnnf_jaama_kre_button"
+                android:text="@string/submit"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:text="ابھی نہیں"
+                android:text="Later"
                 android:textColor="@color/grey_color"
                 android:textSize="@dimen/_14sdp" />
 

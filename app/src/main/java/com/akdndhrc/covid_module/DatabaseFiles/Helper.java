@@ -21,7 +21,7 @@ import io.requery.android.database.sqlite.SQLiteOpenHelper;
 public class Helper extends SQLiteOpenHelper {
 
     public static final int DATABASE_VERSION = 6;
-    public static final String DATABASE_NAME = "COVID_APP";
+    public static final String DATABASE_NAME = "HayatPK";
     private static final String DATABASE_NAMEFORDATA = ".HayatPKDB";
 
     Context context;
@@ -230,7 +230,7 @@ public class Helper extends SQLiteOpenHelper {
             ")";
 
 
-    public static String CREATE_TABLE_CO_MORBIDITY = "CREATE TABLE MBEMARI( " +
+    public static String CREATE_TABLE_CO_MORBIDITY = "CREATE TABLE COVID_CO_MORBIDITY( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "member_uid varchar(128) NOT NULL," +
             "record_data varchar(128) NOT NULL," +
@@ -240,7 +240,7 @@ public class Helper extends SQLiteOpenHelper {
             "added_on varchar(30) NOT NULL" +
             ")";
 
-    public static String CREATE_TABLE_SIDE_EFFECTS = "CREATE TABLE MFPLAN( " +
+    public static String CREATE_TABLE_SIDE_EFFECTS = "CREATE TABLE COVID_SIDE_EFFECTS( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "member_uid varchar(128) NOT NULL," +
             "record_data varchar(128) NOT NULL," +
@@ -252,7 +252,8 @@ public class Helper extends SQLiteOpenHelper {
 
 
 
-  /*  public static String CREATE_TABLE_MOTHER_VACINATION = "CREATE TABLE MVACINE( " +
+
+  /*  public static String CREATE_TABLE_MOTHER_VACINATION = "CREATE TABLE COVID_IMMUNIZATION( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "member_uid varchar(128) NOT NULL," +
             "record_data varchar(128) NOT NULL," +
@@ -266,6 +267,22 @@ public class Helper extends SQLiteOpenHelper {
             "added_on varchar(30) NOT NULL," +
             "UNIQUE (member_uid,vaccine_id)"+
             ")";*/
+
+    public static String CREATE_TABLE_COVID_IMMUNIZATION = "CREATE TABLE COVID_IMMUNIZATION( " +
+            "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
+            "member_uid varchar(128) NOT NULL," +
+            "record_data varchar(128) NOT NULL," +
+            "data text NOT NULL," +
+            "added_by varchar(128) NOT NULL," +
+            "is_synced varchar(1) NOT NULL," +
+            "added_on varchar(30) NOT NULL," +
+            "vaccine_id int(5) NOT NULL," +
+            "type int(5) NOT NULL," +
+            "vaccinated_on varchar(15) NOT NULL," +
+            "image_location text NOT NULL," +
+            "UNIQUE (member_uid,vaccine_id)" +
+            ")";
+
 
     public static String CREATE_TABLE_MOTHER_VACINATION = "CREATE TABLE MVACINE( " +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
@@ -686,6 +703,7 @@ public class Helper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_MOTHER_PNC);
         db.execSQL(CREATE_TABLE_MOTHER_DELIV);
         db.execSQL(CREATE_TABLE_MOTHER_VACINATION);
+        db.execSQL(CREATE_TABLE_COVID_IMMUNIZATION);
         db.execSQL(CREATE_TABLE_FACILITY);
         db.execSQL(CREATE_TABLE_KHANDAN);
 
@@ -845,10 +863,10 @@ public class Helper extends SQLiteOpenHelper {
                         Log.d("000222", " CASE 1 onUpgraded OLD VER:" + oldVersion);
 
                     case 2:
-                        db.execSQL("ALTER TABLE MVACINE ADD vaccine_id int(5) NOT NULL Default -1");
-                        db.execSQL("ALTER TABLE MVACINE ADD type int(5) NOT  NULL Default -1");
-                        db.execSQL("ALTER TABLE MVACINE ADD vaccinated_on varchar(15) NOT NULL Default  -1 ");
-                        db.execSQL("ALTER TABLE MVACINE ADD image_location text NOT NULL Default  -1 ");
+                        db.execSQL("ALTER TABLE COVID_IMMUNIZATION ADD vaccine_id int(5) NOT NULL Default -1");
+                        db.execSQL("ALTER TABLE COVID_IMMUNIZATION ADD type int(5) NOT  NULL Default -1");
+                        db.execSQL("ALTER TABLE COVID_IMMUNIZATION ADD vaccinated_on varchar(15) NOT NULL Default  -1 ");
+                        db.execSQL("ALTER TABLE COVID_IMMUNIZATION ADD image_location text NOT NULL Default  -1 ");
 
                         Log.d("000222", "CASE 2 onUpgraded OLD VER:" + oldVersion);
 
@@ -904,9 +922,9 @@ public class Helper extends SQLiteOpenHelper {
                         }
 
                         try {
-                            db.execSQL("ALTER TABLE MVACINE RENAME TO _MVACINE");
+                            db.execSQL("ALTER TABLE COVID_IMMUNIZATION RENAME TO _COVID_IMMUNIZATION");
                             db.execSQL(CREATE_TABLE_MOTHER_VACINATION);
-                            db.execSQL("INSERT OR IGNORE INTO MVACINE SELECT * FROM _MVACINE");
+                            db.execSQL("INSERT OR IGNORE INTO COVID_IMMUNIZATION SELECT * FROM _COVID_IMMUNIZATION");
 
                             Log.d("000222", "Case 3 (_MVACCIENE TABLE) Successfully Rename !!!!!!");
 
@@ -970,7 +988,7 @@ public class Helper extends SQLiteOpenHelper {
                         }
 
                         try {
-                            db.execSQL("ALTER TABLE MVACINE RENAME TO _MVACINE2");
+                            db.execSQL("ALTER TABLE COVID_IMMUNIZATION RENAME TO _MVACINE2");
                             db.execSQL(CREATE_TABLE_MOTHER_VACINATION);
                             db.execSQL("INSERT OR IGNORE INTO MVACINE(member_uid,record_data,data,added_by,is_synced,added_on,vaccine_id,type,vaccinated_on,image_location) SELECT member_uid,record_data,data,added_by,is_synced,added_on,vaccine_id,type,vaccinated_on,image_location FROM _MVACINE");
 

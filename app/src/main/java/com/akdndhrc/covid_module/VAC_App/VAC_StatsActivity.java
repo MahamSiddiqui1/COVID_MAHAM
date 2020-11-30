@@ -3,8 +3,10 @@ package com.akdndhrc.covid_module.VAC_App;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.Adapter.Adt_VAC_StatsExpandableList;
@@ -130,7 +133,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
             public void run() {
                 pbProgress.setVisibility(View.GONE);
                 lv_view.setVisibility(View.GONE);
-                prepareListData();
+               // prepareListData();
 
             }
         }, 1500);
@@ -160,7 +163,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
 
 
         if (et_is_tareekh_sy.getText().toString().isEmpty() || et_is_tareekh_tk.getText().toString().isEmpty()) {
-            Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ منتخب کریں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Please select date range.",Toast.LENGTH_LONG).show();
             return;
         }
         else{
@@ -180,7 +183,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
 
                 HashMap<String, String> map1 = new HashMap<>();
                 map1.put("total", "" + total_member[0][0]);
-                map1.put("name", "" + "کل رجسٹریشن");
+                map1.put("name", "" + "Total Registrations");
                 hashmap_simplelist.add(map1);
             } else {
                 Log.d("000111", "ELSE TOTAL MEMBER");
@@ -200,7 +203,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
 
                 HashMap<String, String> map2 = new HashMap<>();
                 map2.put("total", "" + total_member[0][0]);
-                map2.put("name", "" + "کل ویکسینیشن");
+                map2.put("name", "" + "Total Registrations");
                 hashmap_simplelist.add(map2);
             } else {
                 Log.d("000111", "ELSE TOTAL CVACCINATION");
@@ -428,7 +431,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 pbProgress.setVisibility(View.GONE);
-                                prepareListData();
+                              //  prepareListData();
 
                             }
                         }, 2000);
@@ -506,7 +509,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 pbProgress.setVisibility(View.GONE);
-                                prepareListData();
+                               // prepareListData();
 
                             }
                         }, 2000);

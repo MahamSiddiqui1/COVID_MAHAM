@@ -80,7 +80,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک تصاویر");
+        //tv.setText("سینک تصاویر");
 
         ll_pbProgress = findViewById(R.id.ll_pbProgress);
 
