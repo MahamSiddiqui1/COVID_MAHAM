@@ -61,7 +61,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_20sdp"
                                     android:text="@string/mbr_is_tareekh_tk_text"
                                     android:textColor="@color/text_color"
@@ -78,7 +78,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:text="@string/mbr_is_tareekh_say_text"
                                     android:textColor="@color/text_color"
@@ -123,7 +123,7 @@
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:background="@null"
                                     android:drawablePadding="@dimen/_10sdp"
-                                    android:drawableRight="@drawable/ic_calender"
+                                    android:drawableEnd="@drawable/ic_calender"
                                     android:focusableInTouchMode="false"
                                     android:gravity="right"
 
@@ -152,7 +152,7 @@
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:background="@null"
                                     android:drawablePadding="@dimen/_10sdp"
-                                    android:drawableRight="@drawable/ic_calender"
+                                    android:drawableEnd="@drawable/ic_calender"
                                     android:focusableInTouchMode="false"
                                     android:gravity="right"
                                     android:padding="@dimen/_5sdp"

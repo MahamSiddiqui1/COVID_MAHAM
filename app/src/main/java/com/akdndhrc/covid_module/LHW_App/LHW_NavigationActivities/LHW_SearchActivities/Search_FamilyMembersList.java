@@ -517,14 +517,14 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                                                                         } else {
                                                                             alertProgressDialog.dismiss();
                                                                            // mBottomSheetDialog.show();
-                                                                            Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                            Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                         }
 
                                                                     } catch (Exception e) {
                                                                         alertProgressDialog.dismiss();
                                                                        // mBottomSheetDialog.show();
                                                                         Log.d("000888", " Error" + e.getMessage());
-                                                                        Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                        Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                     }
                                                                 }
                                                             });
@@ -757,13 +757,13 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                                                                 } else {
                                                                     alertProgressDialog.dismiss();
                                                                     mBottomSheetDialog_Delete.show();
-                                                                    Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                 }
                                                             }
                                                             else {
                                                                 alertProgressDialog.dismiss();
                                                                 mBottomSheetDialog_Delete.show();
-                                                                Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                             }
 
                                                             Log.d("000777", "ABCCCC: ");
@@ -771,14 +771,14 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                                                         } else {
                                                             alertProgressDialog.dismiss();
                                                             mBottomSheetDialog_Delete.show();
-                                                            Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                         }
 
                                                     } catch (Exception e) {
                                                         alertProgressDialog.dismiss();
                                                         mBottomSheetDialog_Delete.show();
                                                         Log.d("000888", " Error" + e.getMessage());
-                                                        Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                     }
                                                 }
                                             });

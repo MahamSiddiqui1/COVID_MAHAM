@@ -871,7 +871,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 } catch (Exception e) {
                     Log.d("000555", "catch    " + e.getMessage());
-                    //Toast.makeText(act, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(act, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -883,7 +883,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(act, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(act, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -1646,7 +1646,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000111", "Update KHANDAN TABLE Err: " + e.getMessage());
 
                 } finally {
@@ -1921,7 +1921,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 } catch (Exception e) {
                     progressDialog.dismiss();
                     Log.d("000222", "Err:    " + e.getMessage());
-                    Toast.makeText(act, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -1932,7 +1932,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
                 Log.d("000222", "onErrorResponse: " + error.getMessage());
-                Toast.makeText(act, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
 
 
             }

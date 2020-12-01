@@ -102,7 +102,7 @@
                 android:id="@+id/ll_count"
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:background="@drawable/circle_shape_layout"

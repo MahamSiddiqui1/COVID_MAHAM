@@ -257,7 +257,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
             public void onClick(View v) {
 
                 if (et_tareekh_indraj_dialog.getText().toString().isEmpty()) {
-                    Toast.makeText(getContext(), "برائے مہربانی تاریخ اندراج منتخب کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.dateOfEntrancePrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -347,7 +347,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
                     if (res.toString().equalsIgnoreCase("true")) {
 
                         Log.d("000369", "********** TRUE *************");
-                        final Snackbar snackbar = Snackbar.make(getActivity().findViewById(R.id.fragment_total_and_refer_patient), "ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(getActivity().findViewById(R.id.fragment_total_and_refer_patient), R.string.dataSubmissionMessage, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -366,7 +366,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
 
                            // sendPostRequest("NOT_ASSIGNED", et_tareekh_indraj.getText().toString(), "2", String.valueOf(jobj), login_useruid, cur_added_on);
                         } else {
-                            // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                         new Handler().postDelayed(new Runnable() {
@@ -380,7 +380,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
                         }, 1500);
                     } else {
                         Log.d("000369", "********** FALSE *************");
-                        final Snackbar snackbar = Snackbar.make(v, "ڈیٹا جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataSubmissionFailed, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -463,7 +463,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
         } catch (Exception e) {
             tv_record.setVisibility(View.VISIBLE);
             Log.d("000369", "Error: " + e.getMessage());
-            Toast.makeText(getContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

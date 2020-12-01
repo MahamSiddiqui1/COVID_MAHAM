@@ -401,7 +401,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
                 finish();
             }*/
         } else if (resultCode == RESULT_CANCELED) {
-            Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
             finish();
         } else {
             Log.d("000555", "Else");
@@ -614,7 +614,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
-                    Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -713,7 +713,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
 
                     } catch (Exception e) {
                         Log.d("000555", "catch: " + e.getMessage());
-                        Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -745,7 +745,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -791,12 +791,12 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
                 Log.d("000555", "latitude: " + latitude);
                 Log.d("000555", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonMessage, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }

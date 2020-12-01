@@ -478,7 +478,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
     private void update_data(final View v) {
 
         if (et_tareekh_indraj.getText().toString().length() < 1) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ اندراج منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -616,7 +616,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
                             if (Utils.haveNetworkConnection(ctx) > 0) {
                                 sendPostRequest(mother_uid, et_tareekh_indraj.getText().toString(), "1", String.valueOf(jsonObject), login_useruid, added_on);
                             } else {
-                                //  Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                //  Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                             }
 
                             update_referal_data(cur_added_on);
@@ -738,7 +738,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
                         Log.d("000987", "Updated Query: " + res.toString());
 
 
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                         //  Toast.makeText(ctx, "Data updated successfully.", Toast.LENGTH_SHORT).show();
@@ -747,13 +747,13 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
                         Log.d("000987", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(Child_BemaariRecordFormView_Activity.this, "Data has not been updated to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000987", "catch: " + e.getMessage());
                     // Toast.makeText(Child_BemaariRecordFormView_Activity.this, "Data has been updated incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -764,8 +764,8 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
 
                 Log.d("000987", "error:" + error.getMessage());
                 //Toast.makeText(Child_BemaariRecordFormView_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                //Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                //Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -1101,7 +1101,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000987", " Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -161,7 +161,7 @@ public class Child_CVirusRecordList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("000987", "Error: " + e.getMessage());
-            Toast tt = Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

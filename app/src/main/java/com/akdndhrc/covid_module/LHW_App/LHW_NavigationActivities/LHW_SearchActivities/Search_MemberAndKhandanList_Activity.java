@@ -602,11 +602,11 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                                                                                 } else {
                                                                                                     alertProgressDialog.dismiss();
                                                                                                     mBottomSheetDialog.show();
-                                                                                                    Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                                 }
                                                                                             }
                                                                                             else {
-                                                                                                Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                                Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                                 alertProgressDialog.dismiss();
                                                                                                 mBottomSheetDialog.show();
                                                                                             }
@@ -614,23 +614,23 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                                                                         } else {
                                                                                             alertProgressDialog.dismiss();
                                                                                             mBottomSheetDialog.show();
-                                                                                            Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                            Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                         }
                                                                                     } else {
-                                                                                        Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                        Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                         alertProgressDialog.dismiss();
                                                                                         mBottomSheetDialog.show();
                                                                                     }
                                                                                 }
                                                                                 else {
-                                                                                    Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                     alertProgressDialog.dismiss();
                                                                                     mBottomSheetDialog.show();
                                                                                 }
 
 
                                                                             } else {
-                                                                                Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                                Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                                 alertProgressDialog.dismiss();
                                                                                 mBottomSheetDialog.show();
                                                                             }
@@ -638,7 +638,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                                                             alertProgressDialog.dismiss();
                                                                             mBottomSheetDialog.show();
                                                                             Log.d("000888", " Khandan DELETE Error: " + e.getMessage());
-                                                                            Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                                            Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                                         }
 
                                                                     }
@@ -649,11 +649,11 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
 
                                                     } else {
                                                         Log.d("000777", "ELSE NO KHANDAN DATA-------: ");
-                                                        Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                     }
                                                 } catch (Exception e) {
                                                     Log.d("000777", "OVERALL Err: " + e.getMessage());
-                                                    Toast.makeText(getApplicationContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                                 }
 
                                             }

@@ -63,7 +63,7 @@
                 android:id="@+id/rl_meeting"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:src="@drawable/ic_meeting_member"
@@ -125,7 +125,7 @@
                         android:id="@+id/btn_FabRegister"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/registration"
                         android:tint="@color/color_white"

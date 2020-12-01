@@ -442,11 +442,11 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -690,7 +690,7 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
                                 "WHERE uid = '" + uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -698,13 +698,13 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
                         Log.d("000999", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(AboveTwo_Register_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
-                    /// /Toast.makeText(AboveTwo_Register_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
+                    /// /Toast.makeText(AboveTwo_Register_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -716,7 +716,7 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
 
                 Log.d("000999", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(AboveTwo_Register_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1035,7 +1035,7 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -1081,12 +1081,12 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
                 Log.d("000555", "latitude: " + latitude);
                 Log.d("000555", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonMessage, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }

@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -190,7 +190,7 @@
                                         android:background="@null"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
                                         android:padding="@dimen/_5sdp"
@@ -210,7 +210,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mzkmb_zichgi_ki_jaga_kai_lye_mashwarah_text"
@@ -239,7 +239,7 @@
                                         android:id="@+id/checkbox_ghar"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -255,7 +255,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_ghar"
+                                        android:layout_toStartOf="@id/checkbox_ghar"
                                         android:text="@string/mzkmb_ghar_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -281,7 +281,7 @@
                                         android:id="@+id/checkbox_markaz_sehat"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -297,7 +297,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_markaz_sehat"
+                                        android:layout_toStartOf="@id/checkbox_markaz_sehat"
                                         android:text="@string/mzkmb_markaz_sehat_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -323,7 +323,7 @@
                                         android:id="@+id/checkbox_hospital"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -339,7 +339,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_hospital"
+                                        android:layout_toStartOf="@id/checkbox_hospital"
                                         android:text="@string/mzkmb_hospital_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -358,7 +358,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mzkmb_emergency_ki_halat_mai_gari_ka_intezam__text"
@@ -387,7 +387,7 @@
                                         android:id="@+id/checkbox_haan"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -403,7 +403,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan"
+                                        android:layout_toStartOf="@id/checkbox_haan"
                                         android:text="@string/mzkmb_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -429,7 +429,7 @@
                                         android:id="@+id/checkbox_nahi"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -445,7 +445,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_nahi"
+                                        android:layout_toStartOf="@id/checkbox_nahi"
                                         android:text="@string/mzkmb_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />

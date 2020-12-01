@@ -62,7 +62,7 @@
                 android:id="@+id/rl_meeting"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:visibility="gone">
 
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
 

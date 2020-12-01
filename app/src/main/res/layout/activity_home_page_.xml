@@ -64,7 +64,7 @@
                 android:id="@+id/rl_options"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -72,7 +72,7 @@
                     android:id="@+id/iv_options"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:src="@drawable/ic_more_options" />
@@ -136,7 +136,7 @@
                             android:layout_marginEnd="@dimen/_5sdp"
                             android:layout_marginStart="@dimen/_5sdp"
                             android:background="@null"
-                            android:drawableLeft="@drawable/ic_search"
+                            android:drawableStart="@drawable/ic_search"
                             android:drawablePadding="@dimen/_10sdp"
                             android:gravity="right"
                             android:hint="@string/hp_talash_gaon_text"

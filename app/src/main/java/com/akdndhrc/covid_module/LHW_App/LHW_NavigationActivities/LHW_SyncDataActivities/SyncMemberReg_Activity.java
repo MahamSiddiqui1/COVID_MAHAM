@@ -384,13 +384,13 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000102", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000102", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -567,13 +567,13 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000102", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000102", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }

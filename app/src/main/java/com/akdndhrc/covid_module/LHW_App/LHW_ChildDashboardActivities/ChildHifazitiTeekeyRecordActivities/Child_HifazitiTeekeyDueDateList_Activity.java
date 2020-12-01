@@ -217,8 +217,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                             if (mData_ref_vac != null) {
                                 Log.d("000522", "Refuse");
-                                // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -234,8 +234,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 snackbar.show();
                             } else {
                                 Log.d("000522", "Not Ref");
-                                //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -260,13 +260,13 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                     } catch (Exception e) {
                         Log.d("000522", "Err:" + e.getMessage());
-                        // Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
+                        // Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                     }
 
                 } else if (diffInDays < Integer.parseInt(mData[position][2])) {
 
-                    // Toast.makeText(getApplicationContext(), "vaccine not yet active", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین ابھی فعال نہیں ہے.", Snackbar.LENGTH_SHORT);
+                    // Toast.makeText(getApplicationContext(), R.string.vaccine_not_yet_active, Toast.LENGTH_SHORT).show();
+                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineNotAct, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -284,7 +284,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
               /*  else if (diffInDays > Integer.parseInt(mData[position][2])) {
 
-                    Toast.makeText(getApplicationContext(), "vaccine not yet active", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.vaccine_not_yet_active, Toast.LENGTH_SHORT).show();
                 }*/
 
                 else {
@@ -304,8 +304,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                 if (mData_ref_vac != null) {
                                     Log.d("000522", "Refuse");
-                                    // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                    // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -321,8 +321,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                     snackbar.show();
                                 } else {
                                     Log.d("000522", "Not Ref");
-                                    //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                    //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -381,8 +381,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                     if (mData_ref_vac != null) {
                                         Log.d("000522", "Refuse");
-                                        // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                        // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -398,8 +398,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                         snackbar.show();
                                     } else {
                                         Log.d("000522", "Not Ref");
-                                        //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                        //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -445,8 +445,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                 if (mData_ref_vac != null) {
                                     Log.d("000522", "Refuse");
-                                    // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                    // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -462,8 +462,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                     snackbar.show();
                                 } else {
                                     Log.d("000522", "Not Ref");
-                                    //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                    //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -521,8 +521,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                     if (mData_ref_vac != null) {
                                         Log.d("000522", "Refuse");
-                                        // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                        // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -538,8 +538,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                         snackbar.show();
                                     } else {
                                         Log.d("000522", "Not Ref");
-                                        //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                        //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -586,8 +586,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                 if (mData_ref_vac != null) {
                                     Log.d("000522", "Refuse");
-                                    // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                    // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -603,8 +603,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                     snackbar.show();
                                 } else {
                                     Log.d("000522", "Not Ref");
-                                    //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                    //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -660,8 +660,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                     if (mData_ref_vac != null) {
                                         Log.d("000522", "Refuse");
-                                        // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                        // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -677,8 +677,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                         snackbar.show();
                                     } else {
                                         Log.d("000522", "Not Ref");
-                                        //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                        //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -729,8 +729,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -746,8 +746,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -779,7 +779,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM OPV-1 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے OPV-1 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectOPV1first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -818,8 +818,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -835,8 +835,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -866,7 +866,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM Rota-1 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے Rota-1 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectRota1first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -905,8 +905,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -922,8 +922,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -954,7 +954,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM PCVIO-1 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے PCVIO-1 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectPCVIO1first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -992,8 +992,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1009,8 +1009,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1042,7 +1042,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM Penta-1 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے Penta-1 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectPenta1First, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1080,8 +1080,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1097,8 +1097,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1130,7 +1130,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM OPV-2 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے OPV-2 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectOPV2first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1167,8 +1167,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1184,8 +1184,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1216,7 +1216,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM PCVIO-2 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے PCVIO-2 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectPCVIO2first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1255,8 +1255,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1272,8 +1272,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1304,7 +1304,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM Penta-2 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے Penta-2 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectPenta2first, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1342,8 +1342,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                         if (mData_ref_vac != null) {
                                             Log.d("000522", "Refuse");
-                                            // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                            // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1359,8 +1359,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                             snackbar.show();
                                         } else {
                                             Log.d("000522", "Not Ref");
-                                            //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                            //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1390,7 +1390,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 Log.d("000522", "DueDateBBB : " + mData[position][2]);
                                 Log.d("000522", "PLEASE PERFORM Measles-1 first");
 
-                                final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی پہلے Measles-1 ویکسین کو انجام دیں.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.selectMeasles1, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1424,8 +1424,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                                 if (mData_ref_vac != null) {
                                     Log.d("000522", "Refuse");
-                                    // Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+                                    // Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1441,8 +1441,8 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                     snackbar.show();
                                 } else {
                                     Log.d("000522", "Not Ref");
-                                    //Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                                    //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1577,7 +1577,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
             @Override
             public void onClick(View v) {
 
-                btn_name = "Mobile Vaccination";
+                btn_name = getString(R.string.mobileVaccination);
                 btn_value = "3";
 
 
@@ -1724,7 +1724,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
 
 //                if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-//                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
 //                    return;
 //                }
 
@@ -1740,7 +1740,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
 
 //                if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-//                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
 //                    return;
 //                }
 
@@ -1796,11 +1796,11 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -1847,7 +1847,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                     //Toast.makeText(getApplicationContext(), "Data saved.", Toast.LENGTH_SHORT).show();
 
-                    final Snackbar snackbar = Snackbar.make(v, "ویکسین ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataSubmitted, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1865,7 +1865,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                       // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -1928,7 +1928,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
             public void onClick(View v) {
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "ویکسین انکار کرنے کی وجہ منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "R.string.reasonToDenyVaccine منتخب کریں", Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -1957,11 +1957,11 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -2005,7 +2005,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                     Log.d("000159", "Data: " + ans1);
                     Log.d("000159", "Query: " + res);
 
-                    final Snackbar snackbar = Snackbar.make(v, "ویکسین ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataSubmitted, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -2085,18 +2085,18 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
-                        Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     } else {
                         Log.d("000159", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000159", " Error: " + e.getMessage());
-                    Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -2107,7 +2107,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.d("000159", "onErrorResponse: " + error.getMessage());
-                Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -2179,19 +2179,19 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
                     } else {
                         Log.d("000159", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //   Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000159", " Error: " + e.getMessage());
-                    Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -2203,7 +2203,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
             public void onErrorResponse(VolleyError error) {
                 Log.d("000159", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -3736,7 +3736,7 @@ public class Child_HifazitiTeekeyDueDateList_Activity extends AppCompatActivity 
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT).show();
         }
 
 

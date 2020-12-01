@@ -336,11 +336,11 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
                         latitude = Double.parseDouble(jsonObject.getString("lat"));
                         longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                        Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                     } else {
                         latitude = Double.parseDouble("0.0");
                         longitude = Double.parseDouble("0.0");
-                        Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -421,7 +421,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
            /* if (Utils.haveNetworkConnection(ctx) > 0) {
 
             } else {
-               // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                 Toast.makeText(ctx, "ڈپلیکیٹ ڈیٹا ملا دیا گیا ہے.", Toast.LENGTH_SHORT).show();
             }*/
 
@@ -481,19 +481,19 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
 
                         Log.d("000333", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
 
                     Log.d("000333", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -503,7 +503,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
 
                 Log.d("000333", "onErrorResponse:    " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {

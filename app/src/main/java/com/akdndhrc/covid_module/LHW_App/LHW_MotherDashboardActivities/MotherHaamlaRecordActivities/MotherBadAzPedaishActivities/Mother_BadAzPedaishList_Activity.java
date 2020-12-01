@@ -228,7 +228,7 @@ public class Mother_BadAzPedaishList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -518,7 +518,7 @@ public class LHW_SearchVillage_Activity extends AppCompatActivity implements Sea
         } catch (Exception e) {
             toolbar.setVisibility(View.GONE);
             Log.d("000123", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT).show();
         }
     }
 

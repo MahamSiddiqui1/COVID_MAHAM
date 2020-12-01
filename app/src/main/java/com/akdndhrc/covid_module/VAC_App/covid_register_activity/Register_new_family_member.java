@@ -636,11 +636,11 @@ public class Register_new_family_member extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -888,7 +888,7 @@ public class Register_new_family_member extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000555", "Err: " + e.getMessage());
                     Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
-                    /// /Toast.makeText(AboveTwo_Register_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    /// /Toast.makeText(AboveTwo_Register_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 

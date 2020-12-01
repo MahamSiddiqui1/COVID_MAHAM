@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvFatherName"
-            android:layout_alignParentEnd="true"
+
             android:layout_marginEnd="@dimen/_10sdp"
             android:ellipsize="end"
             android:text="06"
@@ -96,7 +96,7 @@
             android:layout_below="@+id/tvFatherName"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_toLeftOf="@+id/tvAge"
+            android:layout_toStartOf="@+id/tvAge"
             android:text="Age:"
             android:textColor="@color/light_grey_color"
             android:textSize="@dimen/_12sdp" />
@@ -108,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvDOB"
-            android:layout_alignParentEnd="true"
+
             android:layout_marginEnd="@dimen/_10sdp"
             android:ellipsize="end"
 
@@ -124,7 +124,7 @@
             android:layout_below="@+id/tvDOB"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_toLeftOf="@+id/tvGender"
+            android:layout_toStartOf="@+id/tvGender"
             android:text="Gender:"
             android:textColor="@color/light_grey_color"
             android:textSize="@dimen/_12sdp" />

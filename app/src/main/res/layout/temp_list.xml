@@ -42,7 +42,8 @@
                 android:layout_height="@dimen/_40sdp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:clickable="true">
+                android:clickable="true"
+                android:focusable="true">
 
                 <ImageView
                     android:id="@+id/iv_navigation_drawer"
@@ -53,7 +54,8 @@
                     android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
+                    android:src="@drawable/ic_menu"
+                    android:focusable="true" />
 
             </RelativeLayout>
 
@@ -61,7 +63,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -69,12 +71,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
                     android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/color_white" />
+                    app:tint="@color/color_white"
+                    android:focusable="true" />
 
             </RelativeLayout>
         </RelativeLayout>
@@ -113,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/men_icon"
-                        android:tint="#2E86AB" />
+                        app:tint="#2E86AB" />
 
                 </android.support.v7.widget.CardView>
 
@@ -167,7 +170,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="2 سال 06 مہ"
+                        android:text="@string/_02_06"
                         android:textColor="@color/register_khandan_text_color"
                         android:textSize="@dimen/_12sdp" />
 

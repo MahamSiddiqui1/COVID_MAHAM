@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/rl_home">
+                android:layout_toStartOf="@+id/rl_home">
 
                 <ImageView
                     android:id="@+id/iv_editform"
@@ -184,7 +184,7 @@
                                         android:background="@null"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
                                         android:padding="@dimen/_5sdp"
@@ -211,7 +211,7 @@
                                         android:id="@+id/txt_TT"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="TT"
                                         android:textColor="@color/text_color"
@@ -222,7 +222,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="@dimen/_1sdp"
-                                        android:layout_toLeftOf="@+id/txt_TT"
+                                        android:layout_toStartOf="@+id/txt_TT"
                                         android:text="@string/mhtrf_tt_kay_teekey_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp"
@@ -257,7 +257,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mhtrf_dusra_text"
                                             android:textColor="@color/text_color"
@@ -274,7 +274,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mhtrf_phela_text"
                                             android:textColor="@color/text_color"
@@ -406,7 +406,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mhtrf_saal_text"
                                             android:textColor="@color/text_color"
@@ -423,7 +423,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mhtrf_mahina_text"
                                             android:textColor="@color/text_color"
@@ -554,7 +554,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mhtrf_dusra_text"
                                             android:textColor="@color/text_color"
@@ -571,7 +571,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mhtrf_phela_text"
                                             android:textColor="@color/text_color"
@@ -683,7 +683,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mhtrf_fourth_text"
                                             android:textColor="@color/text_color"
@@ -700,7 +700,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mhtrf_teesra_text"
                                             android:textColor="@color/text_color"

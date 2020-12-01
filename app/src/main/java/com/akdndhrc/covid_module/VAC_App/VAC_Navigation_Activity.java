@@ -716,7 +716,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                 } catch (Exception e) {
                     Log.d("000555", "catch    " + e.getMessage());
-                    //Toast.makeText(act, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(act, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 

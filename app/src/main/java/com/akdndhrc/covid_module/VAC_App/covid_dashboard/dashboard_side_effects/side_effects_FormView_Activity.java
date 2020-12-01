@@ -717,11 +717,11 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
@@ -804,7 +804,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
 
                             sendPostRequest(mother_uid, et_tareekh_visit.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            //Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                         if (services_and_awareness.equalsIgnoreCase("1")) {
@@ -833,7 +833,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             alertDialog.dismiss();
             //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
             Log.d("000987", " Error" + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -888,7 +888,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
 
                 } catch (Exception e) {
                     Log.d("000987", "Err: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
                     Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
@@ -1268,7 +1268,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000987", " Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
       /*  try {

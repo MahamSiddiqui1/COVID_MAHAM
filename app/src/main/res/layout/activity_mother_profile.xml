@@ -64,14 +64,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -273,7 +273,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="والدہ/شوہر کا نام"
                                             android:textColor="@color/text_color"
@@ -290,7 +290,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_walid_ka_naame_text"
                                             android:textColor="@color/text_color"
@@ -378,7 +378,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_tareekh_pedaish_text"
                                             android:textColor="@color/text_color"
@@ -395,7 +395,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_sarbarah_kay_sath_rishta_text"
                                             android:textColor="@color/text_color"
@@ -433,7 +433,7 @@
                                         android:background="@drawable/edittext_background_layout"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:drawableTint="@color/pink_color"
                                         android:focusableInTouchMode="false"
                                         android:padding="@dimen/_5sdp"
@@ -483,7 +483,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/age"
                                             android:textColor="@color/text_color"
@@ -500,7 +500,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_shanakhti_card_number_text"
                                             android:textColor="@color/text_color"
@@ -537,7 +537,7 @@
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:drawableTint="@color/pink_color"
                                         android:focusableInTouchMode="false"
                                         android:cursorVisible="false"
@@ -589,7 +589,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_jins_text"
                                             android:textColor="@color/text_color"
@@ -606,7 +606,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_azdawaji_hasiyat_text"
                                             android:textColor="@color/text_color"
@@ -749,7 +749,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_15sdp"
                                         android:text="@string/cr_tareekh_nakal_makani_text"
                                         android:textColor="@color/text_color"
@@ -766,7 +766,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="@string/cr_mobile_number_text"
                                         android:textColor="@color/text_color"
@@ -804,7 +804,7 @@
                                     android:cursorVisible="false"
                                     android:drawablePadding="@dimen/_10sdp"
 
-                                    android:drawableRight="@drawable/ic_calender"
+                                    android:drawableEnd="@drawable/ic_calender"
                                     android:focusableInTouchMode="false"
                                     android:padding="@dimen/_5sdp"
                                     android:textSize="@dimen/_12sdp" />
@@ -894,7 +894,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/cr_khandan_number_text"
                                             android:textColor="@color/text_color"
@@ -911,7 +911,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cr_infradi_text"
                                             android:textColor="@color/text_color"
@@ -1034,7 +1034,7 @@
                                         android:id="@+id/tv_qrcode"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text=" QR"
                                         android:textColor="@color/dark_blue_color"
@@ -1044,7 +1044,7 @@
                                         android:id="@+id/tv_qrcode_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_toLeftOf="@id/tv_qrcode"
+                                        android:layout_toStartOf="@id/tv_qrcode"
                                         android:text="@string/cr_qr_code_ko_faal_kre_text"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -1085,7 +1085,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         android:text="موجودہ حالت"
                                         android:textColor="@color/dark_blue_color"
@@ -1125,7 +1125,7 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentEnd="true"
+
                                                 android:layout_marginEnd="@dimen/_15sdp"
                                                 android:text="@string/cr_tabsarah_wajah_wafaat_text"
                                                 android:textColor="@color/text_color"
@@ -1142,7 +1142,7 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_alignParentEnd="true"
+
                                                 android:layout_marginEnd="@dimen/_5sdp"
                                                 android:text="@string/cr_tareekh_wafat_text"
                                                 android:textColor="@color/text_color"
@@ -1214,7 +1214,7 @@
                                             android:cursorVisible="false"
                                             android:drawablePadding="@dimen/_10sdp"
 
-                                            android:drawableRight="@drawable/ic_calender"
+                                            android:drawableEnd="@drawable/ic_calender"
                                             android:focusableInTouchMode="false"
                                             android:padding="@dimen/_5sdp"
                                             android:textSize="@dimen/_12sdp" />
@@ -1338,7 +1338,7 @@
                                         android:id="@+id/tv_biometric_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="@string/cr_biometric_ko_faal_kre_text"
                                         android:textColor="@color/dark_blue_color"

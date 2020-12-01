@@ -243,7 +243,7 @@ public class PatientList_Fragment extends Fragment {
         } catch (Exception e) {
             tv_record.setVisibility(View.VISIBLE);
             Log.d("000331", "Error: " + e.getMessage());
-            Toast.makeText(getContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

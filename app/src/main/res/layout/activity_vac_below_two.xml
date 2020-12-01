@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -200,7 +200,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/gender"
                                             android:textColor="@color/text_color"
@@ -218,7 +218,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/dob"
                                             android:textColor="@color/text_color"
@@ -289,7 +289,7 @@
                                         android:background="@null"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
                                         android:lines="1"
@@ -328,7 +328,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/mr_walida_ka_naam_text"
                                             android:textColor="@color/text_color"
@@ -345,7 +345,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/father"
                                             android:textColor="@color/text_color"
@@ -503,7 +503,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="Phone Number"
                                             android:textColor="@color/text_color"
@@ -655,7 +655,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_15sdp"
                                             android:text="@string/indID"
                                             android:textColor="@color/text_color"
@@ -672,7 +672,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/famID"
                                             android:textColor="@color/text_color"
@@ -799,7 +799,7 @@
                                         android:id="@+id/tv_biometric_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text="@string/vul_biometriC_ko_faAl_kre_text"
                                         android:textColor="@color/dark_blue_color"
@@ -867,7 +867,7 @@
                                         android:id="@+id/tv_qrcode"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:text=" QR"
                                         android:textColor="@color/dark_blue_color"
@@ -877,7 +877,7 @@
                                         android:id="@+id/tv_qrcode_faal_kre"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_toLeftOf="@id/tv_qrcode"
+                                        android:layout_toStartOf="@id/tv_qrcode"
                                         android:text="@string/cr_qr_code_ko_faal_kre_text"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -911,7 +911,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/tehsil"
                                             android:textColor="@color/text_color"
@@ -928,7 +928,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/district"
                                             android:textColor="@color/text_color"
@@ -1048,7 +1048,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/village"
                                             android:textColor="@color/text_color"
@@ -1065,7 +1065,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/union"
                                             android:textColor="@color/text_color"

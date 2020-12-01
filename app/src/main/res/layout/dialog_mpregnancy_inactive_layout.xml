@@ -61,7 +61,7 @@
                         android:id="@+id/rb_LiveBirth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -71,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_LiveBirth"
+                        android:layout_toStartOf="@+id/rb_LiveBirth"
                         android:text="زندہ پیدائش"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
@@ -89,7 +89,7 @@
                         android:id="@+id/rb_Abortion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -98,7 +98,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_Abortion"
+                        android:layout_toStartOf="@+id/rb_Abortion"
                         android:text="حمل گرانا"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
@@ -116,7 +116,7 @@
                         android:id="@+id/rb_StillBirth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_StillBirth"
+                        android:layout_toStartOf="@+id/rb_StillBirth"
                         android:text="مردہ بچہ"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
@@ -145,7 +145,7 @@
                     android:id="@+id/rb_NeonatalDeath"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
+
                     android:buttonTint="@color/pink_color"
                     android:gravity="center_vertical" />
 
@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_toLeftOf="@+id/rb_NeonatalDeath"
+                    android:layout_toStartOf="@+id/rb_NeonatalDeath"
                     android:text="نیوناٹل ڈیتھ (پیدائش کے ۱ ہفتہ سے بھی کم)"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />
@@ -176,7 +176,7 @@
                         android:id="@+id/rb_InfantDeath"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -185,7 +185,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_InfantDeath"
+                        android:layout_toStartOf="@+id/rb_InfantDeath"
                         android:text="انفنٹ  ڈیتھ (۱ ہفتہ سے زیادہ لیکن ۱ سال سے کم)"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
@@ -203,7 +203,7 @@
                         android:id="@+id/rb_WrongEntry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -212,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_WrongEntry"
+                        android:layout_toStartOf="@+id/rb_WrongEntry"
                         android:text="غلط اندراج"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
@@ -230,7 +230,7 @@
                         android:id="@+id/rb_DeliveryCompleted"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:buttonTint="@color/pink_color"
                         android:gravity="center_vertical" />
 
@@ -239,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toLeftOf="@+id/rb_DeliveryCompleted"
+                        android:layout_toStartOf="@+id/rb_DeliveryCompleted"
                         android:text="زچگی ہونا"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />

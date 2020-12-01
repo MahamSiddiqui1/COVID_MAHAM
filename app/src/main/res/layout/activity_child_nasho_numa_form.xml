@@ -64,7 +64,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -187,7 +187,7 @@
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:background="@null"
                                         android:cursorVisible="false"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:drawablePadding="@dimen/_10sdp"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
@@ -222,7 +222,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
 
                                             android:text="@string/cnnf_wazan_text"
                                             android:textColor="@color/text_color"
@@ -239,7 +239,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/cnnf_qad_text"
                                             android:textColor="@color/text_color"
@@ -372,7 +372,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/cnnf_ghiza_text"
@@ -401,7 +401,7 @@
                                         android:id="@+id/checkbox_6maah_tk_sirf_maa_ka_doodh"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -417,7 +417,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_6maah_tk_sirf_maa_ka_doodh"
+                                        android:layout_toStartOf="@id/checkbox_6maah_tk_sirf_maa_ka_doodh"
                                         android:text="@string/cnnf_6maah_tk_maa_ka_doodh_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -443,7 +443,7 @@
                                         android:id="@+id/checkbox_bottle_ka_doodh"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -459,7 +459,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_bottle_ka_doodh"
+                                        android:layout_toStartOf="@id/checkbox_bottle_ka_doodh"
                                         android:text="@string/cnnf_bottle_ka_doodh_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -486,7 +486,7 @@
                                         android:id="@+id/checkbox_izafi_khoraak_thoos_ghiza"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -502,7 +502,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_izafi_khoraak_thoos_ghiza"
+                                        android:layout_toStartOf="@id/checkbox_izafi_khoraak_thoos_ghiza"
                                         android:text="@string/cnnf_izafi_khoraak_thoos_ghiza_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -521,7 +521,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/chpslhvf_tabsrah_text"
@@ -624,7 +624,7 @@
     <!--android:id="@+id/txt_ghiza"-->
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentEnd="true"-->
+    <!-- -->
     <!--android:layout_marginEnd="@dimen/_15sdp"-->
     <!--android:text="@string/cnnf_ghiza_text"-->
     <!--android:textColor="@color/text_color"-->
@@ -634,7 +634,7 @@
     <!--android:id="@+id/checkbox_1"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentEnd="true"-->
+    <!-- -->
     <!--android:layout_below="@+id/txt_ghiza"-->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
@@ -646,7 +646,7 @@
     <!--android:layout_height="@dimen/_20sdp"-->
     <!--android:layout_alignBottom="@+id/checkbox_1"-->
     <!--android:layout_marginBottom="@dimen/_10sdp"-->
-    <!--android:layout_toLeftOf="@+id/checkbox_1"-->
+    <!--android:layout_toStartOf="@+id/checkbox_1"-->
     <!--android:text="@string/cnnf_6maah_tk_maa_ka_doodh_text"-->
     <!--android:textColor="@color/text_color"-->
     <!--android:textSize="@dimen/_16sdp" />-->
@@ -663,7 +663,7 @@
     <!--android:id="@+id/checkbox_2"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentEnd="true"-->
+    <!-- -->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
     <!--android:button="@null"-->
@@ -673,7 +673,7 @@
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:layout_centerInParent="true"-->
-    <!--android:layout_toLeftOf="@+id/checkbox_2"-->
+    <!--android:layout_toStartOf="@+id/checkbox_2"-->
     <!--android:text="@string/cnnf_bottle_ka_doodh_text"-->
     <!--android:textColor="@color/text_color"-->
     <!--android:textSize="@dimen/_16sdp" />-->
@@ -690,7 +690,7 @@
     <!--android:id="@+id/checkbox_3"-->
     <!--android:layout_width="@dimen/_40sdp"-->
     <!--android:layout_height="@dimen/_40sdp"-->
-    <!--android:layout_alignParentEnd="true"-->
+    <!-- -->
     <!--android:background="?android:attr/listChoiceIndicatorMultiple"-->
     <!--android:backgroundTint="@color/pink_color"-->
     <!--android:button="@null"-->
@@ -700,7 +700,7 @@
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:layout_centerInParent="true"-->
-    <!--android:layout_toLeftOf="@+id/checkbox_3"-->
+    <!--android:layout_toStartOf="@+id/checkbox_3"-->
     <!--android:text="@string/cnnf_izafi_khoraak_thoos_ghiza_text"-->
     <!--android:textColor="@color/text_color"-->
     <!--android:textSize="@dimen/_16sdp" />-->

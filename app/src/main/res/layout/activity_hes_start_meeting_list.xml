@@ -62,7 +62,7 @@
                 android:id="@+id/rl_meeting"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:visibility="gone">
 
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
 
@@ -170,7 +170,7 @@
                                 android:id="@+id/tv_male"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
+
                                 android:layout_centerVertical="true"
                                 android:layout_marginEnd="@dimen/_35sdp"
                                 android:text="مرد"
@@ -182,7 +182,7 @@
                                 android:layout_width="@dimen/_30sdp"
                                 android:layout_height="@dimen/_30sdp"
                                 android:layout_marginEnd="@dimen/_31sdp"
-                                android:layout_toLeftOf="@+id/tv_male"
+                                android:layout_toStartOf="@+id/tv_male"
                                 android:background="@drawable/edittext_background_layout">
 
                                 <ImageView
@@ -201,7 +201,7 @@
                                 android:layout_centerInParent="true"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
-                                android:layout_toLeftOf="@+id/rl_add_male">
+                                android:layout_toStartOf="@+id/rl_add_male">
 
                                 <TextView
                                     android:id="@+id/tv_count_male"
@@ -219,7 +219,7 @@
                                 android:id="@+id/rl_sub_male"
                                 android:layout_width="@dimen/_30sdp"
                                 android:layout_height="@dimen/_30sdp"
-                                android:layout_toLeftOf="@+id/rl_count_male_15to19_age"
+                                android:layout_toStartOf="@+id/rl_count_male_15to19_age"
 
                                 android:background="@drawable/edittext_background_layout">
 
@@ -244,7 +244,7 @@ android:layout_centerInParent="true"
                                 android:id="@+id/tv_female"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
+
                                 android:layout_centerVertical="true"
                                 android:layout_marginEnd="@dimen/_35sdp"
                                 android:text="عورت"
@@ -257,7 +257,7 @@ android:layout_centerInParent="true"
                                 android:layout_height="@dimen/_30sdp"
                                 android:layout_centerInParent="true"
                                 android:layout_marginEnd="@dimen/_20sdp"
-                                android:layout_toLeftOf="@+id/tv_female"
+                                android:layout_toStartOf="@+id/tv_female"
                                 android:tint="@color/color_white"
                                 android:background="@drawable/edittext_background_layout">
 
@@ -278,7 +278,7 @@ android:layout_centerInParent="true"
                                 android:layout_centerInParent="true"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
-                                android:layout_toLeftOf="@+id/rl_add_female">
+                                android:layout_toStartOf="@+id/rl_add_female">
 
                                 <TextView
                                     android:id="@+id/tv_count_female"
@@ -296,7 +296,7 @@ android:layout_centerInParent="true"
                                 android:id="@+id/rl_sub_female"
                                 android:layout_width="@dimen/_30sdp"
                                 android:layout_height="@dimen/_30sdp"
-                                android:layout_toLeftOf="@+id/rl_count_female_15to19_age"
+                                android:layout_toStartOf="@+id/rl_count_female_15to19_age"
                                 android:background="@drawable/edittext_background_layout">
 
                                 <ImageView

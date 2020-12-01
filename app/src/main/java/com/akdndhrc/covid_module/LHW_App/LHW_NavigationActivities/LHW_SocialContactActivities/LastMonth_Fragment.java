@@ -289,7 +289,7 @@ public class LastMonth_Fragment extends Fragment {
             View layout = inflater.inflate(R.layout.custom_toast_view_layout, null);
             // set a message
             TextView text = (TextView) layout.findViewById(R.id.customToastText);
-            text.setText("ڈیٹا جمع ہوگیا ہے");
+            text.setText(R.string.dataSubmissionMessage);
             // Toast...
             Toast toast = new Toast(getContext());
             toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);

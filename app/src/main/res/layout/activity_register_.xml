@@ -62,7 +62,7 @@
                 android:id="@+id/rl_home_image"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:clickable="true">
 
@@ -70,7 +70,7 @@
                     android:id="@+id/iv_home"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:clickable="true"
@@ -405,7 +405,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/district"
                                             android:textColor="@color/text_color"
@@ -423,7 +423,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/tehsil"
                                             android:textColor="@color/text_color"
@@ -548,7 +548,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/union"
                                             android:textColor="@color/text_color"
@@ -567,7 +567,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/village"
                                             android:textColor="@color/text_color"
@@ -705,7 +705,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/Toilet"
                                             android:textColor="@color/text_color"
@@ -722,7 +722,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/drinkingWater"
                                             android:textColor="@color/text_color"

@@ -210,11 +210,11 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
                                 latitude = Double.parseDouble(jsonObject.getString("lat"));
                                 longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                                Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                             } else {
                                 latitude = Double.parseDouble("0.0");
                                 longitude = Double.parseDouble("0.0");
-                                Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (Exception e) {
@@ -356,7 +356,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                     Log.d("000555", "Img_Er11r:" + e.getMessage());
-                    Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                     File file = new File(String.valueOf(image_path));
                     Log.d("000555", "Delete Path :" + image_path);
                     file.delete();
@@ -366,7 +366,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
                     startActivity(intent);
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000555", "Img_Err:" + e.getMessage());
                     File file = new File(String.valueOf(image_path));
                     Log.d("000555", "Delete Path :" + image_path);
@@ -389,7 +389,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
                 startActivity(intent);
             } else {
                 // Image capture failed, advise user
-                Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 Log.d("000555", "ELSE:");
                 File file = new File(String.valueOf(image_path));
                 Log.d("000555", "Delete Path :" + image_path);
@@ -564,7 +564,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
             Log.d("000555", "Data: " + ans1);
             Log.d("000555", "Query: " + res);
 
-            final Snackbar snackbar = Snackbar.make(v, "ویکسین ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataSubmitted, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -582,7 +582,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
 
                 sendPostRequest(mother_uid, vacine_uid, TodayDate, String.valueOf(jobj), login_useruid, added_on);
             } else {
-                // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
             }
 
             try {
@@ -667,21 +667,21 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
 
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -691,7 +691,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
             public void onErrorResponse(VolleyError error) {
                 Log.d("000555", "error    " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -780,7 +780,7 @@ public class VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompa
 
                     } catch (Exception e) {
                         Log.d("000555", "catch: " + e.getMessage());
-                        Toast.makeText(VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VAC_Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                     }
                 }

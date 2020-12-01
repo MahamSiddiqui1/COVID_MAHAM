@@ -62,7 +62,7 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -235,7 +235,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_haamla_ka_record_text"
@@ -279,7 +279,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_khandani_mansobabandi_text"
@@ -323,7 +323,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_beemari_ka_record_text"
@@ -369,7 +369,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_15sdp"
                             android:text="@string/cd_virus"
@@ -413,7 +413,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_hifazati_teekey_ka_record_text"
@@ -456,7 +456,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
+
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/md_mawaad"
@@ -503,8 +503,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentEnd="true"
+
+
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:src="@drawable/view_line" />
@@ -532,8 +532,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentEnd="true"
+
+
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:src="@drawable/view_line" />

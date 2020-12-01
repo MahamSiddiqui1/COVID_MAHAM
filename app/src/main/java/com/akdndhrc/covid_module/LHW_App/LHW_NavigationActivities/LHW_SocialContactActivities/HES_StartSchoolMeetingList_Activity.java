@@ -309,7 +309,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
                 sendPostRequest(meeting_uid, type,TodayDate, String.valueOf(jsonObject), login_useruid,added_on);
             } else {
-                Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
             }
 
         } catch (Exception e) {
@@ -365,16 +365,16 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
                         Log.d("000457", "Query:" + res.toString());
 
                         //  Toast.makeText(BelowTwo_Register_Activity.this, "Data has been saved", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000457", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000457", "catch: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -385,7 +385,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
                 Log.d("000457", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(BelowTwo_Register_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {

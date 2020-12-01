@@ -34,7 +34,7 @@
             android:layout_width="@dimen/_50sdp"
             android:layout_height="8dp"
             android:layout_below="@+id/view1"
-            android:layout_alignParentEnd="true"
+
             android:layout_marginTop="@dimen/_10sdp"
             android:background="#dddddd" />
 

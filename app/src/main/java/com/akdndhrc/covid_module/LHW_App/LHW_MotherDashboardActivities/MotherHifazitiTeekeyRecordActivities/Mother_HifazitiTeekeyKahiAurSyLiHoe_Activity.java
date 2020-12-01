@@ -193,7 +193,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
                         if (mData_ref_vac != null) {
                             Log.d("000555", "Refuse");
-//                            Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
                             final Snackbar snackbar = Snackbar.make(view, "Vaccination was refused.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -326,7 +326,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             @Override
             public void onClick(View v) {
 
-                btn_name = "Mobile Vaccination";
+                btn_name = getString(R.string.mobileVaccination);
                 btn_value = "3";
 
 
@@ -389,11 +389,11 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -562,7 +562,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
                 } catch (Exception e) {
                     Log.d("000266", " Error: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
                     Toast.makeText(ctx, "Vaccine data not synced", Toast.LENGTH_SHORT).show();
                 }
 

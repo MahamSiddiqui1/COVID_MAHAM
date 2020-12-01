@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color_white">
@@ -8,7 +10,7 @@
         android:id="@+id/iv_close"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:layout_alignParentEnd="true"
+
         android:layout_gravity="right"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
@@ -17,7 +19,7 @@
         android:paddingEnd="10dp"
         android:paddingRight="5dp"
         android:src="@drawable/ic_close_black_24dp"
-        android:tint="@color/pink_color" />
+        app:tint="@color/pink_color" />
 
 
 
@@ -48,7 +50,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_20sdp"
-            android:text="ویکسین انکار کرنے کی وجہ"
+            android:text="@string/reasonToDenyVaccine"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_15sdp"
             android:textStyle="bold"
@@ -73,7 +75,7 @@
                 android:layout_weight="1"
                 android:background="@color/pink_color"
                 android:gravity="center"
-                android:text="In Facility"
+                android:text="@string/in_facility"
                 android:textAllCaps="false"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_10sdp" />
@@ -85,7 +87,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rounder_corner_light"
                 android:gravity="center"
-                android:text="Outreach"
+                android:text="@string/outreach"
                 android:textAllCaps="false"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_10sdp" />
@@ -97,7 +99,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rounder_corner_light"
                 android:gravity="center"
-                android:text="Mobile\nVaccine"
+                android:text="@string/mobile_nvaccine"
                 android:textAllCaps="false"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_10sdp" />
@@ -121,7 +123,8 @@
             android:padding="@dimen/_8sdp"
             android:popupElevation="0dp"
             android:spinnerMode="dropdown"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
 
 
         <LinearLayout
@@ -138,7 +141,7 @@
                 android:layout_height="58dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="ابھی ویکسینیٹ کریں"
+                android:text="@string/vaccinateNow"
 
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_15sdp" />
@@ -150,7 +153,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="کہی اور سے کرائی ہو"
+                android:text="@string/fromSomewhereElse"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_15sdp"
 
@@ -163,7 +166,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="یو سی میں پہلے لگائی تھی"
+                android:text="@string/vaccinatedFromUCbefore"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_15sdp" />
 
@@ -174,7 +177,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="نامنظوری ویکسین"
+                android:text="@string/vaccineDenial"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_15sdp" />
 
@@ -195,7 +198,7 @@
                 android:layout_height="58dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text=" کھلی شیشی (Opened Vial)"
+                android:text="@string/opened_vial"
                 android:textAllCaps="false"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_12sdp"
@@ -208,7 +211,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="نئی شیشی (New Vial)"
+                android:text="@string/new_vial"
                 android:textAllCaps="false"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp"
@@ -228,7 +231,7 @@
                     android:id="@+id/tvBal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Balance:"
+                    android:text="@string/balance"
                     android:textColor="@color/blue_text_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -239,7 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="0 vial / 0 doses"
+                    android:text="@string/_0_vial_0_doses"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -258,7 +261,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Utilized: "
+                    android:text="@string/utilized"
                     android:textColor="@color/pink_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -266,10 +269,10 @@
                 <TextView
 
                     android:id="@+id/tvUtilized"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="0 doses"
+                    android:text="@string/_0_doses"
                     android:layout_weight="1"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />

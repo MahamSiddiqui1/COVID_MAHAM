@@ -357,7 +357,7 @@ public class SyncChildVaccineImg_Fragment extends Fragment {
                         } else {
                             alertDialog.dismiss();
                             Log.d("000555", "else ");
-                            Toast.makeText(getActivity(), "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -492,7 +492,7 @@ public class SyncChildVaccineImg_Fragment extends Fragment {
                         } else {
                             alertDialog.dismiss();
                             Log.d("000555", "else ");
-                            Toast.makeText(getActivity(), "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {

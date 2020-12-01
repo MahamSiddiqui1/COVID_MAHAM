@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -171,7 +171,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/dateLabel"
                                             android:textColor="@color/text_color"
@@ -219,7 +219,7 @@
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:background="@null"
                                             android:cursorVisible="false"
-                                            android:drawableLeft="@drawable/ic_calender"
+                                            android:drawableStart="@drawable/ic_calender"
                                             android:drawablePadding="@dimen/_10sdp"
                                             android:drawableTint="@color/text_color"
                                             android:focusableInTouchMode="false"
@@ -278,7 +278,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
@@ -388,7 +388,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
@@ -410,7 +410,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_shortnessBreath"
                                             android:textColor="@color/text_color"
@@ -533,7 +533,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
@@ -551,7 +551,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_lossTaste"
                                             android:textColor="@color/text_color"
@@ -692,7 +692,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/se_lossSmell"
                                             android:textColor="@color/text_color"
@@ -710,7 +710,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/se_diarrhea"
                                             android:textColor="@color/text_color"

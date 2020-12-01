@@ -362,11 +362,11 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -460,7 +460,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
                         } else {
                         }
                     } else {
-                        final Snackbar snackbar = Snackbar.make(v, "ڈیٹا جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataSubmissionFailed, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -688,8 +688,8 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                 } catch (Exception e) {
                     Log.d("000362", "Err: " + e.getMessage());
-                    //Toast.makeText(side_effects_Form_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    //Toast.makeText(side_effects_Form_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -702,7 +702,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                 Log.d("000362", "error    " + error.getMessage());
                 //Toast.makeText(side_effects_Form_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -827,7 +827,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                 } catch (Exception e) {
                     Log.d("000362", "Err: " + e.getMessage());
-                    //Toast.makeText(side_effects_Form_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(side_effects_Form_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -950,7 +950,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
             Log.d("000362", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -996,12 +996,12 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
                 Log.d("000362", "latitude: " + latitude);
                 Log.d("000362", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonMessage, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }

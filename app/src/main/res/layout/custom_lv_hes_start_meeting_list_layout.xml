@@ -60,7 +60,7 @@
                         android:id="@+id/tv_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
                         android:text="@string/murd"
@@ -137,7 +137,7 @@
                         android:id="@+id/tv_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
                         android:text="@string/aurat"

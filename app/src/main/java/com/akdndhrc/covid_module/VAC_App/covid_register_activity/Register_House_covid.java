@@ -825,7 +825,7 @@ public class Register_House_covid extends AppCompatActivity {
 
                 } catch (Exception e) {
                     Log.d("000555", "Err: " + e.getMessage());
-                    //Toast.makeText(Register_House.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Register_House.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
                     Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
                 }
 

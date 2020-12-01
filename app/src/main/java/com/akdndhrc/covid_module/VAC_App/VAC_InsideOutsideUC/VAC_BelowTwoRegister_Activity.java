@@ -452,11 +452,11 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -648,13 +648,13 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                     } else {
                         alertDialog.dismiss();
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
 
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                 }
 
@@ -666,7 +666,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                 alertDialog.dismiss();
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -925,21 +925,21 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE uid = '" + uuid + "'";
                         ls.executeNonQuery(update_record);
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         //startActivity(new Intent(ctx,HomePageVacinator_Activity.class));
 
                     } else {
                         alertDialog.dismiss();
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(VAC_BelowTwoRegister_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000555", "Err: " + e.getMessage());
-                    // Toast.makeText(VAC_BelowTwoRegister_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(VAC_BelowTwoRegister_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -950,7 +950,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                 alertDialog.dismiss();
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(VAC_BelowTwoRegister_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {

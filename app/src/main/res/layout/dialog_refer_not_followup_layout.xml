@@ -56,7 +56,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:background="@color/edittext_background_color"
-            android:drawableLeft="@drawable/ic_calender"
+            android:drawableStart="@drawable/ic_calender"
             android:drawablePadding="@dimen/_10sdp"
             android:focusableInTouchMode="false"
             android:gravity="left"

@@ -546,11 +546,11 @@ public class VAC_BelowTwoProfile_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -833,20 +833,20 @@ public class VAC_BelowTwoProfile_Activity extends AppCompatActivity {
                                 "WHERE uid = '" + child_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
                     } else {
                         Log.d("000123", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(VAC_BelowInsideOutsideUC_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000123", "Err: " + e.getMessage());
-                    // Toast.makeText(VAC_BelowInsideOutsideUC_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    // Toast.makeText(VAC_BelowInsideOutsideUC_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
 
@@ -860,7 +860,7 @@ public class VAC_BelowTwoProfile_Activity extends AppCompatActivity {
 
                 Log.d("000123", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(VAC_BelowInsideOutsideUC_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1160,7 +1160,7 @@ public class VAC_BelowTwoProfile_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000123", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
     }
 

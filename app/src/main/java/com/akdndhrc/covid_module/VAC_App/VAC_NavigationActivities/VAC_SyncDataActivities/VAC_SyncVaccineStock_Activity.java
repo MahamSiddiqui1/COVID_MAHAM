@@ -303,13 +303,13 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000333", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000333", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -401,7 +401,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                         arrayList.remove(0);
                         adt.notifyDataSetChanged();
@@ -413,13 +413,13 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000333", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000333", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -429,7 +429,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                 Log.d("000333", "error    " + error.getMessage());
             //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 alertDialog.dismiss();
                 temp = "0";
                 finish();
@@ -514,25 +514,25 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                     break;
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePINrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePUKrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdReturnFailure, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
 
                     break;
 
@@ -651,7 +651,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     break;
             }
 
@@ -712,33 +712,33 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePINrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePUKrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdReturnFailure, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
@@ -791,7 +791,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                                 ls.executeNonQuery(update_record);
 
-                                Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
 
                                 arrayList.remove(0);
@@ -822,7 +822,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                                 temp = "0";
                                 Log.d("000951", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                Toast.makeText(ctx, "SMS sending failed...", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.fail, Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, 1500);

@@ -37,7 +37,7 @@
             android:id="@+id/lv_tvDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/_5sdp"
             android:text="@string/_123"
@@ -47,7 +47,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:layout_alignParentEnd="true"
+
             android:layout_centerVertical="true"
             android:src="@drawable/ic_immunization_icon"
             android:visibility="gone" />

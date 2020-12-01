@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
         }*/
 
 

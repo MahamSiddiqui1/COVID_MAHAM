@@ -54,7 +54,7 @@
                         android:id="@+id/hp_lv_tv_inside_outside"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+
                         android:layout_centerVertical="true"
                         android:text="@string/name"
                         android:layout_marginEnd="@dimen/_10sdp"

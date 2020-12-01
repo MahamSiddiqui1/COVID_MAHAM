@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -83,7 +83,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/rl_home"
+                android:layout_toStartOf="@+id/rl_home"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -190,7 +190,7 @@
                                         android:background="@null"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
                                         android:padding="@dimen/_5sdp"
@@ -210,7 +210,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_dard_ka_dorania_text"
@@ -239,7 +239,7 @@
                                         android:id="@+id/checkbox_12_ghanty_sy_kum"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -255,7 +255,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_12_ghanty_sy_kum"
+                                        android:layout_toStartOf="@id/checkbox_12_ghanty_sy_kum"
                                         android:text="@string/mbkz_12_ghanty_sy_kum_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -281,7 +281,7 @@
                                         android:id="@+id/checkbox_12_ghanty_sy_zyada"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -297,7 +297,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_12_ghanty_sy_zyada"
+                                        android:layout_toStartOf="@id/checkbox_12_ghanty_sy_zyada"
                                         android:text="@string/mbkz_12_ghanty_sy_zyada_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -316,7 +316,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_tareekh_pedaish_text"
@@ -509,7 +509,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_pedaish_ki_jagha_text"
@@ -641,7 +641,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_pedaishg_kis_ny_karwae_text"
@@ -670,7 +670,7 @@
                                         android:id="@+id/checkbox_hunarmand_farad_ny"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -686,7 +686,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_hunarmand_farad_ny"
+                                        android:layout_toStartOf="@id/checkbox_hunarmand_farad_ny"
                                         android:text="@string/mbkz_hunarmand_farad_ny_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -712,7 +712,7 @@
                                         android:id="@+id/checkbox_tarbiyat_yafta_farad_ny"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -728,7 +728,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_tarbiyat_yafta_farad_ny"
+                                        android:layout_toStartOf="@id/checkbox_tarbiyat_yafta_farad_ny"
                                         android:text="@string/mbkz_tarbiyat_yafta_farad_ny_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -754,7 +754,7 @@
                                         android:id="@+id/checkbox_ghair_tarbiyat_yafta_fard_ny"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -770,7 +770,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_ghair_tarbiyat_yafta_fard_ny"
+                                        android:layout_toStartOf="@id/checkbox_ghair_tarbiyat_yafta_fard_ny"
                                         android:text="@string/mbkz_ghair_tarbiyat_yafta_fard_ny_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -789,7 +789,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_pedaish_kai_wqt_bachey_ki_position_text"
@@ -816,7 +816,7 @@
                                         android:id="@+id/checkbox_normal_1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -832,7 +832,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_normal_1"
+                                        android:layout_toStartOf="@id/checkbox_normal_1"
                                         android:text="@string/mqaphcd_normal_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -843,7 +843,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_normal_1"
+                                        android:layout_toStartOf="@+id/txt_normal_1"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -857,7 +857,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_normal_nahi_thi_1"
+                                        android:layout_toStartOf="@+id/checkbox_normal_nahi_thi_1"
                                         android:text="@string/mbkz_normal_nahi_thi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -877,7 +877,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbkz_pedaish_ka_tariqa_text"
@@ -908,7 +908,7 @@
                                             android:id="@+id/checkbox_pedaish_normal"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_centerVertical="true"
                                             app:cbd_boxSize="@dimen/_25sdp"
                                             app:cbd_cornerRadius="0dp"
@@ -924,7 +924,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
-                                            android:layout_toLeftOf="@id/checkbox_pedaish_normal"
+                                            android:layout_toStartOf="@id/checkbox_pedaish_normal"
                                             android:text="@string/mqaphcd_normal_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -950,7 +950,7 @@
                                             android:id="@+id/checkbox_tool"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_centerVertical="true"
                                             app:cbd_boxSize="@dimen/_25sdp"
                                             app:cbd_cornerRadius="0dp"
@@ -966,7 +966,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
-                                            android:layout_toLeftOf="@id/checkbox_tool"
+                                            android:layout_toStartOf="@id/checkbox_tool"
                                             android:text="@string/mqaphcd_tool_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -992,7 +992,7 @@
                                             android:id="@+id/checkbox_operation"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_centerVertical="true"
                                             app:cbd_boxSize="@dimen/_25sdp"
                                             app:cbd_cornerRadius="0dp"
@@ -1008,7 +1008,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_centerVertical="true"
-                                            android:layout_toLeftOf="@id/checkbox_operation"
+                                            android:layout_toStartOf="@id/checkbox_operation"
                                             android:text="@string/mqaphcd_operation_text"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />

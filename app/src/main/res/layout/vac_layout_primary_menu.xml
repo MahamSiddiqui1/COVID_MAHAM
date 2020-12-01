@@ -16,8 +16,8 @@
             android:id="@+id/image_cancel"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentEnd="true"
+
+
             android:layout_alignParentTop="true"
             android:layout_marginEnd="15dp"
             android:layout_marginTop="@dimen/_5sdp"
@@ -73,7 +73,7 @@
                 android:id="@+id/rl_outside_union_council"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/circle_shape_layout">
@@ -114,7 +114,7 @@
             <TextView
                 android:layout_width="@dimen/_90sdp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_below="@+id/rl_outside_union_council"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginTop="5dp"

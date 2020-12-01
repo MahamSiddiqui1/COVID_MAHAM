@@ -336,13 +336,13 @@ public class SyncChildBemari_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000104", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000104", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -497,12 +497,12 @@ public class SyncChildBemari_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000104", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000104", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -894,7 +894,7 @@ public class SyncChildBemari_Activity extends AppCompatActivity {
                                         "WHERE member_uid = '" + member_uid + "'AND record_data= '" + record_data + "'AND added_on= '" + added_on + "'";
                                 ls.executeNonQuery(update_record);
 
-                                Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
 
                                 arrayList.remove(0);

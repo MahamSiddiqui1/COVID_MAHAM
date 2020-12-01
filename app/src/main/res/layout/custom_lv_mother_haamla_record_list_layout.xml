@@ -25,7 +25,7 @@
                 android:id="@+id/mhr_lv_tvHaaml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:text="@string/mhr_haaml_text"
                 android:textColor="@color/text_color"
@@ -64,7 +64,7 @@
                 android:id="@+id/mhr_lv_tvDateTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:text="@string/_2020_05_15"
                 android:textColor="@color/text_color"
@@ -103,7 +103,7 @@
                 android:id="@+id/mhr_lv_tvLMP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:text="@string/lmp"
                 android:textColor="@color/text_color"
@@ -134,7 +134,7 @@
                 android:id="@+id/mhr_lv_tvEDD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:text="@string/edd"
                 android:textColor="@color/text_color"

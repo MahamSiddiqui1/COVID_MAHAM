@@ -63,14 +63,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -190,7 +190,7 @@
                                         android:layout_marginStart="@dimen/_5sdp"
                                         android:background="@null"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:gravity="right"
                                       android:focusableInTouchMode="false"
                                         android:cursorVisible="false"
@@ -211,7 +211,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_wazan_text"
@@ -262,7 +262,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_khoon_ka_dabaoo_text"
@@ -291,7 +291,7 @@
                                         android:id="@+id/checkbox_140_90_sy_kum"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -307,7 +307,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_140_90_sy_kum"
+                                        android:layout_toStartOf="@id/checkbox_140_90_sy_kum"
                                         android:text="@string/mqaphcd_140_90_sy_kum_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -332,7 +332,7 @@
                                         android:id="@+id/checkbox_140_90_sy_zyada"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -348,7 +348,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_140_90_sy_zyada"
+                                        android:layout_toStartOf="@id/checkbox_140_90_sy_zyada"
                                         android:text="@string/mqaphcd_140_90_sy_zyada_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -367,7 +367,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_bachey_kay_dil_ki_dharkan_text"
@@ -396,7 +396,7 @@
                                         android:id="@+id/checkbox_mojood_hai_2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -412,7 +412,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_2"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_2"
                                         android:text="@string/mqaphcd_mojood_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -423,7 +423,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_2"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_2"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -437,7 +437,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_2"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_2"
                                         android:text="@string/mqaphcd_nahi_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -457,7 +457,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_raham_ki_oonchai_text"
@@ -490,7 +490,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/mqaphcd_centimeter_text"
                                             android:textColor="@color/text_color"
@@ -507,7 +507,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mqaphcd_haftay_hai_text"
                                             android:textColor="@color/text_color"
@@ -605,7 +605,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_bachay_ka_rukh_text"
@@ -633,7 +633,7 @@
                                         android:id="@+id/checkbox_sir_kay_baal_seedha"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -649,7 +649,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_sir_kay_baal_seedha"
+                                        android:layout_toStartOf="@id/checkbox_sir_kay_baal_seedha"
                                         android:text="@string/mqaphcd_sir_kay_baal_seedha_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -660,7 +660,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_sir_kay_baal_seedha"
+                                        android:layout_toStartOf="@+id/txt_sir_kay_baal_seedha"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -674,7 +674,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_aara"
+                                        android:layout_toStartOf="@+id/checkbox_aara"
                                         android:text="@string/mqaphcd_aara_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -702,7 +702,7 @@
                                         android:id="@+id/checkbox_thercha"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -718,7 +718,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_thercha"
+                                        android:layout_toStartOf="@id/checkbox_thercha"
                                         android:text="@string/mqaphcd_thercha_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -729,7 +729,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_thercha"
+                                        android:layout_toStartOf="@+id/txt_thercha"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -743,7 +743,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_ulta"
+                                        android:layout_toStartOf="@+id/checkbox_ulta"
                                         android:text="@string/mqaphcd_ulta_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -763,7 +763,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_peeshab_ka_muaina_text"
@@ -792,7 +792,7 @@
                                         android:id="@+id/checkbox_normal"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -808,7 +808,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_normal"
+                                        android:layout_toStartOf="@id/checkbox_normal"
                                         android:text="@string/mqaphcd_normal_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -834,7 +834,7 @@
                                     android:id="@+id/checkbox_sugar_ki_mojoodgi"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_centerVertical="true"
                                     app:cbd_boxSize="@dimen/_25sdp"
                                     app:cbd_cornerRadius="0dp"
@@ -850,7 +850,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
-                                    android:layout_toLeftOf="@id/checkbox_sugar_ki_mojoodgi"
+                                    android:layout_toStartOf="@id/checkbox_sugar_ki_mojoodgi"
                                     android:text="@string/mqaphcd_sugar_ki_mojoodgi_text"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
@@ -876,7 +876,7 @@
                                         android:id="@+id/checkbox_protein_ki_mojoodgi"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -892,7 +892,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_protein_ki_mojoodgi"
+                                        android:layout_toStartOf="@id/checkbox_protein_ki_mojoodgi"
                                         android:text="@string/mqaphcd_protein_ki_mojoodgi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -911,7 +911,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqaphcd_haemoglobin_text"
@@ -940,7 +940,7 @@
                                         android:id="@+id/checkbox_100gm_dl_sy_kum"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -956,7 +956,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_100gm_dl_sy_kum"
+                                        android:layout_toStartOf="@id/checkbox_100gm_dl_sy_kum"
                                         android:text="@string/mqaphcd_100gm_dl_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -966,7 +966,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/txt_100gm_dl"
+                                        android:layout_toStartOf="@id/txt_100gm_dl"
                                         android:layout_marginEnd="@dimen/_1sdp"
                                         android:text="@string/mqaphcd_say_kum_text"
                                         android:textColor="@color/text_color"
@@ -992,7 +992,7 @@
                                         android:id="@+id/checkbox_100gm_dl_sy_zyada"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -1008,7 +1008,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_100gm_dl_sy_zyada"
+                                        android:layout_toStartOf="@id/checkbox_100gm_dl_sy_zyada"
                                         android:text="@string/mqaphcd_100gm_dl_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -1018,7 +1018,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/txt_100gm_dl_"
+                                        android:layout_toStartOf="@id/txt_100gm_dl_"
                                         android:layout_marginEnd="@dimen/_1sdp"
                                         android:text="@string/mqaphcd_say_zyada_text"
                                         android:textColor="@color/text_color"

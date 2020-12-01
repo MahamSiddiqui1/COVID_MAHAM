@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Group Name"
+                android:text="@string/group_name"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />

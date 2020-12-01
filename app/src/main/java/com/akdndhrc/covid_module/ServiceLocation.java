@@ -285,7 +285,7 @@ public class ServiceLocation extends Service {
             //Toast.makeText(ctx, "Provider status changed",Toast.LENGTH_LONG).show();
             Log.d("000555", "status changed:" + "");
 
-            // Toast.makeText(mContext, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_LONG).show();
+            // Toast.makeText(mContext, R.string.GPSonMessage, Toast.LENGTH_LONG).show();
         }
 
         public void onProviderDisabled(String s) {

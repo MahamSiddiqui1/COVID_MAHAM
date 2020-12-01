@@ -56,6 +56,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static android.R.layout.simple_spinner_dropdown_item;
+import static com.akdndhrc.covid_module.R.layout.activity_child_virus_form;
+import static com.akdndhrc.covid_module.R.string.enterHealthCenterReferalPrompt;
+
 public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
     Context ctx = Child_CVirusFormView_Activity.this;
@@ -95,7 +99,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_child_virus_form);
+        setContentView(activity_child_virus_form);
 
         Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(this, Child_CVirusFormView_Activity.class));
 
@@ -476,7 +480,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
     private void update_data(final View v) {
 
         if (et_tareekh_indraj.getText().toString().length() < 1) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ اندراج منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -490,7 +494,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
         if (!cb_runynose_haan.isChecked() && !cb_runynose_nahi.isChecked() && !cb_throat_yes.isChecked() && !cb_throat_nahi.isChecked()
                 && !cb_cough_yes.isChecked() && !cb_cough_nahi.isChecked() && !cb_fever_yes.isChecked() && !cb_fever_nahi.isChecked() && !cb_braething_yes.isChecked() && !cb_braething_nahi.isChecked()) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی  چیک باکس کو منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectCheckboxPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -504,7 +508,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
 
         if (spRefHealthFacility.getSelectedItemPosition() == 0) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحت مرکز منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectHealthCenterPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -520,7 +524,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
         try {
             if (spRefHealthFacility.getSelectedItem().toString().equalsIgnoreCase("Others")) {
                 if (et_refferal_hospital_others.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ریفرل صحت مرکز درج کریں.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), enterHealthCenterReferalPrompt, Toast.LENGTH_LONG).show();
                     return;
                 }
             } else {
@@ -597,7 +601,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -615,14 +619,14 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
                             if (Utils.haveNetworkConnection(ctx) > 0) {
                                 sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), "0", String.valueOf(jsonObject), login_useruid, added_on);
                             } else {
-                                //  Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                //  Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                             }
 
                             update_referal_data(cur_added_on);
 
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noDataUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -737,7 +741,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
                         Log.d("000987", "Updated Query: " + res.toString());
 
 
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                         //  Toast.makeText(ctx, "Data updated successfully.", Toast.LENGTH_SHORT).show();
@@ -746,13 +750,13 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
                         Log.d("000987", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(Child_BemaariRecordFormView_Activity.this, "Data has not been updated to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000987", "catch: " + e.getMessage());
                     // Toast.makeText(Child_BemaariRecordFormView_Activity.this, "Data has been updated incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -763,8 +767,8 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
                 Log.d("000987", "error:" + error.getMessage());
                 //Toast.makeText(Child_BemaariRecordFormView_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                //Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                //Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -861,7 +865,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
 
 
             final ArrayAdapter<String> adptr_facilities = new ArrayAdapter<String>(this, R.layout.sp_health_facility_layout, facilities);
-            adptr_facilities.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            adptr_facilities.setDropDownViewResource(simple_spinner_dropdown_item);
 
             spRefHealthFacility.setAdapter(
                     new NothingSelectedSpinnerAdapter(
@@ -1100,7 +1104,7 @@ public class Child_CVirusFormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000987", " Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

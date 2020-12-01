@@ -377,7 +377,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
             e.printStackTrace();
 
             Log.d("000147", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

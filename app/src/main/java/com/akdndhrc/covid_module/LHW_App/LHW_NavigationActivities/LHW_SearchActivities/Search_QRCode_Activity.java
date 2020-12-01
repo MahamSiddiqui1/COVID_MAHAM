@@ -20,6 +20,8 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
+import static com.akdndhrc.covid_module.R.string.noQRcodeRecord;
+
 public class Search_QRCode_Activity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     Context ctx = Search_QRCode_Activity.this;
@@ -124,12 +126,12 @@ public class Search_QRCode_Activity extends AppCompatActivity implements ZXingSc
                         startActivity(intent);
                     //    alertDialog.dismiss();
                     } else {
-                        Toast.makeText(ctx, "اس QR کوڈ کا کوئی ریکارڈ نہیں", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, noQRcodeRecord, Toast.LENGTH_LONG).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000777", "QR Err: " +e.getMessage());
-                    Toast.makeText(ctx, "اس QR کوڈ کا کوئی ریکارڈ نہیں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx, noQRcodeRecord, Toast.LENGTH_LONG).show();
                 }
             }
 

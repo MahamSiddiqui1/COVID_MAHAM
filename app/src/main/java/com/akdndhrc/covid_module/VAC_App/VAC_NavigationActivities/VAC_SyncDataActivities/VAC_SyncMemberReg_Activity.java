@@ -50,6 +50,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.akdndhrc.covid_module.R.string.SIMstateLocked;
+import static com.akdndhrc.covid_module.R.string.SMSsendingFailEng;
+import static com.akdndhrc.covid_module.R.string.dataAlreadySyncedServer;
+import static com.akdndhrc.covid_module.R.string.dataSendSMS;
+import static com.akdndhrc.covid_module.R.string.dataSentInternet;
+import static com.akdndhrc.covid_module.R.string.simStatePINrequired;
+import static com.akdndhrc.covid_module.R.string.simStatePUKrequired;
+import static com.akdndhrc.covid_module.R.string.ussdErrorServiceUnavail;
+import static com.akdndhrc.covid_module.R.string.ussdReturnFailure;
+
 public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
     Context ctx = VAC_SyncMemberReg_Activity.this;
@@ -138,7 +148,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                 if (isConnectingToInternet()) {
 
                     if (temp.equalsIgnoreCase("0")) {
-                        Toast.makeText(ctx, "Data sending through Internet.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, dataSentInternet, Toast.LENGTH_SHORT).show();
                         Log.d("000202", "IFFFF 2");
                     } else {
                         Log.d("000202", "ELssssss 2");
@@ -171,7 +181,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
                 } else {
                     if (temp.equalsIgnoreCase("0")) {
-                        Toast.makeText(ctx, "Data sending through SMS.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, dataSendSMS, Toast.LENGTH_SHORT).show();
 
                         Log.d("000202", "IFFFF OFFLINE");
                     } else {
@@ -250,7 +260,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
 
                 }  else {
-                    Toast.makeText(ctx, "Data sending through SMS.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, dataSendSMS, Toast.LENGTH_SHORT).show();
 
                     pos_value = String.valueOf(position);
                    /* sendSMSMethod(mData[position][1], mData[position][2], mData[position][3], mData[position][4], mData[position][5], mData[position][6], mData[position][8],
@@ -353,13 +363,13 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000202", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000202", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -507,7 +517,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                                 "WHERE uid = '" + uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                         arrayList.remove(0);
                         adt.notifyDataSetChanged();
@@ -518,13 +528,13 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000202", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000202", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -541,7 +551,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                 {
                     Log.d("000202", "Duplicate Entry YES !!!!!!!!: ");
 
-                    Toast.makeText(ctx, "ڈیٹا سروس پر پہلے سے سینک ہے.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, dataAlreadySyncedServer, Toast.LENGTH_SHORT).show();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -558,7 +568,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                 }
                 else{
                     Log.d("000202", "Duplicate Entry NOT: ");
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     finish();
@@ -658,25 +668,25 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                     break;
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), SIMstateLocked, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), simStatePINrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), simStatePUKrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), ussdReturnFailure, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussedErrorServiceUnavail, Toast.LENGTH_LONG).show();
 
                     break;
 
@@ -819,7 +829,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     break;
             }
 
@@ -890,33 +900,33 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), simStatePINrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), simStatePUKrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), ussdReturnFailure, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
@@ -968,7 +978,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                                         "WHERE uid = '" + uid + "'";
                                 ls.executeNonQuery(update_record);
 
-                                Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
 
                                 arrayList.remove(0);
@@ -999,7 +1009,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
                                 temp = "0";
                                 Log.d("000951", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                Toast.makeText(ctx, "SMS sending failed...", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, SMSsendingFailEng, Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, 1500);
@@ -1009,7 +1019,7 @@ public class VAC_SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;

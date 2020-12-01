@@ -64,6 +64,8 @@ import retrofit2.Retrofit;
 import uk.co.senab.photoview.PhotoViewAttacher;
 
 import static android.graphics.BitmapFactory.decodeFile;
+import static com.akdndhrc.covid_module.R.string.incorrectDataSent;
+import static com.akdndhrc.covid_module.R.string.somethingWrong;
 
 
 public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatActivity {
@@ -158,7 +160,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }*/
 
@@ -225,11 +227,11 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                                 latitude = Double.parseDouble(jsonObject.getString("lat"));
                                 longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                                Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                             } else {
                                 latitude = Double.parseDouble("0.0");
                                 longitude = Double.parseDouble("0.0");
-                                Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (Exception e) {
@@ -258,7 +260,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                     Log.d("000555", "Delete Path :" + image_path);
                     file.delete();
                     finish();
-                    Toast.makeText(ctx, "Image not saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.imageNotSaved, Toast.LENGTH_SHORT).show();
                     Log.d("000555", "Img_Err:" + e.getMessage());
 
                 }
@@ -405,7 +407,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                     Log.d("000555", "Img_Er11r:" + e.getMessage());
-                    Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, somethingWrong, Toast.LENGTH_SHORT).show();
                     File file = new File(String.valueOf(image_path));
                     Log.d("000555", "Delete Path :" + image_path);
                     file.delete();
@@ -416,7 +418,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                     startActivity(newIntent);
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000555", "Img_Err:" + e.getMessage());
                     File file = new File(String.valueOf(image_path));
                     Log.d("000555", "Delete Path :" + image_path);
@@ -442,7 +444,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                 startActivity(newIntent);
             } else {
                 // Image capture failed, advise user
-                Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 Log.d("000555", "ELSE:");
                 File file = new File(String.valueOf(image_path));
                 Log.d("000555", "Delete Path :" + image_path);
@@ -650,19 +652,19 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
 
                         ls.executeNonQuery(update_record);
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000555", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
-                    //       Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //       Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -673,7 +675,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //  Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -759,7 +761,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
 
                     } catch (Exception e) {
                         Log.d("000555", "catch: " + e.getMessage());
-                        Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -790,7 +792,8 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
+
             return;
         }
     }
@@ -836,12 +839,13 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity extends AppCompatAc
                 Log.d("000555", "latitude: " + latitude);
                 Log.d("000555", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonMessage, Toast.LENGTH_SHORT).show();
+
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }

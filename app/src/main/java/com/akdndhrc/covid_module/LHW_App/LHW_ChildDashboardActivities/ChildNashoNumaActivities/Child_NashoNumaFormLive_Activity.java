@@ -257,7 +257,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
 
         if (et_tareekh_indraj.getText().toString().length() < 1) {
             //btn_jamaa_kre.setVisibility(View.GONE);
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ اندراج منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -322,11 +322,11 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
@@ -427,7 +427,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
 
                                 sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                             } else {
-                                // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                             }
 
                             new Handler().postDelayed(new Runnable() {
@@ -535,7 +535,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                         Log.d(TAG, "Updated Data: " + update_record);
                         Log.d(TAG, "Updated Query: " + res.toString());
 
-                        Toast tt  =Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -544,13 +544,13 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                         Log.d("000555", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(Child_NashoNumaFormLive_Activity.this, "Data has not been updated to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", "catch:  " + e.getMessage());
                     //Toast.makeText(Child_NashoNumaFormLive_Activity.this, "Data has been updated incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -561,7 +561,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(Child_NashoNumaFormLive_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -674,7 +674,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -720,12 +720,12 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                 Log.d("000555", "latitude: " + latitude);
                 Log.d("000555", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonMessage, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "برائے مہربانی جی پی ایس پوزیشن کو آن کریں", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.GPSonAlert, Toast.LENGTH_LONG).show();
             return;
         }
     }

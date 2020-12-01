@@ -63,6 +63,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.string.dataServiceNotSyncedEng;
+
 public class profile_activity extends AppCompatActivity {
 
     Context ctx = profile_activity.this;
@@ -681,7 +683,7 @@ public class profile_activity extends AppCompatActivity {
                 alertDialog.dismiss();
                 //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
                 Log.d("000987", " Error" + e.getMessage());
-                //Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
             }
 
 
@@ -726,7 +728,7 @@ public class profile_activity extends AppCompatActivity {
                         Log.d(TAG, "Updated Data: " + update_record);
                         Log.d(TAG, "Updated Query: " + res.toString());
 
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSyncedEnglish, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                         //  Toast.makeText(ctx, "Data updated successfuly.", Toast.LENGTH_SHORT).show();
@@ -735,7 +737,7 @@ public class profile_activity extends AppCompatActivity {
                         Log.d("000555", "else ");
                         // Toast.makeText(ctx, "Data has not been updated to the service.", Toast.LENGTH_SHORT).show();
 
-                        Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     }
@@ -743,7 +745,7 @@ public class profile_activity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000555", "catch:   " + e.getMessage());
                     //   Toast.makeText(ctx, "Data has been sent updated.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, dataServiceNotSyncedEng, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -752,7 +754,7 @@ public class profile_activity extends AppCompatActivity {
 
                 Log.d("000555", "error " + error.getMessage());
                 // Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -857,7 +859,7 @@ public class profile_activity extends AppCompatActivity {
             e.printStackTrace();
 
             Log.d("000555", "Error: " + e.getMessage());
-           // Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -23,6 +23,11 @@ import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
 
+import static com.akdndhrc.covid_module.R.string.correctCNICprompt;
+import static com.akdndhrc.covid_module.R.string.correctFamilyNumPrompt;
+import static com.akdndhrc.covid_module.R.string.enterMobilePrompt;
+import static com.akdndhrc.covid_module.R.string.navigation;
+
 public class  Search_Activity extends AppCompatActivity {
 
     Context ctx = Search_Activity.this;
@@ -92,7 +97,7 @@ public class  Search_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -162,7 +167,7 @@ public class  Search_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (et_idcard_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.enterCNICprompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -215,13 +220,13 @@ public class  Search_Activity extends AppCompatActivity {
                         } else {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, correctCNICprompt, Toast.LENGTH_SHORT).show();
                         }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, correctCNICprompt, Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -292,7 +297,7 @@ public class  Search_Activity extends AppCompatActivity {
 
 
                 if (et_phone_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, enterMobilePrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -345,14 +350,14 @@ public class  Search_Activity extends AppCompatActivity {
                             } else {
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "برائے مہربانی صحیح موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.correctMobilePrompt, Toast.LENGTH_SHORT).show();
 
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح موبائل نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.correctMobilePrompt, Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -400,7 +405,7 @@ public class  Search_Activity extends AppCompatActivity {
 
 
                 if (et_khandan_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "برائے مہربانی  خاندان نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.enterFamilyNumPrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -459,13 +464,13 @@ public class  Search_Activity extends AppCompatActivity {
                                 //Log.d("000777", "ELSE Count NicNO: " + mData[0][0]);
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "برائے مہربانی صحیح خاندان نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, correctFamilyNumPrompt, Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "برائے مہربانی صحیح خاندان نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, correctFamilyNumPrompt, Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }

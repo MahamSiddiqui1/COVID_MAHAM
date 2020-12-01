@@ -63,14 +63,14 @@
                 android:id="@+id/rl_searchvillage"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_searchvillage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:visibility="gone"
@@ -243,7 +243,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:drawableLeft="@drawable/search"
+                            android:drawableStart="@drawable/search"
                             android:drawablePadding="@dimen/_5sdp"
                             android:gravity="center"
                             android:text="@string/search"
@@ -253,8 +253,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentEnd="true"
+
+
                             android:layout_marginTop="@dimen/_5sdp"
                             android:layout_marginBottom="@dimen/_5sdp"
                             android:src="@drawable/view_line"
@@ -275,7 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:drawableLeft="@drawable/registration"
+                            android:drawableStart="@drawable/registration"
                             android:drawablePadding="@dimen/_5sdp"
                             android:gravity="center"
                             android:text="@string/register"

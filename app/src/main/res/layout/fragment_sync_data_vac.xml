@@ -61,14 +61,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -139,7 +139,7 @@
                                     android:id="@+id/txt_khandan_reg"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -179,7 +179,7 @@
                                     android:id="@+id/txt_reg"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -231,7 +231,7 @@
                                     android:id="@+id/txt_child_hifaziti_teekey_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -281,7 +281,7 @@
                                     android:id="@+id/txt_mother_hifaziti_teekey_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -292,7 +292,7 @@
                                     android:id="@+id/pb_11"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -333,7 +333,7 @@
                                     android:id="@+id/txt_video_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -344,7 +344,7 @@
                                     android:id="@+id/pb_4"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -370,7 +370,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="فیڈ بیک کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -432,7 +432,7 @@
                                     android:id="@+id/txt_merged_member"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -442,7 +442,7 @@
                                     android:id="@+id/pb_6"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -482,7 +482,7 @@
                                     android:id="@+id/txt_vaccine_stock"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -492,7 +492,7 @@
                                     android:id="@+id/pb_7"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 

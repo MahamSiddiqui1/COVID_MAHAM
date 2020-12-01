@@ -571,11 +571,11 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
@@ -775,7 +775,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
                             if (Utils.haveNetworkConnection(ctx) > 0) {
                                 sendPostRequest(mother_uid, TodayDate, String.valueOf(jsonObject), login_useruid, added_on);
                             } else {
-                                //  Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                //  Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                             }
 
                             update_medicineLog();
@@ -828,7 +828,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
             alertDialog.dismiss();
             //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
             Log.d("000852", " Error" + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -872,14 +872,14 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
                         Log.d("000852", "Updated Data: " + update_record);
                         Log.d("000852", "Updated Query: " + res.toString());
 
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
 
                     } else {
                         Log.d("000852", "else ");
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     }
@@ -887,7 +887,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000852", "Err: " + e.getMessage());
                     //Toast.makeText(ctx, "Data has been updated incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -900,7 +900,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                 Log.d("000852", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1249,23 +1249,23 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_ishal_medicine.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_1 = "1";
-                        et_tablet_quantity_1.setHint("گولی کی تعداد");
+                        et_tablet_quantity_1.setHint(R.string.tabQuantity);
 
                     } else if (sp_ishal_medicine.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_1 = "2";
-                        et_tablet_quantity_1.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_1.setHint(R.string.sypQuantity);
                     } else if (sp_ishal_medicine.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_1 = "3";
-                        et_tablet_quantity_1.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_1.setHint(R.string.lotionQuantity);
                     } else if (sp_ishal_medicine.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_1 = "4";
-                        et_tablet_quantity_1.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_1.setHint(R.string.sachetQuantity);
                     } else if (sp_ishal_medicine.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_1 = "5";
-                        et_tablet_quantity_1.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_1.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_1 = "0";
-                        et_tablet_quantity_1.setHint("تعداد");
+                        et_tablet_quantity_1.setHint(R.string.quantity);
                     }
                     try {
                         Lister ls = new Lister(ctx);
@@ -1349,22 +1349,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_khansi_aur_saans_ki_bemaari.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_2 = "1";
-                        et_tablet_quantity_2.setHint("گولی کی تعداد");
+                        et_tablet_quantity_2.setHint(R.string.tabQuantity);
                     } else if (sp_khansi_aur_saans_ki_bemaari.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_2 = "2";
-                        et_tablet_quantity_2.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_2.setHint(R.string.sypQuantity);
                     } else if (sp_khansi_aur_saans_ki_bemaari.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_2 = "3";
-                        et_tablet_quantity_2.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_2.setHint(R.string.lotionQuantity);
                     } else if (sp_khansi_aur_saans_ki_bemaari.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_2 = "4";
-                        et_tablet_quantity_2.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_2.setHint(R.string.sachetQuantity);
                     } else if (sp_khansi_aur_saans_ki_bemaari.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_2 = "5";
-                        et_tablet_quantity_2.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_2.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_2 = "0";
-                        et_tablet_quantity_2.setHint("تعداد");
+                        et_tablet_quantity_2.setHint(R.string.quantity);
                     }
 
                     try {
@@ -1436,22 +1436,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_bukhar.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_3 = "1";
-                        et_tablet_quantity_3.setHint("گولی کی تعداد");
+                        et_tablet_quantity_3.setHint(R.string.tabQuantity);
                     } else if (sp_bukhar.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_3 = "2";
-                        et_tablet_quantity_3.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_3.setHint(R.string.sypQuantity);
                     } else if (sp_bukhar.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_3 = "3";
-                        et_tablet_quantity_3.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_3.setHint(R.string.lotionQuantity);
                     } else if (sp_bukhar.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_3 = "4";
-                        et_tablet_quantity_3.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_3.setHint(R.string.sachetQuantity);
                     } else if (sp_bukhar.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_3 = "5";
-                        et_tablet_quantity_3.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_3.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_3 = "0";
-                        et_tablet_quantity_3.setHint("تعداد");
+                        et_tablet_quantity_3.setHint(R.string.quantity);
                     }
 
 
@@ -1528,22 +1528,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_khoon_ki_kami.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_4 = "1";
-                        et_tablet_quantity_4.setHint("گولی کی تعداد");
+                        et_tablet_quantity_4.setHint(R.string.tabQuantity);
                     } else if (sp_khoon_ki_kami.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_4 = "2";
-                        et_tablet_quantity_4.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_4.setHint(R.string.sypQuantity);
                     } else if (sp_khoon_ki_kami.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_4 = "3";
-                        et_tablet_quantity_4.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_4.setHint(R.string.lotionQuantity);
                     } else if (sp_khoon_ki_kami.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_4 = "4";
-                        et_tablet_quantity_4.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_4.setHint(R.string.sachetQuantity);
                     } else if (sp_khoon_ki_kami.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_4 = "5";
-                        et_tablet_quantity_4.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_4.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_4 = "0";
-                        et_tablet_quantity_4.setHint("تعداد");
+                        et_tablet_quantity_4.setHint(R.string.quantity);
                     }
 
 
@@ -1620,22 +1620,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_ankhon_ki_bemaari.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_5 = "1";
-                        et_tablet_quantity_5.setHint("گولی کی تعداد");
+                        et_tablet_quantity_5.setHint(R.string.tabQuantity);
                     } else if (sp_ankhon_ki_bemaari.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_5 = "2";
-                        et_tablet_quantity_5.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_5.setHint(R.string.sypQuantity);
                     } else if (sp_ankhon_ki_bemaari.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_5 = "3";
-                        et_tablet_quantity_5.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_5.setHint(R.string.lotionQuantity);
                     } else if (sp_ankhon_ki_bemaari.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_5 = "4";
-                        et_tablet_quantity_5.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_5.setHint(R.string.sachetQuantity);
                     } else if (sp_ankhon_ki_bemaari.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_5 = "5";
-                        et_tablet_quantity_5.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_5.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_5 = "0";
-                        et_tablet_quantity_5.setHint("تعداد");
+                        et_tablet_quantity_5.setHint(R.string.quantity);
                     }
 
                     try {
@@ -1712,22 +1712,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_jins_zanana_amraaz.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_6 = "1";
-                        et_tablet_quantity_6.setHint("گولی کی تعداد");
+                        et_tablet_quantity_6.setHint(R.string.tabQuantity);
                     } else if (sp_jins_zanana_amraaz.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_6 = "2";
-                        et_tablet_quantity_6.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_6.setHint(R.string.sypQuantity);
                     } else if (sp_jins_zanana_amraaz.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_6 = "3";
-                        et_tablet_quantity_6.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_6.setHint(R.string.lotionQuantity);
                     } else if (sp_jins_zanana_amraaz.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_6 = "4";
-                        et_tablet_quantity_6.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_6.setHint(R.string.sachetQuantity);
                     } else if (sp_jins_zanana_amraaz.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_6 = "5";
-                        et_tablet_quantity_6.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_6.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_6 = "0";
-                        et_tablet_quantity_6.setHint("تعداد");
+                        et_tablet_quantity_6.setHint(R.string.quantity);
                     }
 
 
@@ -1804,22 +1804,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_mumkina_malaria.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_7 = "1";
-                        et_tablet_quantity_7.setHint("گولی کی تعداد");
+                        et_tablet_quantity_7.setHint(R.string.tabQuantity);
                     } else if (sp_mumkina_malaria.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_7 = "2";
-                        et_tablet_quantity_7.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_7.setHint(R.string.sypQuantity);
                     } else if (sp_mumkina_malaria.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_7 = "3";
-                        et_tablet_quantity_7.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_7.setHint(R.string.lotionQuantity);
                     } else if (sp_mumkina_malaria.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_7 = "4";
-                        et_tablet_quantity_7.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_7.setHint(R.string.sachetQuantity);
                     } else if (sp_mumkina_malaria.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_7 = "5";
-                        et_tablet_quantity_7.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_7.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_7 = "0";
-                        et_tablet_quantity_7.setHint("تعداد");
+                        et_tablet_quantity_7.setHint(R.string.quantity);
                     }
 
 
@@ -1893,22 +1893,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_mumkina_tea_be.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_8 = "1";
-                        et_tablet_quantity_8.setHint("گولی کی تعداد");
+                        et_tablet_quantity_8.setHint(R.string.tabQuantity);
                     } else if (sp_mumkina_tea_be.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_8 = "2";
-                        et_tablet_quantity_8.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_8.setHint(R.string.sypQuantity);
                     } else if (sp_mumkina_tea_be.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_8 = "3";
-                        et_tablet_quantity_8.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_8.setHint(R.string.lotionQuantity);
                     } else if (sp_mumkina_tea_be.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_8 = "4";
-                        et_tablet_quantity_8.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_8.setHint(R.string.sachetQuantity);
                     } else if (sp_mumkina_tea_be.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_8 = "5";
-                        et_tablet_quantity_8.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_8.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_8 = "0";
-                        et_tablet_quantity_8.setHint("تعداد");
+                        et_tablet_quantity_8.setHint(R.string.quantity);
                     }
 
 
@@ -1984,22 +1984,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
                 if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItemPosition() > 0) {
                     if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_9 = "1";
-                        et_tablet_quantity_9.setHint("گولی کی تعداد");
+                        et_tablet_quantity_9.setHint(R.string.tabQuantity);
                     } else if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_9 = "2";
-                        et_tablet_quantity_9.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_9.setHint(R.string.sypQuantity);
                     } else if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_9 = "3";
-                        et_tablet_quantity_9.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_9.setHint(R.string.lotionQuantity);
                     } else if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_9 = "4";
-                        et_tablet_quantity_9.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_9.setHint(R.string.sachetQuantity);
                     } else if (sp_tashkhees_shuda_amraaz_tea_be.getSelectedItem().toString().startsWith("Eye")) {
-                        et_tablet_quantity_9.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_9.setHint(R.string.bottleQuantity);
                         medicine_type_9 = "5";
                     } else {
                         medicine_type_9 = "0";
-                        et_tablet_quantity_9.setHint("تعداد");
+                        et_tablet_quantity_9.setHint(R.string.quantity);
                     }
 
 
@@ -2075,22 +2075,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_muawnat_doraan_elaaj_tea_be.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_10 = "1";
-                        et_tablet_quantity_10.setHint("گولی کی تعداد");
+                        et_tablet_quantity_10.setHint(R.string.tabQuantity);
                     } else if (sp_muawnat_doraan_elaaj_tea_be.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_10 = "2";
-                        et_tablet_quantity_10.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_10.setHint(R.string.sypQuantity);
                     } else if (sp_muawnat_doraan_elaaj_tea_be.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_10 = "3";
-                        et_tablet_quantity_10.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_10.setHint(R.string.lotionQuantity);
                     } else if (sp_muawnat_doraan_elaaj_tea_be.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_10 = "4";
-                        et_tablet_quantity_10.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_10.setHint(R.string.sachetQuantity);
                     } else if (sp_muawnat_doraan_elaaj_tea_be.getSelectedItem().toString().startsWith("Eye")) {
                         medicine_type_10 = "5";
-                        et_tablet_quantity_10.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_10.setHint(R.string.bottleQuantity);
                     } else {
                         medicine_type_10 = "0";
-                        et_tablet_quantity_10.setHint("تعداد");
+                        et_tablet_quantity_10.setHint(R.string.quantity);
                     }
 
 
@@ -2163,22 +2163,22 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                     if (sp_elaaj.getSelectedItem().toString().contains("Tab")) {
                         medicine_type_11 = "1";
-                        et_tablet_quantity_11.setHint("گولی کی تعداد");
+                        et_tablet_quantity_11.setHint(R.string.tabQuantity);
                     } else if (sp_elaaj.getSelectedItem().toString().contains("Syp")) {
                         medicine_type_11 = "2";
-                        et_tablet_quantity_11.setHint("سیرپ کی تعداد");
+                        et_tablet_quantity_11.setHint(R.string.sypQuantity);
                     } else if (sp_elaaj.getSelectedItem().toString().contains("Lotion")) {
                         medicine_type_11 = "3";
-                        et_tablet_quantity_11.setHint("لوشن کی تعداد");
+                        et_tablet_quantity_11.setHint(R.string.lotionQuantity);
                     } else if (sp_elaaj.getSelectedItem().toString().equalsIgnoreCase("ORS")) {
                         medicine_type_11 = "4";
-                        et_tablet_quantity_11.setHint("شاشے کی تعداد");
+                        et_tablet_quantity_11.setHint(R.string.sachetQuantity);
                     } else if (sp_elaaj.getSelectedItem().toString().startsWith("Eye")) {
-                        et_tablet_quantity_11.setHint("بوتل کی تعداد");
+                        et_tablet_quantity_11.setHint(R.string.bottleQuantity);
                         medicine_type_11 = "5";
                     } else {
                         medicine_type_11 = "0";
-                        et_tablet_quantity_11.setHint("تعداد");
+                        et_tablet_quantity_11.setHint(R.string.quantity);
                     }
 
                     try {

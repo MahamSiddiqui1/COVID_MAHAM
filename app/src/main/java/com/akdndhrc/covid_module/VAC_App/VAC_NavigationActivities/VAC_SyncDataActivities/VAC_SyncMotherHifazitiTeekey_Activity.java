@@ -329,13 +329,13 @@ public class VAC_SyncMotherHifazitiTeekey_Activity extends AppCompatActivity {
                         alertDialog.dismiss();
                         Log.d("000206", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000206", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -479,7 +479,7 @@ public class VAC_SyncMotherHifazitiTeekey_Activity extends AppCompatActivity {
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                         arrayList.remove(0);
                         adt.notifyDataSetChanged();
@@ -488,15 +488,15 @@ public class VAC_SyncMotherHifazitiTeekey_Activity extends AppCompatActivity {
 
                     } else {
                         Log.d("000206", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         alertDialog.dismiss();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000206", " Error: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                 }
 
@@ -902,7 +902,7 @@ public class VAC_SyncMotherHifazitiTeekey_Activity extends AppCompatActivity {
 
                                 ls.executeNonQuery(update_record);
 
-                                Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                                 arrayList.remove(0);
                                 adt.notifyDataSetChanged();

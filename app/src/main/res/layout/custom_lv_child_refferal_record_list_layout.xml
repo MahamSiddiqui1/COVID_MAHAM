@@ -20,7 +20,7 @@
             android:id="@+id/crl_lv_tvRefferalNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+
             android:layout_centerVertical="true"
             android:text="@string/crl_refferal_number_text"
             android:textColor="@color/text_color"

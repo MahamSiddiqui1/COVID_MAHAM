@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -186,7 +186,7 @@
                                         android:layout_marginStart="@dimen/_5sdp"
                                         android:background="@null"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:gravity="right"
                                        android:focusableInTouchMode="false"
                                         android:cursorVisible="false"
@@ -221,7 +221,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_20sdp"
                                             android:text="@string/mqapdf_tareekh_muaina_text"
                                             android:textColor="@color/text_color"
@@ -238,7 +238,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_alignParentEnd="true"
+
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:text="@string/mqapdf_haaml_ka_dorania_text"
                                             android:textColor="@color/text_color"
@@ -334,7 +334,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_takleef_shikayat_text"
@@ -386,7 +386,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_anemia_text"
@@ -415,7 +415,7 @@
                                         android:id="@+id/checkbox_mojood_hai_1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -431,7 +431,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_1"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_1"
                                         android:text="@string/mqapdf_mojood_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -442,7 +442,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_1"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_1"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -456,7 +456,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_1"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_1"
                                         android:text="@string/mqapdf_nahi_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -477,7 +477,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_soojan_text"
@@ -506,7 +506,7 @@
                                         android:id="@+id/checkbox_mojood_hai_2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -522,7 +522,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_2"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_2"
                                         android:text="@string/mqapdf_mojood_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -533,7 +533,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_2"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_2"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -547,7 +547,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_2"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_2"
                                         android:text="@string/mqapdf_nahi_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -568,7 +568,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_bachey_ki_harkat_text"
@@ -597,7 +597,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_alignParentEnd="true"
+
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -612,7 +612,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mehsoos_hoti_hai"
+                                        android:layout_toStartOf="@id/checkbox_mehsoos_hoti_hai"
                                         android:text="@string/mqapdf_mehsoos_hoti_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -639,7 +639,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_alignParentEnd="true"
+
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -654,7 +654,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_nahi_mehsoos_hoti"
+                                        android:layout_toStartOf="@id/checkbox_nahi_mehsoos_hoti"
                                         android:text="@string/mqapdf_nahi_mehsoos_hoti_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -674,7 +674,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_sharamgha_sy_khoon_ana_text"
@@ -703,7 +703,7 @@
                                         android:id="@+id/checkbox_mojood_hai_4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -719,7 +719,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_4"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_4"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -730,7 +730,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_4"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_4"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -744,7 +744,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_4"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_4"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -764,7 +764,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_sharamgha_sy_badboo_daar_maya_ka_ikhraaj_text"
@@ -793,7 +793,7 @@
                                         android:id="@+id/checkbox_mojood_hai_5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -809,7 +809,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_5"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_5"
                                         android:text="@string/camf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -820,7 +820,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_5"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_5"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -834,7 +834,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_5"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_5"
                                         android:text="@string/camf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -854,7 +854,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_chatiyon_ki_koi_takleef_text"
@@ -883,7 +883,7 @@
                                         android:id="@+id/checkbox_mojood_hai_6"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -899,7 +899,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_mojood_hai_6"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_6"
                                         android:text="@string/mqapdf_mojood_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -910,7 +910,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_mojood_hai_6"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_6"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -924,7 +924,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_hai_6"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_6"
                                         android:text="@string/mqapdf_nahi_hai_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
@@ -945,7 +945,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mqapdf_folaad_ki_gooliyou_kai_mutaliq_hidayat_text"
@@ -968,10 +968,10 @@
                                     android:id="@+id/tv_male"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_centerVertical="true"
                                     android:layout_marginEnd="@dimen/_15sdp"
-                                    android:text="تعداد"
+                                    android:text="@string/quantity"
                                     android:textColor="@color/pink_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -980,7 +980,7 @@
                                     android:layout_width="@dimen/_30sdp"
                                     android:layout_height="@dimen/_30sdp"
                                     android:layout_marginEnd="@dimen/_31sdp"
-                                    android:layout_toLeftOf="@+id/tv_male"
+                                    android:layout_toStartOf="@+id/tv_male"
                                     android:background="@drawable/edittext_background_layout">
 
                                     <ImageView
@@ -999,7 +999,7 @@
                                     android:layout_centerInParent="true"
                                     android:layout_marginStart="5dp"
                                     android:layout_marginEnd="5dp"
-                                    android:layout_toLeftOf="@+id/rl_add">
+                                    android:layout_toStartOf="@+id/rl_add">
 
                                     <TextView
                                         android:id="@+id/tv_count"
@@ -1017,7 +1017,7 @@
                                     android:id="@+id/rl_sub"
                                     android:layout_width="@dimen/_30sdp"
                                     android:layout_height="@dimen/_30sdp"
-                                    android:layout_toLeftOf="@+id/rl_count"
+                                    android:layout_toStartOf="@+id/rl_count"
                                     android:background="@drawable/edittext_background_layout">
 
                                     <ImageView

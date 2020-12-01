@@ -6,6 +6,8 @@ import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.akdndhrc.covid_module.R;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -1019,7 +1021,7 @@ public class Helper extends SQLiteOpenHelper {
                         break;
                 }
 
-                Toast.makeText(context, "Database version changed from " + oldVersion + " to " + newVersion, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, context.getString(R.string.dbChangedMessage) + oldVersion + " to " + newVersion, Toast.LENGTH_LONG).show();
                 Log.d("000222", "SQL onUpgrade OldVersion: " + oldVersion + "   NewVersion: " + newVersion);
 
             } catch (Exception e) {

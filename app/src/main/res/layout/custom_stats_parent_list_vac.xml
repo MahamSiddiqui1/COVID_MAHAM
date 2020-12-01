@@ -32,7 +32,7 @@
                 android:id="@+id/tv_inside"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+
                 android:layout_below="@+id/tvName"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:text="@string/unionCouncilKanderColon"

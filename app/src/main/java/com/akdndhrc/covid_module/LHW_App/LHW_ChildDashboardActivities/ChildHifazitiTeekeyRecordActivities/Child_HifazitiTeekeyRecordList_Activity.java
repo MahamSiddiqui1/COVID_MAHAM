@@ -48,6 +48,11 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.string.Child_already_vaccinated;
+import static com.akdndhrc.covid_module.R.string.dataCollected;
+import static com.akdndhrc.covid_module.R.string.R.string.pleaseSelectOne;
+import static com.akdndhrc.covid_module.R.string.vaccine_not_yet_active;
+
 
 public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
@@ -191,10 +196,10 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                             if (mData_ref_vac != null) {
                                 Log.d("000555", "Refuse");
-                                Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("000555", "Not Ref");
-                                Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                             }
 
                         } else {
@@ -203,12 +208,12 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                     } catch (Exception e) {
                         Log.d("000555", "Err:" + e.getMessage());
-                        Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                     }
 
                 } else if (diffInDays < Integer.parseInt(mData[position][2])) {
 
-                    Toast.makeText(getApplicationContext(), "vaccine not yet active", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), vaccine_not_yet_active, Toast.LENGTH_SHORT).show();
                 } else {
 
                     try {
@@ -222,10 +227,10 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                             if (mData_ref_vac != null) {
                                 Log.d("000555", "Refuse 12");
-                                Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("000555", "Not Ref  12");
-                                Toast.makeText(getApplicationContext(), "Child already vaccinated", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                             }
 
                         } else {
@@ -282,7 +287,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
                     return;
                 } else {
                     Intent intent = new Intent(ctx, Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.class);
@@ -310,7 +315,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
                     return;
                 } else {
                     Intent intent = new Intent(ctx, Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity.class);
@@ -381,7 +386,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
                     return;
                 } else {
                     Intent intent = new Intent(ctx, Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.class);
@@ -409,7 +414,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ایک منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.pleaseSelectOne, Toast.LENGTH_LONG).show();
                     return;
                 } else {
                     Intent intent = new Intent(ctx, Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity.class);
@@ -457,11 +462,11 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -512,7 +517,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -585,11 +590,11 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -599,7 +604,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "ویکسین انکار کرنے کی وجہ منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.reasonToDenyVaccine, Toast.LENGTH_LONG).show();
                     return;
                 }
                 try {
@@ -637,7 +642,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                     Log.d("000555", "Data: " + ans1);
                     Log.d("000555", "Query: " + res);
 
-                    Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, dataCollected, Toast.LENGTH_SHORT).show();
 
                     if (Utils.haveNetworkConnection(ctx) > 0) {
 
@@ -699,17 +704,18 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
+
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -719,7 +725,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -789,18 +795,18 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //   Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
-                    //    Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //    Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -810,7 +816,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -1191,7 +1197,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT).show();
         }
 
 

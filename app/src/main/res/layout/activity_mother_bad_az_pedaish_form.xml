@@ -62,14 +62,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -83,7 +83,7 @@
                 android:id="@+id/rl_editform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/rl_home"
+                android:layout_toStartOf="@+id/rl_home"
                 android:layout_centerVertical="true">
 
                 <ImageView
@@ -188,7 +188,7 @@
                                         android:background="@null"
                                         android:cursorVisible="false"
                                         android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableRight="@drawable/ic_calender"
+                                        android:drawableEnd="@drawable/ic_calender"
                                         android:focusableInTouchMode="false"
                                         android:gravity="right"
                                         android:padding="@dimen/_5sdp"
@@ -208,7 +208,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_maa_zinda_ha_text"
@@ -235,7 +235,7 @@
                                     <CheckBox
                                         android:layout_width="@dimen/_40sdp"
                                         android:layout_height="@dimen/_40sdp"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         android:background="?android:attr/listChoiceIndicatorMultiple"
                                         android:backgroundTint="@color/pink_color"
@@ -247,7 +247,7 @@
                                         android:id="@+id/checkbox_haan_1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -263,7 +263,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_1"
+                                        android:layout_toStartOf="@id/checkbox_haan_1"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -274,7 +274,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_1"
+                                        android:layout_toStartOf="@+id/txt_haan_1"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -288,7 +288,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_1"
+                                        android:layout_toStartOf="@+id/txt_haan_1"
                                         android:background="@drawable/custom_checkbox_layout"
                                         android:button="@null"
                                         android:textColor="@color/hp_listview_textview_redcolor"
@@ -299,7 +299,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_1"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_1"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -319,7 +319,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_bachey_ki_pedaish_text"
@@ -348,7 +348,7 @@
                                         android:id="@+id/checkbox_haan_2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -364,7 +364,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_2"
+                                        android:layout_toStartOf="@id/checkbox_haan_2"
                                         android:text="زندہ"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -375,7 +375,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_2"
+                                        android:layout_toStartOf="@+id/txt_haan_2"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -389,7 +389,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_2"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_2"
                                         android:text="مردہ"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -409,7 +409,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_aanwal_ka_andar_rh_jana_text"
@@ -438,7 +438,7 @@
                                         android:id="@+id/checkbox_haan_3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -454,7 +454,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_3"
+                                        android:layout_toStartOf="@id/checkbox_haan_3"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -465,7 +465,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_3"
+                                        android:layout_toStartOf="@+id/txt_haan_3"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -479,7 +479,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_3"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_3"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -499,7 +499,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_nabz_text"
@@ -529,7 +529,7 @@
                                         android:id="@+id/checkbox_100_sy_kum_4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -545,7 +545,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_100_sy_kum_4"
+                                        android:layout_toStartOf="@id/checkbox_100_sy_kum_4"
                                         android:text="@string/camf_100_sy_kum_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -556,7 +556,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_100_sy_kum_4"
+                                        android:layout_toStartOf="@+id/txt_100_sy_kum_4"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -570,7 +570,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_100_sy_zayada_4"
+                                        android:layout_toStartOf="@+id/checkbox_100_sy_zayada_4"
                                         android:text="@string/camf_100_say_zayada_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
@@ -590,7 +590,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_sharamgha_sy_khoon_ka_zyada_ikhraj_text"
@@ -620,7 +620,7 @@
                                         android:id="@+id/checkbox_haan_5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -636,7 +636,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_5"
+                                        android:layout_toStartOf="@id/checkbox_haan_5"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -647,7 +647,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_5"
+                                        android:layout_toStartOf="@+id/txt_haan_5"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -661,7 +661,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_5"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_5"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -680,7 +680,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_darjae_hararat_text"
@@ -709,7 +709,7 @@
                                         android:id="@+id/checkbox_100_sy_kum_6"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -725,7 +725,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_100_sy_kum_6"
+                                        android:layout_toStartOf="@id/checkbox_100_sy_kum_6"
                                         android:text="@string/camf_100_sy_kum_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -736,7 +736,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_100_sy_kum_6"
+                                        android:layout_toStartOf="@+id/txt_100_sy_kum_6"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -750,7 +750,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_100_sy_zayada_6"
+                                        android:layout_toStartOf="@+id/checkbox_100_sy_zayada_6"
                                         android:text="@string/camf_100_say_zayada_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -770,7 +770,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_sharamgha_sy_badboodaar_mawaad_ka_ikhraj_text"
@@ -799,7 +799,7 @@
                                         android:id="@+id/checkbox_haan_7"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -815,7 +815,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_7"
+                                        android:layout_toStartOf="@id/checkbox_haan_7"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -826,7 +826,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_7"
+                                        android:layout_toStartOf="@+id/txt_haan_7"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -839,7 +839,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_7"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_7"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -859,7 +859,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_chatiyon_ki_koi_takleef_text"
@@ -888,7 +888,7 @@
                                         android:id="@+id/checkbox_haan_8"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -904,7 +904,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_8"
+                                        android:layout_toStartOf="@id/checkbox_haan_8"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -915,7 +915,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_8"
+                                        android:layout_toStartOf="@+id/txt_haan_8"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -929,7 +929,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_8"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_8"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -949,7 +949,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_anemia_text"
@@ -978,7 +978,7 @@
                                         android:id="@+id/checkbox_haan_9"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
@@ -994,7 +994,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_9"
+                                        android:layout_toStartOf="@id/checkbox_haan_9"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1005,7 +1005,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_9"
+                                        android:layout_toStartOf="@+id/txt_haan_9"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -1019,7 +1019,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_9"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_9"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1039,7 +1039,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_maa_ka_doodh_foran_shuru_kya_text"
@@ -1068,7 +1068,7 @@
                                         android:id="@+id/checkbox_haan_10"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
 
                                         app:cbd_boxSize="@dimen/_25sdp"
@@ -1085,7 +1085,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_10"
+                                        android:layout_toStartOf="@id/checkbox_haan_10"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1097,7 +1097,7 @@
                                         android:layout_centerVertical="true"
 
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_10"
+                                        android:layout_toStartOf="@+id/txt_haan_10"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -1111,7 +1111,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_10"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_10"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1131,7 +1131,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_maa_ko_khoraak_kai_mutaliq_mashwara_dya_text"
@@ -1160,7 +1160,7 @@
                                         android:id="@+id/checkbox_haan_11"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
 
                                         app:cbd_boxSize="@dimen/_25sdp"
@@ -1177,7 +1177,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_11"
+                                        android:layout_toStartOf="@id/checkbox_haan_11"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1189,7 +1189,7 @@
                                         android:layout_centerVertical="true"
 
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_11"
+                                        android:layout_toStartOf="@+id/txt_haan_11"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -1203,7 +1203,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_11"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_11"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1223,7 +1223,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
                                     android:text="@string/mbapf_khandani_mansobabandi_kai_mutaliq_mashwarah_dya_text"
@@ -1252,7 +1252,7 @@
                                         android:id="@+id/checkbox_haan_12"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentEnd="true"
+
                                         android:layout_centerVertical="true"
 
                                         app:cbd_boxSize="@dimen/_25sdp"
@@ -1269,7 +1269,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@id/checkbox_haan_12"
+                                        android:layout_toStartOf="@id/checkbox_haan_12"
                                         android:text="@string/mbapf_haan_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />
@@ -1281,7 +1281,7 @@
                                         android:layout_centerVertical="true"
 
                                         android:layout_marginEnd="@dimen/_15sdp"
-                                        android:layout_toLeftOf="@+id/txt_haan_12"
+                                        android:layout_toStartOf="@+id/txt_haan_12"
                                         app:cbd_boxSize="@dimen/_25sdp"
                                         app:cbd_cornerRadius="0dp"
                                         app:cbd_height="@dimen/_40sdp"
@@ -1295,7 +1295,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
-                                        android:layout_toLeftOf="@+id/checkbox_nahi_12"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_12"
                                         android:text="@string/mbapf_nahi_text"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_16sdp" />

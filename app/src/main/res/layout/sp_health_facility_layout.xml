@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/_8sdp"
     android:textSize="@dimen/_14sdp"
     android:textAlignment="gravity"
     android:gravity="right|center_vertical"
-    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
-    android:drawableTint="@color/dark_blue_color"
     android:layout_gravity="right|center_vertical"
     android:textColor="@color/dark_blue_color"
-    android:text="صحت مرکز منتخب کریں"/>
+    android:text="@string/selectHealthCenterPrompt"
+    android:drawableTint="@color/dark_blue_color"
+    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
+    tools:targetApi="m" />

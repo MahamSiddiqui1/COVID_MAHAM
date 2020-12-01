@@ -61,14 +61,14 @@
                 android:id="@+id/rl_home"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true">
 
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
@@ -128,7 +128,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="بچے کے  خاندان رجسٹریشن کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -164,7 +164,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="بچے کے رجسٹریشن کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -216,7 +216,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="بچے کے حفاظتی ٹیکے کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -266,7 +266,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="ماں کے حفاظتی ٹیکے کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -318,7 +318,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="ویڈیوز کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -365,7 +365,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:text="فیڈ بیک کا ریکارڈ"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"

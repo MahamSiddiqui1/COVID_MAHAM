@@ -63,7 +63,7 @@
                 android:id="@+id/rl_sync"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentEnd="true"
+
                 android:layout_centerVertical="true"
                 android:visibility="gone">
 
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
@@ -146,7 +146,7 @@
                                     android:id="@+id/txt_sync_country"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -188,7 +188,7 @@
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textStyle="bold"
                                     android:visibility="gone" />
 
@@ -196,7 +196,7 @@
                                     android:id="@+id/pb_2"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -235,7 +235,7 @@
                                     android:id="@+id/txt_sync_district"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                  android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -245,7 +245,7 @@
                                     android:id="@+id/pb_3"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                     android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -284,7 +284,7 @@
                                     android:id="@+id/txt_sync_tehsil"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -295,7 +295,7 @@
                                     android:id="@+id/pb_4"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                     android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -335,7 +335,7 @@
                                     android:id="@+id/txt_sync_unioncounil"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -346,7 +346,7 @@
                                     android:id="@+id/pb_5"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                     android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -386,7 +386,7 @@
                                     android:id="@+id/txt_sync_facility"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -397,7 +397,7 @@
                                     android:id="@+id/pb_6"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                     android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -437,7 +437,7 @@
                                     android:id="@+id/txt_sync_villages"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
 
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
@@ -448,7 +448,7 @@
                                     android:id="@+id/pb_7"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -488,7 +488,7 @@
                                     android:id="@+id/txt_sync_users"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -498,7 +498,7 @@
                                     android:id="@+id/pb_8"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -536,7 +536,7 @@
                                     android:id="@+id/txt_sync_medicines"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -546,7 +546,7 @@
                                     android:id="@+id/pb_9"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 
@@ -584,7 +584,7 @@
                                     android:id="@+id/txt_sync_vaccines"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
+
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -594,7 +594,7 @@
                                     android:id="@+id/pb_10"
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_20sdp"
-                                    android:layout_alignParentEnd="true"
+
                                     android:indeterminateDrawable="@drawable/circular_progressbar_layout"
                                     android:visibility="gone" />
 

@@ -52,7 +52,7 @@
                     android:id="@+id/iv_gender_icon"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_alignParentEnd="true"
+
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_15sdp" />
 

@@ -626,11 +626,11 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
@@ -719,7 +719,7 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
 
                                 sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                             } else {
-                                // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                             }
 
                         } else {
@@ -803,7 +803,7 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                         Log.d(TAG, "Updated Data: " + update_record);
                         Log.d(TAG, "Updated Query: " + res.toString());
 
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -1129,7 +1129,7 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
 
 
         } catch (Exception e) {
-            Toast.makeText(ctx, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
             Log.d("000555", " Error" + e.getMessage());
         }
 

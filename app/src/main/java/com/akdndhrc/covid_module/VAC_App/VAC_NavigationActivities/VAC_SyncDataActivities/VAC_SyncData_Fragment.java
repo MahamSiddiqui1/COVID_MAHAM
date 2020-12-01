@@ -665,7 +665,7 @@ public class VAC_SyncData_Fragment extends Fragment {
 
         } catch (Exception e) {
             Log.d("000666", "Err: " + e.getMessage());
-            Toast.makeText(getContext(), "Something wrong!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
     }
 

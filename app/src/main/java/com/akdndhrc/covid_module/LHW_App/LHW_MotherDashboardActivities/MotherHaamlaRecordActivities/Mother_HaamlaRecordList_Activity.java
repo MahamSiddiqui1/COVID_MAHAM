@@ -364,11 +364,11 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -437,7 +437,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                             sendPostRequest(mother_uid, peg_uuid, TodayDate, et_akhiri_haiz_ki_tareekh.getText().toString(), et_mutawaqqa_zichgi_ki_tareekh.getText().toString()
                                     , String.valueOf(jobj), login_useruid, cur_added_on);
                         } else {
-                            //Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                         var_add_preg = "1";
@@ -602,7 +602,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                             sendPostRequest(mother_uid, mData[pos][4], mData[pos][2], et_akhiri_haiz_ki_tareekh.getText().toString(), et_mutawaqqa_zichgi_ki_tareekh.getText().toString()
                                     , String.valueOf(jsonObject), login_useruid, mData[pos][3]);
                         } else {
-                            //Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                         new Handler().postDelayed(new Runnable() {
@@ -897,7 +897,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                     sendPostRequest_DeletePreg(mother_uid, mData[position][4], mData[position][2], hashMapArrayList.get(position).get("haaml_txt").split(",")[0], hashMapArrayList.get(position).get("haaml_txt").split(",")[1],
                              String.valueOf(jsonObject), login_useruid, mData[position][3]);
                 } else {
-                    //Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -1039,7 +1039,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND pregnancy_id= '" + pregnancy_id + "'AND added_on= '" + added_on + "'";
                         ls.executeNonQuery(update_record);
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -1047,14 +1047,14 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //  Toast.makeText(Mother_HaamlaRecordList_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", "Err    " + e.getMessage());
-                    //   Toast.makeText(Mother_HaamlaRecordList_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    //   Toast.makeText(Mother_HaamlaRecordList_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -1065,7 +1065,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(Mother_HaamlaRecordList_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1137,7 +1137,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                                 "is_synced='" + String.valueOf(-1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND pregnancy_id= '" + pregnancy_id + "'AND added_on= '" + added_on + "'";
                         ls.executeNonQuery(update_record);
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -1145,14 +1145,14 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "ڈیٹا سروس پر سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                         //  Toast.makeText(Mother_HaamlaRecordList_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", "Err    " + e.getMessage());
-                    //   Toast.makeText(Mother_HaamlaRecordList_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    //   Toast.makeText(Mother_HaamlaRecordList_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -1163,7 +1163,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(Mother_HaamlaRecordList_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 

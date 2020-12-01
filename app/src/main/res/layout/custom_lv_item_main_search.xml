@@ -59,7 +59,7 @@
             android:layout_centerVertical="true"
             android:layout_below="@id/tvName"
             android:src="@drawable/baby_boy_icon"
-            android:layout_alignParentEnd="true"
+
             android:layout_marginTop="5dp"/>
 
     </RelativeLayout>

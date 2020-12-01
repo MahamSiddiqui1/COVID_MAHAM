@@ -395,7 +395,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                         } else {
                             alertDialog.dismiss();
                             Log.d("000555", "else ");
-                            Toast.makeText(VAC_SyncImages_Activity.this, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(VAC_SyncImages_Activity.this, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -475,7 +475,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                         } else {
                             alertDialog.dismiss();
                             Log.d("000555", "else ");
-                            Toast.makeText(VAC_SyncImages_Activity.this, "Something Wrong!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(VAC_SyncImages_Activity.this, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {

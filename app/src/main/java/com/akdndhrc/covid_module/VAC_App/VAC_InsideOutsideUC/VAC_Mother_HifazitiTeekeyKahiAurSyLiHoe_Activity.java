@@ -192,8 +192,8 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
 
                         if (mData_ref_vac != null) {
                             Log.d("000555", "Refuse");
-//                            Toast.makeText(getApplicationContext(), "Refused vaccine", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(view, "ویکسین لگانے سے انکار کیا گیا.", Snackbar.LENGTH_SHORT);
+//                            Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
+                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineDenied, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -209,7 +209,7 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
                             snackbar.show();
                         } else {
                             Log.d("000555", "Not Ref");
-                            final Snackbar snackbar = Snackbar.make(view, "یہ ویکسین لگ چکی ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(view, R.string.thisVaccineApplied, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -325,7 +325,7 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
             @Override
             public void onClick(View v) {
 
-                btn_name = "Mobile Vaccination";
+                btn_name = getString(R.string.mobileVaccination);
                 btn_value = "3";
 
 
@@ -353,13 +353,13 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
             public void onClick(View v) {
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ موصول منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.enterDateReceived, Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 if (sp_vaccine_kaha_farham_hoe.getSelectedItemPosition()==0)
                 {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی ویکسین کہاں فراہم کی گئی منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectVaccineAvailPlace, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -388,11 +388,11 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -451,7 +451,7 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
 
                     if (res.toString().equalsIgnoreCase("true"))
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "ویکسین ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataSubmitted, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -469,7 +469,7 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
 
                             sendPostRequest(mother_uid, String.valueOf(pos), et_tareekh_mosool_hoe.getText().toString(), String.valueOf(jobj), login_useruid, added_on);
                         } else {
-                            // Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -548,12 +548,12 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "ویکسین ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     } else {
                         Log.d("000266", "else ");
-                        Toast tt  =Toast.makeText(ctx, "ڈیٹا سنک نہیں ہوا", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
@@ -561,8 +561,8 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
 
                 } catch (Exception e) {
                     Log.d("000266", " Error: " + e.getMessage());
-                    //Toast.makeText(ctx, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "ویکسین ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.vaccineDataSynced, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -804,7 +804,7 @@ public class VAC_Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatA
 
         } catch (Exception e) {
             Log.d("000555", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecord, Toast.LENGTH_SHORT).show();
         }
 
 

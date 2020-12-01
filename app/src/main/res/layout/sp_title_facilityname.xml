@@ -7,7 +7,7 @@
     android:textSize="@dimen/_12sdp"
     android:textAlignment="gravity"
     android:gravity="center_vertical"
-    android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+    android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
     android:drawableTint="@color/dark_blue_color"
     android:textColor="@color/dark_blue_color"
     android:text="Select Health Facility Name"/>

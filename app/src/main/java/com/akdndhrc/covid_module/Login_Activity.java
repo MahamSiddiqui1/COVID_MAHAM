@@ -985,7 +985,7 @@ public class Login_Activity extends Activity {
 
                     } catch (Exception e) {
                         Log.d("000258", "Err:    " + e.getMessage());
-                        Toast.makeText(Login_Activity.this, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login_Activity.this, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
 
                     }
                     Log.d("000258", "*************** ALL SYNC  SUCCESSFULLY*****************");
@@ -1402,14 +1402,14 @@ public class Login_Activity extends Activity {
                         latitude = Double.parseDouble(mLogin_data[0][1]);
                         longitude = Double.parseDouble(mLogin_data[0][2]);
 
-                        Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000258", " ELSE  Last Login Date");
                         latitude = Double.parseDouble("0.0");
                         longitude = Double.parseDouble("0.0");
 
-                        Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color_white">
@@ -32,7 +34,7 @@
             android:paddingRight="5dp"
             android:paddingTop="10dp"
             android:src="@drawable/ic_close_black_24dp"
-            android:tint="@color/pink_color" />
+            app:tint="@color/pink_color" />
 
 
         <LinearLayout
@@ -58,7 +60,8 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:background="@null"
                 android:popupElevation="0dp"
-                android:spinnerMode="dropdown" />
+                android:spinnerMode="dropdown"
+                tools:targetApi="lollipop" />
 
 
         </LinearLayout>
@@ -78,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="ابھی ویکسینیٹ کریں"
+                android:text="@string/vaccinateNow"
             android:textColor="@color/color_white"
             android:textSize="@dimen/_12sdp" />
 
@@ -89,7 +92,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="کہی اور سے کرائی ہو"
+                android:text="@string/fromSomewhereElse"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -112,7 +115,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="Refuse Vaccine"
+                android:text="@string/refuse_vaccine"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp"
                 android:visibility="gone" />

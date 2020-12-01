@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
+
                     app:cbd_boxSize="@dimen/_25sdp"
                     app:cbd_cornerRadius="0dp"
                     app:cbd_height="@dimen/_25sdp"

@@ -208,7 +208,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
                         Toast.makeText(ctx, "Position:  " + childPosition, Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
-                    Toast.makeText(ctx, "Something wrong!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
 
 

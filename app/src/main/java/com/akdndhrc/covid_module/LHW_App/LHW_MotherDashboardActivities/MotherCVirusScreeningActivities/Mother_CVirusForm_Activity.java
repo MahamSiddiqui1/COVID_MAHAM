@@ -423,7 +423,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
 
                 if (et_tareekh_indraj.getText().toString().length() < 1) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ اندراج منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -489,11 +489,11 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, "Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
-                            Toast.makeText(ctx, "Not Data GPS", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -571,7 +571,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(v, "ڈیٹا جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataSubmissionMessage, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -589,7 +589,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
                         if (Utils.haveNetworkConnection(ctx) > 0) {
                             sendPostRequest(mother_uid, et_tareekh_indraj.getText().toString(), "1", String.valueOf(jobj), login_useruid, cur_added_on);
                         } else {
-                            //  Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            //  Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
                         ReferalFormSubmit();
@@ -602,7 +602,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
                             }
                         }, 2500);
                     } else {
-                        final Snackbar snackbar = Snackbar.make(v, "ڈیٹا جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataSubmissionFailed, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -665,19 +665,19 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
                         ls.executeNonQuery(update_record);
 
-                        Toast tt = Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے", Toast.LENGTH_SHORT);
+                        Toast tt = Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
                     } else {
                         Log.d("000987", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(Mother_CVirusForm_Activity.this, "ڈیٹا سروس پر سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Mother_CVirusForm_Activity.this, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000987", "catch: " + e.getMessage());
-                    Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                    Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -688,7 +688,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
                 Log.d("000987", "error:" + error.getMessage());
                 // Toast.makeText(Child_BemaariRecordForm_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -763,7 +763,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
             if (Utils.haveNetworkConnection(ctx) > 0) {
                 sendPostRequestReferal(mother_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jobj), login_useruid, cur_added_on);
             } else {
-                //  Toast.makeText(ctx, "ڈیٹا جمع ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                //  Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
             }
 
         } catch (Exception e) {
@@ -820,7 +820,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
                 } catch (Exception e) {
 
-                    //Toast.makeText(Child_BemaariRecordForm_Activity.this, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Child_BemaariRecordForm_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
                     Log.d("000987", "ref catch " + e.getMessage());
                 }
 

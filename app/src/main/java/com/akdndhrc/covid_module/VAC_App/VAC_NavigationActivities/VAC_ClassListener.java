@@ -665,7 +665,7 @@ public class VAC_ClassListener implements OnClickListener {
 
                 } catch (Exception e) {
                     Log.d("000555", "catch    " + e.getMessage());
-                    //Toast.makeText(act, "Data has been sent incorrectly.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(act, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -677,7 +677,7 @@ public class VAC_ClassListener implements OnClickListener {
 
                 Log.d("000555", "error    " + error.getMessage());
                // Toast.makeText(act, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(act, "ڈیٹا سینک نہیں ہوا", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {
