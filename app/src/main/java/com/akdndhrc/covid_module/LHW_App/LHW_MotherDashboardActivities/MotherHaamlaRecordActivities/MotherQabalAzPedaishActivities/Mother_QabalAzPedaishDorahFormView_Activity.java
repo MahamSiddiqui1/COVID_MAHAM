@@ -499,7 +499,7 @@ public class Mother_QabalAzPedaishDorahFormView_Activity extends AppCompatActivi
 
                             sendPostRequest(mother_uid, preg_id, et_tareekh_indraj.getText().toString(), "1", String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -562,7 +562,7 @@ public class Mother_QabalAzPedaishDorahFormView_Activity extends AppCompatActivi
                         Boolean res = ls.executeNonQuery(update_record);
                         Log.d("000555", "Updated Data: " + update_record);
                         Log.d("000555", "Updated Query: " + res.toString());
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(ctx, "Data updated successfully", Toast.LENGTH_SHORT).show();
 
                     } else {

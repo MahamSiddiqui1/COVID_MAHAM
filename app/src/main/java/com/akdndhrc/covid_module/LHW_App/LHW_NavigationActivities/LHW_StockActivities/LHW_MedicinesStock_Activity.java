@@ -485,7 +485,7 @@ public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     alertD.dismiss();
                     Log.d("0006326", "Error: " + e.getMessage());
-                    Toast.makeText(getApplicationContext(), "Something wrong!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 } finally {
 
                     InputMethodManager inputMethodManager = (InputMethodManager) getApplicationContext().getSystemService(Activity.INPUT_METHOD_SERVICE);

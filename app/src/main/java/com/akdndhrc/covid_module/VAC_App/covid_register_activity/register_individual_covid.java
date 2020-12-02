@@ -313,7 +313,7 @@ public class register_individual_covid extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -482,7 +482,7 @@ public class register_individual_covid extends AppCompatActivity {
 
                /* if (age <= 2) {
                     //Toast.makeText(getApplicationContext(), "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectedAgeGreater2Prompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1029,7 +1029,7 @@ public class register_individual_covid extends AppCompatActivity {
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE uid = '" + uuid + "'";
                         ls.executeNonQuery(update_record);
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         //startActivity(new Intent(ctx,HomePageVacinator_Activity.class));
 
                     } else {
@@ -1144,7 +1144,7 @@ public class register_individual_covid extends AppCompatActivity {
                         dob.set(year, monthOfYear, dayOfMonth);
 
                         age = today.get(Calendar.YEAR) - year;
-                        Log.d("000555", "Age: " + age);
+                        Log.d("000555", R.string.ageColon + age);
 
 
                          //   ll_vacination_card_number.setVisibility(View.GONE);

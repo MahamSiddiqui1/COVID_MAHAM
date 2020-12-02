@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_MotherDashboardActivities.MotherRefferalActivities.Mother_RefferalForm_Activity">
+    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildRefferalActivities.Child_RefferalForm_Activity">
 
 
     <RelativeLayout
@@ -30,23 +30,24 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="@string/mref_refferal_text"
+                    android:text="@string/crf_refferal_text"
                     android:textColor="@color/color_white"
-                    android:textSize="@dimen/_14sdp"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:visibility="gone"
                 android:id="@+id/rl_navigation_drawer"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:clickable="true">
+                android:clickable="true"
+                android:focusable="true">
 
                 <ImageView
-                    android:visibility="gone"
                     android:id="@+id/iv_navigation_drawer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -55,8 +56,33 @@
                     android:layout_marginStart="@dimen/_1sdp"
                     android:clickable="true"
                     android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
+                    android:src="@drawable/ic_menu"
+                    android:focusable="true" />
 
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_editform"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_editprofile_icon"
+                    android:tint="@color/color_white"
+                    android:visibility="gone"
+                    android:focusable="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -76,29 +102,9 @@
                     android:clickable="true"
                     android:padding="@dimen/_4sdp"
                     android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/color_white" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_editform"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:clickable="true">
-
-                <ImageView
-                    android:id="@+id/iv_editform"
-                    android:layout_width="@dimen/_45sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_centerInParent="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_6sdp"
-                    android:src="@drawable/ic_editprofile_icon"
                     android:tint="@color/color_white"
-                    android:visibility="gone" />
+                    android:focusable="true" />
+
             </RelativeLayout>
 
         </RelativeLayout>
@@ -160,7 +166,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_tareekh_indraj_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -192,7 +198,8 @@
                                     android:focusableInTouchMode="false"
                                     android:gravity="right"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="RtlHardcoded" />
 
                             </LinearLayout>
 
@@ -211,7 +218,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/mrf_refferal_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_14sdp"
+                                android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
 
                         </TableRow>
@@ -226,9 +233,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="@dimen/_5sdp"
                                 android:layout_weight="1"
-                                android:text="ریفرل صحت مرکز"
+                                android:text="@string/referalHealthCenter"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -246,7 +253,7 @@
                                 <Spinner
                                     android:id="@+id/spRefHealthFacility"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:background="@drawable/edittext_background_layout"
                                     android:popupElevation="0dp"
                                     android:spinnerMode="dropdown" />
@@ -283,7 +290,7 @@
                                     android:lines="1"
                                     android:maxLines="1"
                                     android:padding="@dimen/_5sdp"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </LinearLayout>
 
@@ -302,7 +309,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_ki_waja_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -326,7 +333,7 @@
                                     android:background="@drawable/edittext_background_layout"
                                     android:popupElevation="0dp"
                                     android:spinnerMode="dropdown" />
-                                <!--                                android:theme="@style/AppTheme.Spinner"-->
+<!--                                android:theme="@style/AppTheme.Spinner"-->
                             </LinearLayout>
 
                         </TableRow>
@@ -363,7 +370,7 @@
                                     android:scrollbarThumbVertical="@color/light_pink_color"
                                     android:scrollbars="vertical"
                                     android:singleLine="false"
-                                    android:textSize="@dimen/_14sdp" />
+                                    android:textSize="@dimen/_12sdp" />
 
                             </LinearLayout>
 
@@ -385,7 +392,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/cbf_refferal_hospital_text"
                                 android:textColor="@color/text_color"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textSize="@dimen/_12sdp" />
 
                         </TableRow>
 
@@ -404,23 +411,22 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginBottom="@dimen/_20sdp"
                         android:background="@drawable/login_button_shape_layout"
-                        android:text="@string/mrf_jamaa_kre_text"
+                        android:text="@string/crf_jama_kre_text"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_18sdp" />
 
+                    <ProgressBar
+                        android:id="@+id/pbProgress"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape_layout"
+                        android:indeterminateDrawable="@drawable/rotate_animation"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="gone" />
 
                 </RelativeLayout>
 
-
-                <ProgressBar
-                    android:id="@+id/pbProgress"
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_cardview"
-                    android:indeterminateDrawable="@drawable/rotate_animation"
-                    android:padding="@dimen/_10sdp"
-                    android:visibility="gone" />
 
                 <!--</ScrollView>-->
 
@@ -431,4 +437,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

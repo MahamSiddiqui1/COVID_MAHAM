@@ -160,7 +160,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -296,7 +296,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
 
                         sendPostRequest(child_uid, vacine_uid, TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        //Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                     //  Toast.makeText(getApplicationContext(),String.valueOf(res)+String.valueOf(ans1),Toast.LENGTH_LONG).show();
@@ -410,7 +410,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d("000555", "else ");
                         Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();

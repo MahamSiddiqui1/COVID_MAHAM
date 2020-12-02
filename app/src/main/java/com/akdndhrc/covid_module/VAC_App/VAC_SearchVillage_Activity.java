@@ -529,7 +529,7 @@ public class VAC_SearchVillage_Activity extends AppCompatActivity implements Sea
 
                 Log.d("000123", "NAme: " + mData_search[i][0]);
                 Log.d("000123", "village_name: " + mData_search[i][1]);
-                Log.d("000123", "Age: " + mData_search[i][2]);
+                Log.d("000123", R.string.ageColon + mData_search[i][2]);
                /* Log.d("000123", "UID: " + mData_search[i][3]);
                 Log.d("000123", "Gender: " + mData_search[i][4]);
                 Log.d("000123", "Gender: " + mData_search[i][6]);*/

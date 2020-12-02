@@ -588,6 +588,7 @@ public class Male_BemaariForm_Activity extends AppCompatActivity {
                         jobj.put("sp_khoon_ki_kami", "" + String.valueOf(sp_khoon_ki_kami.getSelectedItem()));
                         jobj.put("khoon_ki_kami_medicine_quantity", "" + et_tablet_quantity_4.getText().toString());
                     }
+
                     jobj.put("sp_khoon_ki_kami_pos", "" + String.valueOf(sp_khoon_ki_kami.getSelectedItemPosition() - 1));
 
 

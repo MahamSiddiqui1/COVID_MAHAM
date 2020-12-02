@@ -339,7 +339,7 @@ public class MotherRegister_Activity extends AppCompatActivity {
                 if (et_naam_bimaah_waldiyat.getText().toString().isEmpty()) {
 
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی نام بمعہ ولدیت درج کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -352,7 +352,7 @@ public class MotherRegister_Activity extends AppCompatActivity {
                 }
                 if (et_walid_ka_naam.getText().toString().isEmpty()) {
                     //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی والد کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeFatherNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -369,7 +369,7 @@ public class MotherRegister_Activity extends AppCompatActivity {
                 if (et_tareekh_pedaish.getText().toString().length() < 1) {
 
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ پیدائش منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDOBprompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -384,7 +384,7 @@ public class MotherRegister_Activity extends AppCompatActivity {
                 if (sp_jins.getSelectedItemPosition() == 0) {
 
                     // Toast.makeText(getApplicationContext(), "جنس منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "جنس منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -398,7 +398,7 @@ public class MotherRegister_Activity extends AppCompatActivity {
 
                 if (age <= 2) {
                     //   Toast.makeText(getApplicationContext(), "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectedAgeGreater2Prompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

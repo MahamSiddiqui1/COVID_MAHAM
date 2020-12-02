@@ -704,7 +704,7 @@ public class VideoList_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     alertD.dismiss();
                     Log.d("000555", "Error: " + e.getMessage());
-                    Toast.makeText(getApplicationContext(), "Something wrong!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 } finally {
                     Intent i = new Intent(ctx, VideoPlay_Activity.class);
                     i.putExtra("KeyVideoLink", videoLink);
@@ -753,7 +753,7 @@ public class VideoList_Activity extends AppCompatActivity {
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000555", "else ");

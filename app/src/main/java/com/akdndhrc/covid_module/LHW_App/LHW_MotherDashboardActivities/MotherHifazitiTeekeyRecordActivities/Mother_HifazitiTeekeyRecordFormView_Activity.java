@@ -144,7 +144,7 @@ public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActiv
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -275,7 +275,7 @@ public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActiv
 
                             sendPostRequest(mother_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -336,7 +336,7 @@ public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActiv
                         Log.d("000555", "Updated Data: " + update_record);
                         Log.d("000555", "Updated Query: " + res.toString());
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
 
 
@@ -521,7 +521,7 @@ public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActiv
             e.printStackTrace();
 
             Log.d("000555", "Err: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

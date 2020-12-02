@@ -79,7 +79,7 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_3sdp"
             android:layout_toRightOf="@+id/rl_circle_men"
-            android:text="Age:"
+            android:text="@string/ageColon"
             android:textColor="@color/hp_listview_textview_greycolor"
             android:textSize="@dimen/_10sdp" />
 

@@ -392,7 +392,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
 
                 if (et_naam_bimaah_waldiyat.getText().toString().isEmpty()) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -405,7 +405,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                 }
 
                 if (et_walid_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی والد کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeFatherNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -419,7 +419,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
 
                 if (et_tareekh_pedaish.getText().toString().length() < 1) {
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ پیدائش منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDOBprompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -432,7 +432,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                 }
 
                 if (sp_jins.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "جنس منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -446,7 +446,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
 
                 if (age >= 4) {
                     // Toast.makeText(getApplicationContext(), "منتخب عمر کو دو سال سے کم ہونا ضروری ہے", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "منتخب عمر کو دو سال سے کم ہونا ضروری ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectedAgeGreater2Prompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -459,7 +459,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                 }
 
                 if (et_khandan_number.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی خاندان نمبر درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeFamilyNumPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -477,7 +477,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                     if (et_tareekh_wafaat.getText().toString().length() < 1) {
 
                         //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                        final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ وفات منتخب کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.selectDeathDatePrompt, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -489,7 +489,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                         return;
                     }
                     if (sp_wajah_wafat.getSelectedItemPosition() == 0) {
-                        final Snackbar snackbar = Snackbar.make(v, "وجہ وفات منتخب کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.selectDeathReasonPrompt, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -505,7 +505,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                         if (et_tabsarah_wajah_wafaat.getText().toString().isEmpty()) {
 
                             //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی وجہ وفات درج کریں.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.writeDeathReasonPrompt, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -677,7 +677,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                         "WHERE uid = '" + khandan_id + "'";
                 ls.executeNonQuery(update_record);
 
-                final Snackbar snackbar = Snackbar.make(v, "خاندان نمبر تبدیل ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.familyNumChanged, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -695,17 +695,14 @@ public class Child_Profile_Activity extends AppCompatActivity {
                 Log.d("000555", "Khand Data: " + update_record);
                 Log.d("000555", "Khandan Query: " + res.toString());
 
-
             } catch (Exception e) {
                 Log.d("000555", " Error" + e.getMessage());
             }
         }
 
-
         try {
 
             final String updated_added_on = String.valueOf(System.currentTimeMillis());
-
 
             if (jsonObject.has("lat")) {
                 jsonObject.put("lat", "" + String.valueOf(latitude));
@@ -763,7 +760,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                         if (res.toString().equalsIgnoreCase("true"))
                         {
 
-                            final Snackbar snackbar = Snackbar.make(v, "پروفائل ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.profileDataUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -788,7 +785,7 @@ public class Child_Profile_Activity extends AppCompatActivity {
                         }
                         else
                         {
-                            final Snackbar snackbar = Snackbar.make(v, "پروفائل ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.profileDataNotUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

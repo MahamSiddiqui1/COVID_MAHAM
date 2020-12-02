@@ -487,7 +487,6 @@ public class Child_AamMalomatForm_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Nav", Toast.LENGTH_SHORT).show();
             }
         });
 

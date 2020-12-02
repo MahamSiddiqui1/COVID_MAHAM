@@ -95,7 +95,7 @@ public class Mother_BadAzPedaishList_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -155,7 +155,7 @@ public class Mother_BadAzPedaishList_Activity extends AppCompatActivity {
                         } else {
                             Log.d("000985", "ELSE !!!!!!!!!!!!!!!");
 
-                            final Snackbar snackbar = Snackbar.make(v, "آج کی تاریخ کا ریکارڈ موجود ہے. برائے مہربانی کل کی تاریخ کا انتظار کریں.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecordTodayWaitTomorrow, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

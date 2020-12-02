@@ -530,7 +530,7 @@
                                             android:layout_height="wrap_content"
 
                                             android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="والد کا موبائل نمبر"
+                                            android:text=@string/fatherMobileNum
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -1007,7 +1007,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_marginEnd="@dimen/_5sdp"
-                                        android:text=" QR"
+                                        android:text="@string/qr"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
 
@@ -1049,8 +1049,8 @@
                                         android:paddingEnd="@dimen/_5sdp"
                                         android:paddingStart="@dimen/_5sdp"
                                         android:showText="true"
-                                        android:textOff="مردہ"
-                                        android:textOn="زندہ"
+                                        android:textOff="@string/dead"
+                                        android:textOn="@string/alive"
                                         android:thumbTint="#E9A7DE"/>
 
                                     <TextView
@@ -1058,7 +1058,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_centerVertical="true"
-                                        android:text="موجودہ حالت"
+                                        android:text=@string/currentCondition"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
 
@@ -1215,7 +1215,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginEnd="@dimen/_5sdp"
                                         android:layout_weight="1"
-                                        android:text="وجہ وفات لکھے"
+                                        android:text="@string/writeDeathReason"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
 

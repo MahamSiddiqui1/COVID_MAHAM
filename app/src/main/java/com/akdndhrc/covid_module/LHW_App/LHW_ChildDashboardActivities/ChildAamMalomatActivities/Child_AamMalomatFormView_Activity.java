@@ -527,7 +527,6 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Nav", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -693,14 +692,12 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                         Log.d(TAG, "Data: " + update_record);
                         Log.d(TAG, "Query: " + res.toString());
 
-                       /* Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
                         if (Utils.haveNetworkConnection(ctx) > 0) {
                             sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
                         }*/
 
                         if (res.toString().equalsIgnoreCase("true")) {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -723,7 +720,6 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                             }
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

@@ -161,7 +161,7 @@ public class HCM_RegisterForm_Activity extends AppCompatActivity {
 
                 if (et_name.getText().toString().isEmpty()) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -175,7 +175,7 @@ public class HCM_RegisterForm_Activity extends AppCompatActivity {
 
                 if (sp_gender.getSelectedItemPosition() == 0) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "جنس منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

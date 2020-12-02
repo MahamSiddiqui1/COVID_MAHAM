@@ -312,7 +312,7 @@ public class Mother_KhandaniMansobabandiFormView_Activity extends AppCompatActiv
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -583,7 +583,7 @@ public class Mother_KhandaniMansobabandiFormView_Activity extends AppCompatActiv
                         ls.executeNonQuery(update_record);
 
 
-                        final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

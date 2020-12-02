@@ -173,7 +173,7 @@ public class VAC_Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatAc
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -1365,7 +1365,7 @@ public class VAC_Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatAc
             public void onClick(View v) {
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
-                    Toast.makeText(getApplicationContext(), R.string.enterDateReceived", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.enterDateReceived, Toast.LENGTH_LONG).show();
                     return;
                 }
 

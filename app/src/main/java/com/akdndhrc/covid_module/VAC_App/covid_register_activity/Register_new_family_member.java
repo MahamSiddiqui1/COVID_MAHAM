@@ -874,7 +874,7 @@ public class Register_new_family_member extends AppCompatActivity {
                                 "WHERE uid = '" + uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 

@@ -730,7 +730,7 @@ public class ClassListener implements OnClickListener {
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(act, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                        // Toast.makeText(act, "Your response submitted successfully.", Toast.LENGTH_SHORT).show();
 
                     } else {

@@ -437,7 +437,8 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
                 if (!cb_runynose_haan.isChecked() && !cb_runynose_nahi.isChecked() && !cb_throat_yes.isChecked() && !cb_throat_nahi.isChecked()
                         && !cb_cough_yes.isChecked() && !cb_cough_nahi.isChecked() && !cb_fever_yes.isChecked() && !cb_fever_nahi.isChecked() && !cb_braething_yes.isChecked() && !cb_braething_nahi.isChecked()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی  چیک باکس کو منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectCheckboxPrompt, Snackbar.LENGTH_SHORT);
+
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -451,7 +452,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
 
 
                 if (spRefHealthFacility.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحت مرکز منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectHealthCenterPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -504,7 +505,7 @@ public class Mother_CVirusForm_Activity extends AppCompatActivity {
                 try {
                     if (spRefHealthFacility.getSelectedItem().toString().equalsIgnoreCase("Others")) {
                         if (et_refferal_hospital_others.getText().toString().isEmpty()) {
-                            Toast.makeText(getApplicationContext(), "برائے مہربانی ریفرل صحت مرکز درج کریں.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), R.string.selectReferalHealthCenterPrompt, Toast.LENGTH_LONG).show();
                             return;
                         }
                     } else {

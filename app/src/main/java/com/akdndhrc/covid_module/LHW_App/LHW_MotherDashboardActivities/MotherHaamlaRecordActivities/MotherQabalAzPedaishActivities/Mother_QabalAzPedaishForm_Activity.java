@@ -206,7 +206,7 @@ public class Mother_QabalAzPedaishForm_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -347,7 +347,7 @@ public class Mother_QabalAzPedaishForm_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (et_tareekh_indraj.getText().toString().length() < 1) {
-                    //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ اندراج منتخب کریں", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), R.string.selectDateOfRecord, Toast.LENGTH_LONG).show();
                     final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);

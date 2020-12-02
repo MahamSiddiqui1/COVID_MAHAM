@@ -1713,7 +1713,6 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -1839,7 +1838,6 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                     Log.d("000522", "Data: " + ans1);
                     Log.d("000522", "Query: " + res);
 
-                    Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
 
                     if (Utils.haveNetworkConnection(ctx) > 0) {
 
@@ -1991,7 +1989,6 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000522", "else ");

@@ -492,7 +492,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
 
         if (!cb_runynose_haan.isChecked() && !cb_runynose_nahi.isChecked() && !cb_throat_yes.isChecked() && !cb_throat_nahi.isChecked()
                 && !cb_cough_yes.isChecked() && !cb_cough_nahi.isChecked() && !cb_fever_yes.isChecked() && !cb_fever_nahi.isChecked() && !cb_braething_yes.isChecked() && !cb_braething_nahi.isChecked()) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی  چیک باکس کو منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectCheckboxPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -506,7 +506,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
 
 
         if (spRefHealthFacility.getSelectedItemPosition() == 0) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحت مرکز منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectHealthCenterPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -598,7 +598,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -623,7 +623,7 @@ public class Mother_CVirusFormView_Activity extends AppCompatActivity {
 
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

@@ -301,7 +301,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -551,7 +551,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         Log.d("000987", "Updated Data: " + update_record);
                         Log.d("000987", "Updated Query: " + res.toString());
 
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 

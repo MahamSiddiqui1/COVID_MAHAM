@@ -271,7 +271,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
 
         if (et_wazan.getText().toString().isEmpty()) {
             //btn_jamaa_kre.setVisibility(View.GONE);
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی وزن درج کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.enterWeightPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -284,7 +284,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
         }
 
         if (!checkbox_bottle_ka_doodh.isChecked() && !checkbox_6maah_tk_sirf_maa_ka_doodh.isChecked() && !checkbox_izafi_khoraak_thoos_ghiza.isChecked()) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی غذا کے چیک باکس کو منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectFoodCheckboxPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -408,7 +408,8 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                         if (res.toString().equalsIgnoreCase("true"))
                         {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
+
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -441,7 +442,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
                         else
                         {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -463,7 +464,7 @@ public class Child_NashoNumaFormLive_Activity extends AppCompatActivity {
 
                             sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }*/
 
 

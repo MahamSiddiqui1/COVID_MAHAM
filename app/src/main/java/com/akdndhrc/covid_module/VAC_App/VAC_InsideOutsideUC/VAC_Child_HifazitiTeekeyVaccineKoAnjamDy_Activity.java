@@ -554,7 +554,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
 
                 sendPostRequest(child_uid, vacine_uid, TodayDate, String.valueOf(jobj), login_useruid, added_on);
             } else {
-                Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
             }
 
             //  Toast.makeText(getApplicationContext(),String.valueOf(res)+String.valueOf(ans1),Toast.LENGTH_LONG).show();

@@ -758,7 +758,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -782,7 +782,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -802,7 +802,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
 
                             sendPostRequest(mother_uid, TodayDate, String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }*/
 
                     } catch (Exception e) {
@@ -2851,7 +2851,7 @@ public class Mother_BemaariFormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000852", "Err: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

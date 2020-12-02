@@ -160,7 +160,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -470,7 +470,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
                             sendPostRequest(mother_uid, String.valueOf(pos), et_tareekh_mosool_hoe.getText().toString(), String.valueOf(jobj), login_useruid, added_on);
                         } else {
-                            // Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                         }
 
                     }

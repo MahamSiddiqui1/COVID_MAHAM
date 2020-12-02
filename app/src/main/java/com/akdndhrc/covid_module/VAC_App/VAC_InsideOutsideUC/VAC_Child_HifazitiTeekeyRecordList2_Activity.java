@@ -175,7 +175,7 @@ public class VAC_Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActiv
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 

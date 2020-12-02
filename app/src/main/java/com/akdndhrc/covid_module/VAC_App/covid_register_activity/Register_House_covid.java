@@ -149,7 +149,7 @@ public class Register_House_covid extends AppCompatActivity {
         rl_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -812,7 +812,7 @@ public class Register_House_covid extends AppCompatActivity {
                         ls.executeNonQuery(update_record);
 
                         // Toast.makeText(Register_House.this, "Data has been saved", Toast.LENGTH_SHORT).show();
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 

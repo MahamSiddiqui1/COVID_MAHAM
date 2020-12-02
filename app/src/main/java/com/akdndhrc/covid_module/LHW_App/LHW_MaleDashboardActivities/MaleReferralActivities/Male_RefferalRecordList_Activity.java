@@ -118,7 +118,7 @@ public class Male_RefferalRecordList_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -197,7 +197,7 @@ public class Male_RefferalRecordList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast tt  =Toast.makeText(ctx, "ریفرل کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT);
+            Toast tt  =Toast.makeText(ctx, R.string.noRefferalRecord, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

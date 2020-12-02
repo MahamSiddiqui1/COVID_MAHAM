@@ -172,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="left"
-                        android:text="Age: "
+                        android:text="@string/ageColon"
                         android:textColor="@color/light_grey_color"
                         android:textSize="@dimen/_12sdp" />
 

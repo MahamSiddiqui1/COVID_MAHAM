@@ -331,7 +331,7 @@ public class Mother_AamMalomatFormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -492,7 +492,7 @@ public class Mother_AamMalomatFormView_Activity extends AppCompatActivity {
 
                             sendPostRequest(mother_uid, TodayDate, String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -552,7 +552,7 @@ public class Mother_AamMalomatFormView_Activity extends AppCompatActivity {
                         Log.d("000555", "Data: " + update_record);
                         Log.d("000555", "Query: " + res.toString());
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(ctx, "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
 
                     } else {
@@ -789,7 +789,7 @@ public class Mother_AamMalomatFormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000888", "Err: " + e.getMessage());
-            Toast.makeText(ctx, "Something Wrong!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

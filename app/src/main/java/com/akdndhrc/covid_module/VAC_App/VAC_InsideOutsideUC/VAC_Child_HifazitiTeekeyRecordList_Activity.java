@@ -170,7 +170,7 @@ public class VAC_Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivi
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -488,7 +488,7 @@ public class VAC_Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivi
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -618,7 +618,7 @@ public class VAC_Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivi
                         sendPostRequest_RefuseVaccine(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
 
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
 

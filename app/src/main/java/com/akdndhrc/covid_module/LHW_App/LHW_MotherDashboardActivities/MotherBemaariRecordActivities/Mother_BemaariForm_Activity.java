@@ -151,8 +151,6 @@ public class Mother_BemaariForm_Activity extends AppCompatActivity {
         et_refferal_ki_waja = findViewById(R.id.et_refferal_ki_waja);
         et_refferal_hospital = findViewById(R.id.et_refferal_hospital);
 
-
-
         et_tablet_quantity_1 = findViewById(R.id.et_tablet_quantity_1);
         et_tablet_quantity_2 = findViewById(R.id.et_tablet_quantity_2);
         et_tablet_quantity_3 = findViewById(R.id.et_tablet_quantity_3);

@@ -365,7 +365,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_toStartOf="@id/checkbox_haan_2"
-                                        android:text="زندہ"
+                                        android:text="@string/alive"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
 
@@ -390,7 +390,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_toStartOf="@+id/checkbox_nahi_2"
-                                        android:text="مردہ"
+                                        android:text="@string/dead"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
 

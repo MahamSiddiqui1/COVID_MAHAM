@@ -1031,7 +1031,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="right"
                                         android:layout_marginEnd="@dimen/_5sdp"
-                                        android:text=" ریفرل صحت مرکز"
+                                        android:text="@string/referalHealthCenter"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
 
@@ -1076,7 +1076,7 @@
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:background="@null"
                                             android:gravity="right"
-                                            android:hint="صحت مرکز کا نام"
+                                            android:hint="@string/healthCenterName"
                                             android:inputType="textCapWords"
                                             android:lines="1"
                                             android:maxLines="1"

@@ -802,7 +802,7 @@ public class Search_FamilyMembersList extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -1067,7 +1067,7 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                 Log.d("000888", "uid: " + mData[i][0]);
                 Log.d("000888", "full_name: " + mData[i][1]);
                 Log.d("000888", "gender: " + mData[i][2]);
-                Log.d("000888", "age: " + mData[i][2]);
+                Log.d("000888", R.string.ageColon + mData[i][2]);
 
                 tv_record.setVisibility(View.GONE);
 

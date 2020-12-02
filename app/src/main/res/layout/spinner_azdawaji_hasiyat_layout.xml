@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@android:id/text1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,6 +10,7 @@
     android:text="@string/select_one"
     android:textColor="@color/dark_blue_color"
     android:textDirection="anyRtl"
-    android:textSize="@dimen/_12sdp" />
+    android:textSize="@dimen/_12sdp"
+    tools:ignore="RtlHardcoded" />
 
 

@@ -896,7 +896,7 @@
     <string name="_26_10_2019_02_05_10">26-10-2019 02:05:10</string>
     <string name="muhamad_aresh_khan">Muhamad Aresh khan</string>
     <string name="text">text</string>
-    <string name="name">Name</string>
+    <string name="nameEng">Name</string>
     <string name="unionCouncilKander">یونین کونسل کے اندر</string>
     <string name="unionCouncilKbahar">یونین کونسل کے باہر</string>
     <string name="_10">10</string>
@@ -912,6 +912,7 @@
     <string name="dataSubmissionMessage">ڈیٹا جمع ہوگیا ہے.</string>
     <string name="dataSubmissionFailed">ڈیٹا جمع نہیں ہوا.</string>
     <string name="dataSynced">ڈیٹا سنک ہوگیا ہے</string>
+    <string name="dataSyncedEng">Data Synced</string>
     <string name="navigation">Navigation</string>
     <string name="enterCNICprompt">برائے مہربانی  شناختی کارڈ نمبر درج کریں</string>
     <string name="correctCNICprompt">برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں</string>
@@ -939,7 +940,6 @@
     <string name="dataEdited">ڈیٹا اپڈیٹ ہوگیا ہے</string>
     <string name="ussdErrorServiceUnavail">USSD_ERROR_SERVICE_UNAVAIL</string>
     <string name="SMSsendingFailEng">SMS sending failed...</string>
-    <string name="referalHealthCenter">ریفرل صحت مرکز</string>
     <string name="healthCenterName">صحت مرکز کا نام</string>
     <string name="selectCheckboxPrompt">برائے مہربانی  چیک باکس کو منتخب کریں.</string>
     <string name="selectHealthCenterPrompt">برائے مہربانی صحت مرکز منتخب کریں.</string>
@@ -1014,8 +1014,46 @@
     <string name="selectVaccineAvailPlace">برائے مہربانی ویکسین کہاں فراہم کی گئی منتخب کریں</string>
     <string name="dataGPS">Data GPS</string>
     <string name="notDataGPS">Not Data GPS</string>
-
-
+    <string name="noRecordNashonuma">نشو نما کا کوئی ریکارڈ نہیں</string>
+    <string name="bmi">بی ام آئی:</string>
+    <string name="invalidGender">Invalid gender</string>
+    <string name="noBMIdueToHeightWeight">وزن یا قد نہ ہونے کی وجہ سے بی ام آئی پتہ نہیں کیا جا سکتا.</string>
+    <string name="enterWeightPrompt">برائے مہربانی وزن درج کریں.</string>
+    <string name="selectFoodCheckboxPrompt">برائے مہربانی غذا کے چیک باکس کو منتخب کریں.</string>
+    <string name="noRecordThisMothselectOther">اس مہینے کا ریکارڈ موجود ہے. برائے مہربانی دوسرے مہینے کا انتخاب کریں.</string>
+    <string name="dataNotEdited">ڈیٹا اپڈیٹ نہیں ہوا.</string>
+    <string name="ageColon">Age:</string>
+    <string name="noRefferalRecord">ریفرل کا کوئی ریکارڈ نہیں</string>
+    <string name="referalHealthCenter">ریفرل صحت مرکز</string>
+    <string name="secondReason">دوسری وجہ</string>
+    <string name="selectReferalReasonPrompt">برائے مہربانی ریفرل وجہ منتخب کریں.</string>
+    <string name="selectReferalHealthCenterPrompt">برائے مہربانی ریفرل صحت مرکز درج کریں.</string>
+    <string name="name">نام</string>
+    <string name="fatherMobileNum">والد کا موبائل نمبر</string>
+    <string name="qr">QR</string>
+    <string name="dead">مردہ</string>
+    <string name="alive">زندہ</string>
+    <string name="childCurrentCondition">بچے کی موجودہ حالت</string>
+    <string name="writeDeathReason">وجہ وفات لکھے</string>
+    <string name="writeNamePrompt">برائے مہربانی نام درج کریں.</string>
+    <string name="writeFatherNamePrompt">برائے مہربانی والد کا نام درج کریں.</string>
+    <string name="selectDOBprompt">برائے مہربانی تاریخ پیدائش منتخب کریں.</string>
+    <string name="selectGenderPrompt">جنس منتخب کریں.</string>
+    <string name="selectedAgeGreater2Prompt">منتخب عمر کو دو سال سے کم ہونا ضروری ہے.</string>
+    <string name="writeFamilyNumPrompt">برائے مہربانی خاندان نمبر درج کریں.</string>
+    <string name="selectDeathDatePrompt">برائے مہربانی تاریخ وفات منتخب کریں.</string>
+    <string name="selectDeathReasonPrompt">وجہ وفات منتخب کریں.</string>
+    <string name="writeDeathReasonPrompt">برائے مہربانی وجہ وفات درج کریں.</string>
+    <string name="familyNumChanged">خاندان نمبر تبدیل ہوگیا ہے.</string>
+    <string name="profileDataUpdated">پروفائل ڈیٹا اپڈیٹ ہوگیا ہے.</string>
+    <string name="profileDataNotUpdated">پروفائل ڈیٹا اپڈیٹ نہیں ہوا.</string>
+    <string name="motherOrHusbandName">والدہ/شوہر کا نام</string>
+    <string name="currentCondition">موجودہ حالت</string>
+    <string name="diseaseRecord">بیماری کا ریکارڈ</string>
+    <string name="_30_06">30 سال 06 مہ</string>
+    <string name="noAamMalumatRecord">عام علومات کا کوئی ریکارڈ نہیں</string>
+    <string name="nav">Nav</string>
+    <string name="selectDateOfRecord">برائے مہربانی تاریخ اندراج منتخب کریں</string>
 </resources>
 
 

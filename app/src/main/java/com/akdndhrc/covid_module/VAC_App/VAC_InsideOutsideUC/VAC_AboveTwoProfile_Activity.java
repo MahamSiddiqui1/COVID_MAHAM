@@ -345,7 +345,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -457,7 +457,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
 
                 if (et_walid_ka_naam.getText().toString().isEmpty()) {
                     //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی والد کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.writeFatherNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -472,7 +472,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                 if (et_tareekh_pedaish.getText().toString().isEmpty()) {
 
                     //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ پیدائش منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDOBprompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -485,7 +485,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                 }
 
                 if (sp_jins.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "جنس منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -519,7 +519,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
 
                 if (Integer.valueOf(mother_age) <= 2) {
                     //Toast.makeText(getApplicationContext(), "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "منتخب عمر کو دو سال سے زائد ہونا ضروری ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectedAgeGreater2Prompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -536,7 +536,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                     if (et_tareekh_wafaat.getText().toString().length() < 1) {
 
                         //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                        final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ وفات منتخب کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.selectDeathDatePrompt, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -548,7 +548,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                         return;
                     }
                     if (sp_wajah_wafat.getSelectedItemPosition() == 0) {
-                        final Snackbar snackbar = Snackbar.make(v, "وجہ وفات منتخب کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.selectDeathReasonPrompt, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -565,7 +565,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                         if (et_tabsarah_wajah_wafaat.getText().toString().isEmpty()) {
 
                             //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی وجہ وفات درج کریں.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.writeDeathReasonPrompt, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -726,7 +726,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                         if (res.toString().equalsIgnoreCase("true"))
                         {
 
-                            final Snackbar snackbar = Snackbar.make(v, "پروفائل ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.profileDataUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -747,13 +747,13 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                                         et_walid_ka_mobile_number.getText().toString(), String.valueOf(sp_jins.getSelectedItemPosition() - 1), mother_age, et_tareekh_pedaish.getText().toString(),
                                         "bio_code", qr_code_text, login_useruid, String.valueOf(jsonObject), added_on);
                             } else {
-                               // Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                             }
 
                         }
                         else
                         {
-                            final Snackbar snackbar = Snackbar.make(v, "پروفائل ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.profileDataNotUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1146,7 +1146,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
                         dob.set(year, monthOfYear, dayOfMonth);
 
                         mother_age = String.valueOf(today.get(Calendar.YEAR) - year);
-                        Log.d("000123", "Age: " + mother_age);
+                        Log.d("000123", R.string.ageColon + mother_age);
 
                         Integer ageInt = new Integer(mother_age);
                         String ageS = ageInt.toString();
@@ -1243,7 +1243,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
             Log.d("000123", "khandan_id: " + mDatamother[0][7]);
             Log.d("000123", "added_on: " + mDatamother[0][8]);
             Log.d("000123", "qr_code: " + mDatamother[0][9]);
-            Log.d("000123", "age: " + mDatamother[0][10]);
+            Log.d("000123", R.string.ageColon + mDatamother[0][10]);
 
 
             et_bachey_ka_naam.setEnabled(false);

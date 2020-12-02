@@ -127,7 +127,7 @@ public class Mother_HifazitiTeekeyRecordForm_Activity extends AppCompatActivity 
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -155,7 +155,7 @@ public class Mother_HifazitiTeekeyRecordForm_Activity extends AppCompatActivity 
             public void onClick(View v) {
 
                 if (et_tareekh_indraj.getText().toString().length() < 1) {
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ اندراج منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectDateOfRecord, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -219,7 +219,7 @@ public class Mother_HifazitiTeekeyRecordForm_Activity extends AppCompatActivity 
                         sendPostRequest(mother_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jobj), login_useruid, cur_added_on);
                     } else {
 
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                     // Toast.makeText(getApplicationContext(),String.valueOf(res)+String.valueOf(ans1),Toast.LENGTH_LONG).show();

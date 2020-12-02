@@ -149,7 +149,7 @@ public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCo
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -270,7 +270,7 @@ public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCo
 
                         sendPostRequest(mother_uid, vacine_uid, TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -387,7 +387,7 @@ public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCo
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000555", "else ");

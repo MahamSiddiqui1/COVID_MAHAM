@@ -196,7 +196,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_toRightOf="@+id/txt_qrcode_kai_zarye_talash_kre"
-                                android:text=" QR"
+                                android:text="@string/qr"
                                 android:textColor="@color/search_blue_text_color"
                                 android:textSize="@dimen/_18sdp" />
                         </RelativeLayout>

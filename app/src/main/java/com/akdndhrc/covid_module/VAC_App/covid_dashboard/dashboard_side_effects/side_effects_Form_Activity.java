@@ -542,7 +542,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -758,7 +758,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                         ls.executeNonQuery(update_record);
                         Log.d("000362", "Update Record:  " + update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 

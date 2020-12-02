@@ -97,7 +97,7 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:layout_toStartOf="@+id/tvAge"
-            android:text="Age:"
+            android:text="@string/ageColon"
             android:textColor="@color/light_grey_color"
             android:textSize="@dimen/_12sdp" />
 

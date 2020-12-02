@@ -176,10 +176,8 @@ public class Child_NashoNumaGrowthLineGraph_Activity_Boy extends AppCompatActivi
         entries4.add(new Entry(14.5f, 22));
         entries4.add(new Entry(14.8f, 23));
 
-
         LineDataSet dataSet = new LineDataSet(entries, "");
         LineDataSet dataSet1 = new LineDataSet(entries1, "");
-
 
         ArrayList<String> labels = new ArrayList<>();
         labels.add("1 week");

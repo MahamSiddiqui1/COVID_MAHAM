@@ -320,7 +320,6 @@ public class Adt_NotFollowUpExpandableList extends BaseExpandableListAdapter {
                         if (cb_service_avail.equalsIgnoreCase("1")) {
 
                             if (sp_facility.getSelectedItemPosition() == 0) {
-                                final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحت مرکز منتخب کریں.", Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(v.getResources().getColor(android.R.color.black));

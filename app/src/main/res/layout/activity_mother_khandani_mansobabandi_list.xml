@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="left"
-                        android:text="Age:"
+                        android:text="@string/ageColon"
                         android:textColor="@color/light_grey_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -174,7 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="30 سال 06 مہ"
+                        android:text="@string/_30_06"
                         android:textColor="@color/register_khandan_text_color"
                         android:textSize="@dimen/_12sdp" />
 

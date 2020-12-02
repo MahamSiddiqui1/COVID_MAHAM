@@ -102,7 +102,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
         rl_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -307,7 +307,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
                         Log.d("000147", "Data: " + update_record);
                         Log.d("000147", "Query: " + res.toString());
 
-                        Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                       
                         
                     } catch (Exception e) {

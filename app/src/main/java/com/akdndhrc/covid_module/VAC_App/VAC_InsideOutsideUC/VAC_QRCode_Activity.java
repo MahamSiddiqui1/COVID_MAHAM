@@ -159,7 +159,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
                 Log.d("000255", "child_uid: " +  child_uid);
                 Log.d("000255", "full_name: " +  mData[i][0]);
                 Log.d("000255", "dob: " +  mData[i][1]);
-                Log.d("000255", "age: " +  mData[i][2]);
+                Log.d("000255", R.string.ageColon +  mData[i][2]);
                 Log.d("000255", "gender: " +  mData[i][3]);
                 Log.d("000255", "father_name: " +  mData[i][4]);
                 Log.d("000255", "mother_name: " +  mData[i][5]);
@@ -393,7 +393,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
                     sendPostRequest(child_uid, mData[0][8],String.valueOf(jobj),TodayDate,login_useruid,added_on);
 
                 } else {
-                    //Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                 }
 
             }

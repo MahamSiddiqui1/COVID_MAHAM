@@ -380,7 +380,7 @@
                                             android:layout_height="wrap_content"
 
                                             android:layout_centerVertical="true"
-                                            android:text="گولی کی مقدار"
+                                            android:text="@string/tabQuantity"
                                             android:textColor="@color/pink_color"
                                             android:textSize="@dimen/_12sdp" />
 

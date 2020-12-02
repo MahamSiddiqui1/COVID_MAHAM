@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:layout_gravity="center"
-        android:text="Data synced"
+        android:text="@string/dataSynced"
         android:textColor="@color/color_white"
         android:textSize="@dimen/_14sdp" />
 

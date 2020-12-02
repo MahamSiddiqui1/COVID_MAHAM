@@ -869,7 +869,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_marginEnd="@dimen/_5sdp"
-                                        android:text=" QR"
+                                        android:text="@string/qr"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_14sdp" />
 

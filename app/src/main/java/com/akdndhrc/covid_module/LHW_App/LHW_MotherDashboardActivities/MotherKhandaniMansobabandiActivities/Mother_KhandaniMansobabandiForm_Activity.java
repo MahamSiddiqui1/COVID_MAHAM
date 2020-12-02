@@ -302,7 +302,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -448,7 +448,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                             sendPostRequest(mother_uid, et_tareekh_visit.getText().toString(), String.valueOf(jobj), login_useruid, cur_added_on);
                         } else {
-                            //Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                         }
 
                         if (et_refferal_hospital.getText().toString().length() > 0 && et_refferal_ki_waja.getText().toString().length() > 0) {
@@ -676,7 +676,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
                         ls.executeNonQuery(update_record);
                         Log.d("000362", "Update Record:  " + update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 

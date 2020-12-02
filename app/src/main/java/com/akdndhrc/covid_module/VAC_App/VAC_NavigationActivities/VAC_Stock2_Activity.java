@@ -347,7 +347,7 @@ public class VAC_Stock2_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     alertD.dismiss();
                     Log.d("123456", "Error: " + e.getMessage());
-                    Toast.makeText(getApplicationContext(), "Something wrong!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 } finally {
 
                     alertD.dismiss();

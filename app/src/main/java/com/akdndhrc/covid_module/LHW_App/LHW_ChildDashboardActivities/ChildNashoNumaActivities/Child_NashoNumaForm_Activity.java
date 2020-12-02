@@ -210,7 +210,7 @@ public class Child_NashoNumaForm_Activity extends AppCompatActivity {
 
                 if (et_tareekh_indraj.getText().toString().length() < 1) {
 
-                    //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ اندراج منتخب کریں", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), R.string.selectDateOfRecord, Toast.LENGTH_LONG).show();
                     final Snackbar snackbar = Snackbar.make(v, R.string.dateOfEntrancePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -225,7 +225,7 @@ public class Child_NashoNumaForm_Activity extends AppCompatActivity {
 
                 if (et_wazan.getText().toString().isEmpty()) {
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی وزن درج کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی وزن درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterWeightPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -239,7 +239,7 @@ public class Child_NashoNumaForm_Activity extends AppCompatActivity {
 
                 if (!checkbox_bottle_ka_doodh.isChecked() && !checkbox_6maah_tk_sirf_maa_ka_doodh.isChecked() && !checkbox_izafi_khoraak_thoos_ghiza.isChecked()) {
                     //Toast.makeText(ctx, "برائے مہربانی غذا کے چیک باکس کو منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی غذا کے چیک باکس کو منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectFoodCheckboxPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -653,7 +653,7 @@ public class Child_NashoNumaForm_Activity extends AppCompatActivity {
                         btn_jamaa_kre.setVisibility(View.GONE);
 
                         //Toast.makeText(getApplicationContext(), "Record exist for this month kindly select another date", Toast.LENGTH_LONG).show();
-                        final Snackbar snackbar = Snackbar.make(v, "اس مہینے کا ریکارڈ موجود ہے. برائے مہربانی دوسرے مہینے کا انتخاب کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.noRecordThisMothselectOther, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

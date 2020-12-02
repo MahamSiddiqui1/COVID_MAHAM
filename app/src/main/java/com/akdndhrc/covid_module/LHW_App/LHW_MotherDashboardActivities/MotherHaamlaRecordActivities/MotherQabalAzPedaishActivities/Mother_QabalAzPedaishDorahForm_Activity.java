@@ -346,7 +346,7 @@ public class Mother_QabalAzPedaishDorahForm_Activity extends AppCompatActivity {
 
                 if (et_tareekh_indraj.getText().toString().length() < 1) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
-                    Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ اندراج منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectDateOfRecord, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -440,7 +440,7 @@ public class Mother_QabalAzPedaishDorahForm_Activity extends AppCompatActivity {
                     if (Utils.haveNetworkConnection(ctx) > 0) {
                         sendPostRequest(mother_uid, preg_id, et_tareekh_indraj.getText().toString(), "1", String.valueOf(jobj), login_useruid, cur_added_on);
                     } else {
-                        Toast.makeText(ctx, "Data has been collected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
                     // Toast.makeText(getApplicationContext(),String.valueOf(res)+String.valueOf(ans1),Toast.LENGTH_LONG).show();
                 } catch (Exception e) {

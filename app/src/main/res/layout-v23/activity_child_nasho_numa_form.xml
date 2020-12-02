@@ -571,8 +571,7 @@
                                         android:scrollbarThumbVertical="@color/light_pink_color"
                                         android:scrollbars="vertical"
                                         android:singleLine="false"
-                                        android:textSize="@dimen/_12sdp"
-                                        tools:targetApi="m" />
+                                        android:textSize="@dimen/_12sdp" />
 
                                 </LinearLayout>
 

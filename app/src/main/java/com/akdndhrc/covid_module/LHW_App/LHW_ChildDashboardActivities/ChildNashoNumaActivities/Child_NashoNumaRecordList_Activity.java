@@ -92,7 +92,7 @@ public class Child_NashoNumaRecordList_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -192,7 +192,7 @@ public class Child_NashoNumaRecordList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast tt = Toast.makeText(ctx, "نشو نما کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, R.string.noRecordNashonuma, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
             btn_growth_chart.setVisibility(View.GONE);

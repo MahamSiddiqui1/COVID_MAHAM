@@ -21,6 +21,8 @@ import org.json.JSONObject;
 
 import java.text.DecimalFormat;
 
+import static com.akdndhrc.covid_module.R.string.invalidGender;
+
 public class Child_NashoNumaGrowthChart_Activity extends AppCompatActivity {
 
     Context ctx = Child_NashoNumaGrowthChart_Activity.this;
@@ -150,7 +152,7 @@ public class Child_NashoNumaGrowthChart_Activity extends AppCompatActivity {
                         intent.putExtra("child_gender", child_gender);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getApplicationContext(), "Invalid gender", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), invalidGender, Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Log.d("test_covered", "HERE");
@@ -183,7 +185,7 @@ public class Child_NashoNumaGrowthChart_Activity extends AppCompatActivity {
 
                 if (jsonObject.has("qad") || jsonObject.has("wazan"))
                     if (jsonObject.getString("qad").isEmpty() || jsonObject.getString("wazan").isEmpty() || jsonObject.getString("inch").isEmpty()) {
-                        txt_bmi_value.setText("وزن یا قد نہ ہونے کی وجہ سے بی ام آئی پتہ نہیں کیا جا سکتا.");
+                        txt_bmi_value.setText(R.string.noBMIdueToHeightWeight);
                         iv_editform.setVisibility(View.VISIBLE);
                     } else {
                         iv_editform.setVisibility(View.GONE);

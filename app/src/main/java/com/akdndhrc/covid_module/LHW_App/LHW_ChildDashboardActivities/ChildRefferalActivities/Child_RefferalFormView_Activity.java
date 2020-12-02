@@ -56,6 +56,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static android.R.layout.simple_spinner_dropdown_item;
+import static com.akdndhrc.covid_module.R.string.selectReferalHealthCenterPrompt;
+
 
 public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
@@ -168,7 +171,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -226,7 +229,8 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
 
         if (spRefHealthFacility.getSelectedItemPosition() == 0) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحت مرکز منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectHealthCenterPrompt, Snackbar.LENGTH_SHORT);
+
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -241,7 +245,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
         if (spReferralReason.getSelectedItemPosition() == 0) {
             //  Toast.makeText(getApplicationContext(), "برائے مہربانی ریفرل درج کریں", Toast.LENGTH_LONG).show();
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی ریفرل وجہ منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectReferalReasonPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -308,7 +312,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
         if (spRefHealthFacility.getSelectedItemPosition() == 20) {
             if (et_refferal_hospital.getText().toString().isEmpty()) {
-                Toast.makeText(getApplicationContext(), "برائے مہربانی ریفرل صحت مرکز درج کریں.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), selectReferalHealthCenterPrompt, Toast.LENGTH_LONG).show();
                 return;
             }
         } else {
@@ -317,7 +321,8 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
         if (spReferralReason.getSelectedItemPosition() == 18) {
             if (et_refferal_ki_waja.getText().toString().isEmpty()) {
-                Toast.makeText(getApplicationContext(), "برائے مہربانی ریفرل کی وجہ درج کریں.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), R.string.selectReferalReasonPrompt, Toast.LENGTH_LONG).show();
+
                 return;
             }
         } else {
@@ -352,8 +357,6 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
                 jsonObject.put("referal_reason_others", "" + et_refferal_ki_waja.getText().toString());
                 jsonObject.put("updated_record_date", "" + TodayDate);//spinner
                 jsonObject.put("added_on", "" + update_added_on);
-
-
             }
 
             Handler handler = new Handler();
@@ -381,7 +384,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
                         if (res.toString().equalsIgnoreCase("true"))
                         {
 
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -406,7 +409,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
                         }
                         else
                         {
-                            final Snackbar snackbar = Snackbar.make(v, "ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -426,7 +429,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
                             sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }*/
 
 
@@ -541,7 +544,6 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
                 params.put("added_by", added_by);
                 params.put("added_on", added_on);
 
-
                 Log.d(TAG, "mParam " + params);
 
                 return params;
@@ -586,7 +588,7 @@ public class Child_RefferalFormView_Activity extends AppCompatActivity {
 
 
             final ArrayAdapter<String> adptr_facilities = new ArrayAdapter<String>(this, R.layout.sp_health_facility_layout, facilities);
-            adptr_facilities.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            adptr_facilities.setDropDownViewResource(simple_spinner_dropdown_item);
 
             spRefHealthFacility.setAdapter(
                     new NothingSelectedSpinnerAdapter(

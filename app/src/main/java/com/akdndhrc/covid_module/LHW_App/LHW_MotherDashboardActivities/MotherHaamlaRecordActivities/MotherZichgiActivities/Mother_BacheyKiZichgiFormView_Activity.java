@@ -475,7 +475,7 @@ public class Mother_BacheyKiZichgiFormView_Activity extends AppCompatActivity {
 
                             sendPostRequest(mother_uid, preg_id, TodayDate, "1", String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
-                            Toast.makeText(ctx, "ڈیٹا اپڈیٹ ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -535,7 +535,7 @@ public class Mother_BacheyKiZichgiFormView_Activity extends AppCompatActivity {
                         Log.d("000555", "Updated Data: " + update_record);
                         Log.d("000555", "Updated Query: " + res.toString());
 
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data updated successfully", Toast.LENGTH_SHORT).show();
 
 

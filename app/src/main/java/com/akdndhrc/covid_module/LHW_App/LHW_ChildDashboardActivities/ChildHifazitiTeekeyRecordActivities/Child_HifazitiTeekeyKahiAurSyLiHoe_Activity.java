@@ -173,7 +173,6 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
-                Toast.makeText(ctx, "Navigation", Toast.LENGTH_SHORT).show();
             }
         });
 
