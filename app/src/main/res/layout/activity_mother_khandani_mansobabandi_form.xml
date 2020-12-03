@@ -525,7 +525,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="فراہم سروس / آگاہی"
+                                    android:text="@string/provService"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp"
                                     android:textStyle="bold" />
@@ -567,7 +567,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_toStartOf="@id/checkbox_service_provided"
-                                        android:text="فراہم سروس"
+                                        android:text="@string/provServ"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
 
@@ -592,7 +592,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_centerVertical="true"
                                         android:layout_toStartOf="@+id/checkbox_awareness"
-                                        android:text="آگاہی"
+                                        android:text="@string/awareness"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_14sdp" />
 
@@ -616,7 +616,7 @@
                                     android:layout_gravity="right"
                                     android:gravity="right"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="مواد"
+                                    android:text="@string/cd_mawaad"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
 

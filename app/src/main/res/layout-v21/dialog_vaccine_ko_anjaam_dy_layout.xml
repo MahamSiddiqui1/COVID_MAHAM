@@ -90,7 +90,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="@string/fromSomewhereElse"
+                android:text="@string/fromElsewhere"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_12sdp" />
 

@@ -496,11 +496,11 @@ public class Mother_QabalAzPedaishFormView_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, R.string.R.string.dataGPSeng, LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notdataGPSeng, LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, R.string.notR.string.dataGPSeng, LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.notdataGPSeng, LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {

@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="رجسٹر مریض"
+                    android:text="@string/regPatient"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -207,7 +207,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="مریض کا نام"
+                                    android:text="@string/patientName"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
 

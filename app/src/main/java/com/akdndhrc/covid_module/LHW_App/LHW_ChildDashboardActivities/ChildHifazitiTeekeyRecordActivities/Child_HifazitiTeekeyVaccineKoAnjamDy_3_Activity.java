@@ -70,7 +70,7 @@ import retrofit2.Retrofit;
 import uk.co.senab.photoview.PhotoViewAttacher;
 
 import static android.graphics.BitmapFactory.decodeFile;
-import static com.akdndhrc.covid_module.R.string.R.string.dataGPS;
+import static com.akdndhrc.covid_module.R.string.dataGPS;
 import static com.akdndhrc.covid_module.R.string.imageNotSaveSomethingWrong;
 
 

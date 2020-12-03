@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="ریفر"
+                    android:text="@string/refer"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />

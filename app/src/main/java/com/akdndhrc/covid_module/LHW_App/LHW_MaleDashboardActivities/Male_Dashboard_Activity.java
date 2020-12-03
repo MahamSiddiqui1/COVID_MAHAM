@@ -86,7 +86,7 @@ public class Male_Dashboard_Activity extends AppCompatActivity implements View.O
 
         switch (v.getId()) {
             case R.id.iv_navigation_drawer:
-                Toast.makeText(ctx, "Click", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.click, Toast.LENGTH_SHORT).show();
 
                 break;
 

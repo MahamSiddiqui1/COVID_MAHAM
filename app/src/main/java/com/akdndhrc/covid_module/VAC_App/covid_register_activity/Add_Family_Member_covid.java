@@ -107,7 +107,7 @@ public class Add_Family_Member_covid extends BaseSlideMenuActivity {
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(newIntent);
-                Toast.makeText(ctx, "Home", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.home, Toast.LENGTH_SHORT).show();
             }
         });
 

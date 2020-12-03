@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_marginStart="30dp"
-                    android:text="FAMILY"
+                    android:text="@string/family"
                     android:textAlignment="center"
                     android:textColor="#fff"
                     android:textSize="@dimen/_18sdp"
@@ -163,7 +163,7 @@
                             android:layout_marginEnd="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:gravity="right"
-                            android:text="Family ID :"
+                            android:text="@string/family_id"
                             android:textColor="@color/register_khandan_text_color"
                             android:textSize="@dimen/_12sdp" />
 
@@ -174,7 +174,7 @@
                             android:layout_marginEnd="@dimen/_3sdp"
                             android:layout_weight="1"
                             android:gravity="left"
-                            android:text="12345"
+                            android:text="@string/_12345"
                             android:textColor="@color/register_khandan_text_color"
                             android:textSize="@dimen/_12sdp" />
 
@@ -204,7 +204,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/login_button_shape_layout"
-                        android:text="ADD FAMILY MEMBER"
+                        android:text="@string/add_family_member"
                         android:textColor="@color/color_white"
                         android:textSize="@dimen/_12sdp" />
 

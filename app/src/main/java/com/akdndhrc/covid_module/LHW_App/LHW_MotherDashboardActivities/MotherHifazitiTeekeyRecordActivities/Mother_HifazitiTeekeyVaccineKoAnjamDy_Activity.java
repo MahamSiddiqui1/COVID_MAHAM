@@ -604,7 +604,7 @@ public class Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatAct
             Log.d("000555", "Data: " + ans1);
             Log.d("000555", "Query: " + res);
 
-            final Snackbar snackbar = Snackbar.make(v, "Vaccine data has been collected.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataCollectedEng, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -713,19 +713,19 @@ public class Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatAct
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "Vaccine data is synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccDataSyncedEng, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", " Error: " + e.getMessage());
                     //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "Vaccine data not synced", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.vaccineDataNotSynced, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -737,7 +737,7 @@ public class Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatAct
             public void onErrorResponse(VolleyError error) {
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Vaccine data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.vaccineDataNotSynced, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }

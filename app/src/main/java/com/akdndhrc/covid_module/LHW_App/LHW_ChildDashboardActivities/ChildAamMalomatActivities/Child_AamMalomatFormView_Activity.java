@@ -527,6 +527,7 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(ctx, R.string.nav, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -692,12 +693,14 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                         Log.d(TAG, "Data: " + update_record);
                         Log.d(TAG, "Query: " + res.toString());
 
+                       /* Toast.makeText(ctx, R.string.dataEdited, Toast.LENGTH_SHORT).show();
                         if (Utils.haveNetworkConnection(ctx) > 0) {
                             sendPostRequest(child_uid, et_tareekh_indraj.getText().toString(), String.valueOf(jsonObject), login_useruid, added_on);
                         } else {
                         }*/
 
                         if (res.toString().equalsIgnoreCase("true")) {
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -720,6 +723,7 @@ public class Child_AamMalomatFormView_Activity extends AppCompatActivity {
                             }
 
                         } else {
+                            final Snackbar snackbar = Snackbar.make(v, R.string.dataNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

@@ -882,12 +882,12 @@ public class Register_new_family_member extends AppCompatActivity {
                         Log.d("000999", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         // Toast.makeText(AboveTwo_Register_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000555", "Err: " + e.getMessage());
-                    Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     /// /Toast.makeText(AboveTwo_Register_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
 
                 }
@@ -944,7 +944,7 @@ public class Register_new_family_member extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer("ایک منتخب کریں", 1, android.R.color.transparent));
+        customers.add(new Customer(R.string.selectOne, 1, android.R.color.transparent));
         customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
         customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
 

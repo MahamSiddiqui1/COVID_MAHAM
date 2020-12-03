@@ -681,7 +681,7 @@ public class Mother_Profile_Activity extends AppCompatActivity {
 
         if (Register_QRCode_Activity.switch_qr_code_values.equalsIgnoreCase("1")) {
 
-            SharedPreferences settings = getSharedPreferences("shared_QR_Value", MODE_PRIVATE);
+            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_QR_Value), MODE_PRIVATE);
             SharedPreferences.Editor editor = settings.edit();
             // Reading from SharedPreferences
             qr_code_text = settings.getString("qr_code", "");

@@ -59,7 +59,7 @@
             android:layout_weight="1"
             android:gravity="end"
             android:padding="@dimen/_12sdp"
-            android:text="دوبارہ اسکین کرے"
+            android:text="@string/rescan"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />
@@ -72,7 +72,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="@dimen/_12sdp"
-            android:text="منسوخ کریں"
+            android:text="@string/cancel"
             android:textColor="@color/graph_red_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />
@@ -85,7 +85,7 @@
             android:layout_weight="1"
             android:gravity="right"
             android:padding="@dimen/_12sdp"
-            android:text="جاری رہے"
+            android:text="@string/continue"
             android:textColor="@color/green_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />

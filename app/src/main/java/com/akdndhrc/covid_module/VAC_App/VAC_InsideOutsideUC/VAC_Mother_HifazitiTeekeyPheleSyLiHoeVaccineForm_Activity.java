@@ -175,7 +175,7 @@ public class VAC_Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends A
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
-                    Toast.makeText(getApplicationContext(), "Please select a received date", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectRecDateEng, Toast.LENGTH_LONG).show();
                     return;
                 }
 

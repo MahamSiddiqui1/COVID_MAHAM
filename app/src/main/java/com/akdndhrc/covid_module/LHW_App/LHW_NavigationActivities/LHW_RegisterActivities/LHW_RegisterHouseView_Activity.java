@@ -109,7 +109,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
         rl_home_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Home", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.home, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -204,7 +204,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 
                 if (et_khandan_ka_number.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی خاندان کا نمبر درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterFamNumPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -218,7 +218,7 @@ public class LHW_RegisterHouseView_Activity extends AppCompatActivity {
 
 
                 if (et_khandan_kai_sarbarah_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی خاندان کے سربراہ کا نام  درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterGuardianNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

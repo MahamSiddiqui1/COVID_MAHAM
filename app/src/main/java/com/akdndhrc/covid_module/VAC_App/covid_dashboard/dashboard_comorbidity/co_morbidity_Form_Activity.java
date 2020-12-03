@@ -1026,7 +1026,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                     } else {
                         Log.d("000362", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //  Toast.makeText(side_effects_Form_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 

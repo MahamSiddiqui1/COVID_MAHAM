@@ -29,6 +29,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.akdndhrc.covid_module.R.string.click;
+
 public class Mother_Dashboard_Activity extends AppCompatActivity implements View.OnClickListener {
 
     Context ctx = Mother_Dashboard_Activity.this;
@@ -89,7 +91,7 @@ public class Mother_Dashboard_Activity extends AppCompatActivity implements View
 
         switch (v.getId()) {
             case R.id.iv_navigation_drawer:
-                Toast.makeText(ctx, "Click", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, click, Toast.LENGTH_SHORT).show();
 
                 break;
 

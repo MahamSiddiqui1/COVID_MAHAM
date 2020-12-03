@@ -216,7 +216,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                             } else {
                                 Log.d("000522", "Not Ref");
                                 //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -309,7 +309,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 } else {
                                     Log.d("000522", "Not Ref");
                                     //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -392,7 +392,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                     } else {
                                         Log.d("000522", "Not Ref");
                                         //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -456,7 +456,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 } else {
                                     Log.d("000522", "Not Ref");
                                     //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -538,7 +538,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                     } else {
                                         Log.d("000522", "Not Ref");
                                         //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -603,7 +603,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 } else {
                                     Log.d("000522", "Not Ref");
                                     //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -683,7 +683,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                     } else {
                                         Log.d("000522", "Not Ref");
                                         //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                        final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                        final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                         View mySbView = snackbar.getView();
                                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -752,7 +752,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -847,7 +847,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -940,7 +940,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1033,7 +1033,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1127,7 +1127,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1222,7 +1222,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1316,7 +1316,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1409,7 +1409,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                         } else {
                                             Log.d("000522", "Not Ref");
                                             //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                             View mySbView = snackbar.getView();
                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1497,7 +1497,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 } else {
                                     Log.d("000522", "Not Ref");
                                     //Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
-                                    final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1713,6 +1713,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -1838,6 +1839,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                     Log.d("000522", "Data: " + ans1);
                     Log.d("000522", "Query: " + res);
 
+                    Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
 
                     if (Utils.haveNetworkConnection(ctx) > 0) {
 
@@ -1899,10 +1901,10 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
-                        Toast.makeText(ctx, "Data synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d("000522", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
@@ -1989,10 +1991,11 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                                 "WHERE member_uid = '" + child_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Log.d("000522", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //   Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 

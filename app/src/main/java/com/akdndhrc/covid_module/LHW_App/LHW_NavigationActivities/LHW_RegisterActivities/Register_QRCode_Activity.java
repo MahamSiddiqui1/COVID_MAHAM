@@ -85,9 +85,9 @@ public class Register_QRCode_Activity extends AppCompatActivity implements ZXing
         view.setMinimumHeight(10);
         dialogBuilder.setCustomTitle(view);
         dialogBuilder.setMessage(rawResult.getText());
-        dialogBuilder.setPositiveButton("جاری رہے", null);
-        dialogBuilder.setNegativeButton("منسوخ کریں", null);
-        dialogBuilder.setNeutralButton("دوبارہ اسکین کرے",null);
+        dialogBuilder.setPositiveButton("R.string.continue", null);
+        dialogBuilder.setNegativeButton("R.string.cancel", null);
+        dialogBuilder.setNeutralButton("R.string.rescan",null);
 
         final android.app.AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.setCancelable(false);
@@ -107,7 +107,7 @@ public class Register_QRCode_Activity extends AppCompatActivity implements ZXing
 
                 switch_qr_code_values = "1";
 
-                SharedPreferences settings = getSharedPreferences("shared_QR_Value", MODE_PRIVATE);
+                SharedPreferences settings = getSharedPreferences(getString(R.string.shared_QR_Value), MODE_PRIVATE);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString("qr_code", rawResult.getText().toString());
                 editor.commit();

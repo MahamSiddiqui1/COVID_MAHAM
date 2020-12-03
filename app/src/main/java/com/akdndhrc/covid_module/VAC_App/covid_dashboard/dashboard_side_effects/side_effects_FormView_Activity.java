@@ -883,7 +883,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                     } else {
                         Log.d("000987", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {

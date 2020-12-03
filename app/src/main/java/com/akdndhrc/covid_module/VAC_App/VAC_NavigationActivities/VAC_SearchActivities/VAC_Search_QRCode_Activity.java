@@ -81,9 +81,9 @@ public class VAC_Search_QRCode_Activity extends AppCompatActivity implements ZXi
         view.setMinimumHeight(10);
         dialogBuilder.setCustomTitle(view);
         dialogBuilder.setMessage(rawResult.getText());
-        dialogBuilder.setPositiveButton("جاری رہے", null);
-        dialogBuilder.setNegativeButton("منسوخ کریں", null);
-        dialogBuilder.setNeutralButton("دوبارہ اسکین کرے", null);
+        dialogBuilder.setPositiveButton(R.string.continue, null);
+        dialogBuilder.setNegativeButton(R.string.cancel, null);
+        dialogBuilder.setNeutralButton("R.string.rescan", null);
 
         final android.app.AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.setCancelable(false);

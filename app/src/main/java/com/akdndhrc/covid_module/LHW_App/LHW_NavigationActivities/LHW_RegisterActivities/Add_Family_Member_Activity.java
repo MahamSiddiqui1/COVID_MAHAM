@@ -32,6 +32,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static android.widget.Toast.*;
+import static com.akdndhrc.covid_module.R.string.home;
+
 
 public class Add_Family_Member_Activity extends BaseSlideMenuActivity {
 
@@ -90,14 +93,14 @@ public class Add_Family_Member_Activity extends BaseSlideMenuActivity {
         rl_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
+                makeText(ctx, R.string.navigation, LENGTH_SHORT).show();
             }
         });
 
         rl_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Home", Toast.LENGTH_SHORT).show();
+                makeText(ctx, home, LENGTH_SHORT).show();
             }
         });
 
@@ -123,7 +126,7 @@ public class Add_Family_Member_Activity extends BaseSlideMenuActivity {
 
                         startActivity(intent);
                     } else {
-                        Toast.makeText(ctx, "No Feature defined", Toast.LENGTH_SHORT).show();
+                        makeText(ctx, R.string.noFeatureDef, LENGTH_SHORT).show();
                     }
                 } else if (Integer.parseInt(mData[position][2]) == 0) {
                     if (Integer.parseInt(mData[position][3]) <= 2) {
@@ -137,7 +140,7 @@ public class Add_Family_Member_Activity extends BaseSlideMenuActivity {
                         startActivity(intent);
                     }
                 } else {
-                    Toast.makeText(ctx, "Position: " + position, Toast.LENGTH_SHORT).show();
+                    makeText(ctx, "Position: " + position, LENGTH_SHORT).show();
                 }
             }
         });
@@ -274,7 +277,7 @@ public class Add_Family_Member_Activity extends BaseSlideMenuActivity {
             rl_khandan_edit.setEnabled(true);
             Log.d("12345", "Error: " + e.getMessage());
             //Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-            Toast tt = Toast.makeText(ctx,"خاندان کا کوئی رکن رجسٹر نہیں", Toast.LENGTH_SHORT);
+            Toast tt = makeText(ctx, R.string.noFamMemReg, LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

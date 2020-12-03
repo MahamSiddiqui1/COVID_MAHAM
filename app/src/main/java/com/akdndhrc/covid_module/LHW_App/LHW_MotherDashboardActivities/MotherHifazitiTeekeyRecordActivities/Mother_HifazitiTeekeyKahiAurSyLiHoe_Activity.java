@@ -58,6 +58,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.string.selectRecDateEng;
+import static com.akdndhrc.covid_module.R.string.vaccineDataNotSynced;
+
 
 public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivity {
 
@@ -194,7 +197,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
                         if (mData_ref_vac != null) {
                             Log.d("000555", "Refuse");
 //                            Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(view, "Vaccination was refused.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineRefused, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -210,7 +213,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
                             snackbar.show();
                         } else {
                             Log.d("000555", "Not Ref");
-                            final Snackbar snackbar = Snackbar.make(view, "This vaccine has been given..", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(view, R.string.vaccineGiven, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -354,13 +357,13 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             public void onClick(View v) {
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
-                    Toast.makeText(getApplicationContext(), "Please select a received date", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), selectRecDateEng, Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 if (sp_vaccine_kaha_farham_hoe.getSelectedItemPosition()==0)
                 {
-                    Toast.makeText(getApplicationContext(), "Please select where the vaccine is provided", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.vaccProvideLocation, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -452,7 +455,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
                     if (res.toString().equalsIgnoreCase("true"))
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "Vaccine data has been collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataCollectedEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -475,7 +478,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
                     }
                     else {
-                        final Snackbar snackbar = Snackbar.make(v, "Vaccine data not collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataNotCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -549,12 +552,12 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'AND vaccine_id= '" + vacine_uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast tt  =Toast.makeText(ctx, "Vaccine data is synced", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.vaccDataSyncedEng, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                     } else {
                         Log.d("000266", "else ");
-                        Toast tt  =Toast.makeText(ctx, "No data sync", Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, R.string.noDataSyncEng, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
@@ -563,7 +566,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
                 } catch (Exception e) {
                     Log.d("000266", " Error: " + e.getMessage());
                     //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "Vaccine data not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, vaccineDataNotSynced, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -573,7 +576,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
             public void onErrorResponse(VolleyError error) {
                 Log.d("000266", "error    " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "No data sync", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.noDataSyncEng, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }
@@ -804,7 +807,7 @@ public class Mother_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActiv
 
         } catch (Exception e) {
             Log.d("000555", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "No record", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecordEng, Toast.LENGTH_SHORT).show();
         }
 
 

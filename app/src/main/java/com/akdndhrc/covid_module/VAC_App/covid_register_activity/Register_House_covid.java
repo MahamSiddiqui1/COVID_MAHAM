@@ -156,7 +156,7 @@ public class Register_House_covid extends AppCompatActivity {
         rl_home_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Home", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.home, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -820,7 +820,7 @@ public class Register_House_covid extends AppCompatActivity {
                         Log.d("000951", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         //  Toast.makeText(Register_House.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {

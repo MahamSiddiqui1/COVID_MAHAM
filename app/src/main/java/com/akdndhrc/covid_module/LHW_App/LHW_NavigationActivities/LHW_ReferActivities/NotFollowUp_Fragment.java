@@ -147,8 +147,8 @@ public class NotFollowUp_Fragment extends Fragment {
         mArrayList_Referral.clear();
 
         if (et_is_tareekh_sy.getText().toString().isEmpty() || et_is_tareekh_tk.getText().toString().isEmpty()) {
-            //Toast.makeText(getContext(), "برائے مہربانی تاریخ منتخب کریں", Toast.LENGTH_SHORT).show();
-            final Snackbar snackbar = Snackbar.make(getView(), "برائے مہربانی تاریخ منتخب کریں", Snackbar.LENGTH_SHORT);
+            //Toast.makeText(getContext(), R.string.selectDatePrompt, Toast.LENGTH_SHORT).show();
+            final Snackbar snackbar = Snackbar.make(getView(), R.string.selectDatePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -174,7 +174,7 @@ public class NotFollowUp_Fragment extends Fragment {
                 mData_CBemari = ls.executeReader("Select count(*) from CBEMARI where JSON_EXTRACT(data, '$.referal_reason') IS \"\" AND JSON_EXTRACT(data, '$.referal_facility') IS \"\" AND date(record_data) BETWEEN '" + et_is_tareekh_sy.getText().toString() + "' AND '" + et_is_tareekh_tk.getText().toString() + "'");
                 if (mData_CBemari != null) {
                     Log.d("000700", "Total CBEMARI Count: " + mData_CBemari[0][0]);
-                    mArrayList_HeaderList.add(mData_CBemari[0][0] + "@" + "بچوں کی بیماری کا حوالہ");
+                    mArrayList_HeaderList.add(mData_CBemari[0][0] + "@" + getString(R.string.Data_CBemari));
 
                     Log.d("000700", "CBEMARI HEADER LIST Size: " + mArrayList_HeaderList.size());
 
@@ -242,7 +242,7 @@ public class NotFollowUp_Fragment extends Fragment {
                 mData_MBemari = ls.executeReader("Select count(*) from MBEMARI where JSON_EXTRACT(data, '$.referal_reason') IS \"\" AND JSON_EXTRACT(data, '$.referal_facility') IS \"\" AND date(record_data) BETWEEN '" + et_is_tareekh_sy.getText().toString() + "' AND '" + et_is_tareekh_tk.getText().toString() + "'");
                 if (mData_MBemari != null) {
                     Log.d("000700", "Total MBEMARI Count: " + mData_MBemari[0][0]);
-                    mArrayList_HeaderList.add(mData_MBemari[0][0] + "@" + "ماں  کی بیماری کا حوالہ");
+                    mArrayList_HeaderList.add(mData_MBemari[0][0] + "@" + getString(R.string.MBemari));
 
                     Log.d("000700", "MBEMARI HEADER LIST Size: " + mArrayList_HeaderList.size());
 
@@ -311,7 +311,7 @@ public class NotFollowUp_Fragment extends Fragment {
                 mData_MFPlanning = ls.executeReader("Select count(*) from MFPLAN where JSON_EXTRACT(data, '$.reason_refer') IS \"\" AND JSON_EXTRACT(data, '$.facility_refer') IS \"\" AND date(record_data) BETWEEN '" + et_is_tareekh_sy.getText().toString() + "' AND '" + et_is_tareekh_tk.getText().toString() + "'");
                 if (mData_MFPlanning != null) {
                     Log.d("000700", "Total MFPLAN Count: " + mData_MFPlanning[0][0]);
-                    mArrayList_HeaderList.add(mData_MFPlanning[0][0] + "@" + "خاندانی منصوبہ بندی کا حوالہ");
+                    mArrayList_HeaderList.add(mData_MFPlanning[0][0] + "@" + getString(R.string.MFPlanning));
 
                     Log.d("000700", "MFPLAN HEADER LIST Size: " + mArrayList_HeaderList.size());
 
@@ -380,7 +380,7 @@ public class NotFollowUp_Fragment extends Fragment {
                 mData_Referral = ls.executeReader("Select count(*) from REFERAL where JSON_EXTRACT(data, '$.referal_reason') IS \"\" AND JSON_EXTRACT(data, '$.referal_facility') IS \"\" AND date(record_data) BETWEEN '" + et_is_tareekh_sy.getText().toString() + "' AND '" + et_is_tareekh_tk.getText().toString() + "'");
                 if (mData_Referral != null) {
                     Log.d("000700", "Total REFERRAL Count: " + mData_Referral[0][0]);
-                    mArrayList_HeaderList.add(mData_Referral[0][0] + "@" + "ریفرل");
+                    mArrayList_HeaderList.add(mData_Referral[0][0] + "@" + getString(R.string.Referral));
 
                     Log.d("000700", "REFERRAL HEADER LIST Size: " + mArrayList_HeaderList.size());
 

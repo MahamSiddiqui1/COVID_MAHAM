@@ -41,6 +41,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.layout.activity_mother_hifaziti_teekey_record_form;
+
 
 public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActivity {
 
@@ -74,7 +76,7 @@ public class Mother_HifazitiTeekeyRecordFormView_Activity extends AppCompatActiv
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mother_hifaziti_teekey_record_form);
+        setContentView(activity_mother_hifaziti_teekey_record_form);
 
         Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(this, Mother_HifazitiTeekeyRecordFormView_Activity.class));
 

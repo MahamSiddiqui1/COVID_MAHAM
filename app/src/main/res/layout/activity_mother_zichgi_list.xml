@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
 
                 android:checked="false"
-                android:text="fistula/فیسٹولا "
+                android:text="@string/fistula"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_marginEnd="@dimen/_3sdp"
                 android:trackTint="@color/grey_color"

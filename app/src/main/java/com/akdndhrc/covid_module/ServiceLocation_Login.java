@@ -363,7 +363,7 @@ public class ServiceLocation_Login extends Service {
       //  dialogBuilder.setIcon(mContext.getResources().getDrawable(R.drawable.ic_gps_off_black_24dp));
         dialogBuilder.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں؟");
         dialogBuilder.setPositiveButton("سیٹنگ", null);
-     //   dialogBuilder.setNegativeButton("منسوخ کریں", null);
+     //   dialogBuilder.setNegativeButton(R.string.cancel, null);
 
 
         alertDialog = dialogBuilder.create();

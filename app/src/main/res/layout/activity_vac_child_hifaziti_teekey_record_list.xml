@@ -272,7 +272,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/login_button_shape_layout"
-                        android:text="@string/fromSomewhereElse"
+                        android:text="@string/fromElsewhere"
                         android:textColor="@color/color_white"
                         android:textSize="@dimen/_14sdp"
                         android:visibility="gone" />

@@ -126,14 +126,14 @@ public class Mother_HaamlaDashboard_Activity extends AppCompatActivity implement
         sw_preg_status.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        /*sw_preg_status.setText("فعال");
+                        /*sw_preg_status.setText(R.string.active);
                         sw_preg_status.setChecked(true);
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.switch_green_color));
                             sw_preg_status.setTrackTintList(ctx.getResources().getColorStateList(R.color.green_color));
                         }*/
                 sw_preg_status.setChecked(false);
-                sw_preg_status.setText("غیر فعال");
+                sw_preg_status.setText(R.string.inactive);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.grey_color));
                     sw_preg_status.setTrackTintList(ctx.getResources().getColorStateList(R.color.grey_color));
@@ -245,7 +245,7 @@ public class Mother_HaamlaDashboard_Activity extends AppCompatActivity implement
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
-                sw_preg_status.setText("فعال");
+                sw_preg_status.setText(R.string.active);
                 sw_preg_status.setChecked(true);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.switch_green_color));
@@ -543,14 +543,14 @@ public class Mother_HaamlaDashboard_Activity extends AppCompatActivity implement
                     Log.d("000333", "111111111 ");
                     sw_preg_status.setEnabled(false);
                     sw_preg_status.setChecked(false);
-                    sw_preg_status.setText("غیر فعال");
+                    sw_preg_status.setText(R.string.inactive);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.grey_color));
                         sw_preg_status.setTrackTintList(ctx.getResources().getColorStateList(R.color.grey_color));
                     }
                 } else {
                     Log.d("000333", "22222222 ");
-                    sw_preg_status.setText("فعال");
+                    sw_preg_status.setText(R.string.active);
                     sw_preg_status.setChecked(true);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.switch_green_color));
@@ -561,7 +561,7 @@ public class Mother_HaamlaDashboard_Activity extends AppCompatActivity implement
 
             } else {
                 Log.d("000333", "33333 ");
-                sw_preg_status.setText("فعال");
+                sw_preg_status.setText(R.string.active);
                 sw_preg_status.setChecked(true);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     sw_preg_status.setThumbTintList(ctx.getResources().getColorStateList(R.color.switch_green_color));

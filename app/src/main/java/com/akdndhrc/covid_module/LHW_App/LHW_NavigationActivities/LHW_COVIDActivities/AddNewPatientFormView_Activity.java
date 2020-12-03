@@ -497,7 +497,7 @@ public class AddNewPatientFormView_Activity extends AppCompatActivity {
         }
 
         if (et_patient_name.getText().toString().isEmpty()) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی مریض کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.enterPatientNamePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -510,7 +510,7 @@ public class AddNewPatientFormView_Activity extends AppCompatActivity {
         }
 
         if (et_age.getText().toString().isEmpty()) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی مریض کی عمر درج کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.enterPatientAgePrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -523,7 +523,7 @@ public class AddNewPatientFormView_Activity extends AppCompatActivity {
         }
 
         if (sp_gender.getSelectedItemPosition() == 0) {
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی جنس منتخب کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

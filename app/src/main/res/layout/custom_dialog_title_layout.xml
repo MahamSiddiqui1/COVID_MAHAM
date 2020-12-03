@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginEnd="@dimen/_5sdp"
-        android:text="اسکین کے نتائج"
+        android:text="@string/ScanResults"
         android:textColor="@color/dark_blue_color"
         android:textSize="@dimen/_14sdp"
         android:textStyle="bold" />

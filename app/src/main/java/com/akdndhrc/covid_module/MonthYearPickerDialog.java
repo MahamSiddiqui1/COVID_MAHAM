@@ -62,7 +62,7 @@ public class MonthYearPickerDialog extends DialogFragment {
                         listener.onDateSet(null, yearPicker.getValue(), monthPicker.getValue(), 0);
                     }
                 })
-                .setNegativeButton("منسوخ کریں", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         MonthYearPickerDialog.this.getDialog().cancel();
                     }

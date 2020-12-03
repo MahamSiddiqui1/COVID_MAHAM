@@ -173,6 +173,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
             public void onClick(View v) {
                 Log.d("12345", "Errr");
 
+                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -1346,7 +1347,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, R.string.R.string.dataGPS, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");

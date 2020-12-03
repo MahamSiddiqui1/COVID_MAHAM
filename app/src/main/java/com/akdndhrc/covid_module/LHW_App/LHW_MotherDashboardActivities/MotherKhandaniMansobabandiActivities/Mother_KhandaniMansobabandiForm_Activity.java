@@ -323,7 +323,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
             public void onClick(View v) {
 
                 if (et_tareekh_visit.getText().toString().length() < 1) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی تاریخ وزٹ منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectVisitDate, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -682,7 +682,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                     } else {
                         Log.d("000362", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //  Toast.makeText(side_effects_Form_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 

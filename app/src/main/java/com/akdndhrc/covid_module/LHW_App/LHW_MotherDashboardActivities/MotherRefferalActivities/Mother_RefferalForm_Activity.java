@@ -112,7 +112,7 @@ public class Mother_RefferalForm_Activity extends AppCompatActivity {
 
         //EditText
         et_tareekh_indraj = findViewById(R.id.et_tareekh_indraj);
-       et_refferal_ki_waja = findViewById(R.id.et_refferal_ki_waja);
+        et_refferal_ki_waja = findViewById(R.id.et_refferal_ki_waja);
         et_refferal_hospital = findViewById(R.id.et_refferal_hospital);
 
         //Button

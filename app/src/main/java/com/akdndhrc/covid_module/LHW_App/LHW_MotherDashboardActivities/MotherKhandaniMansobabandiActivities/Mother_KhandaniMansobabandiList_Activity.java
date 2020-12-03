@@ -219,7 +219,7 @@ public class Mother_KhandaniMansobabandiList_Activity extends AppCompatActivity 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
            // Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-            Toast tt = Toast.makeText(ctx, "خاندانی منصوبہ بندی  کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, R.string.noFamPlanRec, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

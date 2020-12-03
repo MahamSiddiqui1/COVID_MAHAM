@@ -128,7 +128,6 @@ public class Mother_QabalAzPedaishForm_Activity extends AppCompatActivity {
         iv_navigation_drawer.setVisibility(View.GONE);
         iv_home.setVisibility(View.GONE);
 
-
         //RelativeLayout
         rl_add_kul_zichgiyou_ki_tadaad = findViewById(R.id.rl_add_kul_zichgiyou_ki_tadaad);
         rl_sub_kul_zichgiyou_ki_tadaad = findViewById(R.id.rl_sub_kul_zichgiyou_ki_tadaad);

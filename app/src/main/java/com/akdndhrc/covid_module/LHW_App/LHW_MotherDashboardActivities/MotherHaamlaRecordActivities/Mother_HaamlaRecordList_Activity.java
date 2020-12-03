@@ -1,5 +1,6 @@
 package com.akdndhrc.covid_module.LHW_App.LHW_MotherDashboardActivities.MotherHaamlaRecordActivities;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -55,6 +56,10 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
+import static com.akdndhrc.covid_module.R.string.wrongUpdatedANC;
+import static com.akdndhrc.covid_module.R.string.wrongUpdatedDelivery;
+import static com.akdndhrc.covid_module.R.string.wrongUpdatedPreg;
 
 
 public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
@@ -327,7 +332,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                 if (et_akhiri_haiz_ki_tareekh.getText().toString().length() < 1) {
                     // Toast.makeText(getApplicationContext(), "برائے مہربانی آخری ماہواری کی تاریخ منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی آخری ماہواری کی تاریخ منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectLastPeriodDatePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -417,7 +422,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                     Log.d("000555", "Query: " + res.toString());
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "نیا حمل شامل ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.newPregnancyRecorded, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -454,7 +459,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                             }
                         }, 2000);
                     } else {
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "حمل اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.pregnancyNotEdited, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -536,7 +541,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                 if (et_akhiri_haiz_ki_tareekh.getText().toString().length() < 1) {
                     // Toast.makeText(getApplicationContext(), "برائے مہربانی آخری ماہواری کی تاریخ منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی آخری ماہواری کی تاریخ منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectLastPeriodDatePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -583,7 +588,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "حمل کا ڈیٹا اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.pregnancyDataEdited, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -620,7 +625,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                     }
 
                     else {
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "حمل کا ڈیٹا اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.pregnancyDataNotEdited, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -655,6 +660,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private void Dialog_Delete_PregnancyRecord(final int position) {
 
         final Dialog dialog = new Dialog(ctx);
@@ -671,7 +677,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
         Log.d("000102", "d" + "کیا آپ اس " + "06-02-2020" + " حمل کو ڈیلیٹ کرنا چاہتے ہے؟ ");
 
         TextView txtdelete = dialogView.findViewById(R.id.txtDelete);
-        txtdelete.setText("کیا آپ اس " + mData[position][2] + " تاریخ کے حمل کو ڈیلیٹ کرنا چاہتے ہے؟ ");
+        txtdelete.setText(getString(R.string.doYou) + mData[position][2] + getString(R.string.datePregnancyDel));
 
         TextView tvYes = dialogView.findViewById(R.id.tvYes);
         TextView tvNo = dialogView.findViewById(R.id.tvNo);
@@ -714,7 +720,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000333", "Delete Pregnancy Update ERROR: " + e.getMessage());
-                    Toast.makeText(ctx, "Delete Err: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, getString(R.string.delErr) + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -749,7 +755,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                 }, 2000);
             }
             else {
-                Toast.makeText(ctx, "Something wrong to updated ANC.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, wrongUpdatedANC, Toast.LENGTH_SHORT).show();
                 alertDialog.dismiss();
                 Log.d("000333", "MANC ELSE ********");
             }
@@ -758,7 +764,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             alertDialog.dismiss();
             Log.d("000333", "Delete MANC data ERROR: " + e.getMessage());
-            Toast.makeText(ctx, "ANC Error: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, getString(R.string.ancError)+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -789,7 +795,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                 }, 2000);
             }
             else {
-                Toast.makeText(ctx, "Something wrong to updated Delivery.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, wrongUpdatedDelivery, Toast.LENGTH_SHORT).show();
                 alertDialog.dismiss();
                 Log.d("000333", "Delivery ELSE ********");
             }
@@ -798,7 +804,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             alertDialog.dismiss();
             Log.d("000333", "Delete update_MDELIV data ERROR: " + e.getMessage());
-            Toast.makeText(ctx, "Deliv Error: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, getString(R.string.delivErro)+e.getMessage(), Toast.LENGTH_SHORT).show();
 
         }
 
@@ -830,7 +836,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                 }, 2000);
             }
             else {
-                Toast.makeText(ctx, "Something wrong to updated PNC.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.wrongUpdatedPNC, Toast.LENGTH_SHORT).show();
                 alertDialog.dismiss();
                 Log.d("000333", "MPNC ELSE ********");
             }
@@ -838,7 +844,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             alertDialog.dismiss();
             Log.d("000333", "Delete MPNC data ERROR: " + e.getMessage());
-            Toast.makeText(ctx, "Error PNC: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, getString(R.string.errorPNC)+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -879,7 +885,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
             if (res.toString().equalsIgnoreCase("true")) {
                 Log.d("000333", "PREGNANCY DELETED SUCCESSFULLY !!!!!!!!!!!!!!!!!!!!!!: ");
 
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "حمل ڈیلیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.pregDel, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -913,7 +919,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
 
             }
             else {
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), "حمل ڈیلیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.pregnancy_layout), R.string.pregNotDel, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -931,7 +937,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
                     @Override
                     public void run() {
                         alertDialog.dismiss();
-                        Toast.makeText(ctx, "Something wrong to updated Pregnancy.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, wrongUpdatedPreg, Toast.LENGTH_SHORT).show();
                         Log.d("000333", "MPregnancy ELSE ********");
                     }
                 }, 1000);
@@ -940,7 +946,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             alertDialog.dismiss();
             Log.d("000333", "Delete MPREGNANCY data ERROR: " + e.getMessage());
-            Toast.makeText(ctx, "Pregnancy Err: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, getString(R.string.pregErr)+e.getMessage(), Toast.LENGTH_SHORT).show();
 
         }
 

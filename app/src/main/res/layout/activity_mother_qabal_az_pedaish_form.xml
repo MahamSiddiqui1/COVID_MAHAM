@@ -944,7 +944,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_marginEnd="@dimen/_5sdp"
-                                        android:text="TT"
+                                        android:text="@string/tt"
                                         android:textColor="@color/text_color"
                                         android:textSize="@dimen/_12sdp" />
 

@@ -226,7 +226,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="@dimen/_5sdp"
                                 android:layout_weight="1"
-                                android:text="ریفرل صحت مرکز"
+                                android:text="@string/referalHealthCenter"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_14sdp" />
 

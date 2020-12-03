@@ -33,6 +33,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
+import static com.akdndhrc.covid_module.R.layout.dialog_mother_zichgi_button_layout;
+
 public class Mother_ZichgiList_Activity extends AppCompatActivity {
 
     Context ctx = Mother_ZichgiList_Activity.this;
@@ -157,7 +159,7 @@ public class Mother_ZichgiList_Activity extends AppCompatActivity {
 
 
         LayoutInflater layoutInflater = LayoutInflater.from(this);
-        View promptView = layoutInflater.inflate(R.layout.dialog_mother_zichgi_button_layout, null);
+        View promptView = layoutInflater.inflate(dialog_mother_zichgi_button_layout, null);
 
         final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 

@@ -642,7 +642,7 @@ public class VAC_SearchVillage_Activity extends AppCompatActivity implements Sea
             ll_search_vaccine_name.setVisibility(View.GONE);
             toolbar.setVisibility(View.GONE);
             Log.d("000123", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "No record", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noRecordEng, Toast.LENGTH_SHORT).show();
         }
     }
 

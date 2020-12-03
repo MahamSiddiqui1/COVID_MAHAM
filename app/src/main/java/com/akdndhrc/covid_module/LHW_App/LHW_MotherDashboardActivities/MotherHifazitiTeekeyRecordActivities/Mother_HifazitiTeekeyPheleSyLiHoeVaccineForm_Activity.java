@@ -40,6 +40,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.string.noDataSyncServiceEng;
+
 
 public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCompatActivity {
 
@@ -175,7 +177,7 @@ public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCo
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
-                    Toast.makeText(getApplicationContext(), "Please select a received date", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectRecDateEng, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -393,7 +395,7 @@ public class Mother_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends AppCo
                         Log.d("000555", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
                         //Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {

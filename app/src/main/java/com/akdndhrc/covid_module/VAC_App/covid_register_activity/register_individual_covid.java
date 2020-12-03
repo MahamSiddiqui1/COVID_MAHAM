@@ -746,7 +746,7 @@ public class register_individual_covid extends AppCompatActivity {
                     } else {
                         alertDialog.dismiss();
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
@@ -818,7 +818,7 @@ public class register_individual_covid extends AppCompatActivity {
 
             if (VAC_Register_QRCode_Activity.switch_qr_code_values_vac.equalsIgnoreCase("1")) {
 
-                SharedPreferences settings = getSharedPreferences("shared_QR_Value", MODE_PRIVATE);
+                SharedPreferences settings = getSharedPreferences(getString(R.string.shared_QR_Value), MODE_PRIVATE);
                 SharedPreferences.Editor editor = settings.edit();
                 // Reading from SharedPreferences
                 qr_code_text = settings.getString("qr_code", "");
@@ -1035,7 +1035,7 @@ public class register_individual_covid extends AppCompatActivity {
                     } else {
                         alertDialog.dismiss();
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(VAC_BelowTwoRegister_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
@@ -1502,7 +1502,7 @@ public class register_individual_covid extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer("ایک منتخب کریں", 1, android.R.color.transparent));
+        customers.add(new Customer(R.string.selectOne, 1, android.R.color.transparent));
         customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
         customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
 

@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
 
                 android:checked="true"
-                android:text="فعال"
+                android:text="@string/active"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_marginEnd="@dimen/_3sdp"
                android:trackTint="@color/green_color"
@@ -269,7 +269,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/txt_qabalAzpedaish"
                                 android:layout_centerHorizontal="true"
-                                android:text="(ANC)"
+                                android:text="@string/anc"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
 
@@ -308,7 +308,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/txt_zichgi"
                                 android:layout_centerHorizontal="true"
-                                android:text="(Delivery)"
+                                android:text="@string/delivery"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
 
@@ -348,7 +348,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/txt_badAzpedaish"
                                 android:layout_centerHorizontal="true"
-                                android:text="(PNC)"
+                                android:text="@string/pnc"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
 

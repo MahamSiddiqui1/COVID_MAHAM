@@ -319,7 +319,7 @@ public class ServiceLocation extends Service {
        // dialogBuilder.setTitle("جی پی ایس");
         dialogBuilder.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں؟");
         dialogBuilder.setPositiveButton("سیٹنگ", null);
-        //dialogBuilder.setNegativeButton("منسوخ کریں", null);
+        //dialogBuilder.setNegativeButton(R.string.cancel, null);
 
 
         alertDialog = dialogBuilder.create();

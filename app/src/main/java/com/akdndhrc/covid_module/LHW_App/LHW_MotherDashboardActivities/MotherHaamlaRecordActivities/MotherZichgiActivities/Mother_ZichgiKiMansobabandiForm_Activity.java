@@ -241,7 +241,7 @@ public class Mother_ZichgiKiMansobabandiForm_Activity extends AppCompatActivity 
                             latitude = Double.parseDouble(jsonObject.getString("lat"));
                             longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                            Toast.makeText(ctx, R.string.R.string.dataGPS, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
                         } else {
                             latitude = Double.parseDouble("0.0");
                             longitude = Double.parseDouble("0.0");
@@ -537,12 +537,10 @@ public class Mother_ZichgiKiMansobabandiForm_Activity extends AppCompatActivity 
         }
     }
 
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
 
         finish();
-
     }
 }

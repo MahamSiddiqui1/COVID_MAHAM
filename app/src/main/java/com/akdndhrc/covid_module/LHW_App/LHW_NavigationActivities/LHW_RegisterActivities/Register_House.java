@@ -87,7 +87,7 @@ public class Register_House extends AppCompatActivity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userlogin), 0); // 0 - for private mode
             String shared_useruid = prefelse.getString("login_userid", null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
@@ -154,7 +154,8 @@ public class Register_House extends AppCompatActivity {
         rl_home_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, "Home", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.home, Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -449,7 +450,7 @@ public class Register_House extends AppCompatActivity {
 
 
                 if (et_khandan_ka_number.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی خاندان کا نمبر درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterFamNumPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -463,7 +464,7 @@ public class Register_House extends AppCompatActivity {
 
 
                 if (et_khandan_kai_sarbarah_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی خاندان کے سربراہ کا نام  درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterGuardianNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -478,7 +479,7 @@ public class Register_House extends AppCompatActivity {
 
                 if (sp_zila.getSelectedItemPosition() == 0) {
                     //Toast.makeText(getApplicationContext(), "ضلع منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "ضلع منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDistrict, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -491,7 +492,7 @@ public class Register_House extends AppCompatActivity {
                 }
 
                 if (sp_tahseel.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "تحصیل منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTehseel, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -504,7 +505,7 @@ public class Register_House extends AppCompatActivity {
                 }
 
                 if (sp_union_council.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "یونین کونسل منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectUC, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -519,7 +520,7 @@ public class Register_House extends AppCompatActivity {
 
                 if (sp_gaon.getSelectedItemPosition() == 0) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "گاؤں منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectVillage, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -542,7 +543,7 @@ public class Register_House extends AppCompatActivity {
                     {
                         Log.d("000555", " Khandan Number EXISTS ---------");
 
-                        final Snackbar snackbar = Snackbar.make(v, "خاندان نمبر پہلے سے موجود ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famNumAlreadyReg, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -712,7 +713,7 @@ public class Register_House extends AppCompatActivity {
                     if (res.toString().equalsIgnoreCase("true"))
                     {
 
-                        final Snackbar snackbar = Snackbar.make(v, "خاندان رجسٹر ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famRegistered, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -749,7 +750,7 @@ public class Register_House extends AppCompatActivity {
                     }
                     else
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "خاندان رجسٹر نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famNotRegistered, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

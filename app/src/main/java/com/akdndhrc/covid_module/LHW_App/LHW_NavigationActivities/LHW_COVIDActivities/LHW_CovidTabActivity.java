@@ -19,6 +19,8 @@ import com.akdndhrc.covid_module.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.akdndhrc.covid_module.R.layout.activity_lhw_covid_tab;
+
 public class LHW_CovidTabActivity extends AppCompatActivity {
 
     Context ctx = LHW_CovidTabActivity.this;
@@ -31,7 +33,7 @@ public class LHW_CovidTabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_lhw_covid_tab);
+        setContentView(activity_lhw_covid_tab);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -60,8 +62,8 @@ public class LHW_CovidTabActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         //adapter.addFragment(new TotalAndReferPatient_Fragment(), "ریفر مریض (Refer Patient)");
         //adapter.addFragment(new PatientList_Fragment(), "نیا مریض (Add New Patient)");
-        adapter.addFragment(new TotalAndReferPatient_Fragment(), "کل / ریفر مریض");
-        adapter.addFragment(new PatientList_Fragment(), "نیا مریض شامل کریں");
+        adapter.addFragment(new TotalAndReferPatient_Fragment(), getString(R.string.totalRefPatient));
+        adapter.addFragment(new PatientList_Fragment(), getString(R.string.newPatientAdded));
         viewPager.setAdapter(adapter);
     }
 

@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@+id/crl_lv_tvRefferalNumber"
-            android:text="@string/num12345"
+            android:text="@string/_12345"
             android:layout_marginEnd="@dimen/_5sdp"
             android:textColor="@color/text_color"
             android:textSize="@dimen/_12sdp" />

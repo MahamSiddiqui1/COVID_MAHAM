@@ -93,7 +93,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="جاری رہے"
+                android:text="@string/continue"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_14sdp" />
 

@@ -74,7 +74,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_40sdp"
                 android:background="@drawable/round_grey_button_shape_layout"
-                android:text="جاری رہے"
+                android:text="@string/continue"
                 android:textColor="@color/cp_round_shape_button_grey_text_color"
                 android:textSize="@dimen/_12sdp" />
 

@@ -349,7 +349,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                 if (sp_zila.getSelectedItemPosition() == 0) {
 
                     //Toast.makeText(getApplicationContext(), "ضلع منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "ضلع منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDistrict, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -364,7 +364,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                 if (sp_tahseel.getSelectedItemPosition() == 0) {
 
                     //Toast.makeText(getApplicationContext(), "تحصیل منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "تحصیل منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTehseel, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -379,7 +379,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
 
                 if (sp_union_council.getSelectedItemPosition() == 0) {
                     // Toast.makeText(getApplicationContext(), "یونین کونسل منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "یونین کونسل منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectUC, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -395,7 +395,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
                 if (sp_gaon.getSelectedItemPosition() == 0) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
                     //Toast.makeText(getApplicationContext(), "گاؤں منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "گاؤں منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectVillage, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -721,7 +721,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
 
             if (VAC_Register_QRCode_Activity.switch_qr_code_values_vac.equalsIgnoreCase("1")) {
 
-                SharedPreferences settings = getSharedPreferences("shared_QR_Value", MODE_PRIVATE);
+                SharedPreferences settings = getSharedPreferences(getString(R.string.shared_QR_Value), MODE_PRIVATE);
                 SharedPreferences.Editor editor = settings.edit();
                 // Reading from SharedPreferences
                 qr_code_text = settings.getString("qr_code", "");
@@ -842,7 +842,7 @@ public class VAC_BelowTwoRegister_Activity extends AppCompatActivity {
             }
             else
             {
-                final Snackbar snackbar = Snackbar.make(v, "خاندان کا رکن رجسٹر نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFamMemReg, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

@@ -58,8 +58,8 @@ public class LHW_ReferTabActivity  extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new NotFollowUp_Fragment(), "فالواپ نہیں (Not Follow up)");
-        adapter.addFragment(new FollowUp_Fragment(), "فالواپ (Follow up)");
+        adapter.addFragment(new NotFollowUp_Fragment(), getString(R.string.noFollowUp));
+        adapter.addFragment(new FollowUp_Fragment(), getString(R.string.followUp));
         viewPager.setAdapter(adapter);
     }
 

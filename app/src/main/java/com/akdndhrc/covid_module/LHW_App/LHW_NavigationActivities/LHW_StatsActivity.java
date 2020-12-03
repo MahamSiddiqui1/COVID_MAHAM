@@ -371,7 +371,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
 
 
         if (et_is_tareekh_sy.getText().toString().isEmpty() || et_is_tareekh_tk.getText().toString().isEmpty()) {
-            Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ منتخب کریں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.selectDatePrompt, Toast.LENGTH_SHORT).show();
             return;
         } else {
 

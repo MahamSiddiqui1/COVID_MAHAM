@@ -46,6 +46,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 
+import static com.akdndhrc.covid_module.R.string.enterCountPatient;
+import static com.akdndhrc.covid_module.R.string.enterRefPatientCount;
+
 
 public class TotalAndReferPatient_Fragment extends Fragment {
 
@@ -262,12 +265,12 @@ public class TotalAndReferPatient_Fragment extends Fragment {
                 }
 
                 if (et_total_number_patients.getText().toString().isEmpty()) {
-                    Toast.makeText(getContext(), "برائے مہربانی مریضوں کی کل تعداد درج کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), enterCountPatient, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (et_refer_number_patients.getText().toString().isEmpty()) {
-                    Toast.makeText(getContext(), "برائے مہربانی ریفر مریضوں کی کل تعداد درج کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), enterRefPatientCount, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -338,6 +341,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
                             "'0'," +
                             "'" + cur_added_on + "'" +
                             ")";
+
 
                     Boolean res = ls.executeNonQuery(ans1);
                     Log.d("000369", "Data: " + ans1);

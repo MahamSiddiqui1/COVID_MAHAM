@@ -267,9 +267,9 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
                         Log.d("000789", "No Health Education In School: " + mData_NoHealthEducationSchool[0][0]);
 
                         List<String> socialContacts = new ArrayList<String>();
-                        socialContacts.add("صحت کمیٹی کی تعداد" + "@" + mData_NoHealthCommitteeMeeting[0][0]);
-                        socialContacts.add("عورتوں کی کمیٹی کی تعداد" + "@" + mData_NoWomenSupportGroup[0][0]);
-                        socialContacts.add("اسکول میں ہیلتھ ایجوکیشن سیشنز کی تعداد" + "@" + mData_NoHealthEducationSchool[0][0]);
+                        socialContacts.add(getString(R.string.healthCommitteCount) + "@" + mData_NoHealthCommitteeMeeting[0][0]);
+                        socialContacts.add(getString(R.string.womenCommitteCount) + "@" + mData_NoWomenSupportGroup[0][0]);
+                        socialContacts.add(getString(R.string.schoolHealthCenterCount) + "@" + mData_NoHealthEducationSchool[0][0]);
 
 
                         // Header, Child data
@@ -472,15 +472,15 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
 
 
                         List<String> childHealth = new ArrayList<String>();
-                        childHealth.add("نوزائیدہ(پیدائش کے ایک ہفتے کے اندر) بچے کا وزن کیا گیا" + "@" + mData_NoNewBornWeighted[0][0]);
-                        childHealth.add("پیدائشی کم وزن نوزائیدہ بچوں کی تعداد" + "@" + mData_NoLowBirthWeightedBabies[0][0]);
-                        childHealth.add("پیدائشی کم وزن نوزائیدہ جنہیں 1 گھنٹے کے اندر ماں کا دودھ شروع کیا گیا" + "@" + mData_NoNewBabiesStartedFeeding[0][0]);
-                        childHealth.add("تعداد نوزائیدہ جن کے حفاظتی ٹیکے شروع کیے گئے" + "@" + mData_NoInfantsImmunizationStarted[0][0]);
-                        childHealth.add("12 سے 23 ماہ کی عمر کے کل بچوں کی تعداد" + "@" + mData_No12to23MonthsOldChild[0][0]);
-                        childHealth.add("12 سے 23 ماہ کی عمر کے کل بچے جن کے حفاظتی ٹیکے مکمل ہوگئے ہیں" + "@" + mData_No12to23MonthsChildFullyImmunized[0][0]);
-                        childHealth.add("3 سال سے کم عمر کے بچوں کی کل تعداد" + "@" + mData_NoLessThan3YearsChild[0][0]);
-                        childHealth.add("3 سال سے کم عمر کے بچے جن کی نشونما کی جانچ کی گئی اور ریکارڈ میں اندراج ہوا" + "@" + mData_NoLessThan3YearsChildWithGM[0][0]);
-                        childHealth.add("3 سال سے کم عمر کے کم وزن بچوں کی تعداد" + "@" + "0");
+                        childHealth.add(getString(R.string.NoNewBornWeighted) + "@" + mData_NoNewBornWeighted[0][0]);
+                        childHealth.add(getString(R.string.NoLowBirthWeightedBabies) + "@" + mData_NoLowBirthWeightedBabies[0][0]);
+                        childHealth.add(getString(R.string.NoNewBabiesStartedFeeding) + "@" + mData_NoNewBabiesStartedFeeding[0][0]);
+                        childHealth.add(getString(R.string.NoInfantsImmunizationStarted) + "@" + mData_NoInfantsImmunizationStarted[0][0]);
+                        childHealth.add(getString(R.string.No12to23MonthsOldChild) + "@" + mData_No12to23MonthsOldChild[0][0]);
+                            childHealth.add(getString(R.string.No12to23MonthsChildFullyImmunized) + "@" + mData_No12to23MonthsChildFullyImmunized[0][0]);
+                        childHealth.add(getString(R.string.NoLessThan3YearsChild) + "@" + mData_NoLessThan3YearsChild[0][0]);
+                        childHealth.add(getString(R.string.NoLessThan3YearsChildWithGM) + "@" + mData_NoLessThan3YearsChildWithGM[0][0]);
+                        childHealth.add(getString(R.string.underweightChildUnder3) + "@" + "0");
 
                         // Header, Child data
                         listDataChild.put(listDataHeader.get(2), childHealth);
@@ -588,15 +588,15 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
                         Log.d("000789", "No of Women Suplied Iron Tablet: " + mData_PregnantWomenSupliedIronTablet[0][0]);
 
                         List<String> motherHealth = new ArrayList<String>();
-                        motherHealth.add("تعداد حاملہ خواتین جن کا اس ماہ ڈائری میں اندراج کیا گیا" + "@" + mData_NoNewlyRegisteredPregnantWomen[0][0]);
-                        motherHealth.add("کل رجسٹرڈ حاملہ خواتین کی تعداد (نئی + گزشتہ ماہ کی حاملہ خواتین)" + "@" + mData_TotalPregnantWomen[0][0]);
-                        motherHealth.add("کل حاملہ خواتین جن کو دوران حمل دیکھا گیا (نئی + گذشتہ ماہ کی حاملہ خواتین)" + "@" + mData_TotalPregnantWomenVisited[0][0]);
-                        motherHealth.add("تعداد حاملہ خواتین جن کو فولاد کی گولیاں دی گئیں" + "@" + mData_PregnantWomenSupliedIronTablet[0][0]);
-                        motherHealth.add("تعداد حمل جو ضائع ہوگئے (حمل 7ماہ سے کم)" + "@" + "0");
-                        motherHealth.add("زچہ جن کے چار یا چار سے زائد وزٹ ہنر مند فرد\n" +
-                                "(ڈاکٹر، نرس، مڈوائف، CMW، لیڈی ہیلتھ وزیٹر) سے مکمل تھے (ANC)" + "@" + "0");
-                        motherHealth.add("تعداد زچہ جن کے تشنج سے بچاؤ کے حفاظتی ٹیکے زچگی سے قبل مکمل تھے(TT)" + "@" + "0");
-                        motherHealth.add("تعداد زچگیاں جو ہنر مند افراد سے کروائی گئیں (ڈاکٹر، نرس، مڈ وائف، CMW، لیڈی ہیلتھ وزیٹر)" + "@" + "0");
+                        motherHealth.add(getString(R.string.NoNewlyRegisteredPregnantWomen) + "@" + mData_NoNewlyRegisteredPregnantWomen[0][0]);
+                        motherHealth.add(getString(R.string.TotalPregnantWomen) + "@" + mData_TotalPregnantWomen[0][0]);
+                        motherHealth.add(getString(R.string.TotalPregnantWomenVisited) + "@" + mData_TotalPregnantWomenVisited[0][0]);
+                        motherHealth.add(getString(R.string.PregnantWomenSupliedIronTablet) + "@" + mData_PregnantWomenSupliedIronTablet[0][0]);
+                        motherHealth.add(getString(R.string.PregBelow7monthWasted) + "@" + "0");
+                        motherHealth.add(getString(R.string.pregVisited4orMore) +
+                                getString(R.string.healthProf) + "@" + "0");
+                        motherHealth.add(getString(R.string.pregVaccForTetanus) + "@" + "0");
+                        motherHealth.add(getString(R.string.deliveryByHealthProf) + "@" + "0");
 
                         // Header, Child data
                         listDataChild.put(listDataHeader.get(3), motherHealth);
@@ -900,20 +900,20 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
                         Log.d("000789", "No of Clients Administered Injectable: " + mData_NoClientsAdministeredInj[0][0]);
 
                         List<String> familyPlanningHealth = new ArrayList<String>();
-                        familyPlanningHealth.add("تعداد اہل جوڑے (بیوی کی عمر 15سے 49 سال)" + "@" + mData_NoEligibleCouples15to49[0][0]);
-                        familyPlanningHealth.add("جدید طریقہ استعمال کرنے والے سابقہ افراد کی تعداد" + "@" + mData_NoofNewClientFPlanning[0][0]);
-                        familyPlanningHealth.add("جدید طریقہ استعمال کرنے والے سابقہ افراد جن کا فالو اپ کیا گیا" + "@" + mData_NoFollowUpCasesForFPlan[0][0]);
-                        familyPlanningHealth.add("جدید مانع حمل طریقہ استعمال کرنے والوں کی کل تعداد" + "@" + mData_NoModernContraceptiveMethodUser[0][0]);
-                        familyPlanningHealth.add("کنڈوم استعمال کرنے والوں کی تعداد" + "@" + mData_NoCondomUsers[0][0]);
-                        familyPlanningHealth.add(" گولیاں استعمال کرنے والوں کی تعداد" + "@" + mData_NoOralPillsUsers[0][0]);
-                        familyPlanningHealth.add(" ٹیکہ استعمال کرنے والوں کی تعداد" + "@" + mData_NoInjectableContraceptiveUsers[0][0]);
-                        familyPlanningHealth.add("چھلہ استعمال کرنے والی خواتین کی تعداد" + "@" + mData_NoIUCDClient[0][0]);
-                        familyPlanningHealth.add("سرجری کروانے والی خواتین کی تعداد" + "@" + mData_NoSurgicalClient[0][0]);
-                        familyPlanningHealth.add("دوسرے جدید مانع حمل طریقہ استعمال کرنے والوں کی تعداد" + "@" + mData_NoOtherModernContMethodUser[0][0]);
-                        familyPlanningHealth.add("تعداد افراد جن کو خاندانی منصوبہ بندی کی مشاورت جدید طریقے کے حصول کیلئے ریفر کیا گیا" + "@" + mData_NoFamilyPlanningClientsReferred[0][0]);
-                        familyPlanningHealth.add("فراہم کردہ کنڈوموں کی تعداد" + "@" + mData_NoClientsSuppliedCondom[0][0]);
-                        familyPlanningHealth.add("فراہم کردہ گولیوں  کی تعداد" + "@" + mData_NoClientsSuppliedPills[0][0]);
-                        familyPlanningHealth.add("انجیکشن مانع حمل ادویات کے زیر انتظام صارفین کی تعداد" + "@" + mData_NoClientsAdministeredInj[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoEligibleCouples15to49) + "@" + mData_NoEligibleCouples15to49[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoofNewClientFPlanning) + "@" + mData_NoofNewClientFPlanning[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoFollowUpCasesForFPlan) + "@" + mData_NoFollowUpCasesForFPlan[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoModernContraceptiveMethodUser) + "@" + mData_NoModernContraceptiveMethodUser[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoCondomUsers) + "@" + mData_NoCondomUsers[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoOralPillsUsers) + "@" + mData_NoOralPillsUsers[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoInjectableContraceptiveUsers) + "@" + mData_NoInjectableContraceptiveUsers[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoIUCDClient) + "@" + mData_NoIUCDClient[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoSurgicalClient) + "@" + mData_NoSurgicalClient[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoOtherModernContMethodUser) + "@" + mData_NoOtherModernContMethodUser[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoFamilyPlanningClientsReferred) + "@" + mData_NoFamilyPlanningClientsReferred[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoClientsSuppliedCondom) + "@" + mData_NoClientsSuppliedCondom[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoClientsSuppliedPills) + "@" + mData_NoClientsSuppliedPills[0][0]);
+                        familyPlanningHealth.add(getString(R.string.NoClientsAdministeredInj) + "@" + mData_NoClientsAdministeredInj[0][0]);
 
 
                         // Header, Child data
@@ -1128,17 +1128,17 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
 
 
                         List<String> commonAilmentsDis = new ArrayList<String>();
-                        commonAilmentsDis.add("تعداد مریض اسہال" + "@" + mData_NoCaseDiarrhoea[0][0]);
-                        commonAilmentsDis.add("تعداد مریض کھانسی و سانس کی بیماریاں" + "@" + mData_NoCaseARI[0][0]);
-                        commonAilmentsDis.add("تعداد مریض بخار" + "@" + mData_NoCaseFever[0][0]);
-                        commonAilmentsDis.add("تعداد مریض خون کی کمی" + "@" + mData_NoCaseAnemia[0][0]);
-                        commonAilmentsDis.add("تعداد مریض آنکھوں کی بیماری" + "@" + mData_NoCaseEyeInfection[0][0]);
-                        commonAilmentsDis.add("تعداد مریض جنس/ زنانہ امراض" + "@" + mData_NoCaseJinsZanana[0][0]);
-                        commonAilmentsDis.add("تعداد مریض پیٹ کے کیڑے" + "@" + mData_NoCaseWormInfestation[0][0]);
-                        commonAilmentsDis.add("تعداد مریض ملیریا" + "@" + mData_NoCaseMalaria[0][0]);
-                        commonAilmentsDis.add("ٹی بی کے ممکنہ مریض جو شخص کے لیے مرکز صحت ریفر کیے" + "@" + mData_NoCaseSuspectedTBReferred[0][0]);
-                        commonAilmentsDis.add("ٹی بی کے تشخیص شدہ مریض" + "@" + mData_NoCaseDiagnosedTB[0][0]);
-                        commonAilmentsDis.add("تعداد ٹی بی مریض جن کو دوران علاج LHW معاونت کررہی ہے" + "@" + mData_NoCaseTBPatientFollowed[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseDiarrhoea) + "@" + mData_NoCaseDiarrhoea[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseARI) + "@" + mData_NoCaseARI[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseFever) + "@" + mData_NoCaseFever[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseAnemia) + "@" + mData_NoCaseAnemia[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseEyeInfection) + "@" + mData_NoCaseEyeInfection[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseJinsZanana) + "@" + mData_NoCaseJinsZanana[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseWormInfestation) + "@" + mData_NoCaseWormInfestation[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseMalaria) + "@" + mData_NoCaseMalaria[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseSuspectedTBReferred) + "@" + mData_NoCaseSuspectedTBReferred[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseDiagnosedTB) + "@" + mData_NoCaseDiagnosedTB[0][0]);
+                        commonAilmentsDis.add(getString(R.string.NoCaseTBPatientFollowed) + "@" + mData_NoCaseTBPatientFollowed[0][0]);
 
                         // Header, Child data
                         listDataChild.put(listDataHeader.get(5), commonAilmentsDis);
@@ -1249,13 +1249,13 @@ public class LHW_MonthlyReport_Activity extends AppCompatActivity {
 
 
                         List<String> birthsDeaths = new ArrayList<String>();
-                        birthsDeaths.add("تعداد زندہ پیدائش" + "@" + mData_NoCaseofLiveBirth[0][0]);
-                        birthsDeaths.add("بچے جو مردہ پیدا ہوئے (حمل کی مدت 7 ماہ سے زیادہ)" + "@" + mData_NoCaseofStillBirth[0][0]);
+                        birthsDeaths.add(getString(R.string.NoCaseofLiveBirth) + "@" + mData_NoCaseofLiveBirth[0][0]);
+                        birthsDeaths.add(getString(R.string.NoCaseofStillBirth) + "@" + mData_NoCaseofStillBirth[0][0]);
                         birthsDeaths.add("کل اموات" + "@" + mData_NoCaseofAllDeath[0][0]);
-                        birthsDeaths.add("تعداد اموات (بچے جو پیدائش  کے ایک ہفتے کے اندر وفات پاگئے)" + "@" + mData_NoCaseofNeoNatalDeath[0][0]);
-                        birthsDeaths.add("تعداد اموات (ایک ہفتے سے زیادہ اور 1 سال سے کم)" + "@" + mData_NoCaseofInfantDeath[0][0]);
-                        birthsDeaths.add("تعداد اموات (عمر ایک سال سے زیادہ اور ۵ سال سے کم)" + "@" + mData_NoCaseofChildrenDeath[0][0]);
-                        birthsDeaths.add("تعداد اموات زچہ" + "@" + "0");
+                        birthsDeaths.add(getString(R.string.NoCaseofNeoNatalDeath) + "@" + mData_NoCaseofNeoNatalDeath[0][0]);
+                        birthsDeaths.add(getString(R.string.NoCaseofInfantDeath) + "@" + mData_NoCaseofInfantDeath[0][0]);
+                        birthsDeaths.add(getString(R.string.NoCaseofChildrenDeath) + "@" + mData_NoCaseofChildrenDeath[0][0]);
+                        birthsDeaths.add(getString(R.string.NoPregDeath) + "@" + "0");
 
 
                         // Header, Child data

@@ -275,7 +275,7 @@ public class Child_BemaariRecordList_Activity extends AppCompatActivity {
         } catch (Exception e) {
             tv_record.setVisibility(View.VISIBLE);
             Log.d("000555", "Error: " + e.getMessage());
-        //    Toast.makeText(ctx, "اس تاریخ کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
+        //    Toast.makeText(ctx, "@string/noRecordThisDate", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -35,7 +35,7 @@
             android:gravity="center_horizontal"
             android:paddingLeft="@dimen/_10sdp"
             android:paddingRight="@dimen/_10sdp"
-            android:text="حمل غیر فعال کرنے کی وجہ منتخب کریں."
+            android:text="@string/reasonInactPreg"
             android:textColor="@color/pink_color"
             android:textSize="@dimen/_12sdp"
             android:visibility="gone" />
@@ -72,7 +72,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_LiveBirth"
-                        android:text="زندہ پیدائش"
+                        android:text="@string/birthAlive"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -99,7 +99,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_Abortion"
-                        android:text="حمل گرانا"
+                        android:text="@string/abortion"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -126,7 +126,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_StillBirth"
-                        android:text="مردہ بچہ"
+                        android:text="@string/deadChild"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -155,7 +155,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_toStartOf="@+id/rb_NeonatalDeath"
-                    android:text="نیوناٹل ڈیتھ (پیدائش کے ۱ ہفتہ سے بھی کم)"
+                    android:text="@string/neonatalDeath"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -186,7 +186,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_InfantDeath"
-                        android:text="انفنٹ  ڈیتھ (۱ ہفتہ سے زیادہ لیکن ۱ سال سے کم)"
+                        android:text="@string/infantDeath"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -213,7 +213,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_WrongEntry"
-                        android:text="غلط اندراج"
+                        android:text="@string/wrongEntry"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -240,7 +240,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_toStartOf="@+id/rb_DeliveryCompleted"
-                        android:text="زچگی ہونا"
+                        android:text="@string/deliver"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 

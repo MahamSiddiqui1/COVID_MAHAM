@@ -491,7 +491,7 @@ public class BelowTwo_Register_Activity extends AppCompatActivity {
 
                     if (Register_QRCode_Activity.switch_qr_code_values.equalsIgnoreCase("1")) {
 
-                        SharedPreferences settings = getSharedPreferences("shared_QR_Value", MODE_PRIVATE);
+                        SharedPreferences settings = getSharedPreferences(getString(R.string.shared_QR_Value), MODE_PRIVATE);
                         SharedPreferences.Editor editor = settings.edit();
                         // Reading from SharedPreferences
                         qr_code_text = settings.getString("qr_code", "");
@@ -570,7 +570,7 @@ public class BelowTwo_Register_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true"))
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "خاندان کا رکن رجسٹر ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famMemReg, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -605,7 +605,7 @@ public class BelowTwo_Register_Activity extends AppCompatActivity {
                     }
                     else
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "خاندان کا رکن رجسٹر نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.noFamMemReg, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

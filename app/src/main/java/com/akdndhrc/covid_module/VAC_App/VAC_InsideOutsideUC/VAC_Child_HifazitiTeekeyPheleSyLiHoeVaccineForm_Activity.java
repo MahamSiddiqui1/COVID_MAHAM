@@ -185,7 +185,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
 
                 if (et_tareekh_mosool_hoe.getText().toString().length() < 1) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
-                    Toast.makeText(getApplicationContext(), "Please select a received date", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectRecDateEng, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -413,7 +413,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
                         Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d("000555", "else ");
-                        Toast.makeText(ctx, "Data service not synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(ctx, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
                     }
 
