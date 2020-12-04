@@ -115,7 +115,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
 
         try {
 
-            SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
             SharedPreferences.Editor editor = settings.edit();
             // Reading from SharedPreferences
             shared_data = settings.getString("type", "");
@@ -134,7 +134,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
 
                 try {
 
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText(R.string.peoplesList);
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where nicnumber LIKE '%" + cnic_number + "%'");
                     Log.d("000888", "LEN: " + String.valueOf(mData.length));
@@ -200,7 +200,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                     // Toast.makeText(ctx, "sd", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                                Toast.makeText(ctx, "something wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
 
 
@@ -248,7 +248,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                 // mData = ls.executeReader("Select *from MEMBER where khandan_id = '" + khandan_id + "' AND nicnumber LIKE '"+cnic_number+"%'");
 
                 try {
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText(R.string.peoplesList);
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where phone_number LIKE '%" + phone_number + "%'");
                     Log.d("000888", "LEN: " + String.valueOf(mData.length));
@@ -312,7 +312,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                     // Toast.makeText(ctx, "sd", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                                Toast.makeText(ctx, "something wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -570,7 +570,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
 
                                                                                                 if (res_del_khandan.toString().equalsIgnoreCase("true")) {
                                                                                                     Log.d("000777", "TRUE !****************");
-                                                                                                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_khandan), "خاندان ڈیلیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                                                                                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_khandan), R.string.famDeleted, Snackbar.LENGTH_SHORT);
                                                                                                     View mySbView = snackbar.getView();
                                                                                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                                                                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -674,7 +674,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                 // mData = ls.executeReader("Select *from MEMBER where khandan_id = '" + khandan_id + "' AND nicnumber LIKE '"+cnic_number+"%'");
 
                 try {
-                    txt_name.setText("افراد کی لسٹ");
+                    txt_name.setText(R.string.peoplesList);
 
                     mData = ls.executeReader("Select uid,full_name,gender,age,added_on from MEMBER where  qr_code = '" + qrcode_value + "'");
                     Log.d("000888", "QR Data LEN: " + String.valueOf(mData.length));
@@ -737,7 +737,7 @@ public class Search_MemberAndKhandanList_Activity extends AppCompatActivity {
                                     // Toast.makeText(ctx, "sd", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                                Toast.makeText(ctx, "something wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

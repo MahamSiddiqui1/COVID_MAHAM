@@ -40,6 +40,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
+import static com.akdndhrc.covid_module.R.string.receivedValueEng;
+
 public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
 
     Context ctx = LHW_MedicinesStock_Activity.this;
@@ -206,7 +208,7 @@ public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("000632", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something wrong !!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -387,7 +389,7 @@ public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (etReceived.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "Please enter received value.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, receivedValueEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -450,7 +452,7 @@ public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true"))
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "اسٹاک جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.stockAdded, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -466,7 +468,7 @@ public class  LHW_MedicinesStock_Activity extends AppCompatActivity {
 
                     }
                     else {
-                        final Snackbar snackbar = Snackbar.make(v, "اسٹاک جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.stockNotAdded, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

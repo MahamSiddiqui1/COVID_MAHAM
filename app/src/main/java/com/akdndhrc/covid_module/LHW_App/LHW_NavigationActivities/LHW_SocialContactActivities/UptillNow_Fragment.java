@@ -138,7 +138,7 @@ public class UptillNow_Fragment extends Fragment {
                 lv.setVisibility(View.VISIBLE);
                 tv_record.setVisibility(View.GONE);
             } else {
-                tv_record.setText("اب تک کا کوئی ریکارڈ نہیں");
+                tv_record.setText(R.string.noRecordAtThisMoment);
                 tv_record.setVisibility(View.VISIBLE);
             }
 

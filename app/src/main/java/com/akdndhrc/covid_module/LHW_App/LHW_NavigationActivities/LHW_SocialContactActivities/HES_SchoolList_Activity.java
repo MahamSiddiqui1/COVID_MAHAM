@@ -161,7 +161,7 @@ public class HES_SchoolList_Activity extends AppCompatActivity {
             }
             else {
                 Log.d("000357", "DATA NULLLLLLLL ");
-                Toast.makeText(ctx, "کوئی اسکول رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noSchoolRegistered, Toast.LENGTH_SHORT).show();
             }
             adt = new Adt_HESchoolList(ctx, hashMapArrayList);
             adt.notifyDataSetChanged();
@@ -170,7 +170,7 @@ public class HES_SchoolList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی اسکول رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noSchoolRegistered, Toast.LENGTH_SHORT).show();
         }
 
 

@@ -112,7 +112,7 @@ public class VAC_Search_QRCode_Activity extends AppCompatActivity implements ZXi
                     if (mData != null) {
                         Log.d("Search_code", mData[0][0]);
 
-                        SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+                        SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
                         // Writing data to SharedPreferences
                         SharedPreferences.Editor editor = settings.edit();
                         editor.putString("qrcode_value", rawResult.getText().toString());

@@ -55,7 +55,7 @@
             android:layout_toRightOf="@+id/rl_circle_men"
 
             android:gravity="right"
-            android:text="Khashif ali khan"
+            android:text=""@string/_kashif_ali_khan""
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp" />
 

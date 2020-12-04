@@ -93,7 +93,7 @@ public class LastMonth_Fragment extends Fragment {
 
         if (type.equalsIgnoreCase("2"))
         {
-            btn_FabMember.setLabelText("School Name (اسکول کا نام)");
+            btn_FabMember.setLabelText(getString(R.string.schoolNameEng));
         }
         //TextView
         tv_record = rootView.findViewById(R.id.tv_record);
@@ -158,7 +158,7 @@ public class LastMonth_Fragment extends Fragment {
                         newIntent.putExtra("type", type);
                         startActivity(newIntent);
                     } else {
-                        final Snackbar snackbar = Snackbar.make(view, "میٹنگ مکمل ہوچکی ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(view, R.string.meetingComp, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -175,7 +175,7 @@ public class LastMonth_Fragment extends Fragment {
                         newIntent.putExtra("type", type);
                         startActivity(newIntent);
                     } else {
-                        final Snackbar snackbar = Snackbar.make(view, "میٹنگ مکمل ہوچکی ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(view, R.string.meetingComp, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));

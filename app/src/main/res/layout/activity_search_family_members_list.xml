@@ -166,7 +166,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="right"
-                            android:text="852147"
+                            android:text="@string/_852147"
                             android:layout_marginEnd="@dimen/_2sdp"
                             android:textColor="@color/register_khandan_text_color"
                             android:textSize="@dimen/_14sdp" />
@@ -178,7 +178,7 @@
                             android:layout_marginEnd="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:gravity="left"
-                            android:text="خاندان نمبر:"
+                            android:text="@string/famNum"
                             android:textColor="@color/register_khandan_text_color"
                             android:textSize="@dimen/_14sdp" />
 
@@ -205,7 +205,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                        android:layout_centerInParent="true"
-                        android:text="اس خاندان کا کوئی رکن رجسٹر نہیں"
+                        android:text="@string/noMemThisFam"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_14sdp"
                         android:textStyle="bold"

@@ -464,7 +464,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="@dimen/_9sdp"
                         android:gravity="center"
-                        android:text="اسٹاک"
+                        android:text="@string/stock"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 

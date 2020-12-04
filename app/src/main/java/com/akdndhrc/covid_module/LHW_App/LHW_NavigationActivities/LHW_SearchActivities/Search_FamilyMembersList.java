@@ -171,7 +171,8 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                     }
                 }
                 else {
-                    Toast.makeText(ctx, "something wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+
                 }
 
 
@@ -290,12 +291,12 @@ public class Search_FamilyMembersList extends AppCompatActivity {
 
 
                                             if (et_khandan_number_search.getText().toString().isEmpty()) {
-                                                Toast.makeText(ctx, "برائے مہربانی  خاندان نمبر درج کریں", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(ctx, R.string.enterFamilyNumPrompt, Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
 
                                             if (et_khandan_number_search.getText().toString().equalsIgnoreCase(khandan_number)) {
-                                                Toast.makeText(ctx, "برائے مہربانی دوسرا خاندان نمبر درج کریں.", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(ctx, R.string.enterOtherFamNumPrompt, Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
 
@@ -475,7 +476,7 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                                                                         if (res.toString().equalsIgnoreCase("true")) {
                                                                           //  Toast.makeText(Search_FamilyMembersList.this, "ممبر دوسرے  خاندان میں منتقل ہوگیا ہے.", Toast.LENGTH_LONG).show();
                                                                             Log.d("000777", "ABCCCC: ");
-                                                                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_family_mem), "ممبر دوسرے خاندان میں منتقل ہوگیا ہے.", Snackbar.LENGTH_LONG);
+                                                                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_family_mem), R.string.memMigratedToOtherFam, Snackbar.LENGTH_LONG);
                                                                             View mySbView = snackbar.getView();
                                                                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                                                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -551,7 +552,7 @@ public class Search_FamilyMembersList extends AppCompatActivity {
                                                             alertProgressDialog.dismiss();
                                                             alertDialog.show();
                                                             Log.d("000777", "ELSE Count NicNO: ");
-                                                            Toast.makeText(ctx, "برائے مہربانی صحیح خاندان نمبر درج کریں.", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(ctx, R.string.correctFamNumPrompt, Toast.LENGTH_SHORT).show();
                                                         }
 
                                                     } catch (Exception e) {
@@ -718,7 +719,7 @@ public class Search_FamilyMembersList extends AppCompatActivity {
 
                                                                 if (res_del.toString().equalsIgnoreCase("true")) {
                                                                     Log.d("000777", "TRUE !****************");
-                                                                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_family_mem),  "ممبر اس خاندان سے ڈیلیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                                                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_family_mem),  R.string.memDelFromFam, Snackbar.LENGTH_SHORT);
                                                                     View mySbView = snackbar.getView();
                                                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

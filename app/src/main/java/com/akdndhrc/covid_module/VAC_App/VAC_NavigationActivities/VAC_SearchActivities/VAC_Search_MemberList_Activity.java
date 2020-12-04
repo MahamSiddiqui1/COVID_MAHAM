@@ -87,7 +87,7 @@ public class VAC_Search_MemberList_Activity extends AppCompatActivity {
 
         try {
 
-            SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
             SharedPreferences.Editor editor = settings.edit();
             // Reading from SharedPreferences
             shared_data = settings.getString("type", "");

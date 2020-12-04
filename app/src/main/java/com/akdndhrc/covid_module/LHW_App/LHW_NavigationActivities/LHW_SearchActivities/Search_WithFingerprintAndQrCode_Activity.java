@@ -77,13 +77,13 @@ public class Search_WithFingerprintAndQrCode_Activity extends AppCompatActivity 
             public void onClick(View v) {
 
 
-                LaunchCamer();           }
+                LaunchCamera();           }
         });
 
 
     }
 
-    private void LaunchCamer() {
+    private void LaunchCamera() {
         Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(cameraIntent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
 

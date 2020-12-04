@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:gravity="left"
-            android:text="Download data"
+            android:text="@string/download_data_dialog"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="right"
-            android:text="0/0"
+            android:text="@string/_0_0"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_10sdp"
             android:textStyle="normal" />
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:gravity="left"
-            android:text="0/0"
+            android:text="@string/_0_0"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="normal" />
@@ -93,7 +93,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_10sdp"
             android:gravity="right"
-            android:text="ڈیٹا ڈاؤن لوڈ ہو گیا ہے .."
+            android:text="@string/dataDownloadedEng"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />

@@ -189,7 +189,7 @@ public class HCM_RegisterForm_Activity extends AppCompatActivity {
 
                 if (et_age.getText().toString().isEmpty()) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی عمر درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.agePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

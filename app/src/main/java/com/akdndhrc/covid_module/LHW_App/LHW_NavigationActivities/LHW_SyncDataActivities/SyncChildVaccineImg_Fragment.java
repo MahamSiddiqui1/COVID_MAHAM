@@ -187,7 +187,7 @@ public class SyncChildVaccineImg_Fragment extends Fragment {
                     }
 
                    // Toast.makeText(getActivity(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں۔", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -248,7 +248,7 @@ public class SyncChildVaccineImg_Fragment extends Fragment {
 
                 } else {
                     // Toast.makeText(getActivity(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں۔", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(view, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(view, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));

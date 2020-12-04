@@ -90,7 +90,7 @@
                         android:drawableStart="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableTint="@color/dark_blue_color"
-                        android:text="Received"
+                        android:text="@string/received"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -107,7 +107,7 @@
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:lines="1"
                         android:maxLines="1"
-                        android:hint="Quantity"
+                        android:hint="@string/quantityEng"
                         android:padding="@dimen/_5sdp"
                         android:textSize="@dimen/_12sdp">
 
@@ -215,7 +215,7 @@
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:lines="1"
                         android:maxLines="1"
-                        android:hint="Quantity"
+                        android:hint="@string/quantityEng"
                         android:padding="@dimen/_5sdp"
                         android:textSize="@dimen/_12sdp"/>
 
@@ -319,7 +319,7 @@
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:lines="1"
                         android:maxLines="1"
-                        android:hint="Quantity"
+                        android:hint="@string/quantityEng"
                         android:padding="@dimen/_5sdp"
                         android:textSize="@dimen/_12sdp"/>
 

@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="کسی دوسرے خاندان میں منتقل کریں"
+                android:text="@string/moveToOtherFam"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
@@ -55,7 +55,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/round_button_shape_layout"
-                android:text="اس خاندان سے ڈیلیٹ کریں"
+                android:text="@string/delFromThisFam"
                 android:textColor="@color/pink_color"
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
@@ -90,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:text="خاندان نمبر درج کریں"
+                        android:text="@string/enterFamNum"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_14sdp" />
 

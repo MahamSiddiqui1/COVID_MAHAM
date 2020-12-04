@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:text="Enter ID card number"
+                    android:text="@string/IDcardNoEng"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_14sdp" />
 

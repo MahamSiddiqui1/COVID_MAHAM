@@ -113,7 +113,7 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
 
                 if (sp_topic.getSelectedItemPosition()==0)
                 {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے  مہربانی موضوع منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTopicPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -226,7 +226,7 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
                 }
                 }
                 else {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے  مہربانی ممبر کی فہرست پر چیک کا نشان لگائیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.checkMemListPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -340,7 +340,6 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
                         Log.d("000357", "else ");
                         Toast.makeText(ctx, R.string.noDataSyncServerAlert, Toast.LENGTH_SHORT).show();
                     }
-
                 } catch (Exception e) {
                     Log.d("000357", "catch: " + e.getMessage());
                     Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
@@ -457,7 +456,7 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
             }
             else {
                 Log.d("000357", "DATA NULLLLLLLL ");
-                Toast.makeText(ctx, "کوئی رکن رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noMemRegistered, Toast.LENGTH_SHORT).show();
                 btn_jaama_kre.setVisibility(View.GONE);
             }
 
@@ -468,7 +467,7 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی رکن رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noMemRegistered, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -503,9 +502,9 @@ public class HCM_StartMeetingList_Activity extends AppCompatActivity {
 
         android.app.AlertDialog.Builder dialogBuilder = new android.app.AlertDialog.Builder(ctx);
 
-        dialogBuilder.setMessage("کیا آپ  ڈیٹا بغیر محفوظ کیے میٹنگ اسکرین سے باہر جانا چاہتے ہیں؟");
-        dialogBuilder.setPositiveButton("جی ہاں", null);
-        dialogBuilder.setNegativeButton("جی نہیں", null);
+        dialogBuilder.setMessage(R.string.wantoExitMeetingScreen);
+        dialogBuilder.setPositiveButton(R.string._jee_haan, null);
+        dialogBuilder.setNegativeButton(R.string._gee_nahi, null);
 
 
         final AlertDialog alertDialog = dialogBuilder.create();

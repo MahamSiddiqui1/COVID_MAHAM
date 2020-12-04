@@ -127,8 +127,8 @@
                 android:checked="true"
                 android:foregroundGravity="right"
                 android:gravity="right"
-                android:textOff="Received"
-                android:textOn="Not Received"
+                android:textOff="@string/received"
+                android:textOn="@string/notReceived"
 
                 tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
         </LinearLayout>

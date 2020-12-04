@@ -107,7 +107,7 @@
                         app:fab_colorNormal="@color/dark_blue_color"
                         app:fab_colorPressed="@color/grey_color"
                         app:fab_colorRipple="@color/blue_text_color"
-                        app:fab_label="Member (ممبر)"
+                        app:fab_label="@string/member"
                         app:useCompatPadding="true"
                         app:fab_size="mini" />
 
@@ -121,7 +121,7 @@
                         app:fab_colorNormal="@color/dark_blue_color"
                         app:fab_colorPressed="@color/grey_color"
                         app:fab_colorRipple="@color/blue_text_color"
-                        app:fab_label="Meeting (میٹنگ)"
+                        app:fab_label="@string/meeting"
                         app:fab_size="mini" />
 
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="موجودہ مہینے کا کوئی ریکارڈ نہیں"
+                android:text="@string/noRecordThisMonth"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold"
@@ -170,7 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:text="لوڈنگ ڈیٹا..."
+                    android:text="@string/loadingData"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />

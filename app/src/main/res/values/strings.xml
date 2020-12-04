@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="database_password">g3p2bzQm-J2pG6NR</string>
     <string name="vaccine_provided_when">When was the vaccine provided?</string>
@@ -17,7 +17,7 @@
 
 
 
-    <string name="received">received</string>
+    <string name="received">Received</string>
     <string name="app_name">COVID APP</string>
     <string name="PromptUsername">Username</string>
     <string name="PromptPassword">Password</string>
@@ -67,7 +67,7 @@
     <string name="newFamily">New Family</string>
     <string name="addFamily">Add Family Member</string>
     <string name="newIndividual">New Individual</string>
-    <string name="famNum">Family Number</string>
+    <string name="famNumEng">Family Number</string>
     <string name="famHead">Name of Family Head</string>
     <string name="famHeadCnic">Family Head CNIC</string>
     <string name="famHeadMobile">Family Head Mobile Number</string>
@@ -217,7 +217,6 @@
 
     <!--Add Family Member Activity-->
     <string name="afm_khandan_text">Family</string>
-    <string name="cont">Continue</string>
     <string name="afm_khandan_number_text">Family Number:</string>
     <string name="afm_name_text">سلمان اقبال</string>
     <string name="afm_khandan_kay_rukan_shamil_kre_button_text">خاندان کے رکن شامل کریں</string>
@@ -886,7 +885,6 @@
     <string name="_0">0 سال</string>
     <string name="datetime_22_dec_2019_05_14">DateTime: 22 Dec 2019 05:14</string>
     <string name="_231_741">231-741</string>
-    <string name="khashif_ali_khan">Khashif ali khan</string>
     <string name="_02_06">02 سال 06 مہ</string>
     <string name="member_name">Member Name</string>
     <string name="follow_up">Follow up</string>
@@ -1199,13 +1197,14 @@
     <string name="ageEng">Age</string>
     <string name="famMemReg">خاندان کا رکن رجسٹر ہوگیا ہے.</string>
     <string name="ScanResults">اسکین کے نتائج</string>
-    <string name="continue">جاری رہے</string>
+    <string name="continue" tools:ignore="ExtraTranslation">جاری رہے</string>
     <string name="cancel">منسوخ کریں</string>
     <string name="rescan">دوبارہ اسکین کرے</string>
     <string name="shared_QR_Value">shared_QR_Value</string>
     <string name="userlogin">UserLogin</string>
     <string name="enterFamNumPrompt">برائے مہربانی خاندان کا نمبر درج کریں.</string>
     <string name="enterGuardianNamePrompt">برائے مہربانی خاندان کے سربراہ کا نام  درج کریں.</string>
+    <string name="guardianName">خاندان کے سربراہ کا نام:</string>
     <string name="selectDistrict">ضلع منتخب کریں.</string>
     <string name="selectTehseel">تحصیل منتخب کریں.</string>
     <string name="selectUC">یونین کونسل منتخب کریں.</string>
@@ -1213,7 +1212,80 @@
     <string name="famNumAlreadyReg">خاندان نمبر پہلے سے موجود ہے.</string>
     <string name="famRegistered">خاندان رجسٹر ہوگیا ہے.</string>
     <string name="famNotRegistered">خاندان رجسٹر نہیں ہوا.</string>
-    <string name="selectOne">ایک منتخب کریں</string>
+    <string name="selectOne" tools:ignore="ExtraTranslation">ایک منتخب کریں</string>
+    <string name="_852147">852147</string>
+    <string name="famNum">خاندان نمبر:</string>
+    <string name="noMemThisFam">اس خاندان کا کوئی رکن رجسٹر نہیں</string>
+    <string name="moveToOtherFam">کسی دوسرے خاندان میں منتقل کریں</string>
+    <string name="delFromThisFam">اس خاندان سے ڈیلیٹ کریں</string>
+    <string name="enterFamNum">خاندان نمبر درج کریں</string>
+    <string name="enterOtherFamNumPrompt">برائے مہربانی دوسرا خاندان نمبر درج کریں.</string>
+    <string name="editEng">Edit</string>
+    <string name="deleteEng">Delete</string>
+    <string name="_kashif_ali_khan">Kashif ali khan</string>
+    <string name="villageName">گاؤں کا نام:</string>
+    <string name="_00">00</string>
+    <string name="wantToMigrateMem">کیا آپ اس ممبر کو اس خاندان میں منتقل کرنا چاہتے ہیں؟</string>
+    <string name="_gee_nahi">جی نہیں</string>
+    <string name="_jee_haan">جی ہاں</string>
+    <string name="memMigratedToOtherFam">ممبر دوسرے خاندان میں منتقل ہوگیا ہے.</string>
+    <string name="correctFamNumPrompt">برائے مہربانی صحیح خاندان نمبر درج کریں.</string>
+    <string name="memDelFromFam">ممبر اس خاندان سے ڈیلیٹ ہوگیا ہے.</string>
+    <string name="shared_preference">shared_preference</string>
+    <string name="peoplesList">افراد کی لسٹ</string>
+    <string name="wantoDelFam">کیا آپ اس خاندان کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="famDeleted">خاندان ڈیلیٹ ہوگیا ہے.</string>
+    <string name="meetingMem">میٹنگ ممبر</string>
+    <string name="noMemRegistered">کوئی رکن رجسٹر نہیں</string>
+    <string name="fingerPrints">فنگر پرنٹ کے</string>
+    <string name="searchMedium">ذریعہ تلاش کریں</string>
+    <string name="IDcardNoEng">Enter ID card number</string>
+    <string name="PhNoPromptEng">Enter the phone number</string>
+    <string name="regSchool">رجسٹر اسکول</string>
+    <string name="schoolName">اسکول کا نام</string>
+    <string name="schoolheadNamePrompt">اسکول کے سربراہ کا نام</string>
+    <string name="schoolNamePrompt">برائے مہربانی سکول  کا نام درج کریں.</string>
+    <string name="enterSchoolHeadNamePrompt">برائے مہربانی سکول کے سربراہ کا نام درج کریں.</string>
+    <string name="schoolRegistered">اسکول رجسٹر ہوگیا ہے</string>
+    <string name="schoolMeeting">اسکول میٹنگ</string>
+    <string name="noSchoolRegistered">کوئی اسکول رجسٹر نہیں</string>
+    <string name="topic">موضوع</string>
+    <string name="selectTopicPrompt">برائے  مہربانی موضوع منتخب کریں.</string>
+    <string name="checkMemListPrompt">برائے  مہربانی ممبر کی فہرست پر چیک کا نشان لگائیں.</string>
+    <string name="wantoExitMeetingScreen">کیا آپ  ڈیٹا بغیر محفوظ کیے میٹنگ اسکرین سے باہر جانا چاہتے ہیں؟</string>
+    <string name="healthCommitte">صحت کمیٹی</string>
+    <string name="womenSupportGroup">خواتین کی حمایت گروپ</string>
+    <string name="regMem">رجسٹر ممبر</string>
+    <string name="expertise">مہارت</string>
+    <string name="agePrompt">برائے مہربانی عمر درج کریں.</string>
+    <string name="syncEng">Sync</string>
+    <string name="family_registration">Family Registration</string>
+    <string name="memRegEng">Member Registration</string>
+    <string name="vaccArecord">Vaccination A Record</string>
+    <string name="vacBrec">Vaccination B Record</string>
+    <string name="checkInternetPrompt">برائے مہربانی انٹرنیٹ کنکشن چیک کریں.</string>
+    <string name="dataAlreadyDownloaded">ڈیٹا پہلے سے ہی ڈاؤن لوڈ ہے.</string>
+    <string name="_0_0">0/0</string>
+    <string name="dataDownloadedEng">ڈیٹا ڈاؤن لوڈ ہو گیا ہے ..</string>
+    <string name="downloadPleaseWait">Downloading, please wait...</string>
+    <string name="member">Member (ممبر)</string>
+    <string name="meeting">Meeting (میٹنگ)</string>
+    <string name="noRecordThisMonth">موجودہ مہینے کا کوئی ریکارڈ نہیں</string>
+    <string name="loadingData">لوڈنگ ڈیٹا...</string>
+    <string name="schoolNameEng">School Name (اسکول کا نام)</string>
+    <string name="meetingComp">میٹنگ مکمل ہوچکی ہے.</string>
+    <string name="noRecordAtThisMoment">اب تک کا کوئی ریکارڈ نہیں</string>
+    <string name="stock">اسٹاک</string>
+    <string name="notReceived">Not Received</string>
+    <string name="quantityEng">Quantity</string>
+    <string name="_0_tablets">0 Tablets</string>
+    <string name="wastage">Wastage</string>
+    <string name="receivedValueEng">Please enter received value.</string>
+    <string name="stockAdded">اسٹاک جمع ہوگیا ہے.</string>
+    <string name="stockNotAdded">اسٹاک جمع نہیں ہوا.</string>
+    <string name="videoname">VideoName</string>
+    <string name="utilizedEng">Utilized:</string>
+    <string name="wastageColon">Wastage:</string>
 </resources>
 
 

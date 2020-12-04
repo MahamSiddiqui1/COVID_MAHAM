@@ -83,7 +83,7 @@ public class Search_QRCode_Activity extends AppCompatActivity implements ZXingSc
         view.setMinimumHeight(10);
         dialogBuilder.setCustomTitle(view);
         dialogBuilder.setMessage(rawResult.getText());
-        dialogBuilder.setPositiveButton(R.string.continue, null);
+        dialogBuilder.setPositiveButton("R.string.continue", null);
         dialogBuilder.setNegativeButton(R.string.cancel, null);
         dialogBuilder.setNeutralButton("R.string.rescan", null);
 
@@ -113,7 +113,7 @@ public class Search_QRCode_Activity extends AppCompatActivity implements ZXingSc
                     if (mData != null) {
                         Log.d("Search_code", mData[0][0]);
 
-                        SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+                        SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
                         // Writing data to SharedPreferences
                         SharedPreferences.Editor editor = settings.edit();
                         editor.putString("qrcode_value", rawResult.getText().toString());

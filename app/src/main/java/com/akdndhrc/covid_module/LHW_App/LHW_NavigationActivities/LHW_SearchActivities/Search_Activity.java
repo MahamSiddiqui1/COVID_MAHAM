@@ -204,7 +204,7 @@ public class  Search_Activity extends AppCompatActivity {
                             }*/
 
                             if (Integer.parseInt(mData[0][0]) > 0) {
-                            SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+                            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
                             // Writing data to SharedPreferences
                             SharedPreferences.Editor editor = settings.edit();
                             editor.putString("nic_number", et_idcard_number.getText().toString());
@@ -335,7 +335,7 @@ public class  Search_Activity extends AppCompatActivity {
                             }*/
 
                             if (Integer.parseInt(mData[0][0]) > 0) {
-                            SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+                            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
                             // Writing data to SharedPreferences
                             SharedPreferences.Editor editor = settings.edit();
                             editor.putString("phone_number", et_phone_number.getText().toString());
@@ -443,7 +443,7 @@ public class  Search_Activity extends AppCompatActivity {
                             }*/
 
                             if (Integer.parseInt(mData[0][0]) > 0) {
-                            SharedPreferences settings = getSharedPreferences("shared_preference", MODE_PRIVATE);
+                            SharedPreferences settings = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE);
                             // Writing data to SharedPreferences
                             SharedPreferences.Editor editor = settings.edit();
                             editor.putString("khandan_number", et_khandan_number.getText().toString());

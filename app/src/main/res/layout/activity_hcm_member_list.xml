@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="میٹنگ ممبر"
+                    android:text="@string/meetingMem"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />

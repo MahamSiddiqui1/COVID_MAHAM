@@ -49,7 +49,7 @@
                         android:drawableStart="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableTint="@color/dark_blue_color"
-                        android:text="Balance"
+                        android:text="@string/balance"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -67,7 +67,7 @@
                         android:paddingTop="@dimen/_5sdp"
                         android:paddingRight="@dimen/_20sdp"
                         android:paddingBottom="@dimen/_5sdp"
-                        android:text="0"
+                        android:text="@string/_0"
                         android:textColor="@color/color_white"
                         android:textSize="@dimen/_12sdp" />
 
@@ -91,7 +91,7 @@
                         android:drawableStart="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableTint="@color/dark_blue_color"
-                        android:text="Received"
+                        android:text="@string/received"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -107,7 +107,7 @@
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:lines="1"
                         android:maxLines="1"
-                        android:hint="Quantity"
+                        android:hint="@string/quantityEng"
                         android:padding="@dimen/_5sdp"
                         android:textSize="@dimen/_12sdp">
 
@@ -192,7 +192,7 @@
                     android:layout_marginEnd="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:gravity="right"
-                    android:text="0 Tablets"
+                    android:text="@string/_0_tablets"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_11sdp" />
 
@@ -213,7 +213,7 @@
                         android:drawableStart="@drawable/circle_shape_red"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableTint="@color/dark_blue_color"
-                        android:text="Wastage"
+                        android:text="@string/wastage"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -294,7 +294,7 @@
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:lines="1"
                         android:maxLines="1"
-                        android:hint="Quantity"
+                        android:hint="@string/quantityEng"
                         android:padding="@dimen/_5sdp"
                         android:textSize="@dimen/_12sdp">
                     </EditText>

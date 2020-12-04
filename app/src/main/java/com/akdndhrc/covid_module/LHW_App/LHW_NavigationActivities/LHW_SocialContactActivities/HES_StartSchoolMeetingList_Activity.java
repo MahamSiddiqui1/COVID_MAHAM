@@ -200,7 +200,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
                 if (sp_topic.getSelectedItemPosition()==0)
                 {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے  مہربانی موضوع منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTopicPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -468,7 +468,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
             }
             else{
                 a.add("No School Register");
-                Toast.makeText(ctx, "کوئی اسکول رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noSchoolRegistered, Toast.LENGTH_SHORT).show();
                 btn_jaama_kre.setVisibility(View.GONE);
             }
 
@@ -575,7 +575,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "Something wrong !!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -610,9 +610,9 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(ctx);
 
-        dialogBuilder.setMessage("کیا آپ  ڈیٹا بغیر محفوظ کیے میٹنگ اسکرین سے باہر جانا چاہتے ہیں؟");
-        dialogBuilder.setPositiveButton("جی ہاں", null);
-        dialogBuilder.setNegativeButton("جی نہیں", null);
+        dialogBuilder.setMessage(R.string.wantoExitMeetingScreen);
+        dialogBuilder.setPositiveButton(R.string._jee_haan, null);
+        dialogBuilder.setNegativeButton(R.string._gee_nahi, null);
 
 
         final AlertDialog alertDialog = dialogBuilder.create();

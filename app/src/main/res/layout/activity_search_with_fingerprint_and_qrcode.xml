@@ -154,7 +154,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="@dimen/_10sdp"
                             android:gravity="center_horizontal"
-                            android:text="فنگر پرنٹ کے"
+                            android:text="@string/fingerPrints"
                             android:textColor="@color/search_blue_text_color"
                             android:textSize="@dimen/_18sdp" />
 
@@ -164,7 +164,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:gravity="center_horizontal"
-                            android:text="ذریعہ تلاش کریں"
+                            android:text="@string/searchMedium"
                             android:textColor="@color/search_blue_text_color"
                             android:textSize="@dimen/_18sdp" />
 

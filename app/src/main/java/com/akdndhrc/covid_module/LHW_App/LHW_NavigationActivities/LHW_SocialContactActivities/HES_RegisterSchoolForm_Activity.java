@@ -38,6 +38,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.akdndhrc.covid_module.R.string.schoolRegistered;
+
 public class HES_RegisterSchoolForm_Activity extends AppCompatActivity {
 
     Context ctx = HES_RegisterSchoolForm_Activity.this;
@@ -149,7 +151,7 @@ public class HES_RegisterSchoolForm_Activity extends AppCompatActivity {
 
                 if (et_SchoolName.getText().toString().isEmpty()) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی سکول  کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.schoolNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -164,7 +166,7 @@ public class HES_RegisterSchoolForm_Activity extends AppCompatActivity {
 
                 if (et_SchoolHeadname.getText().toString().isEmpty()) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی سکول کے سربراہ کا نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterSchoolHeadNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -259,7 +261,7 @@ public class HES_RegisterSchoolForm_Activity extends AppCompatActivity {
                     if (Utils.haveNetworkConnection(ctx) > 0) {
                         sendPostRequest(uuid,uuid, type,TodayDate, String.valueOf(jobj), login_useruid,added_on);
                     } else {
-                        Toast.makeText(ctx, "اسکول رجسٹر ہوگیا ہے", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, schoolRegistered, Toast.LENGTH_SHORT).show();
                     }
                     
                 } catch (Exception e) {

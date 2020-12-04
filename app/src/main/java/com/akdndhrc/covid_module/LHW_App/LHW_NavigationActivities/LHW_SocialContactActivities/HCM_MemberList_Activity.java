@@ -20,6 +20,8 @@ import com.akdndhrc.covid_module.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static com.akdndhrc.covid_module.R.string.noMemRegistered;
+
 public class HCM_MemberList_Activity extends AppCompatActivity {
 
 
@@ -168,7 +170,7 @@ public class HCM_MemberList_Activity extends AppCompatActivity {
             }
             else {
                 Log.d("000357", "DATA NULLLLLLLL ");
-                Toast.makeText(ctx, "کوئی رکن رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, noMemRegistered, Toast.LENGTH_SHORT).show();
             }
             adt = new Adt_HCMMembeList(ctx, hashMapArrayList);
             adt.notifyDataSetChanged();
@@ -177,7 +179,7 @@ public class HCM_MemberList_Activity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
-            Toast.makeText(ctx, "کوئی رکن رجسٹر نہیں", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, R.string.noMemRegistered, Toast.LENGTH_SHORT).show();
         }
 
 

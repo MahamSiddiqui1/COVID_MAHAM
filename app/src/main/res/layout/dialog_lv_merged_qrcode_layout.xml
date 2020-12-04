@@ -111,7 +111,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="@dimen/_12sdp"
-            android:text="جی نہیں"
+            android:text="@string/_gee_nahi"
             android:textColor="@color/graph_red_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:padding="@dimen/_12sdp"
-            android:text="جی ہاں"
+            android:text="@string/_gee_nahi"
             android:textColor="@color/green_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />

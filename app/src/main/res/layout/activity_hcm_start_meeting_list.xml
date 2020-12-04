@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="میٹنگ ممبر"
+                    android:text="@string/meetingMem"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -122,7 +122,7 @@
                             android:layout_gravity="right"
                             android:layout_marginEnd="@dimen/_5sdp"
                             android:gravity="right"
-                            android:text="موضوع"
+                            android:text="@string/topic"
                             android:textColor="@color/text_color"
                             android:textSize="@dimen/_12sdp" />
 

@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="رجسٹر ممبر"
+                    android:text="@string/regMem"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
@@ -134,7 +134,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="نام"
+                                    android:text="@string/name"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
 
@@ -306,7 +306,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="موبائل نمبر"
+                                    android:text="@string/cr_mobile_number_text"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
 
@@ -404,7 +404,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="مہارت"
+                                    android:text="@string/expertise"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
 

@@ -57,7 +57,7 @@ public class VAC_SyncAndDownloadData_TabActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new VAC_SyncData_Fragment(), "Sync Data");
-        adapter.addFragment(new VAC_DownloadData_Fragment(), "Download Data");
+        adapter.addFragment(new VAC_DownloadData_Fragment(), String.valueOf(R.string.download_data_dialog));
         viewPager.setAdapter(adapter);
     }
 

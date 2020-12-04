@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/card_circle_view"
                 android:layout_centerHorizontal="true"
-                android:text="بیماری ریکارڈ"
+                android:text="@string/diseaseRecord"
                 android:gravity="center"
                 android:textColor="@color/blue_text_color"
                 android:textSize="@dimen/_12sdp"

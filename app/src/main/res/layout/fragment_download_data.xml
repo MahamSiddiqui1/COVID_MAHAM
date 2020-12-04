@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Sync"
+                    android:text="@string/syncEng"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -132,7 +132,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
-                                    android:text="Family Registration"
+                                    android:text="@string/family_registration"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -141,8 +141,7 @@
                                     android:id="@+id/txt_khandan_reg"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-
-                                    android:text="0"
+                                    android:text="@string/_0"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -174,7 +173,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
-                                    android:text="Member Registration"
+                                    android:text="@string/memRegEng"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -184,7 +183,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="0"
+                                    android:text="@string/_0"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -227,7 +226,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
-                                    android:text="Vaccination A Record"
+                                    android:text="@string/vaccArecord"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -238,7 +237,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="0"
+                                    android:text="@string/_0"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"
@@ -281,7 +280,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
-                                    android:text="Vaccination B Record"
+                                    android:text="@string/vacBrec"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -291,8 +290,7 @@
                                     android:id="@+id/txt_mother_hifaziti_teekey_record"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-
-                                    android:text="0"
+                                    android:text="@string/_0"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold"

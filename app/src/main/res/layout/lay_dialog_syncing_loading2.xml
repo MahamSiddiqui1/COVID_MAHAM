@@ -70,7 +70,7 @@
                 android:layout_alignEnd="@+id/sync_msg"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:gravity="right"
-                android:text="0/0"
+                android:text="@string/_0_0"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp" />
 

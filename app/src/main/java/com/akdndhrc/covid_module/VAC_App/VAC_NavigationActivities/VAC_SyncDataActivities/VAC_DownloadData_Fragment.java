@@ -192,7 +192,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         } else {
 
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -394,7 +394,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                                         public void run() {
                                             ll_progress.setVisibility(View.GONE);
                                             ll_done.setVisibility(View.VISIBLE);
-                                            message.setText("ڈیٹا پہلے سے ہی ڈاؤن لوڈ ہے.");
+                                            message.setText(R.string.dataAlreadyDownloaded);
                                             tvDataCount.setText(read_Khandan_data[0][0] + "/" + jobj.length());
 
                                             handler.postDelayed(new Runnable() {
@@ -410,7 +410,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                             } catch (Exception e) {
                                 alertDialog.dismiss();
                                 Log.d("000564", "Err:    " + e.getMessage());
-                                Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -419,7 +419,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000564", "Thread Catch:    " + e.getMessage());
-                    Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -427,7 +427,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 alertDialog.dismiss();
                 Log.d("000564", "error:    " + error.getMessage());
-                Toast.makeText(getContext(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -463,7 +463,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         } else {
 
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -583,7 +583,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                                         public void run() {
                                             ll_progress.setVisibility(View.GONE);
                                             ll_done.setVisibility(View.VISIBLE);
-                                            message.setText("ڈیٹا پہلے سے ہی ڈاؤن لوڈ ہے.");
+                                            message.setText(R.string.dataAlreadyDownloaded);
                                             tvDataCount.setText(read_member_data[0][0] + "/" + jobj.length());
 
                                             handler.postDelayed(new Runnable() {
@@ -599,7 +599,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                             } catch (Exception e) {
                                 alertDialog.dismiss();
                                 Log.d("000565", "Err:    " + e.getMessage());
-                                Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -608,7 +608,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000565", "Thread Catch:    " + e.getMessage());
-                    Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -616,7 +616,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 alertDialog.dismiss();
                 Log.d("000565", "error:    " + error.getMessage());
-                Toast.makeText(getContext(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -653,7 +653,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
         } else {
 
 
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -769,7 +769,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                                         public void run() {
                                             ll_progress.setVisibility(View.GONE);
                                             ll_done.setVisibility(View.VISIBLE);
-                                            message.setText("ڈیٹا پہلے سے ہی ڈاؤن لوڈ ہے.");
+                                            message.setText(R.string.dataAlreadyDownloaded);
                                             tvDataCount.setText(read_cVaccination_data[0][0] + "/" + jobj.length());
 
                                             handler.postDelayed(new Runnable() {
@@ -785,7 +785,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                             } catch (Exception e) {
                                 alertDialog.dismiss();
                                 Log.d("000566", "Err:    " + e.getMessage());
-                                Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -794,7 +794,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000566", "Thread Catch:    " + e.getMessage());
-                    Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -802,7 +802,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 alertDialog.dismiss();
                 Log.d("000566", "error:    " + error.getMessage());
-                Toast.makeText(getContext(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -838,7 +838,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
         } else {
 
 
-            final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetPrompt, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -954,7 +954,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                                         public void run() {
                                             ll_progress.setVisibility(View.GONE);
                                             ll_done.setVisibility(View.VISIBLE);
-                                            message.setText("ڈیٹا پہلے سے ہی ڈاؤن لوڈ ہے.");
+                                            message.setText(R.string.dataAlreadyDownloaded);
                                             tvDataCount.setText(read_MVaccination_data[0][0] + "/" + jobj.length());
 
                                             handler.postDelayed(new Runnable() {
@@ -970,7 +970,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                             } catch (Exception e) {
                                 alertDialog.dismiss();
                                 Log.d("000567", "Err:    " + e.getMessage());
-                                Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -979,7 +979,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
                 } catch (Exception e) {
                     alertDialog.dismiss();
                     Log.d("000567", "Thread Catch:    " + e.getMessage());
-                    Toast.makeText(getContext(), "Something wrong !!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -987,7 +987,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 alertDialog.dismiss();
                 Log.d("000567", "error:    " + error.getMessage());
-                Toast.makeText(getContext(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override

@@ -132,7 +132,7 @@ public class LHW_SearchVillage_Activity extends AppCompatActivity implements Sea
                     }
                 }
                 else {
-                    Toast.makeText(ctx, "something wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                 }
 
 

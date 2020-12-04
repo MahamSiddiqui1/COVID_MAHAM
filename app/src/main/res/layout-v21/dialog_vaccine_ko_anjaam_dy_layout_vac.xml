@@ -229,7 +229,7 @@
                     android:id="@+id/tvBal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Balance:"
+                    android:text="@string/balance"
                     android:textColor="@color/blue_text_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -259,7 +259,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Utilized: "
+                    android:text="@string/utilizedEng"
                     android:textColor="@color/pink_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />

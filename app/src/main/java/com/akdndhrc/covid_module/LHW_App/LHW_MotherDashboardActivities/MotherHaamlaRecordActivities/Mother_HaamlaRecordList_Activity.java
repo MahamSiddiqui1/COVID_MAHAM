@@ -208,7 +208,7 @@ public class Mother_HaamlaRecordList_Activity extends AppCompatActivity {
             public void create(SwipeMenu menu) {
 
 
-                // create "Edit" item
+                // create R.string.editEng item
                 SwipeMenuItem editItem = new SwipeMenuItem(getApplicationContext());
                 editItem.setBackground(new ColorDrawable(ctx.getResources().getColor(R.color.blue_text_color)));
                 editItem.setWidth(dp2px(60));

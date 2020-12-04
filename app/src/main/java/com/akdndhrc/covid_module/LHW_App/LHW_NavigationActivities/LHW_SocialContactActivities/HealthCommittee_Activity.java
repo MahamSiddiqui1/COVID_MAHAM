@@ -41,7 +41,7 @@ public class HealthCommittee_Activity extends AppCompatActivity {
         tvNaam = findViewById(R.id.tvNaam);
 
         if (type.equalsIgnoreCase("1")) {
-            tvNaam.setText("خواتین کی حمایت گروپ");
+            tvNaam.setText(R.string.womenSupportGroup);
         } else if (type.equalsIgnoreCase("2")) {
             tvNaam.setText("اسکول میں صحت کی تعلیم");
         } else {

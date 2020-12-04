@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:text="Edit" />
+            android:text="@string/editEng" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:text="Delete" />
+            android:text="@string/deleteEng" />
     </LinearLayout>
 
 
@@ -141,7 +141,7 @@
                 android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toStartOf="@+id/rl_circle_men1"
                 android:gravity="center"
-                android:text="خاندان کے سربراہ کا نام:"
+                android:text="@string/guardianName"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
@@ -157,7 +157,7 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_toStartOf="@+id/tv1"
                 android:gravity="center_vertical"
-                android:text="Khashif ali khan "
+                android:text="@string/_kashif_ali_khan"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp" />
 
@@ -172,7 +172,7 @@
                 android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toStartOf="@+id/rl_circle_men1"
                 android:gravity="right"
-                android:text="گاؤں کا نام:"
+                android:text="@string/villageName"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
@@ -186,7 +186,7 @@
                 android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toStartOf="@+id/tvgaon1"
                 android:gravity="right"
-                android:text="Age"
+                android:text="@string/ageEng"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp" />
 
@@ -198,7 +198,7 @@
                 android:layout_marginStart="@dimen/_3sdp"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_toRightOf="@+id/tv_MemberKhandan"
-                android:text="خاندان نمبر:"
+                android:text="@string/famNum"
                 android:textColor="@color/light_grey_color"
                 android:textSize="@dimen/_14sdp" />
 
@@ -208,7 +208,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_3sdp"
-                android:text="00"
+                android:text="@string/_00"
                 android:textStyle="bold"
                 android:textColor="@color/light_grey_color"
                 android:textSize="@dimen/_14sdp" />
@@ -292,7 +292,7 @@
                 android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toStartOf="@+id/rl_circle_men"
                 android:gravity="center"
-                android:text="خاندان کے سربراہ کا نام:"
+                android:text="@string/guardianName"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
@@ -308,7 +308,7 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_toStartOf="@+id/tv"
                 android:gravity="center_vertical"
-                android:text="Khashif ali khan "
+                android:text="@string/_kashif_ali_khan"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp" />
 
@@ -323,7 +323,7 @@
                 android:layout_marginEnd="@dimen/_7sdp"
                 android:layout_toStartOf="@+id/rl_circle_men"
                 android:gravity="right"
-                android:text="گاؤں کا نام:"
+                android:text="@string/villageName"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_14sdp"
                 android:visibility="gone" />
@@ -349,7 +349,7 @@
                 android:layout_marginStart="@dimen/_3sdp"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_toRightOf="@+id/tv_KhandanNumber"
-                android:text="خاندان نمبر:"
+                android:text="@string/famNum"
                 android:textColor="@color/light_grey_color"
                 android:textSize="@dimen/_14sdp" />
 
@@ -386,7 +386,7 @@
         android:gravity="center"
         android:layout_marginEnd="@dimen/_5sdp"
         android:layout_marginStart="@dimen/_5sdp"
-        android:text="کیا آپ اس ممبر کو اس خاندان میں منتقل کرنا چاہتے ہیں؟"
+        android:text="@string/wantToMigrateMem"
         android:textColor="@color/dark_blue_color"
         android:textSize="@dimen/_14sdp"
         android:textStyle="bold" />
@@ -410,7 +410,7 @@
             android:layout_weight="1"
             android:background="@drawable/card_backgroud"
             android:backgroundTint="@color/graph_red_color"
-            android:text="جی نہیں"
+            android:text="@string/_gee_nahi"
             android:textColor="@color/color_white"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold" />
@@ -431,7 +431,7 @@
             android:layout_weight="1"
             android:background="@drawable/card_backgroud"
             android:backgroundTint="@color/green_color"
-            android:text="جی ہاں"
+            android:text="@string/_gee_nahi"
             android:textColor="@color/color_white"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold" />

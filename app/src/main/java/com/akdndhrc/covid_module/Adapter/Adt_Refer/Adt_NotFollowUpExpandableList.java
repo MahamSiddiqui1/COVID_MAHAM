@@ -641,7 +641,7 @@ public class Adt_NotFollowUpExpandableList extends BaseExpandableListAdapter {
             progressDialog.dismiss();
             alertDialog.show();
             Log.d("000700", "Err: " + e.getMessage());
-            Toast.makeText(_context, "Something wrong !!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(_context, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
     }

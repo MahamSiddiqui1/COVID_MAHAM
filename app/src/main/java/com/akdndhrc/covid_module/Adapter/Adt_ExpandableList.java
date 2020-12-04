@@ -53,7 +53,7 @@ public class Adt_ExpandableList extends BaseExpandableListAdapter {
 
         Log.d("000999","Name: "+childText.split("@")[1]);
         Log.d("000999","Gender: "+childText.split("@")[2]);
-        "Age: "+childText.split("@")[3]);
+        Log.d("000999","Age: "+childText.split("@")[3]);
 
         if (convertView == null) {
             holder = new ViewHolder();

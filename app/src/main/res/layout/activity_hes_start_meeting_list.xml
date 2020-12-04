@@ -123,7 +123,7 @@
                             android:layout_gravity="right"
                             android:layout_marginEnd="@dimen/_5sdp"
                             android:gravity="right"
-                            android:text="موضوع"
+                            android:text="@string/topic"
                             android:textColor="@color/text_color"
                             android:textSize="@dimen/_12sdp" />
 
