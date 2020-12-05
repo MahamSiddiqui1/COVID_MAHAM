@@ -52,6 +52,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.akdndhrc.covid_module.R.string.SMSnotDelivered;
+import static com.akdndhrc.covid_module.R.string.SMSsent;
+import static com.akdndhrc.covid_module.R.string.radioOff;
+
 public class SyncMemberReg_Activity extends AppCompatActivity {
 
     Context ctx = SyncMemberReg_Activity.this;
@@ -83,7 +87,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک رجسٹریشن");
+        tv.setText(R.string.syncReg);
 
         //ImageView
         iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);
@@ -96,8 +100,8 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
         //Get shared SMS Number
         try {
-            SharedPreferences prefelse = ctx.getApplicationContext().getSharedPreferences("SMS_Number", 0); // 0 - for private mode
-            String shared_sms_number = prefelse.getString("sms_number", null); // getting String
+            SharedPreferences prefelse = ctx.getApplicationContext().getSharedPreferences((getString(R.string.duplicateEntry)), 0); // 0 - for private mode
+            String shared_sms_number = prefelse.getString((getString(R.string.duplicateEntry)), null); // getting String
             smsNumber = shared_sms_number;
             Log.d("000102", "USER UID: " + shared_sms_number);
 
@@ -136,7 +140,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                 if (isConnectingToInternet()) {
 
                     if (temp.equalsIgnoreCase("0")) {
-                        Toast.makeText(ctx, "Data sending through Internet.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSendingInternet, Toast.LENGTH_SHORT).show();
                         Log.d("000102", "IFFFF 2");
                     } else {
                         Log.d("000102", "ELssssss 2");
@@ -169,7 +173,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                 } else {
                     if (temp.equalsIgnoreCase("0")) {
-                        Toast.makeText(ctx, "Data sending through SMS.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSendingSMS, Toast.LENGTH_SHORT).show();
 
                         Log.d("000102", "IFFFF OFFLINE");
                     } else {
@@ -211,7 +215,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                 if (isConnectingToInternet()) {
 
-                    Toast.makeText(ctx, "Data sending through Internet.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataSendingInternet, Toast.LENGTH_SHORT).show();
                     /*if (arrayList.get(position).get("is_synced").equalsIgnoreCase("1,0")){
                         Toast.makeText(ctx, "Data already synced", Toast.LENGTH_SHORT).show();
                     }
@@ -259,7 +263,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                     //}
 
                 } else {
-                    Toast.makeText(ctx, "Data sending through SMS.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataSendingSMS, Toast.LENGTH_SHORT).show();
                     
                     /*if (arrayList.get(position).get("is_synced").equalsIgnoreCase("0,3")){
                         Toast.makeText(ctx, "Data already synced", Toast.LENGTH_SHORT).show();
@@ -311,7 +315,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
         Log.d("000102", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -348,7 +352,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                 ls.executeNonQuery(update_record);
                        /* "is_synced='" + String.valueOf(1) + "' " ;*/
 
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.dataSynced, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -402,10 +406,10 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                 String string = new String(error.networkResponse.data);
                 Log.d("000102", "onErrorResponse String: " + string);
                 Log.d("000102", "onErrorResponse Status: " + error.networkResponse.statusCode);
-                if (string.contains("Duplicate entry"))
+                if (string.contains((getString(R.string.duplicateEntry))))
                 {
                     Log.d("000102", "Duplicate Entry YES !!!!!!!!: ");
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سروس پر پہلے سے سینک ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.dataAlreadySyncedServer, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -449,7 +453,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                 else{
                     alertDialog.dismiss();
                     Log.d("000102", "Duplicate Entry NOT: ");
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سینک نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noDataSyncAlert, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -515,7 +519,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
         Log.d("000102", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -556,7 +560,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                 "WHERE uid = '" + uid + "'";
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(ctx, "ڈیٹا سینک ہوگیا ہے.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
                         arrayList.remove(0);
                         adt.notifyDataSetChanged();
@@ -586,11 +590,11 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                 Log.d("000102", "onErrorResponse String: " + string);
                 Log.d("000102", "onErrorResponse Status: " + error.networkResponse.statusCode);
 
-                if (string.contains("Duplicate entry"))
+                if (string.contains((getString(R.string.duplicateEntry))))
                 {
                     Log.d("000102", "Duplicate Entry YES !!!!!!!!: ");
 
-                    Toast.makeText(ctx, "ڈیٹا سروس پر پہلے سے سینک ہے.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataAlreadySyncedServer, Toast.LENGTH_SHORT).show();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -607,7 +611,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                 }
                 else{
                     Log.d("000102", "Duplicate Entry NOT: ");
-                    Toast.makeText(ctx, "ڈیٹا سینک نہیں ہوا.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     finish();
@@ -701,7 +705,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                     // do something
                     //Toast.makeText(getApplicationContext(), "Data is not synced, there is no sim in your phone.", Toast.LENGTH_LONG).show();
 
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "آپ کے فون میں کوئی سم موجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noPhoneSIM, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -716,25 +720,25 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                     case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePINrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePUKrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdReturnFailure, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
 
                     break;
 
@@ -820,7 +824,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                 Log.d("000102", "Data Update:  " + update_record);
                                 Log.d("000102", "Query Update:  " + res);
 
-                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.dataSynced, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -871,8 +875,8 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                 progressDialog.dismiss();
                                 Log.d("000102", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                // Toast.makeText(SyncMemberReg_Activity.this, "SMS sending failed...", Toast.LENGTH_SHORT).show();
-                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "SMS sending permission failed.", Snackbar.LENGTH_SHORT);
+                                // Toast.makeText(SyncMemberReg_Activity.this, R.string.SMSsendingFail, Toast.LENGTH_SHORT).show();
+                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.SMSsendPermFail, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -893,7 +897,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     break;
             }
 
@@ -946,7 +950,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                     // do something
                     //Toast.makeText(getApplicationContext(), "Data is not synced, there is no sim in your phone.", Toast.LENGTH_LONG).show();
 
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "آپ کے فون میں کوئی سم موجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noPhoneSIM, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -962,33 +966,33 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePINrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePUKrequired, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdReturnFailure, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
@@ -1058,7 +1062,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                         "WHERE uid = '" + uid + "'";
                                 ls.executeNonQuery(update_record);
 
-                                Toast.makeText(ctx, "ڈیٹا سنک ہوگیا ہے.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT).show();
 
 
                                 arrayList.remove(0);
@@ -1090,7 +1094,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                                 temp = "0";
                                 Log.d("000102", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                Toast.makeText(SyncMemberReg_Activity.this, "SMS sending failed...", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SyncMemberReg_Activity.this, R.string.SMSsendingFail, Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, 1500);
@@ -1100,7 +1104,7 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;
@@ -1141,27 +1145,27 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                     {
                         case Activity.RESULT_OK:
                             Log.d("000102", "30");
-                            Toast.makeText(getBaseContext(), "SMS sent",
+                            Toast.makeText(getBaseContext(), SMSsent,
                                     Toast.LENGTH_SHORT).show();
 
                             break;
                         case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
                             Log.d("000102", "31");
-                            Toast.makeText(getBaseContext(), "Generic failure",
+                            Toast.makeText(getBaseContext(), R.string.genericFailure,
                                     Toast.LENGTH_SHORT).show();
                             break;
                         case SmsManager.RESULT_ERROR_NO_SERVICE:
-                            Toast.makeText(getBaseContext(), "No service",
+                            Toast.makeText(getBaseContext(), R.string.noService,
                                     Toast.LENGTH_SHORT).show();
                             Log.d("000102", "32");
                             break;
                         case SmsManager.RESULT_ERROR_NULL_PDU:
-                            Toast.makeText(getBaseContext(), "Null PDU",
+                            Toast.makeText(getBaseContext(), R.string.nullPDU,
                                     Toast.LENGTH_SHORT).show();
                             Log.d("000102", "33");
                             break;
                         case SmsManager.RESULT_ERROR_RADIO_OFF:
-                            Toast.makeText(getBaseContext(), "Radio off",
+                            Toast.makeText(getBaseContext(), radioOff,
                                     Toast.LENGTH_SHORT).show();
                             Log.d("000102", "34");
                             break;
@@ -1176,12 +1180,12 @@ public class SyncMemberReg_Activity extends AppCompatActivity {
                     switch (getResultCode())
                     {
                         case Activity.RESULT_OK:
-                            Toast.makeText(getBaseContext(), "SMS delivered",
+                            Toast.makeText(getBaseContext(), R.string.SMSdelivered,
                                     Toast.LENGTH_SHORT).show();
                             Log.d("000102", "35");
                             break;
                         case Activity.RESULT_CANCELED:
-                            Toast.makeText(getBaseContext(), "SMS not delivered",
+                            Toast.makeText(getBaseContext(), SMSnotDelivered,
                                     Toast.LENGTH_SHORT).show();
                             Log.d("000102", "36");
                             break;

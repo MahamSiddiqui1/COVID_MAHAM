@@ -163,7 +163,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/image_close"
             android:layout_centerHorizontal="true"
-            android:text="User"
+            android:text="@string/user"
             android:textColor="#fff"
             android:textStyle="bold"
             android:textSize="@dimen/_16sdp" />
@@ -400,7 +400,7 @@
             android:id="@+id/tv_LatLng"
             android:layout_marginBottom="@dimen/_10sdp"
             android:layout_width="wrap_content"
-            android:text="0.0 | 0.0"
+            android:text="@string/_0_0_0_0"
             android:layout_above="@+id/rl_logout"
             android:paddingBottom="@dimen/_10sdp"
             android:layout_centerHorizontal="true"

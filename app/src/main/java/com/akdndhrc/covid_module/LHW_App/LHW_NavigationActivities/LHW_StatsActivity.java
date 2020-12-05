@@ -175,7 +175,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     if (groupPosition == 0) {
                         if (total_registration[0][0].equalsIgnoreCase("0")) {
                             //Toast.makeText(ctx, "کوئی رجسٹریشن ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "رجسٹریشن کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecReg, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -190,7 +190,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 1) {
                         if (total_childlessthanTwo[0][0].equalsIgnoreCase("0")) {
                             // Toast.makeText(ctx, "2 سال سے کم عمر کے بچے کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "2 سال سے کم عمر کے بچے کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecChildBelow2, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -205,7 +205,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 2) {
                         if (total_child2to15[0][0].equalsIgnoreCase("0")) {
                             //Toast.makeText(ctx, "2 سال سے زیادہ اور 15 سال سے کم عمر کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "2 سال سے زیادہ اور 15 سال سے کم عمر کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecBelow15, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -221,7 +221,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 3) {
                         if (total_member15to49[0][0].equalsIgnoreCase("0")) {
 
-                            final Snackbar snackbar = Snackbar.make(v, "15 سال سے زیادہ اور 49 سال سے کم عمر کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecBelow49, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -237,7 +237,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 4) {
                         if (total_member49[0][0].equalsIgnoreCase("0")) {
                             //  Toast.makeText(ctx, "49 سال سے زیادہ عمر کے افراد کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "49 سال سے زیادہ عمر کے افراد کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecabove49, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -251,7 +251,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 5) {
                         if (mDatapreg[0][0].equalsIgnoreCase("0")) {
                             // Toast.makeText(ctx, "حاملہ کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "حاملہ خواتین کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecPreg, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -265,7 +265,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 6) {
                         if (mData_anc_parent[0][0].equalsIgnoreCase("0")) {
                             //Toast.makeText(ctx, "قبل از زچگی کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "قبل از زچگی کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecBeforeDeliv, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -280,7 +280,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 7) {
                         if (mData_delivery_parent == null) {
                             //Toast.makeText(ctx, "زچگی کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "زچگی کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecDeliv, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -295,7 +295,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 8) {
                         if (mData_pnc_parent[0][0].equalsIgnoreCase("0")) {
                             //   Toast.makeText(ctx, "بعد از زچگی کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "بعد از زچگی کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecAfterDeliv, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -310,7 +310,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 9) {
                         if (mData_fplan_parent == null) {
                             //Toast.makeText(ctx, "خاندانی منصوبہ بندی کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "خاندانی منصوبہ بندی کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecFamPlan, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -325,7 +325,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 10) {
                         if (mData_highrisk_parent == null) {
                             //    Toast.makeText(ctx, "ہائی رسک ماتر کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "ہائی رسک پریگننسی کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecHighPreg, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -340,7 +340,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     } else if (groupPosition == 11) {
                         if (mData_video_parent == null) {
                             //    Toast.makeText(ctx, "ہائی رسک ماتر کا کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-                            final Snackbar snackbar = Snackbar.make(v, "ویڈیوز کا کوئی ریکارڈ نہیں", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.noRecVideo, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -442,7 +442,7 @@ public class LHW_StatsActivity extends AppCompatActivity {
                 total_registration = ls.executeReader("Select count(*) from MEMBER where date(added_on/1000, 'unixepoch', 'localtime') BETWEEN '" + et_is_tareekh_sy.getText().toString() + "' AND'" + et_is_tareekh_tk.getText().toString() + "'");
                 if (total_registration != null) {
                     Log.d("000111", "Total MEMBER REGSITER: " + total_registration[0][0]);
-                    mArrayList_parent.add(total_registration[0][0] + "@" + "کل رجسٹریشن");
+                    mArrayList_parent.add(total_registration[0][0] + "@" + getString(R.string.totalReg));
                 } else {
                     Log.d("000111", "ELSE TOTAL MEMBER");
                 }

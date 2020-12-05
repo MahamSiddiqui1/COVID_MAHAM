@@ -18,6 +18,8 @@ import com.akdndhrc.covid_module.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.akdndhrc.covid_module.R.layout.activity_tab_sync_and_download_data;
+
 public class SyncAndDownloadData_TabActivity extends AppCompatActivity {
 
     Context ctx = SyncAndDownloadData_TabActivity.this;
@@ -30,7 +32,7 @@ public class SyncAndDownloadData_TabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_tab_sync_and_download_data);
+        setContentView(activity_tab_sync_and_download_data);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -56,8 +58,8 @@ public class SyncAndDownloadData_TabActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SyncData_Fragment(), "سینک ڈیٹا");
-        adapter.addFragment(new DownloadData_Fragment(), "ڈاؤن لوڈ ڈیٹا");
+        adapter.addFragment(new SyncData_Fragment(), getString(R.string.syncData));
+        adapter.addFragment(new DownloadData_Fragment(), getString(R.string.downloadData));
         viewPager.setAdapter(adapter);
     }
 

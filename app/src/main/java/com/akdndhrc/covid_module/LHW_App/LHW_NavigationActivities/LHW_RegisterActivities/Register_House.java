@@ -88,7 +88,7 @@ public class Register_House extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userlogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -785,7 +785,7 @@ public class Register_House extends AppCompatActivity {
         Log.d("000951", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -916,7 +916,7 @@ public class Register_House extends AppCompatActivity {
                     // do something
                     //Toast.makeText(getApplicationContext(), "Data is not synced, there is no sim in your phone.", Toast.LENGTH_LONG).show();
 
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "آپ کے فون میں کوئی سم موجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noPhoneSIM, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -931,25 +931,25 @@ public class Register_House extends AppCompatActivity {
                     break;
                 case TelephonyManager.SIM_STATE_NETWORK_LOCKED:
                     // do something
-                        Toast.makeText(getApplicationContext(), "SIM_STATE_NETWORK_LOCKED", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), R.string.simStateNetworkLock, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PIN_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PIN_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePINrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.SIM_STATE_PUK_REQUIRED:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_PUK_REQUIRED", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStatePUKrequired, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_RETURN_FAILURE:
-                    Toast.makeText(getApplicationContext(), "USSD_RETURN_FAILURE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdReturnFailure, Toast.LENGTH_LONG).show();
                     break;
 
                 case TelephonyManager.USSD_ERROR_SERVICE_UNAVAIL:
-                    Toast.makeText(getApplicationContext(), "USSD_ERROR_SERVICE_UNAVAIL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.ussdErrorServiceUnavail, Toast.LENGTH_LONG).show();
 
                     break;
 
@@ -990,14 +990,14 @@ public class Register_House extends AppCompatActivity {
                     } catch (Exception e) {
                         Log.d("000951", "Exception Sending faild " + e);
                         e.printStackTrace();
-                        Toast.makeText(Register_House.this, "SMS sending failed...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register_House.this, R.string.SMSsendingFail, Toast.LENGTH_SHORT).show();
                     }
 
                     break;
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     break;
             }
 

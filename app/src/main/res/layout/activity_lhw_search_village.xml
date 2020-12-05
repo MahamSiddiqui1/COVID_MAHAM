@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:searchBackgroundColor="@color/color_white"
-                app:searchHint="تلاش, نام/فون نمبر یا گاؤں کا نام لکھیں"
+                app:searchHint="@string/enterNumPhoneVillagePrompt"
                 app:titleTextColor="@color/color_white" />
 
         </RelativeLayout>
@@ -139,7 +139,7 @@
                         android:id="@+id/tv_record_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" کا کوئی ریکارڈ نہیں"
+                        android:text="@string/noRecords"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
@@ -153,7 +153,7 @@
                         android:ellipsize="end"
                         android:maxEms="6"
                         android:maxLines="1"
-                        android:text="Parsan"
+                        android:text="@string/parsan"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
@@ -189,7 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:text=""@string/loadingData""
+                        android:text="@string/loadingData"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
@@ -201,7 +201,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="کوئی ریکارڈ نہیں "
+                    android:text="@string/noRecord"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold"

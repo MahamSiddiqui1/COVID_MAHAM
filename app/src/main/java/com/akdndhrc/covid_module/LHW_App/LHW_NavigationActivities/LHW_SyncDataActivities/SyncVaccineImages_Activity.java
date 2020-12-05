@@ -44,8 +44,8 @@ public class SyncVaccineImages_Activity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SyncVaccineImages_Activity.ViewPagerAdapter adapter = new SyncVaccineImages_Activity.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SyncChildVaccineImg_Fragment(), "بچے کی ویکسین");
-        adapter.addFragment(new SyncMotherVaccineImg_Fragment(), "ماں کی ویکسین");
+        adapter.addFragment(new SyncChildVaccineImg_Fragment(), getString(R.string.childVacc));
+        adapter.addFragment(new SyncMotherVaccineImg_Fragment(), getString(R.string.MotherVacc));
         viewPager.setAdapter(adapter);
     }
 

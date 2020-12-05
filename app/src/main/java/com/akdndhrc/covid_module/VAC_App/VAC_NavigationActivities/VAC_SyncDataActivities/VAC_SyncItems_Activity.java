@@ -84,7 +84,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
                     startActivity(new Intent(ctx, VAC_SyncKhandanReg_Activity.class));
 
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -105,7 +105,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
 
                     startActivity(new Intent(ctx, VAC_SyncMemberReg_Activity.class));
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -127,7 +127,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
                     startActivity(new Intent(ctx, VAC_SyncChildHifazitiTeekey_Activity.class));
 
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -147,7 +147,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
 
                     startActivity(new Intent(ctx, VAC_SyncVideo_Activity.class));
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -168,7 +168,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
                     startActivity(new Intent(ctx, VAC_SyncFeedback_Activity.class));
 
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -188,7 +188,7 @@ public class VAC_SyncItems_Activity extends AppCompatActivity {
                     startActivity(new Intent(ctx, VAC_SyncMotherHifazitiTeekey_Activity.class));
 
                 }else{
-                    final Snackbar snackbar = Snackbar.make(v, "سینک کرنے کے لئے کوئی ڈیٹا مجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.noData4sync, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

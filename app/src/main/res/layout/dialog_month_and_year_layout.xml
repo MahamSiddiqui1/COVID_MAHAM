@@ -58,7 +58,7 @@
                                 android:layout_height="wrap_content"
 
                                 android:layout_marginEnd="@dimen/_5sdp"
-                                android:text="منتخب سال"
+                                android:text="@string/selectedYear"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
 
@@ -75,7 +75,7 @@
                                 android:layout_height="wrap_content"
 
                                 android:layout_marginEnd="@dimen/_5sdp"
-                                android:text="منتخب ماہ"
+                                android:text="@string/selectedMonth"
                                 android:textColor="@color/text_color"
                                 android:textSize="@dimen/_12sdp" />
 
@@ -141,7 +141,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="ڈاؤن لوڈ رپورٹ"
+                android:text="@string/downloadReport"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_12sdp" />
 
@@ -153,7 +153,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="رپورٹ دیکھیں"
+                android:text="@string/seeReport"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_12sdp" />
 

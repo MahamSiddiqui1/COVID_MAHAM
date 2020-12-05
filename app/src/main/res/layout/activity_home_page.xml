@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="ڈیش بورڈ"
+                    android:text="@string/dashboard"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -121,7 +121,7 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:gravity="center"
                         android:padding="@dimen/_2sdp"
-                        android:text="Friday October 2, 2019"
+                        android:text="@string/friday_october_2_2019"
                         android:textColor="@color/light_blue_color"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
@@ -250,7 +250,7 @@
                             android:layout_below="@+id/image_video"
                             android:layout_centerHorizontal="true"
                             android:gravity="center"
-                            android:text="ویڈیوز"
+                            android:text="@string/videos"
                             android:textColor="@color/dark_blue_color"
                             android:textSize="@dimen/_12sdp" />
 

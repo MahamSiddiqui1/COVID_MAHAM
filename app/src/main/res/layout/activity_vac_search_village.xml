@@ -160,7 +160,7 @@
                         android:ellipsize="end"
                         android:maxEms="6"
                         android:maxLines="1"
-                        android:text="Parsan"
+                        android:text="@string/parsan"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_13sdp"
                         android:textStyle="bold" />
@@ -196,7 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:text=""@string/loadingData""
+                        android:text="@string/loadingData"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold" />
@@ -208,7 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="کوئی ریکارڈ نہیں "
+                    android:text="@string/noRecord"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_13sdp"
                     android:textStyle="bold"

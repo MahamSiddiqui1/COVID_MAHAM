@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:text="Later"
+                android:text="@string/later"
                 android:textColor="@color/grey_color"
                 android:textSize="@dimen/_14sdp" />
 

@@ -96,9 +96,9 @@ public class VAC_ClassListener implements OnClickListener {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String usernaame = prefelse.getString("username", null); // getting String
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String usernaame = prefelse.getString(act.getString(R.string.username), null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);
@@ -430,7 +430,7 @@ public class VAC_ClassListener implements OnClickListener {
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.VISIBLE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText(R.string.feedbackAboutHayatApp);
                 ratingBar.setRating(5);
                 temp_var = "5";
                 temp_name = "Very Satisfied";
@@ -446,7 +446,7 @@ public class VAC_ClassListener implements OnClickListener {
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.VISIBLE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText(R.string.feedbackAboutHayatApp);
                 ratingBar.setRating(4);
                 temp_var = "4";
                 temp_name = "Satisfied";
@@ -462,7 +462,7 @@ public class VAC_ClassListener implements OnClickListener {
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.VISIBLE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.neutral));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText(R.string.feedbackAboutHayatApp);
                 ratingBar.setRating(3);
                 temp_var = "3";
                 temp_name = "Neutral";
@@ -478,7 +478,7 @@ public class VAC_ClassListener implements OnClickListener {
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.VISIBLE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText(R.string.feedbackAboutHayatApp);
                 ratingBar.setRating(2);
                 temp_var = "2";
                 temp_name = "UnSatisfied";
@@ -494,7 +494,7 @@ public class VAC_ClassListener implements OnClickListener {
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.VISIBLE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                tv_give_feedback.setText(R.string.feedbackAboutHayatApp);
                 ratingBar.setRating(1);
                 temp_var = "1";
                 temp_name = "Very UnSatisfied";
@@ -628,7 +628,7 @@ public class VAC_ClassListener implements OnClickListener {
         Log.d("000555", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

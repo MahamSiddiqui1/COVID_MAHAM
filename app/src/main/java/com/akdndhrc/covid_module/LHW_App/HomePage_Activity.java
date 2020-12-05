@@ -115,9 +115,9 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String usernaame = prefelse.getString("username", null); // getting String
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String usernaame = prefelse.getString((R.string.username), null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000222", "USER UID: " + login_useruid);
@@ -406,7 +406,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_mother = ls.executeReader("Select count(*) from MEMBER where gender = '0' AND age >= 15 and age <=49");
-            listDataHeader.add("15 سے 49 سال کی عمر تک کی خواتین" + "@" + mData_count_mother[0][0]);
+            listDataHeader.add(getString(R.string.women15_49aged) + "@" + mData_count_mother[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_mother[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER where gender = '0' AND age >= 15 and age <=49 ORDER BY added_on DESC ");
 
@@ -448,7 +448,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
             //Children under age two
             String[][] mData_count_child = ls.executeReader("Select count(*) from MEMBER where age < 3");
             Log.d("000654", "ChildCount: " + mData_count_child[0][0]);
-            listDataHeader.add("2 سال سے کم عمر کے بچے" + "@" + mData_count_child[0][0]);
+            listDataHeader.add(getString(R.string.childBelow2) + "@" + mData_count_child[0][0]);
             mDatachild = ls.executeReader("Select *from MEMBER where age < 3 ORDER BY added_on DESC ");
 
             if (mDatachild != null) {
@@ -505,7 +505,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
             //Pregnant ladies
             String[][] mData_count_preg = ls.executeReader("Select count(*) from MEMBER where uid IN (SELECT member_uid FROM MPREGNANCY WHERE status = 1 AND JSON_EXTRACT(metadata,'$.status') IS '0')");
             Log.d("000654", "PregMotherCount: " + mData_count_preg[0][0]);
-            listDataHeader.add("حاملہ خواتین" + "@" + mData_count_preg[0][0]);
+            listDataHeader.add(getString(R.string.pregWomen) + "@" + mData_count_preg[0][0]);
             mDatapreg = ls.executeReader("Select *from MEMBER where uid IN (SELECT member_uid FROM MPREGNANCY WHERE status = 1 AND JSON_EXTRACT(metadata,'$.status') IS '0') ORDER BY added_on DESC ");
 
 

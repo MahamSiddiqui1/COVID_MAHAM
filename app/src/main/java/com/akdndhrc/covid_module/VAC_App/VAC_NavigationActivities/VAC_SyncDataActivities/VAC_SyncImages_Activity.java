@@ -64,9 +64,9 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
         temp="0";
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
 
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -174,7 +174,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
 
                     }
 
-                    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -239,7 +239,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                     }
 
                 } else {
-                    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -370,7 +370,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                                     "WHERE member_uid = '" + arrayList.get(Integer.parseInt(pos_value)).get("member_uid") + "' AND vaccine_id= '" + arrayList.get(Integer.parseInt(pos_value)).get("vaccine_id") + "'AND added_on= '" + arrayList.get(Integer.parseInt(pos_value)).get("added_on") + "'";
 
                             ls.executeNonQuery(update_record);
-                            Toast.makeText(ctx, "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.picSynced, Toast.LENGTH_SHORT).show();
 
                             arrayList.remove(Integer.parseInt(pos_value));
                             if (arrayList.size() > 0) {
@@ -401,7 +401,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                     } catch (Exception e) {
                         alertDialog.dismiss();
                         Log.d("000666", "catch: " + e.getMessage());
-                        Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -410,7 +410,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                 public void onFailure(Call<ResponseBody> call, Throwable t) {
                     alertDialog.dismiss();
                     Log.d("000666", "Failed: " + t.getMessage());
-                    Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
                 }
             });
 
@@ -466,7 +466,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
 
                             ls.executeNonQuery(update_record);
 
-                            Toast.makeText(ctx, "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.picSynced, Toast.LENGTH_SHORT).show();
 
                             arrayList.remove(0);
                             adt.notifyDataSetChanged();
@@ -481,7 +481,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                     } catch (Exception e) {
                         alertDialog.dismiss();
                         Log.d("000666", "catch: " + e.getMessage());
-                        Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -489,7 +489,7 @@ public class VAC_SyncImages_Activity extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<ResponseBody> call, Throwable t) {
                     Log.d("000666", "Failed: " + t.getMessage());
-                    Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     var="0";

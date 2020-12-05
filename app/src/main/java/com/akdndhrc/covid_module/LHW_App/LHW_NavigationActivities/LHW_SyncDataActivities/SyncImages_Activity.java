@@ -60,8 +60,8 @@ public class SyncImages_Activity extends AppCompatActivity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
 
             Log.d("000555", "USER UID: " + login_useruid);
@@ -77,7 +77,7 @@ public class SyncImages_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک تصاویر");
+        tv.setText(R.string.syncPic);
 
         //ImageView
         iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);
@@ -156,7 +156,7 @@ public class SyncImages_Activity extends AppCompatActivity {
 
                     }
 
-                    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں۔", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -221,7 +221,7 @@ public class SyncImages_Activity extends AppCompatActivity {
                     }
 
                 } else {
-                    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں۔", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -343,7 +343,7 @@ public class SyncImages_Activity extends AppCompatActivity {
 
                             ls.executeNonQuery(update_record);
 
-                            Toast.makeText(ctx, "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.picSynced, Toast.LENGTH_SHORT).show();
 
                             arrayList.remove(Integer.parseInt(pos_value));
                             if (arrayList.size() > 0) {
@@ -365,7 +365,7 @@ public class SyncImages_Activity extends AppCompatActivity {
                     } catch (Exception e) {
                         alertDialog.dismiss();
                         Log.d("000666", "catch: " + e.getMessage());
-                        Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -374,7 +374,7 @@ public class SyncImages_Activity extends AppCompatActivity {
                 public void onFailure(Call<ResponseBody> call, Throwable t) {
                     alertDialog.dismiss();
                     Log.d("000666", "Failed: " + t.getMessage());
-                    Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
                 }
             });
 
@@ -430,7 +430,7 @@ public class SyncImages_Activity extends AppCompatActivity {
 
                             ls.executeNonQuery(update_record);
 
-                            Toast.makeText(ctx, "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.picSynced, Toast.LENGTH_SHORT).show();
 
                             arrayList.remove(0);
                             adt.notifyDataSetChanged();
@@ -445,7 +445,7 @@ public class SyncImages_Activity extends AppCompatActivity {
                     } catch (Exception e) {
 
                         Log.d("000666", "catch: " + e.getMessage());
-                        Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -454,7 +454,7 @@ public class SyncImages_Activity extends AppCompatActivity {
                 public void onFailure(Call<ResponseBody> call, Throwable t) {
                     alertDialog.dismiss();
                     Log.d("000666", "Failed: " + t.getMessage());
-                    Toast.makeText(ctx, "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.picNotSynced, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     finish();

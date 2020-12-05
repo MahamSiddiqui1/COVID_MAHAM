@@ -214,8 +214,8 @@ public class Login_Activity extends Activity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_username = prefelse.getString("username", null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String shared_username = prefelse.getString((R.string.username), null); // getting String
             et_username.setText(shared_username);
             Log.d("000258", "Last UserName: " + shared_username);
         } catch (Exception e) {
@@ -573,7 +573,7 @@ public class Login_Activity extends Activity {
             Log.d("000258", "mURL " + url);
             //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-            String REQUEST_TAG = "volleyStringRequest";
+            String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
             StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
@@ -655,7 +655,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "Country Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                          ////////////////////////////////////////// Provinces ///////////////////////////////////////////////////////////////
@@ -690,7 +690,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "Province Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////////////////// Districts ///////////////////////////////////////
@@ -725,7 +725,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "DISTRICT Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                          ///////////////////////////////////////// TEHSILS ////////////////////////////////////////////////////
@@ -762,7 +762,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "TEHSIL Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////////////// UNIONCOUNCILS /////////////////////////////////////////////
@@ -799,7 +799,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "UnionCouncil Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ////////////////////////////////// VILLAGES ////////////////////////////////////////////
@@ -837,7 +837,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "VILLAGES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////// Facilities ////////////////////////////////////////////
@@ -875,7 +875,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "FACILITIES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         //////////////////////////////  VACCINES //////////////////////////////////////
@@ -908,7 +908,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "VACCINE Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         /////////////////////////////////////// USERS ////////////////////////////////////
@@ -947,7 +947,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "USER Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -980,7 +980,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "MEDICINES Err:    " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), "No data found for " + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -1087,10 +1087,10 @@ public class Login_Activity extends Activity {
 //                        Toast.makeText(getApplicationContext(), "User logged in", Toast.LENGTH_SHORT).show();
 
                         ////////////Save user name in shared pref
-                        SharedPreferences prefw = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
+                        SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
                         SharedPreferences.Editor editorw = prefw.edit();
                         editorw.putString("username", userName);
-                        editorw.putString("login_userid", login_useruid);
+                        editorw.putString((R.string.loginUserIDEng), login_useruid);
 
                         username = userName;
                         //  editorw.putString("password", mData[0][2]);
@@ -1203,7 +1203,7 @@ public class Login_Activity extends Activity {
                     }
 
                     ////////////Save GPS latlng in shared pref
-                    SharedPreferences prefw = getApplicationContext().getSharedPreferences("LoginGPS", 0); // 0 - for private mode
+                    SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.loginGPSeng), 0); // 0 - for private mode
                     SharedPreferences.Editor editorw = prefw.edit();
                     editorw.putString("gps_latitude", String.valueOf(latitude));
                     editorw.putString("gps_longitude", String.valueOf(longitude));
@@ -1317,7 +1317,7 @@ public class Login_Activity extends Activity {
                     }
 
                     ////////////Save GPS latlng in shared pref
-                    SharedPreferences prefw = getApplicationContext().getSharedPreferences("LoginGPS", 0); // 0 - for private mode
+                    SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.loginGPSeng), 0); // 0 - for private mode
                     SharedPreferences.Editor editorw = prefw.edit();
                     editorw.putString("gps_latitude", String.valueOf(latitude));
                     editorw.putString("gps_longitude", String.valueOf(longitude));
@@ -1419,7 +1419,7 @@ public class Login_Activity extends Activity {
             }
             try {
                 ////////////Save GPS latlng in shared pref
-                SharedPreferences prefw = getApplicationContext().getSharedPreferences("LoginGPS", 0); // 0 - for private mode
+                SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.loginGPSeng), 0); // 0 - for private mode
                 SharedPreferences.Editor editorw = prefw.edit();
                 editorw.putString("gps_latitude", String.valueOf(latitude));
                 editorw.putString("gps_longitude", String.valueOf(longitude));

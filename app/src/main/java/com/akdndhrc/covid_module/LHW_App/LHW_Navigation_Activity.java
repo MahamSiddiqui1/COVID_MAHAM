@@ -74,6 +74,16 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.*;
+import static com.akdndhrc.covid_module.R.string.*;
+import static com.akdndhrc.covid_module.R.string.enterPhoneNoPrompt;
+import static com.akdndhrc.covid_module.R.string.loginUserIDWrong;
+import static com.akdndhrc.covid_module.R.string.monthlyReportAlreadyDownloaded;
+import static com.akdndhrc.covid_module.R.string.reportDownloadSuccessEng;
+import static com.akdndhrc.covid_module.R.string.selectYearEng;
+import static com.akdndhrc.covid_module.R.string.startUpdateData;
+import static com.akdndhrc.covid_module.R.string.startUpdatePregData;
+
 public class LHW_Navigation_Activity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -112,14 +122,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lhw_navigation);
+        setContentView(layout.activity_lhw_navigation);
 
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String usernaame = prefelse.getString("username", null); // getting String
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(getString(userLogin), 0); // 0 - for private mode
+            String usernaame = prefelse.getString(getString(username), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf((loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);
@@ -130,7 +140,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
         try {
             ////////////Get GPS latlng in shared pref
-            SharedPreferences prefw = getApplicationContext().getSharedPreferences("LoginGPS", 0); // 0 - for private mode
+            SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(loginGPSeng), 0); // 0 - for private mode
             String latitude = prefw.getString("gps_latitude", null); // getting String
             String longitude = prefw.getString("gps_longitude", null); // getting String
             gps_latitude = Double.parseDouble(latitude);
@@ -144,13 +154,13 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         }
 
 
-        tv_username = findViewById(R.id.tv_username);
+        tv_username = findViewById(id.tv_username);
         tv_username.setText(login_username);
 
         tv_username.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(act, "Start updating data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, startUpdateData, Toast.LENGTH_SHORT).show();
 
                 Update_Khandan();
 
@@ -160,14 +170,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         tv_username.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                Toast.makeText(act, "Start updating pregnancies data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, startUpdatePregData, Toast.LENGTH_SHORT).show();
                 UpdateQueries();
                 return true;
             }
         });
 
         //TextView GPS
-        tv_LatLng = findViewById(R.id.tv_LatLng);
+        tv_LatLng = findViewById(id.tv_LatLng);
         float latitude = Float.parseFloat(String.format("%.5f", gps_latitude));
         float longitude = Float.parseFloat(String.format("%.5f", gps_longitude));
 
@@ -177,28 +187,28 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         tv_LatLng.setText(String.valueOf(latitude) + " | " + String.valueOf(longitude));
 
         //ImageView
-        image_cancel = findViewById(R.id.image_cancel);
-        image_phonenumber = findViewById(R.id.image_phonenumber);
+        image_cancel = findViewById(id.image_cancel);
+        image_phonenumber = findViewById(id.image_phonenumber);
         image_cancel.setOnClickListener(this);
         image_phonenumber.setOnClickListener(this);
 
         //Relative Layout
-        rl_register = findViewById(R.id.rl_register);
-        rl_search = findViewById(R.id.rl_search);
-        rl_vaccinate_inlisted = findViewById(R.id.rl_vaccinate_inlisted);
-        rl_sync = findViewById(R.id.rl_sync);
-        rl_adaad_O_shumaar = findViewById(R.id.rl_adaad_O_shumaar);
-        rl_aamdani = findViewById(R.id.rl_aamdani);
-        rl_refferal = findViewById(R.id.rl_refferal);
-        rl_stock = findViewById(R.id.rl_stock);
-        rl_application_settings = findViewById(R.id.rl_application_settings);
-        rl_logout = findViewById(R.id.rl_logout);
-        rl_sync_images = findViewById(R.id.rl_sync_images);
-        rl_bluetooth_share = findViewById(R.id.rl_bluetooth_share);
-        rl_socialContact = findViewById(R.id.rl_socialContact);
-        rl_refer = findViewById(R.id.rl_refer);
-        rl_monthly_report = findViewById(R.id.rl_monthly_report);
-        rl_COVID = findViewById(R.id.rl_COVID);
+        rl_register = findViewById(id.rl_register);
+        rl_search = findViewById(id.rl_search);
+        rl_vaccinate_inlisted = findViewById(id.rl_vaccinate_inlisted);
+        rl_sync = findViewById(id.rl_sync);
+        rl_adaad_O_shumaar = findViewById(id.rl_adaad_O_shumaar);
+        rl_aamdani = findViewById(id.rl_aamdani);
+        rl_refferal = findViewById(id.rl_refferal);
+        rl_stock = findViewById(id.rl_stock);
+        rl_application_settings = findViewById(id.rl_application_settings);
+        rl_logout = findViewById(id.rl_logout);
+        rl_sync_images = findViewById(id.rl_sync_images);
+        rl_bluetooth_share = findViewById(id.rl_bluetooth_share);
+        rl_socialContact = findViewById(id.rl_socialContact);
+        rl_refer = findViewById(id.rl_refer);
+        rl_monthly_report = findViewById(id.rl_monthly_report);
+        rl_COVID = findViewById(id.rl_COVID);
 
 
         rl_register.setOnClickListener(this);
@@ -228,20 +238,20 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
         switch (v.getId()) {
 
-            case R.id.image_cancel:
+            case id.image_cancel:
 
                 onBackPressed();
 
                 break;
 
-            case R.id.image_phonenumber:
+            case id.image_phonenumber:
 
                 Dialog_SpinnerUserPhoneNumber();
 
                 break;
 
 
-            case R.id.rl_register:
+            case id.rl_register:
 
                 final Dialog alertDialog = new Dialog(act);
                 LayoutInflater layout = LayoutInflater.from(act);
@@ -265,7 +275,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 break;
 
-            case R.id.rl_search:
+            case id.rl_search:
 
 
                 act.startActivity(new Intent(act, Search_Activity.class));
@@ -273,45 +283,45 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 break;
 
-            case R.id.rl_vaccinate_inlisted:
+            case id.rl_vaccinate_inlisted:
 
 
                 // act.startActivity(new Intent(act, VAC_InsideOutsideUC_Activity.class));
                 break;
 
-            case R.id.rl_sync:
+            case id.rl_sync:
                 act.startActivity(new Intent(act, SyncAndDownloadData_TabActivity.class));
                 // act.startActivity(new Intent(act, SyncItems_Activity.class));
                 break;
 
-            case R.id.rl_adaad_O_shumaar:
+            case id.rl_adaad_O_shumaar:
 
                 act.startActivity(new Intent(act, LHW_StatsActivity.class));
                 break;
 
-            case R.id.rl_aamdani:
+            case id.rl_aamdani:
                 //  Toast.makeText(act, R.string.nav_aamdani_text, Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.rl_refferal:
+            case id.rl_refferal:
                 //  Toast.makeText(act, R.string.nav_refferal_text, Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.rl_taleeem_O_wasaeel:
+            case id.rl_taleeem_O_wasaeel:
                 act.startActivity(new Intent(act, VideoList_Activity.class));
                 break;
 
 
-            case R.id.rl_application_settings:
+            case id.rl_application_settings:
                 //  Toast.makeText(act, R.string.nav_application_settings_text, Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.rl_sync_images:
+            case id.rl_sync_images:
                 act.startActivity(new Intent(act, SyncVaccineImages_Activity.class));
                 break;
 
 
-            case R.id.rl_bluetooth_share:
+            case id.rl_bluetooth_share:
 
                 try {
                     if (Build.VERSION.SDK_INT >= 24) {
@@ -362,7 +372,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 break;
 
 
-            case R.id.rl_logout:
+            case id.rl_logout:
 
                 Feedback_Dialog();
 
@@ -372,20 +382,20 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 break;
 
 
-            case R.id.rl_socialContact:
+            case id.rl_socialContact:
 
                 SocialContact_Dialog();
 
                 break;
 
 
-            case R.id.rl_stock:
+            case id.rl_stock:
 
                 MedicinesStock_Dialog();
 
                 break;
 
-            case R.id.rl_refer:
+            case id.rl_refer:
                 act.startActivity(new Intent(act, LHW_ReferTabActivity.class));
                /* String intro="[INTRO MESSAGE]\n";
                 String phoneNumber="03432350528";
@@ -396,14 +406,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 startActivity(sms_intent);*/
                 break;
 
-            case R.id.rl_monthly_report:
+            case id.rl_monthly_report:
                 Intent intent = new Intent(act, LHW_MonthlyReport_Activity.class);
                 act.startActivity(intent);
 
                 //MonthlyReport_Dialog();
                 break;
 
-                case R.id.rl_COVID:
+                case id.rl_COVID:
                 Intent intent1 = new Intent(act, LHW_CovidTabActivity.class);
                 act.startActivity(intent1);
                 break;
@@ -487,32 +497,32 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertDialog.show();
 
         //LinearLayout
-        ll_emoji = dialogView.findViewById(R.id.ll_emoji);
-        ll_feedback = dialogView.findViewById(R.id.ll_feedback);
+        ll_emoji = dialogView.findViewById(id.ll_emoji);
+        ll_feedback = dialogView.findViewById(id.ll_feedback);
 
 
         //ProgressBar
-        progressBar = dialogView.findViewById(R.id.pbProgress);
+        progressBar = dialogView.findViewById(id.pbProgress);
 
         //Button
-        btn_jamaa_kre = dialogView.findViewById(R.id.submit);
+        btn_jamaa_kre = dialogView.findViewById(id.submit);
 
         //Rating
-        ratingBar = dialogView.findViewById(R.id.rating_star);
+        ratingBar = dialogView.findViewById(id.rating_star);
         ratingBar.setEnabled(false);
 
         //ImageView
-        iv_close = dialogView.findViewById(R.id.iv_close);
-        iv_Neutral = dialogView.findViewById(R.id.iv_Neutral);
-        iv_Satisfied = dialogView.findViewById(R.id.iv_Satisfied);
-        iv_VerySatisfied = dialogView.findViewById(R.id.iv_VerySatisfied);
-        iv_UnSatisfied = dialogView.findViewById(R.id.iv_UnSatisfied);
-        iv_VeryUnSatisfied = dialogView.findViewById(R.id.iv_VeryUnSatisfied);
-        iv_feedback_emoji = dialogView.findViewById(R.id.iv_feedback_emoji);
+        iv_close = dialogView.findViewById(id.iv_close);
+        iv_Neutral = dialogView.findViewById(id.iv_Neutral);
+        iv_Satisfied = dialogView.findViewById(id.iv_Satisfied);
+        iv_VerySatisfied = dialogView.findViewById(id.iv_VerySatisfied);
+        iv_UnSatisfied = dialogView.findViewById(id.iv_UnSatisfied);
+        iv_VeryUnSatisfied = dialogView.findViewById(id.iv_VeryUnSatisfied);
+        iv_feedback_emoji = dialogView.findViewById(id.iv_feedback_emoji);
 
         //TextView
-        tv_give_feedback = dialogView.findViewById(R.id.tv_give_feedback);
-        tv_not_now = dialogView.findViewById(R.id.tv_not_now);
+        tv_give_feedback = dialogView.findViewById(id.tv_give_feedback);
+        tv_not_now = dialogView.findViewById(id.tv_not_now);
 
 
         iv_close.setOnClickListener(new View.OnClickListener() {
@@ -530,8 +540,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 ratingBar.setVisibility(View.VISIBLE);
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
-                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.v_satisfied));
+                tv_give_feedback.setText(feedbackAboutHayatApp);
                 ratingBar.setRating(5);
                 temp_var = "5";
                 temp_name = "Very Satisfied";
@@ -546,8 +556,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 ratingBar.setVisibility(View.VISIBLE);
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
-                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.satisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.satisfied));
+                tv_give_feedback.setText(feedbackAboutHayatApp);
                 ratingBar.setRating(4);
                 temp_var = "4";
                 temp_name = "Satisfied";
@@ -562,8 +572,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 ratingBar.setVisibility(View.VISIBLE);
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
-                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.neutral));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.neutral));
+                tv_give_feedback.setText(feedbackAboutHayatApp);
                 ratingBar.setRating(3);
                 temp_var = "3";
                 temp_name = "Neutral";
@@ -578,8 +588,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 ratingBar.setVisibility(View.VISIBLE);
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
-                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.unsatisfied));
+                tv_give_feedback.setText(feedbackAboutHayatApp);
                 ratingBar.setRating(2);
                 temp_var = "2";
                 temp_name = "UnSatisfied";
@@ -594,8 +604,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 ratingBar.setVisibility(View.VISIBLE);
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
-                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_unsatisfied));
-                tv_give_feedback.setText("حیات ایپلیکیشن کے استعمال سے متعلق آپ کی رائے کا شکریہ");
+                iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.v_unsatisfied));
+                tv_give_feedback.setText(feedbackAboutHayatApp);
                 ratingBar.setRating(1);
                 temp_var = "1";
                 temp_name = "Very UnSatisfied";
@@ -740,31 +750,31 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertDialog.show();
 
         //LinearLayout
-        ll_emoji = dialogView.findViewById(R.id.ll_emoji);
+        ll_emoji = dialogView.findViewById(id.ll_emoji);
         ll_emoji.setVisibility(View.GONE);
 
-        ll_feedback = dialogView.findViewById(R.id.ll_feedback);
+        ll_feedback = dialogView.findViewById(id.ll_feedback);
 
         //Button
-        btn_jamaa_kre = dialogView.findViewById(R.id.submit);
+        btn_jamaa_kre = dialogView.findViewById(id.submit);
         btn_jamaa_kre.setVisibility(View.VISIBLE);
 
         //Rating
-        ratingBar = dialogView.findViewById(R.id.rating_star);
+        ratingBar = dialogView.findViewById(id.rating_star);
         ratingBar.setVisibility(View.VISIBLE);
 
         //ImageView
-        iv_close = dialogView.findViewById(R.id.iv_close);
-        iv_Neutral = dialogView.findViewById(R.id.iv_Neutral);
-        iv_Satisfied = dialogView.findViewById(R.id.iv_Satisfied);
-        iv_VerySatisfied = dialogView.findViewById(R.id.iv_VerySatisfied);
-        iv_UnSatisfied = dialogView.findViewById(R.id.iv_UnSatisfied);
-        iv_VeryUnSatisfied = dialogView.findViewById(R.id.iv_VeryUnSatisfied);
+        iv_close = dialogView.findViewById(id.iv_close);
+        iv_Neutral = dialogView.findViewById(id.iv_Neutral);
+        iv_Satisfied = dialogView.findViewById(id.iv_Satisfied);
+        iv_VerySatisfied = dialogView.findViewById(id.iv_VerySatisfied);
+        iv_UnSatisfied = dialogView.findViewById(id.iv_UnSatisfied);
+        iv_VeryUnSatisfied = dialogView.findViewById(id.iv_VeryUnSatisfied);
 
-        iv_feedback_emoji = dialogView.findViewById(R.id.iv_feedback_emoji);
+        iv_feedback_emoji = dialogView.findViewById(id.iv_feedback_emoji);
 
         //TextView
-        tv_give_feedback = dialogView.findViewById(R.id.tv_give_feedback);
+        tv_give_feedback = dialogView.findViewById(id.tv_give_feedback);
 
 
         iv_close.setOnClickListener(new View.OnClickListener() {
@@ -806,19 +816,19 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 if (rating == 1) {
                     iv_feedback_emoji.setVisibility(View.VISIBLE);
-                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_unsatisfied));
+                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.v_unsatisfied));
                 } else if (rating == 2) {
                     iv_feedback_emoji.setVisibility(View.VISIBLE);
-                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.unsatisfied));
+                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.unsatisfied));
                 } else if (rating == 3) {
                     iv_feedback_emoji.setVisibility(View.VISIBLE);
-                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.neutral));
+                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.neutral));
                 } else if (rating == 4) {
                     iv_feedback_emoji.setVisibility(View.VISIBLE);
-                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.satisfied));
+                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.satisfied));
                 } else if (rating == 5) {
                     iv_feedback_emoji.setVisibility(View.VISIBLE);
-                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_satisfied));
+                    iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, drawable.v_satisfied));
                 } else {
                     iv_feedback_emoji.setVisibility(View.GONE);
                     iv_feedback_emoji.setImageDrawable(null);
@@ -834,7 +844,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         Log.d("000555", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -860,7 +870,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(act, R.string.dataSynced, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, dataSynced, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(act, "Your response submitted successfully.", Toast.LENGTH_SHORT).show();
 
                     } else {
@@ -883,7 +893,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(act, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(act, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, noDataSyncAlert, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -931,10 +941,10 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
 
         //ImageView
-        iv_close = dialogView.findViewById(R.id.iv_close);
-        RelativeLayout rl_HealthCommittee = dialogView.findViewById(R.id.rl_HealthCommittee);
-        RelativeLayout rl_WomenSupport = dialogView.findViewById(R.id.rl_WomenSupport);
-        RelativeLayout rl_HealthEducation = dialogView.findViewById(R.id.rl_HealthEducation);
+        iv_close = dialogView.findViewById(id.iv_close);
+        RelativeLayout rl_HealthCommittee = dialogView.findViewById(id.rl_HealthCommittee);
+        RelativeLayout rl_WomenSupport = dialogView.findViewById(id.rl_WomenSupport);
+        RelativeLayout rl_HealthEducation = dialogView.findViewById(id.rl_HealthEducation);
 
 
         iv_close.setOnClickListener(new View.OnClickListener() {
@@ -990,9 +1000,9 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
 
         //ImageView
-        iv_close = dialogView.findViewById(R.id.iv_close);
-        RelativeLayout rl_StockMaster = dialogView.findViewById(R.id.rl_StockMaster);
-        RelativeLayout rl_Miscellaneous = dialogView.findViewById(R.id.rl_Miscellaneous);
+        iv_close = dialogView.findViewById(id.iv_close);
+        RelativeLayout rl_StockMaster = dialogView.findViewById(id.rl_StockMaster);
+        RelativeLayout rl_Miscellaneous = dialogView.findViewById(id.rl_Miscellaneous);
 
 
         iv_close.setOnClickListener(new View.OnClickListener() {
@@ -1038,11 +1048,11 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
 
         //ImageView
-        iv_close = dialogView.findViewById(R.id.iv_close);
-        sp_year = dialogView.findViewById(R.id.sp_year);
-        sp_month = dialogView.findViewById(R.id.sp_month);
-        btn_submit = dialogView.findViewById(R.id.submit);
-        btn_view_report = dialogView.findViewById(R.id.btn_view_report);
+        iv_close = dialogView.findViewById(id.iv_close);
+        sp_year = dialogView.findViewById(id.sp_year);
+        sp_month = dialogView.findViewById(id.sp_month);
+        btn_submit = dialogView.findViewById(id.submit);
+        btn_view_report = dialogView.findViewById(id.btn_view_report);
 
         sp_year.setEnabled(false);
 
@@ -1071,12 +1081,12 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
             public void onClick(View v) {
 
                 if (sp_month.getSelectedItemPosition() == 0) {
-                    Toast.makeText(act, "Please select month", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, selectMonthEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (sp_year.getSelectedItemPosition() == 0) {
-                    Toast.makeText(act, "Please select year", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, selectYearEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -1115,14 +1125,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         try {
 
             ////////////////////////// Sp_Month ////////////////////////////////////////
-            final ArrayAdapter<CharSequence> adptr_council = ArrayAdapter.createFromResource(this, R.array.month, R.layout.sp_title_topic_layout);
+            final ArrayAdapter<CharSequence> adptr_council = ArrayAdapter.createFromResource(this, array.month, layout.sp_title_topic_layout);
             adptr_council.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 
             sp_month.setAdapter(
                     new NothingSelectedSpinnerAdapter(
                             adptr_council,
-                            R.layout.sp_title_topic_layout,
+                            layout.sp_title_topic_layout,
                             // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
                             this));
 
@@ -1198,12 +1208,12 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
             for (int i = 2019; i <= thisYear; i++) {
                 years.add(Integer.toString(i));
             }
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.sp_title_topic_layout, years);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, layout.sp_title_topic_layout, years);
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             sp_year.setAdapter(
                     new NothingSelectedSpinnerAdapter(
                             adapter,
-                            R.layout.sp_title_topic_layout,
+                            layout.sp_title_topic_layout,
                             // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
                             this));
             sp_year.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -1240,7 +1250,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 for (int i = 0; i < mData.length; i++) {
 
                     if (mData[i][0].equalsIgnoreCase(year) && mData[i][1].equalsIgnoreCase(month)) {
-                        Toast.makeText(act, "Monthly Report already downloaded.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, monthlyReportAlreadyDownloaded, Toast.LENGTH_SHORT).show();
                         btn_view_report.setVisibility(View.VISIBLE);
                         btn_submit.setVisibility(View.GONE);
                     } else {
@@ -1271,8 +1281,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         alertDialog.show();
 
-        txt_message = dialogView.findViewById(R.id.message);
-        pbProgress = dialogView.findViewById(R.id.pbProgress);
+        txt_message = dialogView.findViewById(id.message);
+        pbProgress = dialogView.findViewById(id.pbProgress);
 
         try {
             ////////////////////////////////////////////// MANC ///////////////////////////////////////////
@@ -1323,14 +1333,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
         } catch (Exception e) {
             Log.d("000111", "Update MANCQuery Err: " + e.getMessage());
-            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "ڈیٹا پہلے سے اپڈیٹ ہے.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), dataAlreadyEdited, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
             textView.setTextColor(Color.WHITE);
             textView.setTextSize(16);
-            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_error_outline_black_24dp, 0, 0, 0);
+            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_error_outline_black_24dp, 0, 0, 0);
             snackbar.setDuration(2000);
             snackbar.show();
         }
@@ -1380,14 +1390,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         } catch (Exception e) {
             Log.d("000111", "Update MDELIVQuery Err: " + e.getMessage());
 
-            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "ڈیٹا پہلے سے اپڈیٹ ہے.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), dataAlreadyEdited, Snackbar.LENGTH_SHORT);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
             textView.setTextColor(Color.WHITE);
             textView.setTextSize(16);
-            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_error_outline_black_24dp, 0, 0, 0);
+            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_error_outline_black_24dp, 0, 0, 0);
             snackbar.setDuration(2000);
             snackbar.show();
 
@@ -1439,16 +1449,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 @Override
                 public void run() {
                     alertDialog.dismiss();
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "تمام ڈیٹا کو اپڈیٹ کر دیا گیا ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), allDataEdited, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                     TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);
                     textView.setTextSize(16);
-                    textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                    textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                        textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                     }
                     snackbar.setDuration(4000);
                     snackbar.show();
@@ -1464,14 +1474,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 @Override
                 public void run() {
                     alertDialog.dismiss();
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "تمام ڈیٹا پہلے سے اپڈیٹ ہے.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), allDataAlreadyEdited, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                     TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);
                     textView.setTextSize(16);
-                    textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_error_outline_black_24dp, 0, 0, 0);
+                    textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_error_outline_black_24dp, 0, 0, 0);
                     snackbar.setDuration(4000);
                     snackbar.show();
                 }
@@ -1493,8 +1503,8 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         alertDialog.show();
 
-        txt_message = dialogView.findViewById(R.id.message);
-        pbProgress = dialogView.findViewById(R.id.pbProgress);
+        txt_message = dialogView.findViewById(id.message);
+        pbProgress = dialogView.findViewById(id.pbProgress);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -1593,16 +1603,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                                             @Override
                                             public void run() {
                                                 alertDialog.dismiss();
-                                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "تمام ڈیٹا کو اپڈیٹ کر دیا گیا ہے.", Snackbar.LENGTH_SHORT);
+                                                final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), allDataEdited, Snackbar.LENGTH_SHORT);
                                                 View mySbView = snackbar.getView();
                                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                                 mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                                                 TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                                                 textView.setTextColor(Color.WHITE);
                                                 textView.setTextSize(16);
-                                                textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                                                textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                                    textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                                    textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                                                 }
                                                 snackbar.setDuration(4000);
                                                 snackbar.show();
@@ -1620,33 +1630,33 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                         } catch (Exception e) {
                             Log.d("000105", "Error:  --------" + e.getMessage());
-                            if (e.getMessage().equalsIgnoreCase("Attempt to get length of null array"))
+                            if (e.getMessage().equalsIgnoreCase(getString(getLenOfNullArray)))
                             {
-                                Toast.makeText(act, "Login User ID wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(act, loginUserIDWrong, Toast.LENGTH_SHORT).show();
                             }else {
-                                Toast.makeText(act, "Something worng !!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
                             }
                         }
                         }
                         else {
                             Log.d("000105", "DATA NULL --------");
-                            Toast.makeText(act, "Something worng !!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "تمام ڈیٹا پہلے سے اپڈیٹ ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), allDataAlreadyEdited, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                         TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.WHITE);
                         textView.setTextSize(16);
-                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_error_outline_black_24dp, 0, 0, 0);
+                        textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_error_outline_black_24dp, 0, 0, 0);
                         snackbar.setDuration(4000);
                         snackbar.show();
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000111", "Update KHANDAN TABLE Err: " + e.getMessage());
 
                 } finally {
@@ -1671,7 +1681,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
         Log.d("000222", "mURL " + url);
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq1 = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -1909,19 +1919,19 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                         Log.d("000555", "Receiving Data count: " + query);
 
                         progressDialog.dismiss();
-                        Toast.makeText(act, "Report Downloaded Successfully..", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, reportDownloadSuccessEng, Toast.LENGTH_SHORT).show();
 
                     } catch (Exception e) {
                         progressDialog.dismiss();
                         e.printStackTrace();
                         Log.d("000222", "Catch: " + e.getMessage());
-                        Toast.makeText(act, "No data found for " + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, getString(noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     progressDialog.dismiss();
                     Log.d("000222", "Err:    " + e.getMessage());
-                    Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -1932,7 +1942,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
                 Log.d("000222", "onErrorResponse: " + error.getMessage());
-                Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
 
 
             }
@@ -1970,14 +1980,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertD.setContentView(promptView);
         alertD.setCanceledOnTouchOutside(false);
         alertD.setCancelable(false);
-        alertD.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //style id
+        alertD.getWindow().getAttributes().windowAnimations = style.DialogAnimation; //style id
         alertD.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         alertD.show();
 
 
-        iv_close = (ImageView) promptView.findViewById(R.id.iv_close);
-        final EditText et_phone_number = (EditText) promptView.findViewById(R.id.et_phone_number);
-        final Button btn_jaari_rhy = (Button) promptView.findViewById(R.id.btn_jaari_rhy);
+        iv_close = (ImageView) promptView.findViewById(id.iv_close);
+        final EditText et_phone_number = (EditText) promptView.findViewById(id.et_phone_number);
+        final Button btn_jaari_rhy = (Button) promptView.findViewById(id.btn_jaari_rhy);
 
         et_phone_number.addTextChangedListener(new TextWatcher() {
             int previous = 0;
@@ -2024,7 +2034,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 number = mData[0][0];
                 phonenumber = true;
                 btn_jaari_rhy.setVisibility(View.GONE);
-                btn_jaari_rhy.setText("نمبر اپڈیٹ کریں");
+                btn_jaari_rhy.setText(numEdit);
             } else {
                 phonenumber = false;
                 Log.d("000369", "NO PHONE NUMBER");
@@ -2051,11 +2061,11 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
 
                 if (et_phone_number.getText().toString().isEmpty()) {
-                    Toast.makeText(act, "برائے مہربانی  فون نمبر درج کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, enterPhoneNoPrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (et_phone_number.getText().length() < 12) {
-                    Toast.makeText(act, "برائے مہربانی صحیح فون نمبر درج کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, correctPhoneNoPrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -2077,16 +2087,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                         if (res.toString().equalsIgnoreCase("true")) {
 
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(3000);
                             snackbar.show();
@@ -2099,16 +2109,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                             }, 2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(4000);
                             snackbar.show();
@@ -2128,16 +2138,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoAdded, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(3000);
                             snackbar.show();
@@ -2150,16 +2160,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                             }, 2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoNotAdded, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(4000);
                             snackbar.show();
@@ -2169,7 +2179,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, "Somthing wrong.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000777", "ERROR: " + e.getMessage());
                 }
 
@@ -2189,14 +2199,14 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         alertD.setContentView(promptView);
         alertD.setCanceledOnTouchOutside(false);
         alertD.setCancelable(false);
-        alertD.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //style id
+        alertD.getWindow().getAttributes().windowAnimations = style.DialogAnimation; //style id
         alertD.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         alertD.show();
 
 
-        iv_close = (ImageView) promptView.findViewById(R.id.iv_close);
-        final Spinner spPhoneNumber = (Spinner) promptView.findViewById(R.id.spPhoneNumber);
-        final Button btn_jaari_rhy = (Button) promptView.findViewById(R.id.btn_jaari_rhy);
+        iv_close = (ImageView) promptView.findViewById(id.iv_close);
+        final Spinner spPhoneNumber = (Spinner) promptView.findViewById(id.spPhoneNumber);
+        final Button btn_jaari_rhy = (Button) promptView.findViewById(id.btn_jaari_rhy);
 
         spinner_number(spPhoneNumber);
 
@@ -2209,7 +2219,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
             if (mData != null) {
                 Log.d("000369", "PHONE NUMBER: " + mData[0][0]);
-                String[] data = act.getResources().getStringArray(R.array.array_sms_numbers);
+                String[] data = act.getResources().getStringArray(array.array_sms_numbers);
                 Log.d("000369", "PHONE NUMBER length: " + data.length);
                 Log.d("000369", "PHONE NUMBER length: " + data[0]);
                 Log.d("000369", "PHONE NUMBER length: " + data[1]);
@@ -2218,7 +2228,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                 phonenumber = true;
 
 
-                btn_jaari_rhy.setText("نمبر اپڈیٹ کریں");
+                btn_jaari_rhy.setText(numEdit);
 
                 try {
                     int mPos = 0;
@@ -2289,7 +2299,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
 
                 if (spPhoneNumber.getSelectedItemPosition() == 0) {
-                    Toast.makeText(act, "برائے مہربانی  فون نمبر منتخب کریں.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, string.selectPhoneNoPrompt, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -2312,16 +2322,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                         if (res.toString().equalsIgnoreCase("true")) {
 
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(3000);
                             snackbar.show();
@@ -2334,16 +2344,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                             }, 2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر اپڈیٹ نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoNotEdited, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(4000);
                             snackbar.show();
@@ -2363,16 +2373,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoAdded, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(3000);
                             snackbar.show();
@@ -2385,16 +2395,16 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                             }, 2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "موبائل نمبر جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(id.navigation_screen), string.mobileNoNotAdded, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
                             TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                             textView.setTextColor(Color.WHITE);
                             textView.setTextSize(16);
-                            textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(R.color.green_color));
+                                textView.setCompoundDrawableTintList(act.getResources().getColorStateList(color.green_color));
                             }
                             snackbar.setDuration(4000);
                             snackbar.show();
@@ -2404,7 +2414,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, "Somthing wrong.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000777", "ERROR: " + e.getMessage());
                 }
 
@@ -2417,13 +2427,13 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
     private void spinner_number(Spinner spPhoneNumber) {
 
 
-        final ArrayAdapter<CharSequence> adptr_topic = ArrayAdapter.createFromResource(this, R.array.array_sms_numbers, R.layout.sp_title_topic_layout);
+        final ArrayAdapter<CharSequence> adptr_topic = ArrayAdapter.createFromResource(this, array.array_sms_numbers, layout.sp_title_topic_layout);
         adptr_topic.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spPhoneNumber.setAdapter(
                 new NothingSelectedSpinnerAdapter(
                         adptr_topic,
-                        R.layout.sp_title_topic_layout,
+                        layout.sp_title_topic_layout,
                         this));
 
 
@@ -2448,7 +2458,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         startActivity(intent);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        overridePendingTransition(R.anim.right_in, R.anim.left_out);
+        overridePendingTransition(anim.right_in, anim.left_out);
 
         super.onBackPressed();
     }

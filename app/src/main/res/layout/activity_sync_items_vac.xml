@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="سینک"
+                    android:text="@string/sync"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
@@ -217,7 +217,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="بچے کے حفاظتی ٹیکے کا ریکارڈ"
+                                    android:text="@string/chtr_bachey_kai_hifaziti_teekey_ka_record_text"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -267,7 +267,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="ماں کے حفاظتی ٹیکے کا ریکارڈ"
+                                    android:text="@string/motherVaccRec"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -319,7 +319,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="ویڈیوز کا ریکارڈ"
+                                    android:text="@string/videosRec"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -366,7 +366,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="فیڈ بیک کا ریکارڈ"
+                                    android:text="@string/feedbackRec"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />

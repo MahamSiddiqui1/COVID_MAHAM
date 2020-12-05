@@ -78,7 +78,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک  اسٹاک");
+        tv.setText(R.string.syncStock);
 
         //ImageView
         iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);
@@ -91,8 +91,8 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
         //Get shared SMS Number
         try {
-            SharedPreferences prefelse = ctx.getApplicationContext().getSharedPreferences("SMS_Number", 0); // 0 - for private mode
-            String shared_sms_number = prefelse.getString("sms_number", null); // getting String
+            SharedPreferences prefelse = ctx.getApplicationContext().getSharedPreferences((getString(R.string.duplicateEntry)), 0); // 0 - for private mode
+            String shared_sms_number = prefelse.getString((getString(R.string.duplicateEntry)), null); // getting String
             smsNumber = shared_sms_number;
             Log.d("000555", "USER UID: " + shared_sms_number);
 
@@ -238,7 +238,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
         Log.d("000333", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -263,7 +263,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                         ls.executeNonQuery(update_record);
 
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.dataSynced, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -319,7 +319,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                 alertDialog.dismiss();
                 Log.d("000333", "error    " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سینک نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noDataSyncAlert, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -376,7 +376,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
         Log.d("000333", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -499,7 +499,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                     // do something
                   //  Toast.makeText(getApplicationContext(), "Data is not synced, there is no sim in your phone.", Toast.LENGTH_LONG).show();
 
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "آپ کے فون میں کوئی سم موجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noPhoneSIM, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -591,7 +591,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                                 Log.d("000951", "Data Update:  " + update_record);
                                 Log.d("000951", "Query Update:  " + res);
 
-                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "ڈیٹا سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.dataSynced, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -629,7 +629,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                                 progressDialog.dismiss();
                                 Log.d("000951", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "SMS sending permission failed.", Snackbar.LENGTH_SHORT);
+                                final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.SMSsendPermFail, Snackbar.LENGTH_SHORT);
                                 View mySbView = snackbar.getView();
                                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -696,7 +696,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                     // do something
                     //Toast.makeText(getApplicationContext(), "Data is not synced, there is no sim in your phone.", Toast.LENGTH_LONG).show();
 
-                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), "آپ کے فون میں کوئی سم موجود نہیں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(findViewById(R.id.sync_khandan_layout), R.string.noPhoneSIM, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -832,7 +832,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
                 case TelephonyManager.SIM_STATE_UNKNOWN:
                     // do something
-                    Toast.makeText(getApplicationContext(), "SIM_STATE_UNKNOWN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.simStateUnknown, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                     temp = "0";
                     break;

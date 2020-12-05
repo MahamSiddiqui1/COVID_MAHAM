@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@id/checkbox_15to19_age"
-                    android:text="15-19 عمر کے"
+                    android:text="@string/_15_19aged"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -87,7 +87,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="مرد"
+                        android:text="@string/murd"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -161,7 +161,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="عورت"
+                        android:text="@string/aurat"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -254,7 +254,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@id/checkbox_20to49_age"
-                    android:text="20-49 عمر کے"
+                    android:text="@string/_20_49aged"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -281,7 +281,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="مرد"
+                        android:text="@string/murd"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -353,7 +353,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="عورت"
+                        android:text="@string/aurat"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -445,7 +445,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@id/checkbox_49plus"
-                    android:text="49 عمر سے زیادہ"
+                    android:text="@string/_49orMore"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -472,7 +472,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="مرد"
+                        android:text="@string/murd"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -545,7 +545,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="عورت"
+                        android:text="@string/aurat"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -637,7 +637,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@id/checkbox_community_leaders"
-                    android:text="کمیونٹی رہنماؤں"
+                    android:text="@string/commLeaders"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -664,7 +664,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="مرد"
+                        android:text="@string/murd"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 
@@ -737,7 +737,7 @@
 
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_35sdp"
-                        android:text="عورت"
+                        android:text="@string/aurat"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/_12sdp" />
 

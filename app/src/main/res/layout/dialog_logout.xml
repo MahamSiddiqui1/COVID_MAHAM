@@ -39,7 +39,7 @@
                 android:layout_toRightOf="@+id/iv_logo"
                 android:gravity="left"
                 android:paddingTop="@dimen/_8sdp"
-                android:text="LOG OUT"
+                android:text="@string/log_out"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
@@ -65,7 +65,7 @@
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:gravity="center"
-            android:text="Do you want to log out of the application?"
+            android:text="@string/wantoLogout"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="normal" />
@@ -87,7 +87,7 @@
             android:gravity="center"
             android:paddingTop="@dimen/_15sdp"
             android:paddingBottom="@dimen/_15sdp"
-            android:text="Log out"
+            android:text="@string/log_out"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
 
@@ -108,7 +108,7 @@
             android:gravity="center"
             android:paddingTop="@dimen/_15sdp"
             android:paddingBottom="@dimen/_15sdp"
-            android:text="Cancel"
+            android:text="@string/cancelEng"
             android:textColor="@color/graph_red_color"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />

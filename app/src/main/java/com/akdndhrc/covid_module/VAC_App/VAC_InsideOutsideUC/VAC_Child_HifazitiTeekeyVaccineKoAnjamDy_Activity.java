@@ -115,7 +115,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -578,7 +578,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
         Log.d("000555", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -625,7 +625,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompat
             public void onErrorResponse(VolleyError error) {
 
                 Log.d("000555", "error    " + error.getMessage());
-                Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
+                Toast.makeText(VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, R.string.checkInternetPrompt, Toast.LENGTH_SHORT).show();
                 finish();
 
             }

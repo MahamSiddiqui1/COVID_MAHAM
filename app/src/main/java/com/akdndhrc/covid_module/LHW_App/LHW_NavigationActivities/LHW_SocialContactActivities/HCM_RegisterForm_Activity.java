@@ -70,8 +70,8 @@ public class HCM_RegisterForm_Activity extends AppCompatActivity {
         var_hcm_register ="0";
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
 
             /*SharedPreferences pre = getApplicationContext().getSharedPreferences("meetingID", 0); // 0 - for private mode
@@ -340,7 +340,7 @@ public class HCM_RegisterForm_Activity extends AppCompatActivity {
         Log.d("000357", "mURL " + url);
 
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

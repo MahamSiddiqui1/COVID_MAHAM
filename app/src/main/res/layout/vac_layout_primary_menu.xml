@@ -227,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="ویڈیوز"
+                        android:text="@string/videos"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -248,7 +248,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="بلوٹوتھ فائل"
+                        android:text="@string/bluetoothFile"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 

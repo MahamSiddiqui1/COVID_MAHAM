@@ -43,7 +43,7 @@ public class HealthCommittee_Activity extends AppCompatActivity {
         if (type.equalsIgnoreCase("1")) {
             tvNaam.setText(R.string.womenSupportGroup);
         } else if (type.equalsIgnoreCase("2")) {
-            tvNaam.setText("اسکول میں صحت کی تعلیم");
+            tvNaam.setText(R.string.healthEducationInSchool);
         } else {
         }
 

@@ -91,9 +91,9 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getActivity().getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
+            SharedPreferences prefelse = getActivity().getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
 
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
 
             Log.d("000564", "USER UID: " + login_useruid);
@@ -271,7 +271,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         Log.d("000564", "mURL " + url);
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq1 = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -480,7 +480,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         Log.d("000564", "mURL " + url);
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq1 = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -670,7 +670,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         Log.d("000566", "mURL " + url);
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq1 = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -855,7 +855,7 @@ public class VAC_DownloadData_Fragment extends Fragment {
 
         Log.d("000567", "mURL " + url);
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq1 = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

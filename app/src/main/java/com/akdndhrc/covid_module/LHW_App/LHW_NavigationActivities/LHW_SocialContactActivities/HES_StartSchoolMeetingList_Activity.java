@@ -86,8 +86,8 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
 
 
@@ -214,7 +214,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
                 if (sp_school_list.getSelectedItemPosition()==0)
                 {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے  مہربانی اسکول منتخب کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectSchoolPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -228,7 +228,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
 
                 if (tv_count_male.getText().equals("0") && tv_count_female.getText().equals("0")) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی مرد اور عورت کی تعداد درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterMaleFemaleCountPrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -337,7 +337,7 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
         Log.d("000457", "mURL " + url);
 
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -376,8 +376,6 @@ public class HES_StartSchoolMeetingList_Activity extends AppCompatActivity {
                     Log.d("000457", "catch: " + e.getMessage());
                     Toast.makeText(ctx, R.string.noDataSyncAlert, Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         }, new Response.ErrorListener() {
             @Override

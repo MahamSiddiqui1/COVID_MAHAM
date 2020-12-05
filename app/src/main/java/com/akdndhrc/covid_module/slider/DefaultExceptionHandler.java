@@ -7,9 +7,12 @@ import android.os.Process;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.Login_Activity;
+import com.akdndhrc.covid_module.R;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+
+import static com.akdndhrc.covid_module.R.string.appNotWorkingLoginAgain;
 
 public class DefaultExceptionHandler implements
         Thread.UncaughtExceptionHandler {
@@ -26,7 +29,7 @@ public class DefaultExceptionHandler implements
         exception.printStackTrace(new PrintWriter(stackTrace));
         System.err.println(stackTrace);// You can use LogCat too
        // Intent intent = new Intent(myContext, myActivityClass);
-        Toast.makeText(myContext, "App is not working, please login again", Toast.LENGTH_LONG).show();
+        Toast.makeText(myContext, appNotWorkingLoginAgain, Toast.LENGTH_LONG).show();
         Intent intent = new Intent(myContext, Login_Activity.class);
 
         String s = stackTrace.toString();

@@ -97,10 +97,10 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
+            SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
 
-            String usernaame = prefelse.getString("username", null); // getting String
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            String usernaame = prefelse.getString((R.string.username), null); // getting String
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);
@@ -111,7 +111,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
         try {
             ////////////Get GPS latlng in shared pref
-            SharedPreferences prefw = getApplicationContext().getSharedPreferences("LoginGPS", 0); // 0 - for private mode
+            SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.loginGPSeng), 0); // 0 - for private mode
             String latitude = prefw.getString("gps_latitude", null); // getting String
             String longitude = prefw.getString("gps_longitude", null); // getting String
             gps_latitude = Double.parseDouble(latitude);
@@ -679,7 +679,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
         Log.d("000555", "mURL " + url);
         //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
 
-        String REQUEST_TAG = "volleyStringRequest";
+        String REQUEST_TAG = String.valueOf("volleyStringRequest");
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -1068,7 +1068,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, "Somthing wrong.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, string.somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000777", "ERROR: " + e.getMessage());
                 }
 

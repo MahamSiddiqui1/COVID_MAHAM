@@ -81,8 +81,8 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getActivity().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString("login_userid", null); // getting String
+            SharedPreferences prefelse = getActivity().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
+            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
 
             Log.d("000666", "USER UID: " + login_useruid);

@@ -173,7 +173,7 @@
             android:paddingTop="@dimen/_5sdp"
             android:paddingRight="@dimen/_15sdp"
             android:paddingBottom="@dimen/_5sdp"
-            android:text="User"
+            android:text="@string/user"
             android:textColor="#fff"
             android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
@@ -236,7 +236,7 @@
                         android:layout_below="@+id/tv011"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Sync Data)"
+                        android:text="@string/syncDataEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -280,7 +280,7 @@
                         android:layout_below="@+id/tv110"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Sync Images)"
+                        android:text="@string/syncImages"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -315,7 +315,7 @@
                         android:layout_below="@+id/tv1110"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(COVID-19)"
+                        android:text="@string/covid_19"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -358,7 +358,7 @@
                         android:layout_below="@+id/tv112"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Statistics)"
+                        android:text="@string/statistics"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -384,7 +384,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="@dimen/_9sdp"
                         android:gravity="center"
-                        android:text="سماجی رابطہ"
+                        android:text="@string/socialContact"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 
@@ -395,7 +395,7 @@
                         android:layout_below="@+id/tv1"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Social Contact)"
+                        android:text="@string/socialContactEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -420,7 +420,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="@dimen/_9sdp"
                         android:gravity="center"
-                        android:text="ریفر"
+                        android:text="@string/refer"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 
@@ -431,7 +431,7 @@
                         android:layout_below="@+id/tv11"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Refer)"
+                        android:text="@string/referEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -475,7 +475,7 @@
                         android:layout_below="@+id/tv111"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Stock)"
+                        android:text="@string/stockEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -510,7 +510,7 @@
                         android:layout_below="@+id/tv1113"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Monthly Report)"
+                        android:text="@string/monthlyReportEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -544,7 +544,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="@dimen/_9sdp"
                         android:gravity="center"
-                        android:text="بلوٹوتھ فائل"
+                        android:text="@string/bluetoothFile"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 
@@ -555,7 +555,7 @@
                         android:layout_below="@+id/tv1100"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Bluetooth File)"
+                        android:text="@string/bluetoothFileEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -577,7 +577,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="کاپی ڈی بی فائل"
+                        android:text="@string/copyDBfile"
                         android:textColor="#fff"
                         android:textSize="@dimen/_18sdp" />
 
@@ -649,7 +649,7 @@
                         android:layout_below="@+id/tv11000"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
-                        android:text="(Application Settings)"
+                        android:text="@string/applicationSettingsEng"
                         android:textColor="#fff"
                         android:textSize="@dimen/_12sdp" />
 
@@ -669,7 +669,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/_5sdp"
             android:paddingBottom="@dimen/_5sdp"
-            android:text="0.0 | 0.0"
+            android:text="@string/_0_0_0_0"
             android:textColor="@color/color_white"
             android:textSize="@dimen/_12sdp" />
 

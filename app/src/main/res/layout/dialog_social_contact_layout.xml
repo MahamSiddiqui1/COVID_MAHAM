@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv1"
                     android:layout_centerHorizontal="true"
-                    android:text="(Health Committee)"
+                    android:text="@string/healthCommitteeEng"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv3"
                     android:layout_centerHorizontal="true"
-                    android:text="(Women Support Group)"
+                    android:text="@string/womenSupportGroupEng"
                     android:textColor="@color/pink_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:text="اسکول میں صحت کی تعلیم"
+                    android:text="@string/healthEducationInSchool"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv5"
                     android:layout_centerHorizontal="true"
-                    android:text="(Health Education in School)"
+                    android:text="@string/healthEducationInSchoolEng"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_12sdp" />
 
