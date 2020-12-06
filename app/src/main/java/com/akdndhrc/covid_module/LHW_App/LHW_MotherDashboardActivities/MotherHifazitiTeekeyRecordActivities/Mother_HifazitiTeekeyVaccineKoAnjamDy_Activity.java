@@ -120,7 +120,7 @@ public class Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatAct
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -242,7 +242,7 @@ public class Mother_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatAct
                     Log.d("000555", "Delete Path :" + image_path);
                     file.delete();
                     finish();
-                    Toast.makeText(ctx, "Image not saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.imgNotSavedEng, Toast.LENGTH_SHORT).show();
                     Log.d("000555", "Img_Err:" + e.getMessage());
 
                 }

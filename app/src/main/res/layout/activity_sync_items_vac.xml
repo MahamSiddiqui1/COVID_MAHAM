@@ -129,7 +129,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="بچے کے  خاندان رجسٹریشن کا ریکارڈ"
+                                    android:text="@string/childFamReg"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />
@@ -165,7 +165,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="بچے کے رجسٹریشن کا ریکارڈ"
+                                    android:text="@string/childRegRec"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp"
                                     android:textStyle="bold" />

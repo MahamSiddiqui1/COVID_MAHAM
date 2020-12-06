@@ -62,6 +62,9 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.string.dataHasSyncedEng;
+import static com.akdndhrc.covid_module.R.string.selectPhoneNoEng;
+
 public class VAC_Navigation_Activity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -99,8 +102,8 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
         try {
             SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
 
-            String usernaame = prefelse.getString((R.string.username), null); // getting String
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String usernaame = prefelse.getString(String.valueOf(R.string.username), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);
@@ -479,7 +482,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_satisfied));
-                tv_give_feedback.setText("Thank you for sharing your feedback.");
+                tv_give_feedback.setText(R.string.thanksFeedback);
                 ratingBar.setRating(5);
                 temp_var = "5";
                 temp_name = "Very Satisfied";
@@ -495,7 +498,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.satisfied));
-                tv_give_feedback.setText("Thank you for sharing your feedback.");
+                tv_give_feedback.setText(R.string.thanksFeedback);
                 ratingBar.setRating(4);
                 temp_var = "4";
                 temp_name = "Satisfied";
@@ -511,7 +514,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.neutral));
-                tv_give_feedback.setText("Thank you for sharing your feedback.");
+                tv_give_feedback.setText(R.string.thanksFeedback);
                 ratingBar.setRating(3);
                 temp_var = "3";
                 temp_name = "Neutral";
@@ -527,7 +530,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.unsatisfied));
-                tv_give_feedback.setText("Thank you for sharing your feedback.");
+                tv_give_feedback.setText(R.string.thanksFeedback);
                 ratingBar.setRating(2);
                 temp_var = "2";
                 temp_name = "UnSatisfied";
@@ -543,7 +546,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 btn_jamaa_kre.setVisibility(View.VISIBLE);
                 tv_not_now.setVisibility(View.GONE);
                 iv_feedback_emoji.setImageDrawable(ContextCompat.getDrawable(act, R.drawable.v_unsatisfied));
-                tv_give_feedback.setText("Thank you for sharing your feedback.");
+                tv_give_feedback.setText(R.string.thanksFeedback);
                 ratingBar.setRating(1);
                 temp_var = "1";
                 temp_name = "Very UnSatisfied";
@@ -705,7 +708,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                         ls.executeNonQuery(update_record);
 
-                        Toast.makeText(act, "Data has been synced", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, dataHasSyncedEng, Toast.LENGTH_SHORT).show();
                         //   Toast.makeText(act, "Your response submitted successfully.", Toast.LENGTH_SHORT).show();
 
                     } else {
@@ -728,7 +731,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(act, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(act, "Data not synced", Toast.LENGTH_SHORT).show();
+                Toast.makeText(act, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -951,7 +954,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
 
                 if (spPhoneNumber.getSelectedItemPosition() == 0) {
-                    Toast.makeText(act, "Please select a phone number.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, selectPhoneNoEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -975,7 +978,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                         if (res.toString().equalsIgnoreCase("true")) {
 
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number has been updated.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), R.string.mobileNoUpdatedEng, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -997,7 +1000,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                             },2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number not updated.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), R.string.mobileNumNotUpdated, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -1027,7 +1030,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
 
                         if (res.toString().equalsIgnoreCase("true")) {
 
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number has been collected.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), R.string.mobileNoCollectedEng, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -1049,7 +1052,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                             },2000);
 
                         } else {
-                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), "Mobile number not collected.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(findViewById(R.id.navigation_screen), R.string.mobileNumNoCollectedEng, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(act.getResources().getColor(android.R.color.black));
@@ -1068,7 +1071,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(act, string.somethingWrong, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(act, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000777", "ERROR: " + e.getMessage());
                 }
 

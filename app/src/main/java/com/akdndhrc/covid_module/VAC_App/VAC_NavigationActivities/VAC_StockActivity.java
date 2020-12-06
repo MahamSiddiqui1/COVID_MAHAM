@@ -77,7 +77,7 @@ public class VAC_StockActivity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("123456", "USER UID: " + login_useruid);
 
@@ -214,7 +214,7 @@ public class VAC_StockActivity extends AppCompatActivity {
                 // btn_jamaa_kre.setVisibility(View.GONE);
 
             } else {
-                Toast.makeText(ctx, "No Previous stock found", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.noPreviousStockEng, Toast.LENGTH_SHORT).show();
 
                 Log.d("000159", "ELSEEE: ");
                 tvTotalBalance.setText("0");
@@ -249,7 +249,7 @@ public class VAC_StockActivity extends AppCompatActivity {
 
                 if (etReceived.getText().toString().isEmpty())
                 {
-                    Toast.makeText(ctx, "Enter received number.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.receiveNo, Toast.LENGTH_SHORT).show();
                     return;
                 }
 

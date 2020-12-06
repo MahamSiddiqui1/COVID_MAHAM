@@ -85,9 +85,9 @@ public class Register_QRCode_Activity extends AppCompatActivity implements ZXing
         view.setMinimumHeight(10);
         dialogBuilder.setCustomTitle(view);
         dialogBuilder.setMessage(rawResult.getText());
-        dialogBuilder.setPositiveButton("R.string.continue", null);
+        dialogBuilder.setPositiveButton("R.string.dialog_mhr_jari_rhy_button_text", null);
         dialogBuilder.setNegativeButton("R.string.cancel", null);
-        dialogBuilder.setNeutralButton("R.string.rescan",null);
+        dialogBuilder.setNeutralButton(R.string.rescan,null);
 
         final android.app.AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.setCancelable(false);

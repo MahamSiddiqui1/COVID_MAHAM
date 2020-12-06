@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="false"
             android:background="@color/color_white"
-            android:text="Processing"
+            android:text="@string/processing"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_20sdp" />
 
@@ -33,7 +33,7 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="@dimen/_10sdp"
             android:background="@color/color_white"
-            android:text="Please wait"
+            android:text="@string/please_wait"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp" />
 

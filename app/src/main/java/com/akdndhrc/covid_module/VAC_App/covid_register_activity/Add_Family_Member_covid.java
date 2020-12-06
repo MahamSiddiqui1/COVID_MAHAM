@@ -200,7 +200,7 @@ public class Add_Family_Member_covid extends BaseSlideMenuActivity {
             rl_khandan_edit.setEnabled(true);
             Log.d("12345", "Error: " + e.getMessage());
             //Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-            Toast tt = Toast.makeText(ctx,"No family members registered", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, R.string.noFamMemRegEng, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

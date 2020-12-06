@@ -715,9 +715,9 @@ public class MotherRegister_Activity extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer(getString(R.string.selectOne), 1, android.R.color.transparent));
-        customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
-        customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
+        customers.add(new Customer(getString("برائے مہربانی ایک منتخب کریں"), 1, android.R.color.transparent));
+        customers.add(new Customer(R.string.aurat, 2, R.drawable.ic_gender_women_icon));
+        customers.add(new Customer(getString(R.string.murd), 3, R.drawable.ic_gender_male_icon));
 
 
         return customers;

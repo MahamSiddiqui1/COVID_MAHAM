@@ -61,6 +61,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import static com.akdndhrc.covid_module.R.string.options;
+
 
 public class HomePageVacinator_Activity extends Activity implements View.OnClickListener {
 
@@ -107,8 +109,8 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String usernaame = prefelse.getString((R.string.username), null); // getting String
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String usernaame = prefelse.getString((String.valueOf(R.string.username)), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000654", "USER UID: " + login_useruid);
@@ -332,7 +334,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
                 break;
 
             case R.id.iv_options:
-                Toast.makeText(ctx, "Options", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, options, Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.rl_register:
@@ -418,7 +420,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_vacA = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("Shot due for Vaccine A" + "@" + mData_count_vacA[0][0]);
+            listDataHeader.add(getString(R.string.shotDueA) + "@" + mData_count_vacA[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_vacA[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");
@@ -459,7 +461,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_vacB = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("Shot due for Vaccine B" + "@" + mData_count_vacB[0][0]);
+            listDataHeader.add(getString(R.string.shotDueB) + "@" + mData_count_vacB[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_vacB[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");
@@ -502,7 +504,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_vacA_followup = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("Follow-up due for Vaccine A" + "@" + mData_count_vacA_followup[0][0]);
+            listDataHeader.add(getString(R.string.followupVaccA) + "@" + mData_count_vacA_followup[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_vacA_followup[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");
@@ -546,7 +548,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_vacB_followup = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("Follow-up due for Vaccine B" + "@" + mData_count_vacB_followup[0][0]);
+            listDataHeader.add(getString(R.string.followupVaccB) + "@" + mData_count_vacB_followup[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_vacB_followup[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");
@@ -586,7 +588,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             //Women age from Fourteen to 48
             String[][] mData_count_unvaccinated = ls.executeReader("Select count(*) from MEMBER");
-            listDataHeader.add("Individuals not yet vaccinated" + "@" + mData_count_unvaccinated[0][0]);
+            listDataHeader.add(getString(R.string.indNotVaccEng) + "@" + mData_count_unvaccinated[0][0]);
             Log.d("000654", "MotherCount: " + mData_count_unvaccinated[0][0]);
             mDatafemale = ls.executeReader("Select *from MEMBER");
             mDatachild = ls.executeReader("Select *from MEMBER");

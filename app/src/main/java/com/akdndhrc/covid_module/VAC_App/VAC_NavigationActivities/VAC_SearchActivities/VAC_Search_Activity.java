@@ -28,6 +28,8 @@ import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
 
 import org.json.JSONObject;
 
+import static com.akdndhrc.covid_module.R.string.enterIDcardNo;
+
 public class VAC_Search_Activity extends AppCompatActivity {
 
     Context ctx = VAC_Search_Activity.this;
@@ -176,7 +178,7 @@ String temp ="0";
             public void onClick(View v) {
 
                 if (et_idcard_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "Please enter an ID card number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, enterIDcardNo, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -228,13 +230,13 @@ String temp ="0";
                             } else {
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "Please enter the correct ID card number", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.correctIDcardNoEng, Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "Please enter the correct ID card number", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.correctIDcardNoEng, Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -303,7 +305,7 @@ String temp ="0";
             public void onClick(View v) {
 
                 if (et_phone_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "Please enter a mobile number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.enterMobileNoEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -355,14 +357,14 @@ String temp ="0";
                             } else {
                                 alertDialog.dismiss();
                                 alertD.show();
-                                Toast.makeText(ctx, "Please enter the correct mobile number", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.correctMobileNoEng, Toast.LENGTH_SHORT).show();
 
                             }
 
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "Please enter the correct mobile number", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.correctMobileNoEng, Toast.LENGTH_SHORT).show();
                             Log.d("000777", "ERROR: " + e.getMessage());
 
                         }
@@ -403,7 +405,7 @@ String temp ="0";
             @Override
             public void onClick(View v) {
                 if (et_vaccine_card_number.getText().toString().isEmpty()) {
-                    Toast.makeText(ctx, "Please enter the vaccination card number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.enterVaccCardNoEng, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -492,13 +494,13 @@ String temp ="0";
                                     alertDialog.dismiss();
                                 }
                                 else{
-                                    Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ctx, R.string.correctVaccCardNoEng, Toast.LENGTH_SHORT).show();
                                     alertDialog.dismiss();
                                     alertD.show();
                                 }
 
                             } else {
-                                Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.correctVaccCardNoEng, Toast.LENGTH_SHORT).show();
                                 alertDialog.dismiss();
                                 alertD.show();
 
@@ -508,7 +510,7 @@ String temp ="0";
                         } catch (Exception e) {
                             alertDialog.dismiss();
                             alertD.show();
-                            Toast.makeText(ctx, "Please enter the correct vaccination card number", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.correctVaccCardNoEng, Toast.LENGTH_SHORT).show();
                             Log.d("000888", "Search Vac Err: " + e.getMessage());
 
                         }

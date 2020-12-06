@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="true"
-                    android:text="رجسٹریشن"
+                    android:text="@string/reg"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
@@ -134,7 +134,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="Full Name"
+                                    android:text="@string/fullName"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp" />
 
@@ -505,7 +505,7 @@
                                             android:layout_height="wrap_content"
 
                                             android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="Phone Number"
+                                            android:text="@string/phone_number"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_14sdp" />
 

@@ -90,7 +90,7 @@ public class Register_House_covid extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -451,7 +451,7 @@ public class Register_House_covid extends AppCompatActivity {
 
 
                 if (et_khandan_ka_number.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter a family number.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterFamNumEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -465,7 +465,7 @@ public class Register_House_covid extends AppCompatActivity {
 
 
                 if (et_khandan_kai_sarbarah_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter the name of the head of the family.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterFamHeadNameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -480,7 +480,7 @@ public class Register_House_covid extends AppCompatActivity {
 
                 if (sp_zila.getSelectedItemPosition() == 0) {
                     //Toast.makeText(getApplicationContext(), "ضلع منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select district.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDistrictEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -493,7 +493,7 @@ public class Register_House_covid extends AppCompatActivity {
                 }
 
                 if (sp_tahseel.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "Select Tehsil.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTehsil, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -506,7 +506,7 @@ public class Register_House_covid extends AppCompatActivity {
                 }
 
                 if (sp_union_council.getSelectedItemPosition() == 0) {
-                    final Snackbar snackbar = Snackbar.make(v, "Select the Union Council.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectUCeng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -521,7 +521,7 @@ public class Register_House_covid extends AppCompatActivity {
 
                 if (sp_gaon.getSelectedItemPosition() == 0) {
 
-                    final Snackbar snackbar = Snackbar.make(v, "Select the village.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.seletVillage, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -544,7 +544,7 @@ public class Register_House_covid extends AppCompatActivity {
                     {
                         Log.d("000555", " Khandan Number EXISTS ---------");
 
-                        final Snackbar snackbar = Snackbar.make(v, "Family number already exists.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famNumAlreadyExistEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -714,7 +714,7 @@ public class Register_House_covid extends AppCompatActivity {
                     if (res.toString().equalsIgnoreCase("true"))
                     {
 
-                        final Snackbar snackbar = Snackbar.make(v, "The family is registered.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famRegisteredEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -751,7 +751,7 @@ public class Register_House_covid extends AppCompatActivity {
                     }
                     else
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "The family was not registered.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famNotRegEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -826,7 +826,7 @@ public class Register_House_covid extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000555", "Err: " + e.getMessage());
                     //Toast.makeText(Register_House.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -837,7 +837,7 @@ public class Register_House_covid extends AppCompatActivity {
 
                 Log.d("000951", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(Register_House.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  = Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  = Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 

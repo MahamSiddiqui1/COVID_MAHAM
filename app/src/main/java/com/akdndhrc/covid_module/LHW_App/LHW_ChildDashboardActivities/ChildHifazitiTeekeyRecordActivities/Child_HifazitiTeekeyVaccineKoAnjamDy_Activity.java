@@ -111,7 +111,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatActi
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -209,7 +209,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatActi
                     e.printStackTrace();
                     alertDialog.dismiss();
                     finish();
-                    Toast.makeText(ctx, "Image not saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.imgNotSavedEng, Toast.LENGTH_SHORT).show();
                     Log.d("000555", "Img_Err:" + e.getMessage());
 
                 }
@@ -307,7 +307,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatActi
 
             } catch (Exception e) {
                 e.printStackTrace();
-                Toast.makeText(ctx, "Image not saved", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.imgNotSavedEng, Toast.LENGTH_SHORT).show();
                 Log.d("000555", "Img_Err:" + e.getMessage());
                 /*File file = new File(String.valueOf(image_path));
                 file.delete();*****/
@@ -514,7 +514,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_Activity extends AppCompatActi
                     } else {
                         Log.d("000555", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, "Data has not been sent to the service.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_Activity.this, R.string.dataNotSentService, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {

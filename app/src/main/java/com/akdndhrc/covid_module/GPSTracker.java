@@ -35,13 +35,13 @@ public class GPSTracker extends Service implements LocationListener {
     private final Context mContext;
 
     // flag for GPS status
-  public   boolean isGPSEnabled = false;
+    public boolean isGPSEnabled = false;
 
     // flag for network status
     public boolean isNetworkEnabled = false;
 
     // flag for GPS status
-    public  boolean canGetLocation = false;
+    public boolean canGetLocation = false;
 
     Location location; // location
     double latitude; // latitude
@@ -93,7 +93,6 @@ public class GPSTracker extends Service implements LocationListener {
         timer.schedule(doAsynchronousTask, 0, 2000);
 
 
-
         try {
             locationManager = (LocationManager) mContext.getSystemService(LOCATION_SERVICE);
 
@@ -105,12 +104,22 @@ public class GPSTracker extends Service implements LocationListener {
 
             if (!isGPSEnabled && !isNetworkEnabled) {
                 // no network provider is enabled
-                Log.d("000111","NO NETWORK");
+                Log.d("000111", "NO NETWORK");
             } else {
-                Log.d("000111"," NETWORK AVA");
+                Log.d("000111", " NETWORK AVA");
                 this.canGetLocation = true;
                 // First get location from Network Provider
                 if (isNetworkEnabled) {
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+//                        return TODO;
+                    }
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
                             MIN_TIME_BW_UPDATES,
@@ -240,10 +249,10 @@ public class GPSTracker extends Service implements LocationListener {
 
         // Setting Dialog Message
        // alertDialog.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں۔");
-        alertDialog.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں؟");
+        alertDialog.setMessage(R.string.actMobileGPSPrompt);
 
         // On pressing Settings button
-        alertDialog.setPositiveButton("سیٹنگ", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton(R.string.settings, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                 mContext.startActivity(intent);

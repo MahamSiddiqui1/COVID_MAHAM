@@ -231,7 +231,7 @@ public class side_effects_List_Activity extends AppCompatActivity {
         } catch (Exception e) {
             Log.d("12345", "Error: " + e.getMessage());
            // Toast.makeText(ctx, "کوئی ریکارڈ نہیں", Toast.LENGTH_SHORT).show();
-            Toast tt = Toast.makeText(ctx, "Add record for side effects", Toast.LENGTH_SHORT);
+            Toast tt = Toast.makeText(ctx, R.string.addRecSideEffect, Toast.LENGTH_SHORT);
             tt.setGravity(Gravity.CENTER, 0, 0);
             tt.show();
         }

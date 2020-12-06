@@ -139,7 +139,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppCompatAc
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000269", "USER UID: " + login_useruid);
 
@@ -170,7 +170,7 @@ public class Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppCompatAc
 
         //TextView
         tv_vaccineName = findViewById(R.id.tv_vaccineName);
-        tv_vaccineName.setText(vacine_name + " ویکسین نام  ");
+        tv_vaccineName.setText(vacine_name + getString(R.string.vaccName));
 
         //LinearLayout
         ll_buttons = findViewById(R.id.ll_buttons);

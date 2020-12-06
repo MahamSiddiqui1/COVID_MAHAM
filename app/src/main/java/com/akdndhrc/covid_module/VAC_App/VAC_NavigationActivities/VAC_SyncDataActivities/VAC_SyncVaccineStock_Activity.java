@@ -48,6 +48,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.akdndhrc.covid_module.R.string.SMSsendFailEng;
+
 public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
 
     Context ctx = VAC_SyncVaccineStock_Activity.this;
@@ -822,7 +824,7 @@ public class VAC_SyncVaccineStock_Activity extends AppCompatActivity {
                                 temp = "0";
                                 Log.d("000951", "Exception Sending faild " + e);
                                 e.printStackTrace();
-                                Toast.makeText(ctx, R.string.fail, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, SMSsendFailEng, Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, 1500);

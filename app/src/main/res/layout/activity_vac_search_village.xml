@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
-                android:text="Search"
+                android:text="@string/search"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
@@ -78,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:layout_marginEnd="@dimen/_8sdp"
-                            android:text="Choose a vaccine name"
+                            android:text="@string/choose_a_vaccine_name"
                             android:textSize="@dimen/_12sdp" />
 
                         <RelativeLayout
@@ -146,7 +146,7 @@
                         android:id="@+id/tv_record_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="کا کوئی ریکارڈ نہیں"
+                        android:text="@string/noRecFor"
                         android:textColor="@color/dark_blue_color"
                         android:textSize="@dimen/_13sdp"
                         android:textStyle="bold" />

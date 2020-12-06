@@ -79,7 +79,7 @@ public class MainPage_Activity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(ctx, "Position:  "+childPosition, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, getString(R.string.position)+childPosition, Toast.LENGTH_SHORT).show();
                 }
 
                 Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition)

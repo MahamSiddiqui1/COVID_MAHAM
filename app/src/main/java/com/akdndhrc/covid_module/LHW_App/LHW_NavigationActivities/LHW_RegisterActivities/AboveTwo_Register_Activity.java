@@ -101,7 +101,7 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -760,9 +760,9 @@ public class AboveTwo_Register_Activity extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer(R.string.selectOne, 1, android.R.color.transparent));
-        customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
-        customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
+        customers.add(new Customer("برائے مہربانی ایک منتخب کریں", 1, android.R.color.transparent));
+        customers.add(new Customer(R.string.aurat, 2, R.drawable.ic_gender_women_icon));
+        customers.add(new Customer(getString(R.string.murd), 3, R.drawable.ic_gender_male_icon));
 
 
         return customers;

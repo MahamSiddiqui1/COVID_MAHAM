@@ -144,7 +144,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000269", "USER UID: " + login_useruid);
 
@@ -175,7 +175,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
 
         //TextView
         tv_vaccineName = findViewById(R.id.tv_vaccineName);
-        tv_vaccineName.setText(vacine_name + " ویکسین نام  ");
+        tv_vaccineName.setText(vacine_name + getString(R.string.vaccName));
 
         //LinearLayout
         ll_buttons = findViewById(R.id.ll_buttons);
@@ -234,7 +234,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
                     Log.d("000269", "Delete Path :" + image_path);
                     file.delete();
                     finish();
-                    Toast.makeText(ctx, imageNotSaveSomethingWrong, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.imageNotSaveSomethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000269", "Img_Err:" + e.getMessage());
                 }
             }
@@ -273,7 +273,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
                     Log.d("000269", "Delete Path :" + image_path);
                     file.delete();
                     finish();
-                    Toast.makeText(ctx, imageNotSaveSomethingWrong, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.imageNotSaveSomethingWrong, Toast.LENGTH_SHORT).show();
                     Log.d("000269", "Img_Err:" + e.getMessage());
                 }
             }
@@ -368,7 +368,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
                 vacine_name = mData_vaccines_left[0][0];
                 vacine_uid = mData_vaccines_left[0][1];
                 //tv_vaccineName.setText(mData_vaccines_left[0][0]);
-                tv_vaccineName.setText(mData_vaccines_left[0][0] + " نئی ویکسین کا نام ");
+                tv_vaccineName.setText(mData_vaccines_left[0][0] + R.string.newVaccName);
                 Log.d("000269", "Vacc Name: " + mData_vaccines_left[0][0]);
                 Animation startAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blinking_animation);
                 tv_vaccineName.startAnimation(startAnimation);
@@ -1215,7 +1215,7 @@ public class VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_3_Activity extends AppComp
 
                 Log.d("000269", "error    " + error.getMessage());
                 //  Toast.makeText(Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ویکسین ڈیٹا سنک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.vaccDataNotSync, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }

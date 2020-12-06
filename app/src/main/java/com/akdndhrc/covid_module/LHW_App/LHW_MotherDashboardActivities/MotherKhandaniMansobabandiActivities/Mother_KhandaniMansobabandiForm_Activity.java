@@ -102,7 +102,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000362", "USER UID: " + login_useruid);
 
@@ -429,7 +429,7 @@ public class Mother_KhandaniMansobabandiForm_Activity extends AppCompatActivity 
 
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(v, "Data has been collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

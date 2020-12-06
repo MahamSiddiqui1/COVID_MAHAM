@@ -60,6 +60,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.akdndhrc.covid_module.String.valueOf(R.string.loginUserIDEng);
+
 
 public class Register_new_family_member extends AppCompatActivity {
 
@@ -111,7 +113,7 @@ public class Register_new_family_member extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf(loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -547,7 +549,7 @@ public class Register_new_family_member extends AppCompatActivity {
                 if (et_naam_bimaah_waldiyat.getText().toString().isEmpty()) {
 
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی نام بمعہ ولدیت درج کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter a name.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterNameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -560,7 +562,7 @@ public class Register_new_family_member extends AppCompatActivity {
                 }
                 if (et_walid_ka_naam.getText().toString().isEmpty()) {
                     //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter father's name.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.fatherNameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -577,7 +579,7 @@ public class Register_new_family_member extends AppCompatActivity {
                 if (et_tareekh_pedaish.getText().toString().length() < 1) {
 
                     //Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please select date of birth.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDOBeng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -592,7 +594,7 @@ public class Register_new_family_member extends AppCompatActivity {
                 if (sp_jins.getSelectedItemPosition() == 0) {
 
                     // Toast.makeText(getApplicationContext(), "جنس منتخب کریں", Toast.LENGTH_LONG).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select gender.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -765,7 +767,7 @@ public class Register_new_family_member extends AppCompatActivity {
                     }
                     else
                     {
-                        final Snackbar snackbar = Snackbar.make(v, "Family member not registered.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.famMemNotReg, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -900,7 +902,7 @@ public class Register_new_family_member extends AppCompatActivity {
 
                 Log.d("000999", "onErrorResponse: " + error.getMessage());
                 //Toast.makeText(AboveTwo_Register_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -944,9 +946,9 @@ public class Register_new_family_member extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer(R.string.selectOne, 1, android.R.color.transparent));
-        customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
-        customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
+        customers.add(new Customer("ایک منتخب کریں", 1, android.R.color.transparent));
+        customers.add(new Customer(getString(R.string.aurat), 2, R.drawable.ic_gender_women_icon));
+        customers.add(new Customer(getString(R.string.murd), 3, R.drawable.ic_gender_male_icon));
 
 
         return customers;
@@ -1219,7 +1221,7 @@ public class Register_new_family_member extends AppCompatActivity {
             Log.d("000555", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -1265,12 +1267,12 @@ public class Register_new_family_member extends AppCompatActivity {
                 Log.d("000555", "latitude: " + latitude);
                 Log.d("000555", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "GPS position is now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonEng, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }

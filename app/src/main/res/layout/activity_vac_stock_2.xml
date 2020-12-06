@@ -140,7 +140,7 @@
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginEnd="@dimen/_10sdp"
                             android:gravity="center_horizontal"
-                            android:text="BCG "
+                            android:text="@string/bcg"
                             android:textColor="@color/dark_blue_color"
                             android:textSize="@dimen/_12sdp"
                             android:textStyle="bold" />
@@ -172,7 +172,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_5sdp"
-                                android:text="0 vial / 0 doses"
+                                android:text="@string/_0_vial_0_doses"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp" />
 
@@ -203,7 +203,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_5sdp"
-                            android:text="0 doses"
+                            android:text="@string/_0_doses"
                             android:textColor="@color/dark_blue_color"
                             android:textSize="@dimen/_12sdp" />
 
@@ -214,7 +214,7 @@
                                 android:gravity="right"
                                 android:layout_marginStart="@dimen/_5sdp"
                                 android:layout_marginEnd="@dimen/_5sdp"
-                                android:text="Doses per unit: 20"
+                                android:text="@string/doses_per_unit_20"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_9sdp" />
 
@@ -248,7 +248,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="OPV "
+                                android:text="@string/opv"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -280,7 +280,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -312,7 +312,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -324,7 +324,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 20"
+                                    android:text="@string/doses_per_unit_20"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -358,7 +358,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="IPV "
+                                android:text="@string/ipv"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -390,7 +390,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -422,7 +422,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -433,7 +433,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 10"
+                                    android:text="@string/doses_per_unit_10"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -467,7 +467,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="Rota "
+                                android:text="@string/rota"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -499,7 +499,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -531,7 +531,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -542,7 +542,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 1"
+                                    android:text="@string/doses_per_unit_1"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -576,7 +576,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="PCVIO "
+                                android:text="@string/pcvio"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -608,7 +608,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -640,7 +640,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -651,7 +651,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 4"
+                                    android:text="@string/doses_per_unit_4"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -686,7 +686,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="Penta "
+                                android:text="@string/penta"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -718,7 +718,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -750,7 +750,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -761,7 +761,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 1"
+                                    android:text="@string/doses_per_unit_1"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -795,7 +795,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="Measles "
+                                android:text="@string/measles"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -827,7 +827,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -859,7 +859,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -870,7 +870,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 10"
+                                    android:text="@string/doses_per_unit_10"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -905,7 +905,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text="Tetanus "
+                                android:text="@string/tetanus"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -937,7 +937,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -969,7 +969,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -980,7 +980,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 20"
+                                    android:text="@string/doses_per_unit_20"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -1015,7 +1015,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text=".05 ML Syringe (BCG) "
+                                android:text="@string/_05_ml_syringe_bcg"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -1047,7 +1047,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -1079,7 +1079,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -1090,7 +1090,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 1"
+                                    android:text="@string/doses_per_unit_1"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 
@@ -1125,7 +1125,7 @@
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginEnd="@dimen/_10sdp"
                                 android:gravity="center_horizontal"
-                                android:text=".5 ML Syringe"
+                                android:text="@string/_5_ml_syringe"
                                 android:textColor="@color/dark_blue_color"
                                 android:textSize="@dimen/_12sdp"
                                 android:textStyle="bold" />
@@ -1157,7 +1157,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 vial / 0 doses"
+                                    android:text="@string/_0_vial_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -1189,7 +1189,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="0 doses"
+                                    android:text="@string/_0_doses"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -1200,7 +1200,7 @@
                                     android:gravity="right"
                                     android:layout_marginStart="@dimen/_5sdp"
                                     android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="Doses per unit: 1"
+                                    android:text="@string/doses_per_unit_1"
                                     android:textColor="@color/dark_blue_color"
                                     android:textSize="@dimen/_9sdp" />
 

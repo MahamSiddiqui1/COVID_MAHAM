@@ -74,7 +74,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
     Button btn_jamaa_kre;
 
     String child_uid, child_age, child_name, child_gender, vaccine_duedate, vaccine_name;
-    String to_make_active = "yes";
+    String to_make_active = String.valueOf(R.string.yes);
     int diffInDays;
 
     Spinner sp_inside_outside_council;
@@ -114,7 +114,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000266", "USER UID: " + login_useruid);
 
@@ -1264,7 +1264,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
             @Override
             public void onClick(View v) {
 
-                btn_name = "Outreach";
+                btn_name = String.valueOf(R.string.outreach);
                 btn_value = "2";
 
 
@@ -1429,7 +1429,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
                         }
 
                     } else {
-                        final Snackbar snackbar = Snackbar.make(v, "ویکسین ڈیٹا جمع نہیں ہوا.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataNotAdded, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1527,7 +1527,7 @@ public class Child_HifazitiTeekeyKahiAurSyLiHoe_Activity extends AppCompatActivi
             public void onErrorResponse(VolleyError error) {
                 Log.d("000266", "error    " + error.getMessage());
                 //    Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt = Toast.makeText(ctx, "ویکسین ڈیٹا سنک نہیں ہوا", Toast.LENGTH_SHORT);
+                Toast tt = Toast.makeText(ctx, R.string.vaccDataNotSync, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
             }

@@ -119,7 +119,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000987", "USER UID: " + login_useruid);
 
@@ -597,10 +597,6 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             });
 
 
-
-
-
-
             ///////////sp_planning_type
 
             final ArrayAdapter<CharSequence> adptr_planning = ArrayAdapter.createFromResource(this, R.array.array_sp_planning_type, android.R.layout.simple_spinner_item);
@@ -785,7 +781,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                         ls.executeNonQuery(update_record);
 
 
-                        final Snackbar snackbar = Snackbar.make(v, "The data has been updated.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataUpdatedEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -889,7 +885,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000987", "Err: " + e.getMessage());
                     //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -902,7 +898,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
 
                 Log.d("000987", "error    " + error.getMessage());
                 //Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1049,7 +1045,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             Log.d("000987", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -1095,12 +1091,12 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                 Log.d("000987", "latitude: " + latitude);
                 Log.d("000987", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "GPS position is now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonEng, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }

@@ -79,7 +79,7 @@ public class SyncFeedback_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک  فیڈ بیک ");
+        tv.setText(R.string.syncFeedbackEng);
 
         //ImageView
         iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);

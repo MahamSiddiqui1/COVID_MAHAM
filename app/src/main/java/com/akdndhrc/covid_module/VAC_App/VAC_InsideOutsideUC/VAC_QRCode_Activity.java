@@ -76,7 +76,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -191,11 +191,11 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
                 }
 
                 if (mData[i][3].equalsIgnoreCase("0")) {
-                    map.put("gender", "" + "عورت");
+                    map.put("gender", "" + R.string.aurat);
                 } else if (mData[i][3].equalsIgnoreCase("1")) {
-                    map.put("gender", "" + "مرد");
+                    map.put("gender", "" + getString(R.string.murd));
                 } else {
-                    map.put("gender", "" + "unknown");
+                    map.put("gender", "" + R.string.unknown);
                 }
 
                  hashMapArrayList.add(map);
@@ -213,7 +213,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
             tvNoDataFound.setVisibility(View.VISIBLE);
             lv.setVisibility(View.GONE);
             tvDone.setVisibility(View.GONE);
-           Toast.makeText(ctx, "اس QR کوڈ کا کوئی ریکارڈ نہیں", Toast.LENGTH_LONG).show();
+           Toast.makeText(ctx, R.string.noQRcode, Toast.LENGTH_LONG).show();
 
             Log.d("000255", "Err: " +  e.getMessage());
         }
@@ -373,7 +373,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
             if (res.toString().equalsIgnoreCase("true"))
             {
 
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_qrcode_layout), "ڈپلیکیٹ ڈیٹا ملا دیا گیا ہے.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_qrcode_layout), R.string.dupDataMerged, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -401,7 +401,7 @@ public class VAC_QRCode_Activity extends AppCompatActivity implements ZXingScann
             {
                 dialog.dismiss();
 
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_qrcode_layout), "ڈپلیکیٹ ڈیٹا کو ضم شدہ نہیں کیا گیا ہے.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.search_qrcode_layout), R.string.dupDataNotMerged, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

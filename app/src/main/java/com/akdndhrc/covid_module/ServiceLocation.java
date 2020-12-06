@@ -1,17 +1,21 @@
 package com.akdndhrc.covid_module;
 
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.provider.Settings;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -47,7 +51,7 @@ public class ServiceLocation extends Service {
     String temp_toast = "0";
 
     AlertDialog alertDialog;
-  // Dialog dialog;
+    // Dialog dialog;
     public static TimerTask doAsynchronousTask;
 
     /*TextView txt_timer;
@@ -64,7 +68,7 @@ public class ServiceLocation extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        throw new UnsupportedOperationException(getString(R.string.notImplemented));
     }
 
     @Override
@@ -119,6 +123,7 @@ public class ServiceLocation extends Service {
             @Override
             public void run() {
                 handler.post(new Runnable() {
+                    @SuppressLint("MissingPermission")
                     public void run() {
 
                         mCount = mCount + 1;
@@ -183,7 +188,7 @@ public class ServiceLocation extends Service {
                         } catch (Exception e) {
                             timer.cancel();
                             doAsynchronousTask.cancel();
-                          //  dialog.dismiss();
+                            //  dialog.dismiss();
                             // TODO Auto-generated catch block
                             Log.d("000555", "Exp: " + e.getMessage());
                         }
@@ -198,6 +203,16 @@ public class ServiceLocation extends Service {
 
     public boolean showCurrentLocation() {
 
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+//            return TODO;
+        }
         location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
         // Log.d("000555", "Called: ");
@@ -317,8 +332,8 @@ public class ServiceLocation extends Service {
         android.app.AlertDialog.Builder dialogBuilder = new android.app.AlertDialog.Builder(mContext);
       //  dialogBuilder.setIcon(mContext.getResources().getDrawable(R.drawable.ic_gps_off_black_24dp));
        // dialogBuilder.setTitle("جی پی ایس");
-        dialogBuilder.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں؟");
-        dialogBuilder.setPositiveButton("سیٹنگ", null);
+        dialogBuilder.setMessage(R.string.actMobileGPSPrompt);
+        dialogBuilder.setPositiveButton(R.string.settings, null);
         //dialogBuilder.setNegativeButton(R.string.cancel, null);
 
 

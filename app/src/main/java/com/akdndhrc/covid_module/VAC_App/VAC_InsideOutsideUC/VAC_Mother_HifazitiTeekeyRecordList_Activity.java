@@ -108,7 +108,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -378,7 +378,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
             @Override
             public void onClick(View v) {
 
-                btn_name = "Outreach";
+                btn_name = String.valueOf(R.string.outreach);
                 btn_value = "2";
 
 
@@ -420,7 +420,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
             public void onClick(View v) {
                 if (Build.VERSION.SDK_INT >= 24) {
                 } else {
-                    final Snackbar snackbar = Snackbar.make(v, "This feature is not available due to lowest sdk version.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.featureNotAvailable, Snackbar.LENGTH_SHORT);
                     snackbar.setDuration(4000);
                     snackbar.show();
                     return;
@@ -620,7 +620,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
             public void onClick(View v) {
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "R.string.reasonToDenyVaccine منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectVaccRefusalPrompt, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -790,7 +790,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
                 if (Build.VERSION.SDK_INT >= 24) {
                 }
                 else{
-                    final Snackbar snackbar = Snackbar.make(v, "This feature is not available due to lowest sdk version.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.featureNotAvailable, Snackbar.LENGTH_SHORT);
                     snackbar.setDuration(4000);
                     snackbar.show();
                     return;
@@ -965,7 +965,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
             public void onClick(View v) {
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "R.string.reasonToDenyVaccine منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectVaccRefusalPrompt, Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -1368,7 +1368,7 @@ public class VAC_Mother_HifazitiTeekeyRecordList_Activity extends AppCompatActiv
 
         if (mData[0][0].isEmpty())
         {
-            mother_name="Unknown";
+            mother_name=String.valueOf(R.string.unknown);
             txt_mother_name.setText(mother_name);
         }
         else{

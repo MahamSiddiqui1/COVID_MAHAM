@@ -81,9 +81,9 @@ public class VAC_Search_QRCode_Activity extends AppCompatActivity implements ZXi
         view.setMinimumHeight(10);
         dialogBuilder.setCustomTitle(view);
         dialogBuilder.setMessage(rawResult.getText());
-        dialogBuilder.setPositiveButton(R.string.continue, null);
+        dialogBuilder.setPositiveButton(R.string.dialog_mhr_jari_rhy_button_text, null);
         dialogBuilder.setNegativeButton(R.string.cancel, null);
-        dialogBuilder.setNeutralButton("R.string.rescan", null);
+        dialogBuilder.setNeutralButton(R.string.rescan, null);
 
         final android.app.AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.setCancelable(false);
@@ -125,12 +125,12 @@ public class VAC_Search_QRCode_Activity extends AppCompatActivity implements ZXi
                         startActivity(intent);
 
                     } else {
-                        Toast.makeText(ctx, "اس QR کوڈ کا کوئی ریکارڈ نہیں", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, R.string.noQRcode, Toast.LENGTH_LONG).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000888", "QR Err: " +e.getMessage());
-                    Toast.makeText(ctx, "اس QR کوڈ کا کوئی ریکارڈ نہیں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx, R.string.noQRcode, Toast.LENGTH_LONG).show();
                 }
             }
 

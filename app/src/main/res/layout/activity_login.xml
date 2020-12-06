@@ -37,7 +37,7 @@
 
                 android:layout_marginEnd="@dimen/_2sdp"
                 android:padding="@dimen/_3sdp"
-                android:text="date"
+                android:text="@string/dateText"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_10sdp" />
 
@@ -233,7 +233,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_sync"
                 android:layout_centerHorizontal="true"
-                android:text="1.0.39"
+                android:text="@string/_1_0_39"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_12sdp" />
 

@@ -113,7 +113,7 @@ public class register_individual_covid extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -183,8 +183,6 @@ public class register_individual_covid extends AppCompatActivity {
         ll_peenay_kai_paani = findViewById(R.id.ll_peenay_kai_paani);
 
 
-
-
         et_tareekh_pedaish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -192,9 +190,7 @@ public class register_individual_covid extends AppCompatActivity {
             }
         });
 
-
         SpinnersData();
-
 
         /////////////////// Walid ka  CNIC Number /////////////////////////////////////
         et_walid_ka_shanakti_card_number.addTextChangedListener(new TextWatcher() {
@@ -339,7 +335,7 @@ public class register_individual_covid extends AppCompatActivity {
             public void onClick(final View v) {
 
                 if (et_bachey_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter a name.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterNameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -355,7 +351,7 @@ public class register_individual_covid extends AppCompatActivity {
 
                 if (et_walid_ka_naam.getText().toString().isEmpty()) {
                     //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter father's name.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.fatherNameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -370,7 +366,7 @@ public class register_individual_covid extends AppCompatActivity {
                 if (et_tareekh_pedaish.getText().toString().isEmpty()) {
 
                  //   Toast.makeText(getApplicationContext(), "برائے مہربانی تاریخ پیدائش منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please select date of birth.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDOBeng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -385,7 +381,7 @@ public class register_individual_covid extends AppCompatActivity {
 
                 if (sp_jins.getSelectedItemPosition() == 0) {
                     //Toast.makeText(getApplicationContext(), "جنس منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select gender.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectGenderEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -400,7 +396,7 @@ public class register_individual_covid extends AppCompatActivity {
                 if (et_walid_ka_shanakti_card_number.getText().toString().length() > 0) {
                     if (et_walid_ka_shanakti_card_number.getText().toString().length() < 15){
                         //Toast.makeText(getApplicationContext(), "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں", Toast.LENGTH_SHORT).show();
-                        final Snackbar snackbar = Snackbar.make(v, "Please enter the correct ID card number.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.correctIDcardNumEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -422,7 +418,7 @@ public class register_individual_covid extends AppCompatActivity {
                 if (sp_zila.getSelectedItemPosition() == 0) {
 
                     //Toast.makeText(getApplicationContext(), "ضلع منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select district.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectDistrictEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -437,7 +433,7 @@ public class register_individual_covid extends AppCompatActivity {
                 if (sp_tahseel.getSelectedItemPosition() == 0) {
 
                     //Toast.makeText(getApplicationContext(), "تحصیل منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select Tehsil.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectTehsil, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -452,7 +448,7 @@ public class register_individual_covid extends AppCompatActivity {
 
                 if (sp_union_council.getSelectedItemPosition() == 0) {
                    // Toast.makeText(getApplicationContext(), "یونین کونسل منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select the Union Council.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectUCeng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -468,7 +464,7 @@ public class register_individual_covid extends AppCompatActivity {
                 if (sp_gaon.getSelectedItemPosition() == 0) {
                     //btn_jamaa_kre.setVisibility(View.GONE);
                     //Toast.makeText(getApplicationContext(), "گاؤں منتخب کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Select the village.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.seletVillage, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -667,7 +663,8 @@ public class register_individual_covid extends AppCompatActivity {
                     "'" + khandan_uuid + "'," +
                     "(SELECT province_id FROM DISTRICT WHERE name = '" + String.valueOf(sp_zila.getSelectedItem()) + "' LIMIT 1)," +
                     "(SELECT uid FROM DISTRICT WHERE name = '" + String.valueOf(sp_zila.getSelectedItem()) + "' LIMIT 1)," +
-                    "(SELECT uid FROM TEHSIL WHERE name = '" + String.valueOf(sp_tahseel.getSelectedItem()) + "' LIMIT 1)," +
+                    "(SELECT uid FROM TEHSIL WHERE name = '" +
+                    String.valueOf(sp_tahseel.getSelectedItem()) + "' LIMIT 1)," +
                     "(SELECT uid FROM UNIONCOUNCIL WHERE name = '" + String.valueOf(sp_union_council.getSelectedItem()) + "' LIMIT 1)," +
                     "(SELECT uid FROM VILLAGES WHERE name = '" + String.valueOf(sp_gaon.getSelectedItem()) + "' LIMIT 1)," +
                     "'" + et_walid_ka_naam.getText().toString() + "'," +
@@ -752,7 +749,7 @@ public class register_individual_covid extends AppCompatActivity {
 
                 } catch (Exception e) {
 
-                    Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
                     alertDialog.dismiss();
                 }
 
@@ -764,7 +761,7 @@ public class register_individual_covid extends AppCompatActivity {
                 alertDialog.dismiss();
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -910,7 +907,7 @@ public class register_individual_covid extends AppCompatActivity {
 
             if (res.toString().equalsIgnoreCase("true"))
             {
-                final Snackbar snackbar = Snackbar.make(v, "The member is registered.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.memberIsRegisteredEng, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -949,7 +946,7 @@ public class register_individual_covid extends AppCompatActivity {
             }
             else
             {
-                final Snackbar snackbar = Snackbar.make(v, "Family member not registered.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.famMemNotReg, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1043,7 +1040,7 @@ public class register_individual_covid extends AppCompatActivity {
                     alertDialog.dismiss();
                     Log.d("000555", "Err: " + e.getMessage());
                     // Toast.makeText(VAC_BelowTwoRegister_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -1054,7 +1051,7 @@ public class register_individual_covid extends AppCompatActivity {
                 alertDialog.dismiss();
                 Log.d("000555", "onErrorResponse: " + error.getMessage());
                 // Toast.makeText(VAC_BelowTwoRegister_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -1144,7 +1141,7 @@ public class register_individual_covid extends AppCompatActivity {
                         dob.set(year, monthOfYear, dayOfMonth);
 
                         age = today.get(Calendar.YEAR) - year;
-                        Log.d("000555", R.string.ageColon + age);
+                        Log.d("000555", String.valueOf(R.string.ageColon + age));
 
 
                          //   ll_vacination_card_number.setVisibility(View.GONE);
@@ -1225,7 +1222,6 @@ public class register_individual_covid extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 
@@ -1502,9 +1498,9 @@ public class register_individual_covid extends AppCompatActivity {
     }
 
     private ArrayList<Customer> populateCustomerData(ArrayList<Customer> customers) {
-        customers.add(new Customer(R.string.selectOne, 1, android.R.color.transparent));
-        customers.add(new Customer("عورت", 2, R.drawable.ic_gender_women_icon));
-        customers.add(new Customer("مرد", 3, R.drawable.ic_gender_male_icon));
+        customers.add(new Customer("برائے مہربانی ایک منتخب کریں", 1, android.R.color.transparent));
+        customers.add(new Customer(R.string.aurat, 2, R.drawable.ic_gender_women_icon));
+        customers.add(new Customer(getString(R.string.murd), 3, R.drawable.ic_gender_male_icon));
 
 
         return customers;

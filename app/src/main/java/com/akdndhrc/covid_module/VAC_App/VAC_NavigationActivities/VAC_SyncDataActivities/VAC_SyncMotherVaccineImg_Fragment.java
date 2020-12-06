@@ -44,6 +44,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
 
+import static com.akdndhrc.covid_module.R.string.imgSyncingFailEng;
+
 
 public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
@@ -82,7 +84,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getActivity().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
 
             Log.d("000666", "USER UID: " + login_useruid);
@@ -187,7 +189,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
                     }
 
-                    final Snackbar snackbar = Snackbar.make(v, "Please check your internet connection.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.checkInternetEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -248,7 +250,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
                 } else {
                     //Toast.makeText(getActivity(), "برائے مہربانی انٹرنیٹ کنکشن چیک کریں۔", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(view, "Please check your internet connection.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(view, R.string.checkInternetEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -313,7 +315,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
                           //  Toast.makeText(getActivity(), "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
 
-                            final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), "Images synced successfully.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), R.string.imgSynSuccessEng, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -357,7 +359,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
                     } catch (Exception e) {
                         alertDialog.dismiss();
                         Log.d("000666", "catch: " + e.getMessage());
-                        Toast.makeText(getActivity(), "Image syncing failed.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), imgSyncingFailEng, Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -367,7 +369,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
                     alertDialog.dismiss();
                     Log.d("000666", "Failed: " + t.getMessage());
                     //Toast.makeText(getActivity(), "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), "Please check your internet connection.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), R.string.checkInternetEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -444,7 +446,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
                             //Toast.makeText(getActivity(), "تصاویر سنک ہوگئی ہے", Toast.LENGTH_SHORT).show();
 
-                            final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), "Images synced successfully.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), R.string.imgSynSuccessEng, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -474,7 +476,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
                         Log.d("000666", "catch: " + e.getMessage());
                         //Toast.makeText(getActivity(), "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
 
-                        final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), "Image syncing failed.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), imgSyncingFailEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));
@@ -497,7 +499,7 @@ public class VAC_SyncMotherVaccineImg_Fragment extends Fragment {
 
                     Log.d("000666", "Failed: " + t.getMessage());
                    // Toast.makeText(getActivity(), "تصاویر سینک نہیں ہوئی", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), "Image syncing failed.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(getView().findViewById(R.id.fragment_sync_image), imgSyncingFailEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(getContext().getResources().getColor(android.R.color.black));

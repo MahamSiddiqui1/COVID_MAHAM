@@ -74,7 +74,7 @@ public class Adt_SearchVillages extends BaseAdapter {
 
         if (Integer.parseInt(arrayList.get(position).get("age")) <=2)
         {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase("لڑکا"))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.larka)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.baby_boy_icon));
             }
@@ -87,7 +87,7 @@ public class Adt_SearchVillages extends BaseAdapter {
         }
         else if (Integer.parseInt(arrayList.get(position).get("age")) >= 3 && Integer.parseInt(arrayList.get(position).get("age")) <= 14)
         {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase("لڑکا"))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.larka)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.ic_man_icon));
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -105,7 +105,7 @@ public class Adt_SearchVillages extends BaseAdapter {
             }
         }
         else {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase("مرد"))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.murd)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.ic_man_icon));
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

@@ -186,8 +186,8 @@ public class VideoPlay_Activity extends AppCompatActivity implements UniversalVi
             android.app.AlertDialog.Builder dialogBuilder = new android.app.AlertDialog.Builder(ctx);
 
             dialogBuilder.setMessage("Are you sure you want to exit?");
-            dialogBuilder.setPositiveButton("Yes", null);
-            dialogBuilder.setNegativeButton("No", null);
+            dialogBuilder.setPositiveButton(String.valueOf(R.string.yes), null);
+            dialogBuilder.setNegativeButton(R.string.no, null);
 
             final android.app.AlertDialog alertDialog = dialogBuilder.create();
             alertDialog.show();

@@ -69,7 +69,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
     Button btn_phle_sy_li_hoe_vaccine, btn_phle_sy_li_hoe_vaccine_uc, btn_vaccine_ko_anjaam_dy, btn_refuse_vaccine, btn_jamaa_kre;
 
     String child_uid, child_age, child_name, child_gender;
-    String to_make_active = "yes";
+    String to_make_active = String.valueOf(R.string.yes);
     int diffInDays;
 
     Spinner sp_inside_outside_council;
@@ -98,7 +98,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000522", "USER UID: " + login_useruid);
 
@@ -1573,7 +1573,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
                 if (Build.VERSION.SDK_INT >= 24) {
                     //Toast.makeText(ctx, "Supported", Toast.LENGTH_SHORT).show();
                 } else {
-                    final Snackbar snackbar = Snackbar.make(v, "This feature is not available due to lowest sdk version.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.featureNotAvailable, Snackbar.LENGTH_SHORT);
                     snackbar.setDuration(4000);
                     snackbar.show();
                     return;
@@ -1801,7 +1801,7 @@ public class Child_HifazitiTeekeyRecordList2_Activity extends AppCompatActivity 
 
 
                 if (sp_inside_outside_council.getSelectedItemPosition() == 0) {
-                    Toast.makeText(getApplicationContext(), "R.string.reasonToDenyVaccine منتخب کریں", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.selectVaccRefusalPrompt, Toast.LENGTH_LONG).show();
                     return;
                 }
                 try {

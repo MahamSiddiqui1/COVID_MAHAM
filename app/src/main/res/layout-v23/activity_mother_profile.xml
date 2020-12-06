@@ -1092,7 +1092,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_centerVertical="true"
-                                        android:text=@string/currentCondition"
+                                        android:text="@string/currentCondition"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
 

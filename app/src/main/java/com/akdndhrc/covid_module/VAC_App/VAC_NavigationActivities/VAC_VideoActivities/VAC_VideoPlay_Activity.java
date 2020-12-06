@@ -186,8 +186,8 @@ public class VAC_VideoPlay_Activity extends AppCompatActivity implements Univers
             android.app.AlertDialog.Builder dialogBuilder = new android.app.AlertDialog.Builder(ctx);
 
             dialogBuilder.setMessage("Are you sure you want to exit?");
-            dialogBuilder.setPositiveButton("Yes", null);
-            dialogBuilder.setNegativeButton("No", null);
+            dialogBuilder.setPositiveButton(String.valueOf(R.string.yes), null);
+            dialogBuilder.setNegativeButton(R.string.no, null);
 
             final android.app.AlertDialog alertDialog = dialogBuilder.create();
             alertDialog.show();
@@ -207,7 +207,7 @@ public class VAC_VideoPlay_Activity extends AppCompatActivity implements Univers
                     ending_time = String.format("%02d:%02d", minutes, seconds);
                     ending = String.valueOf(ending_time);
 
-                    Toast.makeText(ctx, "Stop Duration : " + ending, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, getString(R.string.stopDuration) + ending, Toast.LENGTH_SHORT).show();
 
 
                     Intent newIntent = new Intent(ctx, VAC_VideoList_Activity.class);

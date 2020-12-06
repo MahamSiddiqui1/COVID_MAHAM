@@ -34,8 +34,8 @@ public class ServiceLocation_Login extends Service {
 
     private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 100; // in Meters
 
-   //private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000 * 10 * 1; // 1 minute
-   private static final long MINIMUM_TIME_BETWEEN_UPDATES = 3000; // 1 minute
+    //private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000 * 10 * 1; // 1 minute
+    private static final long MINIMUM_TIME_BETWEEN_UPDATES = 3000; // 1 minute
 
     int mCount = 0;
     // flag for GPS status
@@ -53,7 +53,7 @@ public class ServiceLocation_Login extends Service {
 
     AlertDialog alertDialog;
     Dialog dialog;
-   static TimerTask doAsynchronousTask;
+    static TimerTask doAsynchronousTask;
 
     TextView txt_timer;
     private static final long START_TIME_IN_MILLIS = 90000; // 1min
@@ -193,7 +193,7 @@ public class ServiceLocation_Login extends Service {
             public void onFinish() {
                 Log.d("000777","Time Finish !!!!!!!!!!!!!!!!!!!!!!!!!");
                 Toast.makeText(mContext, "Login Now !!", Toast.LENGTH_SHORT).show();
-               dialog.dismiss();
+                dialog.dismiss();
                 doAsynchronousTask.cancel();
                 mCount=0;
             }
@@ -249,20 +249,20 @@ public class ServiceLocation_Login extends Service {
 
             }*/
 
-                if (Login_Activity.btnLoginIsClicked == true)
-                {
-                    Log.d("000777", "IS CLICK !!!!!!!!!!!");
-                    Log.d("000777", "IFFFFF !!!!!!!!!!!");
-                    Log.d("000777", "جی پی ایس پوزیشن آن ہے");
-                }
-                else{
-                    Log.d("000777", "BUTTON NOT CLICK !!!!!!!!!!!");
-                    Log.d("000777", "ELSEEEEEEEEEEEEE !!!!!!!!!!!");
-                    float lat = Float.parseFloat(String.format("%.5f", latitude));
-                    float lng = Float.parseFloat(String.format("%.5f", longitude));
-                    Toast.makeText(mContext, "Latitude: "+lat + "\n"+"Longitude: " + lng, Toast.LENGTH_SHORT).show();
+            if (Login_Activity.btnLoginIsClicked == true)
+            {
+                Log.d("000777", "IS CLICK !!!!!!!!!!!");
+                Log.d("000777", "IFFFFF !!!!!!!!!!!");
+                Log.d("000777", "جی پی ایس پوزیشن آن ہے");
+            }
+            else{
+                Log.d("000777", "BUTTON NOT CLICK !!!!!!!!!!!");
+                Log.d("000777", "ELSEEEEEEEEEEEEE !!!!!!!!!!!");
+                float lat = Float.parseFloat(String.format("%.5f", latitude));
+                float lng = Float.parseFloat(String.format("%.5f", longitude));
+                Toast.makeText(mContext, "Latitude: "+lat + "\n"+"Longitude: " + lng, Toast.LENGTH_SHORT).show();
 
-                }
+            }
 
 
             onDestroy();
@@ -315,7 +315,7 @@ public class ServiceLocation_Login extends Service {
             //Toast.makeText(ctx, "Provider status changed",Toast.LENGTH_LONG).show();
             Log.d("000777", "status changed:" + "");
 
-            // Toast.makeText(mContext, R.string.GPSonMessage, Toast.LENGTH_LONG).show();
+            // Toast.makeText(mContext, "جی پی ایس پوزیشن اب آن ہے", Toast.LENGTH_LONG).show();
         }
 
         public void onProviderDisabled(String s) {
@@ -333,7 +333,7 @@ public class ServiceLocation_Login extends Service {
             if (temp_var.equalsIgnoreCase("0")) {
                 showSettingsAlert();
                 Log.d("000777", "GPS Disable !!!!!!!!!!!!!!!!!!!: ");
-           //     Log.d("000777", "Turn on GPS: ");
+                //     Log.d("000777", "Turn on GPS: ");
 
             } else {
                 Log.d("000777", "GPS Disable ELSEEEEEEE !!!!!!!!!!!!!!!!!!! ");
@@ -359,11 +359,11 @@ public class ServiceLocation_Login extends Service {
         temp_var = "1";
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(mContext);
-      //dialogBuilder.setTitle("جی پی ایس");
-      //  dialogBuilder.setIcon(mContext.getResources().getDrawable(R.drawable.ic_gps_off_black_24dp));
+        //dialogBuilder.setTitle("جی پی ایس");
+        //  dialogBuilder.setIcon(mContext.getResources().getDrawable(R.drawable.ic_gps_off_black_24dp));
         dialogBuilder.setMessage("برائے مہربانی اپنے موبائل کے جی پی ایس کو فعال کریں؟");
         dialogBuilder.setPositiveButton("سیٹنگ", null);
-     //   dialogBuilder.setNegativeButton(R.string.cancel, null);
+        //   dialogBuilder.setNegativeButton("منسوخ کریں", null);
 
 
         alertDialog = dialogBuilder.create();

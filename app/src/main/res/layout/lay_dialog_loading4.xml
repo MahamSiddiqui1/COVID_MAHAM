@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="برائے مہربانی انٹرنیٹ کنیکشن آن کریں اور ڈیٹا کو سینک کریں"
+            android:text="@string/turnInternetOnAndSyncData"
             android:textColor="@color/dark_blue_color"
             />
 

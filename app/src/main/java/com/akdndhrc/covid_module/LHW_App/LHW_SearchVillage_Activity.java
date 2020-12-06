@@ -372,29 +372,29 @@ public class LHW_SearchVillage_Activity extends AppCompatActivity implements Sea
 
                     if (Integer.parseInt(mData_search[i][2]) >= 3 && Integer.parseInt(mData_search[i][2]) <= 14) {
                         if (mData_search[i][4].equalsIgnoreCase("0")) {
-                            map.put("gender", "" + "لڑکی");
+                            map.put("gender", "" + getString(R.string.larki));
                         } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                            map.put("gender", "" + "لڑکا");
+                            map.put("gender", "" + getString(R.string.larka));
                         } else {
-                            map.put("gender", "" + "unknown");
+                            map.put("gender", "" + R.string.unknown);
                         }
                     }
                     else if (Integer.parseInt(mData_search[i][2]) >= 15) {
                             if (mData_search[i][4].equalsIgnoreCase("0")) {
-                                map.put("gender", "" + "عورت");
+                                map.put("gender", "" + R.string.aurat);
                             } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                                map.put("gender", "" + "مرد");
+                                map.put("gender", "" + getString(R.string.murd));
                             } else {
-                                map.put("gender", "" + "unknown");
+                                map.put("gender", "" + R.string.unknown);
                             }
                         }
                         else {
                         if (mData_search[i][4].equalsIgnoreCase("0")) {
-                            map.put("gender", "" + "لڑکی");
+                            map.put("gender", "" + getString(R.string.larki));
                         } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                            map.put("gender", "" + "لڑکا");
+                            map.put("gender", "" + getString(R.string.larka));
                         } else {
-                            map.put("gender", "" + "unknown");
+                            map.put("gender", "" + R.string.unknown);
                         }
                     }
 
@@ -478,29 +478,29 @@ public class LHW_SearchVillage_Activity extends AppCompatActivity implements Sea
 
                 if (Integer.parseInt(mData_search[i][2]) >= 3 && Integer.parseInt(mData_search[i][2]) <= 14) {
                     if (mData_search[i][4].equalsIgnoreCase("0")) {
-                        map.put("gender", "" + "لڑکی");
+                        map.put("gender", "" + getString(R.string.larki));
                     } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                        map.put("gender", "" + "لڑکا");
+                        map.put("gender", "" + getString(R.string.larka));
                     } else {
-                        map.put("gender", "" + "unknown");
+                        map.put("gender", "" + R.string.unknown);
                     }
                 }
                 else if (Integer.parseInt(mData_search[i][2]) >= 15) {
                     if (mData_search[i][4].equalsIgnoreCase("0")) {
-                        map.put("gender", "" + "عورت");
+                        map.put("gender", "" + R.string.aurat);
                     } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                        map.put("gender", "" + "مرد");
+                        map.put("gender", "" + getString(R.string.murd));
                     } else {
-                        map.put("gender", "" + "unknown");
+                        map.put("gender", "" + R.string.unknown);
                     }
                 }
                 else {
                     if (mData_search[i][4].equalsIgnoreCase("0")) {
-                        map.put("gender", "" + "لڑکی");
+                        map.put("gender", "" + getString(R.string.larki));
                     } else if (mData_search[i][4].equalsIgnoreCase("1")) {
-                        map.put("gender", "" + "لڑکا");
+                        map.put("gender", "" + getString(R.string.larka));
                     } else {
-                        map.put("gender", "" + "unknown");
+                        map.put("gender", "" + R.string.unknown);
                     }
                 }
 

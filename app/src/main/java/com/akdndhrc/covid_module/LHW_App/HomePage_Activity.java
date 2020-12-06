@@ -116,7 +116,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String usernaame = prefelse.getString((R.string.username), null); // getting String
+            String usernaame = prefelse.getString((String.valueOf(R.string.username)), null); // getting String
             String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
@@ -205,7 +205,7 @@ public class HomePage_Activity extends AppCompatActivity implements View.OnClick
                         intent.putExtra("mother_name", mDatapreg[childPosition][4]);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(ctx, "Position:  " + childPosition, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, getString(R.string.position) + childPosition, Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();

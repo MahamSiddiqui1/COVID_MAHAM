@@ -36,6 +36,8 @@ import com.baoyz.swipemenulistview.SwipeMenuListView;
 
 import java.util.ArrayList;
 
+import static com.akdndhrc.covid_module.R.*;
+
 public class SwipeListview_Activity extends AppCompatActivity {
 
     private SwipeMenuListView mListView;
@@ -50,7 +52,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_swipe_listview);
+        setContentView(layout.activity_swipe_listview);
 
         initControls();
 
@@ -58,7 +60,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
     private void initControls() {
 
-        mListView = (SwipeMenuListView) findViewById(R.id.listView);
+        mListView = (SwipeMenuListView) findViewById(id.listView);
 
         mListView.setSwipeDirection(SwipeMenuListView.DIRECTION_LEFT);
 
@@ -99,7 +101,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
 // set a icon
 
-                goodItem.setIcon(R.drawable.ic_editmaterial_icon);
+                goodItem.setIcon(drawable.ic_editmaterial_icon);
 
 // add to menu
 
@@ -123,7 +125,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
 // set a icon
 
-                deleteItem.setIcon(R.drawable.ic_close_black_24dp);
+                deleteItem.setIcon(drawable.ic_close_black_24dp);
 
 // add to menu
 
@@ -147,7 +149,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
                     case 0:
 
-                        Toast.makeText(SwipeListview_Activity.this, "Like button press", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SwipeListview_Activity.this, string.likeButtonPress, Toast.LENGTH_SHORT).show();
 
                         break;
 
@@ -157,7 +159,7 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
                         mListDataAdapter.notifyDataSetChanged();
 
-                        Toast.makeText(SwipeListview_Activity.this, "Item deleted", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SwipeListview_Activity.this, string.itemDel, Toast.LENGTH_SHORT).show();
 
                         break;
 
@@ -271,9 +273,9 @@ public class SwipeListview_Activity extends AppCompatActivity {
 
                 holder = new ViewHolder();
 
-                convertView = getLayoutInflater().inflate(R.layout.list_item, null);
+                convertView = getLayoutInflater().inflate(layout.list_item, null);
 
-                holder.mTextview = (TextView) convertView.findViewById(R.id.expandedListItem);
+                holder.mTextview = (TextView) convertView.findViewById(id.expandedListItem);
 
                 convertView.setTag(holder);
 

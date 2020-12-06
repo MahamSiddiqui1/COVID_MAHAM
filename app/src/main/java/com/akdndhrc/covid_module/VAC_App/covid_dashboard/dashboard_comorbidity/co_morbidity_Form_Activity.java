@@ -114,7 +114,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf((R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000362", "USER UID: " + login_useruid);
 
@@ -238,7 +238,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_cancer.setText("Yes");
+                    cm_cancer.setText(String.valueOf(R.string.yes));
                     et_cm_cancer.setFocusable(true);
                     et_cm_cancer.setCursorVisible(true);
                     et_cm_cancer.setFocusableInTouchMode(true);
@@ -250,7 +250,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_cancer.setText("No");
+                    cm_cancer.setText(R.string.no);
 
                     et_cm_cancer.setFocusable(false);
                     et_cm_cancer.setCursorVisible(false);
@@ -266,7 +266,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_chronic_kidney_disease.setText("Yes");
+                    cm_chronic_kidney_disease.setText(String.valueOf(R.string.yes));
                     et_cm_chronic_kidney_disease.setFocusable(true);
                     et_cm_chronic_kidney_disease.setCursorVisible(true);
                     et_cm_chronic_kidney_disease.setFocusableInTouchMode(true);
@@ -278,7 +278,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_chronic_kidney_disease.setText("No");
+                    cm_chronic_kidney_disease.setText(R.string.no);
                     et_cm_chronic_kidney_disease.setFocusable(false);
                     et_cm_chronic_kidney_disease.setCursorVisible(false);
                     et_cm_chronic_kidney_disease.setFocusableInTouchMode(false);
@@ -293,7 +293,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_copd.setText("Yes");
+                    cm_copd.setText(String.valueOf(R.string.yes));
                     et_cm_copd.setFocusable(true);
                     et_cm_copd.setCursorVisible(true);
                     et_cm_copd.setFocusableInTouchMode(true);
@@ -306,7 +306,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_copd.setText("No");
+                    cm_copd.setText(R.string.no);
                     et_cm_copd.setFocusable(false);
                     et_cm_copd.setCursorVisible(false);
                     et_cm_copd.setFocusableInTouchMode(false);
@@ -321,7 +321,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_heart_condition.setText("Yes");
+                    cm_heart_condition.setText(String.valueOf(R.string.yes));
                     et_cm_heart_condition.setFocusable(true);
                     et_cm_heart_condition.setCursorVisible(true);
                     et_cm_heart_condition.setFocusableInTouchMode(true);
@@ -333,7 +333,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_heart_condition.setText("No");
+                    cm_heart_condition.setText(R.string.no);
                     et_cm_heart_condition.setFocusable(false);
                     et_cm_heart_condition.setCursorVisible(false);
                     et_cm_heart_condition.setFocusableInTouchMode(false);
@@ -348,7 +348,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_immune_compromised_organ.setText("Yes");
+                    cm_immune_compromised_organ.setText(String.valueOf(R.string.yes));
                     et_cm_immune_compromised_organ.setFocusable(true);
                     et_cm_immune_compromised_organ.setCursorVisible(true);
                     et_cm_immune_compromised_organ.setFocusableInTouchMode(true);
@@ -360,7 +360,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_immune_compromised_organ.setText("No");
+                    cm_immune_compromised_organ.setText(R.string.no);
                     et_cm_immune_compromised_organ.setFocusable(false);
                     et_cm_immune_compromised_organ.setCursorVisible(false);
                     et_cm_immune_compromised_organ.setFocusableInTouchMode(false);
@@ -375,7 +375,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_obesity.setText("Yes");
+                    cm_obesity.setText(String.valueOf(R.string.yes));
                     et_cm_obesity.setFocusable(true);
                     et_cm_obesity.setCursorVisible(true);
                     et_cm_obesity.setFocusableInTouchMode(true);
@@ -387,7 +387,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_obesity.setText("No");
+                    cm_obesity.setText(R.string.no);
                     et_cm_obesity.setFocusable(false);
                     et_cm_obesity.setCursorVisible(false);
                     et_cm_obesity.setFocusableInTouchMode(false);
@@ -402,7 +402,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_sickle_cell_disease.setText("Yes");
+                    cm_sickle_cell_disease.setText(String.valueOf(R.string.yes));
                     et_cm_sickle_cell_disease.setFocusable(true);
                     et_cm_sickle_cell_disease.setCursorVisible(true);
                     et_cm_sickle_cell_disease.setFocusableInTouchMode(true);
@@ -414,7 +414,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_sickle_cell_disease.setText("No");
+                    cm_sickle_cell_disease.setText(R.string.no);
                     et_cm_sickle_cell_disease.setFocusable(false);
                     et_cm_sickle_cell_disease.setCursorVisible(false);
                     et_cm_sickle_cell_disease.setFocusableInTouchMode(false);
@@ -429,7 +429,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_pregnancy.setText("Yes");
+                    cm_pregnancy.setText(String.valueOf(R.string.yes));
                     et_cm_pregnancy.setFocusable(true);
                     et_cm_pregnancy.setCursorVisible(true);
                     et_cm_pregnancy.setFocusableInTouchMode(true);
@@ -441,7 +441,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_pregnancy.setText("No");
+                    cm_pregnancy.setText(R.string.no);
                     et_cm_pregnancy.setFocusable(false);
                     et_cm_pregnancy.setCursorVisible(false);
                     et_cm_pregnancy.setFocusableInTouchMode(false);
@@ -456,7 +456,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_asthma.setText("Yes");
+                    cm_asthma.setText(String.valueOf(R.string.yes));
                     et_cm_asthma.setFocusable(true);
                     et_cm_asthma.setCursorVisible(true);
                     et_cm_asthma.setFocusableInTouchMode(true);
@@ -468,7 +468,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_asthma.setText("No");
+                    cm_asthma.setText(R.string.no);
                     et_cm_asthma.setFocusable(false);
                     et_cm_asthma.setCursorVisible(false);
                     et_cm_asthma.setFocusableInTouchMode(false);
@@ -483,7 +483,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_cerebrovascular_disease.setText("Yes");
+                    cm_cerebrovascular_disease.setText(String.valueOf(R.string.yes));
                     et_cm_cerebrovascular_disease.setFocusable(true);
                     et_cm_cerebrovascular_disease.setCursorVisible(true);
                     et_cm_cerebrovascular_disease.setFocusableInTouchMode(true);
@@ -495,7 +495,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_cerebrovascular_disease.setText("No");
+                    cm_cerebrovascular_disease.setText(R.string.no);
                     et_cm_cerebrovascular_disease.setFocusable(false);
                     et_cm_cerebrovascular_disease.setCursorVisible(false);
                     et_cm_cerebrovascular_disease.setFocusableInTouchMode(false);
@@ -510,7 +510,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_cystic_fibrosis.setText("Yes");
+                    cm_cystic_fibrosis.setText(String.valueOf(R.string.yes));
                     et_cm_cystic_fibrosis.setFocusable(true);
                     et_cm_cystic_fibrosis.setCursorVisible(true);
                     et_cm_cystic_fibrosis.setFocusableInTouchMode(true);
@@ -522,7 +522,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_cystic_fibrosis.setText("No");
+                    cm_cystic_fibrosis.setText(R.string.no);
                     et_cm_cystic_fibrosis.setFocusable(false);
                     et_cm_cystic_fibrosis.setCursorVisible(false);
                     et_cm_cystic_fibrosis.setFocusableInTouchMode(false);
@@ -537,7 +537,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_hypertension.setText("Yes");
+                    cm_hypertension.setText(String.valueOf(R.string.yes));
                     et_cm_hypertension.setFocusable(true);
                     et_cm_hypertension.setCursorVisible(true);
                     et_cm_hypertension.setFocusableInTouchMode(true);
@@ -549,7 +549,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_hypertension.setText("No");
+                    cm_hypertension.setText(R.string.no);
                     et_cm_hypertension.setFocusable(false);
                     et_cm_hypertension.setCursorVisible(false);
                     et_cm_hypertension.setFocusableInTouchMode(false);
@@ -564,7 +564,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_immune_compromised_other.setText("Yes");
+                    cm_immune_compromised_other.setText(String.valueOf(R.string.yes));
                     et_cm_immune_compromised_other.setFocusable(true);
                     et_cm_immune_compromised_other.setCursorVisible(true);
                     et_cm_immune_compromised_other.setFocusableInTouchMode(true);
@@ -576,7 +576,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_immune_compromised_other.setText("No");
+                    cm_immune_compromised_other.setText(R.string.no);
                     et_cm_immune_compromised_other.setFocusable(false);
                     et_cm_immune_compromised_other.setCursorVisible(false);
                     et_cm_immune_compromised_other.setFocusableInTouchMode(false);
@@ -591,7 +591,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_neurologic.setText("Yes");
+                    cm_neurologic.setText(String.valueOf(R.string.yes));
                     et_cm_neurologic.setFocusable(true);
                     et_cm_neurologic.setCursorVisible(true);
                     et_cm_neurologic.setFocusableInTouchMode(true);
@@ -603,7 +603,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_neurologic.setText("No");
+                    cm_neurologic.setText(R.string.no);
                     et_cm_neurologic.setFocusable(false);
                     et_cm_neurologic.setCursorVisible(false);
                     et_cm_neurologic.setFocusableInTouchMode(false);
@@ -618,7 +618,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_liver_disease.setText("Yes");
+                    cm_liver_disease.setText(String.valueOf(R.string.yes));
                     et_cm_liver_disease.setFocusable(true);
                     et_cm_liver_disease.setCursorVisible(true);
                     et_cm_liver_disease.setFocusableInTouchMode(true);
@@ -630,7 +630,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_liver_disease.setText("No");
+                    cm_liver_disease.setText(R.string.no);
                     et_cm_liver_disease.setFocusable(false);
                     et_cm_liver_disease.setCursorVisible(false);
                     et_cm_liver_disease.setFocusableInTouchMode(false);
@@ -645,7 +645,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_overweight.setText("Yes");
+                    cm_overweight.setText(String.valueOf(R.string.yes));
                     et_cm_overweight.setFocusable(true);
                     et_cm_overweight.setCursorVisible(true);
                     et_cm_overweight.setFocusableInTouchMode(true);
@@ -657,7 +657,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_overweight.setText("No");
+                    cm_overweight.setText(R.string.no);
                     et_cm_overweight.setFocusable(false);
                     et_cm_overweight.setCursorVisible(false);
                     et_cm_overweight.setFocusableInTouchMode(false);
@@ -672,7 +672,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_pulmonary_fibrosis.setText("Yes");
+                    cm_pulmonary_fibrosis.setText(String.valueOf(R.string.yes));
                     et_cm_pulmonary_fibrosis.setFocusable(true);
                     et_cm_pulmonary_fibrosis.setCursorVisible(true);
                     et_cm_pulmonary_fibrosis.setFocusableInTouchMode(true);
@@ -684,7 +684,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_pulmonary_fibrosis.setText("No");
+                    cm_pulmonary_fibrosis.setText(R.string.no);
                     et_cm_pulmonary_fibrosis.setFocusable(false);
                     et_cm_pulmonary_fibrosis.setCursorVisible(false);
                     et_cm_pulmonary_fibrosis.setFocusableInTouchMode(false);
@@ -699,7 +699,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_thalassemia.setText("Yes");
+                    cm_thalassemia.setText(String.valueOf(R.string.yes));
                     et_cm_thalassemia.setFocusable(true);
                     et_cm_thalassemia.setCursorVisible(true);
                     et_cm_thalassemia.setFocusableInTouchMode(true);
@@ -711,7 +711,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_thalassemia.setText("No");
+                    cm_thalassemia.setText(R.string.no);
                     et_cm_thalassemia.setFocusable(false);
                     et_cm_thalassemia.setCursorVisible(false);
                     et_cm_thalassemia.setFocusableInTouchMode(false);
@@ -727,7 +727,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_type1_diabetes.setText("Yes");
+                    cm_type1_diabetes.setText(String.valueOf(R.string.yes));
                     et_cm_type1_diabetes.setFocusable(true);
                     et_cm_type1_diabetes.setCursorVisible(true);
                     et_cm_type1_diabetes.setFocusableInTouchMode(true);
@@ -739,7 +739,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_type1_diabetes.setText("No");
+                    cm_type1_diabetes.setText(R.string.no);
                     et_cm_type1_diabetes.setFocusable(false);
                     et_cm_type1_diabetes.setCursorVisible(false);
                     et_cm_type1_diabetes.setFocusableInTouchMode(false);
@@ -754,7 +754,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    cm_ldl_cholestrol.setText("Yes");
+                    cm_ldl_cholestrol.setText(String.valueOf(R.string.yes));
                     et_cm_ldl_cholestrol.setFocusable(true);
                     et_cm_ldl_cholestrol.setCursorVisible(true);
                     et_cm_ldl_cholestrol.setFocusableInTouchMode(true);
@@ -766,7 +766,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    cm_ldl_cholestrol.setText("No");
+                    cm_ldl_cholestrol.setText(R.string.no);
                     et_cm_ldl_cholestrol.setFocusable(false);
                     et_cm_ldl_cholestrol.setCursorVisible(false);
                     et_cm_ldl_cholestrol.setFocusableInTouchMode(false);
@@ -815,7 +815,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (et_tareekh_visit.getText().toString().length() < 1) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please select a visit date.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectVisitDateEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -923,7 +923,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(v, "Data has been collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -952,7 +952,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                         } else {
                         }
                     } else {
-                        final Snackbar snackbar = Snackbar.make(v, "Data not collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataNotCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1033,7 +1033,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000362", "Err: " + e.getMessage());
                     //Toast.makeText(side_effects_Form_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -1046,7 +1046,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
                 Log.d("000362", "error    " + error.getMessage());
                 //Toast.makeText(side_effects_Form_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -1294,7 +1294,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             Log.d("000362", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -1340,12 +1340,12 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                 Log.d("000362", "latitude: " + latitude);
                 Log.d("000362", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "GPS position is now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonEng, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }

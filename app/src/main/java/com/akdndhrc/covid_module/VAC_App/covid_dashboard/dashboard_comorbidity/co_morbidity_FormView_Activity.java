@@ -53,6 +53,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.akdndhrc.covid_module.R.*;
+
 
 public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
@@ -102,7 +104,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.co_morbidity_form);
+        setContentView(layout.co_morbidity_form);
 
         Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(this, co_morbidity_FormView_Activity.class));
 
@@ -117,8 +119,8 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(string.userLogin), 0); // 0 - for private mode
+            String shared_useruid = prefelse.getString(String.valueOf((string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000987", "USER UID: " + login_useruid);
 
@@ -141,9 +143,9 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         // txt_mother_age = findViewById(R.id.txt_mother_age);
 
         //ImageView
-        iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);
-        iv_home = findViewById(R.id.iv_home);
-        iv_editform = findViewById(R.id.iv_editform);
+        iv_navigation_drawer = findViewById(id.iv_navigation_drawer);
+        iv_home = findViewById(id.iv_home);
+        iv_editform = findViewById(id.iv_editform);
 
         iv_editform.setVisibility(View.VISIBLE);
         iv_navigation_drawer.setVisibility(View.GONE);
@@ -151,23 +153,23 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
 
         //Prgress Bar
-        pbProgress = findViewById(R.id.pbProgress);
+        pbProgress = findViewById(id.pbProgress);
 
         //EDitTExt
-        et_tareekh_visit = findViewById(R.id.et_tareekh_visit);
+        et_tareekh_visit = findViewById(id.et_tareekh_visit);
 
 
 
         //Linear Layout
-        ll_services_provided = findViewById(R.id.ll_services_provided);
+        ll_services_provided = findViewById(id.ll_services_provided);
 
         //RelativeLayout
-        rl_quantity = findViewById(R.id.rl_quantity);
-        rl_add = findViewById(R.id.rl_add);
-        rl_sub = findViewById(R.id.rl_sub);
+        rl_quantity = findViewById(id.rl_quantity);
+        rl_add = findViewById(id.rl_add);
+        rl_sub = findViewById(id.rl_sub);
 
         //TextView
-        tv_count = findViewById(R.id.tv_count);
+        tv_count = findViewById(id.tv_count);
         //   tv_count.setText("" + counter);
 
 
@@ -294,14 +296,14 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 */
 
         //Button
-        btn_jamaa_kre = findViewById(R.id.submit);
+        btn_jamaa_kre = findViewById(id.submit);
         btn_jamaa_kre.setVisibility(View.GONE);
 
 
         iv_navigation_drawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ctx, R.string.navigation, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, string.navigation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -391,11 +393,11 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                     latitude = Double.parseDouble(jsonObject.getString("lat"));
                     longitude = Double.parseDouble(jsonObject.getString("lng"));
 
-                    Toast.makeText(ctx, R.string.dataGPS, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, string.dataGPS, Toast.LENGTH_SHORT).show();
                 } else {
                     latitude = Double.parseDouble("0.0");
                     longitude = Double.parseDouble("0.0");
-                    Toast.makeText(ctx, R.string.notDataGPS, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, string.notDataGPS, Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
@@ -462,16 +464,16 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         ls.executeNonQuery(update_record);
 
 
-                        final Snackbar snackbar = Snackbar.make(v, "The data has been updated.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, string.dataUpdatedEng, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
                         TextView textView = mySbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.WHITE);
                         textView.setTextSize(16);
-                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_black_24dp, 0, 0, 0);
+                        textView.setCompoundDrawablesWithIntrinsicBounds(drawable.ic_check_black_24dp, 0, 0, 0);
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            textView.setCompoundDrawableTintList(ctx.getResources().getColorStateList(R.color.green_color));
+                            textView.setCompoundDrawableTintList(ctx.getResources().getColorStateList(color.green_color));
                         }
                         snackbar.setDuration(2000);
                         snackbar.show();
@@ -551,7 +553,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         Log.d("000987", "Updated Data: " + update_record);
                         Log.d("000987", "Updated Query: " + res.toString());
 
-                        Toast tt  =Toast.makeText(ctx, R.string.dataSynced, Toast.LENGTH_SHORT);
+                        Toast tt  =Toast.makeText(ctx, string.dataSynced, Toast.LENGTH_SHORT);
                         tt.setGravity(Gravity.CENTER, 0, 0);
                         tt.show();
 
@@ -560,13 +562,13 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                     } else {
                         Log.d("000987", "else ");
                         //Toast.makeText(ctx, jobj.getString("message"), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ctx, R.string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, string.noDataSyncServiceEng, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
                     Log.d("000987", "Err: " + e.getMessage());
                     //Toast.makeText(ctx, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -579,7 +581,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
                 Log.d("000987", "error    " + error.getMessage());
                 //Toast.makeText(ctx, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -631,7 +633,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             Log.d("000987", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Data not turned on please turn on GPS position.", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, string.dataNotOnTurnGPSon, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -677,12 +679,12 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 Log.d("000987", "latitude: " + latitude);
                 Log.d("000987", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "GPS position is now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, string.GPSonEng, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }

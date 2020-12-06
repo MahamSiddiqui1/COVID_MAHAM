@@ -240,7 +240,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="0 vial / 0 doses"
+                    android:text="@string/_0_vial_0_doses"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />
 
@@ -270,7 +270,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="0 doses"
+                    android:text="@string/_0_doses"
                     android:layout_weight="1"
                     android:textColor="@color/dark_blue_color"
                     android:textSize="@dimen/_12sdp" />

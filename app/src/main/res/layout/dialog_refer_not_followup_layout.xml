@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
-            android:text="Date"
+            android:text="@string/dateText"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             android:visibility="gone" />

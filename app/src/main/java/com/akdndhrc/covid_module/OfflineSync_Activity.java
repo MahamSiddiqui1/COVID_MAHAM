@@ -186,7 +186,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_countries_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -256,7 +256,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "ملک سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.countrySynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -277,7 +277,8 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "ELSEEE NOT TRUE");
                             }
 
@@ -302,7 +303,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_provinces_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -408,7 +409,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                     Log.d("000122", "IF LENGTH ");
                                     Log.d("000122", "ALL DATA INSERTED SUCCESSFULLY !!!!!!!!!!!!!!!!!!!!!");
 
-                                    final Snackbar snackbar = Snackbar.make(v, "صوبہ سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.provinceSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -447,7 +448,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -475,7 +476,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_districts_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -581,7 +582,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                   //  progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "ضلع سنک ہوگیا ہے.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.districtSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -620,7 +621,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -647,7 +648,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_tehsils_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -754,7 +755,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "تحصیل سنک ہوگئے ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.tehsilSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -794,7 +795,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -819,7 +820,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_ucs_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -927,7 +928,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "یونین کونسل سنک ہوگئے ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.ucSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -965,7 +966,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -991,7 +992,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_facilities_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1100,7 +1101,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "صحت مرکز سنک ہوگئے ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.healthCenterSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1138,7 +1139,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -1163,7 +1164,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_villages_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1272,7 +1273,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "گاؤں سنک ہوگئے ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.villageSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1310,7 +1311,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -1336,7 +1337,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_users_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1447,7 +1448,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "صارفین سنک ہوگئے ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.userSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1485,7 +1486,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -1510,7 +1511,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_vaccines_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1615,7 +1616,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "ویکسین سنک ہوگئی ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.vaccSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1653,7 +1654,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }
@@ -1678,7 +1679,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                     + File.separator + "Dictionaries"
                     + File.separator + "list_medicines_pk.csv");
             if (!directory.exists()) {
-                final Snackbar snackbar = Snackbar.make(v, "فولڈر میں فائل موجود نہیں.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(v, R.string.noFileInFolder, Snackbar.LENGTH_SHORT);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1786,7 +1787,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
                                     //progressDialog.dismiss();
 
-                                    final Snackbar snackbar = Snackbar.make(v, "دوائیں سنک ہوگئی ہیں.", Snackbar.LENGTH_SHORT);
+                                    final Snackbar snackbar = Snackbar.make(v, R.string.medSynced, Snackbar.LENGTH_SHORT);
                                     View mySbView = snackbar.getView();
                                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -1824,7 +1825,7 @@ public class OfflineSync_Activity extends AppCompatActivity {
                                 }
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(ctx, "Something wrong.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
                                 Log.d("000122", "********** FALSE ********* ");
                             }
                         }

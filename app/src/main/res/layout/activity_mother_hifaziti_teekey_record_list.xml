@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="COVID IMMUNIZATION"
+                    android:text="@string/covid_immunization"
                     android:textColor="@color/color_white"
                     android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
@@ -184,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="07 month and years"
+                        android:text="@string/_07_month_and_years"
                         android:textColor="@color/register_khandan_text_color"
                         android:textSize="@dimen/_12sdp" />
 

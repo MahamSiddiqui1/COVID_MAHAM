@@ -95,7 +95,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -278,7 +278,7 @@ public class VAC_Child_HifazitiTeekeyPheleSyLiHoeVaccineForm_Activity extends Ap
                     //imageocation o be added
 
 
-                    final Snackbar snackbar = Snackbar.make(v, "Vaccine data has been collected..", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.vaccDataCollectedEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

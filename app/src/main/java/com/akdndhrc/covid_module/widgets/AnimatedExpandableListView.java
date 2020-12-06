@@ -18,6 +18,8 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
+import com.akdndhrc.covid_module.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -126,7 +128,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
             this.adapter = (AnimatedExpandableListAdapter) adapter;
             this.adapter.setParent(this);
         } else {
-            throw new ClassCastException(adapter.toString() + " must implement AnimatedExpandableListAdapter");
+            throw new ClassCastException(adapter.toString() + getContext().getString(R.string.mustImplementExpandList));
         }
     }
 

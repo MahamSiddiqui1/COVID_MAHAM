@@ -133,7 +133,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="Full Name"
+                                    android:text="@string/fullName"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_12sdp" />
 
@@ -478,7 +478,7 @@
                                             android:layout_alignParentStart="true"
 
                                             android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="Phone Number"
+                                            android:text="@string/phone_number"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 

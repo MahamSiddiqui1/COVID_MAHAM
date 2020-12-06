@@ -215,7 +215,7 @@ public class Login_Activity extends Activity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_username = prefelse.getString((R.string.username), null); // getting String
+            String shared_username = prefelse.getString((String.valueOf(R.string.username)), null); // getting String
             et_username.setText(shared_username);
             Log.d("000258", "Last UserName: " + shared_username);
         } catch (Exception e) {
@@ -277,7 +277,7 @@ public class Login_Activity extends Activity {
 
                 if (et_username.getText().toString().isEmpty()) {
                     // Toast.makeText(getApplicationContext(), "برائے مہربانی صارف کا نام درج کریں", Toast.LENGTH_SHORT).show();
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter a username.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterUsernameEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -291,7 +291,7 @@ public class Login_Activity extends Activity {
 
 
                 if (et_password.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please enter a password.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterPassEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -655,7 +655,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "Country Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                          ////////////////////////////////////////// Provinces ///////////////////////////////////////////////////////////////
@@ -690,7 +690,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "Province Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////////////////// Districts ///////////////////////////////////////
@@ -725,7 +725,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "DISTRICT Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                          ///////////////////////////////////////// TEHSILS ////////////////////////////////////////////////////
@@ -762,7 +762,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "TEHSIL Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////////////// UNIONCOUNCILS /////////////////////////////////////////////
@@ -799,7 +799,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "UnionCouncil Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ////////////////////////////////// VILLAGES ////////////////////////////////////////////
@@ -837,7 +837,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "VILLAGES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         ///////////////////////////////// Facilities ////////////////////////////////////////////
@@ -875,7 +875,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "FACILITIES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         //////////////////////////////  VACCINES //////////////////////////////////////
@@ -908,7 +908,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "VACCINE Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                         /////////////////////////////////////// USERS ////////////////////////////////////
@@ -947,7 +947,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "USER Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -980,7 +980,7 @@ public class Login_Activity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.d("000258", "MEDICINES Err:    " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(string.noDataForEng) + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
                         }
 
                     } catch (Exception e) {
@@ -1090,7 +1090,7 @@ public class Login_Activity extends Activity {
                         SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
                         SharedPreferences.Editor editorw = prefw.edit();
                         editorw.putString("username", userName);
-                        editorw.putString((R.string.loginUserIDEng), login_useruid);
+                        editorw.putString(String.valueOf((R.string.loginUserIDEng)), login_useruid);
 
                         username = userName;
                         //  editorw.putString("password", mData[0][2]);
@@ -1099,7 +1099,7 @@ public class Login_Activity extends Activity {
                         Log.d("000258", "USER CREDENTIALS FAILED");
 //                        Toast.makeText(getApplicationContext(), "صارف کا نام اور پاسورڈ صحیح نہیں", Toast.LENGTH_SHORT).show();
 
-                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), "Please enter the correct user password.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), R.string.correctPassEng, Snackbar.LENGTH_SHORT);
                         /// ViewCompat.setLayoutDirection(snackbar.getView(), ViewCompat.LAYOUT_DIRECTION_LTR);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -1119,7 +1119,7 @@ public class Login_Activity extends Activity {
             } else {
                 Log.d("000258", "USER NOT FOUND");
                 alertDialog.dismiss();
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), "Please enter a correct username.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), R.string.correctUsernameEng, Snackbar.LENGTH_SHORT);
                 /// ViewCompat.setLayoutDirection(snackbar.getView(), ViewCompat.LAYOUT_DIRECTION_LTR);
                 View mySbView = snackbar.getView();
                 mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -1135,7 +1135,7 @@ public class Login_Activity extends Activity {
 
         } catch (Exception e) {
             alertDialog.dismiss();
-            final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), "Please enter the correct username and password.", Snackbar.LENGTH_SHORT);
+            final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), R.string.correctUsernamePassEng, Snackbar.LENGTH_SHORT);
             /// ViewCompat.setLayoutDirection(snackbar.getView(), ViewCompat.LAYOUT_DIRECTION_LTR);
             View mySbView = snackbar.getView();
             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -1197,7 +1197,7 @@ public class Login_Activity extends Activity {
                             }
 
                         } catch (Exception e) {
-                            Toast.makeText(ctx, "Login error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.loginError, Toast.LENGTH_SHORT).show();
                             Log.d("000258", "Read Login Error Catch: " + e.getMessage());
                         }
                     }
@@ -1311,7 +1311,7 @@ public class Login_Activity extends Activity {
                             }
 
                         } catch (Exception e) {
-                            Toast.makeText(ctx, "Login error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ctx, R.string.loginError, Toast.LENGTH_SHORT).show();
                             Log.d("000258", "VAC Read Login Error Catch: " + e.getMessage());
                         }
                     }
@@ -1413,7 +1413,7 @@ public class Login_Activity extends Activity {
                     }
 
                 } catch (Exception e) {
-                    Toast.makeText(ctx, "Login error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.loginError, Toast.LENGTH_SHORT).show();
                     Log.d("000258", "Read Login Error Catch: " + e.getMessage());
                 }
             }
@@ -1653,7 +1653,7 @@ public class Login_Activity extends Activity {
             } else {
                 //Toast.makeText(context, "برائے مہربانی ایپلیکیشن کو پلے اسٹور سے اپ ڈیٹ کریں", Toast.LENGTH_SHORT).show();
 
-                final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), "Update the Hayat application from the Play Store", Snackbar.LENGTH_LONG);
+                final Snackbar snackbar = Snackbar.make(findViewById(R.id.login_layout), R.string.updateAppPlaystoreEng, Snackbar.LENGTH_LONG);
                 ViewCompat.setLayoutDirection(snackbar.getView(), ViewCompat.LAYOUT_DIRECTION_LTR);
                 snackbar.show();
 

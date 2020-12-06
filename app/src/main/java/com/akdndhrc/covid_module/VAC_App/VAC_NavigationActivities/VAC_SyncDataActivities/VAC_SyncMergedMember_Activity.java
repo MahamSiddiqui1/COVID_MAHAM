@@ -78,7 +78,7 @@ public class VAC_SyncMergedMember_Activity extends AppCompatActivity {
         //TextView
         tv_record = findViewById(R.id.tv_record);
         TextView tv = findViewById(R.id.tv);
-        tv.setText("سینک  ڈپلیکیٹ ممبر");
+        tv.setText(R.string.syncDupMem);
 
         //ImageView
         iv_navigation_drawer = findViewById(R.id.iv_navigation_drawer);

@@ -979,8 +979,8 @@ public class LHW_StatsActivity extends AppCompatActivity {
                     int count_female = count_female_15to19_age + count_female_20to49_age + count_female_49plus_age + count_female_communityleaders;
                     Log.d("000147", "TOTAl  FEMALE VIDEO: " + count_female);
 
-                    mArrayList_video.add("مرد" + "@" + count_male);
-                    mArrayList_video.add("عورت" + "@" + count_female);
+                    mArrayList_video.add(getString(R.string.murd) + "@" + count_male);
+                    mArrayList_video.add(R.string.aurat + "@" + count_female);
 
 
                     total_male_female_videos = count_male_15to19_age + count_female_15to19_age + count_male_20to49_age + count_female_20to49_age + count_male_49plus_age + count_female_49plus_age + count_male_communityleaders + count_female_communityleaders;

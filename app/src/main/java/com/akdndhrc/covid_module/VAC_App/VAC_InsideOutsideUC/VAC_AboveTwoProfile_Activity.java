@@ -106,7 +106,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences("UserLogin", 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000123", "USER UID: " + login_useruid);
 
@@ -443,7 +443,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (et_bachey_ka_naam.getText().toString().isEmpty()) {
-                    final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی  نام درج کریں.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.enterNamePrompt, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -499,7 +499,7 @@ public class VAC_AboveTwoProfile_Activity extends AppCompatActivity {
 
                 if (et_walid_ka_shanakti_card_number.getText().toString().length() > 0) {
                     if (et_walid_ka_shanakti_card_number.getText().toString().length() < 15) {
-                        final Snackbar snackbar = Snackbar.make(v, "برائے مہربانی صحیح شناختی کارڈ نمبر درج کریں.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.correctCNICnumberPrompt, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

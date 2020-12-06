@@ -163,7 +163,7 @@ public class VAC_StatsActivity extends AppCompatActivity {
 
 
         if (et_is_tareekh_sy.getText().toString().isEmpty() || et_is_tareekh_tk.getText().toString().isEmpty()) {
-            Toast.makeText(getApplicationContext(),"Please select date range.",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), R.string.selectDateRangeEng,Toast.LENGTH_LONG).show();
             return;
         }
         else{

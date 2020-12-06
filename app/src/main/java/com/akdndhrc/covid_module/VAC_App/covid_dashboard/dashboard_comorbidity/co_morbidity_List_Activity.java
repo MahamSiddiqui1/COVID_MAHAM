@@ -147,7 +147,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
                         } else {
                             Log.d("000985", "ELSEEEE !!!!!!!!!!!!!!!!!!!!!!!!");
 
-                            final Snackbar snackbar = Snackbar.make(v, "There is a record of today's date. Please wait for tomorrow's date.", Snackbar.LENGTH_SHORT);
+                            final Snackbar snackbar = Snackbar.make(v, R.string.recordTodaywaitTomorrow, Snackbar.LENGTH_SHORT);
                             View mySbView = snackbar.getView();
                             mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                             mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));

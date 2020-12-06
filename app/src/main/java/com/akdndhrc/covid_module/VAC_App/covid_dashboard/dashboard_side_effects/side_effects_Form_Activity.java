@@ -111,7 +111,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000362", "USER UID: " + login_useruid);
 
@@ -178,10 +178,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_hyptension.setText("Yes");
+                    se_hyptension.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_hyptension.setText("No");
+                    se_hyptension.setText(R.string.no);
                 }
             }
         });
@@ -190,10 +190,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_syncope_near_syncope.setText("Yes");
+                    se_syncope_near_syncope.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_syncope_near_syncope.setText("No");
+                    se_syncope_near_syncope.setText(R.string.no);
                 }
             }
         });
@@ -202,10 +202,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_anaphylaxis.setText("Yes");
+                    se_anaphylaxis.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_anaphylaxis.setText("No");
+                    se_anaphylaxis.setText(R.string.no);
                 }
             }
         });
@@ -214,10 +214,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_local_redness_pain.setText("Yes");
+                    se_local_redness_pain.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_local_redness_pain.setText("No");
+                    se_local_redness_pain.setText(R.string.no);
                 }
             }
         });
@@ -226,10 +226,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_fatigue.setText("Yes");
+                    se_fatigue.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_fatigue.setText("No");
+                    se_fatigue.setText(R.string.no);
                 }
             }
         });
@@ -238,10 +238,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_headache.setText("Yes");
+                    se_headache.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_headache.setText("No");
+                    se_headache.setText(R.string.no);
                 }
             }
         });
@@ -250,10 +250,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_myalgias.setText("Yes");
+                    se_myalgias.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_myalgias.setText("No");
+                    se_myalgias.setText(R.string.no);
                 }
             }
         });
@@ -262,10 +262,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_diarrhea.setText("Yes");
+                    se_diarrhea.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_diarrhea.setText("No");
+                    se_diarrhea.setText(R.string.no);
                 }
             }
         });
@@ -274,10 +274,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_chills.setText("Yes");
+                    se_chills.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_chills.setText("No");
+                    se_chills.setText(R.string.no);
                 }
             }
         });
@@ -286,10 +286,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_nausea.setText("Yes");
+                    se_nausea.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_nausea.setText("No");
+                    se_nausea.setText(R.string.no);
                 }
             }
         });
@@ -298,10 +298,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_urticaria.setText("Yes");
+                    se_urticaria.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_urticaria.setText("No");
+                    se_urticaria.setText(R.string.no);
                 }
             }
         });
@@ -311,10 +311,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_joint_pain.setText("Yes");
+                    se_joint_pain.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_joint_pain.setText("No");
+                    se_joint_pain.setText(R.string.no);
                 }
             }
         });
@@ -323,7 +323,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_fever.setText("Yes");
+                    se_fever.setText(String.valueOf(R.string.yes));
                     et_se_fever.setFocusable(true);
                     et_se_fever.setCursorVisible(true);
                     et_se_fever.setFocusableInTouchMode(true);
@@ -335,7 +335,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    se_fever.setText("No");
+                    se_fever.setText(R.string.no);
                     et_se_fever.setFocusable(false);
                     et_se_fever.setCursorVisible(false);
                     et_se_fever.setFocusableInTouchMode(false);
@@ -350,10 +350,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_shortnessBreath.setText("Yes");
+                    se_shortnessBreath.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_shortnessBreath.setText("No");
+                    se_shortnessBreath.setText(R.string.no);
                 }
             }
         });
@@ -362,10 +362,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_lossTaste.setText("Yes");
+                    se_lossTaste.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_lossTaste.setText("No");
+                    se_lossTaste.setText(R.string.no);
                 }
             }
         });
@@ -374,10 +374,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_lossSmell.setText("Yes");
+                    se_lossSmell.setText(String.valueOf(R.string.yes));
                 } else {
                     // The toggle is disabled
-                    se_lossSmell.setText("No");
+                    se_lossSmell.setText(R.string.no);
                 }
             }
         });
@@ -563,7 +563,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (et_tareekh_visit.getText().toString().length() < 1) {
-                    final Snackbar snackbar = Snackbar.make(v, "Please select a visit date.", Snackbar.LENGTH_SHORT);
+                    final Snackbar snackbar = Snackbar.make(v, R.string.selectVisitDateEng, Snackbar.LENGTH_SHORT);
                     View mySbView = snackbar.getView();
                     mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                     mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -660,7 +660,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
                     if (res.toString().equalsIgnoreCase("true")) {
 
-                        final Snackbar snackbar = Snackbar.make(v, "Data has been collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -689,7 +689,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                         } else {
                         }
                     } else {
-                        final Snackbar snackbar = Snackbar.make(v, "Data not collected.", Snackbar.LENGTH_SHORT);
+                        final Snackbar snackbar = Snackbar.make(v, R.string.dataNotCollected, Snackbar.LENGTH_SHORT);
                         View mySbView = snackbar.getView();
                         mySbView.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                         mySbView.setBackgroundColor(ctx.getResources().getColor(android.R.color.black));
@@ -771,7 +771,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("000362", "Err: " + e.getMessage());
                     //Toast.makeText(side_effects_Form_Activity.this, R.string.incorrectDataSent, Toast.LENGTH_SHORT).show();
-                    Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                    Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                     tt.setGravity(Gravity.CENTER, 0, 0);
                     tt.show();
                 }
@@ -784,7 +784,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
                 Log.d("000362", "error    " + error.getMessage());
                 //Toast.makeText(side_effects_Form_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-                Toast tt  =Toast.makeText(ctx, "Data not synced", Toast.LENGTH_SHORT);
+                Toast tt  =Toast.makeText(ctx, R.string.dataNotSyncedEnglish, Toast.LENGTH_SHORT);
                 tt.setGravity(Gravity.CENTER, 0, 0);
                 tt.show();
 
@@ -899,7 +899,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             Log.d("000362", "longitude value: " + longitude);
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }
@@ -945,12 +945,12 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                 Log.d("000362", "latitude: " + latitude);
                 Log.d("000362", "longitude: " + longitude);
 
-                Toast.makeText(ctx, "GPS position is now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, R.string.GPSonEng, Toast.LENGTH_SHORT).show();
             }
 
         } else {
             gps.showSettingsAlert();
-            Toast.makeText(ctx, "Please turn on GPS position", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, R.string.turnonGPSEng, Toast.LENGTH_LONG).show();
             return;
         }
     }

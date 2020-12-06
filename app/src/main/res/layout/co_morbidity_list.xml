@@ -235,7 +235,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/login_button_shape_layout"
-                        android:text="ADD NEW FORM"
+                        android:text="@string/add_new_form"
                         android:textColor="@color/color_white"
                         android:textSize="@dimen/_14sdp" />
 
