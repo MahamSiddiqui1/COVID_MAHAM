@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sideEffects"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_menu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/color_white" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_editform"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_editprofile_icon"
+                    android:tint="@color/color_white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_home_top">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/childregister_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:optRoundCardBackgroundColor="@color/color_white"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="20dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbarSize="0dp"
+                    android:scrollbarThumbVertical="@android:color/transparent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="@dimen/_30sdp">
+
+
+                        <TableLayout
+                            android:id="@+id/table_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_10sdp">
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_20sdp"
+                                            android:text="@string/dateLabel"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                    </RelativeLayout>
+
+
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/et_tareekh_visit"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:background="@null"
+                                            android:cursorVisible="false"
+                                            android:drawableLeft="@drawable/ic_calender"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:drawableTint="@color/text_color"
+                                            android:focusableInTouchMode="false"
+                                            android:gravity="left"
+                                            android:padding="@dimen/_5sdp"
+                                            android:textSize="@dimen/_12sdp">
+
+                                            <requestFocus />
+                                        </EditText>
+
+                                    </RelativeLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+
+
+
+
+
+
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:layout_marginTop="@dimen/_3sdp"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_hyptension"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_hyptension"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"
+
+
+
+                                            />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </TableRow>
+                                <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_syncope_near_syncope"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_syncope_near_syncope"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:id="@+id/ll_sp_tahseel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/image_drop1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_1sdp"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                        <Spinner
+                                            android:id="@+id/sp_tahseel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:layout_toRightOf="@+id/image_drop1"
+                                            android:background="@null"
+                                            android:popupElevation="0dp"
+                                            android:spinnerMode="dropdown"
+                                            android:layout_centerVertical="true"
+
+                                            />
+
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+    <TableRow       android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:id="@+id/ll_zila"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <ImageView
+                                            android:id="@+id/image"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                        <Spinner
+                                            android:id="@+id/sp_zila"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginEnd="@dimen/_1sdp"
+                                            android:layout_toRightOf="@+id/image"
+                                            android:background="@null"
+                                            android:popupElevation="0dp"
+                                            android:spinnerMode="dropdown" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:layout_marginTop="@dimen/_3sdp"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_anaphylaxis"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_anaphylaxis"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                                <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_shortnessBreath"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_shortnessBreath"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+                            </TableRow>
+
+
+
+
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:layout_marginTop="@dimen/_3sdp" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_local_redness_pain"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_local_redness_pain"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+
+                                <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_fatigue"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_fatigue"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_headache"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_headache"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_myalgias"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_myalgias"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_diarrhea"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_diarrhea"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_chills"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_chills"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_nausea"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_nausea"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_urticaria"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_urticaria"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_joint_pain"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_joint_pain"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_lossSmell"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_lossSmell"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_lossTaste"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_lossTaste"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp"  />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"   android:background="@drawable/edittext_background_layout"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_fever"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+                                        <Switch
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/se_fever"
+
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:textOff="@string/no"
+                                            android:text="@string/no"
+                                            android:textOn="@string/yes"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:textColor="@color/grayDark"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                    </RelativeLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:text="@string/se_feverValue"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <RelativeLayout
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/rl_se_fever"
+
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout_outline"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <EditText
+
+
+                                            android:clickable="false"
+                                            android:cursorVisible="false"
+                                            android:focusable="false"
+                                            android:focusableInTouchMode="false"
+
+                                            android:id="@+id/et_se_fever"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/edittext_background_layout_outline"
+                                            android:gravity="left|center_vertical"
+                                            android:inputType="textCapSentences"
+                                            android:lines="1"
+                                            android:maxLength="12"
+                                            android:maxLines="1"
+                                            android:padding="@dimen/_5sdp"
+                                            android:textSize="@dimen/_12sdp" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/table_layout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@drawable/login_button_shape_layout"
+                            android:text="@string/submit"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_18sdp" />
+
+                    </RelativeLayout>
+
+
+                </ScrollView>
+
+
+                <ProgressBar
+                    android:id="@+id/pbProgress"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_cardview"
+                    android:indeterminateDrawable="@drawable/rotate_animation"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
