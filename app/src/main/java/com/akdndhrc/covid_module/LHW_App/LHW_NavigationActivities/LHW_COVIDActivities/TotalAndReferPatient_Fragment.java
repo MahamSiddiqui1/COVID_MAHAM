@@ -109,7 +109,7 @@ public class TotalAndReferPatient_Fragment extends Fragment {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((R.string.loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf((R.string.login_userid)), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000369", "USER UID: " + login_useruid);
 

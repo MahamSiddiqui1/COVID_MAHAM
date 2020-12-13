@@ -1097,7 +1097,7 @@
                                         android:layout_height="wrap_content"
 
                                         android:layout_centerVertical="true"
-                                        android:text=""@string/fatherMobileNum"
+                                        android:text="@string/fatherMobileNum"
                                         android:textColor="@color/dark_blue_color"
                                         android:textSize="@dimen/_12sdp" />
 

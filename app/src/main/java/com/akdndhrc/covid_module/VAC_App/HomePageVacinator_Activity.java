@@ -110,7 +110,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
             String usernaame = prefelse.getString((String.valueOf(R.string.username)), null); // getting String
-            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
+            String shared_useruid = prefelse.getString(("login_userid"), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000654", "USER UID: " + login_useruid);

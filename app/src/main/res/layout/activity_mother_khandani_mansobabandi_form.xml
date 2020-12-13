@@ -525,7 +525,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="@dimen/_5sdp"
                                     android:layout_weight="1"
-                                    android:text="@string/provService"
+                                    android:text="@string/provServ"
                                     android:textColor="@color/text_color"
                                     android:textSize="@dimen/_14sdp"
                                     android:textStyle="bold" />

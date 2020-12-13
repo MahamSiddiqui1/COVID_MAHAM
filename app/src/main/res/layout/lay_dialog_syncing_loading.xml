@@ -57,7 +57,7 @@
                 android:layout_below="@+id/pbProgress"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:text=""@string/syncingData""
+                android:text="@string/syncingData"
                 android:textColor="@color/dark_blue_color"
                 android:textSize="@dimen/_12sdp" />
 

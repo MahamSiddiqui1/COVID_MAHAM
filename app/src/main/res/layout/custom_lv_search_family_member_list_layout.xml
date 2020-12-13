@@ -56,7 +56,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_toEndOf="@+id/rl_circle_men"
             android:gravity="right"
-            android:text="@string/khashif_ali_khan"
+            android:text="@string/_kashif_ali_khan"
             android:textColor="@color/dark_blue_color"
             android:textSize="@dimen/_12sdp"
             tools:ignore="RtlHardcoded" />

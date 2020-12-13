@@ -129,7 +129,7 @@ public class LHW_Navigation_Activity extends AppCompatActivity implements View.O
         try {
             SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(getString(userLogin), 0); // 0 - for private mode
             String usernaame = prefelse.getString(getString(username), null); // getting String
-            String shared_useruid = prefelse.getString(String.valueOf((loginUserIDEng)), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf((login_userid)), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);

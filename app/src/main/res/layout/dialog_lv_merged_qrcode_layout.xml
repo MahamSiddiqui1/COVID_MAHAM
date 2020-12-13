@@ -85,7 +85,7 @@
             android:layout_weight="1"
             android:gravity="right"
             android:padding="@dimen/_12sdp"
-            android:text="@string/continue"
+            android:text="@string/dialog_mhr_jari_rhy_button_text"
             android:textColor="@color/green_color"
             android:textSize="@dimen/_13sdp"
             android:textStyle="bold" />

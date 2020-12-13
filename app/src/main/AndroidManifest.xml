@@ -927,8 +927,8 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
-        <service android:name="com.akdndhrc.covid_module.ServiceLocation" />
-        <service android:name="com.akdndhrc.covid_module.ServiceLocation_Login" />
+        <service android:name=".ServiceLocation" />
+        <service android:name=".ServiceLocation_Login" />
 
         <activity
             android:name="com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Child_HifazitiTeekeyVaccineKoAnjamDy_2_Activity"

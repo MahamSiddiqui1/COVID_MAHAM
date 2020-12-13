@@ -17,6 +17,10 @@ import com.akdndhrc.covid_module.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static android.provider.Settings.System.getString;
+import static com.akdndhrc.covid_module.R.string.larka;
+import static com.akdndhrc.covid_module.R.string.murd;
+
 public class Adt_SearchVillages extends BaseAdapter {
     Context ctx;
     ArrayList<HashMap<String, String>> arrayList;
@@ -74,7 +78,7 @@ public class Adt_SearchVillages extends BaseAdapter {
 
         if (Integer.parseInt(arrayList.get(position).get("age")) <=2)
         {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.larka)))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(String.valueOf(larka)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.baby_boy_icon));
             }
@@ -87,7 +91,7 @@ public class Adt_SearchVillages extends BaseAdapter {
         }
         else if (Integer.parseInt(arrayList.get(position).get("age")) >= 3 && Integer.parseInt(arrayList.get(position).get("age")) <= 14)
         {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.larka)))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(String.valueOf(larka)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.ic_man_icon));
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -105,7 +109,7 @@ public class Adt_SearchVillages extends BaseAdapter {
             }
         }
         else {
-            if (arrayList.get(position).get("gender").equalsIgnoreCase(getString(R.string.murd)))
+            if (arrayList.get(position).get("gender").equalsIgnoreCase(String.valueOf(murd)))
             {
                 holder.gender_icon.setImageDrawable(ctx.getResources().getDrawable(R.drawable.ic_man_icon));
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

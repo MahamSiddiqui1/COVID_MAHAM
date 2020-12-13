@@ -22,7 +22,7 @@
     <string name="PromptUsername">Username</string>
     <string name="PromptPassword">Password</string>
     <string name="Login">Login</string>
-    <string name="Sync">Last Sync Date: Date Time</string>
+    <string name="sync">Last Sync Date: Date Time</string>
     <string name="version">Version 1.0</string>
     <string name="recevied">Received</string>
     <string name="comorbidity">COMORBIDITY</string>
@@ -877,7 +877,6 @@
     <string name="_142">142</string>
     <string name="meeting_1">Meeting 1</string>
     <string name="murd">مرد</string>
-    <string name="aurat">عورت</string>
     <string name="caa_model_school">CAA Model School</string>
     <string name="head_name">Head Name:</string>
     <string name="noman">Noman</string>
@@ -899,7 +898,6 @@
     <string name="_10">10</string>
     <string name="unionCouncilKanderColon">یونین کونسل کے اندر :</string>
     <string name="unionCouncilKbaharColon">یونین کونسل کے باہر :</string>
-    <string name="please_wait">Please wait</string>
     <string name="noDataSyncServerAlert">ڈیٹا سروس پر سینک نہیں ہوا</string>
     <string name="noDataSyncAlert">ڈیٹا سینک نہیں ہوا</string>
     <string name="GPSonAlert">برائے مہربانی جی پی ایس پوزیشن کو آن کریں</string>
@@ -1384,7 +1382,6 @@
     <string name="applicationSettingsEng">(Application Settings)</string>
     <string name="_0_0_0_0">0.0 | 0.0</string>
     <string name="username">username</string>
-    <string name="loginUserIDEng">login_userid</string>
     <string name="loginGPSeng">LoginGPS</string>
     <string name="startUpdateData">Start updating data.</string>
     <string name="startUpdatePregData">Start updating pregnancies data.</string>
@@ -1524,7 +1521,7 @@
     <string name="_05_ml_syringe_bcg">.05 ML Syringe (BCG)</string>
     <string name="_5_ml_syringe">.5 ML Syringe</string>
     <string name="balanceEng">Balance</string>
-    <string name="return">Return</string>
+    <string name="rtn">Return</string>
     <string name="noPreviousStockEng">No Previous stock found</string>
     <string name="receiveNo">Enter received number.</string>
     <string name="choose_a_vaccine_name">Choose a vaccine name</string>

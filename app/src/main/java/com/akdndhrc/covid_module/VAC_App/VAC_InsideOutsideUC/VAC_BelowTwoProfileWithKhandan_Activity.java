@@ -99,7 +99,7 @@ public class VAC_BelowTwoProfileWithKhandan_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
+            String shared_useruid = prefelse.getString(("login_userid"), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000258", "USER UID: " + login_useruid);
 
@@ -924,8 +924,6 @@ public class VAC_BelowTwoProfileWithKhandan_Activity extends AppCompatActivity {
             //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
             Log.d("000258", " Error" + e.getMessage());
         }
-
-
     }
 
     private void sendPostRequest_khandan(final String manual_id, final String uid, final String province_id, final String district_id,

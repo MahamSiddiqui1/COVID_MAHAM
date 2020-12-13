@@ -103,7 +103,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/login_button_shape_layout"
-                android:text="@string/cont"
+                android:text="@string/dialog_mhr_jari_rhy_button_text"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_14sdp" />
 

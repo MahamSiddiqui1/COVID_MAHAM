@@ -1090,7 +1090,7 @@ public class Login_Activity extends Activity {
                         SharedPreferences prefw = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
                         SharedPreferences.Editor editorw = prefw.edit();
                         editorw.putString("username", userName);
-                        editorw.putString(String.valueOf((R.string.loginUserIDEng)), login_useruid);
+                        editorw.putString("login_userid", login_useruid);
 
                         username = userName;
                         //  editorw.putString("password", mData[0][2]);

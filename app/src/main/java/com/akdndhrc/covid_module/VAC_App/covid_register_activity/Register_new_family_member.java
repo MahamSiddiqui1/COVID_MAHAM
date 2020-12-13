@@ -60,9 +60,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static com.akdndhrc.covid_module.String.valueOf(R.string.loginUserIDEng);
-
-
 public class Register_new_family_member extends AppCompatActivity {
 
     Context ctx = com.akdndhrc.covid_module.VAC_App.covid_register_activity.Register_new_family_member.this;
@@ -113,7 +110,7 @@ public class Register_new_family_member extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString(String.valueOf(loginUserIDEng), null); // getting String
+            String shared_useruid = prefelse.getString("login_userid", null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 

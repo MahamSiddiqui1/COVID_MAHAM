@@ -48,11 +48,6 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.akdndhrc.covid_module.R.string.Child_already_vaccinated;
-import static com.akdndhrc.covid_module.R.string.dataCollected;
-import static com.akdndhrc.covid_module.R.string.R.string.pleaseSelectOne;
-import static com.akdndhrc.covid_module.R.string.vaccine_not_yet_active;
-
 
 public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
@@ -101,7 +96,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
         //Get shared USer name
         try {
             SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(R.string.userLogin), 0); // 0 - for private mode
-            String shared_useruid = prefelse.getString((String.valueOf(R.string.loginUserIDEng)), null); // getting String
+            String shared_useruid = prefelse.getString(("login_userid"), null); // getting String
             login_useruid = shared_useruid;
             Log.d("000555", "USER UID: " + login_useruid);
 
@@ -199,7 +194,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("000555", "Not Ref");
-                                Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                             }
 
                         } else {
@@ -208,12 +203,12 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                     } catch (Exception e) {
                         Log.d("000555", "Err:" + e.getMessage());
-                        Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                     }
 
                 } else if (diffInDays < Integer.parseInt(mData[position][2])) {
 
-                    Toast.makeText(getApplicationContext(), vaccine_not_yet_active, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.vaccine_not_yet_active, Toast.LENGTH_SHORT).show();
                 } else {
 
                     try {
@@ -230,7 +225,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), R.string.refused_vaccine, Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("000555", "Not Ref  12");
-                                Toast.makeText(getApplicationContext(), Child_already_vaccinated, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), R.string.Child_already_vaccinated, Toast.LENGTH_SHORT).show();
                             }
 
                         } else {
@@ -517,7 +512,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
 
                         sendPostRequest(child_uid, mData[index_val][0], TodayDate, String.valueOf(jobj), login_useruid, added_on);
                     } else {
-                        Toast.makeText(ctx, dataCollected, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
                     }
 
                 } catch (Exception e) {
@@ -642,7 +637,7 @@ public class Child_HifazitiTeekeyRecordList_Activity extends AppCompatActivity {
                     Log.d("000555", "Data: " + ans1);
                     Log.d("000555", "Query: " + res);
 
-                    Toast.makeText(ctx, dataCollected, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, R.string.dataCollected, Toast.LENGTH_SHORT).show();
 
                     if (Utils.haveNetworkConnection(ctx) > 0) {
 

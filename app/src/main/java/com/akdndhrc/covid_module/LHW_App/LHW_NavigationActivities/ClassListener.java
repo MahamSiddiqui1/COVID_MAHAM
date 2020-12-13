@@ -89,7 +89,7 @@ public class ClassListener implements OnClickListener {
         try {
             SharedPreferences prefelse = act.getApplicationContext().getSharedPreferences(String.valueOf(R.string.userLogin), 0); // 0 - for private mode
             String usernaame = prefelse.getString(String.valueOf((R.string.username)), null); // getting String
-            String shared_useruid = prefelse.getString(String.valueOf((R.string.loginUserIDEng)), null); // getting String
+            String shared_useruid = prefelse.getString(String.valueOf((R.string.login_userid)), null); // getting String
             login_useruid = shared_useruid;
             login_username = usernaame;
             Log.d("000555", "USER UID: " + login_useruid);

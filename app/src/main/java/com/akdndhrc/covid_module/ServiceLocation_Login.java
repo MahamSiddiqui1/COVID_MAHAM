@@ -1,5 +1,6 @@
 package com.akdndhrc.covid_module;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Service;
@@ -124,6 +125,7 @@ public class ServiceLocation_Login extends Service {
             @Override
             public void run() {
                 handler.post(new Runnable() {
+                    @SuppressLint("MissingPermission")
                     public void run() {
 
                         mCount = mCount + 1;
@@ -212,6 +214,7 @@ public class ServiceLocation_Login extends Service {
     }
 
 
+    @SuppressLint("MissingPermission")
     public boolean showCurrentLocation() {
 
         location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
