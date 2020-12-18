@@ -879,11 +879,11 @@
             android:hardwareAccelerated="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncChildHifazitiTeekey_Activity"
-            android:hardwareAccelerated="true"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
+            <activity
+                android:name="com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncChildHifazitiTeekey_Activity"
+                android:hardwareAccelerated="true"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait" />
         <activity
             android:name="com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncVideo_Activity"
             android:hardwareAccelerated="true"
