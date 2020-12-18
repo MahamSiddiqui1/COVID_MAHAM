@@ -1,7 +1,8 @@
 package com.akdndhrc.covid_module.CustomClass;
 
 public class UrlClass {
-
+    //initial sync
+    public static String dicitonary_download = "https://covid-immunization.herokuapp.com/api/sync/lists/download";
     //Child Dashboard Url
     public static String update_member_url = "https://pak.api.teekoplus.akdndhrc.org/sync/save/family/members";
     public static String update_growth_url = "https://pak.api.teekoplus.akdndhrc.org/sync/save/child/growth";
