@@ -23,7 +23,7 @@ import io.requery.android.database.sqlite.SQLiteOpenHelper;
 public class Helper extends SQLiteOpenHelper {
 
     public static final int DATABASE_VERSION = 6;
-    public static final String DATABASE_NAME = "HayatPK";
+    public static final String DATABASE_NAME = "HayatPKDB";
     private static final String DATABASE_NAMEFORDATA = ".HayatPKDB";
 
     Context context;

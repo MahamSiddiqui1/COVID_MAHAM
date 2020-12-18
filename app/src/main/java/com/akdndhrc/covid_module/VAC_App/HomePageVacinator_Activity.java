@@ -339,7 +339,11 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
 
             case R.id.rl_register:
 
-                final Dialog dialog = new Dialog(ctx);
+
+                Intent intent_reg = new Intent(ctx, register_individual_covid.class);
+                startActivity(intent_reg);
+
+           /*     final Dialog dialog = new Dialog(ctx);
                 LayoutInflater layout = LayoutInflater.from(ctx);
                 final View dialogView = layout.inflate(R.layout.fragment_register, null);
 
@@ -361,8 +365,8 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
                         dialog.dismiss();
                     }
                 });
-*/
-                btn_newFam.setOnClickListener(new View.OnClickListener() {
+
+         /*       btn_newFam.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -382,7 +386,7 @@ public class HomePageVacinator_Activity extends Activity implements View.OnClick
                         dialog.dismiss();
                     }
                 });
-
+*/
                 break;
 
             case R.id.rl_search:

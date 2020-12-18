@@ -36,6 +36,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.akdndhrc.covid_module.CustomClass.UrlClass;
 import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
 import com.akdndhrc.covid_module.DatabaseFiles.Helper;
@@ -569,6 +570,7 @@ public class Login_Activity extends Activity {
 
             //String url = "https://pak.api.teekoplus.akdndhrc.org/sync/lists/download";
             String url = "https://development.api.teekoplus.akdndhrc.org/sync/lists/download";
+            //String url = UrlClass.dicitonary_download;
 
             Log.d("000258", "mURL " + url);
             //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
