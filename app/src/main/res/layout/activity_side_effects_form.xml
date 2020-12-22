@@ -134,7 +134,7 @@
                 android:background="@drawable/shape_10_purple"
                 android:inputType="text"
                 android:paddingHorizontal="20dp"
-                android:text="@string/no"
+
                 android:textSize="12sp" />
 
             <EditText

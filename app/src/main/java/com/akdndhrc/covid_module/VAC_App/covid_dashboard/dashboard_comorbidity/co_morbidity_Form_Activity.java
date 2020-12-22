@@ -89,14 +89,14 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             ,cm_asthma,cm_cerebrovascular_disease,cm_cystic_fibrosis,cm_hypertension,cm_immune_compromised_other,cm_neurologic
             ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol;
 
-    boolean cm_cancer_state,cm_chronic_kidney_disease_state, cm_copd_state, cm_heart_condition_state, cm_immune_compromised_organ_state, cm_obesity_state,
-            cm_sickle_cell_disease_state, cm_pregnancy_state, cm_asthma_state, cm_cerebrovascular_disease_state, cm_cystic_fibrosis_state, cm_hypertension_state,
-            cm_immune_compromised_other_state, cm_neurologic_state, cm_liver_disease_state, cm_overweight_state, cm_pulmonary_fibrosis_state, cm_thalassemia_state,
-            cm_type1_diabetes_state, cm_ldl_cholestrol_state;
-
     EditText et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
             ,et_cm_asthma,et_cm_cerebrovascular_disease,et_cm_cystic_fibrosis,et_cm_hypertension,et_cm_immune_compromised_other,et_cm_neurologic
             ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol;
+
+    String et_cm_cancer_string, et_cm_chronic_kidney_disease_string, et_cm_copd_string, et_cm_heart_condition_string, et_cm_immune_compromised_organ_string,
+            et_cm_obesity_string, et_cm_sickle_cell_disease_string, et_cm_pregnancy_string, et_cm_asthma_string, et_cm_cerebrovascular_disease_string,
+            et_cm_cystic_fibrosis_string, et_cm_hypertension_string, et_cm_immune_compromised_other_string, et_cm_neurologic_string, et_cm_liver_disease_string,
+            et_cm_overweight_string, et_cm_pulmonary_fibrosis_string, et_cm_thalassemia_string, et_cm_type1_diabetes_string,et_cm_ldl_cholestrol_string;
 
     RelativeLayout rl_cm_cancer,rl_cm_chronic_kidney_disease,rl_cm_copd,rl_cm_heart_condition,rl_cm_immune_compromised_organ,rl_cm_obesity,rl_cm_sickle_cell_disease,rl_cm_pregnancy
             ,rl_cm_asthma,rl_cm_cerebrovascular_disease,rl_cm_cystic_fibrosis,rl_cm_hypertension,rl_cm_immune_compromised_other,rl_cm_neurologic
@@ -211,6 +211,29 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         et_cm_type1_diabetes= findViewById(R.id.et_cm_type1_diabetes);
         et_cm_ldl_cholestrol= findViewById(R.id.et_cm_ldl_cholestrol);
 
+        //EditText
+        //getText
+        et_cm_cancer_string = et_cm_cancer.getText().toString();
+        et_cm_chronic_kidney_disease_string = et_cm_chronic_kidney_disease.getText().toString();
+        et_cm_copd_string = et_cm_copd.getText().toString();
+        et_cm_heart_condition_string = et_cm_heart_condition.getText().toString();
+        et_cm_immune_compromised_organ_string = et_cm_immune_compromised_organ.getText().toString();
+        et_cm_obesity_string = et_cm_obesity.getText().toString();
+        et_cm_sickle_cell_disease_string = et_cm_sickle_cell_disease.getText().toString();
+        et_cm_pregnancy_string = et_cm_pregnancy.getText().toString();
+        et_cm_asthma_string = et_cm_asthma.getText().toString();
+        et_cm_cerebrovascular_disease_string = et_cm_cerebrovascular_disease.getText().toString();
+        et_cm_cystic_fibrosis_string = et_cm_cystic_fibrosis.getText().toString();
+        et_cm_hypertension_string = et_cm_hypertension.getText().toString();
+        et_cm_immune_compromised_other_string = et_cm_immune_compromised_other.getText().toString();
+        et_cm_neurologic_string = et_cm_neurologic.getText().toString();
+        et_cm_liver_disease_string = et_cm_liver_disease.getText().toString();
+        et_cm_overweight_string = et_cm_overweight.getText().toString();
+        et_cm_pulmonary_fibrosis_string = et_cm_pulmonary_fibrosis.getText().toString();
+        et_cm_thalassemia_string = et_cm_thalassemia.getText().toString();
+        et_cm_type1_diabetes_string = et_cm_type1_diabetes.getText().toString();
+        et_cm_ldl_cholestrol_string = et_cm_ldl_cholestrol.getText().toString();
+
         //RelativeLayout
         //Switch
         rl_cm_cancer= findViewById(R.id.rl_cm_cancer);
@@ -236,7 +259,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cancer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_cancer_state = cm_cancer.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cancer.setText(String.valueOf(R.string.yes));
@@ -263,7 +285,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_chronic_kidney_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_chronic_kidney_disease_state = cm_chronic_kidney_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_chronic_kidney_disease.setText(String.valueOf(R.string.yes));
@@ -291,7 +312,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_copd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_copd_state = cm_copd.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_copd.setText(String.valueOf(R.string.yes));
@@ -320,7 +340,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_heart_condition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_heart_condition_state = cm_heart_condition.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_heart_condition.setText(String.valueOf(R.string.yes));
@@ -348,7 +367,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_immune_compromised_organ.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_immune_compromised_organ_state = cm_immune_compromised_organ.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_immune_compromised_organ.setText(String.valueOf(R.string.yes));
@@ -376,7 +394,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_obesity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_obesity_state = cm_obesity.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_obesity.setText(String.valueOf(R.string.yes));
@@ -404,7 +421,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_sickle_cell_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_sickle_cell_disease_state = cm_sickle_cell_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_sickle_cell_disease.setText(String.valueOf(R.string.yes));
@@ -432,7 +448,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_pregnancy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_pregnancy_state = cm_pregnancy.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_pregnancy.setText(String.valueOf(R.string.yes));
@@ -460,7 +475,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_asthma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_asthma_state = cm_asthma.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_asthma.setText(String.valueOf(R.string.yes));
@@ -488,7 +502,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cerebrovascular_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_cerebrovascular_disease_state = cm_cerebrovascular_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cerebrovascular_disease.setText(String.valueOf(R.string.yes));
@@ -516,7 +529,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cystic_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_cystic_fibrosis_state = cm_cystic_fibrosis.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cystic_fibrosis.setText(String.valueOf(R.string.yes));
@@ -544,7 +556,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_hypertension.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_hypertension_state = cm_hypertension.isChecked() ;
                 if (isChecked) {
                     // The toggle is enabled
                     cm_hypertension.setText(String.valueOf(R.string.yes));
@@ -572,7 +583,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_immune_compromised_other.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_immune_compromised_other_state = cm_immune_compromised_other.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_immune_compromised_other.setText(String.valueOf(R.string.yes));
@@ -600,7 +610,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_neurologic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_neurologic_state = cm_neurologic.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_neurologic.setText(String.valueOf(R.string.yes));
@@ -628,7 +637,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_liver_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_liver_disease_state = cm_liver_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_liver_disease.setText(String.valueOf(R.string.yes));
@@ -656,7 +664,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_overweight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_overweight_state = cm_overweight.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_overweight.setText(String.valueOf(R.string.yes));
@@ -684,7 +691,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_pulmonary_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_pulmonary_fibrosis_state = cm_pulmonary_fibrosis.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_pulmonary_fibrosis.setText(String.valueOf(R.string.yes));
@@ -712,7 +718,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_thalassemia.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_thalassemia_state = cm_thalassemia.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_thalassemia.setText(String.valueOf(R.string.yes));
@@ -741,7 +746,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_type1_diabetes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_type1_diabetes_state = cm_type1_diabetes.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_type1_diabetes.setText(String.valueOf(R.string.yes));
@@ -769,7 +773,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_ldl_cholestrol.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                cm_ldl_cholestrol_state = cm_ldl_cholestrol.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_ldl_cholestrol.setText(String.valueOf(R.string.yes));
@@ -903,25 +906,50 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     JSONObject jobj = new JSONObject();
                     jobj.put("lat", "" + String.valueOf(latitude));
                     jobj.put("lng", "" + String.valueOf(longitude));
-                    jobj.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
-                    jobj.put("cm_cancer_state", "" + cm_cancer_state);
-                    jobj.put("cm_chronic_kidney_disease_state", "" + cm_chronic_kidney_disease_state);
-                    jobj.put("cm_heart_condition_state", "" + cm_heart_condition_state);
-                    jobj.put("cm_immune_compromised_organ_state", "" + cm_immune_compromised_organ_state);
-                    jobj.put("cm_obesity_state", "" + cm_obesity_state);
-                    jobj.put("cm_sickle_cell_disease_state", "" + cm_sickle_cell_disease_state);
-                    jobj.put("cm_pregnancy_state", "" + cm_pregnancy_state);
-                    jobj.put("cm_asthma_state", "" + cm_asthma_state);
-                    jobj.put("cm_cerebrovascular_disease_state", "" + cm_cerebrovascular_disease_state);
-                    jobj.put("cm_cystic_fibrosis_state", "" + cm_cystic_fibrosis_state);
-                    jobj.put("cm_hypertension_state", "" + cm_hypertension_state);
-                    jobj.put("cm_neurologic_state", "" + cm_neurologic_state);
-                    jobj.put("cm_liver_disease_state", "" + cm_liver_disease_state);
-                    jobj.put("cm_overweight_state", "" + cm_overweight_state);
-                    jobj.put("cm_pulmonary_fibrosis_state", "" + cm_pulmonary_fibrosis_state);
-                    jobj.put("cm_thalassemia_state", "" + cm_thalassemia_state);
-                    jobj.put("cm_type1_diabetes_state", "" + cm_type1_diabetes_state);
-                    jobj.put("cm_ldl_cholestrol_state", "" + cm_ldl_cholestrol_state);
+                    jobj.put("tareekh_visit", et_tareekh_visit.getText().toString());
+
+                    //switches
+                    jobj.put("cm_cancer", cm_cancer);
+                    jobj.put("cm_chronic_kidney_disease", cm_chronic_kidney_disease);
+                    jobj.put("cm_heart_condition", cm_heart_condition);
+                    jobj.put("cm_immune_compromised_organ", cm_immune_compromised_organ);
+                    jobj.put("cm_obesity", cm_obesity);
+                    jobj.put("cm_sickle_cell_disease", cm_sickle_cell_disease);
+                    jobj.put("cm_pregnancy", cm_pregnancy);
+                    jobj.put("cm_asthma", cm_asthma);
+                    jobj.put("cm_cerebrovascular_disease", cm_cerebrovascular_disease);
+                    jobj.put("cm_cystic_fibrosis", cm_cystic_fibrosis);
+                    jobj.put("cm_hypertension", cm_hypertension);
+                    jobj.put("cm_neurologic", cm_neurologic);
+                    jobj.put("cm_liver_disease", cm_liver_disease);
+                    jobj.put("cm_overweight", cm_overweight);
+                    jobj.put("cm_pulmonary_fibrosis", cm_pulmonary_fibrosis);
+                    jobj.put("cm_thalassemia", cm_thalassemia);
+                    jobj.put("cm_type1_diabetes", cm_type1_diabetes);
+                    jobj.put("cm_ldl_cholestrol_", cm_ldl_cholestrol);
+
+                    //Edit texts
+                    jobj.put("et_cm_cancer_string", et_cm_cancer_string);
+                    jobj.put("et_cm_chronic_kidney_disease_string", et_cm_chronic_kidney_disease_string);
+                    jobj.put("et_cm_copd_string", et_cm_copd_string);
+                    jobj.put("et_cm_heart_condition_string", et_cm_heart_condition_string);
+                    jobj.put("et_cm_immune_compromised_organ_string", et_cm_immune_compromised_organ_string);
+                    jobj.put("et_cm_obesity_string", et_cm_obesity_string);
+                    jobj.put("et_cm_sickle_cell_disease_string", et_cm_sickle_cell_disease_string);
+                    jobj.put("et_cm_pregnancy_string", et_cm_pregnancy_string);
+                    jobj.put("et_cm_asthma_string", et_cm_asthma_string);
+                    jobj.put("et_cm_cerebrovascular_disease_string", et_cm_cerebrovascular_disease_string);
+                    jobj.put("et_cm_cystic_fibrosis_string", et_cm_cystic_fibrosis_string);
+                    jobj.put("et_cm_hypertension_string", et_cm_hypertension_string);
+                    jobj.put("et_cm_immune_compromised_other_string", et_cm_immune_compromised_other_string);
+                    jobj.put("et_cm_neurologic_string", et_cm_neurologic_string);
+                    jobj.put("et_cm_liver_disease_string", et_cm_liver_disease_string);
+                    jobj.put("et_cm_overweight_string", et_cm_overweight_string);
+                    jobj.put("et_cm_pulmonary_fibrosis_string", et_cm_pulmonary_fibrosis_string);
+                    jobj.put("et_cm_thalassemia_string", et_cm_thalassemia_string);
+                    jobj.put("et_cm_type1_diabetes_string", et_cm_type1_diabetes_string);
+                    jobj.put("et_cm_ldl_cholestrol_string", et_cm_ldl_cholestrol_string);
+
            /*         jobj.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                     jobj.put("notes_cancer", "" + et_notes_cancer.getText().toString());
                     jobj.put("notes_heart", "" + et_notes_heart.getText().toString());
@@ -935,7 +963,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     jobj.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));*/
 
                     jobj.put("added_on", "null");
-
+                    Log.d(String.valueOf(jobj), "onClick: "+ jobj);
 
                     String cur_added_on = String.valueOf(System.currentTimeMillis());
 

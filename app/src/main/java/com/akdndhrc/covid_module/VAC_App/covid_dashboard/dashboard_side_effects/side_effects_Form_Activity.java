@@ -91,10 +91,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
     Switch se_hyptension,se_syncope_near_syncope,se_anaphylaxis,se_local_redness_pain,se_fatigue,se_headache,se_myalgias,se_diarrhea ,
             se_chills,se_nausea,se_urticaria,se_joint_pain,se_fever,se_shortnessBreath,se_lossTaste,se_lossSmell;
 
-    boolean se_hyptension_state, se_syncope_near_syncope_state, se_anaphylaxis_state, se_local_redness_pain_state, se_fatigue_state, se_headache_state,
-            se_myalgias_state, se_diarrhea_state, se_chills_state, se_nausea_state, se_urticaria_state, se_joint_pain_state, se_fever_state, se_shortnessBreath_state,
-            se_lossTaste_state, se_lossSmell_state;
-
     EditText et_se_fever;
     // ,"se_feverValue">Vue of Fever</string>
 
@@ -154,7 +150,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         //Spinner
       //  sp_naya_sabiqa = findViewById(R.id.sp_naya_sabiqa);
-        sp_planning_type = findViewById(R.id.sp_planning_type);
+//        sp_planning_type = findViewById(R.id.sp_planning_type);
 
 
         //switch
@@ -178,10 +174,8 @@ public class side_effects_Form_Activity extends AppCompatActivity {
         et_se_fever = findViewById(R.id.et_se_fever);
         rl_se_fever= findViewById(R.id.rl_se_fever);
 
-
         se_hyptension.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_hyptension_state = se_hyptension.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_hyptension.setText(String.valueOf(R.string.yes));
@@ -195,7 +189,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_syncope_near_syncope.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_syncope_near_syncope_state = se_syncope_near_syncope.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_syncope_near_syncope.setText(String.valueOf(R.string.yes));
@@ -208,7 +201,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_anaphylaxis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_anaphylaxis_state = se_anaphylaxis.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_anaphylaxis.setText(String.valueOf(R.string.yes));
@@ -221,9 +213,7 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_local_redness_pain.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_local_redness_pain_state = se_local_redness_pain.isChecked();
-
-                if (isChecked) {
+                    if (isChecked) {
                     // The toggle is enabled
                     se_local_redness_pain.setText(String.valueOf(R.string.yes));
                 } else {
@@ -235,7 +225,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_fatigue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_fatigue_state = se_fatigue.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_fatigue.setText(String.valueOf(R.string.yes));
@@ -248,7 +237,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_headache.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_headache_state = se_headache.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_headache.setText(String.valueOf(R.string.yes));
@@ -261,7 +249,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_myalgias.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_myalgias_state = se_myalgias.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_myalgias.setText(String.valueOf(R.string.yes));
@@ -274,7 +261,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_diarrhea.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_diarrhea_state = se_diarrhea.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_diarrhea.setText(String.valueOf(R.string.yes));
@@ -287,7 +273,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_chills.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_chills_state = se_chills.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_chills.setText(String.valueOf(R.string.yes));
@@ -300,7 +285,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_nausea.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_nausea_state = se_nausea.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_nausea.setText(String.valueOf(R.string.yes));
@@ -313,7 +297,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_urticaria.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_urticaria_state = se_urticaria.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_urticaria.setText(String.valueOf(R.string.yes));
@@ -327,7 +310,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_joint_pain.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_joint_pain_state = se_joint_pain.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_joint_pain.setText(String.valueOf(R.string.yes));
@@ -340,7 +322,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_fever.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_fever_state = se_fever.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_fever.setText(String.valueOf(R.string.yes));
@@ -368,7 +349,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_shortnessBreath.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_shortnessBreath_state = se_shortnessBreath.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_shortnessBreath.setText(String.valueOf(R.string.yes));
@@ -381,7 +361,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_lossTaste.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_lossTaste_state = se_lossTaste.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_lossTaste.setText(String.valueOf(R.string.yes));
@@ -394,7 +373,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
         se_lossSmell.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                se_lossSmell_state = se_lossSmell.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     se_lossSmell.setText(String.valueOf(R.string.yes));
@@ -404,6 +382,9 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                 }
             }
         });
+
+        String et_se_fever_string = et_se_fever.getText().toString();
+
         //Linear Layout
         ll_services_provided = findViewById(R.id.ll_services_provided);
 
@@ -658,25 +639,25 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                     jobj.put("lat", "" + String.valueOf(latitude));
                     jobj.put("lng", "" + String.valueOf(longitude));
                     jobj.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
-                    jobj.put("se_hyptension_state", "" + se_hyptension_state);
-                    jobj.put("se_syncope_near_syncope_state", "" + se_syncope_near_syncope_state);
-                    jobj.put("se_anaphylaxis_state", "" + se_anaphylaxis_state);
-                    jobj.put("se_local_redness_pain_state", "" + se_local_redness_pain_state);
-                    jobj.put("se_fatigue_state", "" + se_fatigue_state);
-                    jobj.put("se_headache_state", "" + se_headache_state);
-                    jobj.put("se_myalgias_state", "" + se_myalgias_state);
-                    jobj.put("se_diarrhea_state", "" + se_diarrhea_state);
-                    jobj.put("se_chills_state", "" + se_chills_state);
-                    jobj.put("se_nausea_state", "" + se_nausea_state);
-                    jobj.put("se_urticaria_state", "" + se_urticaria_state);
-                    jobj.put("se_joint_pain_state", "" + se_joint_pain_state);
-                    jobj.put("se_fever_state", "" + se_fever_state);
-                    jobj.put("se_shortnessBreath_state", "" + se_shortnessBreath_state);
-                    jobj.put("se_lossTaste_state", "" + se_lossTaste_state);
-                    jobj.put("se_lossSmell_state", "" + se_lossSmell_state);
 
-                    jobj.put("added_on", "null");
-
+                    //switches
+                    jobj.put("se_hyptension", "" + se_hyptension.getText().toString());
+                    jobj.put("se_syncope_near_syncope", "" + se_syncope_near_syncope.getText().toString());
+                    jobj.put("se_anaphylaxis", "" + se_anaphylaxis.getText().toString());
+                    jobj.put("se_local_redness_pain", "" + se_local_redness_pain.getText().toString());
+                    jobj.put("se_fatigue", "" + se_fatigue.getText().toString());
+                    jobj.put("se_headache", "" + se_headache.getText().toString());
+                    jobj.put("se_myalgias", "" + se_myalgias.getText().toString());
+                    jobj.put("se_diarrhea", "" + se_diarrhea.getText().toString());
+                    jobj.put("se_chills", "" + se_chills.getText().toString());
+                    jobj.put("se_nausea", "" + se_nausea.getText().toString());
+                    jobj.put("se_urticaria", "" + se_urticaria.getText().toString());
+                    jobj.put("se_joint_pain", "" + se_joint_pain.getText().toString());
+                    jobj.put("se_fever", "" + se_fever.getText().toString());
+                    jobj.put("se_shortnessBreath", "" + se_shortnessBreath.getText().toString());
+                    jobj.put("se_lossTaste", "" + se_lossTaste.getText().toString());
+                    jobj.put("se_lossSmell", "" + se_lossSmell.getText().toString());
+                    jobj.put("added_on", String.valueOf(System.currentTimeMillis()));
 
                     String cur_added_on = String.valueOf(System.currentTimeMillis());
 

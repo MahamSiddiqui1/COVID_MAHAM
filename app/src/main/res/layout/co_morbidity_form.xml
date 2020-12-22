@@ -281,7 +281,6 @@
                                             android:id="@+id/cm_cancer"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -418,7 +417,6 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -555,7 +553,6 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -696,7 +693,6 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -841,7 +837,6 @@
                                             android:id="@+id/cm_immune_compromised_organ"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -973,7 +968,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1111,7 +1106,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1249,7 +1244,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1387,7 +1382,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1525,7 +1520,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1663,7 +1658,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1801,7 +1796,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1947,7 +1942,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2087,7 +2082,7 @@
 
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="@string/no"
+
                                             android:textColor="@color/grayDark"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
@@ -2223,7 +2218,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2363,7 +2358,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2501,7 +2496,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2639,7 +2634,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2774,7 +2769,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2909,7 +2904,7 @@
 
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-                                            android:text="@string/no"
+
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"

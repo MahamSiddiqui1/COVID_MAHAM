@@ -709,6 +709,7 @@ public class Helper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_FACILITY);
         db.execSQL(CREATE_TABLE_KHANDAN);
 
+
         db.execSQL(CREATE_TABLE_COUNTRY);
         db.execSQL(CREATE_TABLE_PROVINCE);
         db.execSQL(CREATE_TABLE_UNIONCOUNCIL);
