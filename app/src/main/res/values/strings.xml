@@ -1576,6 +1576,7 @@
     <string name="vaccSynced">ویکسین سنک ہوگئی ہیں.</string>
     <string name="medSynced">دوائیں سنک ہوگئی ہیں.</string>
     <string name="position">\"Position:  \"</string>
+    <string name="featureNotAvailEng">This features is not yet available.</string>
 </resources>
 
 

@@ -89,6 +89,11 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             ,cm_asthma,cm_cerebrovascular_disease,cm_cystic_fibrosis,cm_hypertension,cm_immune_compromised_other,cm_neurologic
             ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol;
 
+    boolean cm_cancer_state,cm_chronic_kidney_disease_state, cm_copd_state, cm_heart_condition_state, cm_immune_compromised_organ_state, cm_obesity_state,
+            cm_sickle_cell_disease_state, cm_pregnancy_state, cm_asthma_state, cm_cerebrovascular_disease_state, cm_cystic_fibrosis_state, cm_hypertension_state,
+            cm_immune_compromised_other_state, cm_neurologic_state, cm_liver_disease_state, cm_overweight_state, cm_pulmonary_fibrosis_state, cm_thalassemia_state,
+            cm_type1_diabetes_state, cm_ldl_cholestrol_state;
+
     EditText et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
             ,et_cm_asthma,et_cm_cerebrovascular_disease,et_cm_cystic_fibrosis,et_cm_hypertension,et_cm_immune_compromised_other,et_cm_neurologic
             ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol;
@@ -144,13 +149,8 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         // iv_home.setVisibility(View.GONE);
 
         //EDitTExt
-      et_tareekh_visit=findViewById(R.id.et_tareekh_visit);
+        et_tareekh_visit=findViewById(R.id.et_tareekh_visit);
         et_tareekh_visit.setText(TodayDate);
-
-
-
-
-
 
         //Linear Layout
         ll_services_provided = findViewById(R.id.ll_services_provided);
@@ -186,7 +186,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         cm_pulmonary_fibrosis= findViewById(R.id.cm_pulmonary_fibrosis);
         cm_thalassemia= findViewById(R.id.cm_thalassemia);
         cm_type1_diabetes= findViewById(R.id.cm_type1_diabetes);
-        cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);;
+        cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);
 
         //EditText
         //Switch
@@ -236,6 +236,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cancer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_cancer_state = cm_cancer.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cancer.setText(String.valueOf(R.string.yes));
@@ -243,7 +244,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cancer.setCursorVisible(true);
                     et_cm_cancer.setFocusableInTouchMode(true);
                     et_cm_cancer.setClickable(true);
-
                     et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
                     rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
 
@@ -251,7 +251,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                 } else {
                     // The toggle is disabled
                     cm_cancer.setText(R.string.no);
-
                     et_cm_cancer.setFocusable(false);
                     et_cm_cancer.setCursorVisible(false);
                     et_cm_cancer.setFocusableInTouchMode(false);
@@ -264,6 +263,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_chronic_kidney_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_chronic_kidney_disease_state = cm_chronic_kidney_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_chronic_kidney_disease.setText(String.valueOf(R.string.yes));
@@ -291,6 +291,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_copd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_copd_state = cm_copd.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_copd.setText(String.valueOf(R.string.yes));
@@ -319,6 +320,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_heart_condition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_heart_condition_state = cm_heart_condition.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_heart_condition.setText(String.valueOf(R.string.yes));
@@ -346,6 +348,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_immune_compromised_organ.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_immune_compromised_organ_state = cm_immune_compromised_organ.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_immune_compromised_organ.setText(String.valueOf(R.string.yes));
@@ -373,6 +376,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_obesity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_obesity_state = cm_obesity.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_obesity.setText(String.valueOf(R.string.yes));
@@ -400,6 +404,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_sickle_cell_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_sickle_cell_disease_state = cm_sickle_cell_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_sickle_cell_disease.setText(String.valueOf(R.string.yes));
@@ -427,6 +432,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_pregnancy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_pregnancy_state = cm_pregnancy.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_pregnancy.setText(String.valueOf(R.string.yes));
@@ -454,6 +460,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_asthma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_asthma_state = cm_asthma.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_asthma.setText(String.valueOf(R.string.yes));
@@ -481,6 +488,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cerebrovascular_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_cerebrovascular_disease_state = cm_cerebrovascular_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cerebrovascular_disease.setText(String.valueOf(R.string.yes));
@@ -508,6 +516,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_cystic_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_cystic_fibrosis_state = cm_cystic_fibrosis.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_cystic_fibrosis.setText(String.valueOf(R.string.yes));
@@ -535,6 +544,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_hypertension.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_hypertension_state = cm_hypertension.isChecked() ;
                 if (isChecked) {
                     // The toggle is enabled
                     cm_hypertension.setText(String.valueOf(R.string.yes));
@@ -562,6 +572,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_immune_compromised_other.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_immune_compromised_other_state = cm_immune_compromised_other.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_immune_compromised_other.setText(String.valueOf(R.string.yes));
@@ -589,6 +600,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_neurologic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_neurologic_state = cm_neurologic.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_neurologic.setText(String.valueOf(R.string.yes));
@@ -616,6 +628,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_liver_disease.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_liver_disease_state = cm_liver_disease.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_liver_disease.setText(String.valueOf(R.string.yes));
@@ -643,6 +656,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_overweight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_overweight_state = cm_overweight.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_overweight.setText(String.valueOf(R.string.yes));
@@ -670,6 +684,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_pulmonary_fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_pulmonary_fibrosis_state = cm_pulmonary_fibrosis.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_pulmonary_fibrosis.setText(String.valueOf(R.string.yes));
@@ -697,6 +712,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_thalassemia.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_thalassemia_state = cm_thalassemia.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_thalassemia.setText(String.valueOf(R.string.yes));
@@ -725,6 +741,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_type1_diabetes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_type1_diabetes_state = cm_type1_diabetes.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_type1_diabetes.setText(String.valueOf(R.string.yes));
@@ -752,6 +769,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
         cm_ldl_cholestrol.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                cm_ldl_cholestrol_state = cm_ldl_cholestrol.isChecked();
                 if (isChecked) {
                     // The toggle is enabled
                     cm_ldl_cholestrol.setText(String.valueOf(R.string.yes));
@@ -882,11 +900,28 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     // et_refferal_ki_waja = findViewById(R.id.et_refferal_ki_waja);
                     // et_refferal_hospital = findViewById(R.id.et_refferal_hospital);
 
-
                     JSONObject jobj = new JSONObject();
                     jobj.put("lat", "" + String.valueOf(latitude));
                     jobj.put("lng", "" + String.valueOf(longitude));
                     jobj.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
+                    jobj.put("cm_cancer_state", "" + cm_cancer_state);
+                    jobj.put("cm_chronic_kidney_disease_state", "" + cm_chronic_kidney_disease_state);
+                    jobj.put("cm_heart_condition_state", "" + cm_heart_condition_state);
+                    jobj.put("cm_immune_compromised_organ_state", "" + cm_immune_compromised_organ_state);
+                    jobj.put("cm_obesity_state", "" + cm_obesity_state);
+                    jobj.put("cm_sickle_cell_disease_state", "" + cm_sickle_cell_disease_state);
+                    jobj.put("cm_pregnancy_state", "" + cm_pregnancy_state);
+                    jobj.put("cm_asthma_state", "" + cm_asthma_state);
+                    jobj.put("cm_cerebrovascular_disease_state", "" + cm_cerebrovascular_disease_state);
+                    jobj.put("cm_cystic_fibrosis_state", "" + cm_cystic_fibrosis_state);
+                    jobj.put("cm_hypertension_state", "" + cm_hypertension_state);
+                    jobj.put("cm_neurologic_state", "" + cm_neurologic_state);
+                    jobj.put("cm_liver_disease_state", "" + cm_liver_disease_state);
+                    jobj.put("cm_overweight_state", "" + cm_overweight_state);
+                    jobj.put("cm_pulmonary_fibrosis_state", "" + cm_pulmonary_fibrosis_state);
+                    jobj.put("cm_thalassemia_state", "" + cm_thalassemia_state);
+                    jobj.put("cm_type1_diabetes_state", "" + cm_type1_diabetes_state);
+                    jobj.put("cm_ldl_cholestrol_state", "" + cm_ldl_cholestrol_state);
            /*         jobj.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                     jobj.put("notes_cancer", "" + et_notes_cancer.getText().toString());
                     jobj.put("notes_heart", "" + et_notes_heart.getText().toString());
@@ -1090,6 +1125,8 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
             JSONObject jobj = new JSONObject();
             jobj.put("lat", "" + String.valueOf(latitude));
             jobj.put("lng", "" + String.valueOf(longitude));
+            jobj.put("lng", "" + String.valueOf(longitude));
+
            /* jobj.put("referal_reason", "" + et_refferal_ki_waja.getText().toString());
             jobj.put("referal_facility", "" + et_refferal_hospital.getText().toString());//spinner
             jobj.put("referal_type", "" + "MFPLAN");//spinner
@@ -1097,7 +1134,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
             String cur_added_oon = String.valueOf(System.currentTimeMillis());
 
-            String ans1 = "insert into REFERAL (member_uid, record_data, data,added_by, is_synced,added_on)" +
+            String ans1 = "insert into COVID_CO_MORBIDITY (member_uid, record_data, data,added_by, is_synced,added_on)" +
                     "values" +
                     "(" +
                     "'" + mother_uid + "'," +
@@ -1156,7 +1193,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                         Lister ls = new Lister(co_morbidity_Form_Activity.this);
                         ls.createAndOpenDB();
 
-                        String update_record = "UPDATE REFERAL SET " +
+                        String update_record = "UPDATE COVID_CO_MORBIDITY SET " +
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND record_data= '" + record_data + "'AND added_on= '" + added_on + "'";
 

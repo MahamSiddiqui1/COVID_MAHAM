@@ -15,23 +15,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
-import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildAamMalomatActivities.Child_AamMalomatRecordList_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildBemaariRecordActivities.Child_BemaariRecordList_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildCVirusScreeingActivities.Child_CVirusRecordList_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildHifazitiTeekeyRecordActivities.Child_HifazitiTeekeyRecordList2_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildNashoNumaActivities.Child_NashoNumaRecordList_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildProfileActivities.Child_Profile_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildRefferalActivities.Child_RefferalRecordList_Activity;
-import com.akdndhrc.covid_module.LHW_App.LHW_MotherDashboardActivities.MotherHifazitiTeekeyRecordActivities.Mother_HifazitiTeekeyRecordList_Activity;
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActivities.Search_FamilyMembersList;
 import com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActivities.Search_MemberAndKhandanList_Activity;
 import com.akdndhrc.covid_module.R;
+import com.akdndhrc.covid_module.VAC_App.ChildHifazitiTeekeyRecordActivities.Child_HifazitiTeekeyRecordList_Activity;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
 import com.akdndhrc.covid_module.VAC_App.VAC_InsideOutsideUC.VAC_Register_QRCode_Activity;
+import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_List_Activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_profile.profile_activity;
 import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_side_effects.side_effects_List_Activity;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_List_Activity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -130,7 +122,7 @@ public class CovidModule_Dashboard_Activity extends AppCompatActivity implements
 
 
             case R.id.rl_covid_immunization:
-                Intent intent = new Intent(ctx, Mother_HifazitiTeekeyRecordList_Activity.class);
+                Intent intent = new Intent(ctx, Child_HifazitiTeekeyRecordList_Activity.class);
                 intent.putExtra("u_id", child_uid);
                 intent.putExtra("child_name", child_name);
                 intent.putExtra("child_age", child_age);
@@ -169,7 +161,7 @@ public class CovidModule_Dashboard_Activity extends AppCompatActivity implements
                 break;
 */
             case R.id.rl_refferal:
-                final Snackbar snackbarb = Snackbar.make(v, "This features is not yet available.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbarb = Snackbar.make(v, R.string.featureNotAvailEng, Snackbar.LENGTH_SHORT);
                 View mySbViewb = snackbarb.getView();
                 mySbViewb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbViewb.setBackgroundColor(getApplicationContext().getResources().getColor(android.R.color.black));

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/mkmbl_lv_rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/afm_rl_background_color">
+
+
+        <TextView
+            android:id="@+id/mkmbl_lv_tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mkmbl_lv_tvNaam"
+            android:textColor="@color/text_color"
+            android:text="@string/date_to_see"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/mkmbl_lv_tvNaam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/text_color"
+            android:text="@string/count"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:rotation="180"
+
+            android:src="@drawable/ic_leftarrow_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

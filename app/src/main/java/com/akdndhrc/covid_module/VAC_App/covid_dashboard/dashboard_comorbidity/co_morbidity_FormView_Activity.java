@@ -363,7 +363,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
     }
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
     private void update_data(final View v) {
 
@@ -383,7 +383,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 Lister ls = new Lister(ctx);
                 ls.createAndOpenDB();
 
-                String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from MBEMARI");
+                String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from COVID_CO_MORBIDITY");
 
                 if (Integer.parseInt(mData[0][2]) > 0) {
                     JSONObject jsonObject = new JSONObject(mData[0][1]);
@@ -698,7 +698,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             Lister ls = new Lister(ctx);
             ls.createAndOpenDB();
 
-            String mData[][] = ls.executeReader("Select data from MBEMARI where member_uid = '" + mother_uid + "' AND record_data = '" + record_date + "' AND added_on = '" + added_on + "'");
+            String mData[][] = ls.executeReader("Select data from COVID_CO_MORBIDITY where member_uid = '" + mother_uid + "' AND record_data = '" + record_date + "' AND added_on = '" + added_on + "'");
 
             Log.d("000987", "Data: " + mData[0][0]);
 

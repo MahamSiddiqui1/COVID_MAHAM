@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.akdndhrc.covid_module.Adapter.Adt_MotherDashboard.Adt_MotherBemaariRecordList;
+import com.akdndhrc.covid_module.Adapter.Adt_CovidImmunization.Adt_ComorbidityRecordList;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
@@ -40,7 +40,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
     Button btn_naya_form_shamil_kre;
 
     ArrayList<HashMap<String, String>> hashMapArrayList = new ArrayList<HashMap<String, String>>();
-    Adt_MotherBemaariRecordList adt;
+    Adt_ComorbidityRecordList adt;
 
     ImageView iv_navigation_drawer, iv_home;
     String mother_uid, mother_name, mother_age;
@@ -214,7 +214,7 @@ public class co_morbidity_List_Activity extends AppCompatActivity {
 
                 hashMapArrayList.add(map);
             }
-            adt = new Adt_MotherBemaariRecordList(ctx, hashMapArrayList);
+            adt = new Adt_ComorbidityRecordList(ctx, hashMapArrayList);
             adt.notifyDataSetChanged();
             lv.setAdapter(adt);
 

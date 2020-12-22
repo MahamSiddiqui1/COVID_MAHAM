@@ -1110,7 +1110,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             Lister ls = new Lister(ctx);
             ls.createAndOpenDB();
 
-            String mData[][] = ls.executeReader("Select data from MFPLAN where member_uid = '" + mother_uid + "' AND record_data = '" + record_date + "' AND added_on = '" + added_on + "'");
+            String mData[][] = ls.executeReader("Select data from COVID_SIDE_EFFECTS where member_uid = '" + mother_uid + "' AND record_data = '" + record_date + "' AND added_on = '" + added_on + "'");
 
             Log.d("000987", "Data: " + mData[0][0]);
 

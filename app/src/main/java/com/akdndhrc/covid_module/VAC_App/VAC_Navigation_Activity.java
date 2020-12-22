@@ -339,7 +339,7 @@ public class VAC_Navigation_Activity extends AppCompatActivity implements View.O
                 {
                     Log.d("000222", " ERRR:  " + e.getMessage());
                 }*/
-                final Snackbar snackbarb = Snackbar.make(v, "This features is not yet available.", Snackbar.LENGTH_SHORT);
+                final Snackbar snackbarb = Snackbar.make(v, R.string.featureNotAvailEng, Snackbar.LENGTH_SHORT);
                 View mySbViewb = snackbarb.getView();
                 mySbViewb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 mySbViewb.setBackgroundColor(getApplicationContext().getResources().getColor(android.R.color.black));
