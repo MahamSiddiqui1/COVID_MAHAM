@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,6 +76,19 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
     GPSTracker gps;
     String mother_uid, TodayDate, added_on;
    // Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
+
+    Switch cm_no_comorbidity, cm_cancer,cm_chronic_kidney_disease,cm_copd,cm_heart_condition,cm_immune_compromised_organ,cm_obesity,cm_sickle_cell_disease,cm_pregnancy
+           ,cm_asthma,cm_cerebrovascular_disease,cm_cystic_fibrosis,cm_hypertension,cm_immune_compromised_other,cm_neurologic
+           ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol, cm_others;
+
+    EditText et_cm_no_comorbidity, et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
+            ,et_cm_asthma,et_cm_cerebrovascular_disease,et_cm_cystic_fibrosis,et_cm_hypertension,et_cm_immune_compromised_other,et_cm_neurologic
+            ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol, et_cm_others;
+
+    String et_cm_cancer_string, et_cm_chronic_kidney_disease_string, et_cm_copd_string, et_cm_heart_condition_string, et_cm_immune_compromised_organ_string,
+            et_cm_obesity_string, et_cm_sickle_cell_disease_string, et_cm_pregnancy_string, et_cm_asthma_string, et_cm_cerebrovascular_disease_string,
+            et_cm_cystic_fibrosis_string, et_cm_hypertension_string, et_cm_immune_compromised_other_string, et_cm_neurologic_string, et_cm_liver_disease_string,
+            et_cm_overweight_string, et_cm_pulmonary_fibrosis_string, et_cm_thalassemia_string, et_cm_type1_diabetes_string,et_cm_ldl_cholestrol_string, et_cm_others_string;
 
 
     private int mYear, mMonth, mDay;
@@ -158,7 +172,53 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         //EDitTExt
         et_tareekh_visit = findViewById(id.et_tareekh_visit);
 
+        //Switch
+        cm_no_comorbidity = findViewById(R.id.cm_no_comorbidity);
+        cm_cancer= findViewById(R.id.cm_cancer);
+        cm_chronic_kidney_disease= findViewById(R.id.cm_chronic_kidney_disease);
+        cm_copd= findViewById(R.id.cm_copd);
+        cm_heart_condition= findViewById(R.id.cm_heart_condition);
+        cm_immune_compromised_organ= findViewById(R.id.cm_immune_compromised_organ);
+        cm_obesity= findViewById(R.id.cm_obesity);
+        cm_sickle_cell_disease= findViewById(R.id.cm_sickle_cell_disease);
+        cm_pregnancy = findViewById(R.id.cm_pregnancy);
+        cm_asthma= findViewById(R.id.cm_asthma);
+        cm_cerebrovascular_disease= findViewById(R.id.cm_cerebrovascular_disease);
+        cm_cystic_fibrosis= findViewById(R.id.cm_cystic_fibrosis);
+        cm_hypertension= findViewById(R.id.cm_hypertension);
+        cm_immune_compromised_other= findViewById(R.id.cm_immune_compromised_other);
+        cm_neurologic = findViewById(R.id.cm_neurologic);
+        cm_liver_disease= findViewById(R.id.cm_liver_disease);
+        cm_overweight= findViewById(R.id.cm_overweight);
+        cm_pulmonary_fibrosis= findViewById(R.id.cm_pulmonary_fibrosis);
+        cm_thalassemia= findViewById(R.id.cm_thalassemia);
+        cm_type1_diabetes= findViewById(R.id.cm_type1_diabetes);
+        cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);
+        cm_others= findViewById(R.id.cm_others);
 
+        //EditText
+        //Switch
+        et_cm_cancer= findViewById(R.id.et_cm_cancer);
+        et_cm_chronic_kidney_disease= findViewById(R.id.et_cm_chronic_kidney_disease);
+        et_cm_copd= findViewById(R.id.et_cm_copd);
+        et_cm_heart_condition= findViewById(R.id.et_cm_heart_condition);
+        et_cm_immune_compromised_organ= findViewById(R.id.et_cm_immune_compromised_organ);
+        et_cm_obesity= findViewById(R.id.et_cm_obesity);
+        et_cm_sickle_cell_disease= findViewById(R.id.et_cm_sickle_cell_disease);
+        et_cm_pregnancy = findViewById(R.id.et_cm_pregnancy);
+        et_cm_asthma= findViewById(R.id.et_cm_asthma);
+        et_cm_cerebrovascular_disease= findViewById(R.id.et_cm_cerebrovascular_disease);
+        et_cm_cystic_fibrosis= findViewById(R.id.et_cm_cystic_fibrosis);
+        et_cm_hypertension= findViewById(R.id.et_cm_hypertension);
+        et_cm_immune_compromised_other= findViewById(R.id.et_cm_immune_compromised_other);
+        et_cm_neurologic = findViewById(R.id.et_cm_neurologic);
+        et_cm_liver_disease= findViewById(R.id.et_cm_liver_disease);
+        et_cm_overweight= findViewById(R.id.et_cm_overweight);
+        et_cm_pulmonary_fibrosis= findViewById(R.id.et_cm_pulmonary_fibrosis);
+        et_cm_thalassemia= findViewById(R.id.et_cm_thalassemia);
+        et_cm_type1_diabetes= findViewById(R.id.et_cm_type1_diabetes);
+        et_cm_ldl_cholestrol= findViewById(R.id.et_cm_ldl_cholestrol);
+        et_cm_others= findViewById(R.id.et_cm_others);
 
         //Linear Layout
         ll_services_provided = findViewById(id.ll_services_provided);
@@ -433,20 +493,64 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                 jsonObject.put("facility_refer", "" + et_refferal_hospital.getText().toString());
                */ jsonObject.put("added_on", "" + cur_added_on);
                 jsonObject.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
+
+                //Edit texts
+                jsonObject.put("et_cm_cancer", et_cm_cancer.getText().toString());
+                jsonObject.put("et_cm_chronic_kidney_disease", et_cm_chronic_kidney_disease.getText().toString());
+                jsonObject.put("et_cm_copd", et_cm_copd.getText().toString());
+                jsonObject.put("et_cm_heart_condition", et_cm_heart_condition.getText().toString());
+                jsonObject.put("et_cm_immune_compromised_organ", et_cm_immune_compromised_organ.getText().toString());
+                jsonObject.put("et_cm_obesity", et_cm_obesity.getText().toString());
+                jsonObject.put("et_cm_sickle_cell_disease", et_cm_sickle_cell_disease.getText().toString());
+                jsonObject.put("et_cm_pregnancy", et_cm_pregnancy.getText().toString());
+                jsonObject.put("et_cm_asthma", et_cm_asthma.getText().toString());
+                jsonObject.put("et_cm_cerebrovascular_disease", et_cm_cerebrovascular_disease.getText().toString());
+                jsonObject.put("et_cm_cystic_fibrosis", et_cm_cystic_fibrosis.getText().toString());
+                jsonObject.put("et_cm_hypertension", et_cm_hypertension.getText().toString());
+                jsonObject.put("et_cm_immune_compromised_other", et_cm_immune_compromised_other.getText().toString());
+                jsonObject.put("et_cm_neurologic", et_cm_neurologic.getText().toString());
+                jsonObject.put("et_cm_liver_disease", et_cm_liver_disease.getText().toString());
+                jsonObject.put("et_cm_overweight", et_cm_overweight.getText().toString());
+                jsonObject.put("et_cm_pulmonary_fibrosis", et_cm_pulmonary_fibrosis.getText().toString());
+                jsonObject.put("et_cm_thalassemia", et_cm_thalassemia.getText().toString());
+                jsonObject.put("et_cm_type1_diabetes", et_cm_type1_diabetes.getText().toString());
+                jsonObject.put("et_cm_ldl_cholestrol", et_cm_ldl_cholestrol.getText().toString());
+                jsonObject.put("et_cm_others", et_cm_others.getText().toString());
+
+                //Switches
+                jsonObject.put("cm_no_comorbidity", cm_no_comorbidity.getText().toString());
+                jsonObject.put("cm_cancer", cm_cancer.getText().toString());
+                jsonObject.put("cm_chronic_kidney_disease", cm_chronic_kidney_disease.getText().toString());
+                jsonObject.put("cm_copd", cm_copd.getText().toString());
+                jsonObject.put("cm_heart_condition", cm_heart_condition.getText().toString());
+                jsonObject.put("cm_immune_compromised_organ", cm_immune_compromised_organ.getText().toString());
+                jsonObject.put("cm_obesity", cm_obesity.getText().toString());
+                jsonObject.put("cm_sickle_cell_disease", cm_sickle_cell_disease.getText().toString());
+                jsonObject.put("cm_pregnancy", cm_pregnancy.getText().toString());
+                jsonObject.put("cm_asthma", cm_asthma.getText().toString());
+                jsonObject.put("cm_cerebrovascular_disease", cm_cerebrovascular_disease.getText().toString());
+                jsonObject.put("cm_cystic_fibrosis", cm_cystic_fibrosis.getText().toString());
+                jsonObject.put("cm_hypertension", cm_hypertension.getText().toString());
+                jsonObject.put("cm_immune_compromised_other", cm_immune_compromised_other.getText().toString());
+                jsonObject.put("cm_neurologic", cm_neurologic.getText().toString());
+                jsonObject.put("cm_liver_disease", cm_liver_disease.getText().toString());
+                jsonObject.put("cm_overweight", cm_overweight.getText().toString());
+                jsonObject.put("cm_pulmonary_fibrosis", cm_pulmonary_fibrosis.getText().toString());
+                jsonObject.put("cm_thalassemia", cm_thalassemia.getText().toString());
+                jsonObject.put("cm_type1_diabetes", cm_type1_diabetes.getText().toString());
+                jsonObject.put("cm_ldl_cholestrol", cm_ldl_cholestrol.getText().toString());
+                jsonObject.put("cm_others", cm_others.getText().toString());
               /*  jsonObject.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                 jsonObject.put("notes_cancer", "" + et_notes_cancer.getText().toString());
                 jsonObject.put("notes_heart", "" + et_notes_heart.getText().toString());
                 jsonObject.put("notes_blood", "" + et_notes_blood.getText().toString());
                 jsonObject.put("notes_cholestrol", "" + et_notes_cholestrol.getText().toString());
-                // jobj.put("plan", "" + String.valueOf(sp_naya_sabiqa.getSelectedItemPosition() - 1));
+                // jsonObject.put("plan", "" + String.valueOf(sp_naya_sabiqa.getSelectedItemPosition() - 1));
                 jsonObject.put("diabetes", "" + String.valueOf(sp_diabetes.getSelectedItemPosition() - 1));
                 jsonObject.put("blood_pressure", "" + String.valueOf(sp_blood_pressure.getSelectedItemPosition() - 1));
                 jsonObject.put("cholestrol", "" + String.valueOf(sp_cholestrol.getSelectedItemPosition() - 1));
                 jsonObject.put("heart", "" + String.valueOf(sp_heart.getSelectedItemPosition() - 1));
                 jsonObject.put("cancer", "" + String.valueOf(sp_cancer.getSelectedItemPosition() - 1));*/
-
-
-
             }
 
             Handler handler = new Handler();
@@ -457,7 +561,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                     try {
                         Lister ls = new Lister(ctx);
                         ls.createAndOpenDB();
-                        String update_record = "UPDATE MBEMARI SET " +
+                        String update_record = "UPDATE COVID_CO_MORBIDITY SET " +
                                 "data='" + jsonObject.toString() + "'," +
                                 "is_synced='" + 0 + "'" +
                                 "WHERE member_uid = '" + mother_uid + "' AND added_on='" + added_on + "' AND  record_data='"+record_date+"'";
@@ -543,7 +647,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
                         Lister ls = new Lister(ctx);
                         ls.createAndOpenDB();
 
-                        String update_record = "UPDATE MBEMARI SET " +
+                        String update_record = "UPDATE COVID_CO_MORBIDITY SET " +
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'";
 
@@ -615,8 +719,6 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
         AppController.getInstance().addToRequestQueue(strReq, REQUEST_TAG);
     }
-
-
 
 
     private void check_gps() {
@@ -742,7 +844,51 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 */
 
             Log.d("000987","1");
-            et_tareekh_visit.setText((jsonObject.getString("tareekh_visit")));
+            //switches
+            cm_no_comorbidity.setText((jsonObject.getString("no_comorbidity")));
+            cm_cancer.setText((jsonObject.getString("cancer")));
+            cm_chronic_kidney_disease.setText((jsonObject.getString("chronic_kidney_disease")));
+            cm_heart_condition.setText((jsonObject.getString("heart_condition")));
+            cm_immune_compromised_organ.setText((jsonObject.getString("immune_compromised_organ")));
+            cm_obesity.setText((jsonObject.getString("obesity")));
+            cm_sickle_cell_disease.setText((jsonObject.getString("sickle_cell_disease")));
+            cm_pregnancy.setText((jsonObject.getString("pregnancy")));
+            cm_asthma.setText((jsonObject.getString("asthma")));
+            cm_cerebrovascular_disease.setText((jsonObject.getString("cerebrovascular_disease")));
+            cm_cystic_fibrosis.setText((jsonObject.getString("cystic_fibrosis")));
+            cm_hypertension.setText((jsonObject.getString("hypertension")));
+            cm_neurologic.setText((jsonObject.getString("neurologic")));
+            cm_liver_disease.setText((jsonObject.getString("liver_disease")));
+            cm_overweight.setText((jsonObject.getString("overweight")));
+            cm_pulmonary_fibrosis.setText((jsonObject.getString("pulmonary_fibrosis")));
+            cm_thalassemia.setText((jsonObject.getString("thalassemia")));
+            cm_type1_diabetes.setText((jsonObject.getString("type1_diabetes")));
+            cm_ldl_cholestrol.setText((jsonObject.getString("ldl_cholestrol")));
+            cm_others.setText((jsonObject.getString("others")));
+
+            //Edit Texts
+            et_cm_cancer.setText((jsonObject.getString("et_cm_cancer")));
+            et_cm_chronic_kidney_disease.setText((jsonObject.getString("et_cm_chronic_kidney_disease")));
+            et_cm_copd.setText((jsonObject.getString("et_cm_copd")));
+            et_cm_heart_condition.setText((jsonObject.getString("et_cm_heart_condition")));
+            et_cm_immune_compromised_organ.setText((jsonObject.getString("et_cm_immune_compromised_organ")));
+            et_cm_obesity.setText((jsonObject.getString("et_cm_obesity")));
+            et_cm_sickle_cell_disease.setText((jsonObject.getString("et_cm_sickle_cell_disease")));
+            et_cm_pregnancy.setText((jsonObject.getString("et_cm_pregnancy")));
+            et_cm_asthma.setText((jsonObject.getString("et_cm_asthma")));
+            et_cm_cerebrovascular_disease.setText((jsonObject.getString("et_cm_cerebrovascular_disease")));
+            et_cm_cystic_fibrosis.setText((jsonObject.getString("et_cm_cystic_fibrosis")));
+            et_cm_hypertension.setText((jsonObject.getString("et_cm_hypertension")));
+            et_cm_immune_compromised_other.setText((jsonObject.getString("et_cm_immune_compromised_other")));
+            et_cm_neurologic.setText((jsonObject.getString("et_cm_neurologic")));
+            et_cm_liver_disease.setText((jsonObject.getString("et_cm_liver_disease")));
+            et_cm_overweight.setText((jsonObject.getString("et_cm_overweight")));
+            et_cm_pulmonary_fibrosis.setText((jsonObject.getString("et_cm_pulmonary_fibrosis")));
+            et_cm_thalassemia.setText((jsonObject.getString("et_cm_thalassemia")));
+            et_cm_type1_diabetes.setText((jsonObject.getString("et_cm_type1_diabetes")));
+            et_cm_ldl_cholestrol.setText((jsonObject.getString("et_cm_ldl_cholestrol")));
+            et_cm_others.setText((jsonObject.getString("et_cm_others")));
+
            /* sp_diabetes.setSelection(Integer.parseInt(jsonObject.getString("diabetes")) + 1);
             sp_blood_pressure.setSelection(Integer.parseInt(jsonObject.getString("blood_pressure")) + 1);
             sp_cancer.setSelection(Integer.parseInt(jsonObject.getString("cancer")) + 1);

@@ -85,22 +85,22 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
     int counter = 0;
     long mLastClickTime = 0;
 
-    Switch cm_cancer,cm_chronic_kidney_disease,cm_copd,cm_heart_condition,cm_immune_compromised_organ,cm_obesity,cm_sickle_cell_disease,cm_pregnancy
+    Switch cm_no_comorbidity, cm_cancer,cm_chronic_kidney_disease,cm_copd,cm_heart_condition,cm_immune_compromised_organ,cm_obesity,cm_sickle_cell_disease,cm_pregnancy
             ,cm_asthma,cm_cerebrovascular_disease,cm_cystic_fibrosis,cm_hypertension,cm_immune_compromised_other,cm_neurologic
-            ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol;
+            ,cm_liver_disease,cm_overweight,cm_pulmonary_fibrosis,cm_thalassemia,cm_type1_diabetes,cm_ldl_cholestrol, cm_others;
 
-    EditText et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
+    EditText et_cm_no_comorbidity, et_cm_cancer,et_cm_chronic_kidney_disease,et_cm_copd,et_cm_heart_condition,et_cm_immune_compromised_organ,et_cm_obesity,et_cm_sickle_cell_disease,et_cm_pregnancy
             ,et_cm_asthma,et_cm_cerebrovascular_disease,et_cm_cystic_fibrosis,et_cm_hypertension,et_cm_immune_compromised_other,et_cm_neurologic
-            ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol;
+            ,et_cm_liver_disease,et_cm_overweight,et_cm_pulmonary_fibrosis,et_cm_thalassemia,et_cm_type1_diabetes,et_cm_ldl_cholestrol, et_cm_others;
 
     String et_cm_cancer_string, et_cm_chronic_kidney_disease_string, et_cm_copd_string, et_cm_heart_condition_string, et_cm_immune_compromised_organ_string,
             et_cm_obesity_string, et_cm_sickle_cell_disease_string, et_cm_pregnancy_string, et_cm_asthma_string, et_cm_cerebrovascular_disease_string,
             et_cm_cystic_fibrosis_string, et_cm_hypertension_string, et_cm_immune_compromised_other_string, et_cm_neurologic_string, et_cm_liver_disease_string,
-            et_cm_overweight_string, et_cm_pulmonary_fibrosis_string, et_cm_thalassemia_string, et_cm_type1_diabetes_string,et_cm_ldl_cholestrol_string;
+            et_cm_overweight_string, et_cm_pulmonary_fibrosis_string, et_cm_thalassemia_string, et_cm_type1_diabetes_string,et_cm_ldl_cholestrol_string, et_cm_others_string;
 
-    RelativeLayout rl_cm_cancer,rl_cm_chronic_kidney_disease,rl_cm_copd,rl_cm_heart_condition,rl_cm_immune_compromised_organ,rl_cm_obesity,rl_cm_sickle_cell_disease,rl_cm_pregnancy
+    RelativeLayout rl_cm_no_comorbidity, rl_cm_cancer,rl_cm_chronic_kidney_disease,rl_cm_copd,rl_cm_heart_condition,rl_cm_immune_compromised_organ,rl_cm_obesity,rl_cm_sickle_cell_disease,rl_cm_pregnancy
             ,rl_cm_asthma,rl_cm_cerebrovascular_disease,rl_cm_cystic_fibrosis,rl_cm_hypertension,rl_cm_immune_compromised_other,rl_cm_neurologic
-            ,rl_cm_liver_disease,rl_cm_overweight,rl_cm_pulmonary_fibrosis,rl_cm_thalassemia,rl_cm_type1_diabetes,rl_cm_ldl_cholestrol;
+            ,rl_cm_liver_disease,rl_cm_overweight,rl_cm_pulmonary_fibrosis,rl_cm_thalassemia,rl_cm_type1_diabetes,rl_cm_ldl_cholestrol, rl_cm_others;
 
 
     @Override
@@ -167,6 +167,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
 
 
        //Switch
+        cm_no_comorbidity = findViewById(R.id.cm_no_comorbidity);
         cm_cancer= findViewById(R.id.cm_cancer);
         cm_chronic_kidney_disease= findViewById(R.id.cm_chronic_kidney_disease);
         cm_copd= findViewById(R.id.cm_copd);
@@ -187,6 +188,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         cm_thalassemia= findViewById(R.id.cm_thalassemia);
         cm_type1_diabetes= findViewById(R.id.cm_type1_diabetes);
         cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);
+        cm_others= findViewById(R.id.cm_others);
 
         //EditText
         //Switch
@@ -210,6 +212,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         et_cm_thalassemia= findViewById(R.id.et_cm_thalassemia);
         et_cm_type1_diabetes= findViewById(R.id.et_cm_type1_diabetes);
         et_cm_ldl_cholestrol= findViewById(R.id.et_cm_ldl_cholestrol);
+        et_cm_others= findViewById(R.id.et_cm_others);
 
         //EditText
         //getText
@@ -233,6 +236,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         et_cm_thalassemia_string = et_cm_thalassemia.getText().toString();
         et_cm_type1_diabetes_string = et_cm_type1_diabetes.getText().toString();
         et_cm_ldl_cholestrol_string = et_cm_ldl_cholestrol.getText().toString();
+        et_cm_others_string = et_cm_others.getText().toString();
 
         //RelativeLayout
         //Switch
@@ -255,7 +259,44 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
         rl_cm_pulmonary_fibrosis= findViewById(R.id.rl_cm_pulmonary_fibrosis);
         rl_cm_thalassemia= findViewById(R.id.rl_cm_thalassemia);
         rl_cm_type1_diabetes= findViewById(R.id.rl_cm_type1_diabetes);
-        rl_cm_ldl_cholestrol= findViewById(R.id.rl_cm_ldl_cholestrol);;
+        rl_cm_ldl_cholestrol= findViewById(R.id.rl_cm_ldl_cholestrol);
+        rl_cm_others = findViewById(R.id.rl_cm_others);
+
+        ;
+
+        cm_no_comorbidity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_no_comorbidity.setText(String.valueOf(R.string.yes));
+
+                    cm_others.setEnabled(false);
+                    cm_cancer.setEnabled(false);
+                    cm_chronic_kidney_disease.setEnabled(false);
+                    cm_copd.setEnabled(false);
+                    cm_heart_condition.setEnabled(false);
+                    cm_immune_compromised_organ.setEnabled(false);
+                    cm_obesity.setEnabled(false);
+                    cm_sickle_cell_disease.setEnabled(false);
+                    cm_pregnancy.setEnabled(false);
+                    cm_asthma.setEnabled(false);
+                    cm_cerebrovascular_disease.setEnabled(false);
+                    cm_cystic_fibrosis.setEnabled(false);
+                    cm_hypertension.setEnabled(false);
+                    cm_immune_compromised_other.setEnabled(false);
+                    cm_neurologic.setEnabled(false);
+                    cm_liver_disease.setEnabled(false);
+                    cm_overweight.setEnabled(false);
+                    cm_pulmonary_fibrosis.setEnabled(false);
+                    cm_thalassemia.setEnabled(false);
+                    cm_type1_diabetes.setEnabled(false);
+                    cm_ldl_cholestrol.setEnabled(false);
+                } else {
+                    // The toggle is disabled
+                    cm_no_comorbidity.setText(R.string.no);
+                }
+            }
+        });
 
         cm_cancer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -266,8 +307,7 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cancer.setCursorVisible(true);
                     et_cm_cancer.setFocusableInTouchMode(true);
                     et_cm_cancer.setClickable(true);
-                    et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+
 
 
                 } else {
@@ -277,9 +317,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cancer.setCursorVisible(false);
                     et_cm_cancer.setFocusableInTouchMode(false);
                     et_cm_cancer.setClickable(false);
-                    et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_cancer.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -292,11 +332,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_chronic_kidney_disease.setCursorVisible(true);
                     et_cm_chronic_kidney_disease.setFocusableInTouchMode(true);
                     et_cm_chronic_kidney_disease.setClickable(true);
-
-                    et_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_chronic_kidney_disease.setText(R.string.no);
@@ -304,9 +339,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_chronic_kidney_disease.setCursorVisible(false);
                     et_cm_chronic_kidney_disease.setFocusableInTouchMode(false);
                     et_cm_chronic_kidney_disease.setClickable(false);
-                    et_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_chronic_kidney_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -319,12 +354,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_copd.setCursorVisible(true);
                     et_cm_copd.setFocusableInTouchMode(true);
                     et_cm_copd.setClickable(true);
-
-                    et_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
-
                 } else {
                     // The toggle is disabled
                     cm_copd.setText(R.string.no);
@@ -332,9 +361,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_copd.setCursorVisible(false);
                     et_cm_copd.setFocusableInTouchMode(false);
                     et_cm_copd.setClickable(false);
-                    et_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_copd.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -347,11 +376,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_heart_condition.setCursorVisible(true);
                     et_cm_heart_condition.setFocusableInTouchMode(true);
                     et_cm_heart_condition.setClickable(true);
-
-                    et_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_heart_condition.setText(R.string.no);
@@ -359,9 +383,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_heart_condition.setCursorVisible(false);
                     et_cm_heart_condition.setFocusableInTouchMode(false);
                     et_cm_heart_condition.setClickable(false);
-                    et_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_heart_condition.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -374,11 +398,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_immune_compromised_organ.setCursorVisible(true);
                     et_cm_immune_compromised_organ.setFocusableInTouchMode(true);
                     et_cm_immune_compromised_organ.setClickable(true);
-
-                    et_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_immune_compromised_organ.setText(R.string.no);
@@ -386,9 +405,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_immune_compromised_organ.setCursorVisible(false);
                     et_cm_immune_compromised_organ.setFocusableInTouchMode(false);
                     et_cm_immune_compromised_organ.setClickable(false);
-                    et_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_immune_compromised_organ.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -401,11 +420,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_obesity.setCursorVisible(true);
                     et_cm_obesity.setFocusableInTouchMode(true);
                     et_cm_obesity.setClickable(true);
-
-                    et_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_obesity.setText(R.string.no);
@@ -413,9 +427,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_obesity.setCursorVisible(false);
                     et_cm_obesity.setFocusableInTouchMode(false);
                     et_cm_obesity.setClickable(false);
-                    et_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_obesity.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -428,11 +442,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_sickle_cell_disease.setCursorVisible(true);
                     et_cm_sickle_cell_disease.setFocusableInTouchMode(true);
                     et_cm_sickle_cell_disease.setClickable(true);
-
-                    et_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_sickle_cell_disease.setText(R.string.no);
@@ -440,9 +449,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_sickle_cell_disease.setCursorVisible(false);
                     et_cm_sickle_cell_disease.setFocusableInTouchMode(false);
                     et_cm_sickle_cell_disease.setClickable(false);
-                    et_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_sickle_cell_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -455,11 +464,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_pregnancy.setCursorVisible(true);
                     et_cm_pregnancy.setFocusableInTouchMode(true);
                     et_cm_pregnancy.setClickable(true);
-
-                    et_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_pregnancy.setText(R.string.no);
@@ -467,9 +471,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_pregnancy.setCursorVisible(false);
                     et_cm_pregnancy.setFocusableInTouchMode(false);
                     et_cm_pregnancy.setClickable(false);
-                    et_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_pregnancy.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -482,11 +486,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_asthma.setCursorVisible(true);
                     et_cm_asthma.setFocusableInTouchMode(true);
                     et_cm_asthma.setClickable(true);
-
-                    et_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_asthma.setText(R.string.no);
@@ -494,9 +493,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_asthma.setCursorVisible(false);
                     et_cm_asthma.setFocusableInTouchMode(false);
                     et_cm_asthma.setClickable(false);
-                    et_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_asthma.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -509,11 +508,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cerebrovascular_disease.setCursorVisible(true);
                     et_cm_cerebrovascular_disease.setFocusableInTouchMode(true);
                     et_cm_cerebrovascular_disease.setClickable(true);
-
-                    et_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_cerebrovascular_disease.setText(R.string.no);
@@ -521,9 +515,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cerebrovascular_disease.setCursorVisible(false);
                     et_cm_cerebrovascular_disease.setFocusableInTouchMode(false);
                     et_cm_cerebrovascular_disease.setClickable(false);
-                    et_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_cerebrovascular_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -536,11 +530,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cystic_fibrosis.setCursorVisible(true);
                     et_cm_cystic_fibrosis.setFocusableInTouchMode(true);
                     et_cm_cystic_fibrosis.setClickable(true);
-
-                    et_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_cystic_fibrosis.setText(R.string.no);
@@ -548,9 +537,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_cystic_fibrosis.setCursorVisible(false);
                     et_cm_cystic_fibrosis.setFocusableInTouchMode(false);
                     et_cm_cystic_fibrosis.setClickable(false);
-                    et_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_cystic_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -563,11 +552,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_hypertension.setCursorVisible(true);
                     et_cm_hypertension.setFocusableInTouchMode(true);
                     et_cm_hypertension.setClickable(true);
-
-                    et_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_hypertension.setText(R.string.no);
@@ -575,9 +559,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_hypertension.setCursorVisible(false);
                     et_cm_hypertension.setFocusableInTouchMode(false);
                     et_cm_hypertension.setClickable(false);
-                    et_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_hypertension.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -590,11 +574,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_immune_compromised_other.setCursorVisible(true);
                     et_cm_immune_compromised_other.setFocusableInTouchMode(true);
                     et_cm_immune_compromised_other.setClickable(true);
-
-                    et_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_immune_compromised_other.setText(R.string.no);
@@ -602,9 +581,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_immune_compromised_other.setCursorVisible(false);
                     et_cm_immune_compromised_other.setFocusableInTouchMode(false);
                     et_cm_immune_compromised_other.setClickable(false);
-                    et_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_immune_compromised_other.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -617,11 +596,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_neurologic.setCursorVisible(true);
                     et_cm_neurologic.setFocusableInTouchMode(true);
                     et_cm_neurologic.setClickable(true);
-
-                    et_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_neurologic.setText(R.string.no);
@@ -629,9 +603,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_neurologic.setCursorVisible(false);
                     et_cm_neurologic.setFocusableInTouchMode(false);
                     et_cm_neurologic.setClickable(false);
-                    et_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_neurologic.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -644,11 +618,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_liver_disease.setCursorVisible(true);
                     et_cm_liver_disease.setFocusableInTouchMode(true);
                     et_cm_liver_disease.setClickable(true);
-
-                    et_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_liver_disease.setText(R.string.no);
@@ -656,9 +625,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_liver_disease.setCursorVisible(false);
                     et_cm_liver_disease.setFocusableInTouchMode(false);
                     et_cm_liver_disease.setClickable(false);
-                    et_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_liver_disease.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -671,11 +640,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_overweight.setCursorVisible(true);
                     et_cm_overweight.setFocusableInTouchMode(true);
                     et_cm_overweight.setClickable(true);
-
-                    et_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_overweight.setText(R.string.no);
@@ -683,9 +647,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_overweight.setCursorVisible(false);
                     et_cm_overweight.setFocusableInTouchMode(false);
                     et_cm_overweight.setClickable(false);
-                    et_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_overweight.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -698,11 +662,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_pulmonary_fibrosis.setCursorVisible(true);
                     et_cm_pulmonary_fibrosis.setFocusableInTouchMode(true);
                     et_cm_pulmonary_fibrosis.setClickable(true);
-
-                    et_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_pulmonary_fibrosis.setText(R.string.no);
@@ -710,9 +669,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_pulmonary_fibrosis.setCursorVisible(false);
                     et_cm_pulmonary_fibrosis.setFocusableInTouchMode(false);
                     et_cm_pulmonary_fibrosis.setClickable(false);
-                    et_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_pulmonary_fibrosis.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -725,11 +684,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_thalassemia.setCursorVisible(true);
                     et_cm_thalassemia.setFocusableInTouchMode(true);
                     et_cm_thalassemia.setClickable(true);
-
-                    et_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_thalassemia.setText(R.string.no);
@@ -737,10 +691,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_thalassemia.setCursorVisible(false);
                     et_cm_thalassemia.setFocusableInTouchMode(false);
                     et_cm_thalassemia.setClickable(false);
-
-                    et_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_thalassemia.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -753,11 +706,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_type1_diabetes.setCursorVisible(true);
                     et_cm_type1_diabetes.setFocusableInTouchMode(true);
                     et_cm_type1_diabetes.setClickable(true);
-
-                    et_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_type1_diabetes.setText(R.string.no);
@@ -765,9 +713,9 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_type1_diabetes.setCursorVisible(false);
                     et_cm_type1_diabetes.setFocusableInTouchMode(false);
                     et_cm_type1_diabetes.setClickable(false);
-                    et_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_type1_diabetes.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -780,11 +728,6 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_ldl_cholestrol.setCursorVisible(true);
                     et_cm_ldl_cholestrol.setFocusableInTouchMode(true);
                     et_cm_ldl_cholestrol.setClickable(true);
-
-                    et_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-                    rl_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
-
-
                 } else {
                     // The toggle is disabled
                     cm_ldl_cholestrol.setText(R.string.no);
@@ -792,9 +735,31 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     et_cm_ldl_cholestrol.setCursorVisible(false);
                     et_cm_ldl_cholestrol.setFocusableInTouchMode(false);
                     et_cm_ldl_cholestrol.setClickable(false);
-                    et_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
-                    rl_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout_outline));
                 }
+                et_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_ldl_cholestrol.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+            }
+        });
+
+        cm_others.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    cm_others.setText(String.valueOf(R.string.yes));
+                    et_cm_others.setFocusable(true);
+                    et_cm_others.setCursorVisible(true);
+                    et_cm_others.setFocusableInTouchMode(true);
+                    et_cm_others.setClickable(true);
+                } else {
+                    // The toggle is disabled
+                    cm_others.setText(R.string.no);
+                    et_cm_others.setFocusable(false);
+                    et_cm_others.setCursorVisible(false);
+                    et_cm_others.setFocusableInTouchMode(false);
+                    et_cm_others.setClickable(false);
+                }
+                et_cm_others.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
+                rl_cm_others.setBackground(getResources().getDrawable(R.drawable.edittext_background_layout));
             }
         });
 
@@ -908,9 +873,34 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     jobj.put("lng", "" + String.valueOf(longitude));
                     jobj.put("tareekh_visit", et_tareekh_visit.getText().toString());
 
-                    //switches
+                    //Edit texts
+                    jobj.put("et_cm_cancer", et_cm_cancer_string);
+                    jobj.put("et_cm_chronic_kidney_disease", et_cm_chronic_kidney_disease_string);
+                    jobj.put("et_cm_copd", et_cm_copd_string);
+                    jobj.put("et_cm_heart_condition", et_cm_heart_condition_string);
+                    jobj.put("et_cm_immune_compromised_organ", et_cm_immune_compromised_organ_string);
+                    jobj.put("et_cm_obesity", et_cm_obesity_string);
+                    jobj.put("et_cm_sickle_cell_disease", et_cm_sickle_cell_disease_string);
+                    jobj.put("et_cm_pregnancy", et_cm_pregnancy_string);
+                    jobj.put("et_cm_asthma", et_cm_asthma_string);
+                    jobj.put("et_cm_cerebrovascular_disease", et_cm_cerebrovascular_disease_string);
+                    jobj.put("et_cm_cystic_fibrosis", et_cm_cystic_fibrosis_string);
+                    jobj.put("et_cm_hypertension", et_cm_hypertension_string);
+                    jobj.put("et_cm_immune_compromised_other", et_cm_immune_compromised_other_string);
+                    jobj.put("et_cm_neurologic", et_cm_neurologic_string);
+                    jobj.put("et_cm_liver_disease", et_cm_liver_disease_string);
+                    jobj.put("et_cm_overweight", et_cm_overweight_string);
+                    jobj.put("et_cm_pulmonary_fibrosis", et_cm_pulmonary_fibrosis_string);
+                    jobj.put("et_cm_thalassemia", et_cm_thalassemia_string);
+                    jobj.put("et_cm_type1_diabetes", et_cm_type1_diabetes_string);
+                    jobj.put("et_cm_ldl_cholestrol", et_cm_ldl_cholestrol_string);
+                    jobj.put("et_cm_others", et_cm_others_string);
+
+                    //Switches
+                    jobj.put("cm_no_comorbidity", cm_no_comorbidity);
                     jobj.put("cm_cancer", cm_cancer);
                     jobj.put("cm_chronic_kidney_disease", cm_chronic_kidney_disease);
+                    jobj.put("cm_copd", cm_copd);
                     jobj.put("cm_heart_condition", cm_heart_condition);
                     jobj.put("cm_immune_compromised_organ", cm_immune_compromised_organ);
                     jobj.put("cm_obesity", cm_obesity);
@@ -920,35 +910,15 @@ public class co_morbidity_Form_Activity extends AppCompatActivity {
                     jobj.put("cm_cerebrovascular_disease", cm_cerebrovascular_disease);
                     jobj.put("cm_cystic_fibrosis", cm_cystic_fibrosis);
                     jobj.put("cm_hypertension", cm_hypertension);
+                    jobj.put("cm_immune_compromised_other", cm_immune_compromised_other);
                     jobj.put("cm_neurologic", cm_neurologic);
                     jobj.put("cm_liver_disease", cm_liver_disease);
                     jobj.put("cm_overweight", cm_overweight);
                     jobj.put("cm_pulmonary_fibrosis", cm_pulmonary_fibrosis);
                     jobj.put("cm_thalassemia", cm_thalassemia);
                     jobj.put("cm_type1_diabetes", cm_type1_diabetes);
-                    jobj.put("cm_ldl_cholestrol_", cm_ldl_cholestrol);
-
-                    //Edit texts
-                    jobj.put("et_cm_cancer_string", et_cm_cancer_string);
-                    jobj.put("et_cm_chronic_kidney_disease_string", et_cm_chronic_kidney_disease_string);
-                    jobj.put("et_cm_copd_string", et_cm_copd_string);
-                    jobj.put("et_cm_heart_condition_string", et_cm_heart_condition_string);
-                    jobj.put("et_cm_immune_compromised_organ_string", et_cm_immune_compromised_organ_string);
-                    jobj.put("et_cm_obesity_string", et_cm_obesity_string);
-                    jobj.put("et_cm_sickle_cell_disease_string", et_cm_sickle_cell_disease_string);
-                    jobj.put("et_cm_pregnancy_string", et_cm_pregnancy_string);
-                    jobj.put("et_cm_asthma_string", et_cm_asthma_string);
-                    jobj.put("et_cm_cerebrovascular_disease_string", et_cm_cerebrovascular_disease_string);
-                    jobj.put("et_cm_cystic_fibrosis_string", et_cm_cystic_fibrosis_string);
-                    jobj.put("et_cm_hypertension_string", et_cm_hypertension_string);
-                    jobj.put("et_cm_immune_compromised_other_string", et_cm_immune_compromised_other_string);
-                    jobj.put("et_cm_neurologic_string", et_cm_neurologic_string);
-                    jobj.put("et_cm_liver_disease_string", et_cm_liver_disease_string);
-                    jobj.put("et_cm_overweight_string", et_cm_overweight_string);
-                    jobj.put("et_cm_pulmonary_fibrosis_string", et_cm_pulmonary_fibrosis_string);
-                    jobj.put("et_cm_thalassemia_string", et_cm_thalassemia_string);
-                    jobj.put("et_cm_type1_diabetes_string", et_cm_type1_diabetes_string);
-                    jobj.put("et_cm_ldl_cholestrol_string", et_cm_ldl_cholestrol_string);
+                    jobj.put("cm_ldl_cholestrol", cm_ldl_cholestrol);
+                    jobj.put("cm_others", cm_others);
 
            /*         jobj.put("notes_diabetes", "" + et_notes_diabetes.getText().toString());
                     jobj.put("notes_cancer", "" + et_notes_cancer.getText().toString());

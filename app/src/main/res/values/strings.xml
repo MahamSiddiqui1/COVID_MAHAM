@@ -1577,6 +1577,11 @@
     <string name="medSynced">دوائیں سنک ہوگئی ہیں.</string>
     <string name="position">\"Position:  \"</string>
     <string name="featureNotAvailEng">This features is not yet available.</string>
+    <string name="adverseEffect">Adverse effect</string>
+    <string name="others">Others</string>
+    <string name="adverseEffects">ADVERSE EFFECTS</string>
+    <string name="cm_no_comorbidity">no comorbidity</string>
+    <string name="comorbidities">COMORBIDITIES</string>
 </resources>
 
 
