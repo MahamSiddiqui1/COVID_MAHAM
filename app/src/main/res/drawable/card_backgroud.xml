@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-android:shape="rectangle">
-
-
-
-<solid
-    android:color="@color/color_white"/>
-
-<corners
-    android:radius="@dimen/_5sdp"
-    />
-
-<!--android:width="280dp"-->
-<!--android:height="30dp"-->
-
-
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/color_white"/>
+    <corners android:radius="@dimen/_5sdp"/>
 </shape>
-
-

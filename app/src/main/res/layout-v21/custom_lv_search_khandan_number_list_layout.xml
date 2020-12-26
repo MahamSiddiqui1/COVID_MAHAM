@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_65sdp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+            <RelativeLayout android:id="@+id/rl_left_topbottomcorner" android:background="@drawable/left_topbottomcorner_blue_background_layout" android:layout_width="@dimen/_15sdp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <RelativeLayout android:id="@+id/sknl_lv_rl_background" android:background="@drawable/right_topbottomcorner_background_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:backgroundTint="@color/color_white">
+                <RelativeLayout android:id="@+id/rl_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/hp_listview_textview_bluecolor" android:id="@+id/sknl_lv_tvNaam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/sknl_khandan_number_text" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/hp_listview_textview_bluecolor" android:id="@+id/sknl_lv_tvkhandanNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_3sdp" android:text="231-741" android:layout_toLeftOf="@+id/sknl_lv_tvNaam" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_1">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="#37a137" android:id="@+id/sknl_lv_tvfaAl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/sknl_faAl_text" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/hp_listview_textview_greycolor" android:id="@+id/sknl_lv_tvGaon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/hp_listview_gaon_text" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_2">
+                    <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/hp_listview_textview_greycolor" android:id="@+id/hp_lv_tvGaon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/hp_listview_gaon_text" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

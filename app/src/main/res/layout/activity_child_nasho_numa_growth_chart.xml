@@ -1,326 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_ChildDashboardActivities.ChildNashoNumaActivities.Child_NashoNumaGrowthChart_Activity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_rectangle_shape">
-
-        <RelativeLayout
-            android:id="@+id/rl_home_top"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true">
-
-            <RelativeLayout
-                android:id="@+id/rlMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-
-                <TextView
-                    android:id="@+id/tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="true"
-                    android:text="@string/cnn_nashonuma_ka_record_text"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cnn_nashonuma_ka_record_text" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_navigation_drawer"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:id="@+id/iv_navigation_drawer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:clickable="true"
-                    android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu"
-                    android:focusable="true" />
-
+            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_home"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-
-                android:layout_centerVertical="true">
-
-                <ImageView
-                    android:id="@+id/iv_home"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_4sdp"
-                    android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/color_white"
-                    android:focusable="true" />
-
+            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_editform"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toStartOf="@+id/rl_home"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_centerVertical="true">
-
-                <ImageView
-                    android:id="@+id/iv_editform"
-                    android:layout_width="@dimen/_45sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_centerVertical="true"
-                    android:layout_centerInParent="true"
-                    android:clickable="true"
-
-                    android:visibility="gone"
-                    android:padding="@dimen/_6sdp"
-                    android:tint="@color/color_white"
-                    android:src="@drawable/ic_editprofile_icon"
-                    android:focusable="true" />
+            <RelativeLayout android:id="@+id/rl_editform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:layout_toLeftOf="@+id/rl_home" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_editform" android:padding="@dimen/_6sdp" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_editprofile_icon" android:tint="@color/color_white" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-
         </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/rl_naam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rl_home_top"
-            android:background="@color/light_color_white">
-
-            <RelativeLayout
-                android:id="@+id/rl_circle_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="@dimen/_10sdp">
-
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/card_circle_view"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="10dp"
-                    app:cardBackgroundColor="@color/color_white"
-                    app:cardCornerRadius="35dp"
-                    app:cardElevation="10dp">
-
-                    <ImageView
-                        android:id="@+id/image_gender"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/men_icon"
-                        android:tint="#2E86AB" />
-
-                </android.support.v7.widget.CardView>
-
-
+        <RelativeLayout android:id="@+id/rl_naam" android:background="@color/light_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_home_top">
+            <RelativeLayout android:id="@+id/rl_circle_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <android.support.p048v7.widget.CardView android:id="@+id/card_circle_view" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_centerInParent="true" app:cardBackgroundColor="@color/color_white" app:cardCornerRadius="35dp" app:cardElevation="10dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/image_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/men_icon" android:tint="#2e86ab"/>
+                </android.support.p048v7.widget.CardView>
             </RelativeLayout>
-
-
-            <LinearLayout
-                android:id="@+id/ll_register_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rl_circle_home"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/_10sdp">
-
-                <TextView
-                    android:id="@+id/txt_naam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_horizontal"
-                    android:text="@string/cd_naam_text"
-                    android:textColor="@color/register_khandan_text_color"
-                    android:textSize="@dimen/_12sdp" />
-
-                <View
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="1dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@color/pink_color" />
-
-
-                <LinearLayout
-                    android:id="@+id/ll_age"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:weightSum="2">
-
-
-                    <TextView
-                        android:id="@+id/txt_age"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="right"
-                        android:text="@string/_02_06"
-                        android:textColor="@color/register_khandan_text_color"
-                        android:textSize="@dimen/_12sdp" />
-
-
-                    <TextView
-                        android:id="@+id/txt_umer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left"
-                        android:text="@string/cd_maa_umer_text"
-                        android:textColor="@color/light_grey_color"
-                        android:textSize="@dimen/_12sdp"
-                        tools:ignore="RtlHardcoded" />
-
-
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_register_name" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_below="@+id/rl_circle_home">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/register_khandan_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txt_naam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cd_naam_text"/>
+                <View android:layout_gravity="center_horizontal" android:background="@color/pink_color" android:layout_width="@dimen/_100sdp" android:layout_height="1dp" android:layout_marginTop="@dimen/_10sdp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/ll_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:weightSum="2">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/register_khandan_text_color" android:gravity="right" android:id="@+id/txt_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 سال 06 مہ" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/light_grey_color" android:gravity="left" android:id="@+id/txt_umer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cd_maa_umer_text" android:layout_weight="1"/>
                 </LinearLayout>
-
             </LinearLayout>
-
         </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/rl_naam">
-
-            <com.github.captain_miao.optroundcardview.OptRoundCardView
-                android:id="@+id/bmi_card_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="10dp"
-                app:optRoundCardBackgroundColor="@color/color_white"
-                app:optRoundCardCornerRadius="@dimen/_20sdp"
-                app:optRoundCardUseCompatPadding="true"
-                app:optRoundContentPaddingTop="@dimen/_10sdp"
-                app:optRoundContentPaddingBottom="@dimen/_10sdp"
-                app:optRoundContentPaddingLeft="@dimen/_15sdp"
-                app:optRoundContentPaddingRight="@dimen/_15sdp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/_15sdp">
-
-
-                    <RelativeLayout
-                        android:id="@+id/rl_bmi"
-                        android:layout_width="@dimen/_220sdp"
-                        android:layout_height="@dimen/_70sdp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:background="@drawable/lightpink_rectangle_shape_layout">
-
-                        <TextView
-                            android:id="@+id/txt_bmi_value"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="@dimen/_5sdp"
-                            android:layout_marginEnd="@dimen/_5sdp"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:gravity="center"
-                            android:text="@string/_0"
-                            android:textColor="@color/dark_blue_color"
-                            android:textSize="@dimen/_12sdp" />
-
-                        <TextView
-                            android:visibility="gone"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/txt_bmi_value"
-                            android:layout_centerHorizontal="true"
-                            android:text="@string/bmi"
-                            android:textColor="@color/text_color"
-                            android:textSize="@dimen/_12sdp" />
-
-
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_naam">
+            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/bmi_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_centerInParent="true" app:optRoundCardBackgroundColor="@color/color_white" app:optRoundCardCornerRadius="@dimen/_20sdp" app:optRoundCardUseCompatPadding="true" app:optRoundContentPaddingBottom="@dimen/_10sdp" app:optRoundContentPaddingLeft="@dimen/_15sdp" app:optRoundContentPaddingRight="@dimen/_15sdp" app:optRoundContentPaddingTop="@dimen/_10sdp">
+                <RelativeLayout android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rl_bmi" android:background="@drawable/lightpink_rectangle_shape_layout" android:layout_width="@dimen/_220sdp" android:layout_height="@dimen/_70sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/dark_blue_color" android:gravity="center" android:id="@+id/txt_bmi_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_5sdp" android:text="0" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بی ام آئی:" android:layout_below="@+id/txt_bmi_value" android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/rl_bmi"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="@dimen/_10sdp">
-
-
-                        <ImageView
-                            android:id="@+id/iv_bmi_graph"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_bmi_graph" />
-
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@+id/rl_bmi" android:layout_centerInParent="true">
+                        <ImageView android:id="@+id/iv_bmi_graph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bmi_graph"/>
                     </RelativeLayout>
-
-
                 </RelativeLayout>
-
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
-
-            <Button
-                android:visibility="gone"
-                android:id="@+id/btn_wapis_jae"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/_20sdp"
-                android:background="@drawable/round_button_shape_white_border_layout"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="@string/cgc_wapis_jae_button"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_18sdp"
-                android:focusable="true" />
-
+            <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/btn_wapis_jae" android:background="@drawable/round_button_shape_white_border_layout" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_20sdp" android:text="@string/cgc_wapis_jae_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
         </RelativeLayout>
-
-
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

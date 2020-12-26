@@ -1,86 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/color_white">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/_30sdp">
-
-        <!--<ImageView-->
-        <!--android:id="@+id/iv_close"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="right"-->
-        <!--android:layout_marginEnd="0dp"-->
-        <!--android:padding="10dp"-->
-        <!--android:src="@drawable/ic_close_black_24dp"-->
-        <!--android:tint="@color/pink_color" />-->
-
-        <ImageView
-            android:id="@+id/iv_close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="5dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/ic_close_black_24dp"
-            android:tint="@color/pink_color" />
-
-
-        <LinearLayout
-            android:paddingBottom="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_scan_fingerprint_image" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="60%"
-                android:textColor="@color/text_color"
-                android:textSize="@dimen/_12sdp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="@string/putFingerOnSensor"
-                android:textColor="@color/text_color"
-                android:textSize="@dimen/_12sdp" />
-
-
-            <Button
-                android:id="@+id/btn_jari_rhy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_40sdp"
-                android:background="@drawable/round_grey_button_shape_layout"
-                android:text="@string/dialog_mhr_jari_rhy_button_text"
-                android:textColor="@color/cp_round_shape_button_grey_text_color"
-                android:textSize="@dimen/_12sdp" />
-
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_30sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="0dp" android:src="@drawable/ic_close_black_24dp" android:tint="@color/pink_color" android:paddingEnd="10dp" android:layout_marginEnd="0dp"/>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan_fingerprint_image"/>
+            <TextView android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60%"/>
+            <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="اپنی انگلی سینسر پر رکھیں"/>
+            <Button android:textSize="@dimen/_20sdp" android:textColor="@color/cp_round_shape_button_grey_text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_jari_rhy" android:background="@drawable/round_grey_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40sdp" android:text="جاری رہے"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

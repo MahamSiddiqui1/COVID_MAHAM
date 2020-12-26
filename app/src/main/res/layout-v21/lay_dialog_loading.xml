@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p048v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_10sdp" app:cardUseCompatPadding="true">
+    <RelativeLayout android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp">
+        <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tvKhandanNumber" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پروسیسنگ" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tvStatus" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="برائے مہربانی انتظار کریں" android:layout_below="@+id/tvKhandanNumber" android:layout_alignParentRight="true"/>
+        <ProgressBar android:id="@+id/parent_matrix" android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_50sdp" android:indeterminateDrawable="@drawable/right_topbottomcorner_green_background_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:indeterminateTintMode="src_atop"/>
+    </RelativeLayout>
+</android.support.p048v7.widget.CardView>

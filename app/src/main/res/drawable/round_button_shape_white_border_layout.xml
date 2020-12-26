@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-
-    <corners android:radius="40dp" />
-    <solid android:color="#CB90C9" />
-    <stroke
-        android:width="3dp"
-        android:color="@color/color_white" />
-    <size
-        android:width="280dp"
-        android:height="60dp"
-        />
-
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:radius="40dp"/>
+    <solid android:color="#cb90c9"/>
+    <stroke android:width="3dp" android:color="@color/color_white"/>
+    <size android:height="60dp" android:width="280dp"/>
 </shape>
-
-

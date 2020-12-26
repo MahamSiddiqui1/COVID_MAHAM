@@ -1,131 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card_sync"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="5dp"
-    app:cardElevation="@dimen/_5sdp"
-    app:cardUseCompatPadding="true">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2">
-
-        <RelativeLayout
-            android:id="@+id/rl_left_topbottomcorner"
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/left_topbottomcorner_red_background_layout"
-            android:visibility="gone">
-
-        </RelativeLayout>
-
-        <RelativeLayout
-
-            android:id="@+id/rl_background"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-
-            android:paddingTop="@dimen/_10sdp"
-            android:paddingBottom="@dimen/_10sdp">
-
-            <RelativeLayout
-                android:id="@+id/rl_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:layout_toStartOf="@+id/ll_count">
-
-                <TextView
-                    android:id="@+id/tvMeetingName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_toStartOf="@+id/iv_gender_icon"
-                    android:text="@string/meeting_1"
-                    android:textStyle="bold"
-                    android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_12sdp" />
-
-
+<android.support.p048v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_sync" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:cardElevation="@dimen/_5sdp" app:cardUseCompatPadding="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <RelativeLayout android:id="@+id/rl_left_topbottomcorner" android:background="@drawable/left_topbottomcorner_red_background_layout" android:visibility="gone" android:layout_width="@dimen/_15sdp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <RelativeLayout android:id="@+id/rl_background" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rl_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:layout_toLeftOf="@+id/ll_count" android:layout_centerVertical="false">
+                <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/tvMeetingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="Meeting 1" android:layout_toLeftOf="@+id/iv_gender_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rl_1"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:layout_toStartOf="@+id/ll_count">
-
-                <TextView
-                    android:id="@+id/tvDateTime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_toStartOf="@+id/iv_gender_icon"
-                    android:text="@string/datetime_22_dec_2019_05_14"
-                    android:textColor="@color/light_grey_color"
-                    android:textSize="@dimen/_10sdp" />
-
-                <TextView
-                    android:id="@+id/tvStatus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_below="@+id/tvDateTime"
-                    android:layout_toStartOf="@+id/iv_gender_icon"
-                    android:text="@string/status"
-                    android:textColor="@color/light_grey_color"
-                    android:textSize="@dimen/_10sdp"
-                    tools:ignore="UnknownIdInLayout" />
-
+            <RelativeLayout android:id="@+id/rl_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_toLeftOf="@+id/ll_count" android:layout_below="@+id/rl_1">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/light_grey_color" android:id="@+id/tvDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="@dimen/_5sdp" android:text="DateTime: 22 Dec 2019 05:14" android:layout_toLeftOf="@+id/iv_gender_icon" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/light_grey_color" android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_5sdp" android:text="Status" android:layout_toLeftOf="@+id/iv_gender_icon" android:layout_below="@+id/tvDateTime" android:layout_alignParentLeft="true"/>
             </RelativeLayout>
-
-            <LinearLayout
-                android:id="@+id/ll_count"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:background="@drawable/circle_shape_layout"
-                android:backgroundTint="@color/blue_text_color"
-                tools:targetApi="lollipop">
-
-                <TextView
-                    android:id="@+id/tvCountMember"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center_horizontal"
-                    android:text="@string/_150"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/_10sdp" />
-
-
+            <LinearLayout android:id="@+id/ll_count" android:background="@drawable/circle_shape_layout" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/color_white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/tvCountMember" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="150"/>
             </LinearLayout>
-
-
         </RelativeLayout>
-
     </LinearLayout>
-
-
-</android.support.v7.widget.CardView>
+</android.support.p048v7.widget.CardView>

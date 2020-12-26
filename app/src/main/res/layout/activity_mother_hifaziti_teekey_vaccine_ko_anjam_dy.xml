@@ -1,121 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LHW_App.LHW_MotherDashboardActivities.MotherHifazitiTeekeyRecordActivities.Mother_Hifazi">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_rectangle_shape">
-
-        <RelativeLayout
-            android:paddingTop="@dimen/_6sdp"
-            android:paddingBottom="@dimen/_6sdp"
-            android:id="@+id/rl_home_top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true">
-
-            <RelativeLayout
-                android:id="@+id/rlMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-
-                <TextView
-                    android:id="@+id/tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/immunizationhead"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:paddingTop="@dimen/_6sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mhtrf_hifaziti_teekey_ka_record_text2" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:visibility="gone"
-                android:id="@+id/rl_navigation_drawer"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:clickable="true">
-
-                <ImageView
-                    android:id="@+id/iv_navigation_drawer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:clickable="true"
-                    android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
-
+            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:visibility="gone"
-                android:id="@+id/rl_home"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-
-                android:layout_centerVertical="true">
-
-                <ImageView
-                    android:id="@+id/iv_home"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_4sdp"
-                    android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/color_white" />
-
+            <RelativeLayout android:id="@+id/rl_home" android:visibility="gone" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
         </RelativeLayout>
-
-
-        <RelativeLayout
-
-            android:id="@+id/rl_naam"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/rl_home_top"
-            android:background="@color/color_white">
-
-
-            <ImageView
-                android:id="@+id/iv"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="@dimen/_50sdp" />
-
-
-            <Button
-                android:id="@+id/submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/_20sdp"
-                android:background="@drawable/login_button_shape_layout"
-                android:text="@string/submit"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_18sdp" />
-
-
+        <RelativeLayout android:id="@+id/rl_naam" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
+            <ImageView android:id="@+id/iv" android:layout_width="match_parent" android:layout_height="400dp" android:layout_marginTop="@dimen/_50sdp"/>
+            <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:id="@+id/btn_jamaa_kre" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_20sdp" android:text="@string/cr_jaama_kre_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
         </RelativeLayout>
-
-
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

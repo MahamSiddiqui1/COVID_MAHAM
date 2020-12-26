@@ -1,73 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/cr_rectangle_layout"
-    android:backgroundTint="@color/color_white">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/_15sdp">
-
-        <ImageView
-            android:id="@+id/iv_close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="5dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/ic_close_black_24dp"
-            android:tint="@color/pink_color" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:paddingRight="@dimen/_10sdp"
-            android:paddingLeft="@dimen/_10sdp"
-            android:gravity="center_horizontal"
-            android:text="@string/dialog_ek_ko_muntakhib_kre_text"
-            android:textColor="@color/pink_color"
-            android:textSize="@dimen/_14sdp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_15sdp"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_10sdp">
-
-            <Button
-                android:id="@+id/btn_dou_saal_sy_kum_umer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/login_button_shape_layout"
-                android:text="@string/dialog_dou_saal_sy_kum_umer_text"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_14sdp" />
-
-            <Button
-                android:id="@+id/btn_dou_saal_sy_zayed_umer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_25sdp"
-                android:background="@drawable/round_button_shape_layout"
-                android:text="@string/dialog_dou_saal_sy_zayed_umer_text"
-                android:textColor="@color/pink_color"
-                android:textSize="@dimen/_14sdp" />
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/cr_rectangle_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="0dp" android:src="@drawable/ic_close_black_24dp" android:tint="@color/pink_color" android:paddingEnd="10dp" android:layout_marginEnd="0dp"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/pink_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="@string/dialog_ek_ko_muntakhib_kre_text"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp">
+            <Button android:textSize="@dimen/_16sdp" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@+id/btn_dou_saal_sy_kum_umer" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_dou_saal_sy_kum_umer_text"/>
+            <Button android:textSize="@dimen/_16sdp" android:textColor="@color/pink_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_dou_saal_sy_zayed_umer" android:background="@drawable/round_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:text="@string/dialog_dou_saal_sy_zayed_umer_text"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

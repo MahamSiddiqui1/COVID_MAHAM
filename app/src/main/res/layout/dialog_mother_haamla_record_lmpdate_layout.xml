@@ -1,172 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/card_backgroud">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/_20sdp">
-
-        <ImageView
-            android:id="@+id/iv_close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="0dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="5dp"
-            android:paddingEnd="10dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/ic_close_black_24dp"
-            android:tint="@color/pink_color" />
-
-        <TableLayout
-            android:id="@+id/table_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:padding="@dimen/_10sdp">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txt_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="@string/dialog_mhr_akhiri_haiz_ki_tareekh_text"
-                    android:textColor="@color/text_color"
-                    android:textSize="@dimen/_12sdp" />
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/card_backgroud" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="0dp" android:src="@drawable/ic_close_black_24dp" android:tint="@color/pink_color" android:paddingEnd="10dp" android:layout_marginEnd="0dp"/>
+        <TableLayout android:id="@+id/table_layout" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_5sdp">
+            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:gravity="right" android:id="@+id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/dialog_mhr_akhiri_haiz_ki_tareekh_text" android:layout_weight="1"/>
             </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edittext_background_layout"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/et_akhiri_haiz_ki_tareekh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:background="@null"
-                        android:drawableStart="@drawable/ic_calender"
-                        android:drawablePadding="@dimen/_5sdp"
-
-                        android:gravity="right"
-                        android:inputType="textCapWords"
-                        android:lines="1"
-                        android:maxLines="1"
-                        android:padding="@dimen/_5sdp"
-                        android:textSize="@dimen/_12sdp"
-                        android:theme="@style/StyleTextInputLayout" />
-
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                    <EditText android:theme="@style/StyleTextInputLayout" android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_akhiri_haiz_ki_tareekh" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:drawableLeft="@drawable/ic_calender" android:drawablePadding="@dimen/_5sdp" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                 </LinearLayout>
-
             </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txt_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="@string/dialog_mhr_mutawaqqa_zichgi_ki_tareekh_text"
-                    android:textColor="#9e9e9e"
-                    android:textSize="@dimen/_12sdp" />
-
+            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#9e9e9e" android:gravity="right" android:id="@+id/txt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/dialog_mhr_mutawaqqa_zichgi_ki_tareekh_text" android:layout_weight="1"/>
             </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edittext_background_layout"
-                    android:backgroundTint="#ececec"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/et_mutawaqqa_zichgi_ki_tareekh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:background="@null"
-                        android:drawableStart="@drawable/ic_calender"
-                        android:drawablePadding="@dimen/_5sdp"
-                        android:drawableTint="#a9a9a9"
-                        android:gravity="right"
-                        android:inputType="textCapWords"
-                        android:lines="1"
-                        android:maxLines="1"
-                        android:padding="@dimen/_5sdp"
-                        android:textSize="@dimen/_12sdp"
-                        android:theme="@style/StyleTextInputLayout" />
-
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                    <EditText android:theme="@style/StyleTextInputLayout" android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_mutawaqqa_zichgi_ki_tareekh" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:drawableLeft="@drawable/ic_calender" android:drawablePadding="@dimen/_5sdp" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                 </LinearLayout>
-
             </TableRow>
-
         </TableLayout>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_15sdp"
-            android:paddingTop="@dimen/_15sdp">
-
-
-            <Button
-                android:id="@+id/btn_jari_rhy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/login_button_shape_layout"
-                android:text="@string/dialog_mhr_jari_rhy_button_text"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_18sdp" />
-
-
+        <RelativeLayout android:paddingTop="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp">
+            <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@+id/btn_jari_rhy" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_mhr_jari_rhy_button_text" android:layout_centerHorizontal="true"/>
         </RelativeLayout>
-
     </LinearLayout>
 </RelativeLayout>
-

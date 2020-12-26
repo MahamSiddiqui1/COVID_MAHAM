@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/card_backgroud" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/color_white">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="0dp" android:src="@drawable/ic_close_black_24dp" android:tint="@color/pink_color" android:paddingEnd="10dp" android:layout_marginEnd="0dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+            <Button android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@+id/btn_shift_member" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="کسی دوسرے خاندان میں منتقل کریں"/>
+            <Button android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/pink_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_delete_member" android:background="@drawable/round_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="اس خاندان سے ڈیلیٹ کریں"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_khandanNumber" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+            <TableLayout android:id="@+id/table_layout" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp">
+                <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:id="@+id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="خاندان نمبر درج کریں" android:layout_weight="1"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                        <EditText android:theme="@style/StyleTextInputLayout" android:textSize="@dimen/_12sdp" android:textColorHint="@color/dark_blue_color" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_khandan_number_search" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="4" android:inputType="phone" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <Button android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@+id/btnContinue" android:background="@drawable/login_button_shape_layout" android:layout_width="@dimen/_160sdp" android:layout_height="@dimen/_45sdp" android:layout_marginTop="@dimen/_15sdp" android:text="جاری رہے"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

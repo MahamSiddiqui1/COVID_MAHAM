@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:background="@color/uvv_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/uvv_on_loading_layout"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/uvv_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/uvv_on_error_layout"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/title_part" android:background="@color/uvv_titlebar_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+        <ImageButton android:gravity="center" android:id="@+id/back_btn" android:background="#00000000" android:visibility="invisible" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/uvv_back_btn" android:scaleType="centerInside" android:contentDescription="返回"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/title" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="50dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/center_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uvv_itv_player_play" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/control_layout" android:background="@color/uvv_titlebar_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <ImageButton android:gravity="center" android:id="@+id/turn_button" android:background="#00000000" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/uvv_player_player_btn" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageButton android:id="@+id/scale_button" android:background="#00000000" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:src="@drawable/uvv_player_scale_btn" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/scale_button" android:layout_toRightOf="@+id/turn_button">
+            <TextView android:textColor="@color/uvv_light_gray" android:layout_gravity="center_vertical" android:id="@+id/has_played" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="00:00"/>
+            <SeekBar android:layout_gravity="center" android:id="@+id/seekbar" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="2dp" android:indeterminateDrawable="@drawable/uvv_star_play_progress_seek" android:progressDrawable="@drawable/uvv_star_play_progress_seek" android:minHeight="2dp" android:thumb="@drawable/uvv_seek_dot" android:thumbOffset="10dp" android:layout_weight="1"/>
+            <TextView android:textColor="@color/uvv_light_gray" android:layout_gravity="center_vertical" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="00:00"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

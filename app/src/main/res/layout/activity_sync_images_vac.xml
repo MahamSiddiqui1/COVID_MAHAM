@@ -1,183 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncImages_Activity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_rectangle_shape">
-
-        <RelativeLayout
-            android:id="@+id/rl_home_top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true">
-
-            <RelativeLayout
-                android:id="@+id/rlMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-
-                <TextView
-                    android:id="@+id/tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="true"
-                    android:text="@string/syncImagesEng"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="سینک" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_navigation_drawer"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:clickable="true">
-
-                <ImageView
-                    android:id="@+id/iv_navigation_drawer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:clickable="true"
-                    android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
-
+            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_sync"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-
-                android:layout_centerVertical="true">
-
-                <ImageView
-                    android:id="@+id/iv_sync"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_4sdp"
-                    android:src="@drawable/ic_sync_black_24dp"
-                    android:tint="@color/color_white" />
-
+            <RelativeLayout android:id="@+id/rl_sync" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_sync" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_sync_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
         </RelativeLayout>
-
-        <RelativeLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/rl_home_top">
-
-            <com.github.captain_miao.optroundcardview.OptRoundCardView
-                android:id="@+id/childregister_card_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="5dp"
-
-                app:optRoundCardBottomEdges="false"
-                app:optRoundCardCornerRadius="20dp"
-                app:optRoundCardLeftBottomCorner="false"
-                app:optRoundCardRightBottomCorner="false">
-
-
-                <RelativeLayout
-                    android:id="@+id/rl_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginTop="0dp"
-                    android:paddingBottom="10dp">
-
-                    <ListView
-                        android:id="@+id/lv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/_15sdp"
-                        android:divider="#00ffffff"
-                        android:dividerHeight="5dp"
-
-                        android:padding="0dp"
-                        android:scrollbarSize="@dimen/_1sdp"
-                        android:scrollbarThumbVertical="@color/grey_color"
-                        android:scrollbars="vertical" />
-
-
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
+            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
+                <RelativeLayout android:id="@+id/rl_1" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="0dp" android:layout_marginRight="5dp">
+                    <ListView android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/grey_color" android:id="@+id/lv" android:padding="0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp" android:divider="#00ffffff" android:dividerHeight="5dp"/>
                 </RelativeLayout>
-
-                <TextView
-                    android:visibility="gone"
-                    android:id="@+id/tv_record"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/noRecFoundEng"
-                    android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:id="@+id/ll_pbProgress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="50dp"
-                    android:paddingRight="50dp"
-                    android:paddingTop="10dp"
-                    android:visibility="gone">
-
-                    <ProgressBar
-                        android:id="@+id/pbProgress"
-                        android:layout_width="@dimen/_55sdp"
-                        android:layout_height="@dimen/_55sdp"
-                        android:layout_gravity="center"
-                        android:indeterminateDuration="500"
-                        android:indeterminateOnly="true"
-                        android:indeterminateBehavior="repeat"
-                        android:indeterminate="true"
-                        android:indeterminateDrawable="@drawable/circular_progressbar_layout2"
-                        android:indeterminateTintMode="src_in" />
-
-
-                    <TextView
-                        android:id="@+id/message"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:text="@string/loadingEng"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="نو سینک ڈیٹا"/>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_pbProgress" android:paddingLeft="50dp" android:paddingTop="10dp" android:paddingRight="50dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_55sdp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/circular_progressbar_layout2" android:indeterminateDuration="500" android:indeterminateBehavior="repeat"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/dark_blue_color" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="لوڈنگ ڈیٹا"/>
                 </LinearLayout>
-
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
-
-
         </RelativeLayout>
-
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

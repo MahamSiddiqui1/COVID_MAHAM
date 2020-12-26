@@ -1,115 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/fragment_sync_image"
-    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SyncDataActivities.SyncItems_Activity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-            <com.github.captain_miao.optroundcardview.OptRoundCardView
-                android:id="@+id/childregister_card_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="5dp"
-                app:optRoundCardBottomEdges="false"
-                app:optRoundCardCornerRadius="20dp"
-                app:optRoundCardLeftBottomCorner="false"
-                app:optRoundCardRightBottomCorner="false">
-
-
-                <RelativeLayout
-                    android:id="@+id/rl_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:paddingBottom="10dp">
-
-
-                        <ImageView
-                            android:id="@+id/iv_sync"
-                            android:layout_width="@dimen/_45sdp"
-                            android:layout_height="@dimen/_40sdp"
-
-                            android:clickable="true"
-                           android:padding="@dimen/_4sdp"
-                            android:src="@drawable/ic_sync_black_24dp"
-                            android:tint="@color/light_blue_color" />
-
-
-                    <ListView
-                        android:layout_below="@+id/iv_sync"
-                        android:id="@+id/lv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:divider="#00ffffff"
-                        android:dividerHeight="5dp"
-                        android:padding="0dp"
-                        android:scrollbarSize="@dimen/_1sdp"
-                        android:scrollbarThumbVertical="@color/grey_color"
-                        android:scrollbars="vertical" />
-
-
-                </RelativeLayout>
-
-                <TextView
-                    android:visibility="gone"
-                    android:id="@+id/tv_record"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/noDataEng"
-                    android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:id="@+id/ll_pbProgress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="50dp"
-                    android:paddingRight="50dp"
-                    android:paddingTop="10dp"
-                    android:visibility="gone">
-
-                    <ProgressBar
-                        android:id="@+id/pbProgress"
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_60sdp"
-                        android:layout_gravity="center"
-                        android:indeterminateOnly="true"
-                        android:indeterminateBehavior="repeat"
-                        android:indeterminate="true"
-                        android:indeterminateDrawable="@drawable/circular_progressbar_layout2" />
-
-
-                    <TextView
-                        android:id="@+id/message"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:text="@string/loadingEng"
-                        android:textStyle="bold"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_15sdp" />
-
-                </LinearLayout>
-
-            </com.github.captain_miao.optroundcardview.OptRoundCardView>
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_sync_image" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
+            <RelativeLayout android:id="@+id/rl_1" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp">
+                <ImageView android:id="@+id/iv_sync" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_sync_black_24dp" android:tint="@color/light_blue_color" android:layout_alignParentEnd="true"/>
+                <ListView android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/grey_color" android:id="@+id/lv" android:padding="0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp" android:divider="#00ffffff" android:dividerHeight="5dp" android:layout_below="@+id/iv_sync"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="نو سینک ڈیٹا"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_pbProgress" android:paddingLeft="50dp" android:paddingTop="10dp" android:paddingRight="50dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/circular_progressbar_layout2" android:indeterminateBehavior="repeat"/>
+                <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="لوڈنگ ڈیٹا..."/>
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

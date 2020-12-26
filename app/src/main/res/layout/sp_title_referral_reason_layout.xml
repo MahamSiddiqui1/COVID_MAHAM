@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-android:layout_height="wrap_content"
-    android:gravity="right|center_vertical"
-    android:padding="@dimen/_10sdp"
-    android:text="@string/selectReferalReasonPrompt"
-    android:textAlignment="gravity"
-    android:textColor="@color/dark_blue_color"
-    android:textSize="@dimen/_14sdp"
-    tools:ignore="RtlHardcoded" />
-    <!--android:drawableStart="@drawable/ic_keyboard_arrow_down_black_24dp"-->
-<!--android:drawableTint="@color/dark_blue_color"-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:gravity="right|center_vertical|center_horizontal|center" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ریفرل وجہ منتخب کریں" android:textAlignment="gravity"/>

@@ -1,225 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.VAC_App.VAC_SearchVillage_Activity">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_rectangle_shape">
-
-        <RelativeLayout
-            android:id="@+id/rl_home_top"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true">
-
-            <TextView
-                android:id="@+id/tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true"
-                android:text="@string/search"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_16sdp"
-                android:textStyle="bold" />
-
-            <com.oshi.libsearchtoolbar.SearchAnimationToolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                app:searchBackgroundColor="@color/color_white"
-                app:searchHint="Enter search, name / phone number, or village name"
-                app:titleTextColor="@color/color_white" />
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تلاش" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+            <com.oshi.libsearchtoolbar.SearchAnimationToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="50dp" app:searchBackgroundColor="@color/color_white" app:searchHint="تلاش, نام/فون نمبر یا گاؤں کا نام لکھیں" app:titleTextColor="@color/color_white"/>
         </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/rl_home_top">
-
-            <com.github.captain_miao.optroundcardview.OptRoundCardView
-                android:id="@+id/childregister_card_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="15dp"
-                app:optRoundCardBottomEdges="false"
-                app:optRoundCardCornerRadius="20dp"
-                app:optRoundCardLeftBottomCorner="false"
-                app:optRoundCardRightBottomCorner="false">
-
-
-                <RelativeLayout
-                    android:id="@+id/rl_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="3dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="3dp"
-                    android:paddingBottom="10dp">
-
-                    <LinearLayout
-                        android:id="@+id/ll_search_vaccine_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            android:text="@string/choose_a_vaccine_name"
-                            android:textSize="@dimen/_12sdp" />
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <Spinner
-                                android:id="@+id/spVaccineName"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginStart="@dimen/_2sdp"
-                                android:layout_marginTop="3dp"
-                                android:layout_marginEnd="@dimen/_5sdp"
-                                android:layout_toRightOf="@+id/iv_clear_spinner"
-                                android:background="@drawable/edittext_background_layout"
-                                android:spinnerMode="dialog" />
-
-                            <ImageView
-                                android:visibility="gone"
-                                android:id="@+id/iv_clear_spinner"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:focusable="true"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:padding="@dimen/_3sdp"
-                                android:src="@drawable/ic_close_black_24dp"
-                                android:tint="@color/light_grey_color" />
-
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
+            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
+                <RelativeLayout android:id="@+id/rl_1" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="0dp" android:layout_marginRight="3dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_search_vaccine_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/_8sdp" android:text="ویکسین کا نام منتخب کریں"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <Spinner android:layout_gravity="center_vertical" android:id="@+id/spVaccineName" android:background="@drawable/edittext_background_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_2sdp" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/_5sdp" android:layout_toRightOf="@+id/iv_clear_spinner" android:spinnerMode="dialog"/>
+                            <ImageView android:id="@+id/iv_clear_spinner" android:padding="@dimen/_3sdp" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:src="@drawable/ic_close_black_24dp" android:tint="@color/light_grey_color" android:layout_centerVertical="true"/>
                         </RelativeLayout>
-
-
                     </LinearLayout>
-
-
-                    <ListView
-                        android:id="@+id/lv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_below="@+id/ll_search_vaccine_name"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:divider="#00ffffff"
-                        android:dividerHeight="5dp"
-                        android:padding="0dp"
-                        android:scrollbarSize="@dimen/_1sdp"
-                        android:scrollbarThumbVertical="@color/grey_color"
-                        android:scrollbars="vertical" />
-
-
+                    <ListView android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/grey_color" android:id="@+id/lv" android:padding="0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp" android:divider="#00ffffff" android:dividerHeight="5dp" android:layout_below="@+id/ll_search_vaccine_name"/>
                 </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/rl_record"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_30sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:gravity="center"
-                    android:visibility="gone">
-
-                    <TextView
-                        android:id="@+id/tv_record_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/noRecFor"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_13sdp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tv_record"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_toRightOf="@+id/tv_record_name"
-                        android:ellipsize="end"
-                        android:maxEms="6"
-                        android:maxLines="1"
-                        android:text="@string/parsan"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_13sdp"
-                        android:textStyle="bold" />
-
+                <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/rl_record" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_30sdp" android:layout_marginRight="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/tv_record_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="کا کوئی ریکارڈ نہیں"/>
+                    <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:ellipsize="end" android:id="@+id/tv_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="Parsan" android:maxLines="1" android:maxEms="6" android:layout_toRightOf="@+id/tv_record_name"/>
                 </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll_pbProgress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingLeft="50dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="50dp"
-                    android:paddingBottom="15dp"
-                    android:visibility="gone">
-
-                    <ProgressBar
-                        android:id="@+id/pbProgress"
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_60sdp"
-                        android:layout_gravity="center"
-                        android:indeterminate="true"
-                        android:indeterminateBehavior="repeat"
-                        android:indeterminateDrawable="@drawable/circular_progressbar_layout2"
-                        android:indeterminateOnly="true" />
-
-
-                    <TextView
-                        android:id="@+id/message"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:text="@string/loadingData"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_15sdp"
-                        android:textStyle="bold" />
-
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_pbProgress" android:paddingLeft="50dp" android:paddingTop="10dp" android:paddingRight="50dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/circular_progressbar_layout2" android:indeterminateBehavior="repeat"/>
+                    <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="لوڈنگ ڈیٹا..."/>
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tv_NoRecord"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/noRecord"
-                    android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold"
-                    android:visibility="gone" />
-
+                <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_gravity="center" android:id="@+id/tv_NoRecord" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="کوئی ریکارڈ نہیں "/>
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
-
-
         </RelativeLayout>
-
     </RelativeLayout>
-
-
 </android.support.constraint.ConstraintLayout>

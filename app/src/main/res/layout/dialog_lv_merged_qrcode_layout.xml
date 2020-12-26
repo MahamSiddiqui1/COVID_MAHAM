@@ -1,138 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/color_white"
-    android:orientation="vertical"
-    android:padding="@dimen/_5sdp">
-
-    <ListView
-        android:id="@+id/lv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginBottom="@dimen/_5sdp"
-        android:dividerHeight="1dp"
-        android:scrollbarSize="@dimen/_1sdp"
-        android:scrollbarThumbVertical="@color/dark_blue_color"
-        android:scrollbars="vertical" />
-
-    <TextView
-        android:id="@+id/tvMerged"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:padding="@dimen/_14sdp"
-        android:text="کیا آپ ڈیٹا کو ملانا چاہتے ہیں؟"
-        android:textColor="@color/dark_blue_color"
-        android:textSize="@dimen/_12sdp"
-        android:visibility="gone"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvNoDataFound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_gravity="center_horizontal"
-        android:text="اس QR کوڈ کا کوئی نتائج نہیں"
-        android:textColor="@color/graph_red_color"
-        android:textSize="@dimen/_12sdp"
-        android:textStyle="bold"
-        android:visibility="gone" />
-
-
-
-    <LinearLayout
-        android:id="@+id/ll_threeButtons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/_10sdp"
-        android:weightSum="3">
-
-        <TextView
-            android:id="@+id/tvScanAgain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:padding="@dimen/_12sdp"
-            android:text="@string/rescan"
-            android:textColor="@color/dark_blue_color"
-            android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/tvCancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="@dimen/_12sdp"
-            android:text="@string/cancel"
-            android:textColor="@color/graph_red_color"
-            android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvDone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:gravity="right"
-            android:padding="@dimen/_12sdp"
-            android:text="@string/dialog_mhr_jari_rhy_button_text"
-            android:textColor="@color/green_color"
-            android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
-
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_white" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ListView android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/dark_blue_color" android:id="@+id/lv" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:dividerHeight="1dp"/>
+    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_gravity="center_horizontal" android:id="@+id/tvMerged" android:padding="@dimen/_14sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="کیا آپ ڈیٹا کو ملانا چاہتے ہیں؟"/>
+    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/graph_red_color" android:layout_gravity="center_horizontal" android:id="@+id/tvNoDataFound" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="اس QR کوڈ کا کوئی نتائج نہیں"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_threeButtons" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:weightSum="3">
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:gravity="end" android:id="@+id/tvScanAgain" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="دوبارہ اسکین کرے" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/graph_red_color" android:gravity="center" android:id="@+id/tvCancel" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="منسوخ کریں" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/green_color" android:gravity="right" android:id="@+id/tvDone" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="جاری رہے" android:layout_weight="1" android:layout_alignParentRight="true"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:visibility="gone"
-        android:id="@+id/ll_twoButtons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/_10sdp"
-        android:weightSum="2">
-
-
-        <TextView
-            android:id="@+id/tvNo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="@dimen/_12sdp"
-            android:text="@string/_gee_nahi"
-            android:textColor="@color/graph_red_color"
-            android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvYes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:padding="@dimen/_12sdp"
-            android:text="@string/_gee_nahi"
-            android:textColor="@color/green_color"
-            android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
-
-
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_twoButtons" android:paddingBottom="@dimen/_10sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:weightSum="2">
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/graph_red_color" android:gravity="center" android:id="@+id/tvNo" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="جی نہیں" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/green_color" android:gravity="center_horizontal" android:id="@+id/tvYes" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="جی ہاں" android:layout_weight="1" android:layout_alignParentRight="true"/>
     </LinearLayout>
-
-
-
-
 </LinearLayout>

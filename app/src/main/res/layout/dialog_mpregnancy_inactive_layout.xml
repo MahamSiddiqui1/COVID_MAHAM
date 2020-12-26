@@ -1,302 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/cr_rectangle_layout"
-    android:backgroundTint="@color/color_white">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/_15sdp">
-
-        <ImageView
-            android:id="@+id/iv_close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="0dp"
-            android:layout_marginTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="5dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/ic_close_black_24dp"
-            android:tint="@color/pink_color" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:gravity="center_horizontal"
-            android:paddingLeft="@dimen/_10sdp"
-            android:paddingRight="@dimen/_10sdp"
-            android:text="@string/reasonInactPreg"
-            android:textColor="@color/pink_color"
-            android:textSize="@dimen/_12sdp"
-            android:visibility="gone" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RelativeLayout
-                    android:id="@+id/rl_liveBirth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_LiveBirth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:id="@+id/tx1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_LiveBirth"
-                        android:text="@string/birthAlive"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/cr_rectangle_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="0dp" android:src="@drawable/ic_close_black_24dp" android:tint="@color/pink_color" android:paddingEnd="10dp" android:layout_marginEnd="0dp"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/pink_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="حمل غیر فعال کرنے کی وجہ منتخب کریں."/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+            <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@+id/rl_liveBirth" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_LiveBirth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="زندہ پیدائش" android:layout_toLeftOf="@+id/rb_LiveBirth" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/rl_Abortion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_Abortion"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_Abortion"
-                        android:text="@string/abortion"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+                <RelativeLayout android:orientation="vertical" android:id="@+id/rl_Abortion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_Abortion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="حمل گرانا" android:layout_toLeftOf="@+id/rb_Abortion" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/rl_StillBirth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_StillBirth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_StillBirth"
-                        android:text="@string/deadChild"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
-
+                <RelativeLayout android:orientation="vertical" android:id="@+id/rl_StillBirth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_StillBirth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="مردہ بچہ" android:layout_toLeftOf="@+id/rb_StillBirth" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-
-                <RelativeLayout
-                android:id="@+id/rl_NeonatalDeath"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/rb_NeonatalDeath"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:buttonTint="@color/pink_color"
-                    android:gravity="center_vertical" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_toStartOf="@+id/rb_NeonatalDeath"
-                    android:text="@string/neonatalDeath"
-                    android:textColor="@color/dark_blue_color"
-                    android:textSize="@dimen/_12sdp" />
-
-            </RelativeLayout>
-
-
-
-
-
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_InfantDeath"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_InfantDeath"
-                        android:text="@string/infantDeath"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+                <RelativeLayout android:orientation="vertical" android:id="@+id/rl_NeonatalDeath" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_NeonatalDeath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="نیوناٹل ڈیتھ (پیدائش کے ۱ ہفتہ سے بھی کم)" android:layout_toLeftOf="@+id/rb_NeonatalDeath" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_WrongEntry"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_WrongEntry"
-                        android:text="@string/wrongEntry"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+                <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_InfantDeath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="انفنٹ  ڈیتھ (۱ ہفتہ سے زیادہ لیکن ۱ سال سے کم)" android:layout_toLeftOf="@+id/rb_InfantDeath" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/rb_DeliveryCompleted"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:buttonTint="@color/pink_color"
-                        android:gravity="center_vertical" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/rb_DeliveryCompleted"
-                        android:text="@string/deliver"
-                        android:textColor="@color/dark_blue_color"
-                        android:textSize="@dimen/_12sdp" />
-
+                <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_WrongEntry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="غلط اندراج" android:layout_toLeftOf="@+id/rb_WrongEntry" android:layout_centerVertical="true"/>
                 </RelativeLayout>
-
-
-                <!--<RadioButton-->
-                <!--android:buttonTint="@color/pink_color"-->
-                <!--android:id="@+id/rb_NeonatalDeath"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="@dimen/_10sdp"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:text="Neo-Natal Death(&lt; 1 week of Birth)"-->
-                <!--android:textColor="@color/dark_blue_color"-->
-                <!--android:textSize="@dimen/_12sdp" />-->
-
-
-                <!--<RadioButton-->
-                <!--android:id="@+id/rb_InfantDeath"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:buttonTint="@color/pink_color"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="@dimen/_10sdp"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:text="Infant Death (1+ week but &lt;1 year)"-->
-                <!--android:textColor="@color/dark_blue_color"-->
-                <!--android:textSize="@dimen/_12sdp" />-->
-
-                <!--<RadioButton-->
-                <!--android:id="@+id/rb_WrongEntry"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:buttonTint="@color/pink_color"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="@dimen/_10sdp"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:text="Wrong Entry"-->
-                <!--android:textColor="@color/dark_blue_color"-->
-                <!--android:textSize="@dimen/_12sdp" />-->
-
-
+                <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioButton android:gravity="center_vertical" android:id="@+id/rb_DeliveryCompleted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="زچگی ہونا" android:layout_toLeftOf="@+id/rb_DeliveryCompleted" android:layout_centerVertical="true"/>
+                </RelativeLayout>
             </RadioGroup>
-
-            <Button
-                android:id="@+id/submit"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_25sdp"
-                android:background="@drawable/login_button_shape_layout"
-                android:text="@string/cbf_jama_kre_text"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/_15sdp" />
-
+            <Button android:textSize="@dimen/_15sdp" android:textColor="@color/color_white" android:layout_gravity="center_horizontal" android:id="@+id/btn_jamaa_kre" android:background="@drawable/login_button_shape_layout" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_50sdp" android:layout_marginTop="@dimen/_25sdp" android:text="@string/cbf_jama_kre_text"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

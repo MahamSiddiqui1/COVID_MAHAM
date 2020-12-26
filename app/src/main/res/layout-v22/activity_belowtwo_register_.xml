@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/mr_khandan_register_kre_text" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_home" android:clickable="true" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginRight="@dimen/_10sdp" android:src="@drawable/ic_home_black_24dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
+            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/mother_register_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="15dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
+                <ScrollView android:scrollbarSize="0dp" android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+                    <RelativeLayout android:paddingBottom="@dimen/_30sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                        <RelativeLayout android:id="@+id/rl_1" android:layout_width="match_parent" android:layout_height="81dp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp">
+                            <RelativeLayout android:id="@+id/rl_2" android:background="@drawable/cr_rectangle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/dark_blue_color" android:gravity="center_horizontal" android:id="@+id/txt_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cr_dou_saal_sy_kum_umer" android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@+id/rl_circle_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="5dp" android:layout_toRightOf="@+id/rl_2">
+                                <android.support.p048v7.widget.CardView android:id="@+id/card_circle_view" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_centerInParent="true" app:cardBackgroundColor="@color/color_white" app:cardCornerRadius="35dp" app:cardElevation="8dp">
+                                    <ImageView android:layout_gravity="center" android:background="@drawable/ic_add_member_icon" android:layout_width="@dimen/_30sdp" android:layout_height="wrap_content"/>
+                                </android.support.p048v7.widget.CardView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <TableLayout android:id="@+id/table_layout" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_1">
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:id="@+id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="نام" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_naam_bimaah_waldiyat" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords">
+                                    <requestFocus/>
+                                </EditText>
+                            </TableRow>
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mr_walida_ka_naam_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_walid_ka_naame_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_walida_ka_naam" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    <EditText android:textSize="@dimen/_12sdp" android:layout_gravity="center" android:id="@+id/et_walid_ka_naam" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/cr_tareekh_pedaish_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_sarbarah_kay_sath_rishta_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_tareekh_paidaish" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_weight="1" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_sarbarah_kay_sath_rishta" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/age" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_shanakhti_card_number_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_age" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_weight="1" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_shanakhti_card_number" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:maxLength="15" android:layout_weight="1" android:inputType="number" android:layout_marginStart="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_jins_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_azdawaji_hasiyat_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_jins" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <ImageView android:id="@+id/image_drop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_down_black_24dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_2sdp"/>
+                                        <Spinner android:id="@+id/sp_jins" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/image_drop" android:layout_centerVertical="true" android:spinnerMode="dropdown" android:layout_marginEnd="@dimen/_5sdp" android:popupElevation="0dp"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_azdawaji_hasiyat" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp">
+                                        <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_down_black_24dp" android:layout_centerVertical="true"/>
+                                        <Spinner android:id="@+id/sp_azdawaji_hasiyat" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:popupBackground="@color/light_pink_color" android:layout_toRightOf="@+id/image" android:layout_centerVertical="true" android:spinnerMode="dropdown" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_mobile_number_text" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_mobile_number" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:layout_gravity="center" android:id="@+id/et_mobile_number" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:maxLength="12" android:inputType="phone" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mr_tareekh_nakal_makani_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_tareekh_wafat_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_tareekh_nakal_makani" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_weight="1" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_tareekh_wafaat" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_weight="1" android:layout_marginStart="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cr_tabsarah_wajah_wafaat_text" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <EditText android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/light_pink_color" android:textSize="@dimen/_12sdp" android:id="@+id/et_tabsarah_wajah_wafaat" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1" android:inputType="textMultiLine" android:isScrollContainer="true" android:scrollIndicators="4"/>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cr_tabsarah_wajah_nakal_makani_text" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <EditText android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/light_pink_color" android:textSize="@dimen/_12sdp" android:id="@+id/et_tabsarah_wajah_trasnfer" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1" android:inputType="textMultiLine" android:isScrollContainer="true" android:scrollIndicators="4"/>
+                            </TableRow>
+                            <TableRow android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_delivery_month_text" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_delivery_month" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+                            </TableRow>
+                            <TableRow android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mr_delivery_year_text" android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_delivery_year" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/cr_khandan_number_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cr_infradi_text" android:layout_alignParentRight="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <EditText android:enabled="false" android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/et_khandan_number" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:maxLines="1" android:lines="1" android:layout_weight="1" android:layout_marginEnd="@dimen/_5sdp"/>
+                                    <EditText android:textSize="@dimen/_12sdp" android:id="@+id/et_infradi" android:background="@drawable/edittext_background_layout" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_weight="1" android:inputType="number" android:layout_marginStart="@dimen/_5sdp"/>
+                                </LinearLayout>
+                            </TableRow>
+                            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/rl_11" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <ImageView android:layout_gravity="right" android:id="@+id/image_bio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fingerprint_icon"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/edittext_background_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_5sdp">
+                                    <Switch android:id="@+id/sw_biometric_faal_kre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_5sdp" android:layout_marginStart="@dimen/_5sdp" android:layout_alignParentStart="true" android:thumbTint="#e9a7de"/>
+                                </RelativeLayout>
+                                <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_biometric" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tv_biometric_faal_kre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cr_biometric_ko_faal_kre_text" android:layout_alignParentRight="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/ll_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <ImageView android:layout_gravity="right" android:id="@+id/image_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_qrcode_icon"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/edittext_background_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_switch_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_5sdp">
+                                    <Switch android:id="@+id/sw_qrcode_faal_kre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_5sdp" android:layout_marginStart="@dimen/_5sdp" android:layout_alignParentStart="true" android:thumbTint="#e9a7de"/>
+                                </RelativeLayout>
+                                <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tv_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text=" QR" android:layout_alignParentRight="true"/>
+                                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tv_qrcode_faal_kre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cr_qr_code_ko_faal_kre_text" android:layout_toLeftOf="@+id/tv_qrcode"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </TableLayout>
+                        <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:id="@+id/btn_jamaa_kre" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/cr_jaama_kre_text" android:layout_below="@+id/table_layout" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </ScrollView>
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

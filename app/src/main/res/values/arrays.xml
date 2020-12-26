@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="BloodPressure">
+        <item>Normal</item>
+        <item>High</item>
+        <item>Low</item>
+    </array>
+    <array name="array_azdawaji_hasiyat">
+        <item>شادی شدہ</item>
+        <item>غیر شادی شدہ</item>
+        <item>طلاق یافتہ</item>
+        <item>بیوہ</item>
+    </array>
+    <array name="array_child_daeth_reason_english">
+        <item>Vaccine Preventable</item>
+        <item>Illness</item>
+        <item>Accident</item>
+        <item>Others</item>
+    </array>
+    <array name="array_child_daeth_reason_urdu">
+        <item>بیماری (Vaccine Preventable)</item>
+        <item>بیماری</item>
+        <item>حادثہ</item>
+        <item>غلط اندراج</item>
+        <item>دوسری وجوہات</item>
+    </array>
+    <array name="array_child_gender">
+        <item>لڑکی</item>
+        <item>لڑکا</item>
+    </array>
+    <array name="array_child_illness_medicine">
+        <item>Syrup Paracetamol</item>
+        <item>Tablet Paracetamol</item>
+        <item>Syrup Septran</item>
+        <item>Syrup Amoxil</item>
+        <item>Syrup Zincsulfate</item>
+        <item>ORS</item>
+    </array>
+    <array name="array_gaon">
+        <item>گاؤں 1</item>
+        <item>گاؤں 2</item>
+        <item>گاؤں 3</item>
+    </array>
+    <array name="array_gender">
+        <item>عورت</item>
+        <item>مرد</item>
+    </array>
+    <array name="array_health_committee_topic">
+        <item>Maternal Care</item>
+        <item>Hygiene</item>
+        <item>Water Sanitation</item>
+        <item>Child Immunization</item>
+        <item>Family Planning</item>
+        <item>Other</item>
+    </array>
+    <array name="array_health_committee_topic_urdu">
+        <item>زچگی کی دیکھ بھال</item>
+        <item>حفظان صحت</item>
+        <item>پانی کی صفائی</item>
+        <item>بچوں کو حفاظتی ٹیکے لگانا</item>
+        <item>خاندانی منصوبہ بندی</item>
+        <item>دوسرے</item>
+    </array>
+    <array name="array_inside_outside_council">
+        <item>In Facility</item>
+        <item>Outreach</item>
+        <item>Mobile Vaccination</item>
+    </array>
+    <array name="array_latrine_system">
+        <item>Flush System with Sewerage</item>
+        <item>Flush System with Septic Tank</item>
+        <item>Other</item>
+    </array>
+    <array name="array_mother_daeth_reason_english">
+        <item>Eclampsia</item>
+        <item>Postpartum Hemorrhage</item>
+        <item>infection</item>
+        <item>Uterin Rupture</item>
+        <item>Accident</item>
+        <item>other</item>
+    </array>
+    <array name="array_mother_daeth_reason_urdu">
+        <item>ایکلیمپسیا</item>
+        <item>نفلی نکسیر</item>
+        <item>انفیکشن</item>
+        <item>بچہ دانی پھٹنا</item>
+        <item>حادثہ</item>
+        <item>غلط اندراج</item>
+        <item>دوسری وجوہات</item>
+    </array>
+    <array name="array_mother_illness_medicine">
+        <item>Syrup Paracetamol</item>
+        <item>Tablet Paracetamol</item>
+        <item>Syrup Septran</item>
+        <item>Syrup Amoxil</item>
+        <item>Syrup Zincsulfate</item>
+        <item>Tablet Folic Acid</item>
+        <item>Oral Contraceptive Tablets ( Familia 28)</item>
+        <item>Contraceptive Injectable (Deprova)</item>
+        <item>Condoms</item>
+    </array>
+    <array name="array_naya_sabiqa">
+        <item>نیا</item>
+        <item>سابقہ</item>
+    </array>
+    <array name="array_peenay_kai_paani_ka_zarya">
+        <item>Tap (Public Health Engineering)</item>
+        <item>Hand Pump / Motor Pump</item>
+        <item>Spring / Canal</item>
+        <item>Well</item>
+        <item>Other</item>
+    </array>
+    <array name="array_refuse_vaccine">
+        <item>Fear</item>
+        <item>Religious</item>
+        <item>Misconceptions</item>
+    </array>
+    <array name="array_sms_numbers">
+        <item>03455315392</item>
+        <item>03455235762</item>
+        <item>03457981783</item>
+        <item>03452074907</item>
+    </array>
+    <array name="array_sp_blood_group">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </array>
+    <array name="array_sp_planning_type">
+        <item>Pills (گولیاں)</item>
+        <item>Condoms (کنڈومز)</item>
+        <item>IUD (آئی-یو-ڈی)</item>
+        <item>Implants (ایمپلانٹس)</item>
+        <item>Injectable (انجیکشن)</item>
+        <item>Tubal Ligation (نال بندی)</item>
+    </array>
+    <array name="array_sp_service_provided">
+        <item>Pills</item>
+        <item>Condoms</item>
+        <item>IUD</item>
+        <item>Implants</item>
+        <item>Injectable</item>
+    </array>
+    <array name="array_tahseel">
+        <item>تحصیل 1</item>
+        <item>تحصیل 2</item>
+        <item>تحصیل 3</item>
+    </array>
+    <array name="array_union_council">
+        <item>یونین کونسل 1</item>
+        <item>یونین کونسل 2</item>
+        <item>یونین کونسل 3</item>
+    </array>
+    <array name="array_zila">
+        <item>ضلع 1</item>
+        <item>ضلع 2</item>
+        <item>ضلع 3</item>
+    </array>
+    <array name="month">
+        <item>January</item>
+        <item>Feburary</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="referral_reasons">
+        <item>زچہ ڈلیوری</item>
+        <item>کم وزن بچے</item>
+        <item>اسہال</item>
+        <item>کھانسی</item>
+        <item>بخار</item>
+        <item>خون کی کمی</item>
+        <item>آنکھوں کی بیماری</item>
+        <item>زہنی امراض</item>
+        <item>دمہ</item>
+        <item>شوگر</item>
+        <item>دل کی بیماری</item>
+        <item>ہائی بلڈ پریشر</item>
+        <item>کینسر</item>
+        <item>نشے کی عادی</item>
+        <item>ٹی بی</item>
+        <item>پیشاب بہنا (Fistula)</item>
+        <item>SAM</item>
+        <item>دوسری وجہ</item>
+    </array>
+</resources>

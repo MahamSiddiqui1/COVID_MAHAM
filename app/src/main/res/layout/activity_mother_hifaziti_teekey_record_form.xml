@@ -1,979 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_MotherDashboardActivities.MotherHifazitiTeekeyRecordActivities.Mother_HifazitiTeekeyRecordForm_Activity">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_rectangle_shape">
-
-        <RelativeLayout
-            android:id="@+id/rl_home_top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true">
-
-            <RelativeLayout
-                android:id="@+id/rlMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-
-                <TextView
-                    android:id="@+id/tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="true"
-                    android:text="@string/mhtrf_hifaziti_teekey_ka_record_text"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mhtrf_hifaziti_teekey_ka_record_text" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_navigation_drawer"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:clickable="true">
-
-                <ImageView
-                    android:id="@+id/iv_navigation_drawer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:clickable="true"
-                    android:padding="@dimen/_10sdp"
-                    android:src="@drawable/ic_menu" />
-
+            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_home"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_40sdp"
-
-                android:layout_centerVertical="true">
-
-                <ImageView
-                    android:id="@+id/iv_home"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_4sdp"
-                    android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/color_white" />
-
+            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_editform"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toStartOf="@+id/rl_home">
-
-                <ImageView
-                    android:id="@+id/iv_editform"
-                    android:layout_width="@dimen/_35sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_centerInParent="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:padding="@dimen/_6sdp"
-                    android:src="@drawable/ic_editprofile_icon"
-                    android:tint="@color/color_white"
-                    android:visibility="gone" />
+            <RelativeLayout android:id="@+id/rl_editform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rl_home" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_editform" android:padding="@dimen/_6sdp" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_editprofile_icon" android:tint="@color/color_white" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
             </RelativeLayout>
-
         </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/rl_home_top">
-
-            <com.github.captain_miao.optroundcardview.OptRoundCardView
-                android:id="@+id/childregister_card_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="5dp"
-                app:optRoundCardBackgroundColor="@color/color_white"
-                app:optRoundCardBottomEdges="false"
-                app:optRoundCardCornerRadius="20dp"
-                app:optRoundCardLeftBottomCorner="false"
-                app:optRoundCardRightBottomCorner="false">
-
-
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:scrollbarSize="0dp"
-                    android:scrollbarThumbVertical="@android:color/transparent">
-
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginTop="5dp"
-                        android:paddingBottom="@dimen/_30sdp">
-
-
-                        <TableLayout
-                            android:id="@+id/table_layout"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_below="@+id/rl_1"
-                            android:padding="@dimen/_10sdp">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/txt_1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/cbf_tareekh_indraj_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
-
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
+            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBackgroundColor="@color/color_white" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
+                <ScrollView android:scrollbarSize="0dp" android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+                    <RelativeLayout android:paddingBottom="@dimen/_30sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                        <TableLayout android:id="@+id/table_layout" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_1">
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cbf_tareekh_indraj_text" android:layout_weight="1"/>
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:id="@+id/ll_khandan_ka_number"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:id="@+id/et_tareekh_indraj"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:cursorVisible="false"
-                                        android:drawablePadding="@dimen/_10sdp"
-                                        android:drawableEnd="@drawable/ic_calender"
-                                        android:focusableInTouchMode="false"
-                                        android:gravity="right"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_khandan_ka_number" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_tareekh_indraj" android:background="@null" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                 </LinearLayout>
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:id="@+id/txt_TT"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:text="@string/tt"
-                                        android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_12sdp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="@dimen/_1sdp"
-                                        android:layout_toStartOf="@+id/txt_TT"
-                                        android:text="@string/mhtrf_tt_kay_teekey_text"
-                                        android:textColor="@color/text_color"
-                                        android:textSize="@dimen/_12sdp"
-                                        android:textStyle="bold" />
-
-
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:id="@+id/txt_TT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="TT" android:layout_alignParentRight="true"/>
+                                    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_1sdp" android:text="@string/mhtrf_tt_kay_teekey_text" android:layout_toLeftOf="@+id/txt_TT"/>
                                 </RelativeLayout>
-
-
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_10sdp"
-                                android:orientation="horizontal">
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_15sdp"
-                                            android:text="@string/mhtrf_dusra_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mhtrf_dusra_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="@string/mhtrf_phela_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_phela_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-
                                 </LinearLayout>
-
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-
-                                        <EditText
-                                            android:id="@+id/et_dusra"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_dusra" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
-                                    <LinearLayout
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-                                        <EditText
-                                            android:id="@+id/et_phela"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp">
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_phela" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp">
                                             <requestFocus/>
                                         </EditText>
-
-
                                     </LinearLayout>
-
-
                                 </LinearLayout>
-
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/mhtrf_zichgi_ki_mutawaqqa_tareekh_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp"
-                                    android:textStyle="bold" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_zichgi_ki_mutawaqqa_tareekh_text" android:layout_weight="1"/>
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_15sdp"
-                                            android:text="@string/mhtrf_saal_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mhtrf_saal_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="@string/mhtrf_mahina_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_mahina_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-
                                 </LinearLayout>
-
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-
-                                        <EditText
-                                            android:id="@+id/et_saal"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_saal" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
-                                    <LinearLayout
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-                                        <EditText
-                                            android:id="@+id/et_mahina"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_mahina" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
                                 </LinearLayout>
-
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/mhtrf_hunarmand_fard_say_muaina_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp"
-                                    android:textStyle="bold" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_hunarmand_fard_say_muaina_text" android:layout_weight="1"/>
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:orientation="horizontal">
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_15sdp"
-                                            android:text="@string/mhtrf_dusra_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mhtrf_dusra_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="@string/mhtrf_phela_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_phela_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-
                                 </LinearLayout>
-
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-
-                                        <EditText
-                                            android:id="@+id/et_second"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_second" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
-                                    <LinearLayout
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-                                        <EditText
-                                            android:id="@+id/et_first"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_first" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
                                 </LinearLayout>
-
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_15sdp"
-                                            android:text="@string/mhtrf_fourth_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:text="@string/mhtrf_fourth_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-                                    <RelativeLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:text="@string/mhtrf_teesra_text"
-                                            android:textColor="@color/text_color"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_teesra_text" android:layout_alignParentRight="true"/>
                                     </RelativeLayout>
-
-
                                 </LinearLayout>
-
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginEnd="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-
-                                        <EditText
-                                            android:id="@+id/et_fourth"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_fourth" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
-                                    <LinearLayout
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="5dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/edittext_background_layout"
-                                        android:orientation="horizontal">
-
-                                        <EditText
-                                            android:id="@+id/et_third"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:layout_marginEnd="@dimen/_5sdp"
-                                            android:layout_marginStart="@dimen/_5sdp"
-                                            android:background="@null"
-                                            android:gravity="right"
-                                            android:inputType="textCapWords"
-                                            android:lines="1"
-                                            android:maxLines="1"
-                                            android:padding="@dimen/_5sdp"
-                                            android:textSize="@dimen/_12sdp" />
-
-
+                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_weight="1">
+                                        <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_third" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                     </LinearLayout>
-
-
                                 </LinearLayout>
-
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="@dimen/_15sdp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/mhtrf_zichgi_kis_ny_ki_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_zichgi_kis_ny_ki_text" android:layout_weight="1"/>
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:id="@+id/et_zichgi_kis_ny_ki"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:gravity="right"
-                                        android:inputType="text"
-                                        android:lines="1"
-                                        android:maxLines="1"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_zichgi_kis_ny_ki" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="text" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                 </LinearLayout>
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/mhtrf_haaml_ka_natija_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_haaml_ka_natija_text" android:layout_weight="1"/>
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:id="@+id/et_haaml_ka_natija"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:gravity="right"
-                                        android:inputType="textCapWords"
-                                        android:lines="1"
-                                        android:maxLines="1"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_haaml_ka_natija" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                 </LinearLayout>
-
                             </TableRow>
-
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_15sdp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:layout_weight="1"
-                                    android:text="@string/mhtrf_tabsrah_khaas_ikdaam_text"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mhtrf_tabsrah_khaas_ikdaam_text" android:layout_weight="1"/>
                             </TableRow>
-
-                            <TableRow
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/edittext_background_layout"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:id="@+id/et_tabsrah_khaas_ikdaam"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="@dimen/_5sdp"
-                                        android:layout_marginStart="@dimen/_5sdp"
-                                        android:background="@null"
-                                        android:gravity="right"
-                                        android:inputType="textCapWords"
-                                        android:lines="1"
-                                        android:maxLines="1"
-                                        android:padding="@dimen/_5sdp"
-                                        android:textSize="@dimen/_12sdp" />
-
+                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                                    <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_tabsrah_khaas_ikdaam" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:inputType="textCapWords" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
                                 </LinearLayout>
-
                             </TableRow>
-
-
                         </TableLayout>
-
-                        <Button
-                            android:id="@+id/submit"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/table_layout"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:background="@drawable/login_button_shape_layout"
-                            android:text="@string/mhtrf_jamaa_kre_button_text"
-                            android:textColor="@color/color_white"
-                            android:textSize="@dimen/_18sdp" />
-
-
+                        <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:id="@+id/btn_jamaa_kre" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/mhtrf_jamaa_kre_button_text" android:layout_below="@+id/table_layout" android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
-
-
                 </ScrollView>
-
-
-
-                <ProgressBar
-                    android:id="@+id/pbProgress"
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_cardview"
-                    android:indeterminateDrawable="@drawable/rotate_animation"
-                    android:padding="@dimen/_10sdp"
-                    android:visibility="gone" />
-
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:background="@drawable/circle_cardview" android:padding="@dimen/_10sdp" android:visibility="gone" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:indeterminateDrawable="@drawable/rotate_animation"/>
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
-
-
         </RelativeLayout>
-
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>
