@@ -18,15 +18,11 @@ import android.widget.Toast;
 
 import com.akdndhrc.covid_module.Adapter.Adt_CovidImmunization.Adt_SideEffectsRecordList;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
-import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 
 public class side_effects_List_Activity extends AppCompatActivity {

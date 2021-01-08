@@ -185,9 +185,6 @@
 
                             </TableRow>
 
-
-
-
                             <TableRow
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -226,7 +223,6 @@
                                             android:gravity="left"
                                             android:padding="@dimen/_5sdp"
                                             android:textSize="@dimen/_12sdp">
-
                                             <requestFocus />
                                         </EditText>
                                     </RelativeLayout>
@@ -253,7 +249,6 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -271,6 +266,7 @@
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_no_comorbidity"
                                             android:layout_marginEnd="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
@@ -298,17 +294,14 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
-
-                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:layout_marginHorizontal="@dimen/_5sdp"
                                             android:text="@string/cm_cancer"
-                                            android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -316,10 +309,10 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cancer"
-                                            android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
-                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginHorizontal="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
                                             android:textSize="@dimen/_12sdp" />
 
@@ -338,10 +331,10 @@
                                     android:layout_weight="1"
                                     android:orientation="horizontal"
                                     android:weightSum="2">
+
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -358,7 +351,7 @@
                                     </RelativeLayout>
                                 </LinearLayout>
 
-                                </TableRow>
+                            </TableRow>
                             <TableRow
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -372,11 +365,8 @@
                                     android:weightSum="2">
                                     <RelativeLayout
                                         android:id="@+id/rl_cm_cancer"
-
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-
-
                                         android:layout_weight="1"
                                         android:background="@drawable/edittext_background_layout_outline"
                                         android:orientation="horizontal"
@@ -425,10 +415,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -443,7 +432,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_chronic_kidney_disease"
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
@@ -463,32 +452,32 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_3sdp">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="horizontal"
-                                android:weightSum="2">
-
-                            <RelativeLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
+                                <LinearLayout
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
 
-                                    android:layout_marginEnd="@dimen/_5sdp"
-                                    android:text="@string/notes"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="@dimen/_12sdp" />
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:text="@string/notes"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
 
 
-                            </RelativeLayout>
-                            </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
                             </TableRow>
                             <TableRow
                                 android:layout_width="wrap_content"
@@ -523,7 +512,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -561,10 +550,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -579,7 +567,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_copd"
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
@@ -662,7 +650,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -698,17 +686,16 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
 
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
 
-                                              android:layout_marginTop="@dimen/_5sdp"
-                                              android:layout_marginBottom="@dimen/_5sdp"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
                                             android:layout_marginEnd="@dimen/_25sdp"
                                             android:text="@string/cm_heart_condition"
                                             android:layout_marginStart="@dimen/_5sdp"
@@ -719,7 +706,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_heart_condition"
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
@@ -805,7 +792,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -842,23 +829,21 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-
                                         android:orientation="horizontal">
 
-                                          <TextView
-                                              android:paddingRight="@dimen/_50sdp"
-                                              android:layout_width="wrap_content"
-                                              android:layout_height="wrap_content"
-                                              android:layout_alignParentStart="true"
-                                              android:layout_marginEnd="@dimen/_25sdp"
-                                              android:layout_marginTop="@dimen/_5sdp"
-                                              android:layout_marginBottom="@dimen/_5sdp"
+                                        <TextView
+                                            android:paddingRight="@dimen/_50sdp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginEnd="@dimen/_25sdp"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
 
-                                              android:text="@string/cm_immune_compromised_organ"
-                                              android:layout_marginStart="@dimen/_5sdp"
-                                              android:textColor="@color/text_color"
-                                              android:textSize="@dimen/_12sdp" />
+                                            android:text="@string/cm_immune_compromised_organ"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
 
                                         <Switch
                                             android:layout_width="wrap_content"
@@ -866,6 +851,7 @@
                                             android:id="@+id/cm_immune_compromised_organ"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -939,7 +925,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -960,7 +946,6 @@
                             <TableRow
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
                                 android:layout_marginTop="@dimen/_15sdp">
 
                                 <LinearLayout
@@ -975,10 +960,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -993,11 +977,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_obesity"
-
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1078,7 +1060,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1113,10 +1095,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1131,11 +1112,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_sickle_cell_disease"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1216,7 +1195,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1251,10 +1230,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1269,11 +1247,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_pregnancy"
-
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1354,7 +1330,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1389,10 +1365,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1407,11 +1382,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_asthma"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1492,7 +1465,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1527,10 +1500,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1545,11 +1517,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cerebrovascular_disease"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1630,7 +1600,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1665,10 +1635,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1683,11 +1652,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_cystic_fibrosis"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1768,7 +1735,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1803,10 +1770,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -1821,11 +1787,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_hypertension"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -1906,7 +1870,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -1945,18 +1909,17 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
-                                              android:paddingRight="@dimen/_40sdp"
+                                        <TextView
+                                            android:paddingRight="@dimen/_40sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
 
-                                              android:layout_marginTop="@dimen/_5sdp"
-                                              android:layout_marginBottom="@dimen/_5sdp"
-                                              android:layout_marginEnd="@dimen/_25sdp"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:layout_marginEnd="@dimen/_25sdp"
                                             android:text="@string/cm_immune_compromised_other"
                                             android:layout_marginStart="@dimen/_5sdp"
 
@@ -1967,11 +1930,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_immune_compromised_other"
-
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2052,7 +2013,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -2088,7 +2049,6 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -2107,11 +2067,9 @@
                                             android:id="@+id/cm_neurologic"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-
-
+                                            android:layout_alignParentEnd="true"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_marginEnd="@dimen/_5sdp"
-
                                             android:textColor="@color/grayDark"
                                             android:textOff="@string/no"
                                             android:textOn="@string/yes"
@@ -2190,7 +2148,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -2225,10 +2183,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2243,11 +2200,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_liver_disease"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2328,7 +2283,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -2364,11 +2319,10 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
-                                              android:paddingRight="@dimen/_25sdp"
+                                        <TextView
+                                            android:paddingRight="@dimen/_25sdp"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2383,11 +2337,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_overweight"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2468,7 +2420,7 @@
                                             android:layout_gravity="center"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:layout_weight="1"
-                                           android:clickable="false"
+                                            android:clickable="false"
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
@@ -2503,10 +2455,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2521,11 +2472,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_pulmonary_fibrosis"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2641,10 +2590,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2659,11 +2607,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_thalassemia"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2776,10 +2722,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2794,11 +2739,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_type1_diabetes"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -2911,10 +2854,9 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
-                                          <TextView
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_alignParentStart="true"
@@ -2929,11 +2871,9 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:id="@+id/cm_ldl_cholestrol"
-
-
                                             android:layout_marginEnd="@dimen/_5sdp"
                                             android:textOff="@string/no"
-
+                                            android:layout_alignParentEnd="true"
                                             android:textOn="@string/yes"
                                             android:layout_marginStart="@dimen/_5sdp"
                                             android:textColor="@color/grayDark"
@@ -3047,7 +2987,6 @@
                                     <RelativeLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
                                         android:orientation="horizontal">
 
                                         <TextView

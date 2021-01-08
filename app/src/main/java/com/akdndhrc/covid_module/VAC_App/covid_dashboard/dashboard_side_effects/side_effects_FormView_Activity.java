@@ -16,24 +16,18 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.AppController;
-import com.akdndhrc.covid_module.CustomClass.NothingSelectedSpinnerAdapter;
 import com.akdndhrc.covid_module.CustomClass.UrlClass;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.GPSTracker;
-import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.ServiceLocation;
 import com.akdndhrc.covid_module.Utils;
@@ -44,9 +38,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.rey.material.widget.CheckBox;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -56,54 +48,56 @@ import java.util.Map;
 
 
 public class side_effects_FormView_Activity extends AppCompatActivity {
-
     Context ctx = side_effects_FormView_Activity.this;
 
-
-
-
     //  TextView txt_mother_age, txt_mother_name;
-    EditText et_tareekh_visit, et_refferal_ki_waja, et_refferal_hospital,et_value;
-    CheckBox checkbox_haan_1, checkbox_nahi_1, checkbox_haan_2, checkbox_nahi_2, checkbox_awareness, checkbox_service_provided;
+    Switch se_others, se_adverseEffect, se_hyptension,se_syncope_near_syncope,se_anaphylaxis,se_local_redness_pain,se_fatigue,se_headache,se_myalgias,se_diarrhea ,
+            se_chills,se_nausea,se_urticaria,se_joint_pain,se_fever,se_shortnessBreath,se_lossTaste,se_lossSmell;
+
+    EditText et_se_fever, et_se_others, et_tareekh_visit;
+
+//    RelativeLayout rl_se_fever, rl_se_others;
+
+//    CheckBox checkbox_awareness, checkbox_service_provided;
     Button btn_jamaa_kre;
     ImageView iv_navigation_drawer, iv_home;
-    Spinner sp_naya_sabiqa, sp_planning_type;
+//    Spinner sp_naya_sabiqa, sp_planning_type;
     double latitude;
     double longitude;
     // GPSTracker class
     GPSTracker gps;
     String mother_uid, TodayDate, added_on;
-    Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
+//    Spinner sp_material,sp_fever,sp_cough,sp_breath,sp_rash,sp_taste,sp_smell,sp_dia;
 
 
-    private int mYear, mMonth, mDay;
-    int date_for_condition = 0;
-    int month_for_condition = 0;
-    public String hold_age_date_condition = "fromage", record_date;
-    String monthf2, dayf2, yearf2 = "null";
+//    private int mYear, mMonth, mDay;
+//    int date_for_condition = 0;
+//    int month_for_condition = 0;
+    public String record_date;
+//    String monthf2, dayf2, yearf2 = "null";
 
     JSONObject jsonObject;
     ImageView iv_editform;
     Dialog alertDialog;
     ProgressBar pbProgress;
 
-    String khud_muhaiya = "-1";
-    String refer = "-1";
+//    String khud_muhaiya = "-1";
+//    String refer = "-1";
     Snackbar snackbar;
     ServiceLocation serviceLocation;
-    String login_useruid, services_and_awareness = "-1";
-    LinearLayout ll_services_provided;
+    String login_useruid;
+//    LinearLayout ll_services_provided;
 
-    RelativeLayout rl_quantity, rl_add, rl_sub;
-    TextView tv_count;
-    int counter = 0;
-    String med_uid = "";
-    String mData_medicineLog[][];
+//    RelativeLayout rl_quantity, rl_add, rl_sub;
+//    TextView tv_count;
+//    int counter = 0;
+//    String med_uid = "";
+//    String mData_medicineLog[][];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.covid_side_effect_form);
+        setContentView(R.layout.covid_side_effect_form_ver2);
 
         Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(this, side_effects_FormView_Activity.class));
 
@@ -150,22 +144,42 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
         iv_navigation_drawer.setVisibility(View.GONE);
         //  iv_home.setVisibility(View.GONE);
 
+        //switches
+        se_adverseEffect = findViewById(R.id.se_adverseEffect);
+        se_hyptension = findViewById(R.id.se_hyptension);
+        se_syncope_near_syncope = findViewById(R.id.se_syncope_near_syncope);
+        se_anaphylaxis = findViewById(R.id.se_anaphylaxis);
+        se_local_redness_pain = findViewById(R.id.se_local_redness_pain);
+        se_fatigue = findViewById(R.id.se_fatigue);
+        se_headache = findViewById(R.id.se_headache);
+        se_myalgias = findViewById(R.id.se_myalgias);
+        se_diarrhea = findViewById(R.id.se_diarrhea);
+        se_chills = findViewById(R.id.se_chills);
+        se_nausea = findViewById(R.id.se_nausea);
+        se_urticaria = findViewById(R.id.se_urticaria);
+        se_joint_pain = findViewById(R.id.se_joint_pain);
+        se_fever = findViewById(R.id.se_fever);
+        se_shortnessBreath = findViewById(R.id.se_shortnessBreath);
+        se_lossTaste = findViewById(R.id.se_lossTaste);
+        se_lossSmell = findViewById(R.id.se_lossSmell);
+        se_others = findViewById(R.id.se_others);
 
+        //Edit Texts
+        et_se_fever = findViewById(R.id.et_se_fever);
+        et_se_others = findViewById(R.id.et_se_others);
         et_tareekh_visit = findViewById(R.id.et_tareekh_visit);
-        et_refferal_ki_waja = findViewById(R.id.et_refferal_ki_waja);
-        et_refferal_hospital = findViewById(R.id.et_refferal_hospital);
-        et_tareekh_visit.setText(TodayDate);
-        et_value=findViewById(R.id.et_mobile_number);
 
-        sp_planning_type = findViewById(R.id.sp_planning_type);
-        sp_material = findViewById(R.id.sp_material);
-        sp_fever=findViewById(R.id.sp_azdawaji_hasiyat);
-        sp_cough=findViewById(R.id.sp_tahseel);
-        sp_breath=findViewById(R.id.sp_zila);
-        sp_rash=findViewById(R.id.sp_gaon);
-        sp_taste=findViewById(R.id.sp_union_council);
-        sp_smell=findViewById(R.id.sp_latrine_system);
-        sp_dia=findViewById(R.id.sp_peenay_kai_paani_ka_zarya);
+        et_tareekh_visit.setText(TodayDate);
+
+//        sp_planning_type = findViewById(R.id.sp_planning_type);
+//        sp_material = findViewById(R.id.sp_material);
+//        sp_fever=findViewById(R.id.sp_azdawaji_hasiyat);
+//        sp_cough=findViewById(R.id.sp_tahseel);
+//        sp_breath=findViewById(R.id.sp_zila);
+//        sp_rash=findViewById(R.id.sp_gaon);
+//        sp_taste=findViewById(R.id.sp_union_council);
+//        sp_smell=findViewById(R.id.sp_latrine_system);
+//        sp_dia=findViewById(R.id.sp_peenay_kai_paani_ka_zarya);
 
         pbProgress=findViewById(R.id.pbProgress);
         //Spinner
@@ -173,15 +187,15 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
 
 
         //Linear Layout
-        ll_services_provided = findViewById(R.id.ll_services_provided);
+//        ll_services_provided = findViewById(R.id.ll_services_provided);
 
         //RelativeLayout
-        rl_quantity = findViewById(R.id.rl_quantity);
-        rl_add = findViewById(R.id.rl_add);
-        rl_sub = findViewById(R.id.rl_sub);
+//        rl_quantity = findViewById(R.id.rl_quantity);
+//        rl_add = findViewById(R.id.rl_add);
+//        rl_sub = findViewById(R.id.rl_sub);
 
         //TextView
-        tv_count = findViewById(R.id.tv_count);
+//        tv_count = findViewById(R.id.tv_count);
         //   tv_count.setText("" + counter);
 
 
@@ -272,7 +286,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             }
         });*/
 
-        spinner_data();
+//        spinner_data();
 
 
        /* rl_add.setOnClickListener(new View.OnClickListener() {
@@ -341,25 +355,43 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                     @Override
                     public void run() {
 
-                        sp_fever.setEnabled(true);
-                        sp_breath.setEnabled(true);
-                        sp_rash.setEnabled(true);
-                        sp_taste.setEnabled(true);
-                        sp_smell.setEnabled(true);
-                        sp_dia.setEnabled(true);
-                        sp_cough.setEnabled(true);
+//                        sp_fever.setEnabled(true);
+//                        sp_breath.setEnabled(true);
+//                        sp_rash.setEnabled(true);
+//                        sp_taste.setEnabled(true);
+//                        sp_smell.setEnabled(true);
+//                        sp_dia.setEnabled(true);
+//                        sp_cough.setEnabled(true);
+
+                        se_hyptension.setEnabled(true);
+                        se_syncope_near_syncope.setEnabled(true);
+                        se_anaphylaxis.setEnabled(true);
+                        se_local_redness_pain.setEnabled(true);
+                        se_fatigue.setEnabled(true);
+                        se_headache.setEnabled(true);
+                        se_myalgias.setEnabled(true);
+                        se_diarrhea.setEnabled(true);
+                        se_chills.setEnabled(true);
+                        se_nausea.setEnabled(true);
+                        se_urticaria.setEnabled(true);
+                        se_joint_pain.setEnabled(true);
+                        se_fever.setEnabled(true);
+                        se_shortnessBreath.setEnabled(true);
+                        se_lossTaste.setEnabled(true);
+                        se_lossSmell.setEnabled(true);
+                        se_others.setEnabled(true);
+
+                        et_se_fever.setEnabled((true));
+                        et_se_others.setEnabled((true));
+                        et_tareekh_visit.setEnabled((true));
+
                         btn_jamaa_kre.setVisibility(View.VISIBLE);
                         pbProgress.setVisibility(View.GONE);
                         iv_editform.setVisibility(View.GONE);
-
-
                     }
                 }, 2500);
-
-
             }
         });
-
 
         btn_jamaa_kre.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -368,322 +400,320 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
 
             }
         });
-
-
     }
 
-    private void spinner_data() {
-
-        try {
-            // Select sp_azdawaji_hasiyat
-           /* final ArrayAdapter<CharSequence> adptr_naya_sabiqa = ArrayAdapter.createFromResource(this, R.array.array_naya_sabiqa, android.R.layout.simple_spinner_item);
-            adptr_naya_sabiqa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_naya_sabiqa.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_naya_sabiqa,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_naya_sabiqa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-*/
-
-
-            final ArrayAdapter<CharSequence> adptr_fever = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_fever.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_fever.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_fever,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_fever.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_cough = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_cough.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_cough.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_cough,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_cough.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_breath = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_breath.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_breath.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_breath,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_breath.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-            final ArrayAdapter<CharSequence> adptr_rash = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_rash.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_rash.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_rash,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_rash.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_taste = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_taste.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_taste.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_taste,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_taste.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_smell = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_smell.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_smell.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_smell,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_smell.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            final ArrayAdapter<CharSequence> adptr_dia = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
-            adptr_dia.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_dia.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_dia,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_dia.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-
-            ///////////sp_planning_type
-
-            final ArrayAdapter<CharSequence> adptr_planning = ArrayAdapter.createFromResource(this, R.array.array_sp_planning_type, android.R.layout.simple_spinner_item);
-            adptr_planning.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-            sp_planning_type.setAdapter(
-                    new NothingSelectedSpinnerAdapter(
-                            adptr_planning,
-                            R.layout.spinner_azdawaji_hasiyat_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-
-            sp_planning_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-//                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
-                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-            ////////////////////////// Sp_Month ////////////////////////////////////////
-            final ArrayAdapter<CharSequence> adptr_material = ArrayAdapter.createFromResource(this, R.array.array_sp_service_provided, R.layout.sp_title_topic_layout);
-            adptr_material.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-            sp_material.setAdapter(
-                    new com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter(
-                            adptr_material,
-                            R.layout.sp_title_topic_layout,
-                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                            this));
-
-            sp_material.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                    if (sp_material.getSelectedItemPosition() > 0) {
-                        rl_quantity.setVisibility(View.VISIBLE);
-                    } else {
-                        rl_quantity.setVisibility(View.GONE);
-                    }
-
-                    try {
-                        if (sp_material.getSelectedItem().toString().equalsIgnoreCase(jsonObject.getString("material")))
-                        {
-                            tv_count.setText(jsonObject.getString("material_quantity"));
-                            counter = Integer.parseInt(jsonObject.getString("material_quantity"));
-                        }
-                        else {
-                            tv_count.setText("0");
-                            counter = 0;
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                   /* if (sp_material.getSelectedItemPosition() == 1) {
-                        med_uid = "fafacbfe1f639599c407c19373438280";
-
-                    } else if (sp_material.getSelectedItemPosition() == 2) {
-                        med_uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-                    } else {
-                        med_uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-                    }*/
-
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
-            });
-
-        } catch (Exception e) {
-            Log.d("000987", " Spinner Err: " + e.getMessage());
-        }
-
-    }
+//    private void spinner_data() {
+//
+//        try {
+//            // Select sp_azdawaji_hasiyat
+//           /* final ArrayAdapter<CharSequence> adptr_naya_sabiqa = ArrayAdapter.createFromResource(this, R.array.array_naya_sabiqa, android.R.layout.simple_spinner_item);
+//            adptr_naya_sabiqa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_naya_sabiqa.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_naya_sabiqa,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_naya_sabiqa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//*/
+//
+//
+//            final ArrayAdapter<CharSequence> adptr_fever = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_fever.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_fever.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_fever,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_fever.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            final ArrayAdapter<CharSequence> adptr_cough = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_cough.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_cough.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_cough,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_cough.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            final ArrayAdapter<CharSequence> adptr_breath = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_breath.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_breath.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_breath,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_breath.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//
+//            final ArrayAdapter<CharSequence> adptr_rash = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_rash.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_rash.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_rash,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_rash.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            final ArrayAdapter<CharSequence> adptr_taste = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_taste.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_taste.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_taste,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_taste.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            final ArrayAdapter<CharSequence> adptr_smell = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_smell.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_smell.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_smell,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_smell.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            final ArrayAdapter<CharSequence> adptr_dia = ArrayAdapter.createFromResource(this, R.array.yes_no, android.R.layout.simple_spinner_item);
+//            adptr_dia.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_dia.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_dia,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_dia.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//
+//            ///////////sp_planning_type
+//
+//            final ArrayAdapter<CharSequence> adptr_planning = ArrayAdapter.createFromResource(this, R.array.array_sp_planning_type, android.R.layout.simple_spinner_item);
+//            adptr_planning.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//
+//            sp_planning_type.setAdapter(
+//                    new NothingSelectedSpinnerAdapter(
+//                            adptr_planning,
+//                            R.layout.spinner_azdawaji_hasiyat_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//
+//            sp_planning_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+////                ((TextView) parent.getChildAt(0)).setTextColor(Color.GREEN);
+//                    //Toast.makeText(parent.getContext(), "Selected: " + position, Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//            ////////////////////////// Sp_Month ////////////////////////////////////////
+//            final ArrayAdapter<CharSequence> adptr_material = ArrayAdapter.createFromResource(this, R.array.array_sp_service_provided, R.layout.sp_title_topic_layout);
+//            adptr_material.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//            sp_material.setAdapter(
+//                    new com.akdndhrc.covid_module.NothingSelectedSpinnerAdapter(
+//                            adptr_material,
+//                            R.layout.sp_title_topic_layout,
+//                            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
+//                            this));
+//
+//            sp_material.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                @Override
+//                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//                    if (sp_material.getSelectedItemPosition() > 0) {
+//                        rl_quantity.setVisibility(View.VISIBLE);
+//                    } else {
+//                        rl_quantity.setVisibility(View.GONE);
+//                    }
+//
+//                    try {
+//                        if (sp_material.getSelectedItem().toString().equalsIgnoreCase(jsonObject.getString("material")))
+//                        {
+//                            tv_count.setText(jsonObject.getString("material_quantity"));
+//                            counter = Integer.parseInt(jsonObject.getString("material_quantity"));
+//                        }
+//                        else {
+//                            tv_count.setText("0");
+//                            counter = 0;
+//                        }
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//
+//                   /* if (sp_material.getSelectedItemPosition() == 1) {
+//                        med_uid = "fafacbfe1f639599c407c19373438280";
+//
+//                    } else if (sp_material.getSelectedItemPosition() == 2) {
+//                        med_uid = "3ac832b9524e6c0496cf449eb30cc8b3";
+//
+//                    } else {
+//                        med_uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
+//                    }*/
+//
+//                }
+//
+//                @Override
+//                public void onNothingSelected(AdapterView<?> parent) {
+//
+//                }
+//            });
+//
+//        } catch (Exception e) {
+//            Log.d("000987", " Spinner Err: " + e.getMessage());
+//        }
+//
+//    }
 
     private void update_data(final View v) {
 
@@ -703,7 +733,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                 Lister ls = new Lister(ctx);
                 ls.createAndOpenDB();
 
-                String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from MFPLAN");
+                String[][] mData = ls.executeReader("SELECT max(added_on),data,count(*) from COVID_SIDE_EFFECTS");
 
                 if (Integer.parseInt(mData[0][2]) > 0) {
                     JSONObject jsonObject = new JSONObject(mData[0][1]);
@@ -721,7 +751,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                 }
 
             } catch (Exception e) {
-                Log.d("000258", "Read MFPLAN Error: " + e.getMessage());
+                Log.d("000258", "Read COVID_SIDE_EFFECTS Error: " + e.getMessage());
             }
         }
 
@@ -752,16 +782,42 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                 jsonObject.put("reason_refer", "" + et_refferal_ki_waja.getText().toString());
                 jsonObject.put("facility_refer", "" + et_refferal_hospital.getText().toString());
                */ jsonObject.put("added_on", "" + cur_added_on);
+
+               //Edit texts
                 jsonObject.put("tareekh_visit", "" + et_tareekh_visit.getText().toString());
-                jsonObject.put("value", "" + et_value.getText().toString());
+                jsonObject.put("fever", "" + et_se_fever.getText().toString());
+                jsonObject.put("et_se_others", "" + et_se_others.getText().toString());
+
+                //switches
+                jsonObject.put("adverseEffect", "" + se_adverseEffect.getText().toString());
+                jsonObject.put("hyptension", "" + se_hyptension.getText().toString());
+                jsonObject.put("syncope_near_syncope", "" + se_syncope_near_syncope.getText().toString());
+                jsonObject.put("anaphylaxis", "" + se_anaphylaxis.getText().toString());
+                jsonObject.put("local_redness_pain", "" + se_local_redness_pain.getText().toString());
+                jsonObject.put("fatigue", "" + se_fatigue.getText().toString());
+                jsonObject.put("headache", "" + se_headache.getText().toString());
+                jsonObject.put("myalgias", "" + se_myalgias.getText().toString());
+                jsonObject.put("diarrhea", "" + se_diarrhea.getText().toString());
+                jsonObject.put("chills", "" + se_chills.getText().toString());
+                jsonObject.put("nausea", "" + se_nausea.getText().toString());
+                jsonObject.put("urticaria", "" + se_urticaria.getText().toString());
+                jsonObject.put("joint_pain", "" + se_joint_pain.getText().toString());
+                jsonObject.put("fever", "" + se_fever.getText().toString());
+                jsonObject.put("shortnessBreath", "" + se_shortnessBreath.getText().toString());
+                jsonObject.put("lossTaste", "" + se_lossTaste.getText().toString());
+                jsonObject.put("lossSmell", "" + se_lossSmell.getText().toString());
+                jsonObject.put("others", "" + se_others.getText().toString());
+
+
+//                jsonObject.put("value", "" + et_value.getText().toString());
                 // jobj.put("plan", "" + String.valueOf(sp_naya_sabiqa.getSelectedItemPosition() - 1));
-                jsonObject.put("fever", "" + String.valueOf(sp_fever.getSelectedItemPosition() - 1));
-                jsonObject.put("shortness_of_breath", "" + String.valueOf(sp_breath.getSelectedItemPosition() - 1));
-                jsonObject.put("rash", "" + String.valueOf(sp_rash.getSelectedItemPosition() - 1));
-                jsonObject.put("cough", "" + String.valueOf(sp_cough.getSelectedItemPosition() - 1));
-                jsonObject.put("loss of taste", "" + String.valueOf(sp_taste.getSelectedItemPosition() - 1));
-                jsonObject.put("loss of smell", "" + String.valueOf(sp_smell.getSelectedItemPosition() - 1));
-                jsonObject.put("diarrhea", "" + String.valueOf(sp_dia.getSelectedItemPosition() - 1));
+//                jsonObject.put("fever", "" + String.valueOf(sp_fever.getSelectedItemPosition() - 1));
+//                jsonObject.put("shortness_of_breath", "" + String.valueOf(sp_breath.getSelectedItemPosition() - 1));
+//                jsonObject.put("rash", "" + String.valueOf(sp_rash.getSelectedItemPosition() - 1));
+//                jsonObject.put("cough", "" + String.valueOf(sp_cough.getSelectedItemPosition() - 1));
+//                jsonObject.put("loss of taste", "" + String.valueOf(sp_taste.getSelectedItemPosition() - 1));
+//                jsonObject.put("loss of smell", "" + String.valueOf(sp_smell.getSelectedItemPosition() - 1));
+//                jsonObject.put("diarrhea", "" + String.valueOf(sp_dia.getSelectedItemPosition() - 1));
 
 
             }
@@ -774,7 +830,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                     try {
                         Lister ls = new Lister(ctx);
                         ls.createAndOpenDB();
-                        String update_record = "UPDATE MFPLAN SET " +
+                        String update_record = "UPDATE COVID_SIDE_EFFECTS SET " +
                                 "data='" + jsonObject.toString() + "'," +
                                 "is_synced='" + 0 + "'" +
                                 "WHERE member_uid = '" + mother_uid + "' AND added_on='" + added_on + "' AND  record_data='"+record_date+"'";
@@ -803,10 +859,10 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                             //Toast.makeText(ctx, R.string.dataSubmissionMessage, Toast.LENGTH_SHORT).show();
                         }
 
-                        if (services_and_awareness.equalsIgnoreCase("1")) {
-                            update_medicineLog();
-                        } else {
-                        }
+//                        if (services_and_awareness.equalsIgnoreCase("1")) {
+//                            update_medicineLog();
+//                        } else {
+//                        }
 
 
                     } catch (Exception e) {
@@ -860,7 +916,7 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
                         Lister ls = new Lister(ctx);
                         ls.createAndOpenDB();
 
-                        String update_record = "UPDATE MFPLAN SET " +
+                        String update_record = "UPDATE COVID_SIDE_EFFECTS SET " +
                                 "is_synced='" + String.valueOf(1) + "' " +
                                 "WHERE member_uid = '" + mother_uid + "'AND added_on= '" + added_on + "'";
 
@@ -933,103 +989,102 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
         AppController.getInstance().addToRequestQueue(strReq, REQUEST_TAG);
     }
 
-
-    private void update_medicineLog() {
-
-        try {
-
-
-            JSONObject json_medicine_stock = new JSONObject(mData_medicineLog[0][1]);
-            String uid;
-            json_medicine_stock.put("medicine_quantity", "" + counter);
-            json_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
-            json_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
-
-            if (sp_material.getSelectedItemPosition() == 1) {
-                json_medicine_stock.put("medicine_type", "1");
-                uid = "fafacbfe1f639599c407c19373438280";
-
-            }
-            else if (sp_material.getSelectedItemPosition() == 2) {
-                json_medicine_stock.put("medicine_type", "0");
-                uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-            }
-            else {
-                json_medicine_stock.put("medicine_type", "0");
-                uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-            }
-
-            Lister ls = new Lister(ctx);
-            ls.createAndOpenDB();
-            String update_record = "UPDATE MEDICINE_LOG SET " +
-                    "medicine_id='" + uid + "'," +
-                    "metadata='" + json_medicine_stock + "'" +
-                    "WHERE member_uid = '" + mother_uid + "'  AND medicine_id = '" + med_uid + "' AND type ='MFPLAN' AND added_on= '"+added_on+"'";
-
-            ls.executeNonQuery(update_record);
-
-            Boolean res = ls.executeNonQuery(update_record);
-            Log.d("000987", "Updated Data: " + update_record);
-            Log.d("000987", "Query: " + res.toString());
-
-
-        } catch (Exception e) {
-            Log.d("000987", " Error: " + e.getMessage());
-
-            Lister ls = new Lister(ctx);
-            ls.createAndOpenDB();
-
-            try {
-
-                String cur_added_on = String.valueOf(System.currentTimeMillis());
-                String uid;
-                JSONObject jobj_medicine_stock = new JSONObject();
-                jobj_medicine_stock.put("medicine_quantity", "" + counter);
-                jobj_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
-                jobj_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
-
-                if (sp_material.getSelectedItemPosition() == 1) {
-                    jobj_medicine_stock.put("medicine_type", "1");
-                    uid = "fafacbfe1f639599c407c19373438280";
-
-                } else if (sp_material.getSelectedItemPosition() == 2) {
-                    jobj_medicine_stock.put("medicine_type", "0");
-                    uid = "3ac832b9524e6c0496cf449eb30cc8b3";
-
-                } else {
-                    jobj_medicine_stock.put("medicine_type", "0");
-                    uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
-                }
-
-
-                String ans1 = "insert or ignore into MEDICINE_LOG (member_uid, medicine_id, record_data,type,disease,metadata,added_by,added_on)" +
-                        "values" +
-                        "(" +
-                        "'" + mother_uid + "'," +
-                        "'" + uid + "'," +
-                        "'" + TodayDate + "'," +
-                        "'MFPLAN'," +
-                        "'none'," +
-                        "'" + jobj_medicine_stock + "'," +
-                        "'" + login_useruid + "'," +
-                        "'" + cur_added_on + "'" +
-                        ")";
-
-
-                Boolean res = ls.executeNonQuery(ans1);
-                Log.d("000987", "Insert Data Medicine: " + ans1);
-                Log.d("000987", "Query Medicine: " + res.toString());
-
-                //    Toast.makeText(ctx, "Addedd", Toast.LENGTH_SHORT).show();
-
-            } catch (Exception e1) {
-                Log.d("000987", "Err: " + e1.getMessage());
-            }
-
-
-        }
-    }
+//    private void update_medicineLog() {
+//
+//        try {
+//
+//
+//            JSONObject json_medicine_stock = new JSONObject(mData_medicineLog[0][1]);
+//            String uid;
+//            json_medicine_stock.put("medicine_quantity", "" + counter);
+//            json_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
+//            json_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
+//
+//            if (sp_material.getSelectedItemPosition() == 1) {
+//                json_medicine_stock.put("medicine_type", "1");
+//                uid = "fafacbfe1f639599c407c19373438280";
+//
+//            }
+//            else if (sp_material.getSelectedItemPosition() == 2) {
+//                json_medicine_stock.put("medicine_type", "0");
+//                uid = "3ac832b9524e6c0496cf449eb30cc8b3";
+//
+//            }
+//            else {
+//                json_medicine_stock.put("medicine_type", "0");
+//                uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
+//            }
+//
+//            Lister ls = new Lister(ctx);
+//            ls.createAndOpenDB();
+//            String update_record = "UPDATE MEDICINE_LOG SET " +
+//                    "medicine_id='" + uid + "'," +
+//                    "metadata='" + json_medicine_stock + "'" +
+//                    "WHERE member_uid = '" + mother_uid + "'  AND medicine_id = '" + med_uid + "' AND type ='MFPLAN' AND added_on= '"+added_on+"'";
+//
+//            ls.executeNonQuery(update_record);
+//
+//            Boolean res = ls.executeNonQuery(update_record);
+//            Log.d("000987", "Updated Data: " + update_record);
+//            Log.d("000987", "Query: " + res.toString());
+//
+//
+//        } catch (Exception e) {
+//            Log.d("000987", " Error: " + e.getMessage());
+//
+//            Lister ls = new Lister(ctx);
+//            ls.createAndOpenDB();
+//
+//            try {
+//
+//                String cur_added_on = String.valueOf(System.currentTimeMillis());
+//                String uid;
+//                JSONObject jobj_medicine_stock = new JSONObject();
+//                jobj_medicine_stock.put("medicine_quantity", "" + counter);
+//                jobj_medicine_stock.put("material", "" + sp_material.getSelectedItem());//spinner
+//                jobj_medicine_stock.put("material_pos", "" + String.valueOf(sp_material.getSelectedItemPosition() - 1));//spinner
+//
+//                if (sp_material.getSelectedItemPosition() == 1) {
+//                    jobj_medicine_stock.put("medicine_type", "1");
+//                    uid = "fafacbfe1f639599c407c19373438280";
+//
+//                } else if (sp_material.getSelectedItemPosition() == 2) {
+//                    jobj_medicine_stock.put("medicine_type", "0");
+//                    uid = "3ac832b9524e6c0496cf449eb30cc8b3";
+//
+//                } else {
+//                    jobj_medicine_stock.put("medicine_type", "0");
+//                    uid = String.valueOf(sp_material.getSelectedItemPosition() - 1);//spinner
+//                }
+//
+//
+//                String ans1 = "insert or ignore into MEDICINE_LOG (member_uid, medicine_id, record_data,type,disease,metadata,added_by,added_on)" +
+//                        "values" +
+//                        "(" +
+//                        "'" + mother_uid + "'," +
+//                        "'" + uid + "'," +
+//                        "'" + TodayDate + "'," +
+//                        "'MFPLAN'," +
+//                        "'none'," +
+//                        "'" + jobj_medicine_stock + "'," +
+//                        "'" + login_useruid + "'," +
+//                        "'" + cur_added_on + "'" +
+//                        ")";
+//
+//
+//                Boolean res = ls.executeNonQuery(ans1);
+//                Log.d("000987", "Insert Data Medicine: " + ans1);
+//                Log.d("000987", "Query Medicine: " + res.toString());
+//
+//                //    Toast.makeText(ctx, "Addedd", Toast.LENGTH_SHORT).show();
+//
+//            } catch (Exception e1) {
+//                Log.d("000987", "Err: " + e1.getMessage());
+//            }
+//
+//
+//        }
+//    }
 
     private void check_gps() {
 
@@ -1141,27 +1196,50 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             tv_count.setEnabled(false);
 */
 
-           sp_fever.setEnabled(false);
-            sp_breath.setEnabled(false);
-            sp_cough.setEnabled(false);
-            sp_rash.setEnabled(false);
-            sp_dia.setEnabled(false);
-            sp_taste.setEnabled(false);
-            sp_smell.setEnabled(false);
-            et_value.setEnabled(false);
-
+//           sp_fever.setEnabled(false);
+//            sp_breath.setEnabled(false);
+//            sp_cough.setEnabled(false);
+//            sp_rash.setEnabled(false);
+//            sp_dia.setEnabled(false);
+//            sp_taste.setEnabled(false);
+//            sp_smell.setEnabled(false);
 
 
             Log.d("000987","1");
+            //Edit texts
             et_tareekh_visit.setText((jsonObject.getString("tareekh_visit")));
-            sp_fever.setSelection(Integer.parseInt(jsonObject.getString("fever")) + 1);
-            sp_breath.setSelection(Integer.parseInt(jsonObject.getString("shortness_of_breath")) + 1);
-            sp_cough.setSelection(Integer.parseInt(jsonObject.getString("cough")) + 1);
-            sp_rash.setSelection(Integer.parseInt(jsonObject.getString("rash")) + 1);
-            sp_taste.setSelection(Integer.parseInt(jsonObject.getString("loss of taste")) + 1);
-            sp_smell.setSelection(Integer.parseInt(jsonObject.getString("loss of smell")) + 1);
-            sp_dia.setSelection(Integer.parseInt(jsonObject.getString("diarrhea")) + 1);
-            et_value.setText(jsonObject.getString("value"));
+            et_se_others.setText((jsonObject.getString("others")));
+            et_se_fever.setText((jsonObject.getString("fever")));
+
+            //Switches
+            se_adverseEffect.setText((jsonObject.getString("adverseEffect")));
+            se_hyptension.setText((jsonObject.getString("hyptension")));
+            se_syncope_near_syncope.setText((jsonObject.getString("syncope_near_syncope")));
+            se_anaphylaxis.setText((jsonObject.getString("anaphylaxis")));
+            se_local_redness_pain.setText((jsonObject.getString("local_redness_pain")));
+            se_fatigue.setText((jsonObject.getString("fatigue")));
+            se_headache.setText((jsonObject.getString("headache")));
+            se_myalgias.setText((jsonObject.getString("myalgias")));
+            se_diarrhea.setText((jsonObject.getString("diarrhea")));
+            se_chills.setText((jsonObject.getString("chills")));
+            se_nausea.setText((jsonObject.getString("nausea")));
+            se_urticaria.setText((jsonObject.getString("urticaria")));
+            se_joint_pain.setText((jsonObject.getString("joint_pain")));
+            se_fever.setText((jsonObject.getString("fever")));
+            se_shortnessBreath.setText((jsonObject.getString("shortnessBreath")));
+            se_lossTaste.setText((jsonObject.getString("lossTaste")));
+            se_lossSmell.setText((jsonObject.getString("lossSmell")));
+            se_others.setText((jsonObject.getString("others")));
+
+
+
+//            sp_fever.setSelection(Integer.parseInt(jsonObject.getString("fever")) + 1);
+//            sp_breath.setSelection(Integer.parseInt(jsonObject.getString("shortness_of_breath")) + 1);
+//            sp_cough.setSelection(Integer.parseInt(jsonObject.getString("cough")) + 1);
+//            sp_rash.setSelection(Integer.parseInt(jsonObject.getString("rash")) + 1);
+//            sp_taste.setSelection(Integer.parseInt(jsonObject.getString("loss of taste")) + 1);
+//            sp_smell.setSelection(Integer.parseInt(jsonObject.getString("loss of smell")) + 1);
+//            sp_dia.setSelection(Integer.parseInt(jsonObject.getString("diarrhea")) + 1);
 
 
 
@@ -1200,66 +1278,66 @@ public class side_effects_FormView_Activity extends AppCompatActivity {
             }
 */
 
-            try {
-                if (jsonObject.has("services_and_awareness")) {
-                    Log.d("000987", "7");
+//            try {
+//                if (jsonObject.has("services_and_awareness")) {
+//                    Log.d("000987", "7");
+//
+//                    if (jsonObject.getString("services_and_awareness").equalsIgnoreCase("1")) {
+//                        Log.d("000987", "8");
+//
+//                        checkbox_service_provided.setChecked(true);
+//                        ll_services_provided.setVisibility(View.VISIBLE);
+//                        sp_material.setSelection(Integer.parseInt(jsonObject.getString("material_pos")) + 1);
+//                        tv_count.setText(jsonObject.getString("material_quantity"));
+//                        counter = Integer.parseInt(jsonObject.getString("material_quantity"));
+//                        services_and_awareness = jsonObject.getString("services_and_awareness");
+//
+//                    } else if (jsonObject.getString("services_and_awareness").equalsIgnoreCase("0")) {
+//                        Log.d("000987", "9");
+//
+//                        checkbox_awareness.setChecked(true);
+//                        Log.d("000987", "91");
+//                        ll_services_provided.setVisibility(View.GONE);
+//                        Log.d("000987", "92");
+//                        // sp_material.setSelection(1);
+//
+//                        tv_count.setText("0");
+//                        Log.d("000987", "93");
+//                        counter = (0);
+//                        Log.d("000987", "94");
+//                        services_and_awareness = jsonObject.getString("services_and_awareness");
+//                        Log.d("000987", "95");
+//                    } else {
+//                        Log.d("000987", "10");
+//
+//                        checkbox_service_provided.setChecked(false);
+//                        checkbox_awareness.setChecked(false);
+//                        ll_services_provided.setVisibility(View.GONE);
+//                    }
+//                    Log.d("000987", "11");
+//
+//                }
+//                Log.d("000987", "12");
+//            }catch (Exception e)
+//            {
+//                Log.d("000987","Error ServiceAwarness: " +e.getMessage());
+//            }
 
-                    if (jsonObject.getString("services_and_awareness").equalsIgnoreCase("1")) {
-                        Log.d("000987", "8");
-
-                        checkbox_service_provided.setChecked(true);
-                        ll_services_provided.setVisibility(View.VISIBLE);
-                        sp_material.setSelection(Integer.parseInt(jsonObject.getString("material_pos")) + 1);
-                        tv_count.setText(jsonObject.getString("material_quantity"));
-                        counter = Integer.parseInt(jsonObject.getString("material_quantity"));
-                        services_and_awareness = jsonObject.getString("services_and_awareness");
-
-                    } else if (jsonObject.getString("services_and_awareness").equalsIgnoreCase("0")) {
-                        Log.d("000987", "9");
-
-                        checkbox_awareness.setChecked(true);
-                        Log.d("000987", "91");
-                        ll_services_provided.setVisibility(View.GONE);
-                        Log.d("000987", "92");
-                        // sp_material.setSelection(1);
-
-                        tv_count.setText("0");
-                        Log.d("000987", "93");
-                        counter = (0);
-                        Log.d("000987", "94");
-                        services_and_awareness = jsonObject.getString("services_and_awareness");
-                        Log.d("000987", "95");
-                    } else {
-                        Log.d("000987", "10");
-
-                        checkbox_service_provided.setChecked(false);
-                        checkbox_awareness.setChecked(false);
-                        ll_services_provided.setVisibility(View.GONE);
-                    }
-                    Log.d("000987", "11");
-
-                }
-                Log.d("000987", "12");
-            }catch (Exception e)
-            {
-                Log.d("000987","Error ServiceAwarness: " +e.getMessage());
-            }
 
 
-
-            try {
-                 mData_medicineLog= ls.executeReader("Select medicine_id,metadata from MEDICINE_LOG where member_uid = '" + mother_uid + "' AND added_on = '" + added_on + "'");
-
-                Log.d("000852", "Data LEN: " + mData_medicineLog.length);
-
-                med_uid=mData_medicineLog[0][0];
-                Log.d("000852", "Medicine UID: " + med_uid);
-                Log.d("000852", "MetaData: " + mData_medicineLog[0][1]);
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                Log.d("000852", "Read MedicineLog Error:" + e.getMessage());
-            }
+//            try {
+//                 mData_medicineLog= ls.executeReader("Select medicine_id,metadata from MEDICINE_LOG where member_uid = '" + mother_uid + "' AND added_on = '" + added_on + "'");
+//
+//                Log.d("000852", "Data LEN: " + mData_medicineLog.length);
+//
+//                med_uid=mData_medicineLog[0][0];
+//                Log.d("000852", "Medicine UID: " + med_uid);
+//                Log.d("000852", "MetaData: " + mData_medicineLog[0][1]);
+//
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                Log.d("000852", "Read MedicineLog Error:" + e.getMessage());
+//            }
 
         } catch (Exception e) {
             e.printStackTrace();

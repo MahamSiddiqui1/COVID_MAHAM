@@ -1,10 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/card_backgroud" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/_13sdp" android:textStyle="normal" android:textColor="@color/dark_blue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:text="کیا آپ اس حمل کو ڈیلیٹ کرنا چاہتے ہے؟"/>
-        <View android:layout_gravity="center_horizontal" android:background="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_20sdp"/>
-        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/green_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvYes" android:paddingTop="@dimen/_15sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="ہاں "/>
-        <View android:layout_gravity="center_horizontal" android:background="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="1dp"/>
-        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/graph_red_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvNo" android:paddingTop="@dimen/_15sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="نہیں"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/card_backgroud"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/wantToDeletePregnancy"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dark_blue_color" />
+
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/haan"
+            android:textColor="@color/green_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/dark_blue_color" />
+
+        <TextView
+            android:id="@+id/tvNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableTint="@color/graph_red_color"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/nahi"
+            android:textColor="@color/graph_red_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
     </LinearLayout>
+
+
 </RelativeLayout>

@@ -1,2 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<x xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"/>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.Login_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background_image">
+
+        <RelativeLayout
+            android:id="@+id/rl_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/login_oval_background">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_hayat_logo_new" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_naam_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_background"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:theme="@style/StyleTextInputLayout">
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableEnd="@drawable/user_icon"
+                    android:gravity="right"
+                    android:hint="@string/login_username_text"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:theme="@style/StyleTextInputLayout">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableEnd="@drawable/lock_icon"
+                    android:gravity="right"
+                    android:hint="@string/login_password_text"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_forgot_password_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_button_shape_layout"
+                android:text="@string/login_button_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_18sdp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

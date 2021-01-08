@@ -1,12 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
-    <android.support.p048v7.widget.CardView android:id="@+id/card_sync" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/color_white" app:cardCornerRadius="4dp">
-        <RelativeLayout android:layout_gravity="center" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerHorizontal="true"/>
-            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/light_blue_color" android:id="@+id/tv_inside" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="یونین کونسل کے اندر :" android:layout_below="@+id/tvName" android:layout_alignParentRight="true"/>
-            <TextView android:textSize="@dimen/_11sdp" android:textStyle="bold" android:textColor="@color/pink_color" android:id="@+id/tv_inside_uc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_3sdp" android:text="10" android:layout_toLeftOf="@+id/tv_inside" android:layout_below="@+id/tvName" android:layout_centerVertical="true"/>
-            <TextView android:textSize="@dimen/_11sdp" android:textStyle="bold" android:textColor="@color/light_blue_color" android:id="@+id/tv_outside_uc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_3sdp" android:text="10" android:layout_below="@+id/tvName" android:layout_alignParentLeft="true"/>
-            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/pink_color" android:id="@+id/tv_outside" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="یونین کونسل کے باہر :" android:layout_toRightOf="@+id/tv_outside_uc" android:layout_below="@+id/tvName"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_10"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/unionCouncilKanderColon"
+                android:textColor="@color/light_blue_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tv_inside_uc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toStartOf="@+id/tv_inside"
+                android:text="@string/_10"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_outside_uc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvName"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/_10"
+                android:textColor="@color/light_blue_color"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_outside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@id/tv_outside_uc"
+                android:text="@string/unionCouncilKbaharColon"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_12sdp" />
+
+
         </RelativeLayout>
-    </android.support.p048v7.widget.CardView>
+
+
+    </android.support.v7.widget.CardView>
+
+
 </LinearLayout>

@@ -16,8 +16,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
@@ -31,10 +29,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.AppController;
-import com.akdndhrc.covid_module.CustomClass.NothingSelectedSpinnerAdapter;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.GPSTracker;
-import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.ServiceLocation;
 import com.akdndhrc.covid_module.Utils;
@@ -45,7 +41,6 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.rey.material.widget.CheckBox;
 
 import org.json.JSONObject;
 
@@ -60,9 +55,8 @@ public class side_effects_Form_Activity extends AppCompatActivity {
     Context ctx = side_effects_Form_Activity.this;
 
     //  TextView txt_mother_age, txt_mother_name;
-    EditText et_tareekh_visit;
+
             //, et_refferal_ki_waja, et_refferal_hospital,et_value;
-    CheckBox checkbox_haan_1, checkbox_nahi_1, checkbox_haan_2, checkbox_nahi_2, checkbox_awareness, checkbox_service_provided;
     Button btn_jamaa_kre;
     ImageView iv_navigation_drawer, iv_home;
     Spinner sp_naya_sabiqa, sp_planning_type;
@@ -88,12 +82,12 @@ public class side_effects_Form_Activity extends AppCompatActivity {
     TextView tv_count;
     int counter = 0;
     long mLastClickTime = 0;
+
     Switch se_others, se_adverseEffect, se_hyptension,se_syncope_near_syncope,se_anaphylaxis,se_local_redness_pain,se_fatigue,se_headache,se_myalgias,se_diarrhea ,
             se_chills,se_nausea,se_urticaria,se_joint_pain,se_fever,se_shortnessBreath,se_lossTaste,se_lossSmell;
 
-    EditText et_se_fever, et_se_others;
+    EditText et_se_fever, et_se_others, et_tareekh_visit;
 
-    String et_se_fever_string, et_se_others_string;
     // ,"se_feverValue">Vue of Fever</string>
 
     RelativeLayout rl_se_fever, rl_se_others;
@@ -175,16 +169,20 @@ public class side_effects_Form_Activity extends AppCompatActivity {
         se_lossSmell = findViewById(R.id.se_lossSmell);
         se_others = findViewById(R.id.se_others);
 
+        //Edit Texts
         et_se_fever = findViewById(R.id.et_se_fever);
+        et_se_others = findViewById(R.id.et_se_others);
+
+        //Relative Layout
         rl_se_fever= findViewById(R.id.rl_se_fever);
+        rl_se_others = findViewById(R.id.rl_se_others);
 
         se_adverseEffect.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_hyptension.setText(String.valueOf(R.string.yes));
+                    se_hyptension.setText(R.string.yes);
 
-                    se_adverseEffect.setEnabled(false);
                     se_hyptension.setEnabled(false);
                     se_syncope_near_syncope.setEnabled(false);
                     se_anaphylaxis.setEnabled(false);
@@ -205,7 +203,25 @@ public class side_effects_Form_Activity extends AppCompatActivity {
 
                 } else {
                     // The toggle is disabled
-                    se_hyptension.setText(String.valueOf(R.string.no));
+                    se_hyptension.setText(R.string.no);
+
+                    se_hyptension.setEnabled(true);
+                    se_syncope_near_syncope.setEnabled(true);
+                    se_anaphylaxis.setEnabled(true);
+                    se_local_redness_pain.setEnabled(true);
+                    se_fatigue.setEnabled(true);
+                    se_headache.setEnabled(true);
+                    se_myalgias.setEnabled(true);
+                    se_diarrhea.setEnabled(true);
+                    se_chills.setEnabled(true);
+                    se_nausea.setEnabled(true);
+                    se_urticaria.setEnabled(true);
+                    se_joint_pain.setEnabled(true);
+                    se_fever.setEnabled(true);
+                    se_shortnessBreath.setEnabled(true);
+                    se_lossTaste.setEnabled(true);
+                    se_lossSmell.setEnabled(true);
+                    se_others.setEnabled(true);
                 }
             }
         });
@@ -214,10 +230,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_hyptension.setText(String.valueOf(R.string.yes));
+                    se_hyptension.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_hyptension.setText(String.valueOf(R.string.no));
+                    se_hyptension.setText(R.string.no);
                 }
             }
         });
@@ -226,10 +242,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_syncope_near_syncope.setText(String.valueOf(R.string.yes));
+                    se_syncope_near_syncope.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_syncope_near_syncope.setText(String.valueOf(R.string.no));
+                    se_syncope_near_syncope.setText(R.string.no);
                 }
             }
         });
@@ -238,10 +254,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_anaphylaxis.setText(String.valueOf(R.string.yes));
+                    se_anaphylaxis.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_anaphylaxis.setText(String.valueOf(R.string.no));
+                    se_anaphylaxis.setText(R.string.no);
                 }
             }
         });
@@ -250,10 +266,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {
                     // The toggle is enabled
-                    se_local_redness_pain.setText(String.valueOf(R.string.yes));
+                    se_local_redness_pain.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_local_redness_pain.setText(String.valueOf(R.string.no));
+                    se_local_redness_pain.setText(R.string.no);
                 }
             }
         });
@@ -262,10 +278,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_fatigue.setText(String.valueOf(R.string.yes));
+                    se_fatigue.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_fatigue.setText(String.valueOf(R.string.no));
+                    se_fatigue.setText(R.string.no);
                 }
             }
         });
@@ -274,10 +290,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_headache.setText(String.valueOf(R.string.yes));
+                    se_headache.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_headache.setText(String.valueOf(R.string.no));
+                    se_headache.setText(R.string.no);
                 }
             }
         });
@@ -286,10 +302,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_myalgias.setText(String.valueOf(R.string.yes));
+                    se_myalgias.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_myalgias.setText(String.valueOf(R.string.no));
+                    se_myalgias.setText(R.string.no);
                 }
             }
         });
@@ -298,10 +314,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_diarrhea.setText(String.valueOf(R.string.yes));
+                    se_diarrhea.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_diarrhea.setText(String.valueOf(R.string.no));
+                    se_diarrhea.setText(R.string.no);
                 }
             }
         });
@@ -310,10 +326,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_chills.setText(String.valueOf(R.string.yes));
+                    se_chills.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_chills.setText(String.valueOf(R.string.no));
+                    se_chills.setText(R.string.no);
                 }
             }
         });
@@ -322,10 +338,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_nausea.setText(String.valueOf(R.string.yes));
+                    se_nausea.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_nausea.setText(String.valueOf(R.string.no));
+                    se_nausea.setText(R.string.no);
                 }
             }
         });
@@ -334,10 +350,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_urticaria.setText(String.valueOf(R.string.yes));
+                    se_urticaria.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_urticaria.setText(String.valueOf(R.string.no));
+                    se_urticaria.setText(R.string.no);
                 }
             }
         });
@@ -347,10 +363,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_joint_pain.setText(String.valueOf(R.string.yes));
+                    se_joint_pain.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_joint_pain.setText(String.valueOf(R.string.no));
+                    se_joint_pain.setText(R.string.no);
                 }
             }
         });
@@ -359,14 +375,14 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_fever.setText(String.valueOf(R.string.yes));
+                    se_fever.setText(R.string.yes);
                     et_se_fever.setFocusable(true);
                     et_se_fever.setCursorVisible(true);
                     et_se_fever.setFocusableInTouchMode(true);
                     et_se_fever.setClickable(true);
                 } else {
                     // The toggle is disabled
-                    se_fever.setText(String.valueOf(R.string.no));
+                    se_fever.setText(R.string.no);
                     et_se_fever.setFocusable(false);
                     et_se_fever.setCursorVisible(false);
                     et_se_fever.setFocusableInTouchMode(false);
@@ -381,10 +397,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_shortnessBreath.setText(String.valueOf(R.string.yes));
+                    se_shortnessBreath.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_shortnessBreath.setText(String.valueOf(R.string.no));
+                    se_shortnessBreath.setText(R.string.no);
                 }
             }
         });
@@ -393,10 +409,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_lossTaste.setText(String.valueOf(R.string.yes));
+                    se_lossTaste.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_lossTaste.setText(String.valueOf(R.string.no));
+                    se_lossTaste.setText(R.string.no);
                 }
             }
         });
@@ -405,10 +421,10 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_lossSmell.setText(String.valueOf(R.string.yes));
+                    se_lossSmell.setText(R.string.yes);
                 } else {
                     // The toggle is disabled
-                    se_lossSmell.setText(String.valueOf(R.string.no));
+                    se_lossSmell.setText(R.string.no);
                 }
             }
         });
@@ -417,14 +433,14 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
-                    se_others.setText(String.valueOf(R.string.yes));
+                    se_others.setText(R.string.yes);
                     et_se_others.setFocusable(true);
                     et_se_others.setCursorVisible(true);
                     et_se_others.setFocusableInTouchMode(true);
                     et_se_others.setClickable(true);
                 } else {
                     // The toggle is disabled
-                    se_others.setText(String.valueOf(R.string.no));
+                    se_others.setText(R.string.no);
                     et_se_others.setFocusable(false);
                     et_se_others.setCursorVisible(false);
                     et_se_others.setFocusableInTouchMode(false);
@@ -435,8 +451,6 @@ public class side_effects_Form_Activity extends AppCompatActivity {
             }
         });
 
-        et_se_fever_string = et_se_fever.getText().toString();
-        et_se_others_string = et_se_others.getText().toString();
 
         //Linear Layout
         ll_services_provided = findViewById(R.id.ll_services_provided);
@@ -711,7 +725,11 @@ public class side_effects_Form_Activity extends AppCompatActivity {
                     jobj.put("se_shortnessBreath", "" + se_shortnessBreath.getText().toString());
                     jobj.put("se_lossTaste", "" + se_lossTaste.getText().toString());
                     jobj.put("se_lossSmell", "" + se_lossSmell.getText().toString());
-                    jobj.put("se_lossSmell", "" + se_lossSmell.getText().toString());
+
+                    //edit texts
+                    jobj.put("et_se_fever", "" + et_se_fever.getText().toString());
+                    jobj.put("et_se_others", "" + et_se_others.getText().toString());
+
                     jobj.put("added_on", String.valueOf(System.currentTimeMillis()));
 
                     String cur_added_on = String.valueOf(System.currentTimeMillis());

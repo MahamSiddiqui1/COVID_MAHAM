@@ -1,14 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.p048v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_sync" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:cardElevation="@dimen/_5sdp" app:cardUseCompatPadding="true">
-    <RelativeLayout android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:gravity="center_horizontal" android:id="@+id/tvMedicineName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VideoName" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp"/>
-        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_below="@+id/tvMedicineName" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
-            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/blue_text_color" android:id="@+id/tvBal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Balance:"/>
-            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tvBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1" android:layout_marginStart="@dimen/_5sdp"/>
-            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/pink_color" android:gravity="end" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Utilized: " android:layout_weight="1"/>
-            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:gravity="end" android:layout_gravity="end" android:id="@+id/tvUtilized" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="@dimen/_5sdp"/>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sync"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/videoname"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMedicineName"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textColor="@color/blue_text_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/utilizedEng"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUtilized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="end"
+                android:text="@string/_0"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp" />
+
         </LinearLayout>
-        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/pink_color" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wastage: " android:layout_weight="1" android:layout_toLeftOf="@+id/tvWastage" android:layout_below="@+id/ll_balance"/>
-        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:id="@+id/tvWastage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:text="0" android:layout_below="@+id/ll_balance" android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_balance"
+            android:layout_gravity="end"
+            android:layout_toStartOf="@+id/tvWastage"
+            android:layout_weight="1"
+            android:text="@string/wastageColon"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWastage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_balance"
+
+          android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/_0"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+
     </RelativeLayout>
-</android.support.p048v7.widget.CardView>
+
+
+</android.support.v7.widget.CardView>
+
+
+    <!--</RelativeLayout>-->

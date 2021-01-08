@@ -1,38 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
-        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_talash_text" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.LHW_App.LHW_NavigationActivities.LHW_SearchActivities.Search_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/search_talash_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_menu" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/color_white" />
+
             </RelativeLayout>
         </RelativeLayout>
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
-            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/register_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBackgroundColor="@color/color_white" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
-                <ScrollView android:scrollbarSize="0dp" android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
-                    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="10dp">
-                        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_tariqa_talash_muntakhib_kre_text"/>
-                        <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text" android:maxEms="11"/>
-                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_idcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:src="@drawable/ic_idcard_image"/>
-                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/search_blue_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/search_shanakhti_card_kay_zarye_talash_kre_text"/>
-                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_smartphone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:src="@drawable/ic_smartphone_image"/>
-                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/search_blue_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/search_phone_number_kai_zarye_talash_kre_text"/>
-                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_khandannumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:src="@drawable/family_silhouette"/>
-                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/search_blue_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_kahndan_number_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/search_khandannumber_kai_zarye_talash_kre_text"/>
-                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:src="@drawable/ic_qrcode_img"/>
-                        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
-                            <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/search_blue_text_color" android:id="@+id/txt_qrcode_kai_zarye_talash_kre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swfpaqr_qrcode_kai_zarye_talash_kre_text"/>
-                            <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/search_blue_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" QR" android:layout_toRightOf="@+id/txt_qrcode_kai_zarye_talash_kre"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_home_top">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/register_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                app:optRoundCardBackgroundColor="@color/color_white"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="20dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    android:scrollbarThumbVertical="@android:color/transparent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_20sdp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/search_tariqa_talash_muntakhib_kre_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center_horizontal"
+                            android:maxEms="11"
+                            android:text="@string/search_barae_karam_dobaraha_talash_karny_kai_lye_ek_muntakhib_kre_text"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_idcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/ic_idcard_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/search_shanakhti_card_kay_zarye_talash_kre_text"
+                            android:textColor="@color/search_blue_text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_smartphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/ic_smartphone_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/search_phone_number_kai_zarye_talash_kre_text"
+                            android:textColor="@color/search_blue_text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_khandannumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/family_silhouette" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_kahndan_number_search"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/search_khandannumber_kai_zarye_talash_kre_text"
+                            android:textColor="@color/search_blue_text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_qrcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/ic_qrcode_img" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/txt_qrcode_kai_zarye_talash_kre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/swfpaqr_qrcode_kai_zarye_talash_kre_text"
+                                android:textColor="@color/search_blue_text_color"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt_qrcode_kai_zarye_talash_kre"
+                                android:text="@string/qr"
+                                android:textColor="@color/search_blue_text_color"
+                                android:textSize="@dimen/_14sdp" />
                         </RelativeLayout>
-                        <Button android:textSize="@dimen/_16sdp" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@+id/btn_finger_print_search" android:background="@drawable/login_button_shape_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/swfpaqr_qr_code_kai_zarye_talash_kre_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/btn_finger_print_search"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/login_button_shape_layout"
+                            android:text="@string/swfpaqr_qr_code_kai_zarye_talash_kre_text"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_14sdp" />
                     </LinearLayout>
+
+
                 </ScrollView>
+
+
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
         </RelativeLayout>
+
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

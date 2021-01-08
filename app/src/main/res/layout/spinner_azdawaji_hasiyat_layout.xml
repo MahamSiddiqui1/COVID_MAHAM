@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/_12sdp" android:textColor="@color/dark_blue_color" android:ellipsize="middle" android:gravity="right" android:layout_gravity="fill" android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cr_spinner_ek_muntakhib_kre_text" android:textDirection="anyRtl"/>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill"
+    android:ellipsize="middle"
+    android:gravity="left"
+    android:text="@string/select_one"
+    android:textColor="@color/dark_blue_color"
+    android:textDirection="anyRtl"
+    android:textSize="@dimen/_12sdp"
+    tools:ignore="RtlHardcoded" />
+
+

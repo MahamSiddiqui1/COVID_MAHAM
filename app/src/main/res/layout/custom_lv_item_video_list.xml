@@ -1,7 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.p048v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_sync" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:cardElevation="@dimen/_5sdp" app:cardUseCompatPadding="true">
-    <RelativeLayout android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/image_video" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:layout_marginRight="@dimen/_10sdp" android:src="@drawable/ic_ondemand_video_black_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_8sdp"/>
-        <TextView android:textSize="@dimen/_12sdp" android:textStyle="normal" android:textColor="@color/dark_blue_color" android:id="@+id/tvComments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VideoName" android:layout_toRightOf="@+id/image_video" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp"/>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/llcenter"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:padding="@dimen/_5sdp">-->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sync"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/image_video"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_ondemand_video_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/tvComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/image_video"
+            android:text="@string/videoname"
+            android:textStyle="normal"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+
     </RelativeLayout>
-</android.support.p048v7.widget.CardView>
+
+
+</android.support.v7.widget.CardView>
+
+
+    <!--</RelativeLayout>-->

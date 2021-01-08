@@ -1,2 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<x xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rl_left_topbottomcorner"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_topbottomcorner_red_background_layout">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_topbottomcorner_background_layout">
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hp_lv_tvNaam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="شہلہ علی"
+                        android:textColor="@color/hp_listview_textview_redcolor"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                    <TextView
+                        android:id="@+id/hp_lv_tvTareekh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:text="@string/hp_listview_tareekh_text"
+                        android:textColor="@color/hp_listview_textview_redcolor"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/hp_lv_tvTareekh_Adaegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="@string/hp_listview_tareekh_adaegi_text"
+                    android:visibility="gone"
+                    android:textColor="@color/hp_listview_textview_greycolor"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/hp_lv_tvGaon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="@string/hp_listview_gaon_text"
+                    android:textColor="@color/hp_listview_textview_greycolor"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_gender_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginEnd="@dimen/_5sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

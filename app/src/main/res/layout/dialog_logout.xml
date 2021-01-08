@@ -1,16 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
-    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_1sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <View android:layout_gravity="center_horizontal" android:background="@color/grey_color" android:layout_width="@dimen/_35sdp" android:layout_height="2dp" android:layout_marginTop="@dimen/_5sdp"/>
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
-            <ImageView android:id="@+id/iv_logo" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_45sdp" android:src="@drawable/ic_hayat_progress_logo" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/_10sdp"/>
-            <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:gravity="center_vertical" android:layout_gravity="right" android:paddingTop="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="لاگ آؤٹ" android:layout_toLeftOf="@+id/iv_logo" android:layout_centerVertical="true"/>
-            <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:visibility="gone" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_marginStart="@dimen/_5sdp"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_1sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="false"
+                android:layout_marginEnd="340dp"
+                android:src="@drawable/ic_hayat_progress_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/iv_logo"
+                android:gravity="left"
+                android:paddingTop="@dimen/_8sdp"
+                android:text="@string/log_out"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/pbProgress"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                android:visibility="gone" />
+
+
         </RelativeLayout>
-        <TextView android:textSize="@dimen/_14sdp" android:textStyle="normal" android:textColor="@color/dark_blue_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:text="کیا آپ ایپلیکیشن سے لاگ آؤٹ ہونا چاہتے ہے؟"/>
-        <View android:layout_gravity="center_horizontal" android:background="@color/grey_color" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="@dimen/_20sdp"/>
-        <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/green_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvYesLogout" android:paddingTop="@dimen/_15sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="لاگ آؤٹ "/>
-        <View android:layout_gravity="center_horizontal" android:background="@color/grey_color" android:layout_width="match_parent" android:layout_height="2dp"/>
-        <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/graph_red_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvNoLogout" android:paddingTop="@dimen/_15sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="منسوخ"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/wantoLogout"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/grey_color" />
+
+        <TextView
+            android:id="@+id/tvYesLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/log_out"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/grey_color" />
+
+        <TextView
+            android:id="@+id/tvNoLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableTint="@color/graph_red_color"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/cancelEng"
+            android:textColor="@color/graph_red_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
     </LinearLayout>
+
+
 </RelativeLayout>

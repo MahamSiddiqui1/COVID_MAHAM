@@ -237,7 +237,7 @@
                                             android:layout_alignParentLeft="true"
                                             android:layout_alignParentRight="true"
                                             android:layout_marginRight="@dimen/_5sdp"
-                                            android:text="@string/adverseEffect"
+                                            android:text="@string/adverseEffects"
                                             android:layout_marginLeft="@dimen/_5sdp"
                                             android:textColor="@color/text_color"
                                             android:textSize="@dimen/_12sdp" />
@@ -1220,7 +1220,6 @@
                                             android:cursorVisible="false"
                                             android:focusable="false"
                                             android:focusableInTouchMode="false"
-
                                             android:id="@+id/et_se_fever"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"

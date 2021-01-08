@@ -1,9 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.p048v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_sync" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:cardElevation="@dimen/_5sdp" app:cardUseCompatPadding="true">
-    <RelativeLayout android:background="@null" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UnKnown"/>
-        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/light_blue_color" android:id="@+id/tvID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="ID:1298100" android:layout_below="@+id/tvName"/>
-        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/light_grey_color" android:id="@+id/tvDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="26-10-2019 02:05:10" android:layout_toLeftOf="@+id/gender_icon" android:layout_below="@+id/tvName"/>
-        <ImageView android:id="@+id/gender_icon" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="5dp" android:src="@drawable/baby_boy_icon" android:layout_below="@+id/tvName" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:id="@+id/llcenter"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="@dimen/_5sdp">-->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sync"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="5dp"
+            android:text="@string/id_1298100"
+            android:textColor="@color/light_blue_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/gender_icon"
+            android:text="@string/_26_10_2019_02_05_10"
+            android:textColor="@color/light_grey_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/gender_icon"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/tvName"
+            android:src="@drawable/baby_boy_icon"
+
+            android:layout_marginTop="5dp"/>
+
     </RelativeLayout>
-</android.support.p048v7.widget.CardView>
+</android.support.v7.widget.CardView>
+
+    <!--</RelativeLayout>-->

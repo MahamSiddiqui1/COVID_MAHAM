@@ -18,12 +18,9 @@ import android.widget.Toast;
 
 import com.akdndhrc.covid_module.Adapter.Adt_CovidImmunization.Adt_ComorbidityRecordList;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
-import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
 import com.akdndhrc.covid_module.R;
 import com.akdndhrc.covid_module.VAC_App.HomePageVacinator_Activity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_Form_Activity;
-import com.akdndhrc.covid_module.VAC_App.covid_dashboard.dashboard_comorbidity.co_morbidity_FormView_Activity;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

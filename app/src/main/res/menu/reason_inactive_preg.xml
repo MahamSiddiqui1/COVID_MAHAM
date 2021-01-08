@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<x xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item1"
+        android:title="Live birth delivered"/>
+
+    <item android:id="@+id/item2"
+        android:title="Abortion"/>
+
+    <item android:id="@+id/item3"
+        android:title="still birth"/>
+
+    <item android:id="@+id/item4"
+        android:title="Neo Natal death"/>
+
+    <item android:id="@+id/item5"
+        android:title="Infant death"/>
+
+
+
+</menu>

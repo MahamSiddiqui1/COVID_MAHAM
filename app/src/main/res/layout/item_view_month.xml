@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout" android:background="@drawable/month_selector" android:layout_width="52dp" android:layout_height="52dp" android:layout_margin="5dp">
-    <TextView android:textSize="19sp" android:textColor="@drawable/text_selector" android:id="@+id/text_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jan"/>
-</LinearLayout>

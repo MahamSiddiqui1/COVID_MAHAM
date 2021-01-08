@@ -1,153 +1,1072 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
-        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqapf_qabalAzpedaish_text" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LHW_App.LHW_MotherDashboardActivities.MotherHaamlaRecordActivities.MotherQabalAzPedaishActivities.
+">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mqapf_qabalAzpedaish_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_menu" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_dashboard_icon" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_dashboard_icon"
+                    android:tint="@color/color_white" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_editform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_toRightOf="@+id/rlMenu" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_editform" android:padding="@dimen/_6sdp" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_editprofile_icon" android:tint="@color/color_white" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_editform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rlMenu"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_editform"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+
+                    android:visibility="gone"
+                    android:padding="@dimen/_6sdp"
+                    android:tint="@color/color_white"
+                    android:src="@drawable/ic_editprofile_icon" />
             </RelativeLayout>
+
+
         </RelativeLayout>
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
-            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBackgroundColor="@color/color_white" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
-                <ScrollView android:scrollbarSize="0dp" android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
-                    <RelativeLayout android:paddingBottom="@dimen/_30sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
-                        <TableLayout android:id="@+id/table_layout" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
-                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
-                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/cbf_tareekh_indraj_text" android:layout_weight="1" android:fontFamily="@font/droid_naskh_regular"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_home_top">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/childregister_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                app:optRoundCardBackgroundColor="@color/color_white"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="20dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbarSize="0dp"
+                    android:scrollbarThumbVertical="@android:color/transparent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="@dimen/_30sdp">
+
+
+                        <TableLayout
+                            android:id="@+id/table_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:padding="@dimen/_10sdp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txt_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/droid_naskh_regular"
+                                    android:text="@string/cbf_tareekh_indraj_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
                             </TableRow>
-                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-                                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_khandan_ka_number" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
-                                    <EditText android:textSize="@dimen/_12sdp" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_tareekh_indraj" android:background="@null" android:padding="@dimen/_5sdp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:drawableRight="@drawable/ic_calender" android:drawablePadding="@dimen/_10sdp" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_khandan_ka_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/et_tareekh_indraj"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:background="@null"
+                                        android:drawablePadding="@dimen/_10sdp"
+                                        android:drawableEnd="@drawable/ic_calender"
+                                        android:gravity="right"
+                                      android:focusableInTouchMode="false"
+                                        android:cursorVisible="false"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </LinearLayout>
+
                             </TableRow>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_wazan_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_wazan_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+
                             </TableRow>
-                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-                                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
-                                    <EditText android:textSize="@dimen/_12sdp" android:textColorHint="@color/dark_blue_color" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_wazan" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/cnnf_kilo_text" android:inputType="number" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_background_layout"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/et_wazan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:background="@null"
+                                        android:gravity="right"
+                                        android:hint="@string/cnnf_kilo_text"
+                                        android:textColorHint="@color/dark_blue_color"
+                                        android:inputType="number"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </LinearLayout>
+
                             </TableRow>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_khoon_ka_dabaoo_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_khoon_ka_dabaoo_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+
                             </TableRow>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_140_90_sy_kum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_140_90_sy_kum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_140_90_sy_kum_text" android:layout_toLeftOf="@+id/checkbox_140_90_sy_kum" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_140_90_sy_kum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_140_90_sy_kum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_140_90_sy_kum"
+                                        android:text="@string/mqaphcd_140_90_sy_kum_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_140_90_sy_zyada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_140_90_sy_zyada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_140_90_sy_zyada_text" android:layout_toLeftOf="@+id/checkbox_140_90_sy_zyada" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_140_90_sy_zyada"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_140_90_sy_zyada"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_140_90_sy_zyada"
+                                        android:text="@string/mqaphcd_140_90_sy_zyada_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_bachey_kay_dil_ki_dharkan_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_bachey_kay_dil_ki_dharkan_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
                             </TableRow>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_mojood_hai_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_mojood_hai_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_mojood_hai_text" android:layout_toLeftOf="@+id/checkbox_mojood_hai_2" android:layout_centerVertical="true"/>
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_nahi_hai_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:layout_toLeftOf="@+id/txt_mojood_hai_2" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_nahi_hai_text" android:layout_toLeftOf="@+id/checkbox_nahi_hai_2" android:layout_centerVertical="true"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="0dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_mojood_hai_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_mojood_hai_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_mojood_hai_2"
+                                        android:text="@string/mqaphcd_mojood_hai_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_nahi_hai_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="@dimen/_15sdp"
+                                        android:layout_toStartOf="@+id/txt_mojood_hai_2"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@+id/checkbox_nahi_hai_2"
+                                        android:text="@string/mqaphcd_nahi_hai_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_raham_ki_oonchai_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_raham_ki_oonchai_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
                             </TableRow>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
-                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
-                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
-                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_20sdp" android:text="@string/mqaphcd_centimeter_text" android:layout_alignParentRight="true"/>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_marginEnd="@dimen/_20sdp"
+                                            android:text="@string/mqaphcd_centimeter_text"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
                                     </RelativeLayout>
-                                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
-                                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_haftay_hai_text" android:layout_alignParentRight="true"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:text="@string/mqaphcd_haftay_hai_text"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+
                                     </RelativeLayout>
+
+
                                 </LinearLayout>
+
                             </TableRow>
-                            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:weightSum="2" android:layout_weight="1">
-                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_weight="1">
-                                        <EditText android:textSize="@dimen/_12sdp" android:textColorHint="@color/dark_blue_color" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_centimeter" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mqaphcd_centimeter_text" android:maxLines="1" android:lines="1" android:inputType="number" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/et_centimeter"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:background="@null"
+                                            android:gravity="right"
+                                            android:hint="@string/mqaphcd_centimeter_text"
+                                            android:inputType="number"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:padding="@dimen/_5sdp"
+                                            android:textColorHint="@color/dark_blue_color"
+                                            android:textSize="@dimen/_12sdp" />
                                     </LinearLayout>
-                                    <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_background_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
-                                        <EditText android:textSize="@dimen/_12sdp" android:textColorHint="@color/dark_blue_color" android:gravity="right" android:layout_gravity="center" android:id="@+id/et_haftay" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mqaphcd_haftay_hai_text" android:maxLines="1" android:lines="1" android:inputType="number" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp"/>
+
+                                    <LinearLayout
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/edittext_background_layout"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/et_haftay"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:background="@null"
+                                            android:gravity="right"
+                                            android:hint="@string/mqaphcd_haftay_hai_text"
+                                            android:inputType="number"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:padding="@dimen/_5sdp"
+                                            android:textColorHint="@color/dark_blue_color"
+                                            android:textSize="@dimen/_12sdp" />
+
+
                                     </LinearLayout>
+
+
                                 </LinearLayout>
+
+
                             </TableRow>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_bachay_ka_rukh_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_bachay_ka_rukh_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
                             </TableRow>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_sir_kay_baal_seedha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_sir_kay_baal_seedha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_sir_kay_baal_seedha_text" android:layout_toLeftOf="@+id/checkbox_sir_kay_baal_seedha" android:layout_centerVertical="true"/>
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_aara" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:layout_toLeftOf="@+id/txt_sir_kay_baal_seedha" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_aara_text" android:layout_toLeftOf="@+id/checkbox_aara" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="0dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_sir_kay_baal_seedha"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_sir_kay_baal_seedha"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_sir_kay_baal_seedha"
+                                        android:text="@string/mqaphcd_sir_kay_baal_seedha_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_aara"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="@dimen/_15sdp"
+                                        android:layout_toStartOf="@+id/txt_sir_kay_baal_seedha"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@+id/checkbox_aara"
+                                        android:text="@string/mqaphcd_aara_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_thercha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_thercha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_thercha_text" android:layout_toLeftOf="@+id/checkbox_thercha" android:layout_centerVertical="true"/>
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_ulta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:layout_toLeftOf="@+id/txt_thercha" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_ulta_text" android:layout_toLeftOf="@+id/checkbox_ulta" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="0dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_thercha"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_thercha"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_thercha"
+                                        android:text="@string/mqaphcd_thercha_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_ulta"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="@dimen/_15sdp"
+                                        android:layout_toStartOf="@+id/txt_thercha"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@+id/checkbox_ulta"
+                                        android:text="@string/mqaphcd_ulta_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_peeshab_ka_muaina_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_peeshab_ka_muaina_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+
                             </TableRow>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_normal_text" android:layout_toLeftOf="@+id/checkbox_normal" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_normal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_normal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_normal"
+                                        android:text="@string/mqaphcd_normal_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_sugar_ki_mojoodgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_sugar_ki_mojoodgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_sugar_ki_mojoodgi_text" android:layout_toLeftOf="@+id/checkbox_sugar_ki_mojoodgi" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp">
+
+
+                                <com.rey.material.widget.CheckBox
+                                    android:id="@+id/checkbox_sugar_ki_mojoodgi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerVertical="true"
+                                    app:cbd_boxSize="@dimen/_25sdp"
+                                    app:cbd_cornerRadius="0dp"
+                                    app:cbd_height="@dimen/_40sdp"
+                                    app:cbd_strokeColor="@color/pink_color"
+                                    app:cbd_strokeSize="1dp"
+                                    app:cbd_tickColor="#FFFFFF"
+                                    app:cbd_width="@dimen/_40sdp" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_sugar_ki_mojoodgi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@id/checkbox_sugar_ki_mojoodgi"
+                                    android:text="@string/mqaphcd_sugar_ki_mojoodgi_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_protein_ki_mojoodgi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_protein_ki_mojoodgi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_protein_ki_mojoodgi"
+                                        android:text="@string/mqaphcd_protein_ki_mojoodgi_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_protein_ki_mojoodgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_protein_ki_mojoodgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_protein_ki_mojoodgi_text" android:layout_toLeftOf="@+id/checkbox_protein_ki_mojoodgi" android:layout_centerVertical="true"/>
-                                </RelativeLayout>
-                            </LinearLayout>
-                            <TableRow android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
-                                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="@string/mqaphcd_haemoglobin_text" android:layout_weight="1" android:layout_alignParentRight="true"/>
+
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:text="@string/mqaphcd_haemoglobin_text"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+
                             </TableRow>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_100gm_dl_sy_kum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_100gm_dl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_100gm_dl_text" android:layout_toLeftOf="@+id/checkbox_100gm_dl_sy_kum" android:layout_centerVertical="true"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_say_kum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_1sdp" android:text="@string/mqaphcd_say_kum_text" android:layout_toLeftOf="@+id/txt_100gm_dl" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_100gm_dl_sy_kum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_100gm_dl"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_100gm_dl_sy_kum"
+                                        android:text="@string/mqaphcd_100gm_dl_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_say_kum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/txt_100gm_dl"
+                                        android:layout_marginEnd="@dimen/_1sdp"
+                                        android:text="@string/mqaphcd_say_kum_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
-                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
-                                    <com.rey.material.widget.CheckBox android:id="@+id/checkbox_100gm_dl_sy_zyada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cbd_boxSize="@dimen/_25sdp" app:cbd_cornerRadius="0dp" app:cbd_height="@dimen/_40sdp" app:cbd_strokeColor="@color/pink_color" app:cbd_strokeSize="1dp" app:cbd_tickColor="#ffffff" app:cbd_width="@dimen/_40sdp"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_100gm_dl_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mqaphcd_100gm_dl_text" android:layout_toLeftOf="@+id/checkbox_100gm_dl_sy_zyada" android:layout_centerVertical="true"/>
-                                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color" android:id="@+id/txt_say_zyada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_1sdp" android:text="@string/mqaphcd_say_zyada_text" android:layout_toLeftOf="@+id/txt_100gm_dl_" android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="5dp">
+
+
+                                    <com.rey.material.widget.CheckBox
+                                        android:id="@+id/checkbox_100gm_dl_sy_zyada"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerVertical="true"
+                                        app:cbd_boxSize="@dimen/_25sdp"
+                                        app:cbd_cornerRadius="0dp"
+                                        app:cbd_height="@dimen/_40sdp"
+                                        app:cbd_strokeColor="@color/pink_color"
+                                        app:cbd_strokeSize="1dp"
+                                        app:cbd_tickColor="#FFFFFF"
+                                        app:cbd_width="@dimen/_40sdp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_100gm_dl_"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/checkbox_100gm_dl_sy_zyada"
+                                        android:text="@string/mqaphcd_100gm_dl_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_say_zyada"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@id/txt_100gm_dl_"
+                                        android:layout_marginEnd="@dimen/_1sdp"
+                                        android:text="@string/mqaphcd_say_zyada_text"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
                                 </RelativeLayout>
+
                             </LinearLayout>
+
+
                         </TableLayout>
-                        <Button android:textSize="@dimen/_18sdp" android:textColor="@color/color_white" android:id="@+id/btn_jamaa_kre" android:background="@drawable/login_button_shape_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/mqaphcd_jamaa_kre_button_text" android:layout_below="@+id/table_layout" android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/table_layout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@drawable/login_button_shape_layout"
+                            android:text="@string/mqaphcd_jamaa_kre_button_text"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_18sdp" />
+
+
                     </RelativeLayout>
+
+
                 </ScrollView>
-                <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress" android:background="@drawable/circle_cardview" android:padding="@dimen/_10sdp" android:visibility="gone" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:indeterminateDrawable="@drawable/rotate_animation"/>
+
+                <ProgressBar
+                    android:id="@+id/pbProgress"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_cardview"
+                    android:indeterminateDrawable="@drawable/rotate_animation"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
         </RelativeLayout>
+
+
     </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>

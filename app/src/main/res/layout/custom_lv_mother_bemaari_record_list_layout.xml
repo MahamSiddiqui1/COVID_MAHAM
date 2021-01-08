@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout android:id="@+id/mbr_lv_rl_background" android:background="@color/afm_rl_background_color" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/mbr_lv_iv_calender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:src="@drawable/ic_calender" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
-        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color" android:id="@+id/mbr_lv_tvNaam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="" android:layout_toLeftOf="@+id/mbr_lv_iv_calender" android:layout_centerVertical="true"/>
-        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/lv_grey_color" android:id="@+id/mbr_lv_tvDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25sdp" android:text="20/2/2019" android:layout_toRightOf="@+id/mbr_lv_iv_tablet_reffer" android:layout_centerVertical="true"/>
-        <ImageView android:id="@+id/mbr_lv_iv_tablet_reffer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/ic_tablets_icon" android:layout_centerVertical="true"/>
-        <ImageView android:id="@+id/mbr_lv_iv_refer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_2sdp" android:src="@drawable/ic_refer_icon" android:layout_toRightOf="@+id/mbr_lv_iv_tablet_reffer" android:layout_centerVertical="true"/>
-    </RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="0dp">
+
+
+<RelativeLayout
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/mbr_lv_rl_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/afm_rl_background_color">
+
+
+    <TextView
+        android:id="@+id/mbr_lv_tvNaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_color"
+        android:text="@string/_1"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/mbr_lv_tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_toEndOf="@+id/mbr_lv_tvNaam"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textColor="@color/text_color"
+        android:text="@string/_124"
+        android:textSize="@dimen/_12sdp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:rotation="180"
+        android:src="@drawable/ic_leftarrow_icon" />
+
+</RelativeLayout>
+
 </RelativeLayout>

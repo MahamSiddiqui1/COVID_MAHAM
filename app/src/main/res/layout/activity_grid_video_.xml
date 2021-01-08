@@ -1,2 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<x xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"/>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.GridVideo_Activity">
+
+
+    <LinearLayout
+        android:id="@+id/llcenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <GridView
+
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:columnWidth="170dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:scrollbarThumbVertical="@color/dark_blue_color"
+            android:smoothScrollbar="true"
+            android:scrollbarSize="2dp"
+            android:scrollbars="vertical"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="20dp">
+
+        </GridView>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

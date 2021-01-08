@@ -16,8 +16,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -30,7 +28,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akdndhrc.covid_module.AppController;
-import com.akdndhrc.covid_module.CustomClass.NothingSelectedSpinnerAdapter;
 import com.akdndhrc.covid_module.CustomClass.UrlClass;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
 import com.akdndhrc.covid_module.GPSTracker;
@@ -46,7 +43,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.rey.material.widget.CheckBox;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -54,7 +50,11 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.akdndhrc.covid_module.R.*;
+import static com.akdndhrc.covid_module.R.color;
+import static com.akdndhrc.covid_module.R.drawable;
+import static com.akdndhrc.covid_module.R.id;
+import static com.akdndhrc.covid_module.R.layout;
+import static com.akdndhrc.covid_module.R.string;
 
 
 public class co_morbidity_FormView_Activity extends AppCompatActivity {
@@ -133,7 +133,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
 
         //Get shared USer name
         try {
-            SharedPreferences prefelse = getApplicationContext().getSharedPreferences(getString(string.userLogin), 0); // 0 - for private mode
+            SharedPreferences prefelse = getApplicationContext().getSharedPreferences("user_login", 0); // 0 - for private mode
             String shared_useruid = prefelse.getString("login_userid", null); // getting String
             login_useruid = shared_useruid;
             Log.d("000987", "USER UID: " + login_useruid);
@@ -173,52 +173,52 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         et_tareekh_visit = findViewById(id.et_tareekh_visit);
 
         //Switch
-        cm_no_comorbidity = findViewById(R.id.cm_no_comorbidity);
-        cm_cancer= findViewById(R.id.cm_cancer);
-        cm_chronic_kidney_disease= findViewById(R.id.cm_chronic_kidney_disease);
-        cm_copd= findViewById(R.id.cm_copd);
-        cm_heart_condition= findViewById(R.id.cm_heart_condition);
-        cm_immune_compromised_organ= findViewById(R.id.cm_immune_compromised_organ);
-        cm_obesity= findViewById(R.id.cm_obesity);
-        cm_sickle_cell_disease= findViewById(R.id.cm_sickle_cell_disease);
-        cm_pregnancy = findViewById(R.id.cm_pregnancy);
-        cm_asthma= findViewById(R.id.cm_asthma);
-        cm_cerebrovascular_disease= findViewById(R.id.cm_cerebrovascular_disease);
-        cm_cystic_fibrosis= findViewById(R.id.cm_cystic_fibrosis);
-        cm_hypertension= findViewById(R.id.cm_hypertension);
-        cm_immune_compromised_other= findViewById(R.id.cm_immune_compromised_other);
-        cm_neurologic = findViewById(R.id.cm_neurologic);
-        cm_liver_disease= findViewById(R.id.cm_liver_disease);
-        cm_overweight= findViewById(R.id.cm_overweight);
-        cm_pulmonary_fibrosis= findViewById(R.id.cm_pulmonary_fibrosis);
-        cm_thalassemia= findViewById(R.id.cm_thalassemia);
-        cm_type1_diabetes= findViewById(R.id.cm_type1_diabetes);
-        cm_ldl_cholestrol= findViewById(R.id.cm_ldl_cholestrol);
-        cm_others= findViewById(R.id.cm_others);
+        cm_no_comorbidity = findViewById(id.cm_no_comorbidity);
+        cm_cancer= findViewById(id.cm_cancer);
+        cm_chronic_kidney_disease= findViewById(id.cm_chronic_kidney_disease);
+        cm_copd= findViewById(id.cm_copd);
+        cm_heart_condition= findViewById(id.cm_heart_condition);
+        cm_immune_compromised_organ= findViewById(id.cm_immune_compromised_organ);
+        cm_obesity= findViewById(id.cm_obesity);
+        cm_sickle_cell_disease= findViewById(id.cm_sickle_cell_disease);
+        cm_pregnancy = findViewById(id.cm_pregnancy);
+        cm_asthma= findViewById(id.cm_asthma);
+        cm_cerebrovascular_disease= findViewById(id.cm_cerebrovascular_disease);
+        cm_cystic_fibrosis= findViewById(id.cm_cystic_fibrosis);
+        cm_hypertension= findViewById(id.cm_hypertension);
+        cm_immune_compromised_other= findViewById(id.cm_immune_compromised_other);
+        cm_neurologic = findViewById(id.cm_neurologic);
+        cm_liver_disease= findViewById(id.cm_liver_disease);
+        cm_overweight= findViewById(id.cm_overweight);
+        cm_pulmonary_fibrosis= findViewById(id.cm_pulmonary_fibrosis);
+        cm_thalassemia= findViewById(id.cm_thalassemia);
+        cm_type1_diabetes= findViewById(id.cm_type1_diabetes);
+        cm_ldl_cholestrol= findViewById(id.cm_ldl_cholestrol);
+        cm_others= findViewById(id.cm_others);
 
         //EditText
         //Switch
-        et_cm_cancer= findViewById(R.id.et_cm_cancer);
-        et_cm_chronic_kidney_disease= findViewById(R.id.et_cm_chronic_kidney_disease);
-        et_cm_copd= findViewById(R.id.et_cm_copd);
-        et_cm_heart_condition= findViewById(R.id.et_cm_heart_condition);
-        et_cm_immune_compromised_organ= findViewById(R.id.et_cm_immune_compromised_organ);
-        et_cm_obesity= findViewById(R.id.et_cm_obesity);
-        et_cm_sickle_cell_disease= findViewById(R.id.et_cm_sickle_cell_disease);
-        et_cm_pregnancy = findViewById(R.id.et_cm_pregnancy);
-        et_cm_asthma= findViewById(R.id.et_cm_asthma);
-        et_cm_cerebrovascular_disease= findViewById(R.id.et_cm_cerebrovascular_disease);
-        et_cm_cystic_fibrosis= findViewById(R.id.et_cm_cystic_fibrosis);
-        et_cm_hypertension= findViewById(R.id.et_cm_hypertension);
-        et_cm_immune_compromised_other= findViewById(R.id.et_cm_immune_compromised_other);
-        et_cm_neurologic = findViewById(R.id.et_cm_neurologic);
-        et_cm_liver_disease= findViewById(R.id.et_cm_liver_disease);
-        et_cm_overweight= findViewById(R.id.et_cm_overweight);
-        et_cm_pulmonary_fibrosis= findViewById(R.id.et_cm_pulmonary_fibrosis);
-        et_cm_thalassemia= findViewById(R.id.et_cm_thalassemia);
-        et_cm_type1_diabetes= findViewById(R.id.et_cm_type1_diabetes);
-        et_cm_ldl_cholestrol= findViewById(R.id.et_cm_ldl_cholestrol);
-        et_cm_others= findViewById(R.id.et_cm_others);
+        et_cm_cancer= findViewById(id.et_cm_cancer);
+        et_cm_chronic_kidney_disease= findViewById(id.et_cm_chronic_kidney_disease);
+        et_cm_copd= findViewById(id.et_cm_copd);
+        et_cm_heart_condition= findViewById(id.et_cm_heart_condition);
+        et_cm_immune_compromised_organ= findViewById(id.et_cm_immune_compromised_organ);
+        et_cm_obesity= findViewById(id.et_cm_obesity);
+        et_cm_sickle_cell_disease= findViewById(id.et_cm_sickle_cell_disease);
+        et_cm_pregnancy = findViewById(id.et_cm_pregnancy);
+        et_cm_asthma= findViewById(id.et_cm_asthma);
+        et_cm_cerebrovascular_disease= findViewById(id.et_cm_cerebrovascular_disease);
+        et_cm_cystic_fibrosis= findViewById(id.et_cm_cystic_fibrosis);
+        et_cm_hypertension= findViewById(id.et_cm_hypertension);
+        et_cm_immune_compromised_other= findViewById(id.et_cm_immune_compromised_other);
+        et_cm_neurologic = findViewById(id.et_cm_neurologic);
+        et_cm_liver_disease= findViewById(id.et_cm_liver_disease);
+        et_cm_overweight= findViewById(id.et_cm_overweight);
+        et_cm_pulmonary_fibrosis= findViewById(id.et_cm_pulmonary_fibrosis);
+        et_cm_thalassemia= findViewById(id.et_cm_thalassemia);
+        et_cm_type1_diabetes= findViewById(id.et_cm_type1_diabetes);
+        et_cm_ldl_cholestrol= findViewById(id.et_cm_ldl_cholestrol);
+        et_cm_others= findViewById(id.et_cm_others);
 
         //Linear Layout
         ll_services_provided = findViewById(id.ll_services_provided);
@@ -616,7 +616,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
             alertDialog.dismiss();
             //  Toast.makeText(ctx, "Error", Toast.LENGTH_SHORT).show();
             Log.d("000987", " Error" + e.getMessage());
-            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -1000,7 +1000,7 @@ public class co_morbidity_FormView_Activity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("000987", " Error: " + e.getMessage());
-            Toast.makeText(ctx, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, string.somethingWrong, Toast.LENGTH_SHORT).show();
         }
 
       /*  try {

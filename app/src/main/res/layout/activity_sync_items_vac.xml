@@ -1,68 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout android:background="@drawable/ic_rectangle_shape" android:layout_width="match_parent" android:layout_height="match_parent">
-        <RelativeLayout android:id="@+id/rl_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-            <RelativeLayout android:id="@+id/rlMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="سینک" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akdndhrc.covid_module.VAC_App.VAC_NavigationActivities.VAC_SyncDataActivities.VAC_SyncItems_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sync"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_navigation_drawer" android:clickable="true" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_navigation_drawer" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_1sdp" android:src="@drawable/ic_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_navigation_drawer"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_navigation_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_menu" />
+
             </RelativeLayout>
-            <RelativeLayout android:id="@+id/rl_home" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-                <ImageView android:id="@+id/iv_home" android:padding="@dimen/_4sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_black_24dp" android:tint="@color/color_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@color/color_white" />
+
             </RelativeLayout>
         </RelativeLayout>
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_home_top">
-            <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/childregister_card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" app:optRoundCardBottomEdges="false" app:optRoundCardCornerRadius="20dp" app:optRoundCardLeftBottomCorner="false" app:optRoundCardRightBottomCorner="false">
-                <ScrollView android:scrollbarSize="@dimen/_1sdp" android:scrollbarThumbVertical="@color/grey_color" android:layout_width="match_parent" android:layout_height="match_parent">
-                    <LinearLayout android:orientation="vertical" android:id="@+id/llcenter" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_khandan_reg" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بچے کے  خاندان رجسٹریشن کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_khandan_reg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_home_top">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/childregister_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="20dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="@dimen/_1sdp"
+                    android:scrollbarThumbVertical="@color/grey_color">
+
+
+                    <LinearLayout
+                        android:id="@+id/llcenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rl_khandan_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/childFamReg"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_khandan_reg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    />
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_reg" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بچے کے رجسٹریشن کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_reg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
-                                <ProgressBar android:id="@+id/pb_2" android:visibility="gone" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_alignParentStart="true"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/childRegRec"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_reg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <ProgressBar
+                                    android:id="@+id/pb_2"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                                    android:visibility="gone" />
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
-                        <View android:background="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_15sdp"/>
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_child_hifaziti_teekey_record" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بچے کے حفاظتی ٹیکے کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_child_hifaziti_teekey_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
-                                <ProgressBar android:id="@+id/pb_3" android:visibility="gone" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_alignParentStart="true"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@color/dark_blue_color" />
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <RelativeLayout
+
+                                android:id="@+id/rl_child_hifaziti_teekey_record"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/chtr_bachey_kai_hifaziti_teekey_ka_record_text"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_child_hifaziti_teekey_record"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <ProgressBar
+                                    android:id="@+id/pb_3"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                                    android:visibility="gone" />
+
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
-                        <View android:background="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_15sdp"/>
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_mother_hifaziti_teekey_record" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ماں کے حفاظتی ٹیکے کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_mother_hifaziti_teekey_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
-                                <ProgressBar android:id="@+id/pb_11" android:visibility="gone" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_alignParentStart="true"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@color/dark_blue_color" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mother_hifaziti_teekey_record"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/motherVaccRec"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_mother_hifaziti_teekey_record"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <ProgressBar
+                                    android:id="@+id/pb_11"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                                    android:visibility="gone" />
+
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
-                        <View android:background="@color/dark_blue_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_video_record" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ویڈیوز کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_video_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
-                                <ProgressBar android:id="@+id/pb_4" android:visibility="gone" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_alignParentStart="true"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/dark_blue_color" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <RelativeLayout
+
+                                android:id="@+id/rl_video_record"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/videosRec"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_video_record"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <ProgressBar
+                                    android:id="@+id/pb_4"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                                    android:visibility="gone" />
+
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
-                        <android.support.p048v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:cardCornerRadius="@dimen/_5sdp">
-                            <RelativeLayout android:id="@+id/rl_feedback_record" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="فیڈ بیک کا ریکارڈ" android:layout_alignParentEnd="true"/>
-                                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/dark_blue_color" android:id="@+id/txt_feedback_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
-                                <ProgressBar android:id="@+id/pb_5" android:visibility="gone" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:indeterminateDrawable="@drawable/circular_progressbar_layout" android:layout_alignParentStart="true"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <RelativeLayout
+
+                                android:id="@+id/rl_feedback_record"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/feedbackRec"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_feedback_record"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <ProgressBar
+                                    android:id="@+id/pb_5"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:indeterminateDrawable="@drawable/circular_progressbar_layout"
+                                    android:visibility="gone" />
+
+
                             </RelativeLayout>
-                        </android.support.p048v7.widget.CardView>
+
+                        </android.support.v7.widget.CardView>
+
+
+
                     </LinearLayout>
+
+
                 </ScrollView>
+
+
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
         </RelativeLayout>
+
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
