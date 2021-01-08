@@ -1,6 +1,5 @@
 package com.akdndhrc.covid_module.RoomDB;
 
-import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.design.widget.FloatingActionButton;
@@ -24,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recyclerview_tasks);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         buttonAddTask = findViewById(R.id.floating_button_add);
         buttonAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,20 +39,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void getTasks() {
-        class GetTasks extends AsyncTask<Void, Void, List<Task>> {
+        class GetTasks extends AsyncTask<Void, Void, List<Country>> {
 
             @Override
-            protected List<Task> doInBackground(Void... voids) {
-                List<Task> taskList = DatabaseClient
+            protected List<Country> doInBackground(Void... voids) {
+                List<Country> countryList = DatabaseClient
                         .getInstance(getApplicationContext())
                         .getAppDatabase()
                         .taskDao()
                         .getAll();
-                return taskList;
+                return countryList;
             }
 
             @Override
-            protected void onPostExecute(List<Task> tasks) {
+            protected void onPostExecute(List<Country> tasks) {
                 super.onPostExecute(tasks);
                 TasksAdapter adapter = new TasksAdapter(MainActivity.this, tasks);
                 recyclerView.setAdapter(adapter);

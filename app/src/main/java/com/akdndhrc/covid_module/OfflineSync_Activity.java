@@ -66,7 +66,6 @@ public class OfflineSync_Activity extends AppCompatActivity {
 
         ls = new Lister(ctx);
 
-
         //RelativeLayout
         rl_sync_country = findViewById(R.id.rl_sync_country);
         rl_sync_province = findViewById(R.id.rl_sync_province);
@@ -91,7 +90,6 @@ public class OfflineSync_Activity extends AppCompatActivity {
         txt_sync_medicines = findViewById(R.id.txt_sync_medicines);
         txt_sync_vaccines = findViewById(R.id.txt_sync_vaccines);
 
-
         //ProgressBar
         pb_2 = findViewById(R.id.pb_2);
         pb_3 = findViewById(R.id.pb_3);
@@ -103,11 +101,9 @@ public class OfflineSync_Activity extends AppCompatActivity {
         pb_9 = findViewById(R.id.pb_9);
         pb_10 = findViewById(R.id.pb_10);
 
-
         rl_sync_country.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_CountryData(v);
             }
         });
@@ -115,39 +111,38 @@ public class OfflineSync_Activity extends AppCompatActivity {
         rl_sync_province.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_ProvinceData(v);
             }
         });
+
         rl_sync_district.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_DistrictData(v);
-
             }
         });
+
         rl_sync_tehsil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_TehsilData(v);
             }
         });
+
         rl_sync_unioncounil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_UnionCouncilData(v);
             }
         });
+
         rl_sync_facility.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Sync_FacilityData(v);
             }
         });
+
         rl_sync_villages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,7 +170,6 @@ public class OfflineSync_Activity extends AppCompatActivity {
                 Sync_VaccinesData(v);
             }
         });
-
     }
 
     private void Sync_CountryData(final View v) {
@@ -981,7 +975,6 @@ public class OfflineSync_Activity extends AppCompatActivity {
             Log.d("000122", "UNIONCOUNCIL FILE ERROR: " + e.getMessage());
         }
     }
-
 
     private void Sync_FacilityData(final View v) {
 

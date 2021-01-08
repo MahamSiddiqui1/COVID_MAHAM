@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.akdndhrc.covid_module.R;
+
 public class AddTaskActivity extends AppCompatActivity {
 
     private EditText editTextTask, editTextDesc, editTextFinishBy;
@@ -16,10 +18,6 @@ public class AddTaskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
-
-        editTextTask = findViewById(R.id.editTextTask);
-        editTextDesc = findViewById(R.id.editTextDesc);
-        editTextFinishBy = findViewById(R.id.editTextFinishBy);
 
         findViewById(R.id.button_save).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,16 +56,16 @@ public class AddTaskActivity extends AppCompatActivity {
             protected Void doInBackground(Void... voids) {
 
                 //creating a task
-                Task task = new Task();
-                task.setTask(sTask);
-                task.setDesc(sDesc);
-                task.setFinishBy(sFinishBy);
-                task.setFinished(false);
+                Country country = new Country();
+                country.setTask(sTask);
+                country.setDesc(sDesc);
+                country.setFinishBy(sFinishBy);
+                country.setFinished(false);
 
                 //adding to database
                 DatabaseClient.getInstance(getApplicationContext()).getAppDatabase()
                         .taskDao()
-                        .insert(task);
+                        .insert(country);
                 return null;
             }
 

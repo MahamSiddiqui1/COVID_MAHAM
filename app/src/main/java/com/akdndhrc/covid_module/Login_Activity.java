@@ -38,6 +38,9 @@ import android.widget.Toast;
 
 import com.akdndhrc.covid_module.CustomClass.UrlClass;
 import com.akdndhrc.covid_module.LHW_App.HomePage_Activity;
+import com.akdndhrc.covid_module.RoomDB.Country;
+import com.akdndhrc.covid_module.RoomDB.DatabaseClient;
+import com.akdndhrc.covid_module.RoomDB.MainActivity;
 import com.akdndhrc.covid_module.slider.DefaultExceptionHandler;
 import com.akdndhrc.covid_module.DatabaseFiles.Helper;
 import com.akdndhrc.covid_module.DatabaseFiles.Lister;
@@ -313,7 +316,6 @@ public class Login_Activity extends Activity {
 
                 alertDialog = alertDialogBuilder.create();
 
-
                 // show it
                 alertDialog.show();
 
@@ -321,101 +323,159 @@ public class Login_Activity extends Activity {
                 alertDialog.setCanceledOnTouchOutside(false);
                 alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
-                try {
-                   /* Lister ls = new Lister(ctx);
-                    ls.createAndOpenDB();*/
+                saveTask();
 
-
-                    String[][] data_check = ls.executeReader("Select count(*) from USERS");
-                    if (Integer.parseInt(data_check[0][0]) > 0) {
-                        Log.d("000258", "USER COUNT IFFF: " + data_check[0][0]);
-                        if (haveNetworkConnection(ctx) > 0) {
-                            Log.d("000258", "INTERNET AVAILAB");
-                            sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
-                        } else {
-
-                            Log.d("000258", "NO INTERNET OFFLINE LOGIN");
-                        }
-
-                    } else {
-                        Log.d("000258", "USER COUNT ELSE: " + data_check[0][0]);
-                        if (haveNetworkConnection(ctx) > 0) {
-                            sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
-
-                        } else {
-                            alertDialog.dismiss();
-
-                            Dialog dialog1 = new Dialog(ctx);
-                            LayoutInflater layout = LayoutInflater.from(ctx);
-                            final View dialogView = layout.inflate(R.layout.lay_dialog_loading4, null);
-
-                            dialog1.setContentView(dialogView);
-                            dialog1.setCanceledOnTouchOutside(true);
-                            dialog1.setCancelable(true);
-                            dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-                            dialog1.show();
-                            return;
-                        }
-
-                    }
-
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            try {
-                                checkLoginCreden(et_username.getText().toString(), et_password.getText().toString());
-
-                            } catch (Exception e) {
-                                alertDialog.dismiss();
-                                Log.d("000258", "Er" + e.getMessage());
-                            } finally {
-
-                                alertDialog.dismiss();
-                            }
-                        }
-
-                    }, 4500);
-                } catch (Exception e) {
-                    Log.d("000258", "Er: " + e.getMessage());
-
-                    if (haveNetworkConnection(ctx) > 0) {
-                        sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
-                    } else {
-                        alertDialog.dismiss();
-                        Dialog dialog1 = new Dialog(ctx);
-                        LayoutInflater layout = LayoutInflater.from(ctx);
-                        final View dialogView = layout.inflate(R.layout.lay_dialog_loading4, null);
-
-                        dialog1.setContentView(dialogView);
-                        dialog1.setCanceledOnTouchOutside(true);
-                        dialog1.setCancelable(true);
-                        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-                        dialog1.show();
-                        return;
-                    }
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            try {
-                                checkLoginCreden(et_username.getText().toString(), et_password.getText().toString());
-                            } catch (Exception e) {
-                                Log.d("000258", "Er" + e.getMessage());
-                            } finally {
-                                alertDialog.dismiss();
-                            }
-                        }
-
-                    }, 4500);
-                }
+//                try {
+//                   /* Lister ls = new Lister(ctx);
+//                    ls.createAndOpenDB();*/
+//
+//
+//                    String[][] data_check = ls.executeReader("Select count(*) from USERS");
+//                    if (Integer.parseInt(data_check[0][0]) > 0) {
+//                        Log.d("000258", "USER COUNT IFFF: " + data_check[0][0]);
+//                        if (haveNetworkConnection(ctx) > 0) {
+//                            Log.d("000258", "INTERNET AVAILAB");
+//                            sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
+//                        } else {
+//
+//                            Log.d("000258", "NO INTERNET OFFLINE LOGIN");
+//                        }
+//
+//                    } else {
+//                        Log.d("000258", "USER COUNT ELSE: " + data_check[0][0]);
+//                        if (haveNetworkConnection(ctx) > 0) {
+//                            sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
+//
+//                        } else {
+//                            alertDialog.dismiss();
+//
+//                            Dialog dialog1 = new Dialog(ctx);
+//                            LayoutInflater layout = LayoutInflater.from(ctx);
+//                            final View dialogView = layout.inflate(R.layout.lay_dialog_loading4, null);
+//
+//                            dialog1.setContentView(dialogView);
+//                            dialog1.setCanceledOnTouchOutside(true);
+//                            dialog1.setCancelable(true);
+//                            dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+//                            dialog1.show();
+//                            return;
+//                        }
+//
+//                    }
+//
+//                    Handler handler = new Handler();
+//                    handler.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//
+//                            try {
+//                                checkLoginCreden(et_username.getText().toString(), et_password.getText().toString());
+//
+//                            } catch (Exception e) {
+//                                alertDialog.dismiss();
+//                                Log.d("000258", "Er" + e.getMessage());
+//                            } finally {
+//
+//                                alertDialog.dismiss();
+//                            }
+//                        }
+//
+//                    }, 4500);
+//                }
+//                catch (Exception e) {
+//                    Log.d("000258", "Er: " + e.getMessage());
+//
+//                    if (haveNetworkConnection(ctx) > 0) {
+//                        sendPostRequest(et_username.getText().toString(), et_password.getText().toString());
+//                    }
+//                    else {
+//                        alertDialog.dismiss();
+//                        Dialog dialog1 = new Dialog(ctx);
+//                        LayoutInflater layout = LayoutInflater.from(ctx);
+//                        final View dialogView = layout.inflate(R.layout.lay_dialog_loading4, null);
+//
+//                        dialog1.setContentView(dialogView);
+//                        dialog1.setCanceledOnTouchOutside(true);
+//                        dialog1.setCancelable(true);
+//                        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+//                        dialog1.show();
+//                        return;
+//                    }
+//                    Handler handler = new Handler();
+//                    handler.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//
+//                            try {
+//                                checkLoginCreden(et_username.getText().toString(), et_password.getText().toString());
+//                            } catch (Exception e) {
+//                                Log.d("000258", "Er" + e.getMessage());
+//                            } finally {
+//                                alertDialog.dismiss();
+//                            }
+//                        }
+//
+//                    }, 4500);
+//                }
 
             }
         });
     }
 
+    private void saveLo() {
+        final String sTask = et_username.getText().toString().trim();
+        final String sDesc = editTextDesc.getText().toString().trim();
+        final String sFinishBy = editTextFinishBy.getText().toString().trim();
+
+        if (sTask.isEmpty()) {
+            editTextTask.setError("Task required");
+            editTextTask.requestFocus();
+            return;
+        }
+
+        if (sDesc.isEmpty()) {
+            editTextDesc.setError("Desc required");
+            editTextDesc.requestFocus();
+            return;
+        }
+
+        if (sFinishBy.isEmpty()) {
+            editTextFinishBy.setError("Finish by required");
+            editTextFinishBy.requestFocus();
+            return;
+        }
+
+        class SaveTask extends AsyncTask<Void, Void, Void> {
+
+            @Override
+            protected Void doInBackground(Void... voids) {
+
+                //creating a task
+                Country country = new Country();
+                country.setTask(sTask);
+                country.setDesc(sDesc);
+                country.setFinishBy(sFinishBy);
+                country.setFinished(false);
+
+                //adding to database
+                DatabaseClient.getInstance(getApplicationContext()).getAppDatabase()
+                        .taskDao()
+                        .insert(country);
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void aVoid) {
+                super.onPostExecute(aVoid);
+                finish();
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_LONG).show();
+            }
+        }
+
+        SaveTask st = new SaveTask();
+        st.execute();
+    }
 
     private void init_Directories() {
 
@@ -565,470 +625,468 @@ public class Login_Activity extends Activity {
         }
     }
 
-
-        private void sendPostRequest(final String username, final String password) {
-
-            //String url = "https://pak.api.teekoplus.akdndhrc.org/sync/lists/download";
-            String url = "https://development.api.teekoplus.akdndhrc.org/sync/lists/download";
-            //String url = UrlClass.dicitonary_download;
-
-            Log.d("000258", "mURL " + url);
-            //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
-
-            String REQUEST_TAG = String.valueOf("volleyStringRequest");
-
-            StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-
-                    Log.d("000258", "Response:    " + response);
-
-
-                    try {
-
-                        /////////////Current Date in Persian and save in Shared Pref
-                        SharedPreferences preferences = getApplicationContext().getSharedPreferences("MyPreferences", 0); // 0 - for private mode
-                        SharedPreferences.Editor editor = preferences.edit();
-
-                        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-                        Log.d("000258", "Current  DateTime: " + timeStamp);
-                        editor.putString("last_sync_time", timeStamp); // Storing string
-                        editor.apply();
-
-                    } catch (Exception e) {
-                        Log.d("000258", "Syn ERr:    " + e.getMessage());
-                    }
-
-                    // Toast.makeText(ctx, response, Toast.LENGTH_SHORT).show();
-
-                    try {
-                        // Toast.makeText(getApplicationContext(), "2", Toast.LENGTH_LONG).show();
-
-                        JSONObject jobj = new JSONObject(response);
-                        Log.d("000258", response);
-                        // if(jobj.getBoolean("success")){
-                        Log.d("testlinksync", response);
-
-                        Lister ls = new Lister(ctx);
-                        // ls.closeDB();
-                        ls.createAndOpenDB();
-                        boolean m1 = ls.executeNonQuery("DROP TABLE IF EXISTS COUNTRY ");
-                        boolean m11 = ls.executeNonQuery("DROP TABLE IF EXISTS PROVINCE ");
-                        boolean m12 = ls.executeNonQuery("DROP TABLE IF EXISTS DISTRICT ");
-                        boolean m13 = ls.executeNonQuery("DROP TABLE IF EXISTS TEHSIL ");
-                        boolean m14 = ls.executeNonQuery("DROP TABLE IF EXISTS UNIONCOUNCIL ");
-                        boolean m15 = ls.executeNonQuery("DROP TABLE IF EXISTS VILLAGES ");
-                        boolean m16 = ls.executeNonQuery("DROP TABLE IF EXISTS FACILITY ");
-                        boolean m17 = ls.executeNonQuery("DROP TABLE IF EXISTS VACCINES ");
-                        boolean m18 = ls.executeNonQuery("DROP TABLE IF EXISTS USERS ");
-                        boolean m19 = ls.executeNonQuery("DROP TABLE IF EXISTS MEDICINE ");
-
-
-                        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
-
-                        ////////////////////////////////////////////// Countries///////////////////////////////////////////////////////
-                        try {
-                            Log.d("000258", "RESPONSE: " + response.toString());
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            //  Log.d("000258","Countries: " +obj.toString());
-
-                            JSONArray m_jArry = obj.getJSONArray("countries");
-                            Log.d("000258", "Countries: " + m_jArry.toString());
-
-
-                            boolean m2 = ls.executeNonQuery(CREATE_TABLE_COUNTRY);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into COUNTRY(uid, " +
-                                        "name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-                                Log.d("000258", "Countries_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL COUNTRIES DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "Country Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                         ////////////////////////////////////////// Provinces ///////////////////////////////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            //  Log.d("000258","PROVINCES: " +obj.toString());
-
-                            JSONArray m_jArry = obj.getJSONArray("provinces");
-                            Log.d("000258", "PROVINCES: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_PROVINCE);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into PROVINCE(uid, country_id, " +
-                                        "name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-                                //Toast.makeText(getApplicationContext(), String.valueOf(mFlag), Toast.LENGTH_SHORT).show();
-
-                                Log.d("000258", "Province_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL PROVINCES DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "Province Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        ///////////////////////////////////////////// Districts ///////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            //   Log.d("000258","DISTRICTS: " +obj.toString());
-
-                            JSONArray m_jArry = obj.getJSONArray("district");
-                            Log.d("000258", "DISTRICTS: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_DISTRICT);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into DISTRICT(uid,country_id,province_id, " +
-                                        "name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-
-                                Log.d("000258", "Districts_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL DISTRICTS DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "DISTRICT Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                         ///////////////////////////////////////// TEHSILS ////////////////////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            //     Log.d("000258","TEHSIL: " +obj.toString());
-
-                            JSONArray m_jArry = obj.getJSONArray("tehsils");
-                            Log.d("000258", "TEHSIL: " + m_jArry.toString());
-
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_TEHSIL);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into TEHSIL(uid,country_id,province_id, " +
-                                        "district_id,name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("district_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-
-                                Log.d("000258", "Tehsils_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL TEHSILS DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "TEHSIL Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        ///////////////////////////////////////// UNIONCOUNCILS /////////////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            // Log.d("000258","UNIONCOUNCIL: " +obj.toString());
-
-                            JSONArray m_jArry = obj.getJSONArray("ucs");
-                            Log.d("000258", "UNIONCOUNCIL: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_UNIONCOUNCIL);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into UNIONCOUNCIL(uid,country_id,province_id, " +
-                                        "district_id,tehsil_id,name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("district_id") + "'," +
-                                        "'" + jo_inside.getString("tehsil_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-
-                                Log.d("000258", "UC_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL UNIONCOUNCIL DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "UnionCouncil Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        ////////////////////////////////// VILLAGES ////////////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            //Log.d("000258","VILLAGES: " +obj.toString());
-                            JSONArray m_jArry = obj.getJSONArray("villages");
-                            Log.d("000258", "VILLAGES: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_VILLAGES);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into VILLAGES(uid,country_id,province_id, " +
-                                        "district_id,tehsil_id,uc_id,name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("district_id") + "'," +
-                                        "'" + jo_inside.getString("tehsil_id") + "'," +
-                                        "'" + jo_inside.getString("uc_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-
-                                Log.d("000258", "Villages_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL VILLAGES DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "VILLAGES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        ///////////////////////////////// Facilities ////////////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            // Log.d("000258","FACILITIES: " +obj.toString());
-                            JSONArray m_jArry = obj.getJSONArray("facilities");
-                            Log.d("000258", "FACILITIES: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_FACILITY);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into FACILITY(uid,country_id,province_id, " +
-                                        "district_id,tehsil_id,uc_id,name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("district_id") + "'," +
-                                        "'" + jo_inside.getString("tehsil_id") + "'," +
-                                        "'" + jo_inside.getString("uc_id") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-
-                                Log.d("000258", "Facilities_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL FACILITIES DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "FACILITIES Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        //////////////////////////////  VACCINES //////////////////////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            // Log.d("000258","VACCINES: " +obj.toString());
-                            JSONArray m_jArry = obj.getJSONArray("vaccines");
-                            Log.d("000258", "VACCINE: " + m_jArry.toString());
-
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_VACCINES);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into VACCINES(uid, defaulter_date,due_date, " +
-                                        "name) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getInt("defaulter_date") + "'," +
-                                        "'" + jo_inside.getInt("due_date") + "'," +
-                                        "'" + jo_inside.getString("name") + "'" +
-
-                                        ")");
-
-                                Log.d("000258", "Vaccines_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL VACCINES DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "VACCINE Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                        /////////////////////////////////////// USERS ////////////////////////////////////
-
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            ///  Log.d("000258","USERRS: " +obj.toString());
-                            JSONArray m_jArry = obj.getJSONArray("users");
-                            Log.d("000258", "USERS: " + m_jArry.toString());
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_USERS);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into USERS(uid,username,password,privilege,salt,district_id,country_id,province_id, " +
-                                        "uc_id) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("username") + "'," +
-                                        "'" + jo_inside.getString("password") + "'," +
-                                        "'" + jo_inside.getInt("privilege") + "'," +
-                                        "'" + jo_inside.getString("salt") + "'," +
-                                        "'" + jo_inside.getString("district_id") + "'," +
-                                        "'" + jo_inside.getString("country_id") + "'," +
-                                        "'" + jo_inside.getString("province_id") + "'," +
-                                        "'" + jo_inside.getString("uc_id") + "'" +
-                                        ")");
-
-
-                                Log.d("000258", "Users_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL USERS DATA SYNCED ************");
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "USER Catch: " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-
-                        //////////////////////// MEDICINES /////////////////////
-                        try {
-
-                            JSONObject obj = new JSONObject(String.valueOf(response));
-                            // Log.d("000258","MEDICINES: " +obj.toString());
-                            JSONArray m_jArry = obj.getJSONArray("medicines");
-                            Log.d("000258", "MEDICINES: " + m_jArry.toString());
-                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_MEDICINE);
-                            String date = "";
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                                boolean mFlag = ls.executeNonQuery("insert or ignore into MEDICINE(uid, name, " +
-                                        "type) values " +
-                                        "(" +
-                                        "'" + jo_inside.getString("uid") + "'," +
-                                        "'" + jo_inside.getString("name") + "'," +
-                                        "'" + jo_inside.getInt("type") + "'" +
-
-                                        ")");
-
-                                Log.d("000258", "Medicines_boolean: " + mFlag);
-
-                            }
-                            Log.d("000258", "************* ALL MEDICINES DATA SYNCED ************");
-
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Log.d("000258", "MEDICINES Err:    " + e.getMessage());
-                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
-                        }
-
-                    } catch (Exception e) {
-                        Log.d("000258", "Err:    " + e.getMessage());
-                        Toast.makeText(Login_Activity.this, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
-
-                    }
-                    Log.d("000258", "*************** ALL SYNC  SUCCESSFULLY*****************");
-
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-
-                    Log.d("000258", "onErrorResponse: " + error.getMessage());
-                    Toast.makeText(ctx, "Login API Error: "+ error.getMessage(), Toast.LENGTH_SHORT).show();
-                    //  Toast.makeText(Login_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
-
-
-                }
-            }) {
-                @Override
-                protected Map<String, String> getParams() {
-
-                    Map<String, String> params = new HashMap<String, String>();
-                    params.put("username", username);
-                    params.put("password", password);
-
-
-                    Log.d("000258", "mParam " + params);
-
-                    return params;
-                }
-
-                @Override
-                public Map<String, String> getHeaders() {
-                    Log.d("000258", "map ");
-                    Map<String, String> params = new HashMap<String, String>();
-                    //   params.put("Content-Type", "application/x-www-form-urlencoded");
-                    return params;
-                }
-            };
-
-            AppController.getInstance().addToRequestQueue(strReq, REQUEST_TAG);
-        }
-
+//    private void sendPostRequest(final String username, final String password) {
+//
+//            //String url = "https://pak.api.teekoplus.akdndhrc.org/sync/lists/download";
+//            String url = "https://development.api.teekoplus.akdndhrc.org/sync/lists/download";
+//            //String url = UrlClass.dicitonary_download;
+//
+//            Log.d("000258", "mURL " + url);
+//            //  Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
+//
+//            String REQUEST_TAG = String.valueOf("volleyStringRequest");
+//
+//            StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+//                @Override
+//                public void onResponse(String response) {
+//
+//                    Log.d("000258", "Response:    " + response);
+//
+//
+//                    try {
+//
+//                        /////////////Current Date in Persian and save in Shared Pref
+//                        SharedPreferences preferences = getApplicationContext().getSharedPreferences("MyPreferences", 0); // 0 - for private mode
+//                        SharedPreferences.Editor editor = preferences.edit();
+//
+//                        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+//                        Log.d("000258", "Current  DateTime: " + timeStamp);
+//                        editor.putString("last_sync_time", timeStamp); // Storing string
+//                        editor.apply();
+//
+//                    } catch (Exception e) {
+//                        Log.d("000258", "Syn ERr:    " + e.getMessage());
+//                    }
+//
+//                    // Toast.makeText(ctx, response, Toast.LENGTH_SHORT).show();
+//
+//                    try {
+//                        // Toast.makeText(getApplicationContext(), "2", Toast.LENGTH_LONG).show();
+//
+//                        JSONObject jobj = new JSONObject(response);
+//                        Log.d("000258", response);
+//                        // if(jobj.getBoolean("success")){
+//                        Log.d("testlinksync", response);
+//
+//                        Lister ls = new Lister(ctx);
+//                        // ls.closeDB();
+//                        ls.createAndOpenDB();
+//                        boolean m1 = ls.executeNonQuery("DROP TABLE IF EXISTS COUNTRY ");
+//                        boolean m11 = ls.executeNonQuery("DROP TABLE IF EXISTS PROVINCE ");
+//                        boolean m12 = ls.executeNonQuery("DROP TABLE IF EXISTS DISTRICT ");
+//                        boolean m13 = ls.executeNonQuery("DROP TABLE IF EXISTS TEHSIL ");
+//                        boolean m14 = ls.executeNonQuery("DROP TABLE IF EXISTS UNIONCOUNCIL ");
+//                        boolean m15 = ls.executeNonQuery("DROP TABLE IF EXISTS VILLAGES ");
+//                        boolean m16 = ls.executeNonQuery("DROP TABLE IF EXISTS FACILITY ");
+//                        boolean m17 = ls.executeNonQuery("DROP TABLE IF EXISTS VACCINES ");
+//                        boolean m18 = ls.executeNonQuery("DROP TABLE IF EXISTS USERS ");
+//                        boolean m19 = ls.executeNonQuery("DROP TABLE IF EXISTS MEDICINE ");
+//
+//
+//                        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+//
+//                        ////////////////////////////////////////////// Countries///////////////////////////////////////////////////////
+//                        try {
+//                            Log.d("000258", "RESPONSE: " + response.toString());
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            //  Log.d("000258","Countries: " +obj.toString());
+//
+//                            JSONArray m_jArry = obj.getJSONArray("countries");
+//                            Log.d("000258", "Countries: " + m_jArry.toString());
+//
+//
+//                            boolean m2 = ls.executeNonQuery(CREATE_TABLE_COUNTRY);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into COUNTRY(uid, " +
+//                                        "name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//                                Log.d("000258", "Countries_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL COUNTRIES DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "Country Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "country " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                         ////////////////////////////////////////// Provinces ///////////////////////////////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            //  Log.d("000258","PROVINCES: " +obj.toString());
+//
+//                            JSONArray m_jArry = obj.getJSONArray("provinces");
+//                            Log.d("000258", "PROVINCES: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_PROVINCE);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into PROVINCE(uid, country_id, " +
+//                                        "name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//                                //Toast.makeText(getApplicationContext(), String.valueOf(mFlag), Toast.LENGTH_SHORT).show();
+//
+//                                Log.d("000258", "Province_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL PROVINCES DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "Province Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "province " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        ///////////////////////////////////////////// Districts ///////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            //   Log.d("000258","DISTRICTS: " +obj.toString());
+//
+//                            JSONArray m_jArry = obj.getJSONArray("district");
+//                            Log.d("000258", "DISTRICTS: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_DISTRICT);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into DISTRICT(uid,country_id,province_id, " +
+//                                        "name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//
+//                                Log.d("000258", "Districts_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL DISTRICTS DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "DISTRICT Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "district " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                         ///////////////////////////////////////// TEHSILS ////////////////////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            //     Log.d("000258","TEHSIL: " +obj.toString());
+//
+//                            JSONArray m_jArry = obj.getJSONArray("tehsils");
+//                            Log.d("000258", "TEHSIL: " + m_jArry.toString());
+//
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_TEHSIL);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into TEHSIL(uid,country_id,province_id, " +
+//                                        "district_id,name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("district_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//
+//                                Log.d("000258", "Tehsils_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL TEHSILS DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "TEHSIL Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Tehsil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        ///////////////////////////////////////// UNIONCOUNCILS /////////////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            // Log.d("000258","UNIONCOUNCIL: " +obj.toString());
+//
+//                            JSONArray m_jArry = obj.getJSONArray("ucs");
+//                            Log.d("000258", "UNIONCOUNCIL: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_UNIONCOUNCIL);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into UNIONCOUNCIL(uid,country_id,province_id, " +
+//                                        "district_id,tehsil_id,name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("district_id") + "'," +
+//                                        "'" + jo_inside.getString("tehsil_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//
+//                                Log.d("000258", "UC_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL UNIONCOUNCIL DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "UnionCouncil Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "UnionCouncil " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        ////////////////////////////////// VILLAGES ////////////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            //Log.d("000258","VILLAGES: " +obj.toString());
+//                            JSONArray m_jArry = obj.getJSONArray("villages");
+//                            Log.d("000258", "VILLAGES: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_VILLAGES);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into VILLAGES(uid,country_id,province_id, " +
+//                                        "district_id,tehsil_id,uc_id,name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("district_id") + "'," +
+//                                        "'" + jo_inside.getString("tehsil_id") + "'," +
+//                                        "'" + jo_inside.getString("uc_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//
+//                                Log.d("000258", "Villages_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL VILLAGES DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "VILLAGES Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "Villages " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        ///////////////////////////////// Facilities ////////////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            // Log.d("000258","FACILITIES: " +obj.toString());
+//                            JSONArray m_jArry = obj.getJSONArray("facilities");
+//                            Log.d("000258", "FACILITIES: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_FACILITY);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into FACILITY(uid,country_id,province_id, " +
+//                                        "district_id,tehsil_id,uc_id,name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("district_id") + "'," +
+//                                        "'" + jo_inside.getString("tehsil_id") + "'," +
+//                                        "'" + jo_inside.getString("uc_id") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//
+//                                Log.d("000258", "Facilities_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL FACILITIES DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "FACILITIES Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "facilities " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        //////////////////////////////  VACCINES //////////////////////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            // Log.d("000258","VACCINES: " +obj.toString());
+//                            JSONArray m_jArry = obj.getJSONArray("vaccines");
+//                            Log.d("000258", "VACCINE: " + m_jArry.toString());
+//
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_VACCINES);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into VACCINES(uid, defaulter_date,due_date, " +
+//                                        "name) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getInt("defaulter_date") + "'," +
+//                                        "'" + jo_inside.getInt("due_date") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'" +
+//
+//                                        ")");
+//
+//                                Log.d("000258", "Vaccines_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL VACCINES DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "VACCINE Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "vacnines " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        /////////////////////////////////////// USERS ////////////////////////////////////
+//
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            ///  Log.d("000258","USERRS: " +obj.toString());
+//                            JSONArray m_jArry = obj.getJSONArray("users");
+//                            Log.d("000258", "USERS: " + m_jArry.toString());
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_USERS);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into USERS(uid,username,password,privilege,salt,district_id,country_id,province_id, " +
+//                                        "uc_id) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("username") + "'," +
+//                                        "'" + jo_inside.getString("password") + "'," +
+//                                        "'" + jo_inside.getInt("privilege") + "'," +
+//                                        "'" + jo_inside.getString("salt") + "'," +
+//                                        "'" + jo_inside.getString("district_id") + "'," +
+//                                        "'" + jo_inside.getString("country_id") + "'," +
+//                                        "'" + jo_inside.getString("province_id") + "'," +
+//                                        "'" + jo_inside.getString("uc_id") + "'" +
+//                                        ")");
+//
+//
+//                                Log.d("000258", "Users_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL USERS DATA SYNCED ************");
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "USER Catch: " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "users " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//
+//                        //////////////////////// MEDICINES /////////////////////
+//                        try {
+//
+//                            JSONObject obj = new JSONObject(String.valueOf(response));
+//                            // Log.d("000258","MEDICINES: " +obj.toString());
+//                            JSONArray m_jArry = obj.getJSONArray("medicines");
+//                            Log.d("000258", "MEDICINES: " + m_jArry.toString());
+//                            boolean m2 = ls.executeNonQuery(Helper.CREATE_TABLE_MEDICINE);
+//                            String date = "";
+//                            for (int i = 0; i < m_jArry.length(); i++) {
+//                                JSONObject jo_inside = m_jArry.getJSONObject(i);
+//                                boolean mFlag = ls.executeNonQuery("insert or ignore into MEDICINE(uid, name, " +
+//                                        "type) values " +
+//                                        "(" +
+//                                        "'" + jo_inside.getString("uid") + "'," +
+//                                        "'" + jo_inside.getString("name") + "'," +
+//                                        "'" + jo_inside.getInt("type") + "'" +
+//
+//                                        ")");
+//
+//                                Log.d("000258", "Medicines_boolean: " + mFlag);
+//
+//                            }
+//                            Log.d("000258", "************* ALL MEDICINES DATA SYNCED ************");
+//
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                            Log.d("000258", "MEDICINES Err:    " + e.getMessage());
+//                            Toast.makeText(getApplicationContext(), getString(R.string.noDataForEng) + "medicine " + String.valueOf(e.getMessage()), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                    } catch (Exception e) {
+//                        Log.d("000258", "Err:    " + e.getMessage());
+//                        Toast.makeText(Login_Activity.this, R.string.somethingWrong, Toast.LENGTH_SHORT).show();
+//
+//                    }
+//                    Log.d("000258", "*************** ALL SYNC  SUCCESSFULLY*****************");
+//
+//                }
+//            }, new Response.ErrorListener() {
+//                @Override
+//                public void onErrorResponse(VolleyError error) {
+//
+//                    Log.d("000258", "onErrorResponse: " + error.getMessage());
+//                    Toast.makeText(ctx, "Login API Error: "+ error.getMessage(), Toast.LENGTH_SHORT).show();
+//                    //  Toast.makeText(Login_Activity.this, "برائے مہربانی انٹرنیٹ کنکشن چیک کریں", Toast.LENGTH_SHORT).show();
+//
+//
+//                }
+//            }) {
+//                @Override
+//                protected Map<String, String> getParams() {
+//
+//                    Map<String, String> params = new HashMap<String, String>();
+//                    params.put("username", username);
+//                    params.put("password", password);
+//
+//
+//                    Log.d("000258", "mParam " + params);
+//
+//                    return params;
+//                }
+//
+//                @Override
+//                public Map<String, String> getHeaders() {
+//                    Log.d("000258", "map ");
+//                    Map<String, String> params = new HashMap<String, String>();
+//                    //   params.put("Content-Type", "application/x-www-form-urlencoded");
+//                    return params;
+//                }
+//            };
+//
+//            AppController.getInstance().addToRequestQueue(strReq, REQUEST_TAG);
+//        }
 
     private static String convertToHex(byte[] data) {
         StringBuilder buf = new StringBuilder();

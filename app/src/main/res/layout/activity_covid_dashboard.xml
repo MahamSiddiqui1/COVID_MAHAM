@@ -33,7 +33,7 @@
             android:ems="10"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="@string/taskList"
+            android:text="@string/countryList"
             android:textColor="@color/white"
             android:textSize="16sp"
             tools:ignore="RelativeOverlap" />
